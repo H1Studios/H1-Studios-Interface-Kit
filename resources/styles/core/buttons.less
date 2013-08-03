@@ -1,0 +1,889 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* core/buttons.less                                                         */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Base Styles                                                               */
+/*                                                                           */
+/* ========================================================================= */
+
+.button {
+	
+	display: inline-block;
+	.ie7-inline-block();
+	.button_padding(@buttonHeight, @buttonTextLineHeight, @buttonHorizontalPadding);
+	font-family: @buttonTextFontFamily;
+	font-size: @buttonTextFontSize;
+	font-weight: @buttonTextFontWeight;
+	font-style: @buttonTextFontStyle;
+	line-height: @buttonTextLineHeight;
+	*line-height: @buttonTextLineHeight;
+	color: @buttonTextColor;
+	text-transform: @buttonTextTransform;
+	text-shadow: @buttonTextShadow;
+	text-rendering: optimizelegibility;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: @buttonBackgroundColor;
+	#gradient > .vertical(@buttonBackgroundGradientColorTop, @buttonBackgroundGradientColorBottom);
+	border: none;
+	*border: 0;
+	.border-radius(@buttonBorderRadius);
+	.ie7-restore-left-whitespace();
+	.box-shadow(@buttonShadow);
+	.transition(background-position .1s linear);
+	margin: 0px;
+	margin-top: @buttonMarginTop;
+	margin-bottom: @buttonMarginBottom;
+	
+	&:hover {
+		
+		.override_gradient_vertical();
+		color: @buttonHoverTextColor;
+		text-shadow: @buttonHoverTextShadow;
+		background-color: @buttonHoverBackgroundColor;
+		#gradient > .vertical(@buttonHoverBackgroundGradientColorTop, @buttonHoverBackgroundGradientColorBottom);
+		.box-shadow(@buttonHoverShadow);
+		margin-top: @buttonHoverMarginTop;
+		margin-bottom: @buttonHoverMarginBottom;
+		
+	}
+
+	&:focus {
+		
+		.tab-focus();
+		
+	}
+	
+	&.active,
+	&:active {
+		
+		.override_gradient_vertical();
+		outline: 0;
+		color: @buttonActiveTextColor;
+		text-shadow: @buttonActiveTextShadow;
+		background-color: @buttonActiveBackgroundColor;
+		#gradient > .vertical(@buttonActiveBackgroundGradientColorTop, @buttonActiveBackgroundGradientColorBottom);
+		.box-shadow(@buttonActiveShadow);
+		margin-top: @buttonActiveMarginTop;
+		margin-bottom: @buttonActiveMarginBottom;
+		
+	}
+	
+	&.disabled,
+	&[disabled] {
+		
+		.override_gradient_vertical();
+		cursor: default !important;
+		outline: 0;
+		color: @buttonDisabledTextColor;
+		text-shadow: @buttonDisabledTextShadow;
+		background-color: @buttonDisabledBackgroundColor;
+		#gradient > .vertical(@buttonDisabledBackgroundGradientColorTop, @buttonDisabledBackgroundGradientColorBottom);
+		.box-shadow(@buttonDisabledShadow);
+		margin-top: @buttonDisabledMarginTop;
+		margin-bottom: @buttonDisabledMarginBottom;
+		.opacity(@buttonDisabledOpacity);
+		
+	}
+	
+	&.inverse {
+		
+		.override_gradient_vertical();
+		color: @buttonInverseTextColor;
+		text-shadow: @buttonInverseTextShadow;
+		background-color: @buttonInverseBackgroundColor;
+		#gradient > .vertical(@buttonInverseBackgroundGradientColorTop, @buttonInverseBackgroundGradientColorBottom);
+		.box-shadow(@buttonInverseShadow);
+		margin-top: @buttonInverseMarginTop;
+		margin-bottom: @buttonInverseMarginBottom;
+		
+		&:hover {
+			
+			.override_gradient_vertical();	
+			color: @buttonInverseHoverTextColor;
+			text-shadow: @buttonInverseHoverTextShadow;
+			background-color: @buttonInverseHoverBackgroundColor;
+			#gradient > .vertical(@buttonInverseHoverBackgroundGradientColorTop, @buttonInverseHoverBackgroundGradientColorBottom);
+			.box-shadow(@buttonInverseHoverShadow);
+			margin-top: @buttonInverseHoverMarginTop;
+			margin-bottom: @buttonInverseHoverMarginBottom;
+			
+		}
+		
+		&.active,
+		&:active {
+			
+			.override_gradient_vertical();
+			color: @buttonInverseActiveTextColor;
+			text-shadow: @buttonInverseActiveTextShadow;
+			background-color: @buttonInverseActiveBackgroundColor;
+			#gradient > .vertical(@buttonInverseActiveBackgroundGradientColorTop, @buttonInverseActiveBackgroundGradientColorBottom);
+			.box-shadow(@buttonInverseActiveShadow);
+			margin-top: @buttonInverseActiveMarginTop;
+			margin-bottom: @buttonInverseActiveMarginBottom;
+			
+		}
+		
+		&.disabled,
+		&[disabled] {
+			
+			.override_gradient_vertical();
+			color: @buttonInverseDisabledTextColor;
+			text-shadow: @buttonInverseDisabledTextShadow;
+			background-color: @buttonInverseDisabledBackgroundColor;
+			#gradient > .vertical(@buttonInverseDisabledBackgroundGradientColorTop, @buttonInverseDisabledBackgroundGradientColorBottom);
+			.box-shadow(@buttonInverseDisabledShadow);
+			margin-top: @buttonInverseDisabledMarginTop;
+			margin-bottom: @buttonInverseDisabledMarginBottom;
+			
+		}
+		
+	}
+	
+	[class^="icon-"],
+	[class*=" icon-"] {
+			
+		margin-top: -2px;
+		vertical-align: middle;
+				
+		&.icon-24 {
+			
+			margin-top: -5px;
+			
+		}
+		
+		&.icon-shadowed {
+			
+			.opacity(75);
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Button Sizes                                                              */
+/*                                                                           */
+/* ========================================================================= */
+
+// Large
+
+.button.button-large {
+	
+	.button_padding(@buttonHeightLarge, @buttonTextLineHeightLarge, @buttonHorizontalPaddingLarge);
+	line-height: @buttonTextLineHeightLarge;
+	font-size: @buttonTextFontSizeLarge;
+	font-weight: @buttonTextFontWeightLarge;
+	.border-radius(@buttonBorderRadiusLarge);
+	
+}
+
+.button.button-large [class^="icon-"] {
+	
+	margin-top: -1px;
+	margin-bottom: -2px;
+			
+	&.icon-24 {
+		
+		margin-top: -5px;
+		margin-bottom: -5px;
+		
+	}
+		
+}
+
+// Small
+
+.button.button-small {
+	
+	.button_padding(@buttonHeightSmall, @buttonTextLineHeightSmall, @buttonHorizontalPaddingSmall);
+	line-height: @buttonTextLineHeightSmall;
+	font-size: @buttonTextFontSizeSmall;
+	font-weight: @buttonTextFontWeightSmall;
+	.border-radius(@buttonBorderRadiusSmall);
+	
+}
+
+.button.button-small [class^="icon-"] {
+	
+	margin-top: -1px;
+	
+}
+
+// Mini
+
+.button.button-mini {
+	
+	.button_padding(@buttonHeightMini, @buttonTextLineHeightMini, @buttonHorizontalPaddingMini);
+	line-height: @buttonTextLineHeightMini;
+	font-size: @buttonTextFontSizeMini;
+	font-weight: @buttonTextFontWeightMini;
+	.border-radius(@buttonBorderRadiusMini);
+	
+}
+
+// Button Padding Mixin
+
+.button_padding(@bHeight, @bLineHeight, @bHPadding) {
+	
+	.button_padding_a(@bHeight, @bLineHeight, @bHPadding);
+	.button_padding_b(@bHeight, @bLineHeight, @bHPadding);
+	
+}
+
+.button_padding_a(@bHeight, @bLineHeight, @bHPadding) when (@bHeight > @bLineHeight) {
+	
+	padding: ((@bHeight - @bLineHeight) / 2) @bHPadding ((@bHeight - @bLineHeight) / 2) @bHPadding;
+	
+}
+
+.button_padding_b(@bHeight, @bLineHeight, @bHPadding) when (@bLineHeight >= @bHeight) {
+	
+	padding: 0px @bHPadding 0px @bHPadding;
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Button Block                                                              */
+/*                                                                           */
+/* ========================================================================= */
+
+.button-block {
+	
+	display: block;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	.box-sizing(border-box);
+	
+}
+
+// Vertically space out multiple block buttons
+
+.button-block + .button-block {
+	
+	margin-top: 5px;
+	
+}
+
+// Specificity overrides
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	
+	&.button-block {
+		
+		width: 100%;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Alternate Button Styles                                                   */
+/*                                                                           */
+/* ========================================================================= */
+
+.button-primary {
+	
+	.override_gradient_vertical();
+	color: @buttonPrimaryTextColor;
+	text-shadow: @buttonPrimaryTextShadow;
+	background-color: @buttonPrimaryBackgroundColor;
+	#gradient > .vertical(@buttonPrimaryBackgroundGradientColorTop, @buttonPrimaryBackgroundGradientColorBottom);
+	.box-shadow(@buttonPrimaryShadow);
+	margin-top: @buttonPrimaryMarginTop;
+	margin-bttom: @buttonPrimaryMarginBottom;
+	
+	&:hover {
+		
+		.override_gradient_vertical();
+		color: @buttonPrimaryHoverTextColor;
+		text-shadow: @buttonPrimaryHoverTextShadow;
+		background-color: @buttonPrimaryHoverBackgroundColor;
+		#gradient > .vertical(@buttonPrimaryHoverBackgroundGradientColorTop, @buttonPrimaryHoverBackgroundGradientColorBottom);
+		.box-shadow(@buttonPrimaryHoverShadow);
+		margin-top: @buttonPrimaryHoverMarginTop;
+		margin-bttom: @buttonPrimaryHoverMarginBottom;
+		
+	}
+	
+	&:active {
+		
+		.override_gradient_vertical();
+		color: @buttonPrimaryActiveTextColor;
+		text-shadow: @buttonPrimaryActiveTextShadow;
+		background-color: @buttonPrimaryActiveBackgroundColor;
+		#gradient > .vertical(@buttonPrimaryActiveBackgroundGradientColorTop, @buttonPrimaryActiveBackgroundGradientColorBottom);
+		.box-shadow(@buttonPrimaryActiveShadow);
+		margin-top: @buttonPrimaryActiveMarginTop;
+		margin-bttom: @buttonPrimaryActiveMarginBottom;
+		
+	}
+	
+	&.disabled,
+	&[disabled] {
+		
+		.override_gradient_vertical();
+		color: @buttonPrimaryDisabledTextColor;
+		text-shadow: @buttonPrimaryDisabledTextShadow;
+		background-color: @buttonPrimaryDisabledBackgroundColor;
+		#gradient > .vertical(@buttonPrimaryDisabledBackgroundGradientColorTop, @buttonPrimaryDisabledBackgroundGradientColorBottom);
+		.box-shadow(@buttonPrimaryDisabledShadow);
+		margin-top: @buttonPrimaryDisabledMarginTop;
+		margin-bttom: @buttonPrimaryDisabledMarginBottom;
+		.opacity(@buttonPrimaryDisabledOpacity);
+		
+	}
+	
+	&.inverse {
+		
+		.override_gradient_vertical();
+		color: @buttonPrimaryInverseTextColor;
+		text-shadow: @buttonPrimaryInverseTextShadow;
+		background-color: @buttonPrimaryInverseBackgroundColor;
+		#gradient > .vertical(@buttonPrimaryInverseBackgroundGradientColorTop, @buttonPrimaryInverseBackgroundGradientColorBottom);
+		.box-shadow(@buttonPrimaryInverseShadow);
+		margin-top: @buttonPrimaryInverseMarginTop;
+		margin-bottom: @buttonPrimaryInverseMarginBottom;
+		
+		&:hover {
+			
+			.override_gradient_vertical();
+			color: @buttonPrimaryInverseHoverTextColor;
+			text-shadow: @buttonPrimaryInverseHoverTextShadow;
+			background-color: @buttonPrimaryInverseHoverBackgroundColor;
+			#gradient > .vertical(@buttonPrimaryInverseHoverBackgroundGradientColorTop, @buttonPrimaryInverseHoverBackgroundGradientColorBottom);
+			.box-shadow(@buttonPrimaryInverseHoverShadow);
+			margin-top: @buttonPrimaryInverseHoverMarginTop;
+			margin-bottom: @buttonPrimaryInverseHoverMarginBottom;
+			
+		}
+		
+		&.active,
+		&:active {
+			
+			.override_gradient_vertical();
+			color: @buttonPrimaryInverseActiveTextColor;
+			text-shadow: @buttonPrimaryInverseActiveTextShadow;
+			background-color: @buttonPrimaryInverseActiveBackgroundColor;
+			#gradient > .vertical(@buttonPrimaryInverseActiveBackgroundGradientColorTop, @buttonPrimaryInverseActiveBackgroundGradientColorBottom);
+			.box-shadow(@buttonPrimaryInverseActiveShadow);
+			margin-top: @buttonPrimaryInverseActiveMarginTop;
+			margin-bottom: @buttonPrimaryInverseActiveMarginBottom;
+			
+		}
+		
+		&.disabled,
+		&[disabled] {
+			
+			.override_gradient_vertical();
+			color: @buttonPrimaryInverseDisabledTextColor;
+			text-shadow: @buttonPrimaryInverseDisabledTextShadow;
+			background-color: @buttonPrimaryInverseDisabledBackgroundColor;
+			#gradient > .vertical(@buttonPrimaryInverseDisabledBackgroundGradientColorTop, @buttonPrimaryInverseDisabledBackgroundGradientColorBottom);
+			.box-shadow(@buttonPrimaryInverseDisabledShadow);
+			margin-top: @buttonPrimaryInverseDisabledMarginTop;
+			margin-bottom: @buttonPrimaryInverseDisabledMarginBottom;
+			
+		}
+		
+	}
+	
+}
+
+.button-success {
+	
+	color: @buttonSuccessTextColor;
+	text-shadow: @buttonSuccessTextShadow;
+	background-color: @buttonSuccessBackgroundColor;
+	#gradient > .vertical(@buttonSuccessBackgroundGradientColorTop, @buttonSuccessBackgroundGradientColorBottom);
+	.box-shadow(@buttonSuccessShadow);
+	margin-top: @buttonSuccessMarginTop;
+	margin-bttom: @buttonSuccessMarginBottom;
+	
+	&:hover {
+		
+		color: @buttonSuccessHoverTextColor;
+		text-shadow: @buttonSuccessHoverTextShadow;
+		background-color: @buttonSuccessHoverBackgroundColor;
+		#gradient > .vertical(@buttonSuccessHoverBackgroundGradientColorTop, @buttonSuccessHoverBackgroundGradientColorBottom);
+		.box-shadow(@buttonSuccessHoverShadow);
+		margin-top: @buttonSuccessHoverMarginTop;
+		margin-bttom: @buttonSuccessHoverMarginBottom;
+		
+	}
+	
+	&:active {
+		
+		color: @buttonSuccessActiveTextColor;
+		text-shadow: @buttonSuccessActiveTextShadow;
+		background-color: @buttonSuccessActiveBackgroundColor;
+		#gradient > .vertical(@buttonSuccessActiveBackgroundGradientColorTop, @buttonSuccessActiveBackgroundGradientColorBottom);
+		.box-shadow(@buttonSuccessActiveShadow);
+		margin-top: @buttonSuccessActiveMarginTop;
+		margin-bttom: @buttonSuccessActiveMarginBottom;
+		
+	}
+	
+	&.disabled,
+	&[disabled] {
+		
+		color: @buttonSuccessDisabledTextColor;
+		text-shadow: @buttonSuccessDisabledTextShadow;
+		background-color: @buttonSuccessDisabledBackgroundColor;
+		#gradient > .vertical(@buttonSuccessDisabledBackgroundGradientColorTop, @buttonSuccessDisabledBackgroundGradientColorBottom);
+		.box-shadow(@buttonSuccessDisabledShadow);
+		margin-top: @buttonSuccessDisabledMarginTop;
+		margin-bttom: @buttonSuccessDisabledMarginBottom;
+		.opacity(@buttonSuccessDisabledOpacity);
+		
+	}
+	
+	&.inverse {
+		
+		.override_gradient_vertical();
+		color: @buttonSuccessInverseTextColor;
+		text-shadow: @buttonSuccessInverseTextShadow;
+		background-color: @buttonSuccessInverseBackgroundColor;
+		#gradient > .vertical(@buttonSuccessInverseBackgroundGradientColorTop, @buttonSuccessInverseBackgroundGradientColorBottom);
+		.box-shadow(@buttonSuccessInverseShadow);
+		margin-top: @buttonSuccessInverseMarginTop;
+		margin-bottom: @buttonSuccessInverseMarginBottom;
+		
+		&:hover {
+			
+			.override_gradient_vertical();
+			color: @buttonSuccessInverseHoverTextColor;
+			text-shadow: @buttonSuccessInverseHoverTextShadow;
+			background-color: @buttonSuccessInverseHoverBackgroundColor;
+			#gradient > .vertical(@buttonSuccessInverseHoverBackgroundGradientColorTop, @buttonSuccessInverseHoverBackgroundGradientColorBottom);
+			.box-shadow(@buttonSuccessInverseHoverShadow);
+			margin-top: @buttonSuccessInverseHoverMarginTop;
+			margin-bottom: @buttonSuccessInverseHoverMarginBottom;
+			
+		}
+		
+		&.active,
+		&:active {
+			
+			.override_gradient_vertical();
+			color: @buttonSuccessInverseActiveTextColor;
+			text-shadow: @buttonSuccessInverseActiveTextShadow;
+			background-color: @buttonSuccessInverseActiveBackgroundColor;
+			#gradient > .vertical(@buttonSuccessInverseActiveBackgroundGradientColorTop, @buttonSuccessInverseActiveBackgroundGradientColorBottom);
+			.box-shadow(@buttonSuccessInverseActiveShadow);
+			margin-top: @buttonSuccessInverseActiveMarginTop;
+			margin-bottom: @buttonSuccessInverseActiveMarginBottom;
+			
+		}
+		
+		&.disabled,
+		&[disabled] {
+			
+			.override_gradient_vertical();
+			color: @buttonSuccessInverseDisabledTextColor;
+			text-shadow: @buttonSuccessInverseDisabledTextShadow;
+			background-color: @buttonSuccessInverseDisabledBackgroundColor;
+			#gradient > .vertical(@buttonSuccessInverseDisabledBackgroundGradientColorTop, @buttonSuccessInverseDisabledBackgroundGradientColorBottom);
+			.box-shadow(@buttonSuccessInverseDisabledShadow);
+			margin-top: @buttonSuccessInverseDisabledMarginTop;
+			margin-bottom: @buttonSuccessInverseDisabledMarginBottom;
+			
+		}
+		
+	}
+	
+}
+
+.button-warning {
+	
+	color: @buttonWarningTextColor;
+	text-shadow: @buttonWarningTextShadow;
+	background-color: @buttonWarningBackgroundColor;
+	#gradient > .vertical(@buttonWarningBackgroundGradientColorTop, @buttonWarningBackgroundGradientColorBottom);
+	.box-shadow(@buttonWarningShadow);
+	margin-top: @buttonWarningMarginTop;
+	margin-bttom: @buttonWarningMarginBottom;
+	
+	&:hover {
+		
+		color: @buttonWarningHoverTextColor;
+		text-shadow: @buttonWarningHoverTextShadow;
+		background-color: @buttonWarningHoverBackgroundColor;
+		#gradient > .vertical(@buttonWarningHoverBackgroundGradientColorTop, @buttonWarningHoverBackgroundGradientColorBottom);
+		.box-shadow(@buttonWarningHoverShadow);
+		margin-top: @buttonWarningHoverMarginTop;
+		margin-bttom: @buttonWarningHoverMarginBottom;
+		
+	}
+	
+	&:active {
+		
+		color: @buttonWarningActiveTextColor;
+		text-shadow: @buttonWarningActiveTextShadow;
+		background-color: @buttonWarningActiveBackgroundColor;
+		#gradient > .vertical(@buttonWarningActiveBackgroundGradientColorTop, @buttonWarningActiveBackgroundGradientColorBottom);
+		.box-shadow(@buttonWarningActiveShadow);
+		margin-top: @buttonWarningActiveMarginTop;
+		margin-bttom: @buttonWarningActiveMarginBottom;
+		
+	}
+	
+	&.disabled,
+	&[disabled] {
+		
+		color: @buttonWarningDisabledTextColor;
+		text-shadow: @buttonWarningDisabledTextShadow;
+		background-color: @buttonWarningDisabledBackgroundColor;
+		#gradient > .vertical(@buttonWarningDisabledBackgroundGradientColorTop, @buttonWarningDisabledBackgroundGradientColorBottom);
+		.box-shadow(@buttonWarningDisabledShadow);
+		margin-top: @buttonWarningDisabledMarginTop;
+		margin-bttom: @buttonWarningDisabledMarginBottom;
+		.opacity(@buttonWarningDisabledOpacity);
+		
+	}
+	
+	&.inverse {
+		
+		.override_gradient_vertical();
+		color: @buttonWarningInverseTextColor;
+		text-shadow: @buttonWarningInverseTextShadow;
+		background-color: @buttonWarningInverseBackgroundColor;
+		#gradient > .vertical(@buttonWarningInverseBackgroundGradientColorTop, @buttonWarningInverseBackgroundGradientColorBottom);
+		.box-shadow(@buttonWarningInverseShadow);
+		margin-top: @buttonWarningInverseMarginTop;
+		margin-bottom: @buttonWarningInverseMarginBottom;
+		
+		&:hover {
+			
+			.override_gradient_vertical();
+			color: @buttonWarningInverseHoverTextColor;
+			text-shadow: @buttonWarningInverseHoverTextShadow;
+			background-color: @buttonWarningInverseHoverBackgroundColor;
+			#gradient > .vertical(@buttonWarningInverseHoverBackgroundGradientColorTop, @buttonWarningInverseHoverBackgroundGradientColorBottom);
+			.box-shadow(@buttonWarningInverseHoverShadow);
+			margin-top: @buttonWarningInverseHoverMarginTop;
+			margin-bottom: @buttonWarningInverseHoverMarginBottom;
+			
+		}
+		
+		&.active,
+		&:active {
+			
+			.override_gradient_vertical();
+			color: @buttonWarningInverseActiveTextColor;
+			text-shadow: @buttonWarningInverseActiveTextShadow;
+			background-color: @buttonWarningInverseActiveBackgroundColor;
+			#gradient > .vertical(@buttonWarningInverseActiveBackgroundGradientColorTop, @buttonWarningInverseActiveBackgroundGradientColorBottom);
+			.box-shadow(@buttonWarningInverseActiveShadow);
+			margin-top: @buttonWarningInverseActiveMarginTop;
+			margin-bottom: @buttonWarningInverseActiveMarginBottom;
+			
+		}
+		
+		&.disabled,
+		&[disabled] {
+			
+			.override_gradient_vertical();
+			color: @buttonWarningInverseDisabledTextColor;
+			text-shadow: @buttonWarningInverseDisabledTextShadow;
+			background-color: @buttonWarningInverseDisabledBackgroundColor;
+			#gradient > .vertical(@buttonWarningInverseDisabledBackgroundGradientColorTop, @buttonWarningInverseDisabledBackgroundGradientColorBottom);
+			.box-shadow(@buttonWarningInverseDisabledShadow);
+			margin-top: @buttonWarningInverseDisabledMarginTop;
+			margin-bottom: @buttonWarningInverseDisabledMarginBottom;
+			
+		}
+		
+	}
+	
+}
+
+.button-danger {
+	
+	color: @buttonDangerTextColor;
+	text-shadow: @buttonDangerTextShadow;
+	background-color: @buttonDangerBackgroundColor;
+	#gradient > .vertical(@buttonDangerBackgroundGradientColorTop, @buttonDangerBackgroundGradientColorBottom);
+	.box-shadow(@buttonDangerShadow);
+	margin-top: @buttonDangerMarginTop;
+	margin-bttom: @buttonDangerMarginBottom;
+	
+	&:hover {
+		
+		color: @buttonDangerHoverTextColor;
+		text-shadow: @buttonDangerHoverTextShadow;
+		background-color: @buttonDangerHoverBackgroundColor;
+		#gradient > .vertical(@buttonDangerHoverBackgroundGradientColorTop, @buttonDangerHoverBackgroundGradientColorBottom);
+		.box-shadow(@buttonDangerHoverShadow);
+		margin-top: @buttonDangerHoverMarginTop;
+		margin-bttom: @buttonDangerHoverMarginBottom;
+		
+	}
+	
+	&:active {
+		
+		color: @buttonDangerActiveTextColor;
+		text-shadow: @buttonDangerActiveTextShadow;
+		background-color: @buttonDangerActiveBackgroundColor;
+		#gradient > .vertical(@buttonDangerActiveBackgroundGradientColorTop, @buttonDangerActiveBackgroundGradientColorBottom);
+		.box-shadow(@buttonDangerActiveShadow);
+		margin-top: @buttonDangerActiveMarginTop;
+		margin-bttom: @buttonDangerActiveMarginBottom;
+		
+	}
+	
+	&.disabled,
+	&[disabled] {
+		
+		color: @buttonDangerDisabledTextColor;
+		text-shadow: @buttonDangerDisabledTextShadow;
+		background-color: @buttonDangerDisabledBackgroundColor;
+		#gradient > .vertical(@buttonDangerDisabledBackgroundGradientColorTop, @buttonDangerDisabledBackgroundGradientColorBottom);
+		.box-shadow(@buttonDangerDisabledShadow);
+		margin-top: @buttonDangerDisabledMarginTop;
+		margin-bttom: @buttonDangerDisabledMarginBottom;
+		.opacity(@buttonDangerDisabledOpacity);
+		
+	}
+	
+	&.inverse {
+		
+		.override_gradient_vertical();
+		color: @buttonDangerInverseTextColor;
+		text-shadow: @buttonDangerInverseTextShadow;
+		background-color: @buttonDangerInverseBackgroundColor;
+		#gradient > .vertical(@buttonDangerInverseBackgroundGradientColorTop, @buttonDangerInverseBackgroundGradientColorBottom);
+		.box-shadow(@buttonDangerInverseShadow);
+		margin-top: @buttonDangerInverseMarginTop;
+		margin-bottom: @buttonDangerInverseMarginBottom;
+		
+		&:hover {
+			
+			.override_gradient_vertical();
+			color: @buttonDangerInverseHoverTextColor;
+			text-shadow: @buttonDangerInverseHoverTextShadow;
+			background-color: @buttonDangerInverseHoverBackgroundColor;
+			#gradient > .vertical(@buttonDangerInverseHoverBackgroundGradientColorTop, @buttonDangerInverseHoverBackgroundGradientColorBottom);
+			.box-shadow(@buttonDangerInverseHoverShadow);
+			margin-top: @buttonDangerInverseHoverMarginTop;
+			margin-bottom: @buttonDangerInverseHoverMarginBottom;
+			
+		}
+		
+		&.active,
+		&:active {
+			
+			.override_gradient_vertical();
+			color: @buttonDangerInverseActiveTextColor;
+			text-shadow: @buttonDangerInverseActiveTextShadow;
+			background-color: @buttonDangerInverseActiveBackgroundColor;
+			#gradient > .vertical(@buttonDangerInverseActiveBackgroundGradientColorTop, @buttonDangerInverseActiveBackgroundGradientColorBottom);
+			.box-shadow(@buttonDangerInverseActiveShadow);
+			margin-top: @buttonDangerInverseActiveMarginTop;
+			margin-bottom: @buttonDangerInverseActiveMarginBottom;
+			
+		}
+		
+		&.disabled,
+		&[disabled] {
+			
+			.override_gradient_vertical();
+			color: @buttonDangerInverseDisabledTextColor;
+			text-shadow: @buttonDangerInverseDisabledTextShadow;
+			background-color: @buttonDangerInverseDisabledBackgroundColor;
+			#gradient > .vertical(@buttonDangerInverseDisabledBackgroundGradientColorTop, @buttonDangerInverseDisabledBackgroundGradientColorBottom);
+			.box-shadow(@buttonDangerInverseDisabledShadow);
+			margin-top: @buttonDangerInverseDisabledMarginTop;
+			margin-bottom: @buttonDangerInverseDisabledMarginBottom;
+			
+		}
+		
+	}
+	
+}
+
+.button-link {
+	
+	color: @linkColor;
+	text-shadow: none;
+	background: none;
+	.box-shadow(none);
+	
+	&:hover {
+	
+		color: @linkColorHover;
+		text-shadow: none;
+		background: none;
+		.box-shadow(none);
+		
+	}
+	
+	&:active {
+	
+		color: @linkColor;
+		text-shadow: none;
+		background: none;
+		.box-shadow(none);
+		
+	}
+	
+	&.disabled,
+	&[disabled] {
+		
+		color: @socialist_gray;
+		text-shadow: none;
+		background: none;
+		.box-shadow(none);
+		.opacity(@buttonDisabledOpacity);
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Cross-Browser Compatability                                               */
+/*                                                                           */
+/* ========================================================================= */
+
+button.button,
+input[type="submit"].button {
+	
+	// Firefox 3.6 only I believe
+	
+	&::-moz-focus-inner {
+		
+		padding: 0;
+		border: 0;
+		
+	}
+				
+	// IE7 has some default padding on button controls
+	
+	*padding-top: 2px;
+	*padding-bottom: 2px;
+	
+	&.button-large {
+		
+		*padding-top: 7px;
+		*padding-bottom: 7px;
+		
+	}
+	
+	&.button-small {
+		
+		*padding-top: 3px;
+		*padding-bottom: 3px;
+		
+	}
+	
+	&.button-mini {
+		
+		*padding-top: 1px;
+		*padding-bottom: 1px;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+	.button [class^="icon-"],
+	.button [class*=" icon-"] {
+			
+		margin-top: -3px;
+				
+		&.icon-24 {
+			
+			margin-top: -5px;
+			
+		}
+			
+	}
+	
+	.button.button-small [class^="icon-"] {
+		
+		margin-top: -3px;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

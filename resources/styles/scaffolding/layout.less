@@ -1,0 +1,491 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* scaffolding/layout.less                                                   */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Fixed Grid                                                                */
+/*                                                                           */
+/* ========================================================================= */
+
+#grid > .core(@gridColumnWidth, @gridGutterWidth);
+
+.container {
+	
+	position: relative;
+	.container-fixed();
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Fluid Grid                                                                */
+/*                                                                           */
+/* ========================================================================= */
+
+#grid > .fluid(@fluidGridColumnWidth, @fluidGridGutterWidth);
+
+.container-fluid {
+	
+	position: relative;
+	.clearfix();
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Container Pod                                                             */
+/*                                                                           */
+/* ========================================================================= */
+	
+.container-pod {
+	
+	padding-top: @primaryMargin;
+	padding-bottom: @primaryMargin;
+	
+	&.container-pod-short {
+		
+		padding-top: @primaryMarginShort;
+		padding-bottom: @primaryMarginShort;
+		
+	}
+	
+	&.container-pod-tall {
+		
+		padding-top: @primaryMarginTall;
+		padding-bottom: @primaryMarginTall;
+		
+	}
+	
+	&.container-pod-divider {
+	
+		border-top: 1px solid @borderColor;
+		
+	}
+	
+	&.container-pod-fill {
+		
+		padding-top: 0px;
+		padding-bottom: 0px;
+		height: 100%;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Row                                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+.row-pod {
+	
+	padding-bottom: @primaryMargin;
+	
+	&.short {
+		
+		padding-bottom: @primaryMarginShort;
+		
+	}
+	
+	&.tall {
+		
+		padding-bottom: @primaryMarginTall;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Fixed Grid                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#grid > .core(@gridColumnWidthWidescreen, @gridGutterWidthWidescreen);
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Fluid Grid                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#grid > .fluid(@fluidGridColumnWidthWidescreen, @fluidGridGutterWidthWidescreen);
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Container Pod                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.container-pod {
+		
+		padding-top: @primaryMarginWidescreen;
+		padding-bottom: @primaryMarginWidescreen;
+		
+		&.container-pod-short {
+			
+			padding-top: @primaryMarginShortWidescreen;
+			padding-bottom: @primaryMarginShortWidescreen;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primaryMarginTallWidescreen;
+			padding-bottom: @primaryMarginTallWidescreen;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Row                                                                       */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.row-pod {
+		
+		padding-bottom: @primaryMarginWidescreen;
+		
+		&.short {
+			
+			padding-bottom: @primaryMarginShortWidescreen;
+			
+		}
+		
+		&.tall {
+			
+			padding-bottom: @primaryMarginTallWidescreen;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Fixed Grid                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#grid > .core(@gridColumnWidthTablet, @gridGutterWidthTablet);
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Fluid Grid                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#grid > .fluid(@fluidGridColumnWidthTablet, @fluidGridGutterWidthTablet);
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Container Pod                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.container-pod {
+		
+		padding-top: @primaryMarginTablet;
+		padding-bottom: @primaryMarginTablet;
+		
+		&.container-pod-short {
+			
+			padding-top: @primaryMarginShortTablet;
+			padding-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primaryMarginTallTablet;
+			padding-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Row                                                                       */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.row-pod {
+		
+		padding-bottom: @primaryMarginTablet;
+		
+		&.short {
+			
+			padding-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.tall {
+			
+			padding-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+	}
+	
+}
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Fixed Grid                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.container {
+		
+		width: auto;
+		padding-left: @gridGutterWidthMobile;
+		padding-right: @gridGutterWidthMobile;
+		
+	}
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Fluid Grid                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.container-fluid {
+		
+		padding-left: @gridGutterWidthMobile;
+		padding-right: @gridGutterWidthMobile;
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Container Pod                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.container-pod {
+		
+		padding-top: @primaryMarginTablet;
+		padding-bottom: @primaryMarginTablet;
+		
+		&.container-pod-short {
+			
+			padding-top: @primaryMarginShortTablet;
+			padding-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primaryMarginTallTablet;
+			padding-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Row                                                                       */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.spill {
+		
+		margin-top: @primaryMarginTablet;
+		
+	}
+
+	.row-pod {
+		
+		padding-bottom: @primaryMarginTablet;
+		
+		&.short {
+			
+			padding-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.tall {
+			
+			padding-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+	}
+	
+	// Undo negative margin on rows and thumbnails
+	
+	.row,
+	.thumbnails {
+		
+		margin-left: 0;
+		
+	}
+	
+	// Make all grid-sized elements block level again
+	
+	[class*="span"],
+	.row-fluid [class*="span"] {
+		
+		float: none !important;
+		display: block !important;
+		width: auto !important;
+		margin-left: 0 !important;
+		
+	}
+	
+	// Fluid rows
+	
+	.row-fluid {
+		
+		width: 100%;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Container Pod                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.container-pod {
+		
+		padding-top: @primaryMarginMobile;
+		padding-bottom: @primaryMarginMobile;
+		
+		&.container-pod-short {
+			
+			padding-top: @primaryMarginShortMobile;
+			padding-bottom: @primaryMarginShortMobile;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primaryMarginTallMobile;
+			padding-bottom: @primaryMarginTallMobile;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Row                                                                       */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.spill {
+		
+		margin-top: @primaryMarginMobile;
+		
+	}
+
+	.row-pod {
+		
+		padding-bottom: @primaryMarginMobile;
+		
+		&.short {
+			
+			padding-bottom: @primaryMarginShortMobile;
+			
+		}
+		
+		&.tall {
+			
+			padding-bottom: @primaryMarginTallMobile;
+			
+		}
+		
+	}
+
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

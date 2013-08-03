@@ -1,0 +1,168 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* layout/stage.less                                                         */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Stage                                                                     */
+/*                                                                           */
+/* ========================================================================= */
+
+#stage {
+	
+	position: relative;
+	
+	.stage-pod {
+		
+		position: relative;
+
+		&.stage-pod-divider {
+
+			border-top: 1px solid @borderColor;
+
+		}
+		
+		&.stage-pod-light {
+			
+			background: @socialist_gray_lighten_90;
+			
+		}
+		
+		&.stage-pod-dark {
+			
+			background: @socialist_gray_darken_50;
+			
+		}
+		
+		&.stage-pod-midnight {
+			
+			background: @socialist_gray_darken_90;
+			
+		}
+		
+		&.stage-pod-color-blue {
+
+			background: @socialist_blue;
+
+		}
+		
+		&.stage-pod-color-red {
+
+			background: @socialist_red;
+
+		}
+		
+	}
+		
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+		/* ========================================================================= */
+	/*                                                                           */
+	/* Stage                                                                     */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#stage {
+		
+		.stage-pod {
+			
+			&.stage-pod-color {
+				
+				&.stage-pod-divider {
+					
+					&.patterned {
+						
+						&:before {
+							
+							background-image: url(/resources/images/layout/stage-pod-color-divider-patterned@2x.png);
+													
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+			&.stage-pod-divider {
+				
+				&.patterned {
+					
+					&:before {
+						
+						background-image: url(/resources/images/layout/stage-pod-divider-patterned@2x.png);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

@@ -1,0 +1,218 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* components/share-toolbar.less                                             */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+.share-toolbar {
+	
+	list-style: none;
+	.clearfix();
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-bottom: @primaryMargin;
+	
+	&.short {
+		
+		margin-bottom: @primaryMarginShort;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @primaryMarginTall;
+		
+	}
+	
+	.share-toolbar-item {
+		
+		display: block;
+		vertical-align: top;
+		float: left;
+		height: 20px;
+		line-height: 20px;
+		margin: 10px 0px 0px 10px;
+		
+		a {
+			
+			vertical-align: top;
+			
+		}
+		
+		&.facebook {
+				
+		}
+		
+		&.twitter {
+			
+			iframe {
+				
+				width:78px !important;
+				
+			}
+			
+		}
+		
+		&.google-plus {
+			
+			> div {
+				
+				width: 58px !important;
+				
+			}
+				
+		}
+		
+		&.linkedin {
+		
+			.IN-widget {
+				
+				height: 20px;
+				line-height: 20px !important;
+				height: 20px !important;
+				vertical-align: top !important;
+				
+				> span {
+					
+					position: relative;
+					top: -8px;
+					
+					+ span {
+						
+						top: 1px;
+						
+					}
+					
+				}
+				
+			}
+				
+		}
+		
+		
+		&:last-child {
+			
+			margin-right: 0px;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+	.share-toolbar {
+		
+		margin-bottom: @primaryMarginWidescreen;
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortWidescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallWidescreen;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+	.share-toolbar {
+		
+		margin-bottom: @primaryMarginTablet;
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+	.share-toolbar {
+		
+		margin-bottom: @primaryMarginMobile;
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortMobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallMobile;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

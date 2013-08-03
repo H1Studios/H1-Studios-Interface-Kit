@@ -1,0 +1,258 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* components/pagination.less                                                */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+.pagination {
+	
+	margin: 0px 0px 0px 0px;
+	
+	ul {
+		
+		display: inline-block;
+		.ie7-inline-block();
+		margin-left: 0;
+		margin-bottom: 0;
+		.border-radius(@paginationBorderRadius);
+		
+		> li {
+			
+			display: inline; // Remove list-style and block-level defaults
+			
+			> a,
+			> span {
+				
+				margin-right: @paginationLinkShadowMarginOffset;
+				float: left; // Collapse white-space
+				padding: ((@paginationLinkHeight - @paginationLinkFontLineHeight) / 2) @paginationLinkHorizontalPadding;
+				line-height: @paginationLinkFontLineHeight;
+				height: @paginationLinkFontLineHeight;
+				text-decoration: none;
+				font-family: @paginationLinkFontFamily;
+				font-size: @paginationLinkFontSize;
+				color: @paginationLinkTextColor;
+				background-color: @paginationLinkBackground;
+				border: none;
+				border: 0px;
+				.box-shadow(@paginationLinkShadow);
+				position: relative;
+				
+			}
+			
+			
+			> a:hover,
+			> a:focus {
+				
+				color: @paginationLinkHoverTextColor;
+				background-color: @paginationLinkHoverBackground;
+				.box-shadow(@paginationLinkHoverShadow);
+				
+			}
+			
+			&.active > a,
+			&.active > span {
+				
+				color: @paginationLinkActiveTextColor;
+				background-color: @paginationLinkActiveBackground;
+				cursor: default;
+				.box-shadow(@paginationLinkActiveShadow);
+				z-index: 10000;
+				
+			}			
+			
+			&.disabled > span,
+			&.disabled > a,
+			&.disabled > a:hover,
+			&.disabled > a:focus {
+				
+				color: @socialist_gray;
+				background-color: transparent;
+				cursor: default;
+				
+			}
+			
+			&:first-child {
+				
+				> a,
+				> span {
+					
+					border-left-width: 1px;
+					.border-left-radius(@paginationBorderRadius);
+					
+				}
+				
+			}
+			
+			&:last-child {
+				
+				> a,
+				> span {
+					
+					margin-right: 0px;
+					.border-right-radius(@paginationBorderRadius);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	&.pagination-large {
+		
+		ul > li {
+			
+			> a,
+			> span {
+				
+				padding: ((@paginationLinkHeightLarge - @paginationLinkFontLineHeightLarge) / 2) @paginationLinkHorizontalPaddingLarge;
+				line-height: @paginationLinkFontLineHeightLarge;
+				height: @paginationLinkFontLineHeightLarge;
+				font-size: @paginationLinkFontSizeLarge;
+				
+			}
+			
+			&:first-child {
+				
+				> a,
+				> span {
+					
+					.border-left-radius(@paginationBorderRadius);
+					
+				}
+				
+			}
+		
+			&:last-child {
+				
+				> a,
+				> span {
+					
+					.border-right-radius(@paginationBorderRadius);
+					
+				}
+			
+			}
+			
+		}
+		
+	}
+	
+	&.pagination-small {
+		
+		ul > li {
+			
+			> a,
+			> span {
+				
+				padding: ((@paginationLinkHeightSmall - @paginationLinkFontLineHeightSmall) / 2) @paginationLinkHorizontalPaddingSmall;
+				line-height: @paginationLinkFontLineHeightSmall;
+				height: @paginationLinkFontLineHeightSmall;
+				font-size: @paginationLinkFontSizeSmall;
+				
+			}
+			
+			&:first-child {
+				
+				> a,
+				> span {
+					
+					.border-left-radius(@paginationBorderRadius);
+					
+				}
+				
+			}
+		
+			&:last-child {
+				
+				> a,
+				> span {
+					
+					.border-right-radius(@paginationBorderRadius);
+					
+				}
+			
+			}
+			
+		}
+		
+	}
+	
+	&.pagination-centered {
+		
+		text-align: center;
+		
+	}
+	
+	&.pagination-right {
+		
+		text-align: right;
+		
+	}
+
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

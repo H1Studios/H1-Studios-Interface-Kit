@@ -1,0 +1,346 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* components/media.less                                                     */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Image                                                                     */
+/*                                                                           */
+/* ========================================================================= */
+
+img {
+	
+	margin-bottom: @primaryMargin;
+		
+	&.responsive {
+		
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: @bodyTextMargin;
+		display: block;
+		width: 100% !important;
+		height: auto !important;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @primaryMarginShort;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @primaryMarginTall;
+		
+	}
+	
+	&.img-rounded {
+		
+		.border-radius(6px);
+		
+	}
+	
+	&.img-circle {
+		
+		.border-radius(1000px);
+		
+	}
+	
+	&.img-polaroid {
+		
+		padding: 4px;
+		background-color: @white;
+		@shadow:
+			0px 0px 0px 1px rgba(0, 0, 0, 0.075),
+			0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+		.box-shadow(@shadow);
+		.border-radius(3px);
+		
+	}
+	
+}
+
+a:hover {
+	
+	img {
+		
+		&.img-polaroid {
+			
+			@shadow:
+				0px 0px 0px 1px hsla(hue(@socialist_blue), saturation(@socialist_blue), lightness(@socialist_blue), 0.75),
+				0px 1px 5px 0px hsla(hue(@socialist_blue), saturation(@socialist_blue), lightness(@socialist_blue), 0.5);
+			.box-shadow(@shadow);
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Image Wrapper                                                             */
+/*                                                                           */
+/* ========================================================================= */
+
+.image-wrapper {
+	
+	display: block;
+	padding: 5px;
+	margin-bottom: @primaryMargin;
+	.border-radius(5px);
+	line-height: 1;
+	position: relative;
+	background: @white;
+	vertical-align: top;
+	@shadow:
+		0px 0px 0px 1px rgba(0, 0, 0, 0.1),
+		0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+	.box-shadow(@shadow);
+	
+	img {
+		
+		padding: 0;
+		margin: 0;
+		position: relative;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @primaryMarginShort;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @primaryMarginTall;
+		
+	}
+	
+	&.rounded {
+		
+		overflow: hidden;	
+		.border-radius(10px);
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Image                                                                     */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	img {
+		
+		margin-bottom: @primaryMarginWidescreen;
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortWidescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallWidescreen;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Image Wrapper                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.image-wrapper {
+		
+		margin-bottom: @primaryMarginWidescreen;
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortWidescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallWidescreen;
+			
+		}
+		
+	}
+
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Image                                                                     */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	img {
+		
+		margin-bottom: @primaryMarginTablet;
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Image Wrapper                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.image-wrapper {
+		
+		margin-bottom: @primaryMarginTablet;
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Image                                                                     */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	img {
+		
+		margin-bottom: @primaryMarginMobile;
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortMobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallMobile;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Image Wrapper                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.image-wrapper {
+		
+		margin-bottom: @primaryMarginMobile;
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortMobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallMobile;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

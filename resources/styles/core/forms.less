@@ -1,0 +1,2475 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* core/forms.less                                                           */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* General Form Styling                                                      */
+/*                                                                           */
+/* ========================================================================= */
+
+form {
+	
+	margin: 0px 0px @primaryMargin 0px;
+	.clearfix();
+	
+	&.tall {
+		
+		margin-bottom: @primaryMarginTall;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @primaryMarginShort;
+		
+	}
+	
+}
+
+fieldset {
+	
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	
+}
+
+legend {
+	
+	display: block;
+	width: 100%;
+	padding: 0px 0px @bodyTextMargin 0px;
+	margin: 0px 0px @bodyTextMargin 0px;
+	font-size: @headingH4TextFontSize;
+	line-height: @headingH4TextLineHeight;
+	color: @headingH4TextColor;
+	text-transform: uppercase;
+	border: none;
+	border-bottom: 1px solid @socialist_gray;
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Labels                                                                    */
+/*                                                                           */
+/* ========================================================================= */
+
+label {
+	
+	display: block;
+	margin-bottom: @formLabelMargin;
+	font-family: @formLabelTextFontFamily;
+	font-size: @formLabelTextFontSize;
+	font-weight: @formLabelTextFontWeight;
+	font-style: @formLabelTextFontStyle;
+	line-height: @formLabelTextLineHeight;
+	color: @formLabelTextColor;
+	text-transform: @formLabelTextTransform;
+	
+	&.error {
+		
+		margin: (@bodyTextMargin / 4) 0px 0px 0px;
+		font-style: italic;
+		font-size: @formLabelTextFontSize - 1;
+		
+	}
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Inputs                                                                    */
+/*                                                                           */
+/* ========================================================================= */
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input,
+textarea {
+	
+	.input-block-level();
+	-webkit-appearance: none;
+	border: none;
+	width: 100%;
+	height: @inputHeight;
+	.border-radius(@inputBorderRadius);
+	padding: ((@inputHeight - @inputTextLineHeight) / 2) @inputHorizontalPadding ((@inputHeight - @inputTextLineHeight) / 2) @inputHorizontalPadding;
+	font-family: @inputTextFontFamily;
+	font-size: @inputTextFontSize;
+	font-weight: @inputTextFontWeight;
+	font-style: @inputTextFontStyle;
+	line-height: @inputTextLineHeight;
+	text-transform: @inputTextTransform;
+	color: @inputTextColor;
+	text-shadow: @inputTextShadow;
+	.placeholder(@inputPlaceholderTextColor);
+	background-color: @inputBackgroundColor;
+	#gradient > .vertical(@inputBackgroundGradientColorTop, @inputBackgroundGradientColorBottom);
+	.box-shadow(@inputShadow);
+	margin-bottom: @inputMargin;
+	@transition:
+		border linear .1s,
+		box-shadow linear .1s,
+		background linear .1s,
+		width linear .1s;
+	.transition(@transition);
+	
+	+ .help-block {
+		
+		margin-top: -@inputMargin;
+		
+	}
+	
+	&:focus,
+	&.focused {
+		
+		outline: 0;
+		outline: thin dotted \9;
+		color: @inputFocusTextColor;
+		text-shadow: @inputFocusTextShadow;
+		.placeholder(@inputFocusPlaceholderTextColor);
+		background-color: @inputFocusBackgroundColor;
+		#gradient > .vertical(@inputFocusBackgroundGradientColorTop, @inputFocusBackgroundGradientColorBottom);
+		.box-shadow(@inputFocusShadow);
+		
+	}
+	
+	&[disabled],
+	&[readonly] {
+		
+		color: @inputDisabledTextColor;
+		text-shadow: @inputDisabledTextShadow;
+		.placeholder(@inputDisabledPlaceholderTextColor);
+		background-color: @inputDisabledBackgroundColor;
+		#gradient > .vertical(@inputDisabledBackgroundGradientColorTop, @inputDisabledBackgroundGradientColorBottom);
+		.box-shadow(@inputDisabledShadow);
+		.opacity(@inputDisabledOpacity);
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @inputMarginTall;
+		
+		+ .help-block {
+			
+			margin-top: -@inputMarginTall;
+			
+		}
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @inputMarginShort;
+		
+		+ .help-block {
+			
+			margin-top: -@inputMarginShort;
+			
+		}
+		
+		
+	}
+	
+	&.input-large {
+		
+		padding-top: (@inputHeightLarge - @inputTextLineHeight) / 2;
+		padding-bottom: (@inputHeightLarge - @inputTextLineHeight) / 2;
+		height: @inputHeightLarge;
+		font-size: @inputTextFontSizeLarge;
+		line-height: @inputTextLineHeightLarge;
+		
+	}
+	
+}
+
+textarea {
+	
+	height: auto;
+	
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	
+	margin: ((@bodyTextLineHeight - 7) / 2) 0px ((@bodyTextLineHeight - 7) / 2) 0px;
+	*margin-top: 0px; // IE7 Fix
+	line-height: normal;
+	cursor: pointer;
+	
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+	
+	width: auto;
+	
+}
+
+.uneditable-textarea {
+	
+	width: auto;
+	height: auto;
+	
+}
+
+input[type="file"] {
+	
+	height: @inputHeight;
+	*margin-top: 4px;
+	line-height: @inputHeight;
+	
+}
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Radio Buttons & Checkboxes                                                */
+/*                                                                           */
+/* ========================================================================= */
+
+.radio,
+.checkbox {
+	
+	position: relative;
+	padding: 0px 0px 0px 20px;
+	min-height: @bodyTextLineHeight;
+	line-height: @bodyTextLineHeight;
+	margin-bottom: @inputMargin;
+	
+	input[type="radio"],
+	input[type="checkbox"] {
+		
+		position: absolute;
+		margin: 0px 0px 0px -20px;
+		top: (@bodyTextLineHeight / 2) - 6;
+		width: auto !important;
+		
+	}
+	
+	&.input-height {
+		
+		min-height: @inputHeight;
+		line-height: @inputHeight;
+		
+		input[type="radio"],
+		input[type="checkbox"] {
+			
+			top: (@inputHeight / 2) - 6;
+			
+		}
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @inputMarginTall;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @inputMarginShort;
+		
+	}
+	
+	&.inline {
+		
+		display: inline-block;
+		margin-bottom: 0;
+		vertical-align: middle;
+		
+		+ .radio.inline,
+		+ .checkbox.inline {
+			
+			margin-left: @formLabelMargin;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Select Boxes                                                              */
+/*                                                                           */
+/* ========================================================================= */
+
+// Default Select Box
+
+select {
+	
+	display: inline-block;
+	height: @inputHeight;
+	width: 100%;
+	padding: 0px;
+	margin-bottom: @inputMargin;
+	font-family: @buttonTextFontFamily;
+	font-size: @buttonTextFontSize;
+	font-weight: @buttonTextFontWeight;
+	line-height: @inputHeight;
+	color: @formLabelTextColor;
+	.border-radius(@inputBorderRadius);
+	vertical-align: middle;
+	border: 1px solid @socialist_gray;
+	background: @inputBackgroundColor;
+	position: relative;
+	padding-top: 6px;
+	
+	&.tall {
+		
+		margin-bottom: @inputMarginTall;
+		
+		+ .help-block {
+			
+			margin-top: -@inputMarginTall;
+			
+		}
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @inputMarginShort;
+		
+		+ .help-block {
+			
+			margin-top: -@inputMarginShort;
+			
+		}
+		
+		
+	}
+	
+	&.large {
+		
+		padding-top: (@inputHeightLarge - @inputTextLineHeight) / 2;
+		padding-bottom: (@inputHeightLarge - @inputTextLineHeight) / 2;
+		height: @inputHeightLarge;
+		font-size: @inputTextFontSizeLarge;
+		line-height: @inputTextLineHeightLarge;
+		
+	}
+	
+}
+
+select[multiple],
+select[size] {
+	
+	height: auto;
+	
+}
+
+.select-wrapper {
+	
+	display: block;
+	width: 100%;
+	position: relative;
+	.clearfix();
+	margin-bottom: @inputMargin;
+	
+	.select-wrapper-inner {
+		
+		display: block;
+		width: 100%;
+		padding: 0px;
+		height: @inputHeight;
+		position: relative;
+		background-color: @buttonBackgroundColor;
+		#gradient > .vertical(@buttonBackgroundGradientColorTop, @buttonBackgroundGradientColorBottom);
+		border: none;
+		.border-radius(@buttonBorderRadius);
+		.box-shadow(@buttonShadow);
+		.transition(background-position .1s linear);
+		
+		&:after {
+			
+			content: '';
+			display: block;
+			position: absolute;
+			top: (@inputHeight / 2) - (6 / 2);
+			right: @buttonHorizontalPadding;
+			width: 0;
+			height: 0;
+			border-color: transparent;
+			border-style: solid;
+			border-width: 6px 5px 0;
+			border-top-color: @buttonTextColor;
+			
+		}
+		
+	}
+	
+	select {
+		
+		-webkit-appearance: none;
+		width: 100%;
+		height: @inputHeight;
+		padding: 0px (@buttonHorizontalPadding + 10 + (@buttonHorizontalPadding / 2)) 0px @buttonHorizontalPadding;
+		margin: 0px;
+		border: none;
+		*border: 0;
+		background: none ;
+		.box-shadow(none);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		.clearfix();
+		font-family: @buttonTextFontFamily;
+		font-size: @buttonTextFontSize;
+		font-weight: @buttonTextFontWeight;
+		font-style: @buttonTextFontStyle;
+		line-height: @buttonTextLineHeight;
+		color: @buttonTextColor;
+		text-transform: @buttonTextTransform;
+		text-shadow: @buttonTextShadow;
+		text-rendering: optimizelegibility;
+		text-align: center;
+		.ie7-restore-left-whitespace();
+		
+		&:focus {
+			
+			outline: 0;
+			
+		}
+		
+	}
+	
+	&:hover {
+		
+		.select-wrapper-inner {
+			
+			text-decoration: none;
+			background-color: @buttonHoverBackgroundColor;
+			#gradient > .vertical(@buttonHoverBackgroundGradientColorTop, @buttonHoverBackgroundGradientColorBottom);
+			.box-shadow(@buttonHoverShadow);
+			
+			&:after {
+				
+				border-top-color: @buttonHoverTextColor;
+				
+			}
+		
+		}
+		
+		select {
+			
+			cursor: pointer;
+			color: @buttonHoverTextColor;
+			text-shadow: @buttonHoverTextShadow;
+			
+		}
+		
+	}
+	
+	&:active {
+		
+		.select-wrapper-inner {
+			
+			outline: 0;
+			#gradient > .vertical(@buttonActiveBackgroundGradientColorTop, @buttonActiveBackgroundGradientColorBottom);
+			.box-shadow(@buttonActiveShadow);
+		
+			&:after {
+				
+				border-top-color: @buttonActiveTextColor;
+				
+			}
+			
+		}
+		
+		select {
+			
+			outline: 0;
+			color: @buttonHoverTextColor;
+			text-shadow: @buttonHoverTextShadow;
+			
+		}
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @inputMarginTall;
+		
+		+ .help-block {
+			
+			margin-top: -@inputMarginTall;
+			
+		}
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @inputMarginShort;
+		
+		+ .help-block {
+			
+			margin-top: -@inputMarginShort;
+			
+		}
+		
+		
+	}
+	
+	&.large {
+		
+		.select-wrapper-inner {
+			
+			height: @inputHeightLarge;
+			
+			&:after {
+				
+				top: (@inputHeightLarge / 2) - (6 / 2);
+				
+			}
+			
+		}
+		
+		select {
+			
+			height: @inputHeightLarge;
+			padding: 0px (@buttonHorizontalPaddingLarge + 10 + (@buttonHorizontalPaddingLarge / 2)) 0px @buttonHorizontalPaddingLarge;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Input Groups                                                              */
+/*                                                                           */
+/* ========================================================================= */
+
+.input-group {
+	
+	position: relative;
+	margin-bottom: @inputMargin;
+	.clearfix();
+	
+	input,
+	select,
+	.uneditable-input {
+		
+		position: relative;
+		z-index: 1;
+		margin-bottom: 0px;
+		
+	}
+	
+	.uneditable-input {
+		
+	}
+	
+	.add-on {
+		
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		display: block;
+		width: auto;
+		height: @inputHeight;
+		min-width: 16px;
+		margin: 0px;
+		padding: 0px @inputHorizontalPadding 0px @inputHorizontalPadding;
+		background-color: @buttonBackgroundColor;
+		#gradient > .vertical(@buttonBackgroundGradientColorTop, @buttonBackgroundGradientColorBottom);
+		text-align: center;
+		color: @buttonTextColor;
+		font-family: @buttonTextFontFamily;
+		font-size: @buttonTextFontSize;
+		font-weight: @buttonTextFontWeight;
+		font-style: @buttonTextFontStyle;
+		text-transform: @buttonTextTransform;
+		text-shadow: @buttonTextShadow;
+		line-height: @inputHeight;
+		.box-shadow(@inputGroupButtonShadow);
+		.border-radius(@inputBorderRadius 0px 0px @inputBorderRadius);
+		vertical-align: top;
+		@transition:
+			border linear .2s,
+			box-shadow linear .2s,
+			background linear .1s,
+			width linear .1s;
+		.transition(@transition);
+		z-index: 2;
+		
+		&.knockout {
+			
+			background: none;
+			.box-shadow(none);
+			border: none;
+			
+			&:before {
+				
+				display: none;
+				
+			}
+			
+		}
+		
+		&.add-on-prepend {
+			
+			top: 0px;
+			left: 0px;
+			right: auto;
+			
+		}
+		
+		&.add-on-append {
+			
+			top: 0px;
+			left: auto;
+			right: 0px;
+			.border-radius(0px @inputBorderRadius @inputBorderRadius 0px);
+			
+		}
+		
+	}
+	
+	.button {
+		
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		.border-radius(@inputBorderRadius 0px 0px @inputBorderRadius);
+		z-index: 2;
+		.box-shadow(@inputGroupButtonShadow);
+		
+		&.add-on-prepend {
+			
+			top: 0px;
+			left: 0px;
+			right: auto;
+			
+		}
+		
+		&.add-on-append {
+			
+			top: 0px;
+			left: auto;
+			right: 0px;
+			.border-radius(0px @inputBorderRadius @inputBorderRadius 0px);
+			
+		}
+		
+		&:hover {
+			
+			.box-shadow(@inputGroupButtonHoverShadow);
+			margin-top: 0px;
+			margin-bottom: 0px;
+			
+		}
+		
+		&.active,
+		&:active {
+			
+			.box-shadow(@inputGroupButtonActiveShadow);
+			margin-top: 0px;
+			margin-bottom: 0px;
+			
+		}
+		
+		&.disabled,
+		&[disabled] {
+			
+			.box-shadow(@inputGroupButtonDisabledShadow);
+			
+		}
+		
+		// Primary
+		
+		&.button-primary {
+			
+			.box-shadow(@inputGroupButtonPrimaryShadow);
+			
+			&:hover {
+				
+				.box-shadow(@inputGroupButtonPrimaryHoverShadow);
+				margin-top: 0px;
+				margin-bottom: 0px;
+				
+			}
+			
+			&.active,
+			&:active {
+				
+				.box-shadow(@inputGroupButtonPrimaryActiveShadow);
+				margin-top: 0px;
+				margin-bottom: 0px;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				.box-shadow(@inputGroupButtonPrimaryDisabledShadow);
+				
+			}
+			
+		}
+		
+		// Success
+		
+		&.button-success {
+			
+			.box-shadow(@inputGroupButtonSuccessShadow);
+			
+			&:hover {
+				
+				.box-shadow(@inputGroupButtonSuccessHoverShadow);
+				margin-top: 0px;
+				margin-bottom: 0px;
+				
+			}
+			
+			&.active,
+			&:active {
+				
+				.box-shadow(@inputGroupButtonSuccessActiveShadow);
+				margin-top: 0px;
+				margin-bottom: 0px;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				.box-shadow(@inputGroupButtonSuccessDisabledShadow);
+				
+			}
+			
+		}
+		
+		// Danger
+		
+		&.button-danger {
+			
+			.box-shadow(@inputGroupButtonDangerShadow);
+			
+			&:hover {
+				
+				.box-shadow(@inputGroupButtonDangerHoverShadow);
+				margin-top: 0px;
+				margin-bottom: 0px;
+				
+			}
+			
+			&.active,
+			&:active {
+				
+				.box-shadow(@inputGroupButtonDangerActiveShadow);
+				margin-top: 0px;
+				margin-bottom: 0px;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				.box-shadow(@inputGroupButtonDangerDisabledShadow);
+				
+			}
+			
+		}
+		
+		// Warning
+		
+		&.button-warning {
+			
+			.box-shadow(@inputGroupButtonWarningShadow);
+			
+			&:hover {
+				
+				.box-shadow(@inputGroupButtonWarningHoverShadow);
+				margin-top: 0px;
+				margin-bottom: 0px;
+				
+			}
+			
+			&.active,
+			&:active {
+				
+				.box-shadow(@inputGroupButtonWarningActiveShadow);
+				margin-top: 0px;
+				margin-bottom: 0px;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				.box-shadow(@inputGroupButtonWarningDisabledShadow);
+				
+			}
+			
+		}
+		
+	}
+	
+	.add-on-group {
+		
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		display: block;
+		width: auto;
+		height: @inputHeight;
+		
+		.button,
+		.add-on {
+			
+			position: relative;
+			top: auto;
+			left: auto;
+			right: auto;
+			display: inline-block;
+			.border-radius(0px);
+			
+		}
+		
+		&.add-on-prepend {
+			
+			top: 0px;
+			left: 0px;
+			right: auto;
+			
+			.button,
+			.add-on {
+				
+				float: left;
+				
+				+ .button,
+				+ .add-on {
+					
+					margin-left: 1px;
+					
+				}
+				
+				&:first-child {
+					
+					.border-radius(@inputBorderRadius 0px 0px @inputBorderRadius);
+					
+				}
+				
+				&:last-child {
+			
+					&:before {
+						
+						display: block;
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		&.add-on-append {
+			
+			top: 0px;
+			left: auto;
+			right: 0px;
+			
+			.button,
+			.add-on {
+				
+				float: left;
+				
+				+ .button,
+				+ .add-on {
+					
+					&:before {
+						
+						display: block;
+						
+					}
+					
+				}
+				
+				&:first-child {
+					
+					.border-radius(0);
+					
+				}
+				
+				&:last-of-type {
+					
+					.border-radius(0px @inputBorderRadius @inputBorderRadius 0px);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @inputMarginTall;
+		
+		+ .help-block {
+			
+			margin-top: -@inputMarginTall;
+			
+		}
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @inputMarginShort;
+		
+		+ .help-block {
+			
+			margin-top: -@inputMarginShort;
+			
+		}
+		
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Help Text                                                                 */
+/*                                                                           */
+/* ========================================================================= */
+
+.help-block,
+.help-inline {
+	
+	font-family: @helpLabelTextFontFamily;
+	font-size: @helpLabelTextFontSize;
+	font-weight: @helpLabelTextFontWeight;
+	font-style: @helpLabelTextFontStyle;
+	line-height: @helpLabelTextLineHeight;
+	color: @helpLabelTextColor;
+	text-transform: @helpLabelTextTransform;
+	
+}
+
+.help-block {
+	
+	display: block;
+	margin-bottom: @inputMargin;
+	
+	&.tall {
+		
+		margin-bottom: @inputMarginTall;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @inputMarginShort;
+		
+	}
+	
+}
+
+.help-inline {
+	
+	display: inline-block;
+	.ie7-inline-block();
+	vertical-align: middle;
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Disabled states                                                           */
+/*                                                                           */
+/* ========================================================================= */
+
+// Disabled and read-only inputs
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+	
+/*
+	cursor: not-allowed;
+	background-color: lighten(@inputDisabledBackground, 3);
+	color: @inputDisabledTextColor;
+	.box-shadow(@inputDisabledShadow);
+	.placeholder(@inputDisabledPlaceholderTextColor);
+*/
+	
+}
+
+// Explicitly reset the colors here
+
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"][readonly],
+input[type="checkbox"][readonly] {
+	
+	background-color: transparent;
+	
+}
+
+/* ========================================================================= */
+/*                                                                           */
+/* Form States                                                               */
+/*                                                                           */
+/* ========================================================================= */
+
+input:required:invalid,
+textarea:required:invalid,
+select:required:invalid {
+
+	color: @inputErrorFocusTextColor;
+	text-shadow: @inputErrorFocusTextShadow;
+	.placeholder(@inputErrorFocusPlaceholderTextColor);
+	background-color: @inputErrorFocusBackgroundColor;
+	#gradient > .vertical(@inputErrorFocusBackgroundGradientColorTop, @inputErrorFocusBackgroundGradientColorBottom);
+	.box-shadow(@inputErrorFocusShadow);
+		
+}
+
+
+// Warning
+
+.control-group.warning {
+	
+	label {
+		
+		color: @formLabelWarningTextColor;
+		
+	}
+	
+	input,
+	textarea {
+		
+		color: @inputWarningTextColor;
+		text-shadow: @inputWarningTextShadow;
+		.placeholder(@inputWarningPlaceholderTextColor);
+		background-color: @inputWarningBackgroundColor;
+		#gradient > .vertical(@inputWarningBackgroundGradientColorTop, @inputWarningBackgroundGradientColorBottom);
+		.box-shadow(@inputWarningShadow);
+		
+		&:focus,
+		&.focused {
+			
+			color: @inputWarningFocusTextColor;
+			text-shadow: @inputWarningFocusTextShadow;
+			.placeholder(@inputWarningFocusPlaceholderTextColor);
+			background-color: @inputWarningFocusBackgroundColor;
+			#gradient > .vertical(@inputWarningFocusBackgroundGradientColorTop, @inputWarningFocusBackgroundGradientColorBottom);
+			.box-shadow(@inputWarningFocusShadow);
+			
+		}
+		
+		&[disabled],
+		&[readonly] {
+			
+			color: @inputWarningDisabledTextColor;
+			text-shadow: @inputWarningDisabledTextShadow;
+			.placeholder(@inputWarningDisabledPlaceholderTextColor);
+			background-color: @inputWarningDisabledBackgroundColor;
+			#gradient > .vertical(@inputWarningDisabledBackgroundGradientColorTop, @inputWarningDisabledBackgroundGradientColorBottom);
+			.box-shadow(@inputWarningDisabledShadow);
+			.opacity(@inputWarningDisabledOpacity);
+			
+		}
+		
+	}
+	
+	.help-block,
+	.help-inline {
+		
+		color: @helpLabelWarningTextColor;
+		
+	}
+	
+}
+
+// Success
+
+.control-group.success {
+	
+	label {
+		
+		color: @formLabelSuccessTextColor;
+		
+	}
+	
+	input,
+	textarea {
+		
+		color: @inputSuccessTextColor;
+		text-shadow: @inputSuccessTextShadow;
+		.placeholder(@inputSuccessPlaceholderTextColor);
+		background-color: @inputSuccessBackgroundColor;
+		#gradient > .vertical(@inputSuccessBackgroundGradientColorTop, @inputSuccessBackgroundGradientColorBottom);
+		.box-shadow(@inputSuccessShadow);
+		
+		&:focus,
+		&.focused {
+			
+			color: @inputSuccessFocusTextColor;
+			text-shadow: @inputSuccessFocusTextShadow;
+			.placeholder(@inputSuccessFocusPlaceholderTextColor);
+			background-color: @inputSuccessFocusBackgroundColor;
+			#gradient > .vertical(@inputSuccessFocusBackgroundGradientColorTop, @inputSuccessFocusBackgroundGradientColorBottom);
+			.box-shadow(@inputSuccessFocusShadow);
+			
+		}
+		
+		&[disabled],
+		&[readonly] {
+			
+			color: @inputSuccessDisabledTextColor;
+			text-shadow: @inputSuccessDisabledTextShadow;
+			.placeholder(@inputSuccessDisabledPlaceholderTextColor);
+			background-color: @inputSuccessDisabledBackgroundColor;
+			#gradient > .vertical(@inputSuccessDisabledBackgroundGradientColorTop, @inputSuccessDisabledBackgroundGradientColorBottom);
+			.box-shadow(@inputSuccessDisabledShadow);
+			.opacity(@inputSuccessDisabledOpacity);
+			
+		}
+		
+	}
+	
+	.help-block,
+	.help-inline {
+		
+		color: @helpLabelSuccessTextColor;
+		
+	}
+	
+}
+
+// Error
+
+.control-group.error {
+	
+	label {
+		
+		color: @formLabelErrorTextColor;
+		
+	}
+	
+	input,
+	textarea {
+		
+		color: @inputErrorTextColor;
+		text-shadow: @inputErrorTextShadow;
+		.placeholder(@inputErrorPlaceholderTextColor);
+		background-color: @inputErrorBackgroundColor;
+		#gradient > .vertical(@inputErrorBackgroundGradientColorTop, @inputErrorBackgroundGradientColorBottom);
+		.box-shadow(@inputErrorShadow);
+		
+		&:focus,
+		&.focused {
+			
+			color: @inputErrorFocusTextColor;
+			text-shadow: @inputErrorFocusTextShadow;
+			.placeholder(@inputErrorFocusPlaceholderTextColor);
+			background-color: @inputErrorFocusBackgroundColor;
+			#gradient > .vertical(@inputErrorFocusBackgroundGradientColorTop, @inputErrorFocusBackgroundGradientColorBottom);
+			.box-shadow(@inputErrorFocusShadow);
+			
+		}
+		
+		&[disabled],
+		&[readonly] {
+			
+			color: @inputErrorDisabledTextColor;
+			text-shadow: @inputErrorDisabledTextShadow;
+			.placeholder(@inputErrorDisabledPlaceholderTextColor);
+			background-color: @inputErrorDisabledBackgroundColor;
+			#gradient > .vertical(@inputErrorDisabledBackgroundGradientColorTop, @inputErrorDisabledBackgroundGradientColorBottom);
+			.box-shadow(@inputErrorDisabledShadow);
+			.opacity(@inputErrorDisabledOpacity);
+			
+		}
+		
+	}
+	
+	.help-block,
+	.help-inline {
+		
+		color: @helpLabelErrorTextColor;
+		
+	}
+	
+	.select-wrapper {
+		
+		.select-wrapper-inner {
+			
+			#gradient > .vertical(@buttonDangerBackgroundGradientColorTop, @buttonDangerBackgroundGradientColorBottom);
+			.box-shadow(@buttonDangerShadow);
+			
+			&:after {
+				
+				border-top-color: @buttonDangerTextColor;
+				
+			}
+			
+			&:before {
+				
+				#gradient > .vertical(@buttonDangerBackgroundGradientColorTop, @buttonDangerBackgroundGradientColorBottom);
+				.box-shadow(@buttonDangerShadow);
+				
+			}
+			
+		}
+		
+		select {
+			
+			color: @buttonDangerTextColor;
+			text-shadow: @buttonDangerTextShadow;
+			
+			
+		}
+		
+		&:hover {
+			
+			.select-wrapper-inner {
+				
+				#gradient > .vertical(@buttonDangerHoverBackgroundGradientColorTop, @buttonDangerHoverBackgroundGradientColorBottom);
+				.box-shadow(@buttonDangerHoverShadow);
+				
+				&:after {
+					
+					border-top-color: @buttonDangerHoverTextColor;
+					
+				}
+				
+				&:before {
+					
+					#gradient > .vertical(@buttonDangerHoverBackgroundGradientColorTop, @buttonDangerHoverBackgroundGradientColorBottom);
+					.box-shadow(@buttonDangerHoverShadow);
+					
+				}
+				
+			}
+			
+			select {
+				
+				color: @buttonDangerHoverTextColor;
+				text-shadow: @buttonDangerHoverTextShadow;
+				
+			}
+			
+		}
+		
+		&:active {
+			
+			.select-wrapper-inner {
+				
+				#gradient > .vertical(@buttonDangerActiveBackgroundGradientColorTop, @buttonDangerActiveBackgroundGradientColorBottom);
+				.box-shadow(@buttonDangerActiveShadow);
+				
+				&:after {
+					
+					border-top-color: @buttonDangerActiveTextColor;
+					
+				}
+				
+				&:before {
+					
+					#gradient > .vertical(@buttonDangerActiveBackgroundGradientColorTop, @buttonDangerActiveBackgroundGradientColorBottom);
+					.box-shadow(@buttonDangerActiveShadow);
+					
+				}
+				
+			}
+			
+			select {
+				
+				color: @buttonDangerActiveTextColor;
+				text-shadow: @buttonDangerActiveTextShadow;
+				
+			}
+			
+		}
+		
+	}
+	
+	.input-append,
+	.input-prepend {
+		
+		.add-on {
+			
+			#gradient > .vertical(@buttonDangerBackgroundGradientColorTop, @buttonDangerBackgroundGradientColorBottom);
+			.box-shadow(@buttonDangerShadow);
+			color: @buttonDangerTextColor;
+			
+			&:before {
+				
+				background: @buttonDangerBackgroundGradientColorBottom;
+				@shadow:
+			    	-1px 0px 1px 0px rgba(0, 0, 0, 0.02);
+				.box-shadow(@shadow);
+				
+			}
+			
+		}
+		
+	}
+		
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Form Actions                                                              */
+/*                                                                           */
+/* ========================================================================= */
+
+.form-actions {
+	
+	padding: @primaryMargin;
+	margin-bottom: @primaryMargin;
+	background-color: @socialist_gray_lighten_90;
+	.clearfix();
+	@shadow:	0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+	.box-shadow(@shadow);
+	
+	&.tall {
+		
+		margin-bottom: @primaryMarginTall;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @primaryMarginShort;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Input Sizes                                                               */
+/*                                                                           */
+/* ========================================================================= */
+
+// Grid style input sizes
+
+input[class*="span"],
+select[class*="span"],
+textarea[class*="span"],
+.uneditable-input[class*="span"],
+.row-fluid input[class*="span"],
+.row-fluid select[class*="span"],
+.row-fluid textarea[class*="span"],
+.row-fluid .uneditable-input[class*="span"] {
+	
+	float: none;
+	margin-left: 0;
+	display: block;
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Grid Sizing for Inputs                                                    */
+/*                                                                           */
+/* ========================================================================= */
+
+#grid > .input(@gridColumnWidth, @gridGutterWidth);
+
+.controls {
+	
+	.clearfix(); // Clear the float from controls
+	
+}
+
+.controls-row [class*="span"] {
+	
+	float: left; // Float to collapse white-space for proper grid alignment
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* General Form Styling                                                      */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	form {
+		
+		margin-bottom: @primaryMarginWidescreen;
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallWidescreen;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortWidescreen;
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Inputs                                                                    */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	.uneditable-input,
+	textarea {
+		
+		margin-bottom: @inputMarginWidescreen;
+		
+		+ .help-block {
+			
+			margin-top: -@inputMarginWidescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallWidescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginTallWidescreen;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortWidescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginShortWidescreen;
+				
+			}
+			
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Radio Buttons & Checkboxes                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.radio,
+	.checkbox {
+		
+		margin-bottom: @inputMarginWidescreen;
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallWidescreen;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortWidescreen;
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Select Boxes                                                              */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	select {
+		
+		margin-bottom: @inputMarginWidescreen;
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallWidescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginTallWidescreen;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortWidescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginShortWidescreen;
+				
+			}
+			
+			
+		}
+		
+	}
+	
+	.select-wrapper {
+		
+		margin-bottom: @inputMarginWidescreen;
+		
+		select {
+			
+			margin: 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallWidescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginTallWidescreen;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortWidescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginShortWidescreen;
+				
+			}
+			
+			
+		}
+		
+	}
+
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Input Groups                                                              */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.input-group {
+		
+		margin-bottom: @inputMarginWidescreen;
+		
+		input,
+		select,
+		.uneditable-input {
+			
+			margin-bottom: 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallWidescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginTallWidescreen;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortWidescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginShortWidescreen;
+				
+			}
+			
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Help Text                                                                 */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.help-block {
+		
+		display: block;
+		margin-bottom: @inputMarginWidescreen;
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallWidescreen;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortWidescreen;
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Form Actions                                                              */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.form-actions {
+		
+		padding: @primaryMarginWidescreen;
+		margin-bottom: @primaryMarginWidescreen;
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallWidescreen;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortWidescreen;
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Grid Sizing for Inputs                                                    */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#grid > .input(@gridColumnWidthWidescreen, @gridGutterWidthWidescreen);
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* General Form Styling                                                      */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	form {
+		
+		margin-bottom: @primaryMarginTablet;
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Inputs                                                                    */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	.uneditable-input,
+	textarea {
+		
+		margin-bottom: @inputMarginTablet;
+		
+		+ .help-block {
+			
+			margin-top: -@inputMarginTablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallTablet;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginTallTablet;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortTablet;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginShortTablet;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Radio Buttons & Checkboxes                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.radio,
+	.checkbox {
+		
+		margin-bottom: @inputMarginTablet;
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallTablet;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortTablet;
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Select Boxes                                                              */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	select {
+		
+		margin-bottom: @inputMarginTablet;
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallTablet;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginTallTablet;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortTablet;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginShortTablet;
+				
+			}
+			
+			
+		}
+		
+	}
+	
+	.select-wrapper {
+		
+		margin-bottom: @inputMarginTablet;
+		
+		select {
+			
+			margin: 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallTablet;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginTallTablet;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortTablet;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginShortTablet;
+				
+			}
+			
+			
+		}
+		
+	}
+
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Input Groups                                                              */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.input-group {
+		
+		margin-bottom: @inputMarginTablet;
+		
+		input,
+		select,
+		.uneditable-input {
+			
+			margin-bottom: 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallTablet;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginTallTablet;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortTablet;
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginShortTablet;
+				
+			}
+			
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Help Text                                                                 */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.help-block {
+		
+		display: block;
+		margin-bottom: @inputMarginTablet;
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallTablet;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortTablet;
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Form Actions                                                              */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.form-actions {
+		
+		padding: @primaryMarginTablet;
+		margin-bottom: @primaryMarginTablet;
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Grid Sizing for Inputs                                                    */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#grid > .input(@gridColumnWidthTablet, @gridGutterWidthTablet);
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* General Form Styling                                                      */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	form {
+		
+		margin-bottom: @primaryMarginMobile;
+			
+		&.spill {
+			
+			margin-top: @primaryMarginMobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallMobile;
+				
+			&.spill {
+				
+				margin-top: @primaryMarginTallMobile;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortMobile;
+				
+			&.spill {
+				
+				margin-top: @primaryMarginShortMobile;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Inputs                                                                    */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	.uneditable-input,
+	textarea {
+		
+		margin-bottom: @inputMarginMobile;
+		.input-block-level();
+		
+		&.spill {
+			
+			margin-top: @inputMarginMobile;
+			
+		}
+		
+		+ .help-block {
+			
+			margin-top: -@inputMarginMobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallMobile;
+		
+			&.spill {
+				
+				margin-top: @inputMarginTallMobile;
+				
+			}
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginTallMobile;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortMobile;
+		
+			&.spill {
+				
+				margin-top: @inputMarginShortMobile;
+				
+			}
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginShortMobile;
+				
+			}
+			
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Radio Buttons & Checkboxes                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.radio,
+	.checkbox {
+		
+		margin-bottom: @inputMarginMobile;
+		
+		&.spill {
+			
+			margin-top: @inputMarginMobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallMobile;
+			
+			&.spill {
+				
+				margin-top: @inputMarginTallMobile;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortMobile;
+			
+			&.spill {
+				
+				margin-top: @inputMarginShortMobile;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Select Boxes                                                              */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	select {
+		
+		margin-bottom: @inputMarginMobile;
+		
+		&.spill {
+			
+			margin-top: @inputMarginMobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallMobile;
+			
+			&.spill {
+				
+				margin-top: @inputMarginTallMobile;
+				
+			}
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginTallMobile;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortMobile;
+			
+			&.spill {
+				
+				margin-top: @inputMarginShortMobile;
+				
+			}
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginShortMobile;
+				
+			}
+			
+			
+		}
+		
+	}
+	
+	.select-wrapper {
+		
+		margin-bottom: @inputMarginMobile;
+		
+		&.spill {
+			
+			margin-top: @inputMarginMobile;
+			
+		}
+		
+		select {
+			
+			margin: 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallMobile;
+			
+			&.spill {
+				
+				margin-top: @inputMarginTallMobile;
+				
+			}
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginTallMobile;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortMobile;
+			
+			&.spill {
+				
+				margin-top: @inputMarginShortMobile;
+				
+			}
+
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginShortMobile;
+				
+			}
+			
+			
+		}
+		
+	}
+
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Input Groups                                                              */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.input-group {
+		
+		margin-bottom: @inputMarginMobile;
+			
+		&.spill {
+			
+			margin-top: @inputMarginMobile;
+			
+		}
+		
+		input,
+		select,
+		.uneditable-input {
+			
+			margin-bottom: 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallMobile;
+			
+			&.spill {
+				
+				margin-top: @inputMarginTallMobile;
+				
+			}
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginTallMobile;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortMobile;
+			
+			&.spill {
+				
+				margin-top: @inputMarginShortMobile;
+				
+			}
+			
+			+ .help-block {
+				
+				margin-top: -@inputMarginShortMobile;
+				
+			}
+			
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Help Text                                                                 */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.help-block {
+		
+		display: block;
+		margin-bottom: @inputMarginMobile;
+			
+		&.spill {
+			
+			margin-top: @inputMarginMobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @inputMarginTallMobile;
+			
+			&.spill {
+				
+				margin-top: @inputMarginTallMobile;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @inputMarginShortMobile;
+			
+			&.spill {
+				
+				margin-top: @inputMarginShortMobile;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Form Actions                                                              */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.form-actions {
+		
+		padding: @primaryMarginMobile;
+		margin-bottom: @primaryMarginMobile;
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallMobile;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortMobile;
+			
+		}
+		
+	}
+	
+	.controls [class*="span"],
+	.controls-row [class*="span"] {
+		
+		float: none; // Float to collapse white-space for proper grid alignment
+		margin-left: 0px !important;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

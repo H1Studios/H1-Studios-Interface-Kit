@@ -1,0 +1,122 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* layout/footer.less                                                        */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Footer                                                                    */
+/*                                                                           */
+/* ========================================================================= */
+
+#footer,
+footer {
+	
+	position: relative;
+	
+	.footer-logo {
+		
+		display: block;
+		width: 82px;
+		height: 40px;
+		background-image: url(/img/layout/footer/footer-logo.png);
+		background-position: left top;
+		background-repeat: no-repeat;
+		-webkit-background-size: 100% 100%;
+		-moz-background-size: 100% 100%;
+		background-size: 100% 100%;
+		margin-bottom: 0px;
+		.opacity(25);
+		float: right;
+		
+		span {
+			
+			display: none;
+			
+		}
+		
+	}
+	
+	.fineprint {
+		
+		line-height: 40px;
+		float: left;
+		
+	}
+		
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+	#footer,
+	footer {
+		
+		.footer-logo {
+			
+			background-image: url(/img/layout/footer/footer-logo@2x.png);
+			
+		}
+		
+	}
+	
+}

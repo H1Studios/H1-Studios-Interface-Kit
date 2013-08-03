@@ -1,0 +1,502 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* /core/code.less                                                           */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Syntax Highlighting                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+.com {
+	
+	color: #93a1a1;
+	
+}
+
+.lit {
+	
+	color: #195f91;
+	
+}
+
+.pun,
+.opn,
+.clo {
+	
+	color: #93a1a1;
+	
+}
+
+.fun {
+	
+	color: #dc322f;
+	
+}
+
+.str,
+.atv {
+	
+	color: #D14;
+	
+}
+
+.kwd,
+.prettyprint .tag {
+	
+	color: #1e347b;
+	
+}
+
+.typ,
+.atn,
+.dec,
+.var {
+	
+	color: teal;
+	
+}
+
+.pln {
+	
+	color: #48484c;
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Pretty Print                                                              */
+/*                                                                           */
+/* ========================================================================= */
+
+code {
+	
+	color: @codePreTextColor;
+	font-family: @codeTextFontFamily;
+	font-size: @codeTextFontSize;
+	font-weight: @codeTextFontWeight;
+	line-height: @codeTextLineHeight;
+	padding: 0px @codePaddingHorizontal 0px @codePaddingHorizontal;
+	background-color: @codeBackgroundColor;
+	.box-shadow(@codeShadow);
+	.border-radius(@codeBorderRadius);
+	display: inline-block;
+	white-space: nowrap;
+	
+}
+
+pre {
+	
+	color: @codeTextColor;
+	font-family: @codeTextFontFamily;
+	font-size: @codeTextFontSize;
+	font-weight: @codeTextFontWeight;
+	line-height: @codeTextLineHeight;
+	background-color: @codeBackgroundColor;
+	.box-shadow(@codeShadow);
+	.border-radius(@codeBorderRadius);
+	display: block;
+	margin: 0px 0px @primaryMargin 0px;
+	padding: @primaryMargin / 2;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	
+	&.prettyprint {
+		
+		/*
+		padding: 8px;
+		background-color: #f7f7f9;
+		border: 1px solid #e1e1e8;
+		display: block;
+		margin: 0px 0px @primaryMargin 0px;
+		padding: @primaryMargin / 2;
+		font-size: @codeTextFontSize;
+		line-height: @codeTextLineHeight;
+		word-break: break-all;
+		word-wrap: break-word;
+		white-space: pre;
+		white-space: pre-wrap;
+		background-color: @H1_gray_lighten_90;
+		border: 1px solid #ccc; // fallback for IE7-8
+		border: 1px solid rgba(0,0,0,.15);
+		.border-radius(4px);
+		*/
+		
+		code {
+			
+			padding: 0;
+			color: inherit;
+			white-space: pre;
+			white-space: pre-wrap;
+			background-color: transparent;
+			border: 0;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: (@primaryMargin * @textMarginRatioShort);
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: (@primaryMargin * @textMarginRatioTall);
+			
+		}
+		
+		&.linenums {
+			
+			padding-left: 0px;
+			position: relative;
+			
+			&:before {
+				
+				content: '';
+				background: @codeLinenumsBackgroundColor;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: @primaryMargin;
+				height: 100%;
+				.border-radius(0px 0px 0px @codeBorderRadius);
+				border-right: 1px solid @codeLinenumsBorderColor;
+				
+			}
+			
+			ol {
+				
+				position: relative;
+				
+				&.linenums {
+					
+					margin: 0 0 0 @primaryMargin;
+					list-style-position: outside;
+					
+					li {
+						
+						padding-left: (@primaryMargin / 2);
+						font-size: @codeTextFontSize;
+						font-weight: @codeTextFontWeight;
+						line-height: @codeTextLineHeight;
+						margin: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	&.pre-scrollable {
+		
+		max-height: 340px;
+		overflow-y: scroll;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Code examples                                                             */
+/*                                                                           */
+/* ========================================================================= */
+
+// Base class
+
+.code-example,
+form.code-example {
+	
+	position: relative;
+	margin: 0px 0px @primaryMargin 0px;
+	padding: (1.5 * @primaryMargin) (@primaryMargin / 2) (@primaryMargin / 2) (@primaryMargin / 2);
+	*padding-top: @primaryMargin;
+	background-color: @white;
+	.box-shadow(@codeShadow);
+	.border-radius(4px);
+	
+	&:after {
+		
+		content: "Example" !important;
+		display: block !important;
+		position: absolute;
+		top: -1px;
+		left: -1px;
+		padding: (@primaryMargin / 6) (@primaryMargin / 4) (@primaryMargin / 6) (@primaryMargin / 4);
+		font-size: @codeTextFontSize;
+		font-weight: bold;
+		background-color: @codeBackgroundColor;
+		border: 1px solid @borderColor;
+		color: @codeTextColor;
+		.border-radius(4px 0 4px 0);
+		line-height: @codeTextLineHeight !important;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: (@primaryMargin * @textMarginRatioShort);
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: (@primaryMargin * @textMarginRatioTall);
+		
+	}
+	
+	// Remove spacing between an example and it's code
+	
+	+ .prettyprint {
+		
+		margin-top: -@tableBorderRadius;
+		.border-radius(0px 0px 4px 4px);
+		z-index: 10000;
+		position: relative;
+		
+		&.short {
+			
+			margin-bottom: (@primaryMargin * @textMarginRatioShort) + 5px;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: (@primaryMargin * @textMarginRatioTall) + 5px;
+			
+		}
+		
+		
+	}
+	
+	// Tweak examples
+	
+	> p:last-child {
+		
+		margin-bottom: 0;
+		
+	}
+	
+	.pagination {
+		
+		margin-top: 0;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+	code {
+		
+		font-size: @codeTextFontSize * @codeTextRatioWide;
+		line-height: @codeTextLineHeight * @codeTextRatioWide;
+		
+	}
+	
+	pre {
+		
+		font-size: @codeTextFontSize * @codeTextRatioWide;
+		line-height: @codeTextLineHeight * @codeTextRatioWide;
+		padding: @primaryMarginWidescreen / 2;
+		
+		&.prettyprint {
+			
+			&.linenums {
+				
+				&:before {
+					
+					width: @primaryMarginWidescreen;
+					
+				}
+				
+				ol {
+					
+					&.linenums {
+						
+						margin: 0 0 0 @primaryMarginWidescreen;
+						
+						li {
+							
+							font-size: @codeTextFontSize * @codeTextRatioWide;
+							line-height: @codeTextLineHeight * @codeTextRatioWide;
+							padding-left: (@primaryMarginWidescreen / 2);
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+						
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+	code {
+		
+		font-size: @codeTextFontSize * @codeTextRatioTablet;
+		line-height: @codeTextLineHeight * @codeTextRatioTablet;
+		
+	}
+	
+	pre {
+		
+		font-size: @codeTextFontSize * @codeTextRatioTablet;
+		line-height: @codeTextLineHeight * @codeTextRatioTablet;
+		padding: @primaryMarginTablet / 2;
+		
+		&.prettyprint {
+			
+			&.linenums {
+				
+				&:before {
+					
+					width: @primaryMarginTablet;
+					
+				}
+				
+				ol {
+					
+					&.linenums {
+						
+						margin: 0 0 0 @primaryMarginTablet;
+						
+						li {
+							
+							font-size: @codeTextFontSize * @codeTextRatioTablet;
+							line-height: @codeTextLineHeight * @codeTextRatioTablet;
+							padding-left: (@primaryMarginTablet / 2);
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+						
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+	code {
+		
+		font-size: @codeTextFontSize * @codeTextRatioMobile;
+		line-height: @codeTextLineHeight * @codeTextRatioMobile;
+		
+	}
+	
+	pre {
+		
+		font-size: @codeTextFontSize * @codeTextRatioMobile;
+		line-height: @codeTextLineHeight * @codeTextRatioMobile;
+		padding: @primaryMarginMobile / 2;
+		
+		&.prettyprint {
+			
+			&.linenums {
+				
+				&:before {
+					
+					width: @primaryMarginMobile;
+					
+				}
+				
+				ol {
+					
+					&.linenums {
+						
+						margin: 0 0 0 @primaryMarginMobile;
+						
+						li {
+							
+							font-size: @codeTextFontSize * @codeTextRatioMobile;
+							line-height: @codeTextLineHeight * @codeTextRatioMobile;
+							padding-left: (@primaryMarginMobile / 2);
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+						
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

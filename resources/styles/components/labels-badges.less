@@ -1,0 +1,236 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* components/labels-badges                                                  */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+.label,
+.badge {
+	
+	display: inline-block;
+	padding: 0px @labelHorizontalPadding 0px @labelHorizontalPadding;
+	font-family: @labelFontFamily;
+	font-size: @labelFontSize;
+	font-weight: @labelFontWeight;
+	line-height: @labelFontLineHeight;
+	color: @labelTextColor;
+	vertical-align: baseline;
+	white-space: nowrap;
+	text-shadow: @labelFontShadow;
+	background: @labelBackgroundColor;
+	text-transform: uppercase;
+	
+}
+
+.label {
+	
+	.border-radius(3px);
+	
+}
+
+.badge {
+	
+	padding-left: 9px;
+	padding-right: 9px;
+	.border-radius(@labelFontLineHeight);
+	
+}
+
+.label,
+.badge {
+	
+	&:empty {
+		
+		display: none;
+		
+	}
+	
+}
+
+// Hover/focus state, but only for links
+
+a {
+	
+	&.label:hover,
+	&.label:focus,
+	&.badge:hover,
+	&.badge:focus {
+		
+		color: @white;
+		text-decoration: none;
+		cursor: pointer;
+		
+	}
+	
+}
+
+.label,
+.badge {
+	
+	// Success
+	
+	&-success {
+		
+		color: @labelSuccessTextColor;
+		text-shadow: @labelSuccessFontShadow;
+		background: @labelSuccessBackgroundColor;
+		
+	}
+	
+	&-success[href] {
+		
+		background: darken(@labelSuccessBackgroundColor, 10%);
+		
+	}
+	
+	// Warning
+	
+	&-warning {
+		
+		color: @labelWarningTextColor;
+		text-shadow: @labelWarningFontShadow;
+		background: @labelWarningBackgroundColor;
+		
+	}
+	
+	&-warning[href] {
+		
+		background: darken(@labelWarningBackgroundColor, 10%);
+		
+	}
+	
+	// Danger
+	
+	&-danger {
+		
+		color: @labelDangerTextColor;
+		text-shadow: @labelDangerFontShadow;
+		background: @labelDangerBackgroundColor;
+		
+	}
+	
+	&-danger[href] {
+		
+		background: darken(@labelDangerBackgroundColor, 10%);
+		
+	}
+	
+	// Info
+	
+	&-info {
+		
+		color: @labelInfoTextColor;
+		text-shadow: @labelInfoFontShadow;
+		background: @labelInfoBackgroundColor;
+		
+	}
+	
+	&-info[href] {
+		
+		background: darken(@labelInfoBackgroundColor, 10%);
+		
+	}
+	
+	// Inverse
+	
+	&-inverse {
+		
+		color: @labelInverseTextColor;
+		text-shadow: @labelInverseFontShadow;
+		background: @labelInverseBackgroundColor;
+		
+	}
+	
+	&-inverse[href] {
+		
+		background: darken(@labelInverseBackgroundColor, 10%);
+		
+	}
+	
+}
+
+.button {
+	
+	.label,
+	.badge {
+		
+		position: relative;
+		top: -1px;
+		
+	}
+	
+	&.button-mini {
+		
+		.label,
+		.badge {
+			
+			top: 0;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

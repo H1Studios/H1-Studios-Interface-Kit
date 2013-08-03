@@ -1,0 +1,344 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* layout/header.less                                                        */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Header                                                                    */
+/*                                                                           */
+/* ========================================================================= */
+
+#header,
+header {
+	
+	z-index: @zindexHeader;
+	@shadow:	inset 0px -1px 0px 0px rgba(0, 0, 0, 0.05);
+	.box-shadow(@shadow);
+	
+	.header-toolbar {
+		
+		padding: @primaryMargin;
+		
+		.header-logo {
+			
+			margin: 0px;
+			padding: 0px;
+			float: left;
+			display: block;
+			width: 178px;
+			height: 40px;
+			background: url(/resources/images/layout/header/header-logo.png) top left no-repeat;
+			-webkit-background-size: 100% 100%;
+			-moz-background-size: 100% 100%;
+			background-size: 100% 100%;
+			
+			a {
+				
+				display: block;
+				width: 100%;
+				height: 100%;
+				
+			}
+			
+			span {
+				
+				display: none;
+				
+			}
+			
+		}
+		
+		.header-toolbar-nav-toggle {
+			
+			display: none;
+			
+		}
+		
+		.header-actions {
+			
+			float: right;
+			margin-left: @primaryMargin;
+			
+		}
+			
+		#nav,
+		nav {
+			
+			float: right;
+			
+			ul {
+				
+				list-style: none;
+				margin: 0px;
+				
+				li {
+					
+					display: inline-block;
+					list-style: none;
+					line-height: 40px;
+					margin: 0px @primaryMargin 0px 0px;
+					padding: 0px 10px 0px 10px;
+					font-size: @buttonTextFontSize;
+					font-weight: @buttonTextFontWeight;
+					
+					a {
+						
+						display: block;
+						
+					}
+					
+					&:last-child {
+						
+						margin-right: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+
+	.header-content {
+
+		position: relative;
+
+		.header-title {
+
+			//color: @white;
+
+		}
+		
+		.header-subtitle {
+			
+			//color: @socialist_red_darken_50;
+			
+		}
+
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+	#header,
+	header {
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Header                                                                    */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#header,
+	header {
+		
+		.header-toolbar {
+			
+			.header-actions {
+				
+				margin-left: @primaryMarginShort;
+				
+			}
+			
+			#nav,
+			nav {
+				
+				ul {
+					
+					li {
+						
+						margin: 0px @primaryMarginShort 0px 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+		
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Header                                                                    */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#header,
+	header {
+		
+		.header-toolbar {
+			
+			padding: @primaryMarginMobile;
+			margin-bottom: 0px;
+			
+			.header-logo {
+				
+				//width: 56px;
+				//height: 24px;
+				//background: url(/resources/images/layout/header/header-logo-small.png) top left no-repeat;
+				-webkit-background-size: 100% 100%;
+				-moz-background-size: 100% 100%;
+				background-size: 100% 100%;
+				
+			}
+			
+			.header-toolbar-nav-toggle {
+				
+				display: inline-block;
+				
+			}
+			
+			.header-actions {
+				
+				margin-left: @primaryMarginMobile;
+				
+			}
+				
+			#nav,
+			nav {
+				
+				float: none;
+				clear:both;
+				.clearfix();
+				height: 0px;
+				margin: (40px + @primaryMarginMobile) -@primaryMarginMobile -@primaryMarginMobile -@primaryMarginMobile;
+				overflow: hidden;
+				.transition(all 0.1s linear);
+				background: @white;
+				
+				ul {
+					
+					li {
+						
+						display: block;
+						list-style: none;
+						line-height: 50px;
+						margin: 0px;
+						padding: 0px;
+						
+						a {
+							
+							display: block;
+							padding: 0px @primaryMarginMobile 0px @primaryMarginMobile;
+							
+						}
+						
+					}
+					
+				}
+				
+				&.open {
+					
+					height: 100px;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Header                                                                    */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#header,
+	header {
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: @mobileLandscapeMax) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Header                                                                    */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#header,
+	header {
+		
+	}
+	
+}

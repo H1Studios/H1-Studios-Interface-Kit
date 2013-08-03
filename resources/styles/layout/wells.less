@@ -1,0 +1,246 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* components/wells.less                                                     */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Wells                                                                     */
+/*                                                                           */
+/* ========================================================================= */
+
+.well {
+	
+	.border-radius(5px);
+	background: @white;
+	display: block;
+	margin: 0 0 0 0;
+	padding: @gridGutterWidth;
+	overflow: hidden;
+	position: relative;
+	.clearfix();
+	margin-bottom: @primaryMargin;
+	
+	@wellGridColumnWidth: ((@gridRowWidth - (4 * @gridGutterWidth)) - (@gridGutterWidth * (@gridColumns - 1))) / @gridColumns;
+	@wellGridGutterWidth: @gridGutterWidth;
+	
+	#grid > .core(@wellGridColumnWidth , @wellGridGutterWidth);
+	
+	&.short {
+		
+		margin-bottom: @primaryMarginShort;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @primaryMarginTall;
+		
+	}
+	
+	hr {
+		
+		margin-left: -@gridGutterWidth !important;
+		margin-right: -@gridGutterWidth !important;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for larger screen sizes 1200px and above.   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: 1200px) {
+	
+	.well {
+		
+		padding: @gridGutterWidthWidescreen;
+		margin-bottom: @primaryMarginWidescreen;
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortWidescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallWidescreen;
+			
+		}
+		
+		@wellGridColumnWidthWidescreen: ((@gridRowWidthWidescreen - (4 * @gridGutterWidthWidescreen)) - (@gridGutterWidthWidescreen * (@gridColumns - 1))) / @gridColumns;
+		@wellGridGutterWidthWidescreen: @gridGutterWidthWidescreen;
+		
+		#grid > .core(@wellGridColumnWidthWidescreen , @wellGridGutterWidthWidescreen);
+	
+		hr {
+			
+			margin-left: -@gridGutterWidthWidescreen !important;
+			margin-right: -@gridGutterWidthWidescreen !important;
+			
+		}
+		
+	}
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (768px) to default      */
+/* desktop (979px).                                                          */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: 979px) {
+	
+	.well {
+		
+		padding: @gridGutterWidthTablet;
+		margin-bottom: @primaryMarginTablet;
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+		@wellGridColumnWidthTablet: ((@gridRowWidthTablet - (4 * @gridGutterWidthTablet)) - (@gridGutterWidthTablet * (@gridColumns - 1))) / @gridColumns;
+		@wellGridGutterWidthTablet: @gridGutterWidthTablet;
+		
+		#grid > .core(@wellGridColumnWidthTablet , @wellGridGutterWidthTablet);
+	
+		hr {
+			
+			margin-left: -@wellGridGutterWidthTablet !important;
+			margin-right: -@wellGridGutterWidthTablet !important;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes from landscape phones (480px)  to small desktop and    */
+/* portrait tablets (767px)                                                  */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: 767px) {
+	
+	.well {
+		
+		margin-bottom: @primaryMarginTablet;
+		
+		&.short {
+			
+			margin-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primaryMarginTallTablet;
+			
+		}
+	
+		/* ===================================================================== */
+		/*                                                                       */
+		/* Grid                                                                  */
+		/*                                                                       */
+		/* ===================================================================== */
+		
+		// Remove width from containers
+		
+		.container {
+			
+			width: auto;
+			padding-left: 15px;
+			padding-right: 15px;
+			
+		}
+		
+		.container-fluid {
+			
+			padding-left: 0px;
+			padding-right: 0px;
+			
+		}
+		
+		// Fluid rows
+		
+		.row-fluid {
+			
+			width: 100%;
+			
+		}
+		
+		// Undo negative margin on rows and thumbnails
+		
+		.row,
+		.thumbnails {
+			
+			margin-left: 0;
+			
+		}
+		
+		// Make all grid-sized elements block level again
+		
+		[class*="span"],
+		.row-fluid [class*="span"] {
+			
+			float: none;
+			display: block;
+			width: auto;
+			margin-left: 0;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to up to landscape phones                              */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: 480px) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Image replacement for retina displays                                     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+		
+}
