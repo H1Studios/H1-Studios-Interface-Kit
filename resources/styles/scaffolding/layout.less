@@ -12,7 +12,7 @@
 /*                                                                           */
 /* ========================================================================= */
 
-#grid > .core(@gridColumnWidth, @gridGutterWidth);
+#grid > .core(@grid-column-width-standard, @grid-gutter-width-standard);
 
 .container {
 	
@@ -29,7 +29,7 @@
 /*                                                                           */
 /* ========================================================================= */
 
-#grid > .fluid(@fluidGridColumnWidth, @fluidGridGutterWidth);
+#grid > .fluid(@fluid-grid-column-width-standard, @fluid-grid-gutter-width-standard);
 
 .container-fluid {
 	
@@ -48,26 +48,26 @@
 	
 .container-pod {
 	
-	padding-top: @primaryMargin;
-	padding-bottom: @primaryMargin;
+	padding-top: @primary-margin;
+	padding-bottom: @primary-margin;
 	
 	&.container-pod-short {
 		
-		padding-top: @primaryMarginShort;
-		padding-bottom: @primaryMarginShort;
+		padding-top: @primary-margin-short;
+		padding-bottom: @primary-margin-short;
 		
 	}
 	
 	&.container-pod-tall {
 		
-		padding-top: @primaryMarginTall;
-		padding-bottom: @primaryMarginTall;
+		padding-top: @primary-margin-tall;
+		padding-bottom: @primary-margin-tall;
 		
 	}
 	
 	&.container-pod-divider {
 	
-		border-top: 1px solid @borderColor;
+		border-top: 1px solid @border-color;
 		
 	}
 	
@@ -91,17 +91,17 @@
 
 .row-pod {
 	
-	padding-bottom: @primaryMargin;
+	padding-bottom: @primary-margin;
 	
 	&.short {
 		
-		padding-bottom: @primaryMarginShort;
+		padding-bottom: @primary-margin-short;
 		
 	}
 	
 	&.tall {
 		
-		padding-bottom: @primaryMarginTall;
+		padding-bottom: @primary-margin-tall;
 		
 	}
 	
@@ -111,11 +111,11 @@
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and above.     */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @widescreen) {
+@media (min-width: @viewport-widescreen) {
 	
 	/* ========================================================================= */
 	/*                                                                           */
@@ -123,7 +123,7 @@
 	/*                                                                           */
 	/* ========================================================================= */
 	
-	#grid > .core(@gridColumnWidthWidescreen, @gridGutterWidthWidescreen);
+	#grid > .core(@grid-column-width-widescreen, @grid-gutter-width-widescreen);
 	
 	
 	
@@ -133,7 +133,7 @@
 	/*                                                                           */
 	/* ========================================================================= */
 	
-	#grid > .fluid(@fluidGridColumnWidthWidescreen, @fluidGridGutterWidthWidescreen);
+	#grid > .fluid(@fluid-grid-column-width-widescreen, @fluid-grid-gutter-width-widescreen);
 	
 	
 	
@@ -145,20 +145,20 @@
 		
 	.container-pod {
 		
-		padding-top: @primaryMarginWidescreen;
-		padding-bottom: @primaryMarginWidescreen;
+		padding-top: @primary-margin-widescreen;
+		padding-bottom: @primary-margin-widescreen;
 		
 		&.container-pod-short {
 			
-			padding-top: @primaryMarginShortWidescreen;
-			padding-bottom: @primaryMarginShortWidescreen;
+			padding-top: @primary-margin-short-widescreen;
+			padding-bottom: @primary-margin-short-widescreen;
 			
 		}
 		
 		&.container-pod-tall {
 			
-			padding-top: @primaryMarginTallWidescreen;
-			padding-bottom: @primaryMarginTallWidescreen;
+			padding-top: @primary-margin-tall-widescreen;
+			padding-bottom: @primary-margin-tall-widescreen;
 			
 		}
 		
@@ -174,17 +174,17 @@
 		
 	.row-pod {
 		
-		padding-bottom: @primaryMarginWidescreen;
+		padding-bottom: @primary-margin-widescreen;
 		
 		&.short {
 			
-			padding-bottom: @primaryMarginShortWidescreen;
+			padding-bottom: @primary-margin-short-widescreen;
 			
 		}
 		
 		&.tall {
 			
-			padding-bottom: @primaryMarginTallWidescreen;
+			padding-bottom: @primary-margin-tall-widescreen;
 			
 		}
 		
@@ -196,12 +196,12 @@
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for portrait tablet (@tablet) to default    */
-/* desktop (@default).                                                       */
+/* Responsive changes to styling for portrait tablet (@viewport-tablet) to default    */
+/* desktop (@viewport-standard).                                                       */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @tablet) and (max-width: @tabletMax) {
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
 	
 	/* ========================================================================= */
 	/*                                                                           */
@@ -209,7 +209,7 @@
 	/*                                                                           */
 	/* ========================================================================= */
 	
-	#grid > .core(@gridColumnWidthTablet, @gridGutterWidthTablet);
+	#grid > .core(@grid-column-width-tablet, @grid-gutter-width-tablet);
 	
 	
 	
@@ -219,7 +219,7 @@
 	/*                                                                           */
 	/* ========================================================================= */
 	
-	#grid > .fluid(@fluidGridColumnWidthTablet, @fluidGridGutterWidthTablet);
+	#grid > .fluid(@fluid-grid-column-width-tablet, @fluid-grid-gutter-width-tablet);
 	
 	
 	
@@ -231,20 +231,20 @@
 		
 	.container-pod {
 		
-		padding-top: @primaryMarginTablet;
-		padding-bottom: @primaryMarginTablet;
+		padding-top: @primary-margin-tablet;
+		padding-bottom: @primary-margin-tablet;
 		
 		&.container-pod-short {
 			
-			padding-top: @primaryMarginShortTablet;
-			padding-bottom: @primaryMarginShortTablet;
+			padding-top: @primary-margin-short-tablet;
+			padding-bottom: @primary-margin-short-tablet;
 			
 		}
 		
 		&.container-pod-tall {
 			
-			padding-top: @primaryMarginTallTablet;
-			padding-bottom: @primaryMarginTallTablet;
+			padding-top: @primary-margin-tall-tablet;
+			padding-bottom: @primary-margin-tall-tablet;
 			
 		}
 		
@@ -260,17 +260,17 @@
 	
 	.row-pod {
 		
-		padding-bottom: @primaryMarginTablet;
+		padding-bottom: @primary-margin-tablet;
 		
 		&.short {
 			
-			padding-bottom: @primaryMarginShortTablet;
+			padding-bottom: @primary-margin-short-tablet;
 			
 		}
 		
 		&.tall {
 			
-			padding-bottom: @primaryMarginTallTablet;
+			padding-bottom: @primary-margin-tall-tablet;
 			
 		}
 		
@@ -281,11 +281,11 @@
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/* Responsive changes to styling up to portrait tablets (@viewport-tablet)            */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileLandscapeMax) {
+@media (max-width: @viewport-mobile-landscape-max) {
 	
 	/* ========================================================================= */
 	/*                                                                           */
@@ -296,8 +296,8 @@
 	.container {
 		
 		width: auto;
-		padding-left: @gridGutterWidthMobile;
-		padding-right: @gridGutterWidthMobile;
+		padding-left: @grid-gutter-width-mobile;
+		padding-right: @grid-gutter-width-mobile;
 		
 	}
 	
@@ -310,8 +310,8 @@
 	
 	.container-fluid {
 		
-		padding-left: @gridGutterWidthMobile;
-		padding-right: @gridGutterWidthMobile;
+		padding-left: @grid-gutter-width-mobile;
+		padding-right: @grid-gutter-width-mobile;
 		
 	}
 	
@@ -325,20 +325,20 @@
 		
 	.container-pod {
 		
-		padding-top: @primaryMarginTablet;
-		padding-bottom: @primaryMarginTablet;
+		padding-top: @primary-margin-tablet;
+		padding-bottom: @primary-margin-tablet;
 		
 		&.container-pod-short {
 			
-			padding-top: @primaryMarginShortTablet;
-			padding-bottom: @primaryMarginShortTablet;
+			padding-top: @primary-margin-short-tablet;
+			padding-bottom: @primary-margin-short-tablet;
 			
 		}
 		
 		&.container-pod-tall {
 			
-			padding-top: @primaryMarginTallTablet;
-			padding-bottom: @primaryMarginTallTablet;
+			padding-top: @primary-margin-tall-tablet;
+			padding-bottom: @primary-margin-tall-tablet;
 			
 		}
 		
@@ -354,23 +354,23 @@
 		
 	.spill {
 		
-		margin-top: @primaryMarginTablet;
+		margin-top: @primary-margin-tablet;
 		
 	}
 
 	.row-pod {
 		
-		padding-bottom: @primaryMarginTablet;
+		padding-bottom: @primary-margin-tablet;
 		
 		&.short {
 			
-			padding-bottom: @primaryMarginShortTablet;
+			padding-bottom: @primary-margin-short-tablet;
 			
 		}
 		
 		&.tall {
 			
-			padding-bottom: @primaryMarginTallTablet;
+			padding-bottom: @primary-margin-tall-tablet;
 			
 		}
 		
@@ -411,11 +411,11 @@
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/* Responsive changes to styling up to landscape phones (@viewport-mobile-landscape)   */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileMax) {
+@media (max-width: @viewport-mobile-max) {
 	
 	/* ========================================================================= */
 	/*                                                                           */
@@ -425,20 +425,20 @@
 		
 	.container-pod {
 		
-		padding-top: @primaryMarginMobile;
-		padding-bottom: @primaryMarginMobile;
+		padding-top: @primary-margin-mobile;
+		padding-bottom: @primary-margin-mobile;
 		
 		&.container-pod-short {
 			
-			padding-top: @primaryMarginShortMobile;
-			padding-bottom: @primaryMarginShortMobile;
+			padding-top: @primary-margin-short-mobile;
+			padding-bottom: @primary-margin-short-mobile;
 			
 		}
 		
 		&.container-pod-tall {
 			
-			padding-top: @primaryMarginTallMobile;
-			padding-bottom: @primaryMarginTallMobile;
+			padding-top: @primary-margin-tall-mobile;
+			padding-bottom: @primary-margin-tall-mobile;
 			
 		}
 		
@@ -454,23 +454,23 @@
 		
 	.spill {
 		
-		margin-top: @primaryMarginMobile;
+		margin-top: @primary-margin-mobile;
 		
 	}
 
 	.row-pod {
 		
-		padding-bottom: @primaryMarginMobile;
+		padding-bottom: @primary-margin-mobile;
 		
 		&.short {
 			
-			padding-bottom: @primaryMarginShortMobile;
+			padding-bottom: @primary-margin-short-mobile;
 			
 		}
 		
 		&.tall {
 			
-			padding-bottom: @primaryMarginTallMobile;
+			padding-bottom: @primary-margin-tall-mobile;
 			
 		}
 		

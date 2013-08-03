@@ -1,521 +1,1143 @@
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/*                                                                           */
-/* config/variables.less                                                     */
-/*                                                                           */
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* config/variables.less                                                                                */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
 
-/* ========================================================================= */
-/*                                                                           */
-/* Colors                                                                    */
-/*                                                                           */
-/* ========================================================================= */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Colors                                                                                               */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
-@white:											#ffffff;
-@black:											#000000;
+/* ---------------------------------------------------------------------------------------------------- */
+/* Black & White                                                                                        */
+/* ---------------------------------------------------------------------------------------------------- */
 
-// Socialist Gray
+@black:															#000000;
+@white:															#ffffff;
 
-@socialist_gray:								#a3a6ab;
+/* ---------------------------------------------------------------------------------------------------- */
+/* Gray                                                                                                 */
+/* ---------------------------------------------------------------------------------------------------- */
 
-@socialist_gray_lighten_05:						lighten(@socialist_gray, 0.05 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_10:						lighten(@socialist_gray, 0.10 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_15:						lighten(@socialist_gray, 0.15 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_20:						lighten(@socialist_gray, 0.20 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_25:						lighten(@socialist_gray, 0.25 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_30:						lighten(@socialist_gray, 0.30 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_35:						lighten(@socialist_gray, 0.35 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_40:						lighten(@socialist_gray, 0.40 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_45:						lighten(@socialist_gray, 0.45 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_50:						lighten(@socialist_gray, 0.50 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_55:						lighten(@socialist_gray, 0.55 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_60:						lighten(@socialist_gray, 0.60 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_65:						lighten(@socialist_gray, 0.65 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_70:						lighten(@socialist_gray, 0.70 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_75:						lighten(@socialist_gray, 0.75 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_80:						lighten(@socialist_gray, 0.80 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_85:						lighten(@socialist_gray, 0.85 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_90:						lighten(@socialist_gray, 0.90 * (100 - lightness(@socialist_gray)));
-@socialist_gray_lighten_95:						lighten(@socialist_gray, 0.95 * (100 - lightness(@socialist_gray)));
+@gray:															#bbbbbb;
 
-@socialist_gray_darken_05:						darken(@socialist_gray, 0.05 * lightness(@socialist_gray));
-@socialist_gray_darken_10:						darken(@socialist_gray, 0.10 * lightness(@socialist_gray));
-@socialist_gray_darken_15:						darken(@socialist_gray, 0.15 * lightness(@socialist_gray));
-@socialist_gray_darken_20:						darken(@socialist_gray, 0.20 * lightness(@socialist_gray));
-@socialist_gray_darken_25:						darken(@socialist_gray, 0.25 * lightness(@socialist_gray));
-@socialist_gray_darken_30:						darken(@socialist_gray, 0.30 * lightness(@socialist_gray));
-@socialist_gray_darken_35:						darken(@socialist_gray, 0.35 * lightness(@socialist_gray));
-@socialist_gray_darken_40:						darken(@socialist_gray, 0.40 * lightness(@socialist_gray));
-@socialist_gray_darken_45:						darken(@socialist_gray, 0.45 * lightness(@socialist_gray));
-@socialist_gray_darken_50:						darken(@socialist_gray, 0.50 * lightness(@socialist_gray));
-@socialist_gray_darken_55:						darken(@socialist_gray, 0.55 * lightness(@socialist_gray));
-@socialist_gray_darken_60:						darken(@socialist_gray, 0.60 * lightness(@socialist_gray));
-@socialist_gray_darken_65:						darken(@socialist_gray, 0.65 * lightness(@socialist_gray));
-@socialist_gray_darken_70:						darken(@socialist_gray, 0.70 * lightness(@socialist_gray));
-@socialist_gray_darken_75:						darken(@socialist_gray, 0.75 * lightness(@socialist_gray));
-@socialist_gray_darken_80:						darken(@socialist_gray, 0.80 * lightness(@socialist_gray));
-@socialist_gray_darken_85:						darken(@socialist_gray, 0.85 * lightness(@socialist_gray));
-@socialist_gray_darken_90:						darken(@socialist_gray, 0.90 * lightness(@socialist_gray));
-@socialist_gray_darken_95:						darken(@socialist_gray, 0.95 * lightness(@socialist_gray));
+// Lighten
 
-// Socialist Red
+@gray-lighten-05:												lighten(@gray, 0.05 * (100 - lightness(@gray)));
+@gray-lighten-10:												lighten(@gray, 0.10 * (100 - lightness(@gray)));
+@gray-lighten-15:												lighten(@gray, 0.15 * (100 - lightness(@gray)));
+@gray-lighten-20:												lighten(@gray, 0.20 * (100 - lightness(@gray)));
+@gray-lighten-25:												lighten(@gray, 0.25 * (100 - lightness(@gray)));
+@gray-lighten-30:												lighten(@gray, 0.30 * (100 - lightness(@gray)));
+@gray-lighten-35:												lighten(@gray, 0.35 * (100 - lightness(@gray)));
+@gray-lighten-40:												lighten(@gray, 0.40 * (100 - lightness(@gray)));
+@gray-lighten-45:												lighten(@gray, 0.45 * (100 - lightness(@gray)));
+@gray-lighten-50:												lighten(@gray, 0.50 * (100 - lightness(@gray)));
+@gray-lighten-55:												lighten(@gray, 0.55 * (100 - lightness(@gray)));
+@gray-lighten-60:												lighten(@gray, 0.60 * (100 - lightness(@gray)));
+@gray-lighten-65:												lighten(@gray, 0.65 * (100 - lightness(@gray)));
+@gray-lighten-70:												lighten(@gray, 0.70 * (100 - lightness(@gray)));
+@gray-lighten-75:												lighten(@gray, 0.75 * (100 - lightness(@gray)));
+@gray-lighten-80:												lighten(@gray, 0.80 * (100 - lightness(@gray)));
+@gray-lighten-85:												lighten(@gray, 0.85 * (100 - lightness(@gray)));
+@gray-lighten-90:												lighten(@gray, 0.90 * (100 - lightness(@gray)));
+@gray-lighten-95:												lighten(@gray, 0.95 * (100 - lightness(@gray)));
 
-@socialist_red:									#fd3c2b;
+// Darken
 
-@socialist_red_lighten_05:						lighten(@socialist_red, 0.05 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_10:						lighten(@socialist_red, 0.10 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_15:						lighten(@socialist_red, 0.15 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_20:						lighten(@socialist_red, 0.20 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_25:						lighten(@socialist_red, 0.25 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_30:						lighten(@socialist_red, 0.30 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_35:						lighten(@socialist_red, 0.35 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_40:						lighten(@socialist_red, 0.40 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_45:						lighten(@socialist_red, 0.45 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_50:						lighten(@socialist_red, 0.50 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_55:						lighten(@socialist_red, 0.55 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_60:						lighten(@socialist_red, 0.60 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_65:						lighten(@socialist_red, 0.65 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_70:						lighten(@socialist_red, 0.70 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_75:						lighten(@socialist_red, 0.75 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_80:						lighten(@socialist_red, 0.80 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_85:						lighten(@socialist_red, 0.85 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_90:						lighten(@socialist_red, 0.90 * (100 - lightness(@socialist_red)));
-@socialist_red_lighten_95:						lighten(@socialist_red, 0.95 * (100 - lightness(@socialist_red)));
+@gray-darken-05:												darken(@gray, 0.05 * lightness(@gray));
+@gray-darken-10:												darken(@gray, 0.10 * lightness(@gray));
+@gray-darken-15:												darken(@gray, 0.15 * lightness(@gray));
+@gray-darken-20:												darken(@gray, 0.20 * lightness(@gray));
+@gray-darken-25:												darken(@gray, 0.25 * lightness(@gray));
+@gray-darken-30:												darken(@gray, 0.30 * lightness(@gray));
+@gray-darken-35:												darken(@gray, 0.35 * lightness(@gray));
+@gray-darken-40:												darken(@gray, 0.40 * lightness(@gray));
+@gray-darken-45:												darken(@gray, 0.45 * lightness(@gray));
+@gray-darken-50:												darken(@gray, 0.50 * lightness(@gray));
+@gray-darken-55:												darken(@gray, 0.55 * lightness(@gray));
+@gray-darken-60:												darken(@gray, 0.60 * lightness(@gray));
+@gray-darken-65:												darken(@gray, 0.65 * lightness(@gray));
+@gray-darken-70:												darken(@gray, 0.70 * lightness(@gray));
+@gray-darken-75:												darken(@gray, 0.75 * lightness(@gray));
+@gray-darken-80:												darken(@gray, 0.80 * lightness(@gray));
+@gray-darken-85:												darken(@gray, 0.85 * lightness(@gray));
+@gray-darken-90:												darken(@gray, 0.90 * lightness(@gray));
+@gray-darken-95:												darken(@gray, 0.95 * lightness(@gray));
 
-@socialist_red_darken_05:						darken(@socialist_red, 0.05 * lightness(@socialist_red));
-@socialist_red_darken_10:						darken(@socialist_red, 0.10 * lightness(@socialist_red));
-@socialist_red_darken_15:						darken(@socialist_red, 0.15 * lightness(@socialist_red));
-@socialist_red_darken_20:						darken(@socialist_red, 0.20 * lightness(@socialist_red));
-@socialist_red_darken_25:						darken(@socialist_red, 0.25 * lightness(@socialist_red));
-@socialist_red_darken_30:						darken(@socialist_red, 0.30 * lightness(@socialist_red));
-@socialist_red_darken_35:						darken(@socialist_red, 0.35 * lightness(@socialist_red));
-@socialist_red_darken_40:						darken(@socialist_red, 0.40 * lightness(@socialist_red));
-@socialist_red_darken_45:						darken(@socialist_red, 0.45 * lightness(@socialist_red));
-@socialist_red_darken_50:						darken(@socialist_red, 0.50 * lightness(@socialist_red));
-@socialist_red_darken_55:						darken(@socialist_red, 0.55 * lightness(@socialist_red));
-@socialist_red_darken_60:						darken(@socialist_red, 0.60 * lightness(@socialist_red));
-@socialist_red_darken_65:						darken(@socialist_red, 0.65 * lightness(@socialist_red));
-@socialist_red_darken_70:						darken(@socialist_red, 0.70 * lightness(@socialist_red));
-@socialist_red_darken_75:						darken(@socialist_red, 0.75 * lightness(@socialist_red));
-@socialist_red_darken_80:						darken(@socialist_red, 0.80 * lightness(@socialist_red));
-@socialist_red_darken_85:						darken(@socialist_red, 0.85 * lightness(@socialist_red));
-@socialist_red_darken_90:						darken(@socialist_red, 0.90 * lightness(@socialist_red));
-@socialist_red_darken_95:						darken(@socialist_red, 0.95 * lightness(@socialist_red));
+/* ---------------------------------------------------------------------------------------------------- */
+/* Blue                                                                                                 */
+/* ---------------------------------------------------------------------------------------------------- */
 
-// Socialist Teal
+@blue:															#0066cc;
 
-@socialist_blue:								#347fdd;
+// Lighten
 
-@socialist_blue_lighten_05:						lighten(@socialist_blue, 0.05 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_10:						lighten(@socialist_blue, 0.10 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_15:						lighten(@socialist_blue, 0.15 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_20:						lighten(@socialist_blue, 0.20 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_25:						lighten(@socialist_blue, 0.25 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_30:						lighten(@socialist_blue, 0.30 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_35:						lighten(@socialist_blue, 0.35 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_40:						lighten(@socialist_blue, 0.40 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_45:						lighten(@socialist_blue, 0.45 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_50:						lighten(@socialist_blue, 0.50 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_55:						lighten(@socialist_blue, 0.55 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_60:						lighten(@socialist_blue, 0.60 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_65:						lighten(@socialist_blue, 0.65 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_70:						lighten(@socialist_blue, 0.70 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_75:						lighten(@socialist_blue, 0.75 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_80:						lighten(@socialist_blue, 0.80 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_85:						lighten(@socialist_blue, 0.85 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_90:						lighten(@socialist_blue, 0.90 * (100 - lightness(@socialist_blue)));
-@socialist_blue_lighten_95:						lighten(@socialist_blue, 0.95 * (100 - lightness(@socialist_blue)));
+@blue-lighten-05:												lighten(@blue, 0.05 * (100 - lightness(@blue)));
+@blue-lighten-10:												lighten(@blue, 0.10 * (100 - lightness(@blue)));
+@blue-lighten-15:												lighten(@blue, 0.15 * (100 - lightness(@blue)));
+@blue-lighten-20:												lighten(@blue, 0.20 * (100 - lightness(@blue)));
+@blue-lighten-25:												lighten(@blue, 0.25 * (100 - lightness(@blue)));
+@blue-lighten-30:												lighten(@blue, 0.30 * (100 - lightness(@blue)));
+@blue-lighten-35:												lighten(@blue, 0.35 * (100 - lightness(@blue)));
+@blue-lighten-40:												lighten(@blue, 0.40 * (100 - lightness(@blue)));
+@blue-lighten-45:												lighten(@blue, 0.45 * (100 - lightness(@blue)));
+@blue-lighten-50:												lighten(@blue, 0.50 * (100 - lightness(@blue)));
+@blue-lighten-55:												lighten(@blue, 0.55 * (100 - lightness(@blue)));
+@blue-lighten-60:												lighten(@blue, 0.60 * (100 - lightness(@blue)));
+@blue-lighten-65:												lighten(@blue, 0.65 * (100 - lightness(@blue)));
+@blue-lighten-70:												lighten(@blue, 0.70 * (100 - lightness(@blue)));
+@blue-lighten-75:												lighten(@blue, 0.75 * (100 - lightness(@blue)));
+@blue-lighten-80:												lighten(@blue, 0.80 * (100 - lightness(@blue)));
+@blue-lighten-85:												lighten(@blue, 0.85 * (100 - lightness(@blue)));
+@blue-lighten-90:												lighten(@blue, 0.90 * (100 - lightness(@blue)));
+@blue-lighten-95:												lighten(@blue, 0.95 * (100 - lightness(@blue)));
 
-@socialist_blue_darken_05:						darken(@socialist_blue, 0.05 * lightness(@socialist_blue));
-@socialist_blue_darken_10:						darken(@socialist_blue, 0.10 * lightness(@socialist_blue));
-@socialist_blue_darken_15:						darken(@socialist_blue, 0.15 * lightness(@socialist_blue));
-@socialist_blue_darken_20:						darken(@socialist_blue, 0.20 * lightness(@socialist_blue));
-@socialist_blue_darken_25:						darken(@socialist_blue, 0.25 * lightness(@socialist_blue));
-@socialist_blue_darken_30:						darken(@socialist_blue, 0.30 * lightness(@socialist_blue));
-@socialist_blue_darken_35:						darken(@socialist_blue, 0.35 * lightness(@socialist_blue));
-@socialist_blue_darken_40:						darken(@socialist_blue, 0.40 * lightness(@socialist_blue));
-@socialist_blue_darken_45:						darken(@socialist_blue, 0.45 * lightness(@socialist_blue));
-@socialist_blue_darken_50:						darken(@socialist_blue, 0.50 * lightness(@socialist_blue));
-@socialist_blue_darken_55:						darken(@socialist_blue, 0.55 * lightness(@socialist_blue));
-@socialist_blue_darken_60:						darken(@socialist_blue, 0.60 * lightness(@socialist_blue));
-@socialist_blue_darken_65:						darken(@socialist_blue, 0.65 * lightness(@socialist_blue));
-@socialist_blue_darken_70:						darken(@socialist_blue, 0.70 * lightness(@socialist_blue));
-@socialist_blue_darken_75:						darken(@socialist_blue, 0.75 * lightness(@socialist_blue));
-@socialist_blue_darken_80:						darken(@socialist_blue, 0.80 * lightness(@socialist_blue));
-@socialist_blue_darken_85:						darken(@socialist_blue, 0.85 * lightness(@socialist_blue));
-@socialist_blue_darken_90:						darken(@socialist_blue, 0.90 * lightness(@socialist_blue));
-@socialist_blue_darken_95:						darken(@socialist_blue, 0.95 * lightness(@socialist_blue));
+// Darken
 
-// Socialist Green
+@blue-darken-05:												darken(@blue, 0.05 * lightness(@blue));
+@blue-darken-10:												darken(@blue, 0.10 * lightness(@blue));
+@blue-darken-15:												darken(@blue, 0.15 * lightness(@blue));
+@blue-darken-20:												darken(@blue, 0.20 * lightness(@blue));
+@blue-darken-25:												darken(@blue, 0.25 * lightness(@blue));
+@blue-darken-30:												darken(@blue, 0.30 * lightness(@blue));
+@blue-darken-35:												darken(@blue, 0.35 * lightness(@blue));
+@blue-darken-40:												darken(@blue, 0.40 * lightness(@blue));
+@blue-darken-45:												darken(@blue, 0.45 * lightness(@blue));
+@blue-darken-50:												darken(@blue, 0.50 * lightness(@blue));
+@blue-darken-55:												darken(@blue, 0.55 * lightness(@blue));
+@blue-darken-60:												darken(@blue, 0.60 * lightness(@blue));
+@blue-darken-65:												darken(@blue, 0.65 * lightness(@blue));
+@blue-darken-70:												darken(@blue, 0.70 * lightness(@blue));
+@blue-darken-75:												darken(@blue, 0.75 * lightness(@blue));
+@blue-darken-80:												darken(@blue, 0.80 * lightness(@blue));
+@blue-darken-85:												darken(@blue, 0.85 * lightness(@blue));
+@blue-darken-90:												darken(@blue, 0.90 * lightness(@blue));
+@blue-darken-95:												darken(@blue, 0.95 * lightness(@blue));
 
-@socialist_green:								#70af2f;
+/* ---------------------------------------------------------------------------------------------------- */
+/* Green                                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
 
-@socialist_green_lighten_05:					lighten(@socialist_green, 0.05 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_10:					lighten(@socialist_green, 0.10 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_15:					lighten(@socialist_green, 0.15 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_20:					lighten(@socialist_green, 0.20 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_25:					lighten(@socialist_green, 0.25 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_30:					lighten(@socialist_green, 0.30 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_35:					lighten(@socialist_green, 0.35 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_40:					lighten(@socialist_green, 0.40 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_45:					lighten(@socialist_green, 0.45 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_50:					lighten(@socialist_green, 0.50 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_55:					lighten(@socialist_green, 0.55 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_60:					lighten(@socialist_green, 0.60 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_65:					lighten(@socialist_green, 0.65 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_70:					lighten(@socialist_green, 0.70 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_75:					lighten(@socialist_green, 0.75 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_80:					lighten(@socialist_green, 0.80 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_85:					lighten(@socialist_green, 0.85 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_90:					lighten(@socialist_green, 0.90 * (100 - lightness(@socialist_green)));
-@socialist_green_lighten_95:					lighten(@socialist_green, 0.95 * (100 - lightness(@socialist_green)));
+@green:															#70af2f;
 
-@socialist_green_darken_05:						darken(@socialist_green, 0.05 * lightness(@socialist_green));
-@socialist_green_darken_10:						darken(@socialist_green, 0.10 * lightness(@socialist_green));
-@socialist_green_darken_15:						darken(@socialist_green, 0.15 * lightness(@socialist_green));
-@socialist_green_darken_20:						darken(@socialist_green, 0.20 * lightness(@socialist_green));
-@socialist_green_darken_25:						darken(@socialist_green, 0.25 * lightness(@socialist_green));
-@socialist_green_darken_30:						darken(@socialist_green, 0.30 * lightness(@socialist_green));
-@socialist_green_darken_35:						darken(@socialist_green, 0.35 * lightness(@socialist_green));
-@socialist_green_darken_40:						darken(@socialist_green, 0.40 * lightness(@socialist_green));
-@socialist_green_darken_45:						darken(@socialist_green, 0.45 * lightness(@socialist_green));
-@socialist_green_darken_50:						darken(@socialist_green, 0.50 * lightness(@socialist_green));
-@socialist_green_darken_55:						darken(@socialist_green, 0.55 * lightness(@socialist_green));
-@socialist_green_darken_60:						darken(@socialist_green, 0.60 * lightness(@socialist_green));
-@socialist_green_darken_65:						darken(@socialist_green, 0.65 * lightness(@socialist_green));
-@socialist_green_darken_70:						darken(@socialist_green, 0.70 * lightness(@socialist_green));
-@socialist_green_darken_75:						darken(@socialist_green, 0.75 * lightness(@socialist_green));
-@socialist_green_darken_80:						darken(@socialist_green, 0.80 * lightness(@socialist_green));
-@socialist_green_darken_85:						darken(@socialist_green, 0.85 * lightness(@socialist_green));
-@socialist_green_darken_90:						darken(@socialist_green, 0.90 * lightness(@socialist_green));
-@socialist_green_darken_95:						darken(@socialist_green, 0.95 * lightness(@socialist_green));
+// Lighten
 
-// Socialist Orange
+@green-lighten-05:												lighten(@green, 0.05 * (100 - lightness(@green)));
+@green-lighten-10:												lighten(@green, 0.10 * (100 - lightness(@green)));
+@green-lighten-15:												lighten(@green, 0.15 * (100 - lightness(@green)));
+@green-lighten-20:												lighten(@green, 0.20 * (100 - lightness(@green)));
+@green-lighten-25:												lighten(@green, 0.25 * (100 - lightness(@green)));
+@green-lighten-30:												lighten(@green, 0.30 * (100 - lightness(@green)));
+@green-lighten-35:												lighten(@green, 0.35 * (100 - lightness(@green)));
+@green-lighten-40:												lighten(@green, 0.40 * (100 - lightness(@green)));
+@green-lighten-45:												lighten(@green, 0.45 * (100 - lightness(@green)));
+@green-lighten-50:												lighten(@green, 0.50 * (100 - lightness(@green)));
+@green-lighten-55:												lighten(@green, 0.55 * (100 - lightness(@green)));
+@green-lighten-60:												lighten(@green, 0.60 * (100 - lightness(@green)));
+@green-lighten-65:												lighten(@green, 0.65 * (100 - lightness(@green)));
+@green-lighten-70:												lighten(@green, 0.70 * (100 - lightness(@green)));
+@green-lighten-75:												lighten(@green, 0.75 * (100 - lightness(@green)));
+@green-lighten-80:												lighten(@green, 0.80 * (100 - lightness(@green)));
+@green-lighten-85:												lighten(@green, 0.85 * (100 - lightness(@green)));
+@green-lighten-90:												lighten(@green, 0.90 * (100 - lightness(@green)));
+@green-lighten-95:												lighten(@green, 0.95 * (100 - lightness(@green)));
 
-@socialist_orange:								#f38339;
+// Darken
 
-@socialist_orange_lighten_05:					lighten(@socialist_orange, 0.05 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_10:					lighten(@socialist_orange, 0.10 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_15:					lighten(@socialist_orange, 0.15 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_20:					lighten(@socialist_orange, 0.20 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_25:					lighten(@socialist_orange, 0.25 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_30:					lighten(@socialist_orange, 0.30 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_35:					lighten(@socialist_orange, 0.35 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_40:					lighten(@socialist_orange, 0.40 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_45:					lighten(@socialist_orange, 0.45 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_50:					lighten(@socialist_orange, 0.50 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_55:					lighten(@socialist_orange, 0.55 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_60:					lighten(@socialist_orange, 0.60 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_65:					lighten(@socialist_orange, 0.65 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_70:					lighten(@socialist_orange, 0.70 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_75:					lighten(@socialist_orange, 0.75 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_80:					lighten(@socialist_orange, 0.80 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_85:					lighten(@socialist_orange, 0.85 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_90:					lighten(@socialist_orange, 0.90 * (100 - lightness(@socialist_orange)));
-@socialist_orange_lighten_95:					lighten(@socialist_orange, 0.95 * (100 - lightness(@socialist_orange)));
+@green-darken-05:												darken(@green, 0.05 * lightness(@green));
+@green-darken-10:												darken(@green, 0.10 * lightness(@green));
+@green-darken-15:												darken(@green, 0.15 * lightness(@green));
+@green-darken-20:												darken(@green, 0.20 * lightness(@green));
+@green-darken-25:												darken(@green, 0.25 * lightness(@green));
+@green-darken-30:												darken(@green, 0.30 * lightness(@green));
+@green-darken-35:												darken(@green, 0.35 * lightness(@green));
+@green-darken-40:												darken(@green, 0.40 * lightness(@green));
+@green-darken-45:												darken(@green, 0.45 * lightness(@green));
+@green-darken-50:												darken(@green, 0.50 * lightness(@green));
+@green-darken-55:												darken(@green, 0.55 * lightness(@green));
+@green-darken-60:												darken(@green, 0.60 * lightness(@green));
+@green-darken-65:												darken(@green, 0.65 * lightness(@green));
+@green-darken-70:												darken(@green, 0.70 * lightness(@green));
+@green-darken-75:												darken(@green, 0.75 * lightness(@green));
+@green-darken-80:												darken(@green, 0.80 * lightness(@green));
+@green-darken-85:												darken(@green, 0.85 * lightness(@green));
+@green-darken-90:												darken(@green, 0.90 * lightness(@green));
+@green-darken-95:												darken(@green, 0.95 * lightness(@green));
 
-@socialist_orange_darken_05:					darken(@socialist_orange, 0.05 * lightness(@socialist_orange));
-@socialist_orange_darken_10:					darken(@socialist_orange, 0.10 * lightness(@socialist_orange));
-@socialist_orange_darken_15:					darken(@socialist_orange, 0.15 * lightness(@socialist_orange));
-@socialist_orange_darken_20:					darken(@socialist_orange, 0.20 * lightness(@socialist_orange));
-@socialist_orange_darken_25:					darken(@socialist_orange, 0.25 * lightness(@socialist_orange));
-@socialist_orange_darken_30:					darken(@socialist_orange, 0.30 * lightness(@socialist_orange));
-@socialist_orange_darken_35:					darken(@socialist_orange, 0.35 * lightness(@socialist_orange));
-@socialist_orange_darken_40:					darken(@socialist_orange, 0.40 * lightness(@socialist_orange));
-@socialist_orange_darken_45:					darken(@socialist_orange, 0.45 * lightness(@socialist_orange));
-@socialist_orange_darken_50:					darken(@socialist_orange, 0.50 * lightness(@socialist_orange));
-@socialist_orange_darken_55:					darken(@socialist_orange, 0.55 * lightness(@socialist_orange));
-@socialist_orange_darken_60:					darken(@socialist_orange, 0.60 * lightness(@socialist_orange));
-@socialist_orange_darken_65:					darken(@socialist_orange, 0.65 * lightness(@socialist_orange));
-@socialist_orange_darken_70:					darken(@socialist_orange, 0.70 * lightness(@socialist_orange));
-@socialist_orange_darken_75:					darken(@socialist_orange, 0.75 * lightness(@socialist_orange));
-@socialist_orange_darken_80:					darken(@socialist_orange, 0.80 * lightness(@socialist_orange));
-@socialist_orange_darken_85:					darken(@socialist_orange, 0.85 * lightness(@socialist_orange));
-@socialist_orange_darken_90:					darken(@socialist_orange, 0.90 * lightness(@socialist_orange));
-@socialist_orange_darken_95:					darken(@socialist_orange, 0.95 * lightness(@socialist_orange));
+/* ---------------------------------------------------------------------------------------------------- */
+/* Orange                                                                                               */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@orange:														#f38339;
+
+// Lighten
+
+@orange-lighten-05:												lighten(@orange, 0.05 * (100 - lightness(@orange)));
+@orange-lighten-10:												lighten(@orange, 0.10 * (100 - lightness(@orange)));
+@orange-lighten-15:												lighten(@orange, 0.15 * (100 - lightness(@orange)));
+@orange-lighten-20:												lighten(@orange, 0.20 * (100 - lightness(@orange)));
+@orange-lighten-25:												lighten(@orange, 0.25 * (100 - lightness(@orange)));
+@orange-lighten-30:												lighten(@orange, 0.30 * (100 - lightness(@orange)));
+@orange-lighten-35:												lighten(@orange, 0.35 * (100 - lightness(@orange)));
+@orange-lighten-40:												lighten(@orange, 0.40 * (100 - lightness(@orange)));
+@orange-lighten-45:												lighten(@orange, 0.45 * (100 - lightness(@orange)));
+@orange-lighten-50:												lighten(@orange, 0.50 * (100 - lightness(@orange)));
+@orange-lighten-55:												lighten(@orange, 0.55 * (100 - lightness(@orange)));
+@orange-lighten-60:												lighten(@orange, 0.60 * (100 - lightness(@orange)));
+@orange-lighten-65:												lighten(@orange, 0.65 * (100 - lightness(@orange)));
+@orange-lighten-70:												lighten(@orange, 0.70 * (100 - lightness(@orange)));
+@orange-lighten-75:												lighten(@orange, 0.75 * (100 - lightness(@orange)));
+@orange-lighten-80:												lighten(@orange, 0.80 * (100 - lightness(@orange)));
+@orange-lighten-85:												lighten(@orange, 0.85 * (100 - lightness(@orange)));
+@orange-lighten-90:												lighten(@orange, 0.90 * (100 - lightness(@orange)));
+@orange-lighten-95:												lighten(@orange, 0.95 * (100 - lightness(@orange)));
+
+// Darken
+
+@orange-darken-05:												darken(@orange, 0.05 * lightness(@orange));
+@orange-darken-10:												darken(@orange, 0.10 * lightness(@orange));
+@orange-darken-15:												darken(@orange, 0.15 * lightness(@orange));
+@orange-darken-20:												darken(@orange, 0.20 * lightness(@orange));
+@orange-darken-25:												darken(@orange, 0.25 * lightness(@orange));
+@orange-darken-30:												darken(@orange, 0.30 * lightness(@orange));
+@orange-darken-35:												darken(@orange, 0.35 * lightness(@orange));
+@orange-darken-40:												darken(@orange, 0.40 * lightness(@orange));
+@orange-darken-45:												darken(@orange, 0.45 * lightness(@orange));
+@orange-darken-50:												darken(@orange, 0.50 * lightness(@orange));
+@orange-darken-55:												darken(@orange, 0.55 * lightness(@orange));
+@orange-darken-60:												darken(@orange, 0.60 * lightness(@orange));
+@orange-darken-65:												darken(@orange, 0.65 * lightness(@orange));
+@orange-darken-70:												darken(@orange, 0.70 * lightness(@orange));
+@orange-darken-75:												darken(@orange, 0.75 * lightness(@orange));
+@orange-darken-80:												darken(@orange, 0.80 * lightness(@orange));
+@orange-darken-85:												darken(@orange, 0.85 * lightness(@orange));
+@orange-darken-90:												darken(@orange, 0.90 * lightness(@orange));
+@orange-darken-95:												darken(@orange, 0.95 * lightness(@orange));
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Yellow                                                                                               */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@yellow:														#f4c20c;
+
+// Lighten
+
+@yellow-lighten-05:												lighten(@yellow, 0.05 * (100 - lightness(@yellow)));
+@yellow-lighten-10:												lighten(@yellow, 0.10 * (100 - lightness(@yellow)));
+@yellow-lighten-15:												lighten(@yellow, 0.15 * (100 - lightness(@yellow)));
+@yellow-lighten-20:												lighten(@yellow, 0.20 * (100 - lightness(@yellow)));
+@yellow-lighten-25:												lighten(@yellow, 0.25 * (100 - lightness(@yellow)));
+@yellow-lighten-30:												lighten(@yellow, 0.30 * (100 - lightness(@yellow)));
+@yellow-lighten-35:												lighten(@yellow, 0.35 * (100 - lightness(@yellow)));
+@yellow-lighten-40:												lighten(@yellow, 0.40 * (100 - lightness(@yellow)));
+@yellow-lighten-45:												lighten(@yellow, 0.45 * (100 - lightness(@yellow)));
+@yellow-lighten-50:												lighten(@yellow, 0.50 * (100 - lightness(@yellow)));
+@yellow-lighten-55:												lighten(@yellow, 0.55 * (100 - lightness(@yellow)));
+@yellow-lighten-60:												lighten(@yellow, 0.60 * (100 - lightness(@yellow)));
+@yellow-lighten-65:												lighten(@yellow, 0.65 * (100 - lightness(@yellow)));
+@yellow-lighten-70:												lighten(@yellow, 0.70 * (100 - lightness(@yellow)));
+@yellow-lighten-75:												lighten(@yellow, 0.75 * (100 - lightness(@yellow)));
+@yellow-lighten-80:												lighten(@yellow, 0.80 * (100 - lightness(@yellow)));
+@yellow-lighten-85:												lighten(@yellow, 0.85 * (100 - lightness(@yellow)));
+@yellow-lighten-90:												lighten(@yellow, 0.90 * (100 - lightness(@yellow)));
+@yellow-lighten-95:												lighten(@yellow, 0.95 * (100 - lightness(@yellow)));
+
+// Darken
+
+@yellow-darken-05:												darken(@yellow, 0.05 * lightness(@yellow));
+@yellow-darken-10:												darken(@yellow, 0.10 * lightness(@yellow));
+@yellow-darken-15:												darken(@yellow, 0.15 * lightness(@yellow));
+@yellow-darken-20:												darken(@yellow, 0.20 * lightness(@yellow));
+@yellow-darken-25:												darken(@yellow, 0.25 * lightness(@yellow));
+@yellow-darken-30:												darken(@yellow, 0.30 * lightness(@yellow));
+@yellow-darken-35:												darken(@yellow, 0.35 * lightness(@yellow));
+@yellow-darken-40:												darken(@yellow, 0.40 * lightness(@yellow));
+@yellow-darken-45:												darken(@yellow, 0.45 * lightness(@yellow));
+@yellow-darken-50:												darken(@yellow, 0.50 * lightness(@yellow));
+@yellow-darken-55:												darken(@yellow, 0.55 * lightness(@yellow));
+@yellow-darken-60:												darken(@yellow, 0.60 * lightness(@yellow));
+@yellow-darken-65:												darken(@yellow, 0.65 * lightness(@yellow));
+@yellow-darken-70:												darken(@yellow, 0.70 * lightness(@yellow));
+@yellow-darken-75:												darken(@yellow, 0.75 * lightness(@yellow));
+@yellow-darken-80:												darken(@yellow, 0.80 * lightness(@yellow));
+@yellow-darken-85:												darken(@yellow, 0.85 * lightness(@yellow));
+@yellow-darken-90:												darken(@yellow, 0.90 * lightness(@yellow));
+@yellow-darken-95:												darken(@yellow, 0.95 * lightness(@yellow));
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Red                                                                                                  */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@red:															#fd3c2b;
+
+// Lighten
+
+@red-lighten-05:												lighten(@red, 0.05 * (100 - lightness(@red)));
+@red-lighten-10:												lighten(@red, 0.10 * (100 - lightness(@red)));
+@red-lighten-15:												lighten(@red, 0.15 * (100 - lightness(@red)));
+@red-lighten-20:												lighten(@red, 0.20 * (100 - lightness(@red)));
+@red-lighten-25:												lighten(@red, 0.25 * (100 - lightness(@red)));
+@red-lighten-30:												lighten(@red, 0.30 * (100 - lightness(@red)));
+@red-lighten-35:												lighten(@red, 0.35 * (100 - lightness(@red)));
+@red-lighten-40:												lighten(@red, 0.40 * (100 - lightness(@red)));
+@red-lighten-45:												lighten(@red, 0.45 * (100 - lightness(@red)));
+@red-lighten-50:												lighten(@red, 0.50 * (100 - lightness(@red)));
+@red-lighten-55:												lighten(@red, 0.55 * (100 - lightness(@red)));
+@red-lighten-60:												lighten(@red, 0.60 * (100 - lightness(@red)));
+@red-lighten-65:												lighten(@red, 0.65 * (100 - lightness(@red)));
+@red-lighten-70:												lighten(@red, 0.70 * (100 - lightness(@red)));
+@red-lighten-75:												lighten(@red, 0.75 * (100 - lightness(@red)));
+@red-lighten-80:												lighten(@red, 0.80 * (100 - lightness(@red)));
+@red-lighten-85:												lighten(@red, 0.85 * (100 - lightness(@red)));
+@red-lighten-90:												lighten(@red, 0.90 * (100 - lightness(@red)));
+@red-lighten-95:												lighten(@red, 0.95 * (100 - lightness(@red)));
+
+@red-darken-05:													darken(@red, 0.05 * lightness(@red));
+@red-darken-10:													darken(@red, 0.10 * lightness(@red));
+@red-darken-15:													darken(@red, 0.15 * lightness(@red));
+@red-darken-20:													darken(@red, 0.20 * lightness(@red));
+@red-darken-25:													darken(@red, 0.25 * lightness(@red));
+@red-darken-30:													darken(@red, 0.30 * lightness(@red));
+@red-darken-35:													darken(@red, 0.35 * lightness(@red));
+@red-darken-40:													darken(@red, 0.40 * lightness(@red));
+@red-darken-45:													darken(@red, 0.45 * lightness(@red));
+@red-darken-50:													darken(@red, 0.50 * lightness(@red));
+@red-darken-55:													darken(@red, 0.55 * lightness(@red));
+@red-darken-60:													darken(@red, 0.60 * lightness(@red));
+@red-darken-65:													darken(@red, 0.65 * lightness(@red));
+@red-darken-70:													darken(@red, 0.70 * lightness(@red));
+@red-darken-75:													darken(@red, 0.75 * lightness(@red));
+@red-darken-80:													darken(@red, 0.80 * lightness(@red));
+@red-darken-85:													darken(@red, 0.85 * lightness(@red));
+@red-darken-90:													darken(@red, 0.90 * lightness(@red));
+@red-darken-95:													darken(@red, 0.95 * lightness(@red));
 
 
-@yellow:										#c9ba22;
-@blue:											#42b1e4;
-@smokeyBlue:									#a6b4c9;
 
-// Scaffolding
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Scaffolding                                                                                          */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
-@bodyBackground:								@socialist_gray_darken_50;
-@borderColor:									rgba(0, 0, 0, 0.1);
-@borderInverseColor:							rgba(255, 255, 255, 0.1);
+/* ---------------------------------------------------------------------------------------------------- */
+/* Z-Index Depths                                                                                       */
+/* ---------------------------------------------------------------------------------------------------- */
 
-// Links
+@z-index-header:												1000;
+@z-index-header-navigation:										1001;
+@z-index-header-logo:											1002;
+@z-index-dropdown:												1003;
+@z-index-popover:												1004;
+@z-index-tooltip:												1005;
+@z-index-modal-backdrop:										2000;
+@z-index-modal:													2001;
 
-@linkColor:										@socialist_red;
-@linkColorHover:								@socialist_red_darken_40;
-@linkColorActive:								@socialist_red_darken_80;
+/* ---------------------------------------------------------------------------------------------------- */
+/* Margins                                                                                              */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@primary-margin:												60px;
+@primary-margin-widescreen:										70px;
+@primary-margin-tablet:											44px;
+@primary-margin-mobile:											30px;
+
+@primary-margin-short:											30px;
+@primary-margin-short-widescreen:								35px;
+@primary-margin-short-tablet:									22px;
+@primary-margin-short-mobile:									20px;
+
+@primary-margin-tall:											80px;
+@primary-margin-tall-widescreen:								100px;
+@primary-margin-tall-tablet:									88px;
+@primary-margin-tall-mobile:									60px;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Viewport Sizes                                                                                       */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@viewport-widescreen:											1240px;
+
+@viewport-standard-max:											(@viewport-widescreen - 1);
+@viewport-standard:												990px;
+
+@viewport-tablet-max:											(@viewport-standard - 1);
+@viewport-tablet:												768px;
+
+@viewport-mobile-landscape-max:									(@viewport-tablet - 1);
+@viewport-mobile-landscape:										480px;
+
+@viewport-mobile-max:											(@viewport-mobile-landscape - 1);
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Fixed Grid                                                                                           */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@grid-column-count:												12;
+
+@grid-column-width-standard:									50px;
+@grid-gutter-width-standard:									30px;
+@grid-row-width-standard:										((@grid-column-count * @grid-column-width-standard) + (@grid-gutter-width-standard * (@grid-column-count - 1)));
+
+@grid-column-width-widescreen:									65px;
+@grid-gutter-width-widescreen:									35px;
+@grid-row-width-widescreen:										((@grid-column-count * @grid-column-width-widescreen) + (@grid-gutter-width-widescreen * (@grid-column-count - 1)));
+
+@grid-column-width-tablet:										40px;
+@grid-gutter-width-tablet:										22px;
+@grid-row-width-tablet:											((@grid-column-count * @grid-column-width-tablet) + (@grid-gutter-width-tablet * (@grid-column-count - 1)));
+
+@grid-gutter-width-mobile:										20px;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Fluid Grid                                                                                           */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@fluid-grid-column-width-standard:								percentage(@grid-column-width-standard / @grid-row-width-standard);
+@fluid-grid-gutter-width-standard:								((100 - (@fluid-grid-column-width-standard * @grid-column-count)) / (@grid-column-count - 1));
+
+@fluid-grid-column-width-widescreen:							percentage(@grid-column-width-widescreen / @grid-row-width-widescreen);
+@fluid-grid-gutter-width-widescreen:							((100 - (@fluid-grid-column-width-widescreen * @grid-column-count)) / (@grid-column-count - 1));
+
+@fluid-grid-column-width-tablet:								percentage(@grid-column-width-tablet / @grid-row-width-tablet);
+@fluid-grid-gutter-width-tablet:								((100 - (@fluid-grid-column-width-tablet * @grid-column-count)) / (@grid-column-count - 1));
 
 
 
-/* ========================================================================= */
-/*                                                                           */
-/* Scaffolding                                                               */
-/*                                                                           */
-/* ========================================================================= */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Foundation                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
-// Z-index master list
+@body-background-color:											@gray-darken-50;
 
-@zindexHeader:									1000;
-@zindexHeaderNavigation:						1001;
-@zindexHeaderLogo:								1002;
-@zindexDropdown:								1003;
-@zindexPopover:									1004;
-@zindexTooltip:									1005;
-@zindexModalBackdrop:							2000;
-@zindexModal:									2001;
+@border-color:													rgba(0, 0, 0, 0.1);
+@border-inverse-color:											rgba(255, 255, 255, 0.1);
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Typography                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Links                                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@link-text-color:												@blue;
+@link-text-transform:											none;
+
+@link-hover-text-color:											@blue-darken-40;
+@link-hover-text-transform:										none;
+
+@link-active-text-color:										@blue-darken-80;
+@link-active-text-transform:									none;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Fonts                                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@font-family-primary:											"Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-secondary:											"Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-monospace:											Monaco, Menlo, Consolas, "Courier New", monospace;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Text Margin Ratios                                                                                   */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@text-margin-ratio-top:											1.25;
+
+@text-margin-ratio-tall:										2;
+@text-margin-ratio-short:										0.5;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Body Text                                                                                            */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@body-text-font-family:											@font-family-primary;
+@body-text-font-size:											14px;
+@body-text-font-weight:											300;
+@body-text-line-height:											24px;
+@body-text-transform:											normal;
+@body-text-style:												normal;
+@body-text-color:												@gray;
 
 // Margins
 
-@primaryMargin:									60px;
-@primaryMarginWidescreen:						70px;
-@primaryMarginTablet:							44px;
-@primaryMarginMobile:							30px;
+@body-text-margin-top:											0px;
+@body-text-margin-bottom:										15px;
 
-@primaryMarginShort:							30px;
-@primaryMarginShortWidescreen:					35px;
-@primaryMarginShortTablet:						22px;
-@primaryMarginShortMobile:						20px;
+// Responsive Sizing
 
-@primaryMarginTall:								80px;
-@primaryMarginTallWidescreen:					100px;
-@primaryMarginTallTablet:						88px;
-@primaryMarginTallMobile:						60px;
+@body-text-responsive-ratio-widescreen:							1.1;
+@body-text-responsive-ratio-tablet:								0.9;
+@body-text-responsive-ratio-mobile:								0.9;
 
-// Resolutions
+// Link
 
-@widescreen:									1240px;
-@defaultMax:									(@widescreen - 1);
-@default:										990px;
-@tabletMax:										(@default - 1);
-@tablet:										768px;
-@mobileLandscapeMax:							(@tablet - 1);
-@mobileLandscape:								480px;
-@mobileMax:										(@mobileLandscape - 1);
+@body-text-link-text-color:										@link-text-color;
+@body-text-link-text-transform:									@link-text-transform;
+@body-text-link-hover-text-color:								@link-hover-text-color;
+@body-text-link-hover-text-transform:							@link-hover-text-transform;
+@body-text-link-active-text-color:								@link-active-text-color;
+@body-text-link-active-text-transform:							@link-active-text-transform;
 
-// Fixed grid (@default to @widescreen)
+// Emphasis
 
-@gridColumns:									12;
-@gridColumnWidth:								50px;
-@gridGutterWidth:								30px;
-@gridRowWidth:									((@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1)));
+@body-text-emphasis-color:										@gray;
+@body-text-emphasis-font-weight:								600;
+@body-text-emphasis-style:										normal;
+@body-text-emphasis-link-text-color:							@body-text-link-text-color;
+@body-text-emphasis-link-text-transform:						@body-text-link-text-transform;
+@body-text-emphasis-link-hover-text-color:						@body-text-link-hover-text-color;
+@body-text-emphasis-link-hover-text-transform:					@body-text-link-hover-text-transform;
+@body-text-emphasis-link-active-text-color:						@body-text-link-active-text-color;
+@body-text-emphasis-link-active-text-transform:					@body-text-link-active-text-transform;
 
-@gridColumnWidthWidescreen:						65px;
-@gridGutterWidthWidescreen:						35px;
-@gridRowWidthWidescreen:						((@gridColumns * @gridColumnWidthWidescreen) + (@gridGutterWidthWidescreen * (@gridColumns - 1)));
+// Muted
 
-@gridColumnWidthTablet:							40px;
-@gridGutterWidthTablet:							22px;
-@gridRowWidthTablet:							((@gridColumns * @gridColumnWidthTablet) + (@gridGutterWidthTablet * (@gridColumns - 1)));
+@body-text-muted-color:											@gray;
+@body-text-muted-font-weight:									600;
+@body-text-muted-style:											normal;
+@body-text-muted-link-text-color:								@body-text-link-text-color;
+@body-text-muted-link-text-transform:							@body-text-link-text-transform;
+@body-text-muted-link-hover-text-color:							@body-text-link-hover-text-color;
+@body-text-muted-link-hover-text-transform:						@body-text-link-hover-text-transform;
+@body-text-muted-link-active-text-color:						@body-text-link-active-text-color;
+@body-text-muted-link-active-text-transform:					@body-text-link-active-text-transform;
 
-@gridGutterWidthMobile:							20px;
+// Inverse
 
-// Fluid grid
+@body-text-inverse-color:										@body-text-color;
 
-@fluidGridColumnWidth:							percentage(@gridColumnWidth / @gridRowWidth);
-@fluidGridGutterWidth:							((100 - (@fluidGridColumnWidth * @gridColumns)) / (@gridColumns - 1));
+@body-text-inverse-link-text-color:								@body-text-link-text-color;
+@body-text-inverse-link-hover-text-color:						@body-text-link-hover-text-color;
+@body-text-inverse-link-active-text-color:						@body-text-link-active-text-color;
 
-@fluidGridColumnWidthWidescreen:				percentage(@gridColumnWidthWidescreen / @gridRowWidthWidescreen);
-@fluidGridGutterWidthWidescreen:				((100 - (@fluidGridColumnWidthWidescreen * @gridColumns)) / (@gridColumns - 1));
+@body-text-inverse-emphasis-color:								@body-text-emphasis-color;
+@body-text-inverse-emphasis-link-text-color:					@body-text-emphasis-link-text-color;
+@body-text-inverse-emphasis-link-hover-text-color:				@body-text-emphasis-link-hover-text-color;
+@body-text-inverse-emphasis-link-active-text-color:				@body-text-emphasis-link-active-text-color;
 
-@fluidGridColumnWidthTablet:					percentage(@gridColumnWidthTablet / @gridRowWidthTablet);
-@fluidGridGutterWidthTablet:					((100 - (@fluidGridColumnWidthTablet * @gridColumns)) / (@gridColumns - 1));
+@body-text-inverse-muted-color:									@body-text-muted-color;
+@body-text-inverse-muted-link-text-color:						@body-text-muted-link-text-color;
+@body-text-inverse-muted-link-hover-text-color:					@body-text-muted-link-hover-text-color;
+@body-text-inverse-muted-link-active-text-color:				@body-text-muted-link-active-text-color;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Lead Text                                                                                            */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@lead-text-font-family:											@font-family-primary;
+@lead-text-font-size:											20px;
+@lead-text-font-weight:											200;
+@lead-text-line-height:											32px;
+@lead-text-transform:											normal;
+@lead-text-style:												normal;
+@lead-text-color:												@gray-darken-15;
+
+// Margins
+
+@lead-text-margin-top:											30px;
+@lead-text-margin-bottom:										15px;
+
+// Responsive Sizing
+
+@lead-text-responsive-ratio-widescreen:							1.1;
+@lead-text-responsive-ratio-tablet:								0.9;
+@lead-text-responsive-ratio-mobile:								0.85;
+
+// Link
+
+@lead-text-link-text-color:										@link-text-color;
+@lead-text-link-text-transform:									@link-text-transform;
+@lead-text-link-hover-text-color:								@link-hover-text-color;
+@lead-text-link-hover-text-transform:							@link-hover-text-transform;
+@lead-text-link-active-text-color:								@link-active-text-color;
+@lead-text-link-active-text-transform:							@link-active-text-transform;
+
+// Emphasis
+
+@lead-text-emphasis-color:										@gray;
+@lead-text-emphasis-font-weight:								600;
+@lead-text-emphasis-style:										normal;
+@lead-text-emphasis-link-text-color:							@lead-text-link-text-color;
+@lead-text-emphasis-link-text-transform:						@lead-text-link-text-transform;
+@lead-text-emphasis-link-hover-text-color:						@lead-text-link-hover-text-color;
+@lead-text-emphasis-link-hover-text-transform:					@lead-text-link-hover-text-transform;
+@lead-text-emphasis-link-active-text-color:						@lead-text-link-active-text-color;
+@lead-text-emphasis-link-active-text-transform:					@lead-text-link-active-text-transform;
+
+// Muted
+
+@lead-text-muted-color:											@gray;
+@lead-text-muted-font-weight:									600;
+@lead-text-muted-style:											normal;
+@lead-text-muted-link-text-color:								@lead-text-link-text-color;
+@lead-text-muted-link-text-transform:							@lead-text-link-text-transform;
+@lead-text-muted-link-hover-text-color:							@lead-text-link-hover-text-color;
+@lead-text-muted-link-hover-text-transform:						@lead-text-link-hover-text-transform;
+@lead-text-muted-link-active-text-color:						@lead-text-link-active-text-color;
+@lead-text-muted-link-active-text-transform:					@lead-text-link-active-text-transform;
+
+// Inverse
+
+@lead-text-inverse-color:										@lead-text-color;
+
+@lead-text-inverse-link-text-color:								@lead-text-link-text-color;
+@lead-text-inverse-link-hover-text-color:						@lead-text-link-hover-text-color;
+@lead-text-inverse-link-active-text-color:						@lead-text-link-active-text-color;
+
+@lead-text-inverse-emphasis-color:								@lead-text-emphasis-color;
+@lead-text-inverse-emphasis-link-text-color:					@lead-text-emphasis-link-text-color;
+@lead-text-inverse-emphasis-link-hover-text-color:				@lead-text-emphasis-link-hover-text-color;
+@lead-text-inverse-emphasis-link-active-text-color:				@lead-text-emphasis-link-active-text-color;
+
+@lead-text-inverse-muted-color:									@lead-text-muted-color;
+@lead-text-inverse-muted-link-text-color:						@lead-text-muted-link-text-color;
+@lead-text-inverse-muted-link-hover-text-color:					@lead-text-muted-link-hover-text-color;
+@lead-text-inverse-muted-link-active-text-color:				@lead-text-muted-link-active-text-color;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Small Text                                                                                           */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@small-text-font-family:										@font-family-primary;
+@small-text-font-size:											14px;
+@small-text-font-weight:										300;
+@small-text-line-height:										24px;
+@small-text-transform:											normal;
+@small-text-style:												normal;
+@small-text-color:												@gray;
+
+// Margins
+
+@small-text-margin-top:											30px;
+@small-text-margin-bottom:										15px;
+
+// Responsive Sizing
+
+@small-text-responsive-ratio-widescreen:						1.1;
+@small-text-responsive-ratio-tablet:							0.9;
+@small-text-responsive-ratio-mobile:							0.85;
+
+// Link
+
+@small-text-link-text-color:									@link-text-color;
+@small-text-link-text-transform:								@link-text-transform;
+@small-text-link-hover-text-color:								@link-hover-text-color;
+@small-text-link-hover-text-transform:							@link-hover-text-transform;
+@small-text-link-active-text-color:								@link-active-text-color;
+@small-text-link-active-text-transform:							@link-active-text-transform;
+
+// Emphasis
+
+@small-text-emphasis-color:										@gray;
+@small-text-emphasis-font-weight:								600;
+@small-text-emphasis-style:										normal;
+@small-text-emphasis-link-text-color:							@small-text-link-text-color;
+@small-text-emphasis-link-text-transform:						@small-text-link-text-transform;
+@small-text-emphasis-link-hover-text-color:						@small-text-link-hover-text-color;
+@small-text-emphasis-link-hover-text-transform:					@small-text-link-hover-text-transform;
+@small-text-emphasis-link-active-text-color:					@small-text-link-active-text-color;
+@small-text-emphasis-link-active-text-transform:				@small-text-link-active-text-transform;
+
+// Muted
+
+@small-text-muted-color:										@gray;
+@small-text-muted-font-weight:									600;
+@small-text-muted-style:										normal;
+@small-text-muted-link-text-color:								@small-text-link-text-color;
+@small-text-muted-link-text-transform:							@small-text-link-text-transform;
+@small-text-muted-link-hover-text-color:						@small-text-link-hover-text-color;
+@small-text-muted-link-hover-text-transform:					@small-text-link-hover-text-transform;
+@small-text-muted-link-active-text-color:						@small-text-link-active-text-color;
+@small-text-muted-link-active-text-transform:					@small-text-link-active-text-transform;
+
+// Inverse
+
+@small-text-inverse-color:										@small-text-color;
+
+@small-text-inverse-link-text-color:							@small-text-link-text-color;
+@small-text-inverse-link-hover-text-color:						@small-text-link-hover-text-color;
+@small-text-inverse-link-active-text-color:						@small-text-link-active-text-color;
+
+@small-text-inverse-emphasis-color:								@small-text-emphasis-color;
+@small-text-inverse-emphasis-link-text-color:					@small-text-emphasis-link-text-color;
+@small-text-inverse-emphasis-link-hover-text-color:				@small-text-emphasis-link-hover-text-color;
+@small-text-inverse-emphasis-link-active-text-color:			@small-text-emphasis-link-active-text-color;
+
+@small-text-inverse-muted-color:								@small-text-muted-color;
+@small-text-inverse-muted-link-text-color:						@small-text-muted-link-text-color;
+@small-text-inverse-muted-link-hover-text-color:				@small-text-muted-link-hover-text-color;
+@small-text-inverse-muted-link-active-text-color:				@small-text-muted-link-active-text-color;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Heading h1 Text                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@heading-h1-text-font-family:									@font-family-primary;
+@heading-h1-text-font-size:										72px;
+@heading-h1-text-font-weight:									100;
+@heading-h1-text-line-height:									80px;
+@heading-h1-text-transform:										normal;
+@heading-h1-text-style:											normal;
+@heading-h1-text-color:											@gray-darken-80;
+
+// Margins
+
+@heading-h1-text-margin-top:									120px;
+@heading-h1-text-margin-bottom:									90px;
+
+// Responsive Sizing
+
+@heading-h1-text-responsive-ratio-widescreen:					1.1;
+@heading-h1-text-responsive-ratio-tablet:						0.9;
+@heading-h1-text-responsive-ratio-mobile:						0.7;
+
+// Link
+
+@heading-h1-text-link-text-color:								@link-text-color;
+@heading-h1-text-link-text-transform:							@link-text-transform;
+@heading-h1-text-link-hover-text-color:							@link-hover-text-color;
+@heading-h1-text-link-hover-text-transform:						@link-hover-text-transform;
+@heading-h1-text-link-active-text-color:						@link-active-text-color;
+@heading-h1-text-link-active-text-transform:					@link-active-text-transform;
+
+// Emphasis
+
+@heading-h1-text-emphasis-color:								@gray;
+@heading-h1-text-emphasis-font-weight:							600;
+@heading-h1-text-emphasis-style:								normal;
+@heading-h1-text-emphasis-link-text-color:						@heading-h1-text-link-text-color;
+@heading-h1-text-emphasis-link-text-transform:					@heading-h1-text-link-text-transform;
+@heading-h1-text-emphasis-link-hover-text-color:				@heading-h1-text-link-hover-text-color;
+@heading-h1-text-emphasis-link-hover-text-transform:			@heading-h1-text-link-hover-text-transform;
+@heading-h1-text-emphasis-link-active-text-color:				@heading-h1-text-link-active-text-color;
+@heading-h1-text-emphasis-link-active-text-transform:			@heading-h1-text-link-active-text-transform;
+
+// Muted
+
+@heading-h1-text-muted-color:									@gray;
+@heading-h1-text-muted-font-weight:								600;
+@heading-h1-text-muted-style:									normal;
+@heading-h1-text-muted-link-text-color:							@heading-h1-text-link-text-color;
+@heading-h1-text-muted-link-text-transform:						@heading-h1-text-link-text-transform;
+@heading-h1-text-muted-link-hover-text-color:					@heading-h1-text-link-hover-text-color;
+@heading-h1-text-muted-link-hover-text-transform:				@heading-h1-text-link-hover-text-transform;
+@heading-h1-text-muted-link-active-text-color:					@heading-h1-text-link-active-text-color;
+@heading-h1-text-muted-link-active-text-transform:				@heading-h1-text-link-active-text-transform;
+
+// Inverse
+
+@heading-h1-text-inverse-color:									@heading-h1-text-color;
+
+@heading-h1-text-inverse-link-text-color:						@heading-h1-text-link-text-color;
+@heading-h1-text-inverse-link-hover-text-color:					@heading-h1-text-link-hover-text-color;
+@heading-h1-text-inverse-link-active-text-color:				@heading-h1-text-link-active-text-color;
+
+@heading-h1-text-inverse-emphasis-color:						@heading-h1-text-emphasis-color;
+@heading-h1-text-inverse-emphasis-link-text-color:				@heading-h1-text-emphasis-link-text-color;
+@heading-h1-text-inverse-emphasis-link-hover-text-color:		@heading-h1-text-emphasis-link-hover-text-color;
+@heading-h1-text-inverse-emphasis-link-active-text-color:		@heading-h1-text-emphasis-link-active-text-color;
+
+@heading-h1-text-inverse-muted-color:							@heading-h1-text-muted-color;
+@heading-h1-text-inverse-muted-link-text-color:					@heading-h1-text-muted-link-text-color;
+@heading-h1-text-inverse-muted-link-hover-text-color:			@heading-h1-text-muted-link-hover-text-color;
+@heading-h1-text-inverse-muted-link-active-text-color:			@heading-h1-text-muted-link-active-text-color;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Heading h2 Text                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@heading-h2-text-font-family:									@font-family-primary;
+@heading-h2-text-font-size:										54px;
+@heading-h2-text-font-weight:									100;
+@heading-h2-text-line-height:									60px;
+@heading-h2-text-transform:										normal;
+@heading-h2-text-style:											normal;
+@heading-h2-text-color:											@gray-darken-80;
+
+// Margins
+
+@heading-h2-text-margin-top:									90px;
+@heading-h2-text-margin-bottom:									60px;
+
+// Responsive Sizing
+
+@heading-h2-text-responsive-ratio-widescreen:					1.1;
+@heading-h2-text-responsive-ratio-tablet:						0.9;
+@heading-h2-text-responsive-ratio-mobile:						0.7;
+
+// Link
+
+@heading-h2-text-link-text-color:								@link-text-color;
+@heading-h2-text-link-text-transform:							@link-text-transform;
+@heading-h2-text-link-hover-text-color:							@link-hover-text-color;
+@heading-h2-text-link-hover-text-transform:						@link-hover-text-transform;
+@heading-h2-text-link-active-text-color:						@link-active-text-color;
+@heading-h2-text-link-active-text-transform:					@link-active-text-transform;
+
+// Emphasis
+
+@heading-h2-text-emphasis-color:								@gray;
+@heading-h2-text-emphasis-font-weight:							600;
+@heading-h2-text-emphasis-style:								normal;
+@heading-h2-text-emphasis-link-text-color:						@heading-h2-text-link-text-color;
+@heading-h2-text-emphasis-link-text-transform:					@heading-h2-text-link-text-transform;
+@heading-h2-text-emphasis-link-hover-text-color:				@heading-h2-text-link-hover-text-color;
+@heading-h2-text-emphasis-link-hover-text-transform:			@heading-h2-text-link-hover-text-transform;
+@heading-h2-text-emphasis-link-active-text-color:				@heading-h2-text-link-active-text-color;
+@heading-h2-text-emphasis-link-active-text-transform:			@heading-h2-text-link-active-text-transform;
+
+// Muted
+
+@heading-h2-text-muted-color:									@gray;
+@heading-h2-text-muted-font-weight:								600;
+@heading-h2-text-muted-style:									normal;
+@heading-h2-text-muted-link-text-color:							@heading-h2-text-link-text-color;
+@heading-h2-text-muted-link-text-transform:						@heading-h2-text-link-text-transform;
+@heading-h2-text-muted-link-hover-text-color:					@heading-h2-text-link-hover-text-color;
+@heading-h2-text-muted-link-hover-text-transform:				@heading-h2-text-link-hover-text-transform;
+@heading-h2-text-muted-link-active-text-color:					@heading-h2-text-link-active-text-color;
+@heading-h2-text-muted-link-active-text-transform:				@heading-h2-text-link-active-text-transform;
+
+// Inverse
+
+@heading-h2-text-inverse-color:									@heading-h2-text-color;
+
+@heading-h2-text-inverse-link-text-color:						@heading-h2-text-link-text-color;
+@heading-h2-text-inverse-link-hover-text-color:					@heading-h2-text-link-hover-text-color;
+@heading-h2-text-inverse-link-active-text-color:				@heading-h2-text-link-active-text-color;
+
+@heading-h2-text-inverse-emphasis-color:						@heading-h2-text-emphasis-color;
+@heading-h2-text-inverse-emphasis-link-text-color:				@heading-h2-text-emphasis-link-text-color;
+@heading-h2-text-inverse-emphasis-link-hover-text-color:		@heading-h2-text-emphasis-link-hover-text-color;
+@heading-h2-text-inverse-emphasis-link-active-text-color:		@heading-h2-text-emphasis-link-active-text-color;
+
+@heading-h2-text-inverse-muted-color:							@heading-h2-text-muted-color;
+@heading-h2-text-inverse-muted-link-text-color:					@heading-h2-text-muted-link-text-color;
+@heading-h2-text-inverse-muted-link-hover-text-color:			@heading-h2-text-muted-link-hover-text-color;
+@heading-h2-text-inverse-muted-link-active-text-color:			@heading-h2-text-muted-link-active-text-color;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Heading h3 Text                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@heading-h3-text-font-family:									@font-family-primary;
+@heading-h3-text-font-size:										32px;
+@heading-h3-text-font-weight:									200;
+@heading-h3-text-line-height:									38px;
+@heading-h3-text-transform:										normal;
+@heading-h3-text-style:											normal;
+@heading-h3-text-color:											@gray-darken-50;
+
+// Margins
+
+@heading-h3-text-margin-top:									60px;
+@heading-h3-text-margin-bottom:									45px;
+
+// Responsive Sizing
+
+@heading-h3-text-responsive-ratio-widescreen:					1.1;
+@heading-h3-text-responsive-ratio-tablet:						0.9;
+@heading-h3-text-responsive-ratio-mobile:						0.85;
+
+// Link
+
+@heading-h3-text-link-text-color:								@link-text-color;
+@heading-h3-text-link-text-transform:							@link-text-transform;
+@heading-h3-text-link-hover-text-color:							@link-hover-text-color;
+@heading-h3-text-link-hover-text-transform:						@link-hover-text-transform;
+@heading-h3-text-link-active-text-color:						@link-active-text-color;
+@heading-h3-text-link-active-text-transform:					@link-active-text-transform;
+
+// Emphasis
+
+@heading-h3-text-emphasis-color:								@gray;
+@heading-h3-text-emphasis-font-weight:							600;
+@heading-h3-text-emphasis-style:								normal;
+@heading-h3-text-emphasis-link-text-color:						@heading-h3-text-link-text-color;
+@heading-h3-text-emphasis-link-text-transform:					@heading-h3-text-link-text-transform;
+@heading-h3-text-emphasis-link-hover-text-color:				@heading-h3-text-link-hover-text-color;
+@heading-h3-text-emphasis-link-hover-text-transform:			@heading-h3-text-link-hover-text-transform;
+@heading-h3-text-emphasis-link-active-text-color:				@heading-h3-text-link-active-text-color;
+@heading-h3-text-emphasis-link-active-text-transform:			@heading-h3-text-link-active-text-transform;
+
+// Muted
+
+@heading-h3-text-muted-color:									@gray;
+@heading-h3-text-muted-font-weight:								600;
+@heading-h3-text-muted-style:									normal;
+@heading-h3-text-muted-link-text-color:							@heading-h3-text-link-text-color;
+@heading-h3-text-muted-link-text-transform:						@heading-h3-text-link-text-transform;
+@heading-h3-text-muted-link-hover-text-color:					@heading-h3-text-link-hover-text-color;
+@heading-h3-text-muted-link-hover-text-transform:				@heading-h3-text-link-hover-text-transform;
+@heading-h3-text-muted-link-active-text-color:					@heading-h3-text-link-active-text-color;
+@heading-h3-text-muted-link-active-text-transform:				@heading-h3-text-link-active-text-transform;
+
+// Inverse
+
+@heading-h3-text-inverse-color:									@heading-h3-text-color;
+
+@heading-h3-text-inverse-link-text-color:						@heading-h3-text-link-text-color;
+@heading-h3-text-inverse-link-hover-text-color:					@heading-h3-text-link-hover-text-color;
+@heading-h3-text-inverse-link-active-text-color:				@heading-h3-text-link-active-text-color;
+
+@heading-h3-text-inverse-emphasis-color:						@heading-h3-text-emphasis-color;
+@heading-h3-text-inverse-emphasis-link-text-color:				@heading-h3-text-emphasis-link-text-color;
+@heading-h3-text-inverse-emphasis-link-hover-text-color:		@heading-h3-text-emphasis-link-hover-text-color;
+@heading-h3-text-inverse-emphasis-link-active-text-color:		@heading-h3-text-emphasis-link-active-text-color;
+
+@heading-h3-text-inverse-muted-color:							@heading-h3-text-muted-color;
+@heading-h3-text-inverse-muted-link-text-color:					@heading-h3-text-muted-link-text-color;
+@heading-h3-text-inverse-muted-link-hover-text-color:			@heading-h3-text-muted-link-hover-text-color;
+@heading-h3-text-inverse-muted-link-active-text-color:			@heading-h3-text-muted-link-active-text-color;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Heading h4 Text                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@heading-h4-text-font-family:									@font-family-primary;
+@heading-h4-text-font-size:										24px;
+@heading-h4-text-font-weight:									200;
+@heading-h4-text-line-height:									30px;
+@heading-h4-text-transform:										normal;
+@heading-h4-text-style:											normal;
+@heading-h4-text-color:											@orange;
+
+// Margins
+
+@heading-h4-text-margin-top:									45px;
+@heading-h4-text-margin-bottom:									30px;
+
+// Responsive Sizing
+
+@heading-h4-text-responsive-ratio-widescreen:					1.1;
+@heading-h4-text-responsive-ratio-tablet:						0.9;
+@heading-h4-text-responsive-ratio-mobile:						0.85;
+
+// Link
+
+@heading-h4-text-link-text-color:								@link-text-color;
+@heading-h4-text-link-text-transform:							@link-text-transform;
+@heading-h4-text-link-hover-text-color:							@link-hover-text-color;
+@heading-h4-text-link-hover-text-transform:						@link-hover-text-transform;
+@heading-h4-text-link-active-text-color:						@link-active-text-color;
+@heading-h4-text-link-active-text-transform:					@link-active-text-transform;
+
+// Emphasis
+
+@heading-h4-text-emphasis-color:								@gray;
+@heading-h4-text-emphasis-font-weight:							600;
+@heading-h4-text-emphasis-style:								normal;
+@heading-h4-text-emphasis-link-text-color:						@heading-h4-text-link-text-color;
+@heading-h4-text-emphasis-link-text-transform:					@heading-h4-text-link-text-transform;
+@heading-h4-text-emphasis-link-hover-text-color:				@heading-h4-text-link-hover-text-color;
+@heading-h4-text-emphasis-link-hover-text-transform:			@heading-h4-text-link-hover-text-transform;
+@heading-h4-text-emphasis-link-active-text-color:				@heading-h4-text-link-active-text-color;
+@heading-h4-text-emphasis-link-active-text-transform:			@heading-h4-text-link-active-text-transform;
+
+// Muted
+
+@heading-h4-text-muted-color:									@gray;
+@heading-h4-text-muted-font-weight:								600;
+@heading-h4-text-muted-style:									normal;
+@heading-h4-text-muted-link-text-color:							@heading-h4-text-link-text-color;
+@heading-h4-text-muted-link-text-transform:						@heading-h4-text-link-text-transform;
+@heading-h4-text-muted-link-hover-text-color:					@heading-h4-text-link-hover-text-color;
+@heading-h4-text-muted-link-hover-text-transform:				@heading-h4-text-link-hover-text-transform;
+@heading-h4-text-muted-link-active-text-color:					@heading-h4-text-link-active-text-color;
+@heading-h4-text-muted-link-active-text-transform:				@heading-h4-text-link-active-text-transform;
+
+// Inverse
+
+@heading-h4-text-inverse-color:									@heading-h4-text-color;
+
+@heading-h4-text-inverse-link-text-color:						@heading-h4-text-link-text-color;
+@heading-h4-text-inverse-link-hover-text-color:					@heading-h4-text-link-hover-text-color;
+@heading-h4-text-inverse-link-active-text-color:				@heading-h4-text-link-active-text-color;
+
+@heading-h4-text-inverse-emphasis-color:						@heading-h4-text-emphasis-color;
+@heading-h4-text-inverse-emphasis-link-text-color:				@heading-h4-text-emphasis-link-text-color;
+@heading-h4-text-inverse-emphasis-link-hover-text-color:		@heading-h4-text-emphasis-link-hover-text-color;
+@heading-h4-text-inverse-emphasis-link-active-text-color:		@heading-h4-text-emphasis-link-active-text-color;
+
+@heading-h4-text-inverse-muted-color:							@heading-h4-text-muted-color;
+@heading-h4-text-inverse-muted-link-text-color:					@heading-h4-text-muted-link-text-color;
+@heading-h4-text-inverse-muted-link-hover-text-color:			@heading-h4-text-muted-link-hover-text-color;
+@heading-h4-text-inverse-muted-link-active-text-color:			@heading-h4-text-muted-link-active-text-color;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Heading h5 Text                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@heading-h5-text-font-family:									@font-family-primary;
+@heading-h5-text-font-size:										18px;
+@heading-h5-text-font-weight:									300;
+@heading-h5-text-line-height:									26px;
+@heading-h5-text-transform:										normal;
+@heading-h5-text-style:											normal;
+@heading-h5-text-color:											@gray-darken-80;
+
+// Margins
+
+@heading-h5-text-margin-top:									30px;
+@heading-h5-text-margin-bottom:									30px;
+
+// Responsive Sizing
+
+@heading-h5-text-responsive-ratio-widescreen:					1.1;
+@heading-h5-text-responsive-ratio-tablet:						0.9;
+@heading-h5-text-responsive-ratio-mobile:						0.9;
+
+// Link
+
+@heading-h5-text-link-text-color:								@link-text-color;
+@heading-h5-text-link-text-transform:							@link-text-transform;
+@heading-h5-text-link-hover-text-color:							@link-hover-text-color;
+@heading-h5-text-link-hover-text-transform:						@link-hover-text-transform;
+@heading-h5-text-link-active-text-color:						@link-active-text-color;
+@heading-h5-text-link-active-text-transform:					@link-active-text-transform;
+
+// Emphasis
+
+@heading-h5-text-emphasis-color:								@gray;
+@heading-h5-text-emphasis-font-weight:							600;
+@heading-h5-text-emphasis-style:								normal;
+@heading-h5-text-emphasis-link-text-color:						@heading-h5-text-link-text-color;
+@heading-h5-text-emphasis-link-text-transform:					@heading-h5-text-link-text-transform;
+@heading-h5-text-emphasis-link-hover-text-color:				@heading-h5-text-link-hover-text-color;
+@heading-h5-text-emphasis-link-hover-text-transform:			@heading-h5-text-link-hover-text-transform;
+@heading-h5-text-emphasis-link-active-text-color:				@heading-h5-text-link-active-text-color;
+@heading-h5-text-emphasis-link-active-text-transform:			@heading-h5-text-link-active-text-transform;
+
+// Muted
+
+@heading-h5-text-muted-color:									@gray;
+@heading-h5-text-muted-font-weight:								600;
+@heading-h5-text-muted-style:									normal;
+@heading-h5-text-muted-link-text-color:							@heading-h5-text-link-text-color;
+@heading-h5-text-muted-link-text-transform:						@heading-h5-text-link-text-transform;
+@heading-h5-text-muted-link-hover-text-color:					@heading-h5-text-link-hover-text-color;
+@heading-h5-text-muted-link-hover-text-transform:				@heading-h5-text-link-hover-text-transform;
+@heading-h5-text-muted-link-active-text-color:					@heading-h5-text-link-active-text-color;
+@heading-h5-text-muted-link-active-text-transform:				@heading-h5-text-link-active-text-transform;
+
+// Inverse
+
+@heading-h5-text-inverse-color:									@heading-h5-text-color;
+
+@heading-h5-text-inverse-link-text-color:						@heading-h5-text-link-text-color;
+@heading-h5-text-inverse-link-hover-text-color:					@heading-h5-text-link-hover-text-color;
+@heading-h5-text-inverse-link-active-text-color:				@heading-h5-text-link-active-text-color;
+
+@heading-h5-text-inverse-emphasis-color:						@heading-h5-text-emphasis-color;
+@heading-h5-text-inverse-emphasis-link-text-color:				@heading-h5-text-emphasis-link-text-color;
+@heading-h5-text-inverse-emphasis-link-hover-text-color:		@heading-h5-text-emphasis-link-hover-text-color;
+@heading-h5-text-inverse-emphasis-link-active-text-color:		@heading-h5-text-emphasis-link-active-text-color;
+
+@heading-h5-text-inverse-muted-color:							@heading-h5-text-muted-color;
+@heading-h5-text-inverse-muted-link-text-color:					@heading-h5-text-muted-link-text-color;
+@heading-h5-text-inverse-muted-link-hover-text-color:			@heading-h5-text-muted-link-hover-text-color;
+@heading-h5-text-inverse-muted-link-active-text-color:			@heading-h5-text-muted-link-active-text-color;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Heading h6 Text                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@heading-h6-text-font-family:									@font-family-primary;
+@heading-h6-text-font-size:										14px;
+@heading-h6-text-font-weight:									600;
+@heading-h6-text-line-height:									24px;
+@heading-h6-text-transform:										uppercase;
+@heading-h6-text-style:											normal;
+@heading-h6-text-color:											@orange;
+
+// Margins
+
+@heading-h6-text-margin-top:									30px;
+@heading-h6-text-margin-bottom:									15px;
+
+// Responsive Sizing
+
+@heading-h6-text-responsive-ratio-widescreen:					1.1;
+@heading-h6-text-responsive-ratio-tablet:						0.9;
+@heading-h6-text-responsive-ratio-mobile:						0.9;
+
+// Link
+
+@heading-h6-text-link-text-color:								@link-text-color;
+@heading-h6-text-link-text-transform:							@link-text-transform;
+@heading-h6-text-link-hover-text-color:							@link-hover-text-color;
+@heading-h6-text-link-hover-text-transform:						@link-hover-text-transform;
+@heading-h6-text-link-active-text-color:						@link-active-text-color;
+@heading-h6-text-link-active-text-transform:					@link-active-text-transform;
+
+// Emphasis
+
+@heading-h6-text-emphasis-color:								@gray;
+@heading-h6-text-emphasis-font-weight:							600;
+@heading-h6-text-emphasis-style:								normal;
+@heading-h6-text-emphasis-link-text-color:						@heading-h6-text-link-text-color;
+@heading-h6-text-emphasis-link-text-transform:					@heading-h6-text-link-text-transform;
+@heading-h6-text-emphasis-link-hover-text-color:				@heading-h6-text-link-hover-text-color;
+@heading-h6-text-emphasis-link-hover-text-transform:			@heading-h6-text-link-hover-text-transform;
+@heading-h6-text-emphasis-link-active-text-color:				@heading-h6-text-link-active-text-color;
+@heading-h6-text-emphasis-link-active-text-transform:			@heading-h6-text-link-active-text-transform;
+
+// Muted
+
+@heading-h6-text-muted-color:									@gray;
+@heading-h6-text-muted-font-weight:								600;
+@heading-h6-text-muted-style:									normal;
+@heading-h6-text-muted-link-text-color:							@heading-h6-text-link-text-color;
+@heading-h6-text-muted-link-text-transform:						@heading-h6-text-link-text-transform;
+@heading-h6-text-muted-link-hover-text-color:					@heading-h6-text-link-hover-text-color;
+@heading-h6-text-muted-link-hover-text-transform:				@heading-h6-text-link-hover-text-transform;
+@heading-h6-text-muted-link-active-text-color:					@heading-h6-text-link-active-text-color;
+@heading-h6-text-muted-link-active-text-transform:				@heading-h6-text-link-active-text-transform;
+
+// Inverse
+
+@heading-h6-text-inverse-color:									@heading-h6-text-color;
+
+@heading-h6-text-inverse-link-text-color:						@heading-h6-text-link-text-color;
+@heading-h6-text-inverse-link-hover-text-color:					@heading-h6-text-link-hover-text-color;
+@heading-h6-text-inverse-link-active-text-color:				@heading-h6-text-link-active-text-color;
+
+@heading-h6-text-inverse-emphasis-color:						@heading-h6-text-emphasis-color;
+@heading-h6-text-inverse-emphasis-link-text-color:				@heading-h6-text-emphasis-link-text-color;
+@heading-h6-text-inverse-emphasis-link-hover-text-color:		@heading-h6-text-emphasis-link-hover-text-color;
+@heading-h6-text-inverse-emphasis-link-active-text-color:		@heading-h6-text-emphasis-link-active-text-color;
+
+@heading-h6-text-inverse-muted-color:							@heading-h6-text-muted-color;
+@heading-h6-text-inverse-muted-link-text-color:					@heading-h6-text-muted-link-text-color;
+@heading-h6-text-inverse-muted-link-hover-text-color:			@heading-h6-text-muted-link-hover-text-color;
+@heading-h6-text-inverse-muted-link-active-text-color:			@heading-h6-text-muted-link-active-text-color;
 
 
 
-/* ========================================================================= */
-/*                                                                           */
-/* Typography                                                                */
-/*                                                                           */
-/* ========================================================================= */
 
-// Font Families
 
-@fontFamilyPrimary:								"proxima-nova-alt", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@fontFamilySecondary:							"proxima-nova-alt", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@fontFamilyTertiary:							"proxima-nova-alt", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@fontFamilyMonospace:							Monaco, Menlo, Consolas, "Courier New", monospace;
 
-// Text Margin Ratios
 
-@textMarginRatioTop:							1.25;
-@textMarginRatioTall:							2;
-@textMarginRatioShort:							0.5;
 
-// Body Text
 
-@bodyTextFontFamily:							@fontFamilyPrimary;
-@bodyTextFontSize:								14px;
-@bodyTextFontWeight:							300;
-@bodyTextColor:									@socialist_gray;
-@bodyTextLineHeight:							24px;
-@bodyTextMargin:								15px;
-@bodyTextTransform:								normal;
-@bodyTextStyle:									normal;
-@bodyTextEmphasisColor:							@socialist_gray;
-@bodyTextEmphasisFontWeight:					600;
-@bodyTextMutedColor:							@socialist_gray;
-@bodyTextMutedFontWeight:						400;
-@bodyTextInverseColor:							@socialist_gray_lighten_30;
-@bodyTextInverseEmphasisColor:					@socialist_blue;
-@bodyTextInverseMutedColor:						@socialist_gray_darken_20;
-@bodyTextRatioWide:								1.0;
-@bodyTextRatioTablet:							0.9;
-@bodyTextRatioMobile:							0.85;
 
-// Lead Text
 
-@leadTextFontFamily:							@fontFamilyPrimary;
-@leadTextFontSize:								22px;
-@leadTextFontWeight:							300;
-@leadTextColor:									@socialist_gray_darken_50;
-@leadTextLineHeight:							32px;
-@leadTextMargin:								40px;
-@leadTextTransform:								normal;
-@leadTextStyle:									normal;
-@leadTextEmphasisColor:							@socialist_gray;
-@leadTextEmphasisFontWeight:					100;
-@leadTextMutedColor:							@socialist_gray;
-@leadTextMutedFontWeight:						100;
-@leadTextInverseColor:							@white;
-@leadTextInverseEmphasisColor:					@white;
-@leadTextInverseMutedColor:						@socialist_gray_darken_20;
-@leadTextRatioWide:								1.0;
-@leadTextRatioTablet:							1.0;
-@leadTextRatioMobile:							0.85;
 
-// Small Text
 
-@smallTextFontFamily:							@fontFamilyPrimary;
-@smallTextFontSize:								12px;
-@smallTextFontWeight:							300;
-@smallTextColor:								@socialist_gray;
-@smallTextLineHeight:							20px;
-@smallTextMargin:								15px;
-@smallTextEmphasisColor:						@socialist_gray;
-@smallTextEmphasisFontWeight:					300;
-@smallTextMutedColor:							@socialist_gray;
-@smallTextMutedFontWeight:						300;
-@smallTextInverseColor:							@white;
-@smallTextInverseEmphasisColor:					@white;
-@smallTextInverseMutedColor:					@socialist_gray_darken_20;
-@smallTextRatioWide:							1.0;
-@smallTextRatioTablet:							0.9;
-@smallTextRatioMobile:							0.8;
 
-// Heading H1 Text
 
-@headingH1TextFontFamily:						@fontFamilyPrimary;
-@headingH1TextFontSize:							72px;
-@headingH1TextFontWeight:						100;
-@headingH1TextColor:							@socialist_red;
-@headingH1TextLineHeight:						80px;
-@headingH1TextMargin:							@bodyTextMargin * 3.5;
-@headingH1TextStyle:							normal;
-@headingH1TextTransform:						normal;
-@headingH1TextEmphasisFontWeight:				800;
-@headingH1TextEmphasisColor:					@socialist_gray_darken_80;
-@headingH1TextRatioWide:						1.0;
-@headingH1TextRatioTablet:						0.8;
-@headingH1TextRatioMobile:						0.6;
-@headingH1TextInverseColor:						@white;
-@headingH1TextInverseEmphasisColor:				@linkColor;
-
-// Heading H2 Text
-
-@headingH2TextFontFamily:						@fontFamilyPrimary;
-@headingH2TextFontSize:							48px;
-@headingH2TextFontWeight:						100;
-@headingH2TextColor:							@socialist_red;
-@headingH2TextLineHeight:						52px;
-@headingH2TextMargin:							@bodyTextMargin * 3.5;
-@headingH2TextStyle:							normal;
-@headingH2TextTransform:						normal;
-@headingH2TextEmphasisFontWeight:				100;
-@headingH2TextEmphasisColor:					@socialist_red;
-@headingH2TextRatioWide:						1.0;
-@headingH2TextRatioTablet:						0.8;
-@headingH2TextRatioMobile:						0.60;
-@headingH2TextInverseColor:						@white;
-@headingH2TextInverseEmphasisColor:				@linkColor;
-
-// Heading H3 Text
-
-@headingH3TextFontFamily:						@fontFamilySecondary;
-@headingH3TextFontSize:							34px;
-@headingH3TextFontWeight:						300;
-@headingH3TextColor:							@socialist_gray_darken_50;
-@headingH3TextLineHeight:						38px;
-@headingH3TextMargin:							@bodyTextMargin * 1.8;
-@headingH3TextStyle:							normal;
-@headingH3TextTransform:						normal;
-@headingH3TextEmphasisFontWeight:				300;
-@headingH3TextEmphasisColor:					@socialist_gray_darken_50;
-@headingH3TextRatioWide:						1.0;
-@headingH3TextRatioTablet:						0.8;
-@headingH3TextRatioMobile:						0.7;
-@headingH3TextInverseColor:						@white;
-@headingH3TextInverseEmphasisColor:				@linkColor;
-
-// Heading H4 Text
-
-@headingH4TextFontFamily:						@fontFamilyTertiary;
-@headingH4TextFontSize:							22px;
-@headingH4TextFontWeight:						400;
-@headingH4TextColor:							@socialist_gray_darken_30;
-@headingH4TextLineHeight:						30px;
-@headingH4TextMargin:							@bodyTextMargin * 1.5;
-@headingH4TextStyle:							normal;
-@headingH4TextTransform:						normal;
-@headingH4TextEmphasisFontWeight:				400;
-@headingH4TextEmphasisColor:					@socialist_gray_darken_30;
-@headingH4TextRatioWide:						1.0;
-@headingH4TextRatioTablet:						0.9;
-@headingH4TextRatioMobile:						0.8;
-@headingH4TextInverseColor:						@white;
-@headingH4TextInverseEmphasisColor:				@linkColor;
-
-// Heading H5 Text
-
-@headingH5TextFontFamily:						@fontFamilyPrimary;
-@headingH5TextFontSize:							18px;
-@headingH5TextFontWeight:						400;
-@headingH5TextColor:							@socialist_red;
-@headingH5TextLineHeight:						22px;
-@headingH5TextMargin:							@bodyTextMargin * 1.15;
-@headingH5TextStyle:							normal;
-@headingH5TextTransform:						normal;
-@headingH5TextEmphasisFontWeight:				400;
-@headingH5TextEmphasisColor:					@socialist_red;
-@headingH5TextRatioWide:						1.0;
-@headingH5TextRatioTablet:						0.9;
-@headingH5TextRatioMobile:						0.8;
-@headingH5TextInverseColor:						@white;
-@headingH5TextInverseEmphasisColor:				@linkColor;
-
-// Heading H6 Text
-
-@headingH6TextFontFamily:						@fontFamilyPrimary;
-@headingH6TextFontSize:							13px;
-@headingH6TextFontWeight:						700;
-@headingH6TextColor:							@socialist_gray_darken_50;
-@headingH6TextLineHeight:						20px;
-@headingH6TextMargin:							@bodyTextMargin * 1.15;
-@headingH6TextStyle:							normal;
-@headingH6TextTransform:						uppercase;
-@headingH6TextEmphasisFontWeight:				700;
-@headingH6TextEmphasisColor:					@socialist_gray_darken_50;
-@headingH6TextRatioWide:						1.0;
-@headingH6TextRatioTablet:						0.9;
-@headingH6TextRatioMobile:						0.9;
-@headingH6TextInverseColor:						@white;
-@headingH6TextInverseEmphasisColor:				@linkColor;
 
 
 
@@ -526,20 +1148,20 @@
 /* ========================================================================= */
 
 @codePaddingHorizontal:											6px;
-@codeBackgroundColor:											@socialist_gray_lighten_90;
+@codeBackgroundColor:											@gray-lighten-90;
 @codeShadow:													0px 0px 0px 1px rgba(0, 0, 0, 0.1);
 @codeBorderRadius:												3px;
-@codeLinenumsBackgroundColor:									@socialist_gray_lighten_95;
+@codeLinenumsBackgroundColor:									@gray-lighten-95;
 @codeLinenumsBorderColor:										rgba(0, 0, 0, 0.1);
 
-@codeTextColor:													@socialist_gray;
-@codeTextFontFamily:											@fontFamilyMonospace;
-@codeTextFontSize:												@bodyTextFontSize - 2;
-@codeTextFontWeight:											@bodyTextFontWeight;
-@codeTextLineHeight:											@bodyTextLineHeight;
-@codeTextRatioWide:												@bodyTextRatioWide;
-@codeTextRatioTablet:											@bodyTextRatioTablet;
-@codeTextRatioMobile:											@bodyTextRatioMobile;
+@codeTextColor:													@gray;
+@codeTextFontFamily:											@font-family-monospace;
+@codeTextFontSize:												@body-text-font-size - 2;
+@codeTextFontWeight:											@body-text-font-weight;
+@codeTextLineHeight:											@body-text-line-height;
+@codeTextRatioWide:												@body-text-responsive-ratio-widescreen;
+@codeTextRatioTablet:											@body-text-responsive-ratio-tablet;
+@codeTextRatioMobile:											@body-text-responsive-ratio-mobile;
 
 @codePreTextColor:												#d14;
 
@@ -554,32 +1176,32 @@
 // Tables
 
 @tableBackground:												transparent;
-@tableBorder:													@socialist_gray_lighten_60;
+@tableBorder:													@gray-lighten-60;
 @tableBorderRadius:												4px;
-@tableCellBackgroundAccent:										@socialist_gray_lighten_95;
-@tableCellBackgroundHover:										@socialist_gray_lighten_95;
-@tableCellTextColor:											@bodyTextColor;
-@tableCellHeaderTextColor:										@socialist_gray_darken_30;
+@tableCellBackgroundAccent:										@gray-lighten-95;
+@tableCellBackgroundHover:										@gray-lighten-95;
+@tableCellTextColor:											@body-text-color;
+@tableCellHeaderTextColor:										@gray-darken-30;
 @tableCellHeaderTextFontWeight:									600;
 
 @tableInverseBackground:										transparent;
-@tableInverseBorder:											@socialist_gray_lighten_10;
+@tableInverseBorder:											@gray-lighten-10;
 @tableInverseBorderRadius:										4px;
-@tableInverseCellBackgroundAccent:								@socialist_gray_lighten_95;
-@tableInverseCellBackgroundHover:								@socialist_gray_lighten_95;
-@tableInverseCellTextColor:										@bodyTextInverseColor;
-@tableInverseCellHeaderTextColor:								@socialist_gray_lighten_70;
+@tableInverseCellBackgroundAccent:								@gray-lighten-95;
+@tableInverseCellBackgroundHover:								@gray-lighten-95;
+@tableInverseCellTextColor:										@body-text-inverse-color;
+@tableInverseCellHeaderTextColor:								@gray-lighten-70;
 
 // Table Cell States
 
-@tableCellSuccessBackground:									@socialist_green_lighten_95;
-@tableCellSuccessTextColor:										@socialist_green;
+@tableCellSuccessBackground:									@green-lighten-95;
+@tableCellSuccessTextColor:										@green;
 
-@tableCellErrorBackground:										@socialist_red_lighten_95;
-@tableCellErrorTextColor:										@socialist_red;
+@tableCellErrorBackground:										@red-lighten-95;
+@tableCellErrorTextColor:										@red;
 
-@tableCellWarningBackground:									@socialist_orange_lighten_95;
-@tableCellWarningTextColor:										@socialist_orange;
+@tableCellWarningBackground:									@orange-lighten-95;
+@tableCellWarningTextColor:										@orange;
 
 
 
@@ -605,7 +1227,7 @@
 
 @buttonBorderRadius:											4px;
 @buttonHorizontalPadding:										15px;
-@buttonTextFontFamily:											@fontFamilyPrimary;
+@buttonTextFontFamily:											@font-family-primary;
 @buttonTextFontSize:											16px;
 @buttonTextFontWeight:											500;
 @buttonTextFontStyle:											normal;
@@ -640,44 +1262,44 @@
 /* Default Button                                                            */
 /* ------------------------------------------------------------------------- */
 
-@buttonTextColor:												@socialist_gray_darken_30;
+@buttonTextColor:												@gray-darken-30;
 @buttonTextShadow:												0 1px 1px rgba(255, 255, 255, 0.75);
-@buttonBackgroundColor:											@socialist_gray_lighten_80;
-@buttonBackgroundGradientColorTop:								@socialist_gray_lighten_90;
-@buttonBackgroundGradientColorBottom:							@socialist_gray_lighten_70;
+@buttonBackgroundColor:											@gray-lighten-80;
+@buttonBackgroundGradientColorTop:								@gray-lighten-90;
+@buttonBackgroundGradientColorBottom:							@gray-lighten-70;
 @buttonShadow:													inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
 																0px 0px 0px 1px rgba(0, 0, 0, 0.15),
 																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 @buttonMarginTop:												0px;
 @buttonMarginBottom:											0px;
 
-@buttonHoverTextColor:											@socialist_gray_darken_30;
+@buttonHoverTextColor:											@gray-darken-30;
 @buttonHoverTextShadow:											0 1px 1px rgba(255, 255, 255, 0.75);
-@buttonHoverBackgroundColor:									@socialist_gray_lighten_70;
-@buttonHoverBackgroundGradientColorTop:							@socialist_gray_lighten_90;
-@buttonHoverBackgroundGradientColorBottom:						@socialist_gray_lighten_50;
+@buttonHoverBackgroundColor:									@gray-lighten-70;
+@buttonHoverBackgroundGradientColorTop:							@gray-lighten-90;
+@buttonHoverBackgroundGradientColorBottom:						@gray-lighten-50;
 @buttonHoverShadow:												inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
 																0px 0px 0px 1px rgba(0, 0, 0, 0.25),
 																0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 @buttonHoverMarginTop:											0px;
 @buttonHoverMarginBottom:										0px;
 
-@buttonActiveTextColor:											@socialist_gray_darken_10;
+@buttonActiveTextColor:											@gray-darken-10;
 @buttonActiveTextShadow:										none;
-@buttonActiveBackgroundColor:									@socialist_gray_lighten_70;
-@buttonActiveBackgroundGradientColorTop:						@socialist_gray_lighten_60;
-@buttonActiveBackgroundGradientColorBottom:						@socialist_gray_lighten_90;
+@buttonActiveBackgroundColor:									@gray-lighten-70;
+@buttonActiveBackgroundGradientColorTop:						@gray-lighten-60;
+@buttonActiveBackgroundGradientColorBottom:						@gray-lighten-90;
 @buttonActiveShadow:											inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
 																0px 0px 0px 1px rgba(0, 0, 0, 0.3),
 																0px 1px 0px 0px rgba(255, 255, 255, 0.75);
 @buttonActiveMarginTop:											0px;
 @buttonActiveMarginBottom:										0px;
 
-@buttonDisabledTextColor:										@socialist_gray_darken_30;
+@buttonDisabledTextColor:										@gray-darken-30;
 @buttonDisabledTextShadow:										0 1px 1px rgba(255, 255, 255, 0.75);
-@buttonDisabledBackgroundColor:									@socialist_gray_lighten_80;
-@buttonDisabledBackgroundGradientColorTop:						@socialist_gray_lighten_90;
-@buttonDisabledBackgroundGradientColorBottom:					@socialist_gray_lighten_70;
+@buttonDisabledBackgroundColor:									@gray-lighten-80;
+@buttonDisabledBackgroundGradientColorTop:						@gray-lighten-90;
+@buttonDisabledBackgroundGradientColorBottom:					@gray-lighten-70;
 @buttonDisabledShadow:											inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
 																0px 0px 0px 1px rgba(0, 0, 0, 0.15),
 																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
@@ -687,33 +1309,33 @@
 
 // Default Button (Inverse)
 
-@buttonInverseTextColor:										@socialist_gray_lighten_60;
+@buttonInverseTextColor:										@gray-lighten-60;
 @buttonInverseTextShadow:										0 -1px 1px rgba(0, 0, 0, 0.75);
-@buttonInverseBackgroundColor:									@socialist_gray_darken_80;
-@buttonInverseBackgroundGradientColorTop:						@socialist_gray_darken_70;
-@buttonInverseBackgroundGradientColorBottom:					@socialist_gray_darken_90;
+@buttonInverseBackgroundColor:									@gray-darken-80;
+@buttonInverseBackgroundGradientColorTop:						@gray-darken-70;
+@buttonInverseBackgroundGradientColorBottom:					@gray-darken-90;
 @buttonInverseShadow:											inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15),
 																0px 0px 0px 1px rgba(0, 0, 0, 0.75),
 																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 @buttonInverseMarginTop:										0px;
 @buttonInverseMarginBottom:										0px;
 
-@buttonInverseHoverTextColor:									@socialist_gray_lighten_60;
+@buttonInverseHoverTextColor:									@gray-lighten-60;
 @buttonInverseHoverTextShadow:									0 -1px 1px rgba(0, 0, 0, 0.75);
-@buttonInverseHoverBackgroundColor:								@socialist_gray_darken_70;
-@buttonInverseHoverBackgroundGradientColorTop:					@socialist_gray_darken_60;
-@buttonInverseHoverBackgroundGradientColorBottom:				@socialist_gray_darken_85;
+@buttonInverseHoverBackgroundColor:								@gray-darken-70;
+@buttonInverseHoverBackgroundGradientColorTop:					@gray-darken-60;
+@buttonInverseHoverBackgroundGradientColorBottom:				@gray-darken-85;
 @buttonInverseHoverShadow:										inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15),
 																0px 0px 0px 1px rgba(0, 0, 0, 0.75),
 																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 @buttonInverseHoverMarginTop:									0px;
 @buttonInverseHoverMarginBottom:								0px;
 
-@buttonInverseActiveTextColor:									@socialist_gray_lighten_60;
+@buttonInverseActiveTextColor:									@gray-lighten-60;
 @buttonInverseActiveTextShadow:									0 -1px 1px rgba(0, 0, 0, 0.75);
-@buttonInverseActiveBackgroundColor:							@socialist_gray_darken_80;
-@buttonInverseActiveBackgroundGradientColorTop:					@socialist_gray_darken_85;
-@buttonInverseActiveBackgroundGradientColorBottom:				@socialist_gray_darken_60;
+@buttonInverseActiveBackgroundColor:							@gray-darken-80;
+@buttonInverseActiveBackgroundGradientColorTop:					@gray-darken-85;
+@buttonInverseActiveBackgroundGradientColorBottom:				@gray-darken-60;
 @buttonInverseActiveShadow:										inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
 																0px 0px 0px 1px rgba(0, 0, 0, 0.75),
 																0px 1px 2px 0px rgba(255, 255, 255, 0.15);
@@ -736,44 +1358,44 @@
 
 @buttonPrimaryTextColor:										@white;
 @buttonPrimaryTextShadow:										0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonPrimaryBackgroundColor:									@socialist_blue;
-@buttonPrimaryBackgroundGradientColorTop:						@socialist_blue_lighten_10;
-@buttonPrimaryBackgroundGradientColorBottom:					@socialist_blue_darken_10;
-@buttonPrimaryShadow:											inset 0px 1px 0px 0px hsla(hue(@socialist_blue_lighten_20), saturation(@socialist_blue_lighten_20), lightness(@socialist_blue_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_blue_darken_40), saturation(@socialist_blue_darken_40), lightness(@socialist_blue_darken_40), 0.75),
+@buttonPrimaryBackgroundColor:									@blue;
+@buttonPrimaryBackgroundGradientColorTop:						@blue-lighten-10;
+@buttonPrimaryBackgroundGradientColorBottom:					@blue-darken-10;
+@buttonPrimaryShadow:											inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@blue-darken-40), saturation(@blue-darken-40), lightness(@blue-darken-40), 0.75),
 																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 @buttonPrimaryMarginTop:										0px;
 @buttonPrimaryMarginBottom:										0px;
 
 @buttonPrimaryHoverTextColor:									@white;
 @buttonPrimaryHoverTextShadow:									0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonPrimaryHoverBackgroundColor:								@socialist_blue_darken_20;
-@buttonPrimaryHoverBackgroundGradientColorTop:					@socialist_blue_lighten_10;
-@buttonPrimaryHoverBackgroundGradientColorBottom:				@socialist_blue_darken_20;
-@buttonPrimaryHoverShadow:										inset 0px 1px 0px 0px hsla(hue(@socialist_blue_lighten_20), saturation(@socialist_blue_lighten_20), lightness(@socialist_blue_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_blue_darken_60), saturation(@socialist_blue_darken_60), lightness(@socialist_blue_darken_60), 0.75),
+@buttonPrimaryHoverBackgroundColor:								@blue-darken-20;
+@buttonPrimaryHoverBackgroundGradientColorTop:					@blue-lighten-10;
+@buttonPrimaryHoverBackgroundGradientColorBottom:				@blue-darken-20;
+@buttonPrimaryHoverShadow:										inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@blue-darken-60), saturation(@blue-darken-60), lightness(@blue-darken-60), 0.75),
 																0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 @buttonPrimaryHoverMarginTop:									0px;
 @buttonPrimaryHoverMarginBottom:								0px;
 
-@buttonPrimaryActiveTextColor:									@socialist_blue_lighten_90;
+@buttonPrimaryActiveTextColor:									@blue-lighten-90;
 @buttonPrimaryActiveTextShadow:									none;
-@buttonPrimaryActiveBackgroundColor:							@socialist_blue_darken_20;
-@buttonPrimaryActiveBackgroundGradientColorTop:					@socialist_blue_darken_20;
-@buttonPrimaryActiveBackgroundGradientColorBottom:				@socialist_blue;
+@buttonPrimaryActiveBackgroundColor:							@blue-darken-20;
+@buttonPrimaryActiveBackgroundGradientColorTop:					@blue-darken-20;
+@buttonPrimaryActiveBackgroundGradientColorBottom:				@blue;
 @buttonPrimaryActiveShadow:										inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@socialist_blue_darken_60), saturation(@socialist_blue_darken_60), lightness(@socialist_blue_darken_60), 0.75),
+																0px 0px 0px 1px hsla(hue(@blue-darken-60), saturation(@blue-darken-60), lightness(@blue-darken-60), 0.75),
 																0px 1px 0px 0px rgba(255, 255, 255, 0.75);
 @buttonPrimaryActiveMarginTop:									0px;
 @buttonPrimaryActiveMarginBottom:								0px;
 
 @buttonPrimaryDisabledTextColor:								@white;
 @buttonPrimaryDisabledTextShadow:								0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonPrimaryDisabledBackgroundColor:							@socialist_blue;
-@buttonPrimaryDisabledBackgroundGradientColorTop:				@socialist_blue_lighten_10;
-@buttonPrimaryDisabledBackgroundGradientColorBottom:			@socialist_blue_darken_10;
-@buttonPrimaryDisabledShadow:									inset 0px 1px 0px 0px hsla(hue(@socialist_blue_lighten_20), saturation(@socialist_blue_lighten_20), lightness(@socialist_blue_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_blue_darken_40), saturation(@socialist_blue_darken_40), lightness(@socialist_blue_darken_40), 0.75),
+@buttonPrimaryDisabledBackgroundColor:							@blue;
+@buttonPrimaryDisabledBackgroundGradientColorTop:				@blue-lighten-10;
+@buttonPrimaryDisabledBackgroundGradientColorBottom:			@blue-darken-10;
+@buttonPrimaryDisabledShadow:									inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@blue-darken-40), saturation(@blue-darken-40), lightness(@blue-darken-40), 0.75),
 																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 @buttonPrimaryDisabledMarginTop:								0px;
 @buttonPrimaryDisabledMarginBottom:								0px;
@@ -799,7 +1421,7 @@
 @buttonPrimaryInverseHoverMarginTop:							0px;
 @buttonPrimaryInverseHoverMarginBottom:							0px;
 
-@buttonPrimaryInverseActiveTextColor:							@socialist_blue;
+@buttonPrimaryInverseActiveTextColor:							@blue;
 @buttonPrimaryInverseActiveTextShadow:							none;
 @buttonPrimaryInverseActiveBackgroundColor:						rgba(255, 255, 255, 1.0);
 @buttonPrimaryInverseActiveBackgroundGradientColorTop:			none;
@@ -824,44 +1446,44 @@
 
 @buttonSuccessTextColor:										@white;
 @buttonSuccessTextShadow:										0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonSuccessBackgroundColor:									@socialist_green;
-@buttonSuccessBackgroundGradientColorTop:						@socialist_green_lighten_10;
-@buttonSuccessBackgroundGradientColorBottom:					@socialist_green_darken_10;
-@buttonSuccessShadow:											inset 0px 1px 0px 0px hsla(hue(@socialist_green_lighten_20), saturation(@socialist_green_lighten_20), lightness(@socialist_green_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_green_darken_40), saturation(@socialist_green_darken_40), lightness(@socialist_green_darken_40), 0.75),
+@buttonSuccessBackgroundColor:									@green;
+@buttonSuccessBackgroundGradientColorTop:						@green-lighten-10;
+@buttonSuccessBackgroundGradientColorBottom:					@green-darken-10;
+@buttonSuccessShadow:											inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@green-darken-40), saturation(@green-darken-40), lightness(@green-darken-40), 0.75),
 																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 @buttonSuccessMarginTop:										0px;
 @buttonSuccessMarginBottom:										0px;
 
 @buttonSuccessHoverTextColor:									@white;
 @buttonSuccessHoverTextShadow:									0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonSuccessHoverBackgroundColor:								@socialist_green_darken_20;
-@buttonSuccessHoverBackgroundGradientColorTop:					@socialist_green_lighten_10;
-@buttonSuccessHoverBackgroundGradientColorBottom:				@socialist_green_darken_20;
-@buttonSuccessHoverShadow:										inset 0px 1px 0px 0px hsla(hue(@socialist_green_lighten_20), saturation(@socialist_green_lighten_20), lightness(@socialist_green_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_green_darken_60), saturation(@socialist_green_darken_60), lightness(@socialist_green_darken_60), 0.75),
+@buttonSuccessHoverBackgroundColor:								@green-darken-20;
+@buttonSuccessHoverBackgroundGradientColorTop:					@green-lighten-10;
+@buttonSuccessHoverBackgroundGradientColorBottom:				@green-darken-20;
+@buttonSuccessHoverShadow:										inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@green-darken-60), saturation(@green-darken-60), lightness(@green-darken-60), 0.75),
 																0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 @buttonSuccessHoverMarginTop:									0px;
 @buttonSuccessHoverMarginBottom:								0px;
 
-@buttonSuccessActiveTextColor:									@socialist_green_lighten_90;
+@buttonSuccessActiveTextColor:									@green-lighten-90;
 @buttonSuccessActiveTextShadow:									none;
-@buttonSuccessActiveBackgroundColor:							@socialist_green_darken_20;
-@buttonSuccessActiveBackgroundGradientColorTop:					@socialist_green_darken_20;
-@buttonSuccessActiveBackgroundGradientColorBottom:				@socialist_green;
+@buttonSuccessActiveBackgroundColor:							@green-darken-20;
+@buttonSuccessActiveBackgroundGradientColorTop:					@green-darken-20;
+@buttonSuccessActiveBackgroundGradientColorBottom:				@green;
 @buttonSuccessActiveShadow:										inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@socialist_green_darken_60), saturation(@socialist_green_darken_60), lightness(@socialist_green_darken_60), 0.75),
+																0px 0px 0px 1px hsla(hue(@green-darken-60), saturation(@green-darken-60), lightness(@green-darken-60), 0.75),
 																0px 1px 0px 0px rgba(255, 255, 255, 0.75);
 @buttonSuccessActiveMarginTop:									0px;
 @buttonSuccessActiveMarginBottom:								0px;
 
 @buttonSuccessDisabledTextColor:								@white;
 @buttonSuccessDisabledTextShadow:								0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonSuccessDisabledBackgroundColor:							@socialist_green;
-@buttonSuccessDisabledBackgroundGradientColorTop:				@socialist_green_lighten_10;
-@buttonSuccessDisabledBackgroundGradientColorBottom:			@socialist_green_darken_10;
-@buttonSuccessDisabledShadow:									inset 0px 1px 0px 0px hsla(hue(@socialist_green_lighten_20), saturation(@socialist_green_lighten_20), lightness(@socialist_green_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_green_darken_40), saturation(@socialist_green_darken_40), lightness(@socialist_green_darken_40), 0.75),
+@buttonSuccessDisabledBackgroundColor:							@green;
+@buttonSuccessDisabledBackgroundGradientColorTop:				@green-lighten-10;
+@buttonSuccessDisabledBackgroundGradientColorBottom:			@green-darken-10;
+@buttonSuccessDisabledShadow:									inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@green-darken-40), saturation(@green-darken-40), lightness(@green-darken-40), 0.75),
 																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 @buttonSuccessDisabledMarginTop:								0px;
 @buttonSuccessDisabledMarginBottom:								0px;
@@ -869,7 +1491,7 @@
 
 // Success Button (Inverse)
 
-@buttonSuccessInverseTextColor:									@socialist_green;
+@buttonSuccessInverseTextColor:									@green;
 @buttonSuccessInverseTextShadow:								@buttonTextShadow;
 @buttonSuccessInverseBackgroundColor:							@buttonBackgroundColor;
 @buttonSuccessInverseBackgroundGradientColorTop:				@buttonBackgroundGradientColorTop;
@@ -878,7 +1500,7 @@
 @buttonSuccessInverseMarginTop:									@buttonMarginTop;
 @buttonSuccessInverseMarginBottom:								@buttonMarginBottom;
 
-@buttonSuccessInverseHoverTextColor:							@socialist_green_darken_20;
+@buttonSuccessInverseHoverTextColor:							@green-darken-20;
 @buttonSuccessInverseHoverTextShadow:							@buttonHoverTextShadow;
 @buttonSuccessInverseHoverBackgroundColor:						@buttonHoverBackgroundColor;
 @buttonSuccessInverseHoverBackgroundGradientColorTop:			@buttonHoverBackgroundGradientColorTop;
@@ -887,7 +1509,7 @@
 @buttonSuccessInverseHoverMarginTop:							@buttonHoverMarginTop;
 @buttonSuccessInverseHoverMarginBottom:							@buttonHoverMarginBottom;
 
-@buttonSuccessInverseActiveTextColor:							@socialist_green_darken_30;
+@buttonSuccessInverseActiveTextColor:							@green-darken-30;
 @buttonSuccessInverseActiveTextShadow:							@buttonActiveTextShadow;
 @buttonSuccessInverseActiveBackgroundColor:						@buttonActiveBackgroundColor;
 @buttonSuccessInverseActiveBackgroundGradientColorTop:			@buttonActiveBackgroundGradientColorTop;
@@ -912,44 +1534,44 @@
 
 @buttonWarningTextColor:										@white;
 @buttonWarningTextShadow:										0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonWarningBackgroundColor:									@socialist_orange;
-@buttonWarningBackgroundGradientColorTop:						@socialist_orange_lighten_10;
-@buttonWarningBackgroundGradientColorBottom:					@socialist_orange_darken_20;
-@buttonWarningShadow:											inset 0px 1px 0px 0px hsla(hue(@socialist_orange_lighten_20), saturation(@socialist_orange_lighten_20), lightness(@socialist_orange_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_orange_darken_50), saturation(@socialist_orange_darken_50), lightness(@socialist_orange_darken_50), 0.75),
+@buttonWarningBackgroundColor:									@orange;
+@buttonWarningBackgroundGradientColorTop:						@orange-lighten-10;
+@buttonWarningBackgroundGradientColorBottom:					@orange-darken-20;
+@buttonWarningShadow:											inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@orange-darken-50), saturation(@orange-darken-50), lightness(@orange-darken-50), 0.75),
 																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 @buttonWarningMarginTop:										0px;
 @buttonWarningMarginBottom:										0px;
 
 @buttonWarningHoverTextColor:									@white;
 @buttonWarningHoverTextShadow:									0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonWarningHoverBackgroundColor:								@socialist_orange_darken_20;
-@buttonWarningHoverBackgroundGradientColorTop:					@socialist_orange_lighten_10;
-@buttonWarningHoverBackgroundGradientColorBottom:				@socialist_orange_darken_30;
-@buttonWarningHoverShadow:										inset 0px 1px 0px 0px hsla(hue(@socialist_orange_lighten_20), saturation(@socialist_orange_lighten_20), lightness(@socialist_orange_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_orange_darken_60), saturation(@socialist_orange_darken_60), lightness(@socialist_orange_darken_60), 0.75),
+@buttonWarningHoverBackgroundColor:								@orange-darken-20;
+@buttonWarningHoverBackgroundGradientColorTop:					@orange-lighten-10;
+@buttonWarningHoverBackgroundGradientColorBottom:				@orange-darken-30;
+@buttonWarningHoverShadow:										inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@orange-darken-60), saturation(@orange-darken-60), lightness(@orange-darken-60), 0.75),
 																0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 @buttonWarningHoverMarginTop:									0px;
 @buttonWarningHoverMarginBottom:								0px;
 
-@buttonWarningActiveTextColor:									@socialist_orange_lighten_90;
+@buttonWarningActiveTextColor:									@orange-lighten-90;
 @buttonWarningActiveTextShadow:									none;
-@buttonWarningActiveBackgroundColor:							@socialist_orange_darken_20;
-@buttonWarningActiveBackgroundGradientColorTop:					@socialist_orange_darken_20;
-@buttonWarningActiveBackgroundGradientColorBottom:				@socialist_orange_darken_10;
+@buttonWarningActiveBackgroundColor:							@orange-darken-20;
+@buttonWarningActiveBackgroundGradientColorTop:					@orange-darken-20;
+@buttonWarningActiveBackgroundGradientColorBottom:				@orange-darken-10;
 @buttonWarningActiveShadow:										inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@socialist_orange_darken_60), saturation(@socialist_orange_darken_60), lightness(@socialist_orange_darken_60), 0.75),
+																0px 0px 0px 1px hsla(hue(@orange-darken-60), saturation(@orange-darken-60), lightness(@orange-darken-60), 0.75),
 																0px 1px 0px 0px rgba(255, 255, 255, 0.75);
 @buttonWarningActiveMarginTop:									0px;
 @buttonWarningActiveMarginBottom:								0px;
 
 @buttonWarningDisabledTextColor:								@white;
 @buttonWarningDisabledTextShadow:								0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonWarningDisabledBackgroundColor:							@socialist_orange;
-@buttonWarningDisabledBackgroundGradientColorTop:				@socialist_orange_lighten_10;
-@buttonWarningDisabledBackgroundGradientColorBottom:			@socialist_orange_darken_20;
-@buttonWarningDisabledShadow:									inset 0px 1px 0px 0px hsla(hue(@socialist_orange_lighten_20), saturation(@socialist_orange_lighten_20), lightness(@socialist_orange_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_orange_darken_50), saturation(@socialist_orange_darken_50), lightness(@socialist_orange_darken_50), 0.75),
+@buttonWarningDisabledBackgroundColor:							@orange;
+@buttonWarningDisabledBackgroundGradientColorTop:				@orange-lighten-10;
+@buttonWarningDisabledBackgroundGradientColorBottom:			@orange-darken-20;
+@buttonWarningDisabledShadow:									inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@orange-darken-50), saturation(@orange-darken-50), lightness(@orange-darken-50), 0.75),
 																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 @buttonWarningDisabledMarginTop:								0px;
 @buttonWarningDisabledMarginBottom:								0px;
@@ -975,7 +1597,7 @@
 @buttonWarningInverseHoverMarginTop:							0px;
 @buttonWarningInverseHoverMarginBottom:							0px;
 
-@buttonWarningInverseActiveTextColor:							@socialist_blue;
+@buttonWarningInverseActiveTextColor:							@blue;
 @buttonWarningInverseActiveTextShadow:							none;
 @buttonWarningInverseActiveBackgroundColor:						rgba(255, 255, 255, 1.0);
 @buttonWarningInverseActiveBackgroundGradientColorTop:			none;
@@ -1000,44 +1622,44 @@
 
 @buttonDangerTextColor:											@white;
 @buttonDangerTextShadow:										0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonDangerBackgroundColor:									@socialist_red;
-@buttonDangerBackgroundGradientColorTop:						@socialist_red_darken_10;
-@buttonDangerBackgroundGradientColorBottom:						@socialist_red_darken_40;
-@buttonDangerShadow:											inset 0px 1px 0px 0px hsla(hue(@socialist_red_lighten_30), saturation(@socialist_red_lighten_30), lightness(@socialist_red_lighten_30), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_red_darken_50), saturation(@socialist_red_darken_50), lightness(@socialist_red_darken_50), 0.85),
+@buttonDangerBackgroundColor:									@red;
+@buttonDangerBackgroundGradientColorTop:						@red-darken-10;
+@buttonDangerBackgroundGradientColorBottom:						@red-darken-40;
+@buttonDangerShadow:											inset 0px 1px 0px 0px hsla(hue(@red-lighten-30), saturation(@red-lighten-30), lightness(@red-lighten-30), 1.0),
+																0px 0px 0px 1px hsla(hue(@red-darken-50), saturation(@red-darken-50), lightness(@red-darken-50), 0.85),
 																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 @buttonDangerMarginTop:											0px;
 @buttonDangerMarginBottom:										0px;
 
 @buttonDangerHoverTextColor:									@white;
 @buttonDangerHoverTextShadow:									0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonDangerHoverBackgroundColor:								@socialist_red_darken_20;
-@buttonDangerHoverBackgroundGradientColorTop:					@socialist_red_lighten_10;
-@buttonDangerHoverBackgroundGradientColorBottom:				@socialist_red_darken_30;
-@buttonDangerHoverShadow:										inset 0px 1px 0px 0px hsla(hue(@socialist_red_lighten_20), saturation(@socialist_red_lighten_20), lightness(@socialist_red_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_red_darken_60), saturation(@socialist_red_darken_60), lightness(@socialist_red_darken_60), 0.75),
+@buttonDangerHoverBackgroundColor:								@red-darken-20;
+@buttonDangerHoverBackgroundGradientColorTop:					@red-lighten-10;
+@buttonDangerHoverBackgroundGradientColorBottom:				@red-darken-30;
+@buttonDangerHoverShadow:										inset 0px 1px 0px 0px hsla(hue(@red-lighten-20), saturation(@red-lighten-20), lightness(@red-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@red-darken-60), saturation(@red-darken-60), lightness(@red-darken-60), 0.75),
 																0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 @buttonDangerHoverMarginTop:									0px;
 @buttonDangerHoverMarginBottom:									0px;
 
-@buttonDangerActiveTextColor:									@socialist_red_lighten_90;
+@buttonDangerActiveTextColor:									@red-lighten-90;
 @buttonDangerActiveTextShadow:									none;
-@buttonDangerActiveBackgroundColor:								@socialist_red_darken_20;
-@buttonDangerActiveBackgroundGradientColorTop:					@socialist_red_darken_20;
-@buttonDangerActiveBackgroundGradientColorBottom:				@socialist_red_darken_10;
+@buttonDangerActiveBackgroundColor:								@red-darken-20;
+@buttonDangerActiveBackgroundGradientColorTop:					@red-darken-20;
+@buttonDangerActiveBackgroundGradientColorBottom:				@red-darken-10;
 @buttonDangerActiveShadow:										inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@socialist_red_darken_60), saturation(@socialist_red_darken_60), lightness(@socialist_red_darken_60), 0.75),
+																0px 0px 0px 1px hsla(hue(@red-darken-60), saturation(@red-darken-60), lightness(@red-darken-60), 0.75),
 																0px 1px 0px 0px rgba(255, 255, 255, 0.75);
 @buttonDangerActiveMarginTop:									0px;
 @buttonDangerActiveMarginBottom:								0px;
 
 @buttonDangerDisabledTextColor:									@white;
 @buttonDangerDisabledTextShadow:								0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonDangerDisabledBackgroundColor:							@socialist_red;
-@buttonDangerDisabledBackgroundGradientColorTop:				@socialist_red_lighten_10;
-@buttonDangerDisabledBackgroundGradientColorBottom:				@socialist_red_darken_20;
-@buttonDangerDisabledShadow:									inset 0px 1px 0px 0px hsla(hue(@socialist_red_lighten_20), saturation(@socialist_red_lighten_20), lightness(@socialist_red_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_red_darken_50), saturation(@socialist_red_darken_50), lightness(@socialist_red_darken_50), 0.75),
+@buttonDangerDisabledBackgroundColor:							@red;
+@buttonDangerDisabledBackgroundGradientColorTop:				@red-lighten-10;
+@buttonDangerDisabledBackgroundGradientColorBottom:				@red-darken-20;
+@buttonDangerDisabledShadow:									inset 0px 1px 0px 0px hsla(hue(@red-lighten-20), saturation(@red-lighten-20), lightness(@red-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@red-darken-50), saturation(@red-darken-50), lightness(@red-darken-50), 0.75),
 																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 @buttonDangerDisabledMarginTop:									0px;
 @buttonDangerDisabledMarginBottom:								0px;
@@ -1063,7 +1685,7 @@
 @buttonDangerInverseHoverMarginTop:								0px;
 @buttonDangerInverseHoverMarginBottom:							0px;
 
-@buttonDangerInverseActiveTextColor:							@socialist_blue;
+@buttonDangerInverseActiveTextColor:							@blue;
 @buttonDangerInverseActiveTextShadow:							none;
 @buttonDangerInverseActiveBackgroundColor:						rgba(255, 255, 255, 1.0);
 @buttonDangerInverseActiveBackgroundGradientColorTop:			none;
@@ -1097,83 +1719,83 @@
 
 // Form Labels
 
-@formLabelTextFontFamily:										@fontFamilyTertiary;
-@formLabelTextFontSize:											@bodyTextFontSize - 1;
+@formLabelTextFontFamily:										@font-family-primary;
+@formLabelTextFontSize:											@body-text-font-size - 1;
 @formLabelTextFontWeight:										600;
 @formLabelTextFontStyle:										normal;
-@formLabelTextLineHeight:										@bodyTextLineHeight;
-@formLabelTextColor:											@socialist_gray;
+@formLabelTextLineHeight:										@body-text-line-height;
+@formLabelTextColor:											@gray;
 @formLabelTextTransform:										uppercase;
-@formLabelMargin:												@bodyTextMargin / 2;
+@formLabelMargin:												@body-text-margin-bottom / 2;
 
 // Help Labels
 
-@helpLabelTextFontFamily:										@fontFamilyPrimary;
-@helpLabelTextFontSize:											@bodyTextFontSize - 2;
+@helpLabelTextFontFamily:										@font-family-primary;
+@helpLabelTextFontSize:											@body-text-font-size - 2;
 @helpLabelTextFontWeight:										400;
 @helpLabelTextFontStyle:										italic;
-@helpLabelTextLineHeight:										@bodyTextLineHeight;
-@helpLabelTextColor:											@bodyTextColor;
+@helpLabelTextLineHeight:										@body-text-line-height;
+@helpLabelTextColor:											@body-text-color;
 @helpLabelTextTransform:										normal;
-@helpLabelMargin:												@bodyTextMargin;
+@helpLabelMargin:												@body-text-margin-bottom;
 
 // Universal Input Attributes
 	
 @inputBorderRadius:												3px;
 @inputHorizontalPadding:										10px;
-@inputTextFontFamily:											@fontFamilyPrimary;
-@inputTextFontSize:												@bodyTextFontSize;
-@inputTextFontWeight:											@bodyTextFontWeight;
+@inputTextFontFamily:											@font-family-primary;
+@inputTextFontSize:												@body-text-font-size;
+@inputTextFontWeight:											@body-text-font-weight;
 @inputTextFontStyle:											normal;
-@inputTextLineHeight:											@bodyTextLineHeight;
+@inputTextLineHeight:											@body-text-line-height;
 @inputTextTransform:											none;
 
-@inputMargin:													@primaryMargin / 2;
-@inputMarginWidescreen:											@primaryMarginWidescreen / 2;
-@inputMarginTablet:												@primaryMarginTablet / 2;
-@inputMarginMobile:												@primaryMarginMobile / 2;
+@inputMargin:													@primary-margin / 2;
+@inputMarginWidescreen:											@primary-margin-widescreen / 2;
+@inputMarginTablet:												@primary-margin-tablet / 2;
+@inputMarginMobile:												@primary-margin-mobile / 2;
 
-@inputMarginShort:												@primaryMarginShort / 2;
-@inputMarginShortWidescreen:									@primaryMarginShortWidescreen / 2;
-@inputMarginShortTablet:										@primaryMarginShortTablet / 2;
-@inputMarginShortMobile:										@primaryMarginMobile / 2;
+@inputMarginShort:												@primary-margin-short / 2;
+@inputMarginShortWidescreen:									@primary-margin-short-widescreen / 2;
+@inputMarginShortTablet:										@primary-margin-short-tablet / 2;
+@inputMarginShortMobile:										@primary-margin-mobile / 2;
 
-@inputMarginTall:												@primaryMarginTall / 2;
-@inputMarginTallWidescreen:										@primaryMarginTallWidescreen / 2;
-@inputMarginTallTablet:											@primaryMarginTallTablet / 2;
-@inputMarginTallMobile:											@primaryMarginTallMobile / 2;
+@inputMarginTall:												@primary-margin-tall / 2;
+@inputMarginTallWidescreen:										@primary-margin-tall-widescreen / 2;
+@inputMarginTallTablet:											@primary-margin-tall-tablet / 2;
+@inputMarginTallMobile:											@primary-margin-tall-mobile / 2;
 
 // Large Input Attributes
 
 @inputBorderRadiusLarge:										6px;
 @inputHorizontalPaddingLarge:									@buttonHorizontalPadding * 2.0;
-@inputTextFontSizeLarge:										@bodyTextFontSize + 2;
+@inputTextFontSizeLarge:										@body-text-font-size + 2;
 @inputTextFontWeightLarge:										500;
-@inputTextLineHeightLarge:										@bodyTextLineHeight + 2;
+@inputTextLineHeightLarge:										@body-text-line-height + 2;
 
 // Default Input
 
-@inputTextColor:												@bodyTextColor;
+@inputTextColor:												@body-text-color;
 @inputTextShadow:												none;
-@inputPlaceholderTextColor:										@socialist_gray;
+@inputPlaceholderTextColor:										@gray;
 @inputBackgroundColor:											@white;
 @inputBackgroundGradientColorTop:								none;
 @inputBackgroundGradientColorBottom:							none;
 @inputShadow:													0px 0px 0px 1px rgba(0, 0, 0, 0.2);
 
-@inputFocusTextColor:											@socialist_blue;
+@inputFocusTextColor:											@blue;
 @inputFocusTextShadow:											none;
-@inputFocusPlaceholderTextColor:								hsla(hue(@socialist_blue), saturation(@socialist_blue), lightness(@socialist_blue), 0.5);
-@inputFocusBackgroundColor:										@socialist_blue_lighten_90;
+@inputFocusPlaceholderTextColor:								hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.5);
+@inputFocusBackgroundColor:										@blue-lighten-90;
 @inputFocusBackgroundGradientColorTop:							none;
 @inputFocusBackgroundGradientColorBottom:						none;
-@inputFocusShadow:												0px 0px 0px 1px hsla(hue(@socialist_blue), saturation(@socialist_blue), lightness(@socialist_blue), 0.75),
-			    												0px 0px 5px 3px hsla(hue(@socialist_blue), saturation(@socialist_blue), lightness(@socialist_blue), 0.25),
-																inset 0px 1px 3px 0px hsla(hue(@socialist_blue), saturation(@socialist_blue), lightness(@socialist_blue), 0.15);
+@inputFocusShadow:												0px 0px 0px 1px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.75),
+			    												0px 0px 5px 3px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.25),
+																inset 0px 1px 3px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.15);
 
-@inputDisabledTextColor:										@bodyTextColor;
+@inputDisabledTextColor:										@body-text-color;
 @inputDisabledTextShadow:										none;
-@inputDisabledPlaceholderTextColor:								@socialist_gray;
+@inputDisabledPlaceholderTextColor:								@gray;
 @inputDisabledBackgroundColor:									@white;
 @inputDisabledBackgroundGradientColorTop:						none;
 @inputDisabledBackgroundGradientColorBottom:					none;
@@ -1182,101 +1804,101 @@
 
 // Success Input
 
-@formLabelSuccessTextColor:										@socialist_green;
-@helpLabelSuccessTextColor:										@socialist_green_lighten_20;
+@formLabelSuccessTextColor:										@green;
+@helpLabelSuccessTextColor:										@green-lighten-20;
 
-@inputSuccessTextColor:											@socialist_green;
+@inputSuccessTextColor:											@green;
 @inputSuccessTextShadow:										none;
-@inputSuccessPlaceholderTextColor:								@socialist_green_lighten_50;
-@inputSuccessBackgroundColor:									@socialist_green_lighten_90;
+@inputSuccessPlaceholderTextColor:								@green-lighten-50;
+@inputSuccessBackgroundColor:									@green-lighten-90;
 @inputSuccessBackgroundGradientColorTop:						none;
 @inputSuccessBackgroundGradientColorBottom:						none;
-@inputSuccessShadow:											0px 0px 0px 1px hsla(hue(@socialist_green), saturation(@socialist_green), lightness(@socialist_green), 0.6),
-	    														inset 0px 1px 3px 0px hsla(hue(@socialist_green_lighten_50), saturation(@socialist_green_lighten_50), lightness(@socialist_green_lighten_50), 0.15);
+@inputSuccessShadow:											0px 0px 0px 1px hsla(hue(@green), saturation(@green), lightness(@green), 0.6),
+	    														inset 0px 1px 3px 0px hsla(hue(@green-lighten-50), saturation(@green-lighten-50), lightness(@green-lighten-50), 0.15);
 
-@inputSuccessFocusTextColor:									@socialist_green;
+@inputSuccessFocusTextColor:									@green;
 @inputSuccessFocusTextShadow:									none;
-@inputSuccessFocusPlaceholderTextColor:							@socialist_green;
-@inputSuccessFocusBackgroundColor:								@socialist_green_lighten_80;
+@inputSuccessFocusPlaceholderTextColor:							@green;
+@inputSuccessFocusBackgroundColor:								@green-lighten-80;
 @inputSuccessFocusBackgroundGradientColorTop:					none;
 @inputSuccessFocusBackgroundGradientColorBottom:				none;
-@inputSuccessFocusShadow:										0px 0px 0px 1px hsla(hue(@socialist_green), saturation(@socialist_green), lightness(@socialist_green), 0.75),
-			    												0px 0px 5px 3px hsla(hue(@socialist_green), saturation(@socialist_green), lightness(@socialist_green), 0.25),
-																inset 0px 1px 3px 0px hsla(hue(@socialist_green), saturation(@socialist_green), lightness(@socialist_green), 0.15);
+@inputSuccessFocusShadow:										0px 0px 0px 1px hsla(hue(@green), saturation(@green), lightness(@green), 0.75),
+			    												0px 0px 5px 3px hsla(hue(@green), saturation(@green), lightness(@green), 0.25),
+																inset 0px 1px 3px 0px hsla(hue(@green), saturation(@green), lightness(@green), 0.15);
 
-@inputSuccessDisabledTextColor:									@socialist_green;
+@inputSuccessDisabledTextColor:									@green;
 @inputSuccessDisabledTextShadow:								none;
-@inputSuccessDisabledPlaceholderTextColor:						@socialist_green_lighten_50;
-@inputSuccessDisabledBackgroundColor:							@socialist_green_lighten_90;
+@inputSuccessDisabledPlaceholderTextColor:						@green-lighten-50;
+@inputSuccessDisabledBackgroundColor:							@green-lighten-90;
 @inputSuccessDisabledBackgroundGradientColorTop:				none;
 @inputSuccessDisabledBackgroundGradientColorBottom:				none;
-@inputSuccessDisabledShadow:									0px 0px 0px 1px hsla(hue(@socialist_green), saturation(@socialist_green), lightness(@socialist_green), 0.6);
+@inputSuccessDisabledShadow:									0px 0px 0px 1px hsla(hue(@green), saturation(@green), lightness(@green), 0.6);
 @inputSuccessDisabledOpacity:									50;
 
 // Warning Input
 
-@formLabelWarningTextColor:										@socialist_orange;
-@helpLabelWarningTextColor:										@socialist_orange_lighten_30;
+@formLabelWarningTextColor:										@orange;
+@helpLabelWarningTextColor:										@orange-lighten-30;
 
-@inputWarningTextColor:											@socialist_orange;
+@inputWarningTextColor:											@orange;
 @inputWarningTextShadow:										none;
-@inputWarningPlaceholderTextColor:								@socialist_orange_lighten_50;
-@inputWarningBackgroundColor:									@socialist_orange_lighten_90;
+@inputWarningPlaceholderTextColor:								@orange-lighten-50;
+@inputWarningBackgroundColor:									@orange-lighten-90;
 @inputWarningBackgroundGradientColorTop:						none;
 @inputWarningBackgroundGradientColorBottom:						none;
-@inputWarningShadow:											0px 0px 0px 1px hsla(hue(@socialist_orange), saturation(@socialist_orange), lightness(@socialist_orange), 0.6),
-	    														inset 0px 1px 3px 0px hsla(hue(@socialist_orange_lighten_50), saturation(@socialist_orange_lighten_50), lightness(@socialist_orange_lighten_50), 0.15);
+@inputWarningShadow:											0px 0px 0px 1px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.6),
+	    														inset 0px 1px 3px 0px hsla(hue(@orange-lighten-50), saturation(@orange-lighten-50), lightness(@orange-lighten-50), 0.15);
 
-@inputWarningFocusTextColor:									@socialist_orange;
+@inputWarningFocusTextColor:									@orange;
 @inputWarningFocusTextShadow:									none;
-@inputWarningFocusPlaceholderTextColor:							@socialist_orange;
-@inputWarningFocusBackgroundColor:								@socialist_orange_lighten_80;
+@inputWarningFocusPlaceholderTextColor:							@orange;
+@inputWarningFocusBackgroundColor:								@orange-lighten-80;
 @inputWarningFocusBackgroundGradientColorTop:					none;
 @inputWarningFocusBackgroundGradientColorBottom:				none;
-@inputWarningFocusShadow:										0px 0px 0px 1px hsla(hue(@socialist_orange), saturation(@socialist_orange), lightness(@socialist_orange), 0.75),
-			    												0px 0px 5px 3px hsla(hue(@socialist_orange), saturation(@socialist_orange), lightness(@socialist_orange), 0.25),
-																inset 0px 1px 3px 0px hsla(hue(@socialist_orange), saturation(@socialist_orange), lightness(@socialist_orange), 0.15);
+@inputWarningFocusShadow:										0px 0px 0px 1px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.75),
+			    												0px 0px 5px 3px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.25),
+																inset 0px 1px 3px 0px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.15);
 
-@inputWarningDisabledTextColor:									@socialist_orange;
+@inputWarningDisabledTextColor:									@orange;
 @inputWarningDisabledTextShadow:								none;
-@inputWarningDisabledPlaceholderTextColor:						@socialist_orange_lighten_50;
-@inputWarningDisabledBackgroundColor:							@socialist_orange_lighten_90;
+@inputWarningDisabledPlaceholderTextColor:						@orange-lighten-50;
+@inputWarningDisabledBackgroundColor:							@orange-lighten-90;
 @inputWarningDisabledBackgroundGradientColorTop:				none;
 @inputWarningDisabledBackgroundGradientColorBottom:				none;
-@inputWarningDisabledShadow:									0px 0px 0px 1px hsla(hue(@socialist_orange), saturation(@socialist_orange), lightness(@socialist_orange), 0.6);
+@inputWarningDisabledShadow:									0px 0px 0px 1px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.6);
 @inputWarningDisabledOpacity:									50;
 
 // Error Input
 
-@formLabelErrorTextColor:										@socialist_red;
-@helpLabelErrorTextColor:										@socialist_red_lighten_30;
+@formLabelErrorTextColor:										@red;
+@helpLabelErrorTextColor:										@red-lighten-30;
 
-@inputErrorTextColor:											@socialist_red;
+@inputErrorTextColor:											@red;
 @inputErrorTextShadow:											none;
-@inputErrorPlaceholderTextColor:								@socialist_red_lighten_50;
-@inputErrorBackgroundColor:										@socialist_red_lighten_90;
+@inputErrorPlaceholderTextColor:								@red-lighten-50;
+@inputErrorBackgroundColor:										@red-lighten-90;
 @inputErrorBackgroundGradientColorTop:							none;
 @inputErrorBackgroundGradientColorBottom:						none;
-@inputErrorShadow:												0px 0px 0px 1px hsla(hue(@socialist_red), saturation(@socialist_red), lightness(@socialist_red), 0.6),
-	    														inset 0px 1px 3px 0px hsla(hue(@socialist_red_lighten_50), saturation(@socialist_red_lighten_50), lightness(@socialist_red_lighten_50), 0.15);
+@inputErrorShadow:												0px 0px 0px 1px hsla(hue(@red), saturation(@red), lightness(@red), 0.6),
+	    														inset 0px 1px 3px 0px hsla(hue(@red-lighten-50), saturation(@red-lighten-50), lightness(@red-lighten-50), 0.15);
 
-@inputErrorFocusTextColor:										@socialist_red;
+@inputErrorFocusTextColor:										@red;
 @inputErrorFocusTextShadow:										none;
-@inputErrorFocusPlaceholderTextColor:							@socialist_red;
-@inputErrorFocusBackgroundColor:								@socialist_red_lighten_80;
+@inputErrorFocusPlaceholderTextColor:							@red;
+@inputErrorFocusBackgroundColor:								@red-lighten-80;
 @inputErrorFocusBackgroundGradientColorTop:						none;
 @inputErrorFocusBackgroundGradientColorBottom:					none;
-@inputErrorFocusShadow:											0px 0px 0px 1px hsla(hue(@socialist_red), saturation(@socialist_red), lightness(@socialist_red), 0.75),
-			    												0px 0px 5px 3px hsla(hue(@socialist_red), saturation(@socialist_red), lightness(@socialist_red), 0.25),
-																inset 0px 1px 3px 0px hsla(hue(@socialist_red), saturation(@socialist_red), lightness(@socialist_red), 0.15);
+@inputErrorFocusShadow:											0px 0px 0px 1px hsla(hue(@red), saturation(@red), lightness(@red), 0.75),
+			    												0px 0px 5px 3px hsla(hue(@red), saturation(@red), lightness(@red), 0.25),
+																inset 0px 1px 3px 0px hsla(hue(@red), saturation(@red), lightness(@red), 0.15);
 
-@inputErrorDisabledTextColor:									@socialist_red;
+@inputErrorDisabledTextColor:									@red;
 @inputErrorDisabledTextShadow:									none;
-@inputErrorDisabledPlaceholderTextColor:						@socialist_red_lighten_50;
-@inputErrorDisabledBackgroundColor:								@socialist_red_lighten_90;
+@inputErrorDisabledPlaceholderTextColor:						@red-lighten-50;
+@inputErrorDisabledBackgroundColor:								@red-lighten-90;
 @inputErrorDisabledBackgroundGradientColorTop:					none;
 @inputErrorDisabledBackgroundGradientColorBottom:				none;
-@inputErrorDisabledShadow:										0px 0px 0px 1px hsla(hue(@socialist_red), saturation(@socialist_red), lightness(@socialist_red), 0.6);
+@inputErrorDisabledShadow:										0px 0px 0px 1px hsla(hue(@red), saturation(@red), lightness(@red), 0.6);
 @inputErrorDisabledOpacity:										50;
 
 // Input Group Button Styling
@@ -1290,41 +1912,41 @@
 @inputGroupButtonDisabledShadow:								inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
 																0px 0px 0px 1px rgba(0, 0, 0, 0.15);
 
-@inputGroupButtonPrimaryShadow:									inset 0px 1px 0px 0px hsla(hue(@socialist_blue_lighten_20), saturation(@socialist_blue_lighten_20), lightness(@socialist_blue_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_blue_darken_40), saturation(@socialist_blue_darken_40), lightness(@socialist_blue_darken_40), 0.75);
-@inputGroupButtonPrimaryHoverShadow:							inset 0px 1px 0px 0px hsla(hue(@socialist_blue_lighten_20), saturation(@socialist_blue_lighten_20), lightness(@socialist_blue_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_blue_darken_60), saturation(@socialist_blue_darken_60), lightness(@socialist_blue_darken_60), 0.75);
+@inputGroupButtonPrimaryShadow:									inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@blue-darken-40), saturation(@blue-darken-40), lightness(@blue-darken-40), 0.75);
+@inputGroupButtonPrimaryHoverShadow:							inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@blue-darken-60), saturation(@blue-darken-60), lightness(@blue-darken-60), 0.75);
 @inputGroupButtonPrimaryActiveShadow:							inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@socialist_blue_darken_60), saturation(@socialist_blue_darken_60), lightness(@socialist_blue_darken_60), 0.75);
-@inputGroupButtonPrimaryDisabledShadow:							inset 0px 1px 0px 0px hsla(hue(@socialist_blue_lighten_20), saturation(@socialist_blue_lighten_20), lightness(@socialist_blue_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_blue_darken_40), saturation(@socialist_blue_darken_40), lightness(@socialist_blue_darken_40), 0.75);
+																0px 0px 0px 1px hsla(hue(@blue-darken-60), saturation(@blue-darken-60), lightness(@blue-darken-60), 0.75);
+@inputGroupButtonPrimaryDisabledShadow:							inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@blue-darken-40), saturation(@blue-darken-40), lightness(@blue-darken-40), 0.75);
 
-@inputGroupButtonSuccessShadow:									inset 0px 1px 0px 0px hsla(hue(@socialist_green_lighten_20), saturation(@socialist_green_lighten_20), lightness(@socialist_green_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_green_darken_40), saturation(@socialist_green_darken_40), lightness(@socialist_green_darken_40), 0.75);
-@inputGroupButtonSuccessHoverShadow:							inset 0px 1px 0px 0px hsla(hue(@socialist_green_lighten_20), saturation(@socialist_green_lighten_20), lightness(@socialist_green_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_green_darken_60), saturation(@socialist_green_darken_60), lightness(@socialist_green_darken_60), 0.75);
+@inputGroupButtonSuccessShadow:									inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@green-darken-40), saturation(@green-darken-40), lightness(@green-darken-40), 0.75);
+@inputGroupButtonSuccessHoverShadow:							inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@green-darken-60), saturation(@green-darken-60), lightness(@green-darken-60), 0.75);
 @inputGroupButtonSuccessActiveShadow:							inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@socialist_green_darken_60), saturation(@socialist_green_darken_60), lightness(@socialist_green_darken_60), 0.75);
-@inputGroupButtonSuccessDisabledShadow:							inset 0px 1px 0px 0px hsla(hue(@socialist_green_lighten_20), saturation(@socialist_green_lighten_20), lightness(@socialist_green_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_green_darken_40), saturation(@socialist_green_darken_40), lightness(@socialist_green_darken_40), 0.75);
+																0px 0px 0px 1px hsla(hue(@green-darken-60), saturation(@green-darken-60), lightness(@green-darken-60), 0.75);
+@inputGroupButtonSuccessDisabledShadow:							inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@green-darken-40), saturation(@green-darken-40), lightness(@green-darken-40), 0.75);
 
-@inputGroupButtonWarningShadow:									inset 0px 1px 0px 0px hsla(hue(@socialist_orange_lighten_20), saturation(@socialist_orange_lighten_20), lightness(@socialist_orange_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_orange_darken_50), saturation(@socialist_orange_darken_50), lightness(@socialist_orange_darken_50), 0.75);
-@inputGroupButtonWarningHoverShadow:							inset 0px 1px 0px 0px hsla(hue(@socialist_orange_lighten_20), saturation(@socialist_orange_lighten_20), lightness(@socialist_orange_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_orange_darken_60), saturation(@socialist_orange_darken_60), lightness(@socialist_orange_darken_60), 0.75);
+@inputGroupButtonWarningShadow:									inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@orange-darken-50), saturation(@orange-darken-50), lightness(@orange-darken-50), 0.75);
+@inputGroupButtonWarningHoverShadow:							inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@orange-darken-60), saturation(@orange-darken-60), lightness(@orange-darken-60), 0.75);
 @inputGroupButtonWarningActiveShadow:							inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@socialist_orange_darken_60), saturation(@socialist_orange_darken_60), lightness(@socialist_orange_darken_60), 0.75);
-@inputGroupButtonWarningDisabledShadow:							inset 0px 1px 0px 0px hsla(hue(@socialist_orange_lighten_20), saturation(@socialist_orange_lighten_20), lightness(@socialist_orange_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_orange_darken_50), saturation(@socialist_orange_darken_50), lightness(@socialist_orange_darken_50), 0.75);
+																0px 0px 0px 1px hsla(hue(@orange-darken-60), saturation(@orange-darken-60), lightness(@orange-darken-60), 0.75);
+@inputGroupButtonWarningDisabledShadow:							inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@orange-darken-50), saturation(@orange-darken-50), lightness(@orange-darken-50), 0.75);
 
-@inputGroupButtonDangerShadow:									inset 0px 1px 0px 0px hsla(hue(@socialist_red_lighten_20), saturation(@socialist_red_lighten_20), lightness(@socialist_red_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_red_darken_50), saturation(@socialist_red_darken_50), lightness(@socialist_red_darken_50), 0.75);
-@inputGroupButtonDangerHoverShadow:								inset 0px 1px 0px 0px hsla(hue(@socialist_red_lighten_20), saturation(@socialist_red_lighten_20), lightness(@socialist_red_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_red_darken_60), saturation(@socialist_red_darken_60), lightness(@socialist_red_darken_60), 0.75);
+@inputGroupButtonDangerShadow:									inset 0px 1px 0px 0px hsla(hue(@red-lighten-20), saturation(@red-lighten-20), lightness(@red-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@red-darken-50), saturation(@red-darken-50), lightness(@red-darken-50), 0.75);
+@inputGroupButtonDangerHoverShadow:								inset 0px 1px 0px 0px hsla(hue(@red-lighten-20), saturation(@red-lighten-20), lightness(@red-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@red-darken-60), saturation(@red-darken-60), lightness(@red-darken-60), 0.75);
 @inputGroupButtonDangerActiveShadow:							inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@socialist_red_darken_60), saturation(@socialist_red_darken_60), lightness(@socialist_red_darken_60), 0.75);
-@inputGroupButtonDangerDisabledShadow:							inset 0px 1px 0px 0px hsla(hue(@socialist_red_lighten_20), saturation(@socialist_red_lighten_20), lightness(@socialist_red_lighten_20), 1.0),
-																0px 0px 0px 1px hsla(hue(@socialist_red_darken_50), saturation(@socialist_red_darken_50), lightness(@socialist_red_darken_50), 0.75);
+																0px 0px 0px 1px hsla(hue(@red-darken-60), saturation(@red-darken-60), lightness(@red-darken-60), 0.75);
+@inputGroupButtonDangerDisabledShadow:							inset 0px 1px 0px 0px hsla(hue(@red-lighten-20), saturation(@red-lighten-20), lightness(@red-lighten-20), 1.0),
+																0px 0px 0px 1px hsla(hue(@red-darken-50), saturation(@red-darken-50), lightness(@red-darken-50), 0.75);
 
 
 
@@ -1340,30 +1962,30 @@
 @dropdownTopMargin:												4px;
 @dropdownMinWidth:												160px;
 @dropdownDividerPadding:										0px;
-@dropdownDividerBackground:										@socialist_gray;
+@dropdownDividerBackground:										@gray;
 @dropdownDividerShadow:											none;
 @dropdownLinkHorizontalPadding:									@buttonHorizontalPadding;
-@dropdownLinkHeight:											@bodyTextLineHeight + 14;
+@dropdownLinkHeight:											@body-text-line-height + 14;
 @dropdownLinkShadow:											0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-@dropdownLinkColor:												@socialist_gray;
+@dropdownLinkColor:												@gray;
 @dropdownLinkBackground:										@white;
-@dropdownLinkColorHover:										@socialist_gray_darken_50;
-@dropdownLinkBackgroundHover:									@socialist_gray_lighten_90;
+@dropdownLinkColorHover:										@gray-darken-50;
+@dropdownLinkBackgroundHover:									@gray-lighten-90;
 @dropdownLinkColorActive:										@blue;
 @dropdownLinkBackgroundActive:									@white;
-@dropdownLinkColorDisabled:										@socialist_gray;
+@dropdownLinkColorDisabled:										@gray;
 @dropdownLinkBackgroundDisabled:								@white;
 
-@dropdownLinkDangerColor:										@socialist_red;
+@dropdownLinkDangerColor:										@red;
 @dropdownLinkDangerBackground:									@white;
-@dropdownLinkDangerColorHover:									@socialist_red;
-@dropdownLinkDangerBackgroundHover:								lighten(@socialist_red, 47%);
-@dropdownLinkDangerColorActive:									@socialist_red;
-@dropdownLinkDangerBackgroundActive:							lighten(@socialist_red, 47%);
-@dropdownLinkDangerColorDisabled:								lighten(@socialist_red, 30%);
+@dropdownLinkDangerColorHover:									@red;
+@dropdownLinkDangerBackgroundHover:								lighten(@red, 47%);
+@dropdownLinkDangerColorActive:									@red;
+@dropdownLinkDangerBackgroundActive:							lighten(@red, 47%);
+@dropdownLinkDangerColorDisabled:								lighten(@red, 30%);
 @dropdownLinkDangerBackgroundDisabled:							@white;
 
-@inputErrorBackground:											lighten(@socialist_red, 60%);
+@inputErrorBackground:											lighten(@red, 60%);
 
 
 
@@ -1374,25 +1996,25 @@
 /* ========================================================================= */
 
 @labelHorizontalPadding:										8px;
-@labelFontFamily:												@fontFamilySecondary;
-@labelFontSize:													@bodyTextFontSize * 0.9;
+@labelFontFamily:												@font-family-primary;
+@labelFontSize:													@body-text-font-size * 0.9;
 @labelFontWeight:												500;
-@labelFontLineHeight:											@bodyTextLineHeight - 2;
+@labelFontLineHeight:											@body-text-line-height - 2;
 @labelTextColor:												@white;
 @labelFontShadow:												none;
-@labelBackgroundColor:											@socialist_gray;
+@labelBackgroundColor:											@gray;
 
 @labelSuccessTextColor:											@white;
 @labelSuccessFontShadow:										none;
-@labelSuccessBackgroundColor:									@socialist_green;
+@labelSuccessBackgroundColor:									@green;
 
 @labelWarningTextColor:											@white;
 @labelWarningFontShadow:										none;
-@labelWarningBackgroundColor:									@socialist_orange;
+@labelWarningBackgroundColor:									@orange;
 
 @labelDangerTextColor:											@white;
 @labelDangerFontShadow:											none;
-@labelDangerBackgroundColor:									@socialist_red;
+@labelDangerBackgroundColor:									@red;
 
 @labelInfoTextColor:											@white;
 @labelInfoFontShadow:											none;
@@ -1411,7 +2033,7 @@
 /* ========================================================================= */
 
 @tooltipColor:													#fff;
-@tooltipBackground:												@socialist_gray;
+@tooltipBackground:												@gray;
 @tooltipArrowWidth:												8px;
 @tooltipArrowColor:												@tooltipBackground;
 @tooltipOffset:													5px;
@@ -1426,21 +2048,21 @@
 
 @paginationBorderRadius:										4px;
 
-@paginationLinkFontFamily:										@fontFamilySecondary;
+@paginationLinkFontFamily:										@font-family-primary;
 @paginationLinkFontSize:										13px;
-@paginationLinkTextColor:										@socialist_gray;
+@paginationLinkTextColor:										@gray;
 @paginationLinkFontLineHeight:									16px;
 @paginationLinkBackground:										@white;
-@paginationLinkShadow:											0px 0px 0px 1px @socialist_gray;
+@paginationLinkShadow:											0px 0px 0px 1px @gray;
 @paginationLinkShadowMarginOffset:								1px;
 
-@paginationLinkHoverTextColor:									@linkColor;
-@paginationLinkHoverBackground:									lighten(@linkColor, 52);
-@paginationLinkHoverShadow:										0px 0px 0px 1px @socialist_gray;
+@paginationLinkHoverTextColor:									@link-text-color;
+@paginationLinkHoverBackground:									lighten(@link-text-color, 52);
+@paginationLinkHoverShadow:										0px 0px 0px 1px @gray;
 
 @paginationLinkActiveTextColor:									@white;
-@paginationLinkActiveBackground:								@linkColor;
-@paginationLinkActiveShadow:									0px 0px 0px 1px @linkColor;
+@paginationLinkActiveBackground:								@link-text-color;
+@paginationLinkActiveShadow:									0px 0px 0px 1px @link-text-color;
 
 @paginationLinkHorizontalPadding:								14px;
 @paginationLinkHeight:											34px;

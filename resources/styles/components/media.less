@@ -14,13 +14,13 @@
 
 img {
 	
-	margin-bottom: @primaryMargin;
+	margin-bottom: @primary-margin;
 		
 	&.responsive {
 		
 		text-align: center;
 		margin: 0 auto;
-		margin-bottom: @bodyTextMargin;
+		margin-bottom: @body-text-margin-bottom;
 		display: block;
 		width: 100% !important;
 		height: auto !important;
@@ -29,13 +29,13 @@ img {
 	
 	&.short {
 		
-		margin-bottom: @primaryMarginShort;
+		margin-bottom: @primary-margin-short;
 		
 	}
 	
 	&.tall {
 		
-		margin-bottom: @primaryMarginTall;
+		margin-bottom: @primary-margin-tall;
 		
 	}
 	
@@ -72,8 +72,8 @@ a:hover {
 		&.img-polaroid {
 			
 			@shadow:
-				0px 0px 0px 1px hsla(hue(@socialist_blue), saturation(@socialist_blue), lightness(@socialist_blue), 0.75),
-				0px 1px 5px 0px hsla(hue(@socialist_blue), saturation(@socialist_blue), lightness(@socialist_blue), 0.5);
+				0px 0px 0px 1px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.75),
+				0px 1px 5px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.5);
 			.box-shadow(@shadow);
 			
 		}
@@ -94,7 +94,7 @@ a:hover {
 	
 	display: block;
 	padding: 5px;
-	margin-bottom: @primaryMargin;
+	margin-bottom: @primary-margin;
 	.border-radius(5px);
 	line-height: 1;
 	position: relative;
@@ -115,13 +115,13 @@ a:hover {
 	
 	&.short {
 		
-		margin-bottom: @primaryMarginShort;
+		margin-bottom: @primary-margin-short;
 		
 	}
 	
 	&.tall {
 		
-		margin-bottom: @primaryMarginTall;
+		margin-bottom: @primary-margin-tall;
 		
 	}
 	
@@ -138,11 +138,11 @@ a:hover {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and above.     */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @widescreen) {
+@media (min-width: @viewport-widescreen) {
 	
 	/* ========================================================================= */
 	/*                                                                           */
@@ -152,17 +152,17 @@ a:hover {
 	
 	img {
 		
-		margin-bottom: @primaryMarginWidescreen;
+		margin-bottom: @primary-margin-widescreen;
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortWidescreen;
+			margin-bottom: @primary-margin-short-widescreen;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallWidescreen;
+			margin-bottom: @primary-margin-tall-widescreen;
 			
 		}
 		
@@ -178,17 +178,17 @@ a:hover {
 	
 	.image-wrapper {
 		
-		margin-bottom: @primaryMarginWidescreen;
+		margin-bottom: @primary-margin-widescreen;
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortWidescreen;
+			margin-bottom: @primary-margin-short-widescreen;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallWidescreen;
+			margin-bottom: @primary-margin-tall-widescreen;
 			
 		}
 		
@@ -200,12 +200,12 @@ a:hover {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for portrait tablet (@tablet) to default    */
-/* desktop (@default).                                                       */
+/* Responsive changes to styling for portrait tablet (@viewport-tablet) to default    */
+/* desktop (@viewport-standard).                                                       */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @tablet) and (max-width: @tabletMax) {
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
 	
 	/* ========================================================================= */
 	/*                                                                           */
@@ -215,17 +215,17 @@ a:hover {
 	
 	img {
 		
-		margin-bottom: @primaryMarginTablet;
+		margin-bottom: @primary-margin-tablet;
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortTablet;
+			margin-bottom: @primary-margin-short-tablet;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallTablet;
+			margin-bottom: @primary-margin-tall-tablet;
 			
 		}
 		
@@ -241,17 +241,17 @@ a:hover {
 	
 	.image-wrapper {
 		
-		margin-bottom: @primaryMarginTablet;
+		margin-bottom: @primary-margin-tablet;
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortTablet;
+			margin-bottom: @primary-margin-short-tablet;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallTablet;
+			margin-bottom: @primary-margin-tall-tablet;
 			
 		}
 		
@@ -263,11 +263,11 @@ a:hover {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/* Responsive changes to styling up to portrait tablets (@viewport-tablet)            */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileLandscapeMax) {
+@media (max-width: @viewport-mobile-landscape-max) {
 	
 	/* ========================================================================= */
 	/*                                                                           */
@@ -277,17 +277,17 @@ a:hover {
 	
 	img {
 		
-		margin-bottom: @primaryMarginMobile;
+		margin-bottom: @primary-margin-mobile;
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortMobile;
+			margin-bottom: @primary-margin-short-mobile;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallMobile;
+			margin-bottom: @primary-margin-tall-mobile;
 			
 		}
 		
@@ -303,17 +303,17 @@ a:hover {
 	
 	.image-wrapper {
 		
-		margin-bottom: @primaryMarginMobile;
+		margin-bottom: @primary-margin-mobile;
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortMobile;
+			margin-bottom: @primary-margin-short-mobile;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallMobile;
+			margin-bottom: @primary-margin-tall-mobile;
 			
 		}
 		
@@ -325,11 +325,11 @@ a:hover {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/* Responsive changes to styling up to landscape phones (@viewport-mobile-landscape)   */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileMax) {
+@media (max-width: @viewport-mobile-max) {
 	
 }
 

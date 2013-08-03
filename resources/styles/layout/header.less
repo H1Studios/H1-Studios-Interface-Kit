@@ -15,13 +15,13 @@
 #header,
 header {
 	
-	z-index: @zindexHeader;
+	z-index: @z-index-header;
 	@shadow:	inset 0px -1px 0px 0px rgba(0, 0, 0, 0.05);
 	.box-shadow(@shadow);
 	
 	.header-toolbar {
 		
-		padding: @primaryMargin;
+		padding: @primary-margin;
 		
 		.header-logo {
 			
@@ -61,7 +61,7 @@ header {
 		.header-actions {
 			
 			float: right;
-			margin-left: @primaryMargin;
+			margin-left: @primary-margin;
 			
 		}
 			
@@ -80,7 +80,7 @@ header {
 					display: inline-block;
 					list-style: none;
 					line-height: 40px;
-					margin: 0px @primaryMargin 0px 0px;
+					margin: 0px @primary-margin 0px 0px;
 					padding: 0px 10px 0px 10px;
 					font-size: @buttonTextFontSize;
 					font-weight: @buttonTextFontWeight;
@@ -117,7 +117,7 @@ header {
 		
 		.header-subtitle {
 			
-			//color: @socialist_red_darken_50;
+			//color: @red-darken-50;
 			
 		}
 
@@ -129,11 +129,11 @@ header {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and above.     */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @widescreen) {
+@media (min-width: @viewport-widescreen) {
 	
 	#header,
 	header {
@@ -146,12 +146,12 @@ header {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for portrait tablet (@tablet) to default    */
-/* desktop (@default).                                                       */
+/* Responsive changes to styling for portrait tablet (@viewport-tablet) to default    */
+/* desktop (@viewport-standard).                                                       */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @tablet) and (max-width: @tabletMax) {
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
 	
 	/* ========================================================================= */
 	/*                                                                           */
@@ -166,7 +166,7 @@ header {
 			
 			.header-actions {
 				
-				margin-left: @primaryMarginShort;
+				margin-left: @primary-margin-short;
 				
 			}
 			
@@ -177,7 +177,7 @@ header {
 					
 					li {
 						
-						margin: 0px @primaryMarginShort 0px 0px;
+						margin: 0px @primary-margin-short 0px 0px;
 						
 					}
 					
@@ -195,11 +195,11 @@ header {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/* Responsive changes to styling up to portrait tablets (@viewport-tablet)            */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileLandscapeMax) {
+@media (max-width: @viewport-mobile-landscape-max) {
 		
 	/* ========================================================================= */
 	/*                                                                           */
@@ -212,7 +212,7 @@ header {
 		
 		.header-toolbar {
 			
-			padding: @primaryMarginMobile;
+			padding: @primary-margin-mobile;
 			margin-bottom: 0px;
 			
 			.header-logo {
@@ -234,7 +234,7 @@ header {
 			
 			.header-actions {
 				
-				margin-left: @primaryMarginMobile;
+				margin-left: @primary-margin-mobile;
 				
 			}
 				
@@ -245,7 +245,7 @@ header {
 				clear:both;
 				.clearfix();
 				height: 0px;
-				margin: (40px + @primaryMarginMobile) -@primaryMarginMobile -@primaryMarginMobile -@primaryMarginMobile;
+				margin: (40px + @primary-margin-mobile) -@primary-margin-mobile -@primary-margin-mobile -@primary-margin-mobile;
 				overflow: hidden;
 				.transition(all 0.1s linear);
 				background: @white;
@@ -263,7 +263,7 @@ header {
 						a {
 							
 							display: block;
-							padding: 0px @primaryMarginMobile 0px @primaryMarginMobile;
+							padding: 0px @primary-margin-mobile 0px @primary-margin-mobile;
 							
 						}
 						
@@ -289,11 +289,11 @@ header {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/* Responsive changes to styling up to landscape phones (@viewport-mobile-landscape)   */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileMax) {
+@media (max-width: @viewport-mobile-max) {
 
 }
 
@@ -328,7 +328,7 @@ header {
 /*                                                                           */
 /* ========================================================================= */
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: @mobileLandscapeMax) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: @viewport-mobile-landscape-max) {
 	
 	/* ========================================================================= */
 	/*                                                                           */

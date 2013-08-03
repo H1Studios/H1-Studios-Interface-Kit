@@ -102,8 +102,8 @@ pre {
 	.box-shadow(@codeShadow);
 	.border-radius(@codeBorderRadius);
 	display: block;
-	margin: 0px 0px @primaryMargin 0px;
-	padding: @primaryMargin / 2;
+	margin: 0px 0px @primary-margin 0px;
+	padding: @primary-margin / 2;
 	word-break: break-all;
 	word-wrap: break-word;
 	white-space: pre;
@@ -116,15 +116,15 @@ pre {
 		background-color: #f7f7f9;
 		border: 1px solid #e1e1e8;
 		display: block;
-		margin: 0px 0px @primaryMargin 0px;
-		padding: @primaryMargin / 2;
+		margin: 0px 0px @primary-margin 0px;
+		padding: @primary-margin / 2;
 		font-size: @codeTextFontSize;
 		line-height: @codeTextLineHeight;
 		word-break: break-all;
 		word-wrap: break-word;
 		white-space: pre;
 		white-space: pre-wrap;
-		background-color: @H1_gray_lighten_90;
+		background-color: @H1_gray-lighten-90;
 		border: 1px solid #ccc; // fallback for IE7-8
 		border: 1px solid rgba(0,0,0,.15);
 		.border-radius(4px);
@@ -143,13 +143,13 @@ pre {
 		
 		&.short {
 			
-			margin-bottom: (@primaryMargin * @textMarginRatioShort);
+			margin-bottom: (@primary-margin * @text-margin-ratio-short);
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: (@primaryMargin * @textMarginRatioTall);
+			margin-bottom: (@primary-margin * @text-margin-ratio-tall);
 			
 		}
 		
@@ -165,7 +165,7 @@ pre {
 				position: absolute;
 				top: 0px;
 				left: 0px;
-				width: @primaryMargin;
+				width: @primary-margin;
 				height: 100%;
 				.border-radius(0px 0px 0px @codeBorderRadius);
 				border-right: 1px solid @codeLinenumsBorderColor;
@@ -178,12 +178,12 @@ pre {
 				
 				&.linenums {
 					
-					margin: 0 0 0 @primaryMargin;
+					margin: 0 0 0 @primary-margin;
 					list-style-position: outside;
 					
 					li {
 						
-						padding-left: (@primaryMargin / 2);
+						padding-left: (@primary-margin / 2);
 						font-size: @codeTextFontSize;
 						font-weight: @codeTextFontWeight;
 						line-height: @codeTextLineHeight;
@@ -222,9 +222,9 @@ pre {
 form.code-example {
 	
 	position: relative;
-	margin: 0px 0px @primaryMargin 0px;
-	padding: (1.5 * @primaryMargin) (@primaryMargin / 2) (@primaryMargin / 2) (@primaryMargin / 2);
-	*padding-top: @primaryMargin;
+	margin: 0px 0px @primary-margin 0px;
+	padding: (((2 * (@primary-margin / 6)) + @codeTextLineHeight) + (@primary-margin / 2)) (@primary-margin / 2) (@primary-margin / 2) (@primary-margin / 2);
+	*padding-top: @primary-margin;
 	background-color: @white;
 	.box-shadow(@codeShadow);
 	.border-radius(4px);
@@ -236,11 +236,11 @@ form.code-example {
 		position: absolute;
 		top: -1px;
 		left: -1px;
-		padding: (@primaryMargin / 6) (@primaryMargin / 4) (@primaryMargin / 6) (@primaryMargin / 4);
+		padding: (@primary-margin / 6) (@primary-margin / 4) (@primary-margin / 6) (@primary-margin / 4);
 		font-size: @codeTextFontSize;
 		font-weight: bold;
 		background-color: @codeBackgroundColor;
-		border: 1px solid @borderColor;
+		border: 1px solid @border-color;
 		color: @codeTextColor;
 		.border-radius(4px 0 4px 0);
 		line-height: @codeTextLineHeight !important;
@@ -249,13 +249,13 @@ form.code-example {
 	
 	&.short {
 		
-		margin-bottom: (@primaryMargin * @textMarginRatioShort);
+		margin-bottom: (@primary-margin * @text-margin-ratio-short);
 		
 	}
 	
 	&.tall {
 		
-		margin-bottom: (@primaryMargin * @textMarginRatioTall);
+		margin-bottom: (@primary-margin * @text-margin-ratio-tall);
 		
 	}
 	
@@ -270,13 +270,13 @@ form.code-example {
 		
 		&.short {
 			
-			margin-bottom: (@primaryMargin * @textMarginRatioShort) + 5px;
+			margin-bottom: (@primary-margin * @text-margin-ratio-short) + 5px;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: (@primaryMargin * @textMarginRatioTall) + 5px;
+			margin-bottom: (@primary-margin * @text-margin-ratio-tall) + 5px;
 			
 		}
 		
@@ -303,11 +303,11 @@ form.code-example {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and above.     */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @widescreen) {
+@media (min-width: @viewport-widescreen) {
 	
 	code {
 		
@@ -320,7 +320,7 @@ form.code-example {
 		
 		font-size: @codeTextFontSize * @codeTextRatioWide;
 		line-height: @codeTextLineHeight * @codeTextRatioWide;
-		padding: @primaryMarginWidescreen / 2;
+		padding: @primary-margin-widescreen / 2;
 		
 		&.prettyprint {
 			
@@ -328,7 +328,7 @@ form.code-example {
 				
 				&:before {
 					
-					width: @primaryMarginWidescreen;
+					width: @primary-margin-widescreen;
 					
 				}
 				
@@ -336,13 +336,13 @@ form.code-example {
 					
 					&.linenums {
 						
-						margin: 0 0 0 @primaryMarginWidescreen;
+						margin: 0 0 0 @primary-margin-widescreen;
 						
 						li {
 							
 							font-size: @codeTextFontSize * @codeTextRatioWide;
 							line-height: @codeTextLineHeight * @codeTextRatioWide;
-							padding-left: (@primaryMarginWidescreen / 2);
+							padding-left: (@primary-margin-widescreen / 2);
 							
 						}
 						
@@ -356,18 +356,43 @@ form.code-example {
 						
 	}
 	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Code examples                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	// Base class
+	
+	.code-example,
+	form.code-example {
+		
+		margin: 0px 0px @primary-margin-widescreen 0px;
+		padding: (((2 * (@primary-margin-widescreen / 6)) + (@codeTextLineHeight * @codeTextRatioWide)) + (@primary-margin-widescreen / 2)) (@primary-margin-widescreen / 2) (@primary-margin-widescreen / 2) (@primary-margin-widescreen / 2);
+		*padding-top: @primary-margin-widescreen;
+		
+		&:after {
+			
+			font-size: @codeTextFontSize * @codeTextRatioWide;
+			line-height: @codeTextLineHeight * @codeTextRatioWide;
+			padding: (@primary-margin-widescreen / 6) (@primary-margin-widescreen / 4) (@primary-margin-widescreen / 6) (@primary-margin-widescreen / 4);
+			
+		}
+		
+	}
+	
 }
 
 
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for portrait tablet (@tablet) to default    */
-/* desktop (@default).                                                       */
+/* Responsive changes to styling for portrait tablet (@viewport-tablet) to default    */
+/* desktop (@viewport-standard).                                                       */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @tablet) and (max-width: @tabletMax) {
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
 	
 	code {
 		
@@ -380,7 +405,7 @@ form.code-example {
 		
 		font-size: @codeTextFontSize * @codeTextRatioTablet;
 		line-height: @codeTextLineHeight * @codeTextRatioTablet;
-		padding: @primaryMarginTablet / 2;
+		padding: @primary-margin-tablet / 2;
 		
 		&.prettyprint {
 			
@@ -388,7 +413,7 @@ form.code-example {
 				
 				&:before {
 					
-					width: @primaryMarginTablet;
+					width: @primary-margin-tablet;
 					
 				}
 				
@@ -396,13 +421,13 @@ form.code-example {
 					
 					&.linenums {
 						
-						margin: 0 0 0 @primaryMarginTablet;
+						margin: 0 0 0 @primary-margin-tablet;
 						
 						li {
 							
 							font-size: @codeTextFontSize * @codeTextRatioTablet;
 							line-height: @codeTextLineHeight * @codeTextRatioTablet;
-							padding-left: (@primaryMarginTablet / 2);
+							padding-left: (@primary-margin-tablet / 2);
 							
 						}
 						
@@ -416,17 +441,42 @@ form.code-example {
 						
 	}
 	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Code examples                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	// Base class
+	
+	.code-example,
+	form.code-example {
+		
+		margin: 0px 0px @primary-margin-tablet 0px;
+		padding: (((2 * (@primary-margin-tablet / 6)) + (@codeTextLineHeight * @codeTextRatioTablet)) + (@primary-margin-tablet / 2)) (@primary-margin-tablet / 2) (@primary-margin-tablet / 2) (@primary-margin-tablet / 2);
+		*padding-top: @primary-margin-tablet;
+		
+		&:after {
+			
+			font-size: @codeTextFontSize * @codeTextRatioTablet;
+			line-height: @codeTextLineHeight * @codeTextRatioTablet;
+			padding: (@primary-margin-tablet / 6) (@primary-margin-tablet / 4) (@primary-margin-tablet / 6) (@primary-margin-tablet / 4);
+			
+		}
+		
+	}
+	
 }
 
 
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/* Responsive changes to styling up to portrait tablets (@viewport-tablet)   */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileLandscapeMax) {
+@media (max-width: @viewport-mobile-landscape-max) {
 	
 	code {
 		
@@ -439,7 +489,7 @@ form.code-example {
 		
 		font-size: @codeTextFontSize * @codeTextRatioMobile;
 		line-height: @codeTextLineHeight * @codeTextRatioMobile;
-		padding: @primaryMarginMobile / 2;
+		padding: @primary-margin-mobile / 2;
 		
 		&.prettyprint {
 			
@@ -447,7 +497,7 @@ form.code-example {
 				
 				&:before {
 					
-					width: @primaryMarginMobile;
+					width: @primary-margin-mobile;
 					
 				}
 				
@@ -455,13 +505,13 @@ form.code-example {
 					
 					&.linenums {
 						
-						margin: 0 0 0 @primaryMarginMobile;
+						margin: 0 0 0 @primary-margin-mobile;
 						
 						li {
 							
 							font-size: @codeTextFontSize * @codeTextRatioMobile;
 							line-height: @codeTextLineHeight * @codeTextRatioMobile;
-							padding-left: (@primaryMarginMobile / 2);
+							padding-left: (@primary-margin-mobile / 2);
 							
 						}
 						
@@ -475,17 +525,43 @@ form.code-example {
 						
 	}
 	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Code examples                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	// Base class
+	
+	.code-example,
+	form.code-example {
+		
+		margin: 0px 0px @primary-margin-mobile 0px;
+		padding: (((2 * (@primary-margin-mobile / 6)) + (@codeTextLineHeight * @codeTextRatioMobile)) + (@primary-margin-mobile / 2)) (@primary-margin-mobile / 2) (@primary-margin-mobile / 2) (@primary-margin-mobile / 2);
+		*padding-top: @primary-margin-mobile;
+		
+		&:after {
+			
+			font-size: @codeTextFontSize * @codeTextRatioMobile;
+			line-height: @codeTextLineHeight * @codeTextRatioMobile;
+			padding: (@primary-margin-mobile / 6) (@primary-margin-mobile / 4) (@primary-margin-mobile / 6) (@primary-margin-mobile / 4);
+			
+		}
+		
+	}
+	
 }
 
 
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/* Responsive changes to styling up to landscape phones                      */
+/* (@viewport-mobile-landscape)                                              */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileMax) {
+@media (max-width: @viewport-mobile-max) {
 	
 }
 

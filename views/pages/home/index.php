@@ -20,13 +20,13 @@
 					
 					<td width="20%">
 						
-						<code class="center-vertical">@socialist_red</code>
+						<code class="center-vertical">@gray</code>
 						
 					</td>
 					
 					<td>
 						
-						<div class="colorscale socialist-red">
+						<div class="colorscale gray">
 							
 							<div class="color base"></div>
 							
@@ -70,7 +70,7 @@
 							
 						</div>
 						
-						<div class="colorscale socialist-red flush">
+						<div class="colorscale gray flush">
 							
 							<div class="color base"></div>
 							
@@ -122,13 +122,13 @@
 					
 					<td width="20%">
 						
-						<code class="center-vertical">@socialist_gray</code>
+						<code class="center-vertical">@blue</code>
 						
 					</td>
 					
 					<td>
 						
-						<div class="colorscale socialist-gray">
+						<div class="colorscale blue">
 							
 							<div class="color base"></div>
 							
@@ -172,7 +172,7 @@
 							
 						</div>
 						
-						<div class="colorscale socialist-gray flush">
+						<div class="colorscale blue flush">
 							
 							<div class="color base"></div>
 							
@@ -224,13 +224,13 @@
 					
 					<td width="20%">
 						
-						<code class="center-vertical">@socialist_blue</code>
+						<code class="center-vertical">@green</code>
 						
 					</td>
 					
 					<td>
 						
-						<div class="colorscale socialist-teal">
+						<div class="colorscale green">
 							
 							<div class="color base"></div>
 							
@@ -274,7 +274,7 @@
 							
 						</div>
 						
-						<div class="colorscale socialist-teal flush">
+						<div class="colorscale green flush">
 							
 							<div class="color base"></div>
 							
@@ -326,13 +326,13 @@
 					
 					<td width="20%">
 						
-						<code class="center-vertical">@socialist_green</code>
+						<code class="center-vertical">@orange</code>
 						
 					</td>
 					
 					<td>
 						
-						<div class="colorscale socialist-green">
+						<div class="colorscale orange">
 							
 							<div class="color base"></div>
 							
@@ -376,7 +376,7 @@
 							
 						</div>
 						
-						<div class="colorscale socialist-green flush">
+						<div class="colorscale orange flush">
 							
 							<div class="color base"></div>
 							
@@ -428,13 +428,13 @@
 					
 					<td width="20%">
 						
-						<code class="center-vertical">@socialist_orange</code>
+						<code class="center-vertical">@yellow</code>
 						
 					</td>
 					
 					<td>
 						
-						<div class="colorscale socialist-orange">
+						<div class="colorscale yellow">
 							
 							<div class="color base"></div>
 							
@@ -478,7 +478,109 @@
 							
 						</div>
 						
-						<div class="colorscale socialist-orange flush">
+						<div class="colorscale yellow flush">
+							
+							<div class="color base"></div>
+							
+							<div class="color darken-05"></div>
+							
+							<div class="color darken-10"></div>
+							
+							<div class="color darken-15"></div>
+							
+							<div class="color darken-20"></div>
+							
+							<div class="color darken-25"></div>
+							
+							<div class="color darken-30"></div>
+							
+							<div class="color darken-35"></div>
+							
+							<div class="color darken-40"></div>
+							
+							<div class="color darken-45"></div>
+							
+							<div class="color darken-50"></div>
+							
+							<div class="color darken-55"></div>
+							
+							<div class="color darken-60"></div>
+							
+							<div class="color darken-65"></div>
+							
+							<div class="color darken-70"></div>
+							
+							<div class="color darken-75"></div>
+							
+							<div class="color darken-80"></div>
+							
+							<div class="color darken-85"></div>
+							
+							<div class="color darken-90"></div>
+							
+							<div class="color darken-95"></div>
+							
+						</div>
+						
+					</td>
+					
+				</tr>
+				
+				<tr>
+					
+					<td width="20%">
+						
+						<code class="center-vertical">@red</code>
+						
+					</td>
+					
+					<td>
+						
+						<div class="colorscale red">
+							
+							<div class="color base"></div>
+							
+							<div class="color lighten-05"></div>
+							
+							<div class="color lighten-10"></div>
+							
+							<div class="color lighten-15"></div>
+							
+							<div class="color lighten-20"></div>
+							
+							<div class="color lighten-25"></div>
+							
+							<div class="color lighten-30"></div>
+							
+							<div class="color lighten-35"></div>
+							
+							<div class="color lighten-40"></div>
+							
+							<div class="color lighten-45"></div>
+							
+							<div class="color lighten-50"></div>
+							
+							<div class="color lighten-55"></div>
+							
+							<div class="color lighten-60"></div>
+							
+							<div class="color lighten-65"></div>
+							
+							<div class="color lighten-70"></div>
+							
+							<div class="color lighten-75"></div>
+							
+							<div class="color lighten-80"></div>
+							
+							<div class="color lighten-85"></div>
+							
+							<div class="color lighten-90"></div>
+							
+							<div class="color lighten-95"></div>
+							
+						</div>
+						
+						<div class="colorscale red flush">
 							
 							<div class="color base"></div>
 							

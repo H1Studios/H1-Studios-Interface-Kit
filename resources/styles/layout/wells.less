@@ -20,33 +20,33 @@
 	background: @white;
 	display: block;
 	margin: 0 0 0 0;
-	padding: @gridGutterWidth;
+	padding: @grid-gutter-width-standard;
 	overflow: hidden;
 	position: relative;
 	.clearfix();
-	margin-bottom: @primaryMargin;
+	margin-bottom: @primary-margin;
 	
-	@wellGridColumnWidth: ((@gridRowWidth - (4 * @gridGutterWidth)) - (@gridGutterWidth * (@gridColumns - 1))) / @gridColumns;
-	@wellGridGutterWidth: @gridGutterWidth;
+	@wellGridColumnWidth: ((@grid-row-width-standard - (4 * @grid-gutter-width-standard)) - (@grid-gutter-width-standard * (@grid-column-count - 1))) / @grid-column-count;
+	@wellGridGutterWidth: @grid-gutter-width-standard;
 	
 	#grid > .core(@wellGridColumnWidth , @wellGridGutterWidth);
 	
 	&.short {
 		
-		margin-bottom: @primaryMarginShort;
+		margin-bottom: @primary-margin-short;
 		
 	}
 	
 	&.tall {
 		
-		margin-bottom: @primaryMarginTall;
+		margin-bottom: @primary-margin-tall;
 		
 	}
 	
 	hr {
 		
-		margin-left: -@gridGutterWidth !important;
-		margin-right: -@gridGutterWidth !important;
+		margin-left: -@grid-gutter-width-standard !important;
+		margin-right: -@grid-gutter-width-standard !important;
 		
 	}
 	
@@ -64,30 +64,30 @@
 	
 	.well {
 		
-		padding: @gridGutterWidthWidescreen;
-		margin-bottom: @primaryMarginWidescreen;
+		padding: @grid-gutter-width-widescreen;
+		margin-bottom: @primary-margin-widescreen;
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortWidescreen;
+			margin-bottom: @primary-margin-short-widescreen;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallWidescreen;
+			margin-bottom: @primary-margin-tall-widescreen;
 			
 		}
 		
-		@wellGridColumnWidthWidescreen: ((@gridRowWidthWidescreen - (4 * @gridGutterWidthWidescreen)) - (@gridGutterWidthWidescreen * (@gridColumns - 1))) / @gridColumns;
-		@wellGridGutterWidthWidescreen: @gridGutterWidthWidescreen;
+		@wellGridColumnWidthWidescreen: ((@grid-row-width-widescreen - (4 * @grid-gutter-width-widescreen)) - (@grid-gutter-width-widescreen * (@grid-column-count - 1))) / @grid-column-count;
+		@wellGridGutterWidthWidescreen: @grid-gutter-width-widescreen;
 		
 		#grid > .core(@wellGridColumnWidthWidescreen , @wellGridGutterWidthWidescreen);
 	
 		hr {
 			
-			margin-left: -@gridGutterWidthWidescreen !important;
-			margin-right: -@gridGutterWidthWidescreen !important;
+			margin-left: -@grid-gutter-width-widescreen !important;
+			margin-right: -@grid-gutter-width-widescreen !important;
 			
 		}
 		
@@ -107,23 +107,23 @@
 	
 	.well {
 		
-		padding: @gridGutterWidthTablet;
-		margin-bottom: @primaryMarginTablet;
+		padding: @grid-gutter-width-tablet;
+		margin-bottom: @primary-margin-tablet;
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortTablet;
+			margin-bottom: @primary-margin-short-tablet;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallTablet;
+			margin-bottom: @primary-margin-tall-tablet;
 			
 		}
 		
-		@wellGridColumnWidthTablet: ((@gridRowWidthTablet - (4 * @gridGutterWidthTablet)) - (@gridGutterWidthTablet * (@gridColumns - 1))) / @gridColumns;
-		@wellGridGutterWidthTablet: @gridGutterWidthTablet;
+		@wellGridColumnWidthTablet: ((@grid-row-width-tablet - (4 * @grid-gutter-width-tablet)) - (@grid-gutter-width-tablet * (@grid-column-count - 1))) / @grid-column-count;
+		@wellGridGutterWidthTablet: @grid-gutter-width-tablet;
 		
 		#grid > .core(@wellGridColumnWidthTablet , @wellGridGutterWidthTablet);
 	
@@ -151,17 +151,17 @@
 	
 	.well {
 		
-		margin-bottom: @primaryMarginTablet;
+		margin-bottom: @primary-margin-tablet;
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortTablet;
+			margin-bottom: @primary-margin-short-tablet;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallTablet;
+			margin-bottom: @primary-margin-tall-tablet;
 			
 		}
 	

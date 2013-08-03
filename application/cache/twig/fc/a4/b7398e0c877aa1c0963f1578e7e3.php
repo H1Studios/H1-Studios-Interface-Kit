@@ -50,7 +50,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<td width=\"20%\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<code class=\"center-vertical\">@socialist_red</code>
+\t\t\t\t\t\t<code class=\"center-vertical\">@red</code>
 \t\t\t\t\t\t
 \t\t\t\t\t</td>
 \t\t\t\t\t
@@ -152,7 +152,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<td width=\"20%\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<code class=\"center-vertical\">@socialist_gray</code>
+\t\t\t\t\t\t<code class=\"center-vertical\">@gray</code>
 \t\t\t\t\t\t
 \t\t\t\t\t</td>
 \t\t\t\t\t
@@ -254,7 +254,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<td width=\"20%\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<code class=\"center-vertical\">@socialist_blue</code>
+\t\t\t\t\t\t<code class=\"center-vertical\">@blue</code>
 \t\t\t\t\t\t
 \t\t\t\t\t</td>
 \t\t\t\t\t
@@ -356,7 +356,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<td width=\"20%\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<code class=\"center-vertical\">@socialist_green</code>
+\t\t\t\t\t\t<code class=\"center-vertical\">@green</code>
 \t\t\t\t\t\t
 \t\t\t\t\t</td>
 \t\t\t\t\t
@@ -458,7 +458,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<td width=\"20%\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<code class=\"center-vertical\">@socialist_orange</code>
+\t\t\t\t\t\t<code class=\"center-vertical\">@orange</code>
 \t\t\t\t\t\t
 \t\t\t\t\t</td>
 \t\t\t\t\t

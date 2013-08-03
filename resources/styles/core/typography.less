@@ -8,201 +8,678 @@
 
 /* ========================================================================= */
 /*                                                                           */
+/* Typographic Text                                                          */
+/*                                                                           */
+/* ========================================================================= */
+
+.align-left {
+	
+	text-align: left;
+	
+}
+
+.align-right {
+	
+	text-align: right;
+	
+}
+
+.align-justified {
+	
+	text-align: justify;
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
 /* Body Text                                                                 */
 /*                                                                           */
 /* ========================================================================= */
 
 p {
 	
-	font-family: @bodyTextFontFamily;
-	color: @bodyTextColor;
-	font-weight: @bodyTextFontWeight;
-	font-size: @bodyTextFontSize;
-	line-height: @bodyTextLineHeight;
-	font-style: @bodyTextStyle;
-	text-transform: @bodyTextTransform;
-	margin: 0px 0px @bodyTextMargin 0px;
+	font-family: @body-text-font-family;
+	font-size: @body-text-font-size;
+	font-weight: @body-text-font-weight;
+	line-height: @body-text-line-height;
+	text-transform: @body-text-transform;
+	font-style: @body-text-style;
+	color: @body-text-color;
+	margin: @body-text-margin-top 0px @body-text-margin-bottom 0px;
 	
-	strong {
+	// Tall
+	
+	&.tall {
 		
-		color: @socialist_gray;
+		margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall;
 		
 	}
 	
-	&.justified {
+	// Short
 		
-		text-align: justify;
+	&.short {
 		
-	}
-	
-	&.emphasize,
-	.emphasize {
-		
-		font-weight: @bodyTextEmphasisFontWeight;
-		color: @bodyTextEmphasisColor;
+		margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short;
 		
 	}
 	
-	&.muted {
-		
-		font-weight: @bodyTextMutedFontWeight;
-		color: @bodyTextMutedColor;
-		
-	}
+	// Links
 	
-    &.inverse {
+	a {
 		
-		color: @bodyTextInverseColor;
-
-		&.emphasize,
-		.emphasize {
+		color: @body-text-link-text-color;
+		text-transform: @body-text-link-text-transform;
+		
+		&:hover {
 			
-			color: @bodyTextInverseEmphasisColor;
+			color: @body-text-link-hover-text-color;
+			text-transform: @body-text-link-hover-text-transform;
 			
 		}
 		
+		&:active {
+			
+			color: @body-text-link-active-text-color;
+			text-transform: @body-text-link-active-text-transform;
+			
+		}
+		
+	}
+	
+	// Emphasis
+	
+	&.emphasis,
+	.emphasis,
+	strong {
+		
+		font-weight: @body-text-emphasis-font-weight;
+		color: @body-text-emphasis-color;
+		font-style: @body-text-emphasis-style;
+		
+		// Links
+		
+		a {
+			
+			color: @body-text-emphasis-link-text-color;
+			text-transform: @body-text-emphasis-link-text-transform;
+			
+			&:hover {
+				
+				color: @body-text-emphasis-link-hover-text-color;
+				text-transform: @body-text-emphasis-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @body-text-emphasis-link-active-text-color;
+				text-transform: @body-text-emphasis-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	// Muted
+	
+	&.muted {
+		
+		font-weight: @body-text-muted-font-weight;
+		color: @body-text-muted-color;
+		font-style: @body-text-muted-style;
+		
+		// Links
+		
+		a {
+			
+			color: @body-text-muted-link-text-color;
+			text-transform: @body-text-muted-link-text-transform;
+			
+			&:hover {
+				
+				color: @body-text-muted-link-hover-text-color;
+				text-transform: @body-text-muted-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @body-text-muted-link-active-text-color;
+				text-transform: @body-text-muted-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ------------------------------------------------------------------------- */
+	/* Inverse                                                                   */
+	/* ------------------------------------------------------------------------- */
+	
+    &.inverse {
+		
+		color: @body-text-inverse-color;
+		
+		// Links
+		
+		a {
+			
+			color: @body-text-inverse-link-text-color;
+			
+			&:hover {
+				
+				color: @body-text-inverse-link-hover-text-color;
+				
+			}
+			
+			&:active {
+				
+				color: @body-text-inverse-link-active-text-color;
+				
+			}
+			
+		}
+		
+		// Emphasis
+		
+		&.emphasis,
+		.emphasis,
+		strong {
+			
+			color: @body-text-inverse-emphasis-color;
+			
+			// Links
+			
+			a {
+				
+				color: @body-text-inverse-emphasis-link-text-color;
+				
+				&:hover {
+					
+					color: @body-text-inverse-emphasis-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @body-text-inverse-emphasis-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+		// Muted
+		
 		&.muted {
 			
-			color: @bodyTextInverseMutedColor;
+			color: @body-text-inverse-muted-color;
+			
+			// Links
+			
+			a {
+				
+				color: @body-text-inverse-muted-link-text-color;
+				
+				&:hover {
+					
+					color: @body-text-inverse-muted-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @body-text-inverse-muted-link-active-text-color;
+					
+				}
+				
+			}
 			
 		}
 		
     }
 	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Lead Text                                                                 */
+/*                                                                           */
+/* ========================================================================= */
+
+p.lead,
+p lead,
+p .lead {
+	
+	font-family: @lead-text-font-family;
+	font-size: @lead-text-font-size;
+	font-weight: @lead-text-font-weight;
+	line-height: @lead-text-line-height;
+	text-transform: @lead-text-transform;
+	font-style: @lead-text-style;
+	color: @lead-text-color;
+	margin: @lead-text-margin-top 0px @lead-text-margin-bottom 0px;
+	
+	// Tall
+	
 	&.tall {
 		
-		margin-bottom: @bodyTextMargin * @textMarginRatioTall;
+		margin-bottom: @lead-text-margin-bottom * @text-margin-ratio-tall;
 		
 	}
+	
+	// Short
 		
 	&.short {
 		
-		margin-bottom: @bodyTextMargin * @textMarginRatioShort;
+		margin-bottom: @lead-text-margin-bottom * @text-margin-ratio-short;
 		
 	}
 	
-	&.right {
+	// Links
+	
+	a {
 		
-		text-align: right;
+		color: @lead-text-link-text-color;
+		text-transform: @lead-text-link-text-transform;
+		
+		&:hover {
+			
+			color: @lead-text-link-hover-text-color;
+			text-transform: @lead-text-link-hover-text-transform;
+			
+		}
+		
+		&:active {
+			
+			color: @lead-text-link-active-text-color;
+			text-transform: @lead-text-link-active-text-transform;
+			
+		}
 		
 	}
 	
-	&.lead {
+	// Emphasis
+	
+	&.emphasis,
+	.emphasis,
+	strong {
 		
-		font-family: @leadTextFontFamily;
-		color: @leadTextColor;
-		font-weight: @leadTextFontWeight;
-		font-size: @leadTextFontSize;
-		line-height: @leadTextLineHeight;
-		font-style: @leadTextStyle;
-		text-transform: @leadTextTransform;
-		margin: 0px 0px @leadTextMargin 0px;
+		font-weight: @lead-text-emphasis-font-weight;
+		color: @lead-text-emphasis-color;
+		font-style: @lead-text-emphasis-style;
 		
-		&.tall {
+		// Links
+		
+		a {
 			
-			margin-bottom: @leadTextMargin * @textMarginRatioTall;
+			color: @lead-text-emphasis-link-text-color;
+			text-transform: @lead-text-emphasis-link-text-transform;
+			
+			&:hover {
+				
+				color: @lead-text-emphasis-link-hover-text-color;
+				text-transform: @lead-text-emphasis-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @lead-text-emphasis-link-active-text-color;
+				text-transform: @lead-text-emphasis-link-active-text-transform;
+				
+			}
 			
 		}
 		
-		&.short {
+	}
+	
+	// Muted
+	
+	&.muted {
+		
+		font-weight: @lead-text-muted-font-weight;
+		color: @lead-text-muted-color;
+		font-style: @lead-text-muted-style;
+		
+		// Links
+		
+		a {
 			
-			margin-bottom: @leadTextMargin * @textMarginRatioShort;
+			color: @lead-text-muted-link-text-color;
+			text-transform: @lead-text-muted-link-text-transform;
+			
+			&:hover {
+				
+				color: @lead-text-muted-link-hover-text-color;
+				text-transform: @lead-text-muted-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @lead-text-muted-link-active-text-color;
+				text-transform: @lead-text-muted-link-active-text-transform;
+				
+			}
 			
 		}
 		
-		&.emphasize,
-		.emphasize {
+	}
+	
+	/* ------------------------------------------------------------------------- */
+	/* Inverse                                                                   */
+	/* ------------------------------------------------------------------------- */
+	
+    &.inverse {
+		
+		color: @lead-text-inverse-color;
+		
+		// Links
+		
+		a {
 			
-			font-weight: @leadTextEmphasisFontWeight;
-			color: @leadTextEmphasisColor;
+			color: @lead-text-inverse-link-text-color;
+			
+			&:hover {
+				
+				color: @lead-text-inverse-link-hover-text-color;
+				
+			}
+			
+			&:active {
+				
+				color: @lead-text-inverse-link-active-text-color;
+				
+			}
 			
 		}
+		
+		// Emphasis
+		
+		&.emphasis,
+		.emphasis,
+		strong {
+			
+			color: @lead-text-inverse-emphasis-color;
+			
+			// Links
+			
+			a {
+				
+				color: @lead-text-inverse-emphasis-link-text-color;
+				
+				&:hover {
+					
+					color: @lead-text-inverse-emphasis-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @lead-text-inverse-emphasis-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+		// Muted
 		
 		&.muted {
 			
-			font-weight: @leadTextMutedFontWeight;
-			color: @leadTextMutedColor;
+			color: @lead-text-inverse-muted-color;
 			
-		}
-	    
-	    &.inverse {
+			// Links
 			
-			color: @leadTextInverseColor;
-		    
-		    &.emphasize,
-			.emphasize {
+			a {
 				
-				color: @leadTextInverseEmphasisColor;
+				color: @lead-text-inverse-muted-link-text-color;
 				
-			}
-			
-			&.muted {
+				&:hover {
+					
+					color: @lead-text-inverse-muted-link-hover-text-color;
+					
+				}
 				
-				color: @leadTextInverseMutedColor;
+				&:active {
+					
+					color: @lead-text-inverse-muted-link-active-text-color;
+					
+				}
 				
 			}
 			
 		}
 		
-	}
+    }
 	
-	&.small {
-		
-		font-family: @smallTextFontFamily;
-		color: @smallTextColor;
-		font-weight: @smallTextFontWeight;
-		font-size: @smallTextFontSize;
-		line-height: @smallTextLineHeight;
-		margin: 0px 0px @smallTextMargin 0px;
-		
-		&.tall {
-			
-			margin-bottom: @smallTextMargin * @textMarginRatioTall;
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @smallTextMargin * @textMarginRatioShort;
-			
-		}
-		
-		&.emphasize,
-		.emphasize {
-			
-			font-weight: @smallTextEmphasisFontWeight;
-			color: @smallTextEmphasisColor;
-			
-		}
-		
-		&.muted {
-			
-			font-weight: @smallTextMutedFontWeight;
-			color: @smallTextMutedColor;
-			
-		}
-	    
-	    &.inverse {
-			
-			color: @smallTextInverseColor;
-		    
-		    &.emphasize,
-			.emphasize {
-				
-				color: @smallTextInverseEmphasisColor;
-				
-			}
-			
-			&.muted {
-				
-				color: @smallTextInverseMutedColor;
-				
-			}
-			
-		}
-		
-	}
+}
 
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Small Text                                                                */
+/*                                                                           */
+/* ========================================================================= */
+
+p.small,
+p small,
+p .small {
+	
+	font-family: @small-text-font-family;
+	font-size: @small-text-font-size;
+	font-weight: @small-text-font-weight;
+	line-height: @small-text-line-height;
+	text-transform: @small-text-transform;
+	font-style: @small-text-style;
+	color: @small-text-color;
+	margin: @small-text-margin-top 0px @small-text-margin-bottom 0px;
+	
+	// Tall
+	
+	&.tall {
+		
+		margin-bottom: @small-text-margin-bottom * @text-margin-ratio-tall;
+		
+	}
+	
+	// Short
+		
+	&.short {
+		
+		margin-bottom: @small-text-margin-bottom * @text-margin-ratio-short;
+		
+	}
+	
+	// Links
+	
+	a {
+		
+		color: @small-text-link-text-color;
+		text-transform: @small-text-link-text-transform;
+		
+		&:hover {
+			
+			color: @small-text-link-hover-text-color;
+			text-transform: @small-text-link-hover-text-transform;
+			
+		}
+		
+		&:active {
+			
+			color: @small-text-link-active-text-color;
+			text-transform: @small-text-link-active-text-transform;
+			
+		}
+		
+	}
+	
+	// Emphasis
+	
+	&.emphasis,
+	.emphasis,
+	strong {
+		
+		font-weight: @small-text-emphasis-font-weight;
+		color: @small-text-emphasis-color;
+		font-style: @small-text-emphasis-style;
+		
+		// Links
+		
+		a {
+			
+			color: @small-text-emphasis-link-text-color;
+			text-transform: @small-text-emphasis-link-text-transform;
+			
+			&:hover {
+				
+				color: @small-text-emphasis-link-hover-text-color;
+				text-transform: @small-text-emphasis-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @small-text-emphasis-link-active-text-color;
+				text-transform: @small-text-emphasis-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	// Muted
+	
+	&.muted {
+		
+		font-weight: @small-text-muted-font-weight;
+		color: @small-text-muted-color;
+		font-style: @small-text-muted-style;
+		
+		// Links
+		
+		a {
+			
+			color: @small-text-muted-link-text-color;
+			text-transform: @small-text-muted-link-text-transform;
+			
+			&:hover {
+				
+				color: @small-text-muted-link-hover-text-color;
+				text-transform: @small-text-muted-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @small-text-muted-link-active-text-color;
+				text-transform: @small-text-muted-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ------------------------------------------------------------------------- */
+	/* Inverse                                                                   */
+	/* ------------------------------------------------------------------------- */
+	
+    &.inverse {
+		
+		color: @small-text-inverse-color;
+		
+		// Links
+		
+		a {
+			
+			color: @small-text-inverse-link-text-color;
+			
+			&:hover {
+				
+				color: @small-text-inverse-link-hover-text-color;
+				
+			}
+			
+			&:active {
+				
+				color: @small-text-inverse-link-active-text-color;
+				
+			}
+			
+		}
+		
+		// Emphasis
+		
+		&.emphasis,
+		.emphasis,
+		strong {
+			
+			color: @small-text-inverse-emphasis-color;
+			
+			// Links
+			
+			a {
+				
+				color: @small-text-inverse-emphasis-link-text-color;
+				
+				&:hover {
+					
+					color: @small-text-inverse-emphasis-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @small-text-inverse-emphasis-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+		// Muted
+		
+		&.muted {
+			
+			color: @small-text-inverse-muted-color;
+			
+			// Links
+			
+			a {
+				
+				color: @small-text-inverse-muted-link-text-color;
+				
+				&:hover {
+					
+					color: @small-text-inverse-muted-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @small-text-inverse-muted-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+    }
+	
 }
 
 
@@ -214,11 +691,19 @@ p {
 /* ========================================================================= */
 
 h1,
+.h1-clone,
 h2,
+.h2-clone,
 h3,
+.h3-clone,
 h4,
+.h4-clone,
 h5,
-h6 {
+.h5-clone,
+h6
+.h6-clone {
+	
+	display: block;
 	
 	code {
 		
@@ -232,615 +717,6 @@ h6 {
 		
 	}
 	
-}
-
-h1,
-.h1-clone {
-	
-	font-family: @headingH1TextFontFamily;
-	color: @headingH1TextColor;
-	font-weight: @headingH1TextFontWeight;
-	font-size: @headingH1TextFontSize;
-	line-height: @headingH1TextLineHeight;
-	margin: (@textMarginRatioTop * @headingH1TextMargin) 0px @headingH1TextMargin 0px;
-	font-style: @headingH1TextStyle;
-	text-transform: @headingH1TextTransform;
-	display: block;
-	
-	a {
-		
-		color: @headingH1TextColor;
-		
-		&:hover {
-			
-			color: @linkColor;
-			
-		}
-		
-	}
-	
-	.icon {
-		
-		&.icon-mini {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-small {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-medium {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-large {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-jumbo {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-	}
-	
-	&.tall {
-		
-		margin-bottom: @headingH1TextMargin * @textMarginRatioTall;
-		
-	}
-	
-	&.short {
-		
-		margin-bottom: @headingH1TextMargin * @textMarginRatioShort;
-		
-	}
-	
-	&.emphasize,
-	.emphasize {
-		
-		font-weight: @headingH1TextEmphasisFontWeight;
-		color: @headingH1TextEmphasisColor;
-		
-	}
-    
-    &.inverse {
-		
-		color: @headingH1TextInverseColor;
-	    
-	    &.emphasize,
-		.emphasize {
-			
-			color: @headingH1TextInverseEmphasisColor;
-			
-		}
-		
-    }
-    
-}
-
-h2,
-.h2-clone {
-	
-	font-family: @headingH2TextFontFamily;
-	color: @headingH2TextColor;
-	font-weight: @headingH2TextFontWeight;
-	font-size: @headingH2TextFontSize;
-	line-height: @headingH2TextLineHeight;
-	margin: (@textMarginRatioTop * @headingH2TextMargin) 0px @headingH2TextMargin 0px;
-	font-style: @headingH2TextStyle;
-	text-transform: @headingH2TextTransform;
-	display: block;
-	
-	a {
-		
-		color: @headingH2TextColor;
-		
-		&:hover {
-			
-			color: @linkColor;
-			
-		}
-		
-	}
-	
-	.icon {
-		
-		&.icon-mini {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-small {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-medium {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-large {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-jumbo {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-	}
-	
-	&.tall {
-		
-		margin-bottom: @headingH2TextMargin * @textMarginRatioTall;
-		
-	}
-	
-	&.short {
-		
-		margin-bottom: @headingH2TextMargin * @textMarginRatioShort;
-		
-	}
-	
-	&.emphasize,
-	.emphasize {
-		
-		font-weight: @headingH2TextEmphasisFontWeight;
-		color: @headingH2TextEmphasisColor;
-		
-	}
-    
-    &.inverse {
-		
-		color: @headingH2TextInverseColor;
-	    
-	    &.emphasize,
-		.emphasize {
-			
-			color: @headingH2TextInverseEmphasisColor;
-			
-		}
-		
-    }
-    
-}
-
-h3,
-.h3-clone {
-	
-	font-family: @headingH3TextFontFamily;
-	color: @headingH3TextColor;
-	font-weight: @headingH3TextFontWeight;
-	font-size: @headingH3TextFontSize;
-	line-height: @headingH3TextLineHeight;
-	margin: (@textMarginRatioTop * @headingH3TextMargin) 0px @headingH3TextMargin 0px;
-	font-style: @headingH3TextStyle;
-	text-transform: @headingH3TextTransform;
-	display: block;
-	
-	a {
-		
-		color: @headingH3TextColor;
-		
-		&:hover {
-			
-			color: @linkColor;
-			
-		}
-		
-	}
-	
-	.icon {
-		
-		&.icon-mini {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-small {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-medium {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-large {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-jumbo {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-	}
-	
-	&.tall {
-		
-		margin-bottom: @headingH3TextMargin * @textMarginRatioTall;
-		
-	}
-	
-	&.short {
-		
-		margin-bottom: @headingH3TextMargin * @textMarginRatioShort;
-		
-	}
-	
-	&.emphasize,
-	.emphasize {
-		
-		font-weight: @headingH3TextEmphasisFontWeight;
-		color: @headingH3TextEmphasisColor;
-		
-	}
-    
-    &.inverse {
-		
-		color: @headingH3TextInverseColor;
-	    
-	    &.emphasize,
-		.emphasize {
-			
-			color: @headingH3TextInverseEmphasisColor;
-			
-		}
-		
-    }
-    
-}
-
-h4,
-.h4-clone {
-	
-	font-family: @headingH4TextFontFamily;
-	color: @headingH4TextColor;
-	font-weight: @headingH4TextFontWeight;
-	font-size: @headingH4TextFontSize;
-	line-height: @headingH4TextLineHeight;
-	margin: (@textMarginRatioTop * @headingH4TextMargin) 0px @headingH4TextMargin 0px;
-	font-style: @headingH4TextStyle;
-	text-transform: @headingH4TextTransform;
-	display: block;
-	
-	a {
-		
-		color: @headingH4TextColor;
-		
-		&:hover {
-			
-			color: @linkColor;
-			
-		}
-		
-	}
-	
-	.icon {
-		
-		&.icon-mini {
-			
-			margin-top: 7px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-small {
-			
-			margin-top: 2px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-medium {
-			
-			margin-top: -2px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-large {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-jumbo {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-	}
-	
-	&.tall {
-		
-		margin-bottom: @headingH4TextMargin * @textMarginRatioTall;
-		
-	}
-	
-	&.short {
-		
-		margin-bottom: @headingH4TextMargin * @textMarginRatioShort;
-		
-	}
-	
-	&.emphasize,
-	.emphasize {
-		
-		font-weight: @headingH4TextEmphasisFontWeight;
-		color: @headingH4TextEmphasisColor;
-		
-	}
-    
-    &.inverse {
-		
-		color: @headingH4TextInverseColor;
-	    
-	    &.emphasize,
-		.emphasize {
-			
-			color: @headingH4TextInverseEmphasisColor;
-			
-		}
-		
-    }
-    
-}
-
-h5,
-.h5-clone {
-	
-	font-family: @headingH5TextFontFamily;
-	color: @headingH5TextColor;
-	font-weight: @headingH5TextFontWeight;
-	font-size: @headingH5TextFontSize;
-	line-height: @headingH5TextLineHeight;
-	margin: (@textMarginRatioTop * @headingH5TextMargin) 0px @headingH5TextMargin 0px;
-	font-style: @headingH5TextStyle;
-	text-transform: @headingH5TextTransform;
-	display: block;
-	
-	a {
-		
-		color: @headingH5TextColor;
-		
-		&:hover {
-			
-			color: @linkColor;
-			
-		}
-		
-	}
-	
-	.icon {
-		
-		&.icon-mini {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-small {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-medium {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-large {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-jumbo {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-	}
-	
-	&.tall {
-		
-		margin-bottom: @headingH5TextMargin * @textMarginRatioTall;
-		
-	}
-	
-	&.short {
-		
-		margin-bottom: @headingH5TextMargin * @textMarginRatioShort;
-		
-	}
-	
-	&.emphasize,
-	.emphasize {
-		
-		font-weight: @headingH5TextEmphasisFontWeight;
-		color: @headingH5TextEmphasisColor;
-		
-	}
-    
-    &.inverse {
-		
-		color: @headingH5TextInverseColor;
-	    
-	    &.emphasize,
-		.emphasize {
-			
-			color: @headingH5TextInverseEmphasisColor;
-			
-		}
-		
-    }
-    
-}
-
-h6,
-.h6-clone {
-	
-	font-family: @headingH6TextFontFamily;
-	color: @headingH6TextColor;
-	font-weight: @headingH6TextFontWeight;
-	font-size: @headingH6TextFontSize;
-	line-height: @headingH6TextLineHeight;
-	margin: (@textMarginRatioTop * @headingH6TextMargin) 0px @headingH6TextMargin 0px;
-	font-style: @headingH6TextStyle;
-	text-transform: @headingH6TextTransform;
-	display: block;
-	
-	a {
-		
-		color: @headingH6TextColor;
-		
-		&:hover {
-			
-			color: @linkColor;
-			
-		}
-		
-	}
-	
-	.icon {
-		
-		&.icon-mini {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-small {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-medium {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-large {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-		&.icon-jumbo {
-			
-			margin-top: 0px;
-			margin-right: 10px;
-			
-		}
-		
-	}
-	
-	&.tall {
-		
-		margin-bottom: @headingH6TextMargin * @textMarginRatioTall;
-		
-	}
-	
-	&.short {
-		
-		margin-bottom: @headingH6TextMargin * @textMarginRatioShort;
-		
-	}
-	
-	&.emphasize,
-	.emphasize {
-		
-		font-weight: @headingH6TextEmphasisFontWeight;
-		color: @headingH6TextEmphasisColor;
-		
-	}
-    
-    &.inverse {
-		
-		color: @headingH6TextInverseColor;
-	    
-	    &.emphasize,
-		.emphasize {
-			
-			color: @headingH6TextInverseEmphasisColor;
-			
-		}
-		
-    }
-    
-}
-
-h1,
-.h1-clone,
-h2,
-.h2-clone,
-h3,
-.h3-clone,
-h4,
-.h4-clone,
-h5,
-.h5-clone,
-h6,
-.h6-clone {
-	
 	&:first-child {
 		
 		margin-top: 0px;
@@ -848,6 +724,1316 @@ h6,
 	}
 	
 }
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Heading h1 Text                                                           */
+/*                                                                           */
+/* ========================================================================= */
+
+h1,
+.h1-clone {
+	
+	font-family: @heading-h1-text-font-family;
+	font-size: @heading-h1-text-font-size;
+	font-weight: @heading-h1-text-font-weight;
+	line-height: @heading-h1-text-line-height;
+	text-transform: @heading-h1-text-transform;
+	font-style: @heading-h1-text-style;
+	color: @heading-h1-text-color;
+	margin: @heading-h1-text-margin-top 0px @heading-h1-text-margin-bottom 0px;
+	
+	// Tall
+	
+	&.tall {
+		
+		margin-bottom: @heading-h1-text-margin-bottom * @text-margin-ratio-tall;
+		
+	}
+	
+	// Short
+		
+	&.short {
+		
+		margin-bottom: @heading-h1-text-margin-bottom * @text-margin-ratio-short;
+		
+	}
+	
+	// Links
+	
+	a {
+		
+		color: @heading-h1-text-link-text-color;
+		text-transform: @heading-h1-text-link-text-transform;
+		
+		&:hover {
+			
+			color: @heading-h1-text-link-hover-text-color;
+			text-transform: @heading-h1-text-link-hover-text-transform;
+			
+		}
+		
+		&:active {
+			
+			color: @heading-h1-text-link-active-text-color;
+			text-transform: @heading-h1-text-link-active-text-transform;
+			
+		}
+		
+	}
+	
+	// Emphasis
+	
+	&.emphasis,
+	.emphasis,
+	strong {
+		
+		font-weight: @heading-h1-text-emphasis-font-weight;
+		color: @heading-h1-text-emphasis-color;
+		font-style: @heading-h1-text-emphasis-style;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h1-text-emphasis-link-text-color;
+			text-transform: @heading-h1-text-emphasis-link-text-transform;
+			
+			&:hover {
+				
+				color: @heading-h1-text-emphasis-link-hover-text-color;
+				text-transform: @heading-h1-text-emphasis-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h1-text-emphasis-link-active-text-color;
+				text-transform: @heading-h1-text-emphasis-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	// Muted
+	
+	&.muted {
+		
+		font-weight: @heading-h1-text-muted-font-weight;
+		color: @heading-h1-text-muted-color;
+		font-style: @heading-h1-text-muted-style;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h1-text-muted-link-text-color;
+			text-transform: @heading-h1-text-muted-link-text-transform;
+			
+			&:hover {
+				
+				color: @heading-h1-text-muted-link-hover-text-color;
+				text-transform: @heading-h1-text-muted-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h1-text-muted-link-active-text-color;
+				text-transform: @heading-h1-text-muted-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ------------------------------------------------------------------------- */
+	/* Inverse                                                                   */
+	/* ------------------------------------------------------------------------- */
+	
+    &.inverse {
+		
+		color: @heading-h1-text-inverse-color;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h1-text-inverse-link-text-color;
+			
+			&:hover {
+				
+				color: @heading-h1-text-inverse-link-hover-text-color;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h1-text-inverse-link-active-text-color;
+				
+			}
+			
+		}
+		
+		// Emphasis
+		
+		&.emphasis,
+		.emphasis,
+		strong {
+			
+			color: @heading-h1-text-inverse-emphasis-color;
+			
+			// Links
+			
+			a {
+				
+				color: @heading-h1-text-inverse-emphasis-link-text-color;
+				
+				&:hover {
+					
+					color: @heading-h1-text-inverse-emphasis-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @heading-h1-text-inverse-emphasis-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+		// Muted
+		
+		&.muted {
+			
+			color: @heading-h1-text-inverse-muted-color;
+			
+			// Links
+			
+			a {
+				
+				color: @heading-h1-text-inverse-muted-link-text-color;
+				
+				&:hover {
+					
+					color: @heading-h1-text-inverse-muted-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @heading-h1-text-inverse-muted-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+    }
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Heading h2 Text                                                           */
+/*                                                                           */
+/* ========================================================================= */
+
+h2,
+.h2-clone {
+	
+	font-family: @heading-h2-text-font-family;
+	font-size: @heading-h2-text-font-size;
+	font-weight: @heading-h2-text-font-weight;
+	line-height: @heading-h2-text-line-height;
+	text-transform: @heading-h2-text-transform;
+	font-style: @heading-h2-text-style;
+	color: @heading-h2-text-color;
+	margin: @heading-h2-text-margin-top 0px @heading-h2-text-margin-bottom 0px;
+	
+	// Tall
+	
+	&.tall {
+		
+		margin-bottom: @heading-h2-text-margin-bottom * @text-margin-ratio-tall;
+		
+	}
+	
+	// Short
+		
+	&.short {
+		
+		margin-bottom: @heading-h2-text-margin-bottom * @text-margin-ratio-short;
+		
+	}
+	
+	// Links
+	
+	a {
+		
+		color: @heading-h2-text-link-text-color;
+		text-transform: @heading-h2-text-link-text-transform;
+		
+		&:hover {
+			
+			color: @heading-h2-text-link-hover-text-color;
+			text-transform: @heading-h2-text-link-hover-text-transform;
+			
+		}
+		
+		&:active {
+			
+			color: @heading-h2-text-link-active-text-color;
+			text-transform: @heading-h2-text-link-active-text-transform;
+			
+		}
+		
+	}
+	
+	// Emphasis
+	
+	&.emphasis,
+	.emphasis,
+	strong {
+		
+		font-weight: @heading-h2-text-emphasis-font-weight;
+		color: @heading-h2-text-emphasis-color;
+		font-style: @heading-h2-text-emphasis-style;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h2-text-emphasis-link-text-color;
+			text-transform: @heading-h2-text-emphasis-link-text-transform;
+			
+			&:hover {
+				
+				color: @heading-h2-text-emphasis-link-hover-text-color;
+				text-transform: @heading-h2-text-emphasis-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h2-text-emphasis-link-active-text-color;
+				text-transform: @heading-h2-text-emphasis-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	// Muted
+	
+	&.muted {
+		
+		font-weight: @heading-h2-text-muted-font-weight;
+		color: @heading-h2-text-muted-color;
+		font-style: @heading-h2-text-muted-style;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h2-text-muted-link-text-color;
+			text-transform: @heading-h2-text-muted-link-text-transform;
+			
+			&:hover {
+				
+				color: @heading-h2-text-muted-link-hover-text-color;
+				text-transform: @heading-h2-text-muted-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h2-text-muted-link-active-text-color;
+				text-transform: @heading-h2-text-muted-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ------------------------------------------------------------------------- */
+	/* Inverse                                                                   */
+	/* ------------------------------------------------------------------------- */
+	
+    &.inverse {
+		
+		color: @heading-h2-text-inverse-color;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h2-text-inverse-link-text-color;
+			
+			&:hover {
+				
+				color: @heading-h2-text-inverse-link-hover-text-color;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h2-text-inverse-link-active-text-color;
+				
+			}
+			
+		}
+		
+		// Emphasis
+		
+		&.emphasis,
+		.emphasis,
+		strong {
+			
+			color: @heading-h2-text-inverse-emphasis-color;
+			
+			// Links
+			
+			a {
+				
+				color: @heading-h2-text-inverse-emphasis-link-text-color;
+				
+				&:hover {
+					
+					color: @heading-h2-text-inverse-emphasis-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @heading-h2-text-inverse-emphasis-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+		// Muted
+		
+		&.muted {
+			
+			color: @heading-h2-text-inverse-muted-color;
+			
+			// Links
+			
+			a {
+				
+				color: @heading-h2-text-inverse-muted-link-text-color;
+				
+				&:hover {
+					
+					color: @heading-h2-text-inverse-muted-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @heading-h2-text-inverse-muted-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+    }
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Heading h3 Text                                                           */
+/*                                                                           */
+/* ========================================================================= */
+
+h3,
+.h3-clone {
+	
+	font-family: @heading-h3-text-font-family;
+	font-size: @heading-h3-text-font-size;
+	font-weight: @heading-h3-text-font-weight;
+	line-height: @heading-h3-text-line-height;
+	text-transform: @heading-h3-text-transform;
+	font-style: @heading-h3-text-style;
+	color: @heading-h3-text-color;
+	margin: @heading-h3-text-margin-top 0px @heading-h3-text-margin-bottom 0px;
+	
+	// Tall
+	
+	&.tall {
+		
+		margin-bottom: @heading-h3-text-margin-bottom * @text-margin-ratio-tall;
+		
+	}
+	
+	// Short
+		
+	&.short {
+		
+		margin-bottom: @heading-h3-text-margin-bottom * @text-margin-ratio-short;
+		
+	}
+	
+	// Links
+	
+	a {
+		
+		color: @heading-h3-text-link-text-color;
+		text-transform: @heading-h3-text-link-text-transform;
+		
+		&:hover {
+			
+			color: @heading-h3-text-link-hover-text-color;
+			text-transform: @heading-h3-text-link-hover-text-transform;
+			
+		}
+		
+		&:active {
+			
+			color: @heading-h3-text-link-active-text-color;
+			text-transform: @heading-h3-text-link-active-text-transform;
+			
+		}
+		
+	}
+	
+	// Emphasis
+	
+	&.emphasis,
+	.emphasis,
+	strong {
+		
+		font-weight: @heading-h3-text-emphasis-font-weight;
+		color: @heading-h3-text-emphasis-color;
+		font-style: @heading-h3-text-emphasis-style;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h3-text-emphasis-link-text-color;
+			text-transform: @heading-h3-text-emphasis-link-text-transform;
+			
+			&:hover {
+				
+				color: @heading-h3-text-emphasis-link-hover-text-color;
+				text-transform: @heading-h3-text-emphasis-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h3-text-emphasis-link-active-text-color;
+				text-transform: @heading-h3-text-emphasis-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	// Muted
+	
+	&.muted {
+		
+		font-weight: @heading-h3-text-muted-font-weight;
+		color: @heading-h3-text-muted-color;
+		font-style: @heading-h3-text-muted-style;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h3-text-muted-link-text-color;
+			text-transform: @heading-h3-text-muted-link-text-transform;
+			
+			&:hover {
+				
+				color: @heading-h3-text-muted-link-hover-text-color;
+				text-transform: @heading-h3-text-muted-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h3-text-muted-link-active-text-color;
+				text-transform: @heading-h3-text-muted-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ------------------------------------------------------------------------- */
+	/* Inverse                                                                   */
+	/* ------------------------------------------------------------------------- */
+	
+    &.inverse {
+		
+		color: @heading-h3-text-inverse-color;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h3-text-inverse-link-text-color;
+			
+			&:hover {
+				
+				color: @heading-h3-text-inverse-link-hover-text-color;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h3-text-inverse-link-active-text-color;
+				
+			}
+			
+		}
+		
+		// Emphasis
+		
+		&.emphasis,
+		.emphasis,
+		strong {
+			
+			color: @heading-h3-text-inverse-emphasis-color;
+			
+			// Links
+			
+			a {
+				
+				color: @heading-h3-text-inverse-emphasis-link-text-color;
+				
+				&:hover {
+					
+					color: @heading-h3-text-inverse-emphasis-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @heading-h3-text-inverse-emphasis-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+		// Muted
+		
+		&.muted {
+			
+			color: @heading-h3-text-inverse-muted-color;
+			
+			// Links
+			
+			a {
+				
+				color: @heading-h3-text-inverse-muted-link-text-color;
+				
+				&:hover {
+					
+					color: @heading-h3-text-inverse-muted-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @heading-h3-text-inverse-muted-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+    }
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Heading h4 Text                                                           */
+/*                                                                           */
+/* ========================================================================= */
+
+h4,
+.h4-clone {
+	
+	font-family: @heading-h4-text-font-family;
+	font-size: @heading-h4-text-font-size;
+	font-weight: @heading-h4-text-font-weight;
+	line-height: @heading-h4-text-line-height;
+	text-transform: @heading-h4-text-transform;
+	font-style: @heading-h4-text-style;
+	color: @heading-h4-text-color;
+	margin: @heading-h4-text-margin-top 0px @heading-h4-text-margin-bottom 0px;
+	
+	// Tall
+	
+	&.tall {
+		
+		margin-bottom: @heading-h4-text-margin-bottom * @text-margin-ratio-tall;
+		
+	}
+	
+	// Short
+		
+	&.short {
+		
+		margin-bottom: @heading-h4-text-margin-bottom * @text-margin-ratio-short;
+		
+	}
+	
+	// Links
+	
+	a {
+		
+		color: @heading-h4-text-link-text-color;
+		text-transform: @heading-h4-text-link-text-transform;
+		
+		&:hover {
+			
+			color: @heading-h4-text-link-hover-text-color;
+			text-transform: @heading-h4-text-link-hover-text-transform;
+			
+		}
+		
+		&:active {
+			
+			color: @heading-h4-text-link-active-text-color;
+			text-transform: @heading-h4-text-link-active-text-transform;
+			
+		}
+		
+	}
+	
+	// Emphasis
+	
+	&.emphasis,
+	.emphasis,
+	strong {
+		
+		font-weight: @heading-h4-text-emphasis-font-weight;
+		color: @heading-h4-text-emphasis-color;
+		font-style: @heading-h4-text-emphasis-style;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h4-text-emphasis-link-text-color;
+			text-transform: @heading-h4-text-emphasis-link-text-transform;
+			
+			&:hover {
+				
+				color: @heading-h4-text-emphasis-link-hover-text-color;
+				text-transform: @heading-h4-text-emphasis-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h4-text-emphasis-link-active-text-color;
+				text-transform: @heading-h4-text-emphasis-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	// Muted
+	
+	&.muted {
+		
+		font-weight: @heading-h4-text-muted-font-weight;
+		color: @heading-h4-text-muted-color;
+		font-style: @heading-h4-text-muted-style;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h4-text-muted-link-text-color;
+			text-transform: @heading-h4-text-muted-link-text-transform;
+			
+			&:hover {
+				
+				color: @heading-h4-text-muted-link-hover-text-color;
+				text-transform: @heading-h4-text-muted-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h4-text-muted-link-active-text-color;
+				text-transform: @heading-h4-text-muted-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ------------------------------------------------------------------------- */
+	/* Inverse                                                                   */
+	/* ------------------------------------------------------------------------- */
+	
+    &.inverse {
+		
+		color: @heading-h4-text-inverse-color;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h4-text-inverse-link-text-color;
+			
+			&:hover {
+				
+				color: @heading-h4-text-inverse-link-hover-text-color;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h4-text-inverse-link-active-text-color;
+				
+			}
+			
+		}
+		
+		// Emphasis
+		
+		&.emphasis,
+		.emphasis,
+		strong {
+			
+			color: @heading-h4-text-inverse-emphasis-color;
+			
+			// Links
+			
+			a {
+				
+				color: @heading-h4-text-inverse-emphasis-link-text-color;
+				
+				&:hover {
+					
+					color: @heading-h4-text-inverse-emphasis-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @heading-h4-text-inverse-emphasis-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+		// Muted
+		
+		&.muted {
+			
+			color: @heading-h4-text-inverse-muted-color;
+			
+			// Links
+			
+			a {
+				
+				color: @heading-h4-text-inverse-muted-link-text-color;
+				
+				&:hover {
+					
+					color: @heading-h4-text-inverse-muted-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @heading-h4-text-inverse-muted-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+    }
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Heading h5 Text                                                           */
+/*                                                                           */
+/* ========================================================================= */
+
+h5,
+.h5-clone {
+	
+	font-family: @heading-h5-text-font-family;
+	font-size: @heading-h5-text-font-size;
+	font-weight: @heading-h5-text-font-weight;
+	line-height: @heading-h5-text-line-height;
+	text-transform: @heading-h5-text-transform;
+	font-style: @heading-h5-text-style;
+	color: @heading-h5-text-color;
+	margin: @heading-h5-text-margin-top 0px @heading-h5-text-margin-bottom 0px;
+	
+	// Tall
+	
+	&.tall {
+		
+		margin-bottom: @heading-h5-text-margin-bottom * @text-margin-ratio-tall;
+		
+	}
+	
+	// Short
+		
+	&.short {
+		
+		margin-bottom: @heading-h5-text-margin-bottom * @text-margin-ratio-short;
+		
+	}
+	
+	// Links
+	
+	a {
+		
+		color: @heading-h5-text-link-text-color;
+		text-transform: @heading-h5-text-link-text-transform;
+		
+		&:hover {
+			
+			color: @heading-h5-text-link-hover-text-color;
+			text-transform: @heading-h5-text-link-hover-text-transform;
+			
+		}
+		
+		&:active {
+			
+			color: @heading-h5-text-link-active-text-color;
+			text-transform: @heading-h5-text-link-active-text-transform;
+			
+		}
+		
+	}
+	
+	// Emphasis
+	
+	&.emphasis,
+	.emphasis,
+	strong {
+		
+		font-weight: @heading-h5-text-emphasis-font-weight;
+		color: @heading-h5-text-emphasis-color;
+		font-style: @heading-h5-text-emphasis-style;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h5-text-emphasis-link-text-color;
+			text-transform: @heading-h5-text-emphasis-link-text-transform;
+			
+			&:hover {
+				
+				color: @heading-h5-text-emphasis-link-hover-text-color;
+				text-transform: @heading-h5-text-emphasis-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h5-text-emphasis-link-active-text-color;
+				text-transform: @heading-h5-text-emphasis-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	// Muted
+	
+	&.muted {
+		
+		font-weight: @heading-h5-text-muted-font-weight;
+		color: @heading-h5-text-muted-color;
+		font-style: @heading-h5-text-muted-style;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h5-text-muted-link-text-color;
+			text-transform: @heading-h5-text-muted-link-text-transform;
+			
+			&:hover {
+				
+				color: @heading-h5-text-muted-link-hover-text-color;
+				text-transform: @heading-h5-text-muted-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h5-text-muted-link-active-text-color;
+				text-transform: @heading-h5-text-muted-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ------------------------------------------------------------------------- */
+	/* Inverse                                                                   */
+	/* ------------------------------------------------------------------------- */
+	
+    &.inverse {
+		
+		color: @heading-h5-text-inverse-color;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h5-text-inverse-link-text-color;
+			
+			&:hover {
+				
+				color: @heading-h5-text-inverse-link-hover-text-color;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h5-text-inverse-link-active-text-color;
+				
+			}
+			
+		}
+		
+		// Emphasis
+		
+		&.emphasis,
+		.emphasis,
+		strong {
+			
+			color: @heading-h5-text-inverse-emphasis-color;
+			
+			// Links
+			
+			a {
+				
+				color: @heading-h5-text-inverse-emphasis-link-text-color;
+				
+				&:hover {
+					
+					color: @heading-h5-text-inverse-emphasis-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @heading-h5-text-inverse-emphasis-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+		// Muted
+		
+		&.muted {
+			
+			color: @heading-h5-text-inverse-muted-color;
+			
+			// Links
+			
+			a {
+				
+				color: @heading-h5-text-inverse-muted-link-text-color;
+				
+				&:hover {
+					
+					color: @heading-h5-text-inverse-muted-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @heading-h5-text-inverse-muted-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+    }
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Heading h6 Text                                                           */
+/*                                                                           */
+/* ========================================================================= */
+
+h6,
+.h6-clone {
+	
+	font-family: @heading-h6-text-font-family;
+	font-size: @heading-h6-text-font-size;
+	font-weight: @heading-h6-text-font-weight;
+	line-height: @heading-h6-text-line-height;
+	text-transform: @heading-h6-text-transform;
+	font-style: @heading-h6-text-style;
+	color: @heading-h6-text-color;
+	margin: @heading-h6-text-margin-top 0px @heading-h6-text-margin-bottom 0px;
+	
+	// Tall
+	
+	&.tall {
+		
+		margin-bottom: @heading-h6-text-margin-bottom * @text-margin-ratio-tall;
+		
+	}
+	
+	// Short
+		
+	&.short {
+		
+		margin-bottom: @heading-h6-text-margin-bottom * @text-margin-ratio-short;
+		
+	}
+	
+	// Links
+	
+	a {
+		
+		color: @heading-h6-text-link-text-color;
+		text-transform: @heading-h6-text-link-text-transform;
+		
+		&:hover {
+			
+			color: @heading-h6-text-link-hover-text-color;
+			text-transform: @heading-h6-text-link-hover-text-transform;
+			
+		}
+		
+		&:active {
+			
+			color: @heading-h6-text-link-active-text-color;
+			text-transform: @heading-h6-text-link-active-text-transform;
+			
+		}
+		
+	}
+	
+	// Emphasis
+	
+	&.emphasis,
+	.emphasis,
+	strong {
+		
+		font-weight: @heading-h6-text-emphasis-font-weight;
+		color: @heading-h6-text-emphasis-color;
+		font-style: @heading-h6-text-emphasis-style;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h6-text-emphasis-link-text-color;
+			text-transform: @heading-h6-text-emphasis-link-text-transform;
+			
+			&:hover {
+				
+				color: @heading-h6-text-emphasis-link-hover-text-color;
+				text-transform: @heading-h6-text-emphasis-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h6-text-emphasis-link-active-text-color;
+				text-transform: @heading-h6-text-emphasis-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	// Muted
+	
+	&.muted {
+		
+		font-weight: @heading-h6-text-muted-font-weight;
+		color: @heading-h6-text-muted-color;
+		font-style: @heading-h6-text-muted-style;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h6-text-muted-link-text-color;
+			text-transform: @heading-h6-text-muted-link-text-transform;
+			
+			&:hover {
+				
+				color: @heading-h6-text-muted-link-hover-text-color;
+				text-transform: @heading-h6-text-muted-link-hover-text-transform;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h6-text-muted-link-active-text-color;
+				text-transform: @heading-h6-text-muted-link-active-text-transform;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ------------------------------------------------------------------------- */
+	/* Inverse                                                                   */
+	/* ------------------------------------------------------------------------- */
+	
+    &.inverse {
+		
+		color: @heading-h6-text-inverse-color;
+		
+		// Links
+		
+		a {
+			
+			color: @heading-h6-text-inverse-link-text-color;
+			
+			&:hover {
+				
+				color: @heading-h6-text-inverse-link-hover-text-color;
+				
+			}
+			
+			&:active {
+				
+				color: @heading-h6-text-inverse-link-active-text-color;
+				
+			}
+			
+		}
+		
+		// Emphasis
+		
+		&.emphasis,
+		.emphasis,
+		strong {
+			
+			color: @heading-h6-text-inverse-emphasis-color;
+			
+			// Links
+			
+			a {
+				
+				color: @heading-h6-text-inverse-emphasis-link-text-color;
+				
+				&:hover {
+					
+					color: @heading-h6-text-inverse-emphasis-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @heading-h6-text-inverse-emphasis-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+		// Muted
+		
+		&.muted {
+			
+			color: @heading-h6-text-inverse-muted-color;
+			
+			// Links
+			
+			a {
+				
+				color: @heading-h6-text-inverse-muted-link-text-color;
+				
+				&:hover {
+					
+					color: @heading-h6-text-inverse-muted-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @heading-h6-text-inverse-muted-link-active-text-color;
+					
+				}
+				
+			}
+			
+		}
+		
+    }
+	
+}
+
+
+
+
+
+
+
+
 
 
 /* ========================================================================= */
@@ -860,19 +2046,19 @@ h6,
 
 ul, ol {
 	
-	margin: 0px 0px @bodyTextMargin 0px;
+	margin: 0px 0px @body-text-margin-bottom 0px;
 	padding: 0px;
 	list-style-position:inside;
 	
 	&.tall {
 		
-		margin-bottom: @bodyTextMargin * @textMarginRatioTall;
+		margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall;
 		
 	}
 		
 	&.short {
 		
-		margin-bottom: @bodyTextMargin * @textMarginRatioShort;
+		margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short;
 		
 	}
 	
@@ -893,18 +2079,18 @@ ul ol,
 ol ol,
 ol ul {
 	
-	margin-top: (@bodyTextMargin / 2);
+	margin-top: (@body-text-margin-bottom / 2);
 	margin-bottom: 0;
-	margin-left: @bodyTextMargin;
+	margin-left: @body-text-margin-bottom;
 	
 }
 
 li {
 	
-	font-weight: @bodyTextFontWeight;
-	font-size: @bodyTextFontSize;
-	line-height: @bodyTextLineHeight;
-	margin-bottom: @bodyTextMargin / 2;
+	font-weight: @body-text-font-weight;
+	font-size: @body-text-font-size;
+	line-height: @body-text-line-height;
+	margin-bottom: @body-text-margin-bottom / 2;
 	
 	&:last-child {
 		
@@ -968,30 +2154,30 @@ ol.unstyled {
 
 dl {
 	
-	margin-bottom: @bodyTextMargin;
+	margin-bottom: @body-text-margin-bottom;
 	
 }
 
 dt,
 dd {
 	
-	line-height: @bodyTextLineHeight;
+	line-height: @body-text-line-height;
 	
 }
 
 dt {
 	
 	font-weight: bold;
-	line-height: @bodyTextLineHeight - 1; // fix jank Helvetica Neue font bug
-	margin-bottom: @bodyTextMargin;
-	color: @bodyTextColor;
+	line-height: @body-text-line-height - 1; // fix jank Helvetica Neue font bug
+	margin-bottom: @body-text-margin-bottom;
+	color: @body-text-color;
 	
 }
 
 dd {
 	
 	margin-left: 0px;
-	margin-bottom: @bodyTextMargin;
+	margin-bottom: @body-text-margin-bottom;
 	
 }
 
@@ -1029,26 +2215,26 @@ dd {
 
 hr {
 	
-	margin: @primaryMargin 0px @primaryMargin 0px;
+	margin: @primary-margin 0px @primary-margin 0px;
 	border: 0px;
-	border-top: 1px solid @borderColor;
+	border-top: 1px solid @border-color;
 	border-bottom: none;
 	
 	&.inverse {
 		
-		border-top: 1px solid @borderInverseColor;
+		border-top: 1px solid @border-inverse-color;
 		
 	}
 		
 	&.short {
 		
-		margin: @primaryMarginShort 0 @primaryMarginShort 0;
+		margin: @primary-margin-short 0 @primary-margin-short 0;
 		
 	}
 	
 	&.tall {
 		
-		margin: @primaryMarginTall 0 @primaryMarginTall 0;
+		margin: @primary-margin-tall 0 @primary-margin-tall 0;
 		
 	}
 	
@@ -1062,20 +2248,20 @@ hr {
 		
 		margin: 0 auto;
 		width: 120px;
-		margin-top: @primaryMargin;
-		margin-bottom: @primaryMargin;
+		margin-top: @primary-margin;
+		margin-bottom: @primary-margin;
 		
 		&.short {
 			
-			margin-top: @primaryMarginShort;
-			margin-bottom: @primaryMarginShort;
+			margin-top: @primary-margin-short;
+			margin-bottom: @primary-margin-short;
 			
 		}
 		
 		&.tall {
 			
-			margin-top: @primaryMarginTall;
-			margin-bottom: @primaryMarginTall;
+			margin-top: @primary-margin-tall;
+			margin-bottom: @primary-margin-tall;
 			
 		}
 		
@@ -1116,7 +2302,7 @@ em {
 
 .muted {
 	
-	color: @socialist_gray;
+	color: @gray;
 	
 }
 
@@ -1125,7 +2311,7 @@ em {
 abbr[title] {
 	
 	cursor: help;
-	border-bottom: 1px dotted @socialist_gray;
+	border-bottom: 1px dotted @gray;
 	
 }
 
@@ -1140,22 +2326,22 @@ abbr.initialism {
 
 blockquote {
 	
-	padding: 0px 0px 0px (@bodyTextMargin / 2);
-	margin: 0px 0px @bodyTextMargin 0px;
-	border-left: 5px solid @socialist_gray;
+	padding: 0px 0px 0px (@body-text-margin-bottom / 2);
+	margin: 0px 0px @body-text-margin-bottom 0px;
+	border-left: 5px solid @gray;
 	
 	p {
 		
 		margin-bottom: 0px;
-		#font > .shorthand(@leadTextFontSize, @leadTextFontWeight, @leadTextLineHeight);
+		#font > .shorthand(@lead-text-font-size, @lead-text-font-weight, @lead-text-line-height);
 		
 	}
 	
 	small {
 		
 		display: block;
-		line-height: @bodyTextLineHeight;
-		color: @socialist_gray;
+		line-height: @body-text-line-height;
+		color: @gray;
 		
 		&:before {
 			
@@ -1172,7 +2358,7 @@ blockquote {
 		float: right;
 		padding-right: 15px;
 		padding-left: 0px;
-		border-right: 5px solid @socialist_gray;
+		border-right: 5px solid @gray;
 		border-left: 0px;
 		
 		p,
@@ -1202,9 +2388,9 @@ blockquote:after {
 address {
 	
 	display: block;
-	margin-bottom: @bodyTextMargin;
+	margin-bottom: @body-text-margin-bottom;
 	font-style: normal;
-	line-height: @bodyTextLineHeight;
+	line-height: @body-text-line-height;
 	
 }
 
@@ -1226,459 +2412,320 @@ cite {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and above.     */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @widescreen) {
+@media (min-width: @viewport-widescreen) {
 	
-	/* ===================================================================== */
-	/*                                                                       */
-	/* Body Text                                                             */
-	/*                                                                       */
-	/* ===================================================================== */
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Body Text                                                                 */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	p {
 		
-		font-size: @bodyTextFontSize * @bodyTextRatioWide;
-		line-height: @bodyTextLineHeight * @bodyTextRatioWide;
-		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioWide) 0px;
+		font-size: @body-text-font-size * @body-text-responsive-ratio-widescreen;
+		line-height: @body-text-line-height * @body-text-responsive-ratio-widescreen;
+		margin: (@body-text-margin-top * @body-text-responsive-ratio-widescreen) 0px (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) 0px;
+		
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @bodyTextMargin * @textMarginRatioTall * @bodyTextRatioWide;
+			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
 			
 		}
+		
+		// Short
 			
 		&.short {
 			
-			margin-bottom: @bodyTextMargin * @textMarginRatioShort * @bodyTextRatioWide;
-			
-		}
-
-		&.underline {
-
-			background: url(/resources/images/core/text-seperator-p-widescreen.png);
-
-		}
-		
-		&.lead {
-			
-			font-size: @leadTextFontSize * @leadTextRatioWide;
-			line-height: @leadTextLineHeight * @leadTextRatioWide;
-			margin: 0px 0px (@leadTextMargin * @leadTextRatioWide) 0px;
-			
-			&.tall {
-				
-				margin-bottom: @leadTextMargin * @textMarginRatioTall * @leadTextRatioWide;
-				
-			}
-			
-			&.short {
-				
-				margin-bottom: @leadTextMargin * @textMarginRatioShort * @leadTextRatioWide;
-				
-			}
+			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-widescreen * @text-margin-ratio-short;
 			
 		}
 		
-		&.small {
-			
-			font-size: @smallTextFontSize * @smallTextRatioWide;
-			line-height: @smallTextLineHeight * @smallTextRatioWide;
-			margin: 0px 0px (@smallTextMargin * @smallTextRatioWide) 0px;
-			
-			&.tall {
-				
-				margin-bottom: @smallTextMargin * @textMarginRatioTall * @smallTextRatioWide;
-				
-			}
-			
-			&.short {
-				
-				margin-bottom: @smallTextMargin * @textMarginRatioShort * @smallTextRatioWide;
-				
-			}
-			
-		}
-
-		&.inverse {
-
-			&.underline {
-
-				background: url(/resources/images/core/text-seperator-p-inverted-widescreen.png);
-
-			}
-
-		}
-	
 	}
 	
-	/* ===================================================================== */
-	/*                                                                       */
-	/* Headings                                                              */
-	/*                                                                       */
-	/* ===================================================================== */
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Lead Text                                                                 */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	p.lead,
+	p lead,
+	p .lead {
+		
+		font-size: @lead-text-font-size * @lead-text-responsive-ratio-widescreen;
+		line-height: @lead-text-line-height * @lead-text-responsive-ratio-widescreen;
+		margin: (@lead-text-margin-top * @lead-text-responsive-ratio-widescreen) 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Small Text                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	p.small,
+	p small,
+	p .small {
+		
+		font-size: @small-text-font-size * @small-text-responsive-ratio-widescreen;
+		line-height: @small-text-line-height * @small-text-responsive-ratio-widescreen;
+		margin: (@small-text-margin-top * @small-text-responsive-ratio-widescreen) 0px (@small-text-margin-bottom * @small-text-responsive-ratio-widescreen) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @small-text-margin-bottom * @small-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @small-text-margin-bottom * @small-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h1 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h1,
 	.h1-clone {
 		
-		font-size: @headingH1TextFontSize * @headingH1TextRatioWide;
-		line-height: @headingH1TextLineHeight * @headingH1TextRatioWide;
-		margin: (@textMarginRatioTop * @headingH1TextMargin * @headingH1TextRatioWide) 0px (@headingH1TextMargin * @headingH1TextRatioWide) 0px;
+		font-size: @heading-h1-text-font-size * @heading-h1-text-responsive-ratio-widescreen;
+		line-height: @heading-h1-text-line-height * @heading-h1-text-responsive-ratio-widescreen;
+		margin: (@heading-h1-text-margin-top * @heading-h1-text-responsive-ratio-widescreen) 0px (@heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-widescreen) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH1TextMargin * @textMarginRatioTall * @headingH1TextRatioWide;
+			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH1TextMargin * @textMarginRatioShort * @headingH1TextRatioWide;
+			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-widescreen * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h2 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h2,
 	.h2-clone {
 		
-		font-size: @headingH2TextFontSize * @headingH2TextRatioWide;
-		line-height: @headingH2TextLineHeight * @headingH2TextRatioWide;
-		margin: (@textMarginRatioTop * @headingH2TextMargin * @headingH2TextRatioWide) 0px (@headingH2TextMargin * @headingH2TextRatioWide) 0px;
+		font-size: @heading-h2-text-font-size * @heading-h2-text-responsive-ratio-widescreen;
+		line-height: @heading-h2-text-line-height * @heading-h2-text-responsive-ratio-widescreen;
+		margin: (@heading-h2-text-margin-top * @heading-h2-text-responsive-ratio-widescreen) 0px (@heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-widescreen) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH2TextMargin * @textMarginRatioTall * @headingH2TextRatioWide;
+			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH2TextMargin * @textMarginRatioShort * @headingH2TextRatioWide;
+			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-widescreen * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h3 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h3,
 	.h3-clone {
 		
-		font-size: @headingH3TextFontSize * @headingH3TextRatioWide;
-		line-height: @headingH3TextLineHeight * @headingH3TextRatioWide;
-		margin: (@textMarginRatioTop * @headingH3TextMargin * @headingH3TextRatioWide) 0px (@headingH3TextMargin * @headingH3TextRatioWide) 0px;
+		font-size: @heading-h3-text-font-size * @heading-h3-text-responsive-ratio-widescreen;
+		line-height: @heading-h3-text-line-height * @heading-h3-text-responsive-ratio-widescreen;
+		margin: (@heading-h3-text-margin-top * @heading-h3-text-responsive-ratio-widescreen) 0px (@heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-widescreen) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH3TextMargin * @textMarginRatioTall * @headingH3TextRatioWide;
+			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH3TextMargin * @textMarginRatioShort * @headingH3TextRatioWide;
+			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-widescreen * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h4 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h4,
 	.h4-clone {
 		
-		font-size: @headingH4TextFontSize * @headingH4TextRatioWide;
-		line-height: @headingH4TextLineHeight * @headingH4TextRatioWide;
-		margin: (@textMarginRatioTop * @headingH4TextMargin * @headingH4TextRatioWide) 0px (@headingH4TextMargin * @headingH4TextRatioWide) 0px;
+		font-size: @heading-h4-text-font-size * @heading-h4-text-responsive-ratio-widescreen;
+		line-height: @heading-h4-text-line-height * @heading-h4-text-responsive-ratio-widescreen;
+		margin: (@heading-h4-text-margin-top * @heading-h4-text-responsive-ratio-widescreen) 0px (@heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-widescreen) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 7px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: 2px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: -2px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH4TextMargin * @textMarginRatioTall * @headingH4TextRatioWide;
+			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH4TextMargin * @textMarginRatioShort * @headingH4TextRatioWide;
+			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-widescreen * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h5 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h5,
 	.h5-clone {
 		
-		font-size: @headingH5TextFontSize * @headingH5TextRatioWide;
-		line-height: @headingH5TextLineHeight * @headingH5TextRatioWide;
-		margin: (@textMarginRatioTop * @headingH5TextMargin * @headingH5TextRatioWide) 0px (@headingH5TextMargin * @headingH5TextRatioWide) 0px;
+		font-size: @heading-h5-text-font-size * @heading-h5-text-responsive-ratio-widescreen;
+		line-height: @heading-h5-text-line-height * @heading-h5-text-responsive-ratio-widescreen;
+		margin: (@heading-h5-text-margin-top * @heading-h5-text-responsive-ratio-widescreen) 0px (@heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-widescreen) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH5TextMargin * @textMarginRatioTall * @headingH5TextRatioWide;
+			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH5TextMargin * @textMarginRatioShort * @headingH5TextRatioWide;
+			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-widescreen * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h6 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h6,
 	.h6-clone {
 		
-		font-size: @headingH6TextFontSize * @headingH6TextRatioWide;
-		line-height: @headingH6TextLineHeight * @headingH6TextRatioWide;
-		margin: (@textMarginRatioTop * @headingH6TextMargin * @headingH6TextRatioWide) 0px (@headingH6TextMargin * @headingH6TextRatioWide) 0px;
+		font-size: @heading-h6-text-font-size * @heading-h6-text-responsive-ratio-widescreen;
+		line-height: @heading-h6-text-line-height * @heading-h6-text-responsive-ratio-widescreen;
+		margin: (@heading-h6-text-margin-top * @heading-h6-text-responsive-ratio-widescreen) 0px (@heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-widescreen) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH6TextMargin * @textMarginRatioTall * @headingH6TextRatioWide;
+			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH6TextMargin * @textMarginRatioShort * @headingH6TextRatioWide;
+			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-widescreen * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	/* ===================================================================== */
@@ -1691,17 +2738,17 @@ cite {
 	
 	ul, ol {
 		
-		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioWide) 0px;
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) 0px;
 		
 		&.tall {
 			
-			margin-bottom: @bodyTextMargin * @textMarginRatioTall * @bodyTextRatioWide;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-responsive-ratio-widescreen;
 			
 		}
 			
 		&.short {
 			
-			margin-bottom: @bodyTextMargin * @textMarginRatioShort * @bodyTextRatioWide;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-responsive-ratio-widescreen;
 			
 		}
 		
@@ -1712,16 +2759,16 @@ cite {
 	ol ol,
 	ol ul {
 		
-		margin-left: (@bodyTextMargin * @bodyTextRatioWide);
-		margin-top: (@bodyTextMargin / 2) * @bodyTextRatioWide;
+		margin-left: (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen);
+		margin-top: (@body-text-margin-bottom / 2) * @body-text-responsive-ratio-widescreen;
 		
 	}
 	
 	li {
 		
-		font-size: @bodyTextFontSize * @bodyTextRatioWide;
-		line-height: @bodyTextLineHeight * @bodyTextRatioWide;
-		margin-bottom: (@bodyTextMargin / 2) * @bodyTextRatioWide;
+		font-size: @body-text-font-size * @body-text-responsive-ratio-widescreen;
+		line-height: @body-text-line-height * @body-text-responsive-ratio-widescreen;
+		margin-bottom: (@body-text-margin-bottom / 2) * @body-text-responsive-ratio-widescreen;
 		
 		&:last-child {
 			
@@ -1735,29 +2782,29 @@ cite {
 	
 	dl {
 		
-		margin-bottom: @bodyTextMargin * @bodyTextRatioWide;
+		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-widescreen;
 		
 	}
 	
 	dt,
 	dd {
 		
-		font-size: @bodyTextFontSize * @bodyTextRatioWide;
-		line-height: @bodyTextLineHeight * @bodyTextRatioWide;
+		font-size: @body-text-font-size * @body-text-responsive-ratio-widescreen;
+		line-height: @body-text-line-height * @body-text-responsive-ratio-widescreen;
 		
 	}
 	
 	dt {
 		
-		font-size: @bodyTextFontSize * @bodyTextRatioWide;
-		line-height: (@bodyTextLineHeight * @bodyTextRatioWide) - 1; // fix jank Helvetica Neue font bug
-		margin-bottom: @bodyTextMargin * @bodyTextRatioWide;
+		font-size: @body-text-font-size * @body-text-responsive-ratio-widescreen;
+		line-height: (@body-text-line-height * @body-text-responsive-ratio-widescreen) - 1; // fix jank Helvetica Neue font bug
+		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-widescreen;
 		
 	}
 	
 	dd {
 		
-		margin-bottom: @bodyTextMargin * @bodyTextRatioWide;
+		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-widescreen;
 		
 	}
 	
@@ -1773,37 +2820,37 @@ cite {
 	
 	hr {
 		
-		margin: @primaryMarginWidescreen 0px @primaryMarginWidescreen 0px;
+		margin: @primary-margin-widescreen 0px @primary-margin-widescreen 0px;
 			
 		&.short {
 			
-			margin: @primaryMarginShortWidescreen 0px @primaryMarginShortWidescreen 0px;
+			margin: @primary-margin-short-widescreen 0px @primary-margin-short-widescreen 0px;
 			
 		}
 		
 		&.tall {
 			
-			margin: @primaryMarginTallWidescreen 0px @primaryMarginTallWidescreen 0px;
+			margin: @primary-margin-tall-widescreen 0px @primary-margin-tall-widescreen 0px;
 			
 		}
 	
 		&.narrow {
 			
 			margin: 0 auto;
-			margin-top: @primaryMarginWidescreen;
-			margin-bottom: @primaryMarginWidescreen;
+			margin-top: @primary-margin-widescreen;
+			margin-bottom: @primary-margin-widescreen;
 			
 			&.short {
 				
-				margin-top: @primaryMarginShortWidescreen;
-				margin-bottom: @primaryMarginShortWidescreen;
+				margin-top: @primary-margin-short-widescreen;
+				margin-bottom: @primary-margin-short-widescreen;
 				
 			}
 			
 			&.tall {
 				
-				margin-top: @primaryMarginTallWidescreen;
-				margin-bottom: @primaryMarginTallWidescreen;
+				margin-top: @primary-margin-tall-widescreen;
+				margin-bottom: @primary-margin-tall-widescreen;
 				
 			}
 			
@@ -1815,18 +2862,18 @@ cite {
 	
 	blockquote {
 		
-		padding: 0px 0px 0px ((@bodyTextMargin * @bodyTextRatioWide) / 2);
-		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioWide) 0px;
+		padding: 0px 0px 0px ((@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) / 2);
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) 0px;
 		
 		p {
 			
-			#font > .shorthand(@leadTextFontSize * @bodyTextRatioWide, @leadTextFontWeight * @bodyTextRatioWide, @leadTextLineHeight * @bodyTextRatioWide);
+			#font > .shorthand(@lead-text-font-size * @body-text-responsive-ratio-widescreen, @lead-text-font-weight * @body-text-responsive-ratio-widescreen, @lead-text-line-height * @body-text-responsive-ratio-widescreen);
 			
 		}
 		
 		small {
 			
-			line-height: @bodyTextLineHeight * @smallTextRatioWide;
+			line-height: @body-text-line-height * @small-text-responsive-ratio-widescreen;
 			
 		}
 		
@@ -1836,8 +2883,8 @@ cite {
 	
 	address {
 		
-		margin-bottom: @bodyTextMargin * @bodyTextRatioWide;
-		line-height: @bodyTextLineHeight * @bodyTextRatioWide;
+		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-widescreen;
+		line-height: @body-text-line-height * @body-text-responsive-ratio-widescreen;
 		
 	}
 	
@@ -1847,460 +2894,309 @@ cite {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for portrait tablet (@tablet) to default    */
-/* desktop (@default).                                                       */
+/* Responsive changes to styling for portrait tablet (@viewport-tablet) to default    */
+/* desktop (@viewport-standard).                                                       */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @tablet) and (max-width: @tabletMax) {
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
 	
-	/* ===================================================================== */
-	/*                                                                       */
-	/* Body Text                                                             */
-	/*                                                                       */
-	/* ===================================================================== */
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Body Text                                                                 */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	p {
 		
-		font-size: @bodyTextFontSize * @bodyTextRatioTablet;
-		line-height: @bodyTextLineHeight * @bodyTextRatioTablet;
-		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioTablet) 0px;
+		font-size: @body-text-font-size * @body-text-responsive-ratio-tablet;
+		line-height: @body-text-line-height * @body-text-responsive-ratio-tablet;
+		margin: (@body-text-margin-top * @body-text-responsive-ratio-tablet) 0px (@body-text-margin-bottom * @body-text-responsive-ratio-tablet) 0px;
+		
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @bodyTextMargin * @textMarginRatioTall * @bodyTextRatioTablet;
+			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet * @text-margin-ratio-tall;
 			
 		}
+		
+		// Short
 			
 		&.short {
 			
-			margin-bottom: @bodyTextMargin * @textMarginRatioShort * @bodyTextRatioTablet;
-			
-		}
-
-		&.underline {
-
-			background: url(/resources/images/core/text-seperator-p-tablet.png);
-
-		}
-		
-		&.lead {
-			
-			font-size: @leadTextFontSize * @leadTextRatioTablet;
-			line-height: @leadTextLineHeight * @leadTextRatioTablet;
-			margin: 0px 0px (@leadTextMargin * @leadTextRatioTablet) 0px;
-			
-			&.tall {
-				
-				margin-bottom: @leadTextMargin * @textMarginRatioTall * @leadTextRatioTablet;
-				
-			}
-			
-			&.short {
-				
-				margin-bottom: @leadTextMargin * @textMarginRatioShort * @leadTextRatioTablet;
-				
-			}
+			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet * @text-margin-ratio-short;
 			
 		}
 		
-		&.small {
-			
-			font-size: @smallTextFontSize * @smallTextRatioTablet;
-			line-height: @smallTextLineHeight * @smallTextRatioTablet;
-			margin: 0px 0px (@smallTextMargin * @smallTextRatioTablet) 0px;
-			
-			&.tall {
-				
-				margin-bottom: @smallTextMargin * @textMarginRatioTall * @smallTextRatioTablet;
-				
-			}
-			
-			&.short {
-				
-				margin-bottom: @smallTextMargin * @textMarginRatioShort * @smallTextRatioTablet;
-				
-			}
-			
-		}
-
-		&.inverse {
-
-			&.underline {
-
-				background: url(/resources/images/core/text-seperator-p-inverted-tablet.png);
-
-			}
-
-		}
-	
 	}
 	
-	/* ====================================================================== */
-	/*                                                                        */
-	/* Headings                                                               */
-	/*                                                                        */
-	/* ====================================================================== */
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Lead Text                                                                 */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	p.lead,
+	p lead,
+	p .lead {
+		
+		font-size: @lead-text-font-size * @lead-text-responsive-ratio-tablet;
+		line-height: @lead-text-line-height * @lead-text-responsive-ratio-tablet;
+		margin: (@lead-text-margin-top * @lead-text-responsive-ratio-tablet) 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-tablet) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-tablet * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-tablet * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Small Text                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	p.small,
+	p small,
+	p .small {
+		
+		font-size: @small-text-font-size * @small-text-responsive-ratio-tablet;
+		line-height: @small-text-line-height * @small-text-responsive-ratio-tablet;
+		margin: (@small-text-margin-top * @small-text-responsive-ratio-tablet) 0px (@small-text-margin-bottom * @small-text-responsive-ratio-tablet) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @small-text-margin-bottom * @small-text-responsive-ratio-tablet * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @small-text-margin-bottom * @small-text-responsive-ratio-tablet * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h1 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h1,
 	.h1-clone {
 		
-		font-size: @headingH1TextFontSize * @headingH1TextRatioTablet;
-		line-height: @headingH1TextLineHeight * @headingH1TextRatioTablet;
-		margin: (@textMarginRatioTop * @headingH1TextMargin * @headingH1TextRatioTablet) 0px (@headingH1TextMargin * @headingH1TextRatioTablet) 0px;
+		font-size: @heading-h1-text-font-size * @heading-h1-text-responsive-ratio-tablet;
+		line-height: @heading-h1-text-line-height * @heading-h1-text-responsive-ratio-tablet;
+		margin: (@heading-h1-text-margin-top * @heading-h1-text-responsive-ratio-tablet) 0px (@heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-tablet) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH1TextMargin * @textMarginRatioTall * @headingH1TextRatioTablet;
+			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-tablet * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH1TextMargin * @textMarginRatioShort * @headingH1TextRatioTablet;
+			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-tablet * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h2 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h2,
 	.h2-clone {
 		
-		font-size: @headingH2TextFontSize * @headingH2TextRatioTablet;
-		line-height: @headingH2TextLineHeight * @headingH2TextRatioTablet;
-		margin: (@textMarginRatioTop * @headingH2TextMargin * @headingH2TextRatioTablet) 0px (@headingH2TextMargin * @headingH2TextRatioTablet) 0px;
+		font-size: @heading-h2-text-font-size * @heading-h2-text-responsive-ratio-tablet;
+		line-height: @heading-h2-text-line-height * @heading-h2-text-responsive-ratio-tablet;
+		margin: (@heading-h2-text-margin-top * @heading-h2-text-responsive-ratio-tablet) 0px (@heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-tablet) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH2TextMargin * @textMarginRatioTall * @headingH2TextRatioTablet;
+			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-tablet * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH2TextMargin * @textMarginRatioShort * @headingH2TextRatioTablet;
+			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-tablet * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h3 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h3,
 	.h3-clone {
 		
-		font-size: @headingH3TextFontSize * @headingH3TextRatioTablet;
-		line-height: @headingH3TextLineHeight * @headingH3TextRatioTablet;
-		margin: (@textMarginRatioTop * @headingH3TextMargin * @headingH3TextRatioTablet) 0px (@headingH3TextMargin * @headingH3TextRatioTablet) 0px;
+		font-size: @heading-h3-text-font-size * @heading-h3-text-responsive-ratio-tablet;
+		line-height: @heading-h3-text-line-height * @heading-h3-text-responsive-ratio-tablet;
+		margin: (@heading-h3-text-margin-top * @heading-h3-text-responsive-ratio-tablet) 0px (@heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-tablet) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH3TextMargin * @textMarginRatioTall * @headingH3TextRatioTablet;
+			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-tablet * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH3TextMargin * @textMarginRatioShort * @headingH3TextRatioTablet;
+			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-tablet * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h4 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h4,
 	.h4-clone {
 		
-		font-size: @headingH4TextFontSize * @headingH4TextRatioTablet;
-		line-height: @headingH4TextLineHeight * @headingH4TextRatioTablet;
-		margin: (@textMarginRatioTop * @headingH4TextMargin * @headingH4TextRatioTablet) 0px (@headingH4TextMargin * @headingH4TextRatioTablet) 0px;
+		font-size: @heading-h4-text-font-size * @heading-h4-text-responsive-ratio-tablet;
+		line-height: @heading-h4-text-line-height * @heading-h4-text-responsive-ratio-tablet;
+		margin: (@heading-h4-text-margin-top * @heading-h4-text-responsive-ratio-tablet) 0px (@heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-tablet) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 4px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH4TextMargin * @textMarginRatioTall * @headingH4TextRatioTablet;
+			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-tablet * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH4TextMargin * @textMarginRatioShort * @headingH4TextRatioTablet;
+			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-tablet * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h5 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h5,
 	.h5-clone {
 		
-		font-size: @headingH5TextFontSize * @headingH5TextRatioTablet;
-		line-height: @headingH5TextLineHeight * @headingH5TextRatioTablet;
-		margin: (@textMarginRatioTop * @headingH5TextMargin * @headingH5TextRatioTablet) 0px (@headingH5TextMargin * @headingH5TextRatioTablet) 0px;
+		font-size: @heading-h5-text-font-size * @heading-h5-text-responsive-ratio-tablet;
+		line-height: @heading-h5-text-line-height * @heading-h5-text-responsive-ratio-tablet;
+		margin: (@heading-h5-text-margin-top * @heading-h5-text-responsive-ratio-tablet) 0px (@heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-tablet) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH5TextMargin * @textMarginRatioTall * @headingH5TextRatioTablet;
+			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-tablet * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH5TextMargin * @textMarginRatioShort * @headingH5TextRatioTablet;
+			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-tablet * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h6 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h6,
 	.h6-clone {
 		
-		font-size: @headingH6TextFontSize * @headingH6TextRatioTablet;
-		line-height: @headingH6TextLineHeight * @headingH6TextRatioTablet;
-		margin: (@textMarginRatioTop * @headingH6TextMargin * @headingH6TextRatioTablet) 0px (@headingH6TextMargin * @headingH6TextRatioTablet) 0px;
+		font-size: @heading-h6-text-font-size * @heading-h6-text-responsive-ratio-tablet;
+		line-height: @heading-h6-text-line-height * @heading-h6-text-responsive-ratio-tablet;
+		margin: (@heading-h6-text-margin-top * @heading-h6-text-responsive-ratio-tablet) 0px (@heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-tablet) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH6TextMargin * @textMarginRatioTall * @headingH6TextRatioTablet;
+			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-tablet * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH6TextMargin * @textMarginRatioShort * @headingH6TextRatioTablet;
+			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-tablet * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
 	
 	
 	/* ===================================================================== */
@@ -2313,17 +3209,17 @@ cite {
 	
 	ul, ol {
 		
-		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioTablet) 0px;
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-tablet) 0px;
 		
 		&.tall {
 			
-			margin-bottom: @bodyTextMargin * @textMarginRatioTall * @bodyTextRatioTablet;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-responsive-ratio-tablet;
 			
 		}
 			
 		&.short {
 			
-			margin-bottom: @bodyTextMargin * @textMarginRatioShort * @bodyTextRatioTablet;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-responsive-ratio-tablet;
 			
 		}
 		
@@ -2334,16 +3230,16 @@ cite {
 	ol ol,
 	ol ul {
 		
-		margin-top: (@bodyTextMargin / 2) * @bodyTextRatioTablet;
-		margin-left: (@bodyTextMargin * @bodyTextRatioTablet);
+		margin-top: (@body-text-margin-bottom / 2) * @body-text-responsive-ratio-tablet;
+		margin-left: (@body-text-margin-bottom * @body-text-responsive-ratio-tablet);
 		
 	}
 	
 	li {
 		
-		font-size: @bodyTextFontSize * @bodyTextRatioTablet;
-		line-height: @bodyTextLineHeight * @bodyTextRatioTablet;
-		margin-bottom: (@bodyTextMargin / 2) * @bodyTextRatioTablet;
+		font-size: @body-text-font-size * @body-text-responsive-ratio-tablet;
+		line-height: @body-text-line-height * @body-text-responsive-ratio-tablet;
+		margin-bottom: (@body-text-margin-bottom / 2) * @body-text-responsive-ratio-tablet;
 		
 		&:last-child {
 			
@@ -2357,29 +3253,29 @@ cite {
 	
 	dl {
 		
-		margin-bottom: @bodyTextMargin * @bodyTextRatioTablet;
+		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet;
 		
 	}
 	
 	dt,
 	dd {
 		
-		font-size: @bodyTextFontSize * @bodyTextRatioTablet;
-		line-height: @bodyTextLineHeight * @bodyTextRatioTablet;
+		font-size: @body-text-font-size * @body-text-responsive-ratio-tablet;
+		line-height: @body-text-line-height * @body-text-responsive-ratio-tablet;
 		
 	}
 	
 	dt {
 		
-		font-size: @bodyTextFontSize * @bodyTextRatioTablet;
-		line-height: (@bodyTextLineHeight * @bodyTextRatioTablet) - 1; // fix jank Helvetica Neue font bug
-		margin-bottom: @bodyTextMargin * @bodyTextRatioTablet;
+		font-size: @body-text-font-size * @body-text-responsive-ratio-tablet;
+		line-height: (@body-text-line-height * @body-text-responsive-ratio-tablet) - 1; // fix jank Helvetica Neue font bug
+		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet;
 		
 	}
 	
 	dd {
 		
-		margin-bottom: @bodyTextMargin * @bodyTextRatioTablet;
+		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet;
 		
 	}
 	
@@ -2395,37 +3291,37 @@ cite {
 	
 	hr {
 		
-		margin: @primaryMarginTablet 0px @primaryMarginTablet 0px;
+		margin: @primary-margin-tablet 0px @primary-margin-tablet 0px;
 			
 		&.short {
 			
-			margin: @primaryMarginShortTablet 0px @primaryMarginShortTablet 0px;
+			margin: @primary-margin-short-tablet 0px @primary-margin-short-tablet 0px;
 			
 		}
 		
 		&.tall {
 			
-			margin: @primaryMarginTallTablet 0px @primaryMarginTallTablet 0px;
+			margin: @primary-margin-tall-tablet 0px @primary-margin-tall-tablet 0px;
 			
 		}
 	
 		&.narrow {
 			
 			margin: 0 auto;
-			margin-top: @primaryMarginTablet;
-			margin-bottom: @primaryMarginTablet;
+			margin-top: @primary-margin-tablet;
+			margin-bottom: @primary-margin-tablet;
 			
 			&.short {
 				
-				margin-top: @primaryMarginShortTablet;
-				margin-bottom: @primaryMarginShortTablet;
+				margin-top: @primary-margin-short-tablet;
+				margin-bottom: @primary-margin-short-tablet;
 				
 			}
 			
 			&.tall {
 				
-				margin-top: @primaryMarginTallTablet;
-				margin-bottom: @primaryMarginTallTablet;
+				margin-top: @primary-margin-tall-tablet;
+				margin-bottom: @primary-margin-tall-tablet;
 				
 			}
 			
@@ -2437,18 +3333,18 @@ cite {
 	
 	blockquote {
 		
-		padding: 0px 0px 0px ((@bodyTextMargin * @bodyTextRatioTablet) / 2);
-		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioTablet) 0px;
+		padding: 0px 0px 0px ((@body-text-margin-bottom * @body-text-responsive-ratio-tablet) / 2);
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-tablet) 0px;
 		
 		p {
 			
-			#font > .shorthand(@leadTextFontSize * @bodyTextRatioTablet, @leadTextFontWeight * @bodyTextRatioTablet, @leadTextLineHeight * @bodyTextRatioTablet);
+			#font > .shorthand(@lead-text-font-size * @body-text-responsive-ratio-tablet, @lead-text-font-weight * @body-text-responsive-ratio-tablet, @lead-text-line-height * @body-text-responsive-ratio-tablet);
 			
 		}
 		
 		small {
 			
-			line-height: @bodyTextLineHeight * @smallTextRatioTablet;
+			line-height: @body-text-line-height * @small-text-responsive-ratio-tablet;
 			
 		}
 		
@@ -2458,8 +3354,8 @@ cite {
 	
 	address {
 		
-		margin-bottom: @bodyTextMargin * @bodyTextRatioTablet;
-		line-height: @bodyTextLineHeight * @bodyTextRatioTablet;
+		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet;
+		line-height: @body-text-line-height * @body-text-responsive-ratio-tablet;
 		
 	}
 	
@@ -2469,268 +3365,308 @@ cite {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/* Responsive changes to styling up to portrait tablets (@viewport-tablet)            */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileLandscapeMax) {
+@media (max-width: @viewport-mobile-landscape-max) {
 	
-	/* ===================================================================== */
-	/*                                                                       */
-	/* Body Text                                                             */
-	/*                                                                       */
-	/* ===================================================================== */
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Body Text                                                                 */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	p {
 		
-		font-size: @bodyTextFontSize * @bodyTextRatioMobile;
-		line-height: @bodyTextLineHeight * @bodyTextRatioMobile;
-		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioMobile) 0px;
+		font-size: @body-text-font-size * @body-text-responsive-ratio-mobile;
+		line-height: @body-text-line-height * @body-text-responsive-ratio-mobile;
+		margin: (@body-text-margin-top * @body-text-responsive-ratio-mobile) 0px (@body-text-margin-bottom * @body-text-responsive-ratio-mobile) 0px;
+		
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @bodyTextMargin * @textMarginRatioTall * @bodyTextRatioMobile;
+			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile * @text-margin-ratio-tall;
 			
 		}
+		
+		// Short
 			
 		&.short {
 			
-			margin-bottom: @bodyTextMargin * @textMarginRatioShort * @bodyTextRatioMobile;
-			
-		}
-
-		&.underline {
-
-			background: url(/resources/images/core/text-seperator-p-mobile.png);
-
-		}
-		
-		&.lead {
-			
-			font-size: @leadTextFontSize * @leadTextRatioMobile;
-			line-height: @leadTextLineHeight * @leadTextRatioMobile;
-			margin: 0px 0px (@leadTextMargin * @leadTextRatioMobile) 0px;
-			
-			&.tall {
-				
-				margin-bottom: @leadTextMargin * @textMarginRatioTall * @leadTextRatioMobile;
-				
-			}
-			
-			&.short {
-				
-				margin-bottom: @leadTextMargin * @textMarginRatioShort * @leadTextRatioMobile;
-				
-			}
+			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile * @text-margin-ratio-short;
 			
 		}
 		
-		&.small {
-			
-			font-size: @smallTextFontSize * @smallTextRatioMobile;
-			line-height: @smallTextLineHeight * @smallTextRatioMobile;
-			margin: 0px 0px (@smallTextMargin * @smallTextRatioMobile) 0px;
-			
-			&.tall {
-				
-				margin-bottom: @smallTextMargin * @textMarginRatioTall * @smallTextRatioMobile;
-				
-			}
-			
-			&.short {
-				
-				margin-bottom: @smallTextMargin * @textMarginRatioShort * @smallTextRatioMobile;
-				
-			}
-			
-		}
-
-		&.inverse {
-
-			&.underline {
-
-				background: url(/resources/images/core/text-seperator-p-inverted-mobile.png);
-
-			}
-
-		}
-	
 	}
 	
-	/* ===================================================================== */
-	/*                                                                       */
-	/* Headings                                                              */
-	/*                                                                       */
-	/* ===================================================================== */
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Lead Text                                                                 */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	p.lead,
+	p lead,
+	p .lead {
+		
+		font-size: @lead-text-font-size * @lead-text-responsive-ratio-mobile;
+		line-height: @lead-text-line-height * @lead-text-responsive-ratio-mobile;
+		margin: (@lead-text-margin-top * @lead-text-responsive-ratio-mobile) 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-mobile) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Small Text                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	p.small,
+	p small,
+	p .small {
+		
+		font-size: @small-text-font-size * @small-text-responsive-ratio-mobile;
+		line-height: @small-text-line-height * @small-text-responsive-ratio-mobile;
+		margin: (@small-text-margin-top * @small-text-responsive-ratio-mobile) 0px (@small-text-margin-bottom * @small-text-responsive-ratio-mobile) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @small-text-margin-bottom * @small-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @small-text-margin-bottom * @small-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h1 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h1,
 	.h1-clone {
 		
-		font-size: @headingH1TextFontSize * @headingH1TextRatioMobile;
-		line-height: @headingH1TextLineHeight * @headingH1TextRatioMobile;
-		margin: (@textMarginRatioTop * @headingH1TextMargin * @headingH1TextRatioMobile) 0px (@headingH1TextMargin * @headingH1TextRatioMobile) 0px;
+		font-size: @heading-h1-text-font-size * @heading-h1-text-responsive-ratio-mobile;
+		line-height: @heading-h1-text-line-height * @heading-h1-text-responsive-ratio-mobile;
+		margin: (@heading-h1-text-margin-top * @heading-h1-text-responsive-ratio-mobile) 0px (@heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-mobile) 0px;
 		
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH1TextMargin * @textMarginRatioTall * @headingH1TextRatioMobile;
+			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-mobile * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH1TextMargin * @textMarginRatioShort * @headingH1TextRatioMobile;
+			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-mobile * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h2 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h2,
 	.h2-clone {
 		
-		font-size: @headingH2TextFontSize * @headingH2TextRatioMobile;
-		line-height: @headingH2TextLineHeight * @headingH2TextRatioMobile;
-		margin: (@textMarginRatioTop * @headingH2TextMargin * @headingH2TextRatioMobile) 0px (@headingH2TextMargin * @headingH2TextRatioMobile) 0px;
+		font-size: @heading-h2-text-font-size * @heading-h2-text-responsive-ratio-mobile;
+		line-height: @heading-h2-text-line-height * @heading-h2-text-responsive-ratio-mobile;
+		margin: (@heading-h2-text-margin-top * @heading-h2-text-responsive-ratio-mobile) 0px (@heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-mobile) 0px;
 		
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH2TextMargin * @textMarginRatioTall * @headingH2TextRatioMobile;
+			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-mobile * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH2TextMargin * @textMarginRatioShort * @headingH2TextRatioMobile;
+			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-mobile * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h3 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h3,
 	.h3-clone {
 		
-		font-size: @headingH3TextFontSize * @headingH3TextRatioMobile;
-		line-height: @headingH3TextLineHeight * @headingH3TextRatioMobile;
-		margin: (@textMarginRatioTop * @headingH3TextMargin * @headingH3TextRatioMobile) 0px (@headingH3TextMargin * @headingH3TextRatioMobile) 0px;
+		font-size: @heading-h3-text-font-size * @heading-h3-text-responsive-ratio-mobile;
+		line-height: @heading-h3-text-line-height * @heading-h3-text-responsive-ratio-mobile;
+		margin: (@heading-h3-text-margin-top * @heading-h3-text-responsive-ratio-mobile) 0px (@heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-mobile) 0px;
 		
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH3TextMargin * @textMarginRatioTall * @headingH3TextRatioMobile;
+			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-mobile * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH3TextMargin * @textMarginRatioShort * @headingH3TextRatioMobile;
+			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-mobile * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h4 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h4,
 	.h4-clone {
 		
-		font-size: @headingH4TextFontSize * @headingH4TextRatioMobile;
-		line-height: @headingH4TextLineHeight * @headingH4TextRatioMobile;
-		margin: (@textMarginRatioTop * @headingH4TextMargin * @headingH4TextRatioMobile) 0px (@headingH4TextMargin * @headingH4TextRatioMobile) 0px;
+		font-size: @heading-h4-text-font-size * @heading-h4-text-responsive-ratio-mobile;
+		line-height: @heading-h4-text-line-height * @heading-h4-text-responsive-ratio-mobile;
+		margin: (@heading-h4-text-margin-top * @heading-h4-text-responsive-ratio-mobile) 0px (@heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-mobile) 0px;
 		
-		.icon {
-			
-			&.icon-mini {
-				
-				margin-top: 3px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-small {
-				
-				margin-top: -1px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-medium {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-large {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-			&.icon-jumbo {
-				
-				margin-top: 0px;
-				margin-right: 10px;
-				
-			}
-			
-		}
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH4TextMargin * @textMarginRatioTall * @headingH4TextRatioMobile;
+			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-mobile * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH4TextMargin * @textMarginRatioShort * @headingH4TextRatioMobile;
+			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-mobile * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h5 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h5,
 	.h5-clone {
 		
-		font-size: @headingH5TextFontSize * @headingH5TextRatioMobile;
-		line-height: @headingH5TextLineHeight * @headingH5TextRatioMobile;
-		margin: (@textMarginRatioTop * @headingH5TextMargin * @headingH5TextRatioMobile) 0px (@headingH5TextMargin * @headingH5TextRatioMobile) 0px;
+		font-size: @heading-h5-text-font-size * @heading-h5-text-responsive-ratio-mobile;
+		line-height: @heading-h5-text-line-height * @heading-h5-text-responsive-ratio-mobile;
+		margin: (@heading-h5-text-margin-top * @heading-h5-text-responsive-ratio-mobile) 0px (@heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-mobile) 0px;
+		
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH5TextMargin * @textMarginRatioTall * @headingH5TextRatioMobile;
+			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-mobile * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH5TextMargin * @textMarginRatioShort * @headingH5TextRatioMobile;
+			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-mobile * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Heading h6 Text                                                           */
+	/*                                                                           */
+	/* ========================================================================= */
 	
 	h6,
 	.h6-clone {
 		
-		font-size: @headingH6TextFontSize * @headingH6TextRatioMobile;
-		line-height: @headingH6TextLineHeight * @headingH6TextRatioMobile;
-		margin: (@textMarginRatioTop * @headingH6TextMargin * @headingH6TextRatioMobile) 0px (@headingH6TextMargin * @headingH6TextRatioMobile) 0px;
+		font-size: @heading-h6-text-font-size * @heading-h6-text-responsive-ratio-mobile;
+		line-height: @heading-h6-text-line-height * @heading-h6-text-responsive-ratio-mobile;
+		margin: (@heading-h6-text-margin-top * @heading-h6-text-responsive-ratio-mobile) 0px (@heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-mobile) 0px;
 		
+		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @headingH6TextMargin * @textMarginRatioTall * @headingH6TextRatioMobile;
+			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-mobile * @text-margin-ratio-tall;
 			
 		}
 		
+		// Short
+			
 		&.short {
 			
-			margin-bottom: @headingH6TextMargin * @textMarginRatioShort * @headingH6TextRatioMobile;
+			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-mobile * @text-margin-ratio-short;
 			
 		}
-	    
+		
 	}
+	
 	
 	
 	/* ===================================================================== */
@@ -2743,17 +3679,17 @@ cite {
 	
 	ul, ol {
 		
-		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioMobile) 0px;
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-mobile) 0px;
 		
 		&.tall {
 			
-			margin-bottom: @bodyTextMargin * @textMarginRatioTall * @bodyTextRatioMobile;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-responsive-ratio-mobile;
 			
 		}
 			
 		&.short {
 			
-			margin-bottom: @bodyTextMargin * @textMarginRatioShort * @bodyTextRatioMobile;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-responsive-ratio-mobile;
 			
 		}
 		
@@ -2764,16 +3700,16 @@ cite {
 	ol ol,
 	ol ul {
 		
-		margin-left: (@bodyTextMargin * @bodyTextRatioMobile);
-		margin-top: (@bodyTextMargin / 2) * @bodyTextRatioMobile;
+		margin-left: (@body-text-margin-bottom * @body-text-responsive-ratio-mobile);
+		margin-top: (@body-text-margin-bottom / 2) * @body-text-responsive-ratio-mobile;
 		
 	}
 	
 	li {
 		
-		font-size: @bodyTextFontSize * @bodyTextRatioMobile;
-		line-height: @bodyTextLineHeight * @bodyTextRatioMobile;
-		margin-bottom: (@bodyTextMargin / 2) * @bodyTextRatioMobile;
+		font-size: @body-text-font-size * @body-text-responsive-ratio-mobile;
+		line-height: @body-text-line-height * @body-text-responsive-ratio-mobile;
+		margin-bottom: (@body-text-margin-bottom / 2) * @body-text-responsive-ratio-mobile;
 		
 		&:last-child {
 			
@@ -2787,29 +3723,29 @@ cite {
 	
 	dl {
 		
-		margin-bottom: @bodyTextMargin * @bodyTextRatioMobile;
+		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile;
 		
 	}
 	
 	dt,
 	dd {
 		
-		font-size: @bodyTextFontSize * @bodyTextRatioMobile;
-		line-height: @bodyTextLineHeight * @bodyTextRatioMobile;
+		font-size: @body-text-font-size * @body-text-responsive-ratio-mobile;
+		line-height: @body-text-line-height * @body-text-responsive-ratio-mobile;
 		
 	}
 	
 	dt {
 		
-		font-size: @bodyTextFontSize * @bodyTextRatioMobile;
-		line-height: (@bodyTextLineHeight * @bodyTextRatioMobile) - 1; // fix jank Helvetica Neue font bug
-		margin-bottom: @bodyTextMargin * @bodyTextRatioMobile;
+		font-size: @body-text-font-size * @body-text-responsive-ratio-mobile;
+		line-height: (@body-text-line-height * @body-text-responsive-ratio-mobile) - 1; // fix jank Helvetica Neue font bug
+		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile;
 		
 	}
 	
 	dd {
 		
-		margin-bottom: @bodyTextMargin * @bodyTextRatioMobile;
+		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile;
 		
 	}
 	
@@ -2825,37 +3761,37 @@ cite {
 	
 	hr {
 		
-		margin: @primaryMarginTablet 0px @primaryMarginTablet 0px;
+		margin: @primary-margin-tablet 0px @primary-margin-tablet 0px;
 			
 		&.short {
 			
-			margin: @primaryMarginShortTablet 0px @primaryMarginShortTablet 0px;
+			margin: @primary-margin-short-tablet 0px @primary-margin-short-tablet 0px;
 			
 		}
 		
 		&.tall {
 			
-			margin: @primaryMarginTallTablet 0px @primaryMarginTallTablet 0px;
+			margin: @primary-margin-tall-tablet 0px @primary-margin-tall-tablet 0px;
 			
 		}
 	
 		&.narrow {
 			
 			margin: 0 auto;
-			margin-top: @primaryMarginTablet;
-			margin-bottom: @primaryMarginTablet;
+			margin-top: @primary-margin-tablet;
+			margin-bottom: @primary-margin-tablet;
 			
 			&.short {
 				
-				margin-top: @primaryMarginShortTablet;
-				margin-bottom: @primaryMarginShortTablet;
+				margin-top: @primary-margin-short-tablet;
+				margin-bottom: @primary-margin-short-tablet;
 				
 			}
 			
 			&.tall {
 				
-				margin-top: @primaryMarginTallTablet;
-				margin-bottom: @primaryMarginTallTablet;
+				margin-top: @primary-margin-tall-tablet;
+				margin-bottom: @primary-margin-tall-tablet;
 				
 			}
 			
@@ -2867,18 +3803,18 @@ cite {
 	
 	blockquote {
 		
-		padding: 0px 0px 0px ((@bodyTextMargin * @bodyTextRatioMobile) / 2);
-		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioMobile) 0px;
+		padding: 0px 0px 0px ((@body-text-margin-bottom * @body-text-responsive-ratio-mobile) / 2);
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-mobile) 0px;
 		
 		p {
 			
-			#font > .shorthand(@leadTextFontSize * @bodyTextRatioMobile, @leadTextFontWeight * @bodyTextRatioMobile, @leadTextLineHeight * @bodyTextRatioMobile);
+			#font > .shorthand(@lead-text-font-size * @body-text-responsive-ratio-mobile, @lead-text-font-weight * @body-text-responsive-ratio-mobile, @lead-text-line-height * @body-text-responsive-ratio-mobile);
 			
 		}
 		
 		small {
 			
-			line-height: @bodyTextLineHeight * @smallTextRatioMobile;
+			line-height: @body-text-line-height * @small-text-responsive-ratio-mobile;
 			
 		}
 		
@@ -2888,8 +3824,8 @@ cite {
 	
 	address {
 		
-		margin-bottom: @bodyTextMargin * @bodyTextRatioMobile;
-		line-height: @bodyTextLineHeight * @bodyTextRatioMobile;
+		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile;
+		line-height: @body-text-line-height * @body-text-responsive-ratio-mobile;
 		
 	}
 		
@@ -2899,11 +3835,11 @@ cite {
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/* Responsive changes to styling up to landscape phones (@viewport-mobile-landscape)   */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileMax) {
+@media (max-width: @viewport-mobile-max) {
 	
 }
 

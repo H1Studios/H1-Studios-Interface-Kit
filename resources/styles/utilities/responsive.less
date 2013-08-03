@@ -41,11 +41,11 @@
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and above.     */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @widescreen) {
+@media (min-width: @viewport-widescreen) {
 	
 	.visible-mobile				{	display: none !important; 		}
 	.visible-mobile-vertical	{	display: none !important; 		}
@@ -67,12 +67,12 @@
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for portrait tablet (@tablet) to default    */
-/* desktop (@default).                                                       */
+/* Responsive changes to styling for portrait tablet (@viewport-tablet) to default    */
+/* desktop (@viewport-standard).                                                       */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @tablet) and (max-width: @tabletMax) {
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
 	
 	.visible-mobile				{	display: none !important; 		}
 	.visible-mobile-vertical	{	display: none !important; 		}
@@ -94,11 +94,11 @@
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/* Responsive changes to styling up to portrait tablets (@viewport-tablet)            */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileLandscapeMax) {
+@media (max-width: @viewport-mobile-landscape-max) {
 	
 	.visible-mobile				{	display: inherit !important; 	}
 	.visible-mobile-vertical	{	display: none !important; 		}
@@ -120,11 +120,11 @@
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to landscape mobiles (@mobileLandscape)   */
+/* Responsive changes to styling up to landscape mobiles (@viewport-mobile-landscape)   */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileMax) {
+@media (max-width: @viewport-mobile-max) {
 	
 	.visible-mobile				{	display: inherit !important; 	}
 	.visible-mobile-vertical	{	display: inherit !important; 	}

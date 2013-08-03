@@ -50,13 +50,13 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<td width=\"20%\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<code class=\"center-vertical\">@socialist_red</code>
+\t\t\t\t\t\t<code class=\"center-vertical\">@gray</code>
 \t\t\t\t\t\t
 \t\t\t\t\t</td>
 \t\t\t\t\t
 \t\t\t\t\t<td>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale socialist-red\">
+\t\t\t\t\t\t<div class=\"colorscale gray\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -100,7 +100,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale socialist-red flush\">
+\t\t\t\t\t\t<div class=\"colorscale gray flush\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -152,13 +152,13 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<td width=\"20%\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<code class=\"center-vertical\">@socialist_gray</code>
+\t\t\t\t\t\t<code class=\"center-vertical\">@blue</code>
 \t\t\t\t\t\t
 \t\t\t\t\t</td>
 \t\t\t\t\t
 \t\t\t\t\t<td>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale socialist-gray\">
+\t\t\t\t\t\t<div class=\"colorscale blue\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -202,7 +202,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale socialist-gray flush\">
+\t\t\t\t\t\t<div class=\"colorscale blue flush\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -254,13 +254,13 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<td width=\"20%\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<code class=\"center-vertical\">@socialist_blue</code>
+\t\t\t\t\t\t<code class=\"center-vertical\">@green</code>
 \t\t\t\t\t\t
 \t\t\t\t\t</td>
 \t\t\t\t\t
 \t\t\t\t\t<td>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale socialist-teal\">
+\t\t\t\t\t\t<div class=\"colorscale green\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -304,7 +304,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale socialist-teal flush\">
+\t\t\t\t\t\t<div class=\"colorscale green flush\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -356,13 +356,13 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<td width=\"20%\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<code class=\"center-vertical\">@socialist_green</code>
+\t\t\t\t\t\t<code class=\"center-vertical\">@orange</code>
 \t\t\t\t\t\t
 \t\t\t\t\t</td>
 \t\t\t\t\t
 \t\t\t\t\t<td>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale socialist-green\">
+\t\t\t\t\t\t<div class=\"colorscale orange\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -406,7 +406,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale socialist-green flush\">
+\t\t\t\t\t\t<div class=\"colorscale orange flush\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -458,13 +458,13 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<td width=\"20%\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<code class=\"center-vertical\">@socialist_orange</code>
+\t\t\t\t\t\t<code class=\"center-vertical\">@yellow</code>
 \t\t\t\t\t\t
 \t\t\t\t\t</td>
 \t\t\t\t\t
 \t\t\t\t\t<td>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale socialist-orange\">
+\t\t\t\t\t\t<div class=\"colorscale yellow\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -508,7 +508,109 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale socialist-orange flush\">
+\t\t\t\t\t\t<div class=\"colorscale yellow flush\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color base\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-05\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-10\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-15\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-20\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-25\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-30\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-35\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-40\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-45\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-50\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-55\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-60\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-65\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-70\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-75\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-80\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-85\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-90\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color darken-95\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</td>
+\t\t\t\t\t
+\t\t\t\t</tr>
+\t\t\t\t
+\t\t\t\t<tr>
+\t\t\t\t\t
+\t\t\t\t\t<td width=\"20%\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<code class=\"center-vertical\">@red</code>
+\t\t\t\t\t\t
+\t\t\t\t\t</td>
+\t\t\t\t\t
+\t\t\t\t\t<td>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"colorscale red\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color base\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-05\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-10\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-15\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-20\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-25\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-30\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-35\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-40\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-45\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-50\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-55\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-60\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-65\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-70\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-75\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-80\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-85\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-90\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"color lighten-95\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"colorscale red flush\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t

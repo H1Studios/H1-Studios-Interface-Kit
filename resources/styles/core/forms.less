@@ -14,18 +14,18 @@
 
 form {
 	
-	margin: 0px 0px @primaryMargin 0px;
+	margin: 0px 0px @primary-margin 0px;
 	.clearfix();
 	
 	&.tall {
 		
-		margin-bottom: @primaryMarginTall;
+		margin-bottom: @primary-margin-tall;
 		
 	}
 	
 	&.short {
 		
-		margin-bottom: @primaryMarginShort;
+		margin-bottom: @primary-margin-short;
 		
 	}
 	
@@ -41,16 +41,18 @@ fieldset {
 
 legend {
 	
+	/*
 	display: block;
 	width: 100%;
-	padding: 0px 0px @bodyTextMargin 0px;
-	margin: 0px 0px @bodyTextMargin 0px;
-	font-size: @headingH4TextFontSize;
-	line-height: @headingH4TextLineHeight;
+	padding: 0px 0px @body-text-margin-bottom 0px;
+	margin: 0px 0px @body-text-margin-bottom 0px;
+	font-size: @heading-h4-text-font-size;
+	line-height: @heading-h4-text-line-height;
 	color: @headingH4TextColor;
 	text-transform: uppercase;
 	border: none;
-	border-bottom: 1px solid @socialist_gray;
+	border-bottom: 1px solid @gray;
+	*/
 	
 }
 
@@ -76,7 +78,7 @@ label {
 	
 	&.error {
 		
-		margin: (@bodyTextMargin / 4) 0px 0px 0px;
+		margin: (@body-text-margin-bottom / 4) 0px 0px 0px;
 		font-style: italic;
 		font-size: @formLabelTextFontSize - 1;
 		
@@ -214,7 +216,7 @@ textarea {
 input[type="radio"],
 input[type="checkbox"] {
 	
-	margin: ((@bodyTextLineHeight - 7) / 2) 0px ((@bodyTextLineHeight - 7) / 2) 0px;
+	margin: ((@body-text-line-height - 7) / 2) 0px ((@body-text-line-height - 7) / 2) 0px;
 	*margin-top: 0px; // IE7 Fix
 	line-height: normal;
 	cursor: pointer;
@@ -258,8 +260,8 @@ input[type="file"] {
 	
 	position: relative;
 	padding: 0px 0px 0px 20px;
-	min-height: @bodyTextLineHeight;
-	line-height: @bodyTextLineHeight;
+	min-height: @body-text-line-height;
+	line-height: @body-text-line-height;
 	margin-bottom: @inputMargin;
 	
 	input[type="radio"],
@@ -267,7 +269,7 @@ input[type="file"] {
 		
 		position: absolute;
 		margin: 0px 0px 0px -20px;
-		top: (@bodyTextLineHeight / 2) - 6;
+		top: (@body-text-line-height / 2) - 6;
 		width: auto !important;
 		
 	}
@@ -339,7 +341,7 @@ select {
 	color: @formLabelTextColor;
 	.border-radius(@inputBorderRadius);
 	vertical-align: middle;
-	border: 1px solid @socialist_gray;
+	border: 1px solid @gray;
 	background: @inputBackgroundColor;
 	position: relative;
 	padding-top: 6px;
@@ -1366,22 +1368,22 @@ select:required:invalid {
 
 .form-actions {
 	
-	padding: @primaryMargin;
-	margin-bottom: @primaryMargin;
-	background-color: @socialist_gray_lighten_90;
+	padding: @primary-margin;
+	margin-bottom: @primary-margin;
+	background-color: @gray-lighten-90;
 	.clearfix();
 	@shadow:	0px -1px 0px 0px rgba(0, 0, 0, 0.1);
 	.box-shadow(@shadow);
 	
 	&.tall {
 		
-		margin-bottom: @primaryMarginTall;
+		margin-bottom: @primary-margin-tall;
 		
 	}
 	
 	&.short {
 		
-		margin-bottom: @primaryMarginShort;
+		margin-bottom: @primary-margin-short;
 		
 	}
 	
@@ -1420,7 +1422,7 @@ textarea[class*="span"],
 /*                                                                           */
 /* ========================================================================= */
 
-#grid > .input(@gridColumnWidth, @gridGutterWidth);
+#grid > .input(@grid-column-width-standard, @grid-gutter-width-standard);
 
 .controls {
 	
@@ -1438,11 +1440,11 @@ textarea[class*="span"],
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and above.     */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @widescreen) {
+@media (min-width: @viewport-widescreen) {
 	
 	/* ========================================================================= */
 	/*                                                                           */
@@ -1452,17 +1454,17 @@ textarea[class*="span"],
 	
 	form {
 		
-		margin-bottom: @primaryMarginWidescreen;
+		margin-bottom: @primary-margin-widescreen;
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallWidescreen;
+			margin-bottom: @primary-margin-tall-widescreen;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortWidescreen;
+			margin-bottom: @primary-margin-short-widescreen;
 			
 		}
 		
@@ -1703,18 +1705,18 @@ textarea[class*="span"],
 	
 	.form-actions {
 		
-		padding: @primaryMarginWidescreen;
-		margin-bottom: @primaryMarginWidescreen;
+		padding: @primary-margin-widescreen;
+		margin-bottom: @primary-margin-widescreen;
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallWidescreen;
+			margin-bottom: @primary-margin-tall-widescreen;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortWidescreen;
+			margin-bottom: @primary-margin-short-widescreen;
 			
 		}
 		
@@ -1726,7 +1728,7 @@ textarea[class*="span"],
 	/*                                                                           */
 	/* ========================================================================= */
 	
-	#grid > .input(@gridColumnWidthWidescreen, @gridGutterWidthWidescreen);
+	#grid > .input(@grid-column-width-widescreen, @grid-gutter-width-widescreen);
 	
 }
 
@@ -1734,12 +1736,12 @@ textarea[class*="span"],
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for portrait tablet (@tablet) to default    */
-/* desktop (@default).                                                       */
+/* Responsive changes to styling for portrait tablet (@viewport-tablet) to default    */
+/* desktop (@viewport-standard).                                                       */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @tablet) and (max-width: @tabletMax) {
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
 	
 	/* ========================================================================= */
 	/*                                                                           */
@@ -1749,17 +1751,17 @@ textarea[class*="span"],
 	
 	form {
 		
-		margin-bottom: @primaryMarginTablet;
+		margin-bottom: @primary-margin-tablet;
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallTablet;
+			margin-bottom: @primary-margin-tall-tablet;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortTablet;
+			margin-bottom: @primary-margin-short-tablet;
 			
 		}
 		
@@ -1999,18 +2001,18 @@ textarea[class*="span"],
 	
 	.form-actions {
 		
-		padding: @primaryMarginTablet;
-		margin-bottom: @primaryMarginTablet;
+		padding: @primary-margin-tablet;
+		margin-bottom: @primary-margin-tablet;
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallTablet;
+			margin-bottom: @primary-margin-tall-tablet;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortTablet;
+			margin-bottom: @primary-margin-short-tablet;
 			
 		}
 		
@@ -2022,7 +2024,7 @@ textarea[class*="span"],
 	/*                                                                           */
 	/* ========================================================================= */
 	
-	#grid > .input(@gridColumnWidthTablet, @gridGutterWidthTablet);
+	#grid > .input(@grid-column-width-tablet, @grid-gutter-width-tablet);
 	
 }
 
@@ -2030,11 +2032,11 @@ textarea[class*="span"],
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/* Responsive changes to styling up to portrait tablets (@viewport-tablet)            */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileLandscapeMax) {
+@media (max-width: @viewport-mobile-landscape-max) {
 	
 	/* ========================================================================= */
 	/*                                                                           */
@@ -2044,21 +2046,21 @@ textarea[class*="span"],
 	
 	form {
 		
-		margin-bottom: @primaryMarginMobile;
+		margin-bottom: @primary-margin-mobile;
 			
 		&.spill {
 			
-			margin-top: @primaryMarginMobile;
+			margin-top: @primary-margin-mobile;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallMobile;
+			margin-bottom: @primary-margin-tall-mobile;
 				
 			&.spill {
 				
-				margin-top: @primaryMarginTallMobile;
+				margin-top: @primary-margin-tall-mobile;
 				
 			}
 			
@@ -2066,11 +2068,11 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortMobile;
+			margin-bottom: @primary-margin-short-mobile;
 				
 			&.spill {
 				
-				margin-top: @primaryMarginShortMobile;
+				margin-top: @primary-margin-short-mobile;
 				
 			}
 			
@@ -2423,18 +2425,18 @@ textarea[class*="span"],
 	
 	.form-actions {
 		
-		padding: @primaryMarginMobile;
-		margin-bottom: @primaryMarginMobile;
+		padding: @primary-margin-mobile;
+		margin-bottom: @primary-margin-mobile;
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallMobile;
+			margin-bottom: @primary-margin-tall-mobile;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortMobile;
+			margin-bottom: @primary-margin-short-mobile;
 			
 		}
 		
@@ -2454,11 +2456,11 @@ textarea[class*="span"],
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/* Responsive changes to styling up to landscape phones (@viewport-mobile-landscape)   */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileMax) {
+@media (max-width: @viewport-mobile-max) {
 	
 }
 

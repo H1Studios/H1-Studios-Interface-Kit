@@ -12,17 +12,17 @@
 	.clearfix();
 	margin-top: -10px;
 	margin-left: -10px;
-	margin-bottom: @primaryMargin;
+	margin-bottom: @primary-margin;
 	
 	&.short {
 		
-		margin-bottom: @primaryMarginShort;
+		margin-bottom: @primary-margin-short;
 		
 	}
 	
 	&.tall {
 		
-		margin-bottom: @primaryMarginTall;
+		margin-bottom: @primary-margin-tall;
 		
 	}
 	
@@ -106,25 +106,25 @@
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and above.     */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @widescreen) {
+@media (min-width: @viewport-widescreen) {
 	
 	.share-toolbar {
 		
-		margin-bottom: @primaryMarginWidescreen;
+		margin-bottom: @primary-margin-widescreen;
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortWidescreen;
+			margin-bottom: @primary-margin-short-widescreen;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallWidescreen;
+			margin-bottom: @primary-margin-tall-widescreen;
 			
 		}
 		
@@ -136,26 +136,26 @@
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling for portrait tablet (@tablet) to default    */
-/* desktop (@default).                                                       */
+/* Responsive changes to styling for portrait tablet (@viewport-tablet) to default    */
+/* desktop (@viewport-standard).                                                       */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (min-width: @tablet) and (max-width: @tabletMax) {
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
 	
 	.share-toolbar {
 		
-		margin-bottom: @primaryMarginTablet;
+		margin-bottom: @primary-margin-tablet;
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortTablet;
+			margin-bottom: @primary-margin-short-tablet;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallTablet;
+			margin-bottom: @primary-margin-tall-tablet;
 			
 		}
 		
@@ -167,25 +167,25 @@
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/* Responsive changes to styling up to portrait tablets (@viewport-tablet)            */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileLandscapeMax) {
+@media (max-width: @viewport-mobile-landscape-max) {
 	
 	.share-toolbar {
 		
-		margin-bottom: @primaryMarginMobile;
+		margin-bottom: @primary-margin-mobile;
 		
 		&.short {
 			
-			margin-bottom: @primaryMarginShortMobile;
+			margin-bottom: @primary-margin-short-mobile;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primaryMarginTallMobile;
+			margin-bottom: @primary-margin-tall-mobile;
 			
 		}
 		
@@ -197,11 +197,11 @@
 
 /* ========================================================================= */
 /*                                                                           */
-/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/* Responsive changes to styling up to landscape phones (@viewport-mobile-landscape)   */
 /*                                                                           */
 /* ========================================================================= */
 
-@media (max-width: @mobileMax) {
+@media (max-width: @viewport-mobile-max) {
 	
 }
 
