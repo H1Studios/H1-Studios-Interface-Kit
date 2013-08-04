@@ -492,8 +492,8 @@
 
 // Emphasis
 
-@body-text-emphasis-color:										@gray;
-@body-text-emphasis-font-weight:								600;
+@body-text-emphasis-color:										@gray-darken-25;
+@body-text-emphasis-font-weight:								500;
 @body-text-emphasis-style:										normal;
 @body-text-emphasis-link-text-color:							@body-text-link-text-color;
 @body-text-emphasis-link-text-transform:						@body-text-link-text-transform;
@@ -1124,62 +1124,68 @@
 @heading-h6-text-inverse-muted-link-hover-text-color:			@heading-h6-text-muted-link-hover-text-color;
 @heading-h6-text-inverse-muted-link-active-text-color:			@heading-h6-text-muted-link-active-text-color;
 
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Code                                                                                                 */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Code Text                                                                                            */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@code-text-font-family:											@font-family-monospace;
+@code-text-font-size:											@body-text-font-size - 2;
+@code-text-font-weight:											@body-text-font-weight;
+@code-text-line-height:											@body-text-line-height;
+@code-text-color:												@gray;
+
+// Pre
+
+@code-pre-text-color:											#d14;
+
+// Margins
+
+@code-text-margin-top:											30px;
+@code-text-margin-bottom:										15px;
+
+// Responsive Sizing
+
+@code-text-responsive-ratio-widescreen:							@body-text-responsive-ratio-widescreen;
+@code-text-responsive-ratio-tablet:								@body-text-responsive-ratio-tablet;
+@code-text-responsive-ratio-mobile:								@body-text-responsive-ratio-mobile;
+
+// Inverse
+
+@code-text-inverse-color:										@code-text-color;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Code Styling                                                                                         */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@code-padding-horizontal:										6px;
+@code-background-color:											@gray-lighten-90;
+@code-shadow:													0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+@code-border-radius:											3px;
+
+@code-linenums-background-color:								@gray-lighten-95;
+@code-linenums-border-color:									rgba(0, 0, 0, 0.1);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ========================================================================= */
-/*                                                                           */
-/* Code                                                                      */
-/*                                                                           */
-/* ========================================================================= */
-
-@codePaddingHorizontal:											6px;
-@codeBackgroundColor:											@gray-lighten-90;
-@codeShadow:													0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-@codeBorderRadius:												3px;
-@codeLinenumsBackgroundColor:									@gray-lighten-95;
-@codeLinenumsBorderColor:										rgba(0, 0, 0, 0.1);
-
-@codeTextColor:													@gray;
-@codeTextFontFamily:											@font-family-monospace;
-@codeTextFontSize:												@body-text-font-size - 2;
-@codeTextFontWeight:											@body-text-font-weight;
-@codeTextLineHeight:											@body-text-line-height;
-@codeTextRatioWide:												@body-text-responsive-ratio-widescreen;
-@codeTextRatioTablet:											@body-text-responsive-ratio-tablet;
-@codeTextRatioMobile:											@body-text-responsive-ratio-mobile;
-
-@codePreTextColor:												#d14;
-
-
-
-/* ========================================================================= */
-/*                                                                           */
-/* Tables                                                                    */
-/*                                                                           */
-/* ========================================================================= */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Tables                                                                                               */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 // Tables
 
 @tableBackground:												transparent;
 @tableBorder:													@gray-lighten-60;
 @tableBorderRadius:												4px;
-@tableCellBackgroundAccent:										@gray-lighten-95;
-@tableCellBackgroundHover:										@gray-lighten-95;
+@tableCellBackgroundAccent:										@gray-lighten-90;
+@tableCellBackgroundHover:										@gray-lighten-90;
 @tableCellTextColor:											@body-text-color;
 @tableCellHeaderTextColor:										@gray-darken-30;
 @tableCellHeaderTextFontWeight:									600;
@@ -1205,11 +1211,11 @@
 
 
 
-/* ========================================================================= */
-/*                                                                           */
-/* Buttons                                                                   */
-/*                                                                           */
-/* ========================================================================= */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Buttons                                                                                              */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 
 // Button Sizes
@@ -1258,9 +1264,9 @@
 @buttonTextFontWeightMini:										700;
 @buttonTextLineHeightMini:										15px;
 
-/* ------------------------------------------------------------------------- */
-/* Default Button                                                            */
-/* ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Default Button                                                                                       */
+/* ---------------------------------------------------------------------------------------------------- */
 
 @buttonTextColor:												@gray-darken-30;
 @buttonTextShadow:												0 1px 1px rgba(255, 255, 255, 0.75);
@@ -1352,9 +1358,9 @@
 @buttonInverseDisabledMarginBottom:								0px;
 @buttonInverseDisabledOpacity:									50;
 
-/* ------------------------------------------------------------------------- */
-/* Primary Button                                                            */
-/* ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Primary Button                                                                                       */
+/* ---------------------------------------------------------------------------------------------------- */
 
 @buttonPrimaryTextColor:										@white;
 @buttonPrimaryTextShadow:										0 1px 1px rgba(0, 0, 0, 0.25);
@@ -1440,9 +1446,9 @@
 @buttonPrimaryInverseDisabledMarginBottom:						0px;
 @buttonPrimaryInverseDisabledOpacity:							50;
 
-/* ------------------------------------------------------------------------- */
-/* Success Button                                                            */
-/* ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Success Button                                                                                       */
+/* ---------------------------------------------------------------------------------------------------- */
 
 @buttonSuccessTextColor:										@white;
 @buttonSuccessTextShadow:										0 1px 1px rgba(0, 0, 0, 0.25);
@@ -1528,9 +1534,9 @@
 @buttonSuccessInverseDisabledMarginBottom:						@buttonSuccessInverseMarginBottom;
 @buttonSuccessInverseDisabledDisabledOpacity:					50;
 
-/* ------------------------------------------------------------------------- */
-/* Warning Button                                                            */
-/* ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Warning Button                                                                                       */
+/* ---------------------------------------------------------------------------------------------------- */
 
 @buttonWarningTextColor:										@white;
 @buttonWarningTextShadow:										0 1px 1px rgba(0, 0, 0, 0.25);
@@ -1616,9 +1622,9 @@
 @buttonWarningInverseDisabledMarginBottom:						0px;
 @buttonWarningInverseDisabledOpacity:							50;
 
-/* ------------------------------------------------------------------------- */
-/* Danger Button                                                             */
-/* ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Danger Button                                                                                        */
+/* ---------------------------------------------------------------------------------------------------- */
 
 @buttonDangerTextColor:											@white;
 @buttonDangerTextShadow:										0 1px 1px rgba(0, 0, 0, 0.25);
@@ -1706,11 +1712,11 @@
 
 
 
-/* ========================================================================= */
-/*                                                                           */
-/* Forms                                                                     */
-/*                                                                           */
-/* ========================================================================= */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Forms                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 // Input Sizes
 
@@ -1950,11 +1956,11 @@
 
 
 
-/* ========================================================================= */
-/*                                                                           */
-/* Dropdowns                                                                 */
-/*                                                                           */
-/* ========================================================================= */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Dropdowns                                                                                            */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 @dropdownBackground:											@white;
 @dropdownBorderRadius:											5px;
@@ -1989,11 +1995,11 @@
 
 
 
-/* ========================================================================= */
-/*                                                                           */
-/* Labels & Badges                                                           */
-/*                                                                           */
-/* ========================================================================= */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Labels & Badges                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 @labelHorizontalPadding:										8px;
 @labelFontFamily:												@font-family-primary;
@@ -2026,11 +2032,11 @@
 
 
 
-/* ========================================================================= */
-/*                                                                           */
-/* Tooltips                                                                  */
-/*                                                                           */
-/* ========================================================================= */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Tooltips                                                                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 @tooltipColor:													#fff;
 @tooltipBackground:												@gray;
@@ -2040,11 +2046,11 @@
 
 
 
-/* ========================================================================= */
-/*                                                                           */
-/* Pagination                                                                */
-/*                                                                           */
-/* ========================================================================= */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Pagination                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 @paginationBorderRadius:										4px;
 

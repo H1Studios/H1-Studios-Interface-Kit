@@ -38,7 +38,7 @@
 
 	<div class="header-content container container-pod">
 		
-		<h1 class="header-title centered {% if page.subtitle != '' %}short{% else %}flush{% endif %}">
+		<h1 class="header-title centered {% if page.subtitle != '' %}short{% else %}flush-bottom{% endif %}">
 
 			{{ page.title|raw }}
 
@@ -46,7 +46,7 @@
 
 		{% if page.subtitle != '' %}
 				
-			<p class="header-subtitle lead centered flush">
+			<p class="header-subtitle lead centered flush-bottom">
 
 				{{ page.subtitle|raw }}
 

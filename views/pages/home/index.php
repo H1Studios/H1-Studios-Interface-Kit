@@ -14,7 +14,7 @@
 			
 			<h2>Colors</h2>
 			
-			<table class="table table-bordered flush">
+			<table class="table table-bordered flush-bottom">
 				
 				<tr>
 					
@@ -70,7 +70,7 @@
 							
 						</div>
 						
-						<div class="colorscale gray flush">
+						<div class="colorscale gray flush-bottom">
 							
 							<div class="color base"></div>
 							
@@ -172,7 +172,7 @@
 							
 						</div>
 						
-						<div class="colorscale blue flush">
+						<div class="colorscale blue flush-bottom">
 							
 							<div class="color base"></div>
 							
@@ -274,7 +274,7 @@
 							
 						</div>
 						
-						<div class="colorscale green flush">
+						<div class="colorscale green flush-bottom">
 							
 							<div class="color base"></div>
 							
@@ -376,7 +376,7 @@
 							
 						</div>
 						
-						<div class="colorscale orange flush">
+						<div class="colorscale orange flush-bottom">
 							
 							<div class="color base"></div>
 							
@@ -478,7 +478,7 @@
 							
 						</div>
 						
-						<div class="colorscale yellow flush">
+						<div class="colorscale yellow flush-bottom">
 							
 							<div class="color base"></div>
 							
@@ -580,7 +580,7 @@
 							
 						</div>
 						
-						<div class="colorscale red flush">
+						<div class="colorscale red flush-bottom">
 							
 							<div class="color base"></div>
 							
@@ -658,7 +658,7 @@
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
 				<h1>h1. Heading 1</h1>
 				
@@ -670,7 +670,7 @@
 				
 				<h5>h5. Heading 5</h5>
 				
-				<h6 class="flush">h6. Heading 6</h6>
+				<h6 class="flush-bottom">h6. Heading 6</h6>
 				
 			</div>
 			
@@ -692,7 +692,7 @@
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
 				<p>
 					
@@ -706,7 +706,7 @@
 					
 				</p>
 				
-				<p class="flush">
+				<p class="flush-bottom">
 					
 					Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 					
@@ -730,9 +730,9 @@
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
-				<p class="lead flush">
+				<p class="lead flush-bottom">
 					
 					Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
 					
@@ -740,7 +740,7 @@
 				
 			</div>
 			
-<pre class="prettyprint flush">
+<pre class="prettyprint flush-bottom">
 &lt;p class="lead"&gt;...&lt;/p&gt;
 </pre>
 			
@@ -768,9 +768,9 @@
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
-				<ul class="flush">
+				<ul class="flush-bottom">
 					
 					<li>
 						
@@ -851,9 +851,9 @@
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
-				<ol class="flush">
+				<ol class="flush-bottom">
 					
 					<li>
 						
@@ -934,9 +934,9 @@
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
-				<ul class="flush unstyled">
+				<ul class="flush-bottom unstyled">
 					
 					<li>
 						
@@ -999,11 +999,98 @@
 				
 			</div>
 			
-<pre class="prettyprint linenums flush">
+<pre class="prettyprint linenums">
 &lt;ol&gt;
   &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;
 </pre>
+			
+			<h4>
+				
+				Description
+				
+			</h4>
+			
+			<p class="tall">
+				
+				A list of terms with their associated descriptions.
+				
+			</p>
+			
+			<div class="code-example flush-bottom">
+				
+				<dl class="flush-bottom">
+					
+					<dt>Description lists</dt>
+					
+					<dd>A description list is perfect for defining terms.</dd>
+					
+					<dt>Euismod</dt>
+					
+					<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+					
+					<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+					
+					<dt>Malesuada porta</dt>
+					
+					<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+					
+				</dl>
+				
+			</div>
+			
+<pre class="prettyprint linenums">
+&lt;dl&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+			<h5>
+				
+				Horizontal Description
+				
+			</h5>
+			
+			<p class="tall">
+				
+				Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side.
+				
+			</p>
+			
+			<div class="code-example flush-bottom">
+				
+				<dl class="dl-horizontal flush-bottom">
+					
+					<dt>Description lists</dt>
+					
+					<dd>A description list is perfect for defining terms.</dd>
+					
+					<dt>Euismod</dt>
+					
+					<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+					
+					<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+					
+					<dt>Malesuada porta</dt>
+					
+					<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+					
+					<dt>Felis euismod semper eget lacinia</dt>
+					
+					<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+					
+				</dl>
+				
+			</div>
+			
+<pre class="prettyprint linenums flush-bottom">
+&lt;dl class="dl-horizontal"&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
 			
 			<hr>
 			
@@ -1019,11 +1106,11 @@
 			
 			<p class="tall">
 				
-				Alternatively, you may apply classes to individual typographic tags to adjust the amount of relative margin beneath each element.  This is useful when creating vertical flow.  The following classes are available for all headings <code>&lt;h2&gt;</code> through <code>&lt;h6&gt;</code> and paragraphs <code>&lt;p&gt;</code> tags.
+				Alternatively, you may apply classes to individual typographic tags to adjust the amount of relative margin beneath each element.  This is useful when creating vertical flow.  The following classes are available for all headings <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> and paragraphs <code>&lt;p&gt;</code> tags.
 				
 			</p>
 			
-			<table class="table table-bordered table-striped flush">
+			<table class="table table-bordered table-striped flush-bottom">
 				
 				<colgroup>
 					
@@ -1081,7 +1168,23 @@
 						
 						<td>
 							
-							<code>.flush</code>
+							<code>.flush-top</code>
+							
+						</td>
+						
+						<td>
+							
+							Completely remove the vertical margin above the typographic element.
+							
+						</td>
+						
+					</tr>
+					
+					<tr>
+						
+						<td>
+							
+							<code>.flush-bottom</code>
 							
 						</td>
 						
@@ -1125,13 +1228,13 @@
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
 				For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 				
 			</div>
 			
-<pre class="prettyprint linenums flush">
+<pre class="prettyprint linenums flush-bottom">
 For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inline.				
 </pre>
 			
@@ -1153,9 +1256,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
-				<pre class="flush">&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+				<pre class="flush-bottom">&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
 				
 			</div>
 			
@@ -1170,7 +1273,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<p class="flush">
+			<p class="flush-bottom">
 				
 				You may optionally add the <code>.pre-scrollable</code> class which will set a max-height of 350px and provide a y-axis scrollbar.
 				
@@ -1204,9 +1307,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
-				<table class="table flush">
+				<table class="table flush-bottom">
 					
 					<thead>
 						
@@ -1256,7 +1359,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</div>
 			
-<pre class="prettyprint linenums flush">
+<pre class="prettyprint linenums flush-bottom">
 &lt;table class="table"&gt;
   …
 &lt;/table&gt;
@@ -1292,9 +1395,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
-				<table class="table table-striped flush">
+				<table class="table table-striped flush-bottom">
 					
 					<thead>
 						
@@ -1362,9 +1465,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
-				<table class="table table-bordered flush">
+				<table class="table table-bordered flush-bottom">
 					
 					<thead>
 						
@@ -1439,9 +1542,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
-				<table class="table table-hover flush">
+				<table class="table table-hover flush-bottom">
 					
 					<thead>
 						
@@ -1508,9 +1611,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
-				<table class="table table-condensed flush">
+				<table class="table table-condensed flush-bottom">
 					
 					<thead>
 						
@@ -1558,7 +1661,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</div>
 			
-<pre class="prettyprint linenums flush">
+<pre class="prettyprint linenums flush-bottom">
 &lt;table class="table table-condensed"&gt;
   …
 &lt;/table&gt;
@@ -1666,9 +1769,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</table>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
-				<table class="table flush">
+				<table class="table flush-bottom">
 					
 					<thead>
 						
@@ -1718,7 +1821,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</div>
 			
-<pre class="prettyprint linenums flush">
+<pre class="prettyprint linenums flush-bottom">
 ...
   &lt;tr class="success"&gt;
     &lt;td&gt;1&lt;/td&gt;
@@ -1896,7 +1999,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</table>
 			
-<pre class="prettyprint linenums flush">
+<pre class="prettyprint linenums flush-bottom">
 &lt;table&gt;
   &lt;caption&gt;...&lt;/caption&gt;
   &lt;thead&gt;
@@ -1942,7 +2045,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
 				<fieldset>
 					
@@ -1966,7 +2069,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</form>
 			
-<pre class="prettyprint linenums flush">
+<pre class="prettyprint linenums flush-bottom">
 &lt;form&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Legend&lt;/legend&gt;
@@ -2019,9 +2122,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example form-inline flush">
+			<form class="code-example form-inline flush-bottom">
 				
-				<input type="text" placeholder="Text input" class="flush">
+				<input type="text" placeholder="Text input" class="flush-bottom">
 				
 			</form>
 			
@@ -2043,9 +2146,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example form-inline flush">
+			<form class="code-example form-inline flush-bottom">
 				
-				<textarea rows="3" class="flush"></textarea>
+				<textarea rows="3" class="flush-bottom"></textarea>
 				
 			</form>
 			
@@ -2073,7 +2176,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</h5>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
 				<label class="checkbox">
 					
@@ -2083,7 +2186,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 				</label>
 				
-				<label class="radio flush">
+				<label class="radio flush-bottom">
 					
 					<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
 					
@@ -2091,7 +2194,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 				</label>
 				
-				<label class="radio flush">
+				<label class="radio flush-bottom">
 					
 					<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
 					
@@ -2128,7 +2231,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
 				<label class="checkbox inline">
 					
@@ -2176,9 +2279,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
-				<div class="select-wrapper flush">
+				<div class="select-wrapper flush-bottom">
 					
 					<select>
 						
@@ -2194,7 +2297,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</form>
 			
-<pre class="prettyprint linenums flush">
+<pre class="prettyprint linenums flush-bottom">
 &lt;div class="select-wrapper"&gt;
   &lt;select&gt;
     &lt;option&gt;1&lt;/option&gt;
@@ -2250,7 +2353,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
 				<div class="input-group">
 					
@@ -2260,7 +2363,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 				</div>
 	            
-				<div class="input-group flush">
+				<div class="input-group flush-bottom">
 					
 					<input type="text" style="padding-right: 55px;">
 					
@@ -2293,9 +2396,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
-				<div class="input-group flush">
+				<div class="input-group flush-bottom">
 					
 					<span class="add-on add-on-prepend">$</span>
 					
@@ -2327,9 +2430,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
-				<div class="input-group flush">
+				<div class="input-group flush-bottom">
 					
 					<input type="text">
 					
@@ -2346,7 +2449,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 &lt;/div&gt;
 </pre>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
 				<div class="input-group">
 					
@@ -2362,7 +2465,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 				</div>
 				
-				<div class="input-group flush">
+				<div class="input-group flush-bottom">
 					
 					<input type="text">
 					
@@ -2401,9 +2504,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</h5>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
-				<div class="input-group flush">
+				<div class="input-group flush-bottom">
 					
 					<div class="add-on-group add-on-prepend">
 					
@@ -2448,9 +2551,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 &lt;/div&gt;
 </pre>
 	
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
-				<div class="input-group flush">
+				<div class="input-group flush-bottom">
 					
 					<input type="text">
 					
@@ -2495,9 +2598,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 &lt;/div&gt;
 </pre>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
-				<div class="input-group flush">
+				<div class="input-group flush-bottom">
 					
 					<div class="add-on-group add-on-prepend">
 					
@@ -2579,7 +2682,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</h5>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
 				<div class="input-group">
 					
@@ -2613,7 +2716,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 				</div>
 				
-				<div class="input-group flush">
+				<div class="input-group flush-bottom">
 					
 					<input type="text">
 					
@@ -2679,13 +2782,13 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</h5>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
 				<div class="controls">
 					
 					<input class="" type="text" placeholder="Normal input">
 					
-					<input class="input-large flush" type="text" placeholder="Input with .input-large class">
+					<input class="input-large flush-bottom" type="text" placeholder="Input with .input-large class">
 					
 				</div>
 				
@@ -2708,7 +2811,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
 				<div class="controls">
 					
@@ -2785,7 +2888,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
 				<div class="controls">
 					
@@ -2848,9 +2951,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
-				<span class="uneditable-input flush">Some value here</span>
+				<span class="uneditable-input flush-bottom">Some value here</span>
 				
 			</form>
 			
@@ -2872,9 +2975,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 					
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
-				<div class="form-actions flush">
+				<div class="form-actions flush-bottom">
 					
 					<button type="submit" class="button button-primary">Save changes</button>
 					
@@ -2905,15 +3008,15 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
 				<input type="text">
 				
-				<span class="help-block flush">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+				<span class="help-block flush-bottom">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
 				
 			</form>
 			
-<pre class="prettyprint linenums flush">
+<pre class="prettyprint linenums flush-bottom">
 &lt;input type="text"&gt;
 &lt;span class="help-block"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
 </pre>
@@ -2950,9 +3053,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example form-inline flush">
+			<form class="code-example form-inline flush-bottom">
 				
-				<input type="text" class="flush focused" value="This is focused...">
+				<input type="text" class="flush-bottom focused" value="This is focused...">
 				
 			</form>
 			
@@ -2974,9 +3077,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example form-inline flush">
+			<form class="code-example form-inline flush-bottom">
 				
-				<input type="email" class="flush" placeholder="test@example.com" required>
+				<input type="email" class="flush-bottom" placeholder="test@example.com" required>
 				
 			</form>
 			
@@ -2998,9 +3101,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example form-inline flush">
+			<form class="code-example form-inline flush-bottom">
 				
-				<input type="text" class="flush" placeholder="Disabled input" disabled>
+				<input type="text" class="flush-bottom" placeholder="Disabled input" disabled>
 				
 			</form>
 			
@@ -3022,7 +3125,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
 				<div class="control-group success">
 					
@@ -3064,7 +3167,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 						<input type="text">
 						
-						<span class="help-block flush">Please correct the error</span>
+						<span class="help-block flush-bottom">Please correct the error</span>
 						
 					</div>
 					
@@ -3072,7 +3175,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</form>
 			
-<pre class="prettyprint linenums flush">
+<pre class="prettyprint linenums flush-bottom">
 &lt;div class="control-group success"&gt;
   &lt;label class="control-label"&gt;Input with success&lt;/label&gt;
   &lt;div class="controls"&gt;
@@ -3223,7 +3326,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
 				<p>
 					
@@ -3246,7 +3349,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 				</p>
 				
-				<p class="flush">
+				<p class="flush-bottom">
 					<button type="button" class="button button-mini button-primary">Mini button</button>
 					<button type="button" class="button button-mini">Mini button</button>
 				</p>
@@ -3278,7 +3381,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
 				<div class="well" style="max-width: 400px; margin: 0 auto 10px;">
 					
@@ -3324,7 +3427,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 							
 				<a href="#" class="button button-large button-primary disabled">Primary link</a>
 				<a href="#" class="button button-large disabled">Link</a>
@@ -3357,7 +3460,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<div class="code-example flush">
+			<div class="code-example flush-bottom">
 				
 				<button type="button" class="button button-large button-primary disabled" disabled="disabled">Primary button</button>
 				<button type="button" class="button button-large" disabled>Button</button>
@@ -3385,7 +3488,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<form class="code-example flush">
+			<form class="code-example flush-bottom">
 				
 				<a class="button" href="">Link</a>
 				<button class="button" type="submit">Button</button>
@@ -3401,7 +3504,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 &lt;input class="button" type="submit" value="Submit"&gt;
 </pre>
 			
-			<p class="flush">
+			<p class="flush-bottom">
 				
 				As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type="submit"&gt;</code> for your button.
 				
@@ -3429,7 +3532,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<div class="code-example code-example-images flush">
+			<div class="code-example code-example-images flush-bottom">
 				
 				<img data-src="holder.js/140x140" class="img-rounded">
 				<img data-src="holder.js/140x140" class="img-circle">
@@ -3443,7 +3546,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 &lt;img src="..." class="img-polaroid"&gt;
 </pre>
 			
-			<p class="flush">
+			<p class="flush-bottom">
 				
 				<span class="label label-info">Heads up!</span> <code>.img-rounded</code> and <code>.img-circle</code> do not work in IE7-8 due to lack of <code>border-radius</code> support.
 				
@@ -3929,7 +4032,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				
 			</p>
 			
-			<table class="table table-bordered flush">
+			<table class="table table-bordered flush-bottom">
 				
 				<thead>
 					

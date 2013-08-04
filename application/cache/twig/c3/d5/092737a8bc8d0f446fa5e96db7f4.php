@@ -70,7 +70,7 @@ class __TwigTemplate_c3d5092737a8bc8d0f446fa5e96db7f4 extends Twig_Template
             if (($this->getAttribute($_page_, "subtitle") != "")) {
                 echo "short";
             } else {
-                echo "flush";
+                echo "flush-bottom";
             }
             echo "\">
 
@@ -88,7 +88,7 @@ class __TwigTemplate_c3d5092737a8bc8d0f446fa5e96db7f4 extends Twig_Template
             if (($this->getAttribute($_page_, "subtitle") != "")) {
                 // line 48
                 echo "\t\t\t\t
-\t\t\t<p class=\"header-subtitle lead centered flush\">
+\t\t\t<p class=\"header-subtitle lead centered flush-bottom\">
 
 \t\t\t\t";
                 // line 51

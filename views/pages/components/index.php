@@ -32,7 +32,7 @@
 			
 		</p>
 		
-		<div class="code-example flush">
+		<div class="code-example flush-bottom">
 			
 			<div class="dropdown anchor">
 				
@@ -139,7 +139,7 @@
 			
 		</p>
 		
-		<div class="code-example flush">
+		<div class="code-example flush-bottom">
 			
 			<div class="dropdown anchor">
 				
@@ -177,7 +177,7 @@
 			
 		</p>
 		
-		<div class="code-example code-example-submenus flush">
+		<div class="code-example code-example-submenus flush-bottom">
 			
 			<div class="pull-left">
 				
@@ -283,7 +283,7 @@
 			
 		</div>
 		
-<pre class="prettyprint linenums flush">
+<pre class="prettyprint linenums flush-bottom">
 &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"&gt;
   ...
   &lt;li class="dropdown-submenu"&gt;
@@ -321,7 +321,7 @@
 			
 		</p>
 		
-		<div class="code-example flush">
+		<div class="code-example flush-bottom">
 			
 			<div class="btn-group">
 				
@@ -353,7 +353,7 @@
 			
 		</p>
 		
-		<div class="code-example flush">
+		<div class="code-example flush-bottom">
 			
 			<div class="btn-toolbar">
 				
@@ -404,7 +404,7 @@
 			
 		</p>
 		
-		<div class="code-example flush">
+		<div class="code-example flush-bottom">
 			
 			<div class="btn-group btn-group-vertical">
 				
@@ -443,7 +443,7 @@
 			
 		</h4>
 		
-		<p class="flush">
+		<p class="flush-bottom">
 			
 			<span class="label label-info">Heads up!</span> Buttons with dropdowns must be individually wrapped in their own <code>.btn-group</code> within a <code>.btn-toolbar</code> for proper rendering.
 			
@@ -479,7 +479,7 @@
 			
 		</p>
 		
-		<div class="code-example flush">
+		<div class="code-example flush-bottom">
 			
 			<div class="btn-toolbar" style="margin: 0;">
 				
@@ -733,7 +733,7 @@
 			
 		</p>
 		
-		<div class="code-example flush">
+		<div class="code-example flush-bottom">
 			
 			<div class="btn-toolbar" style="margin: 0;">
 				
@@ -891,7 +891,7 @@
 			
 		</p>
 		
-		<div class="code-example flush">
+		<div class="code-example flush-bottom">
 			
 			<div class="btn-toolbar">
 				
@@ -994,7 +994,7 @@
 			
 		</p>
 		
-		<div class="code-example flush">
+		<div class="code-example flush-bottom">
 			
 			<div class="btn-toolbar" style="margin: 0;">
 				
@@ -1038,7 +1038,7 @@
 			
 		</div>
 		
-<pre class="prettyprint linenums flush">
+<pre class="prettyprint linenums flush-bottom">
 &lt;div class="btn-group dropup"&gt;
   &lt;button class="btn"&gt;Dropup&lt;/button&gt;
   &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
@@ -1380,7 +1380,7 @@
 			
 		</h3>
 		
-		<p class="flush">
+		<p class="flush-bottom">
 			
 			For easy implementation, labels and badges will simply collapse (via CSS's <code>:empty</code> selector) when no content exists within.
 			

@@ -1,16 +1,16 @@
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/*                                                                           */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
 /* /core/code.less                                                           */
-/*                                                                           */
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
 
-/* ========================================================================= */
-/*                                                                           */
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Syntax Highlighting                                                       */
-/*                                                                           */
-/* ========================================================================= */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 .com {
 	
@@ -69,23 +69,23 @@
 
 
 
-/* ========================================================================= */
-/*                                                                           */
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Pretty Print                                                              */
-/*                                                                           */
-/* ========================================================================= */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 code {
 	
-	color: @codePreTextColor;
-	font-family: @codeTextFontFamily;
-	font-size: @codeTextFontSize;
-	font-weight: @codeTextFontWeight;
-	line-height: @codeTextLineHeight;
-	padding: 0px @codePaddingHorizontal 0px @codePaddingHorizontal;
-	background-color: @codeBackgroundColor;
-	.box-shadow(@codeShadow);
-	.border-radius(@codeBorderRadius);
+	color: @code-pre-text-color;
+	font-family: @code-text-font-family;
+	font-size: @code-text-font-size;
+	font-weight: @code-text-font-weight;
+	line-height: @code-text-line-height;
+	padding: 0px @code-padding-horizontal 0px @code-padding-horizontal;
+	background-color: @code-background-color;
+	.box-shadow(@code-shadow);
+	.border-radius(@code-border-radius);
 	display: inline-block;
 	white-space: nowrap;
 	
@@ -93,14 +93,14 @@ code {
 
 pre {
 	
-	color: @codeTextColor;
-	font-family: @codeTextFontFamily;
-	font-size: @codeTextFontSize;
-	font-weight: @codeTextFontWeight;
-	line-height: @codeTextLineHeight;
-	background-color: @codeBackgroundColor;
-	.box-shadow(@codeShadow);
-	.border-radius(@codeBorderRadius);
+	color: @code-text-color;
+	font-family: @code-text-font-family;
+	font-size: @code-text-font-size;
+	font-weight: @code-text-font-weight;
+	line-height: @code-text-line-height;
+	background-color: @code-background-color;
+	.box-shadow(@code-shadow);
+	.border-radius(@code-border-radius);
 	display: block;
 	margin: 0px 0px @primary-margin 0px;
 	padding: @primary-margin / 2;
@@ -118,8 +118,8 @@ pre {
 		display: block;
 		margin: 0px 0px @primary-margin 0px;
 		padding: @primary-margin / 2;
-		font-size: @codeTextFontSize;
-		line-height: @codeTextLineHeight;
+		font-size: @code-text-font-size;
+		line-height: @code-text-line-height;
 		word-break: break-all;
 		word-wrap: break-word;
 		white-space: pre;
@@ -161,14 +161,14 @@ pre {
 			&:before {
 				
 				content: '';
-				background: @codeLinenumsBackgroundColor;
+				background: @code-linenums-background-color;
 				position: absolute;
 				top: 0px;
 				left: 0px;
 				width: @primary-margin;
 				height: 100%;
-				.border-radius(0px 0px 0px @codeBorderRadius);
-				border-right: 1px solid @codeLinenumsBorderColor;
+				.border-radius(0px 0px 0px @code-border-radius);
+				border-right: 1px solid @code-linenums-border-color;
 				
 			}
 			
@@ -184,9 +184,9 @@ pre {
 					li {
 						
 						padding-left: (@primary-margin / 2);
-						font-size: @codeTextFontSize;
-						font-weight: @codeTextFontWeight;
-						line-height: @codeTextLineHeight;
+						font-size: @code-text-font-size;
+						font-weight: @code-text-font-weight;
+						line-height: @code-text-line-height;
 						margin: 0px;
 						
 					}
@@ -210,11 +210,11 @@ pre {
 
 
 
-/* ========================================================================= */
-/*                                                                           */
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Code examples                                                             */
-/*                                                                           */
-/* ========================================================================= */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 // Base class
 
@@ -223,10 +223,10 @@ form.code-example {
 	
 	position: relative;
 	margin: 0px 0px @primary-margin 0px;
-	padding: (((2 * (@primary-margin / 6)) + @codeTextLineHeight) + (@primary-margin / 2)) (@primary-margin / 2) (@primary-margin / 2) (@primary-margin / 2);
+	padding: (((2 * (@primary-margin / 6)) + @code-text-line-height) + (@primary-margin / 2)) (@primary-margin / 2) (@primary-margin / 2) (@primary-margin / 2);
 	*padding-top: @primary-margin;
 	background-color: @white;
-	.box-shadow(@codeShadow);
+	.box-shadow(@code-shadow);
 	.border-radius(4px);
 	
 	&:after {
@@ -237,13 +237,13 @@ form.code-example {
 		top: -1px;
 		left: -1px;
 		padding: (@primary-margin / 6) (@primary-margin / 4) (@primary-margin / 6) (@primary-margin / 4);
-		font-size: @codeTextFontSize;
+		font-size: @code-text-font-size;
 		font-weight: bold;
-		background-color: @codeBackgroundColor;
+		background-color: @code-background-color;
 		border: 1px solid @border-color;
-		color: @codeTextColor;
+		color: @code-text-color;
 		.border-radius(4px 0 4px 0);
-		line-height: @codeTextLineHeight !important;
+		line-height: @code-text-line-height !important;
 		
 	}
 	
@@ -301,25 +301,26 @@ form.code-example {
 
 
 
-/* ========================================================================= */
-/*                                                                           */
-/* Responsive changes to styling for widescreen (@viewport-widescreen) and above.     */
-/*                                                                           */
-/* ========================================================================= */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and   */
+/* above.                                                                    */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 @media (min-width: @viewport-widescreen) {
 	
 	code {
 		
-		font-size: @codeTextFontSize * @codeTextRatioWide;
-		line-height: @codeTextLineHeight * @codeTextRatioWide;
+		font-size: @code-text-font-size * @code-text-responsive-ratio-widescreen;
+		line-height: @code-text-line-height * @code-text-responsive-ratio-widescreen;
 		
 	}
 	
 	pre {
 		
-		font-size: @codeTextFontSize * @codeTextRatioWide;
-		line-height: @codeTextLineHeight * @codeTextRatioWide;
+		font-size: @code-text-font-size * @code-text-responsive-ratio-widescreen;
+		line-height: @code-text-line-height * @code-text-responsive-ratio-widescreen;
 		padding: @primary-margin-widescreen / 2;
 		
 		&.prettyprint {
@@ -340,8 +341,8 @@ form.code-example {
 						
 						li {
 							
-							font-size: @codeTextFontSize * @codeTextRatioWide;
-							line-height: @codeTextLineHeight * @codeTextRatioWide;
+							font-size: @code-text-font-size * @code-text-responsive-ratio-widescreen;
+							line-height: @code-text-line-height * @code-text-responsive-ratio-widescreen;
 							padding-left: (@primary-margin-widescreen / 2);
 							
 						}
@@ -356,11 +357,11 @@ form.code-example {
 						
 	}
 	
-	/* ========================================================================= */
-	/*                                                                           */
+	/* ==================================================================================================== */
+	/*                                                                                                      */
 	/* Code examples                                                             */
-	/*                                                                           */
-	/* ========================================================================= */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
 	
 	// Base class
 	
@@ -368,13 +369,13 @@ form.code-example {
 	form.code-example {
 		
 		margin: 0px 0px @primary-margin-widescreen 0px;
-		padding: (((2 * (@primary-margin-widescreen / 6)) + (@codeTextLineHeight * @codeTextRatioWide)) + (@primary-margin-widescreen / 2)) (@primary-margin-widescreen / 2) (@primary-margin-widescreen / 2) (@primary-margin-widescreen / 2);
+		padding: (((2 * (@primary-margin-widescreen / 6)) + (@code-text-line-height * @code-text-responsive-ratio-widescreen)) + (@primary-margin-widescreen / 2)) (@primary-margin-widescreen / 2) (@primary-margin-widescreen / 2) (@primary-margin-widescreen / 2);
 		*padding-top: @primary-margin-widescreen;
 		
 		&:after {
 			
-			font-size: @codeTextFontSize * @codeTextRatioWide;
-			line-height: @codeTextLineHeight * @codeTextRatioWide;
+			font-size: @code-text-font-size * @code-text-responsive-ratio-widescreen;
+			line-height: @code-text-line-height * @code-text-responsive-ratio-widescreen;
 			padding: (@primary-margin-widescreen / 6) (@primary-margin-widescreen / 4) (@primary-margin-widescreen / 6) (@primary-margin-widescreen / 4);
 			
 		}
@@ -385,26 +386,26 @@ form.code-example {
 
 
 
-/* ========================================================================= */
-/*                                                                           */
-/* Responsive changes to styling for portrait tablet (@viewport-tablet) to default    */
-/* desktop (@viewport-standard).                                                       */
-/*                                                                           */
-/* ========================================================================= */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive changes to styling for portrait tablet (@viewport-tablet)      */
+/* to default desktop (@viewport-standard).                                  */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 @media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
 	
 	code {
 		
-		font-size: @codeTextFontSize * @codeTextRatioTablet;
-		line-height: @codeTextLineHeight * @codeTextRatioTablet;
+		font-size: @code-text-font-size * @code-text-responsive-ratio-tablet;
+		line-height: @code-text-line-height * @code-text-responsive-ratio-tablet;
 		
 	}
 	
 	pre {
 		
-		font-size: @codeTextFontSize * @codeTextRatioTablet;
-		line-height: @codeTextLineHeight * @codeTextRatioTablet;
+		font-size: @code-text-font-size * @code-text-responsive-ratio-tablet;
+		line-height: @code-text-line-height * @code-text-responsive-ratio-tablet;
 		padding: @primary-margin-tablet / 2;
 		
 		&.prettyprint {
@@ -425,8 +426,8 @@ form.code-example {
 						
 						li {
 							
-							font-size: @codeTextFontSize * @codeTextRatioTablet;
-							line-height: @codeTextLineHeight * @codeTextRatioTablet;
+							font-size: @code-text-font-size * @code-text-responsive-ratio-tablet;
+							line-height: @code-text-line-height * @code-text-responsive-ratio-tablet;
 							padding-left: (@primary-margin-tablet / 2);
 							
 						}
@@ -441,11 +442,11 @@ form.code-example {
 						
 	}
 	
-	/* ========================================================================= */
-	/*                                                                           */
+	/* ==================================================================================================== */
+	/*                                                                                                      */
 	/* Code examples                                                             */
-	/*                                                                           */
-	/* ========================================================================= */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
 	
 	// Base class
 	
@@ -453,13 +454,13 @@ form.code-example {
 	form.code-example {
 		
 		margin: 0px 0px @primary-margin-tablet 0px;
-		padding: (((2 * (@primary-margin-tablet / 6)) + (@codeTextLineHeight * @codeTextRatioTablet)) + (@primary-margin-tablet / 2)) (@primary-margin-tablet / 2) (@primary-margin-tablet / 2) (@primary-margin-tablet / 2);
+		padding: (((2 * (@primary-margin-tablet / 6)) + (@code-text-line-height * @code-text-responsive-ratio-tablet)) + (@primary-margin-tablet / 2)) (@primary-margin-tablet / 2) (@primary-margin-tablet / 2) (@primary-margin-tablet / 2);
 		*padding-top: @primary-margin-tablet;
 		
 		&:after {
 			
-			font-size: @codeTextFontSize * @codeTextRatioTablet;
-			line-height: @codeTextLineHeight * @codeTextRatioTablet;
+			font-size: @code-text-font-size * @code-text-responsive-ratio-tablet;
+			line-height: @code-text-line-height * @code-text-responsive-ratio-tablet;
 			padding: (@primary-margin-tablet / 6) (@primary-margin-tablet / 4) (@primary-margin-tablet / 6) (@primary-margin-tablet / 4);
 			
 		}
@@ -470,25 +471,25 @@ form.code-example {
 
 
 
-/* ========================================================================= */
-/*                                                                           */
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Responsive changes to styling up to portrait tablets (@viewport-tablet)   */
-/*                                                                           */
-/* ========================================================================= */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 @media (max-width: @viewport-mobile-landscape-max) {
 	
 	code {
 		
-		font-size: @codeTextFontSize * @codeTextRatioMobile;
-		line-height: @codeTextLineHeight * @codeTextRatioMobile;
+		font-size: @code-text-font-size * @code-text-responsive-ratio-mobile;
+		line-height: @code-text-line-height * @code-text-responsive-ratio-mobile;
 		
 	}
 	
 	pre {
 		
-		font-size: @codeTextFontSize * @codeTextRatioMobile;
-		line-height: @codeTextLineHeight * @codeTextRatioMobile;
+		font-size: @code-text-font-size * @code-text-responsive-ratio-mobile;
+		line-height: @code-text-line-height * @code-text-responsive-ratio-mobile;
 		padding: @primary-margin-mobile / 2;
 		
 		&.prettyprint {
@@ -509,8 +510,8 @@ form.code-example {
 						
 						li {
 							
-							font-size: @codeTextFontSize * @codeTextRatioMobile;
-							line-height: @codeTextLineHeight * @codeTextRatioMobile;
+							font-size: @code-text-font-size * @code-text-responsive-ratio-mobile;
+							line-height: @code-text-line-height * @code-text-responsive-ratio-mobile;
 							padding-left: (@primary-margin-mobile / 2);
 							
 						}
@@ -525,11 +526,11 @@ form.code-example {
 						
 	}
 	
-	/* ========================================================================= */
-	/*                                                                           */
+	/* ==================================================================================================== */
+	/*                                                                                                      */
 	/* Code examples                                                             */
-	/*                                                                           */
-	/* ========================================================================= */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
 	
 	// Base class
 	
@@ -537,13 +538,13 @@ form.code-example {
 	form.code-example {
 		
 		margin: 0px 0px @primary-margin-mobile 0px;
-		padding: (((2 * (@primary-margin-mobile / 6)) + (@codeTextLineHeight * @codeTextRatioMobile)) + (@primary-margin-mobile / 2)) (@primary-margin-mobile / 2) (@primary-margin-mobile / 2) (@primary-margin-mobile / 2);
+		padding: (((2 * (@primary-margin-mobile / 6)) + (@code-text-line-height * @code-text-responsive-ratio-mobile)) + (@primary-margin-mobile / 2)) (@primary-margin-mobile / 2) (@primary-margin-mobile / 2) (@primary-margin-mobile / 2);
 		*padding-top: @primary-margin-mobile;
 		
 		&:after {
 			
-			font-size: @codeTextFontSize * @codeTextRatioMobile;
-			line-height: @codeTextLineHeight * @codeTextRatioMobile;
+			font-size: @code-text-font-size * @code-text-responsive-ratio-mobile;
+			line-height: @code-text-line-height * @code-text-responsive-ratio-mobile;
 			padding: (@primary-margin-mobile / 6) (@primary-margin-mobile / 4) (@primary-margin-mobile / 6) (@primary-margin-mobile / 4);
 			
 		}
@@ -554,12 +555,12 @@ form.code-example {
 
 
 
-/* ========================================================================= */
-/*                                                                           */
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Responsive changes to styling up to landscape phones                      */
 /* (@viewport-mobile-landscape)                                              */
-/*                                                                           */
-/* ========================================================================= */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 @media (max-width: @viewport-mobile-max) {
 	
@@ -567,11 +568,11 @@ form.code-example {
 
 
 
-/* ========================================================================= */
-/*                                                                           */
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Responsive changes to styling for Retina Displays                         */
-/*                                                                           */
-/* ========================================================================= */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 	

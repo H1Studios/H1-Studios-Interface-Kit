@@ -44,7 +44,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t
 \t\t\t<h2>Colors</h2>
 \t\t\t
-\t\t\t<table class=\"table table-bordered flush\">
+\t\t\t<table class=\"table table-bordered flush-bottom\">
 \t\t\t\t
 \t\t\t\t<tr>
 \t\t\t\t\t
@@ -100,7 +100,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale gray flush\">
+\t\t\t\t\t\t<div class=\"colorscale gray flush-bottom\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -202,7 +202,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale blue flush\">
+\t\t\t\t\t\t<div class=\"colorscale blue flush-bottom\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -304,7 +304,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale green flush\">
+\t\t\t\t\t\t<div class=\"colorscale green flush-bottom\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -406,7 +406,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale orange flush\">
+\t\t\t\t\t\t<div class=\"colorscale orange flush-bottom\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -508,7 +508,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale yellow flush\">
+\t\t\t\t\t\t<div class=\"colorscale yellow flush-bottom\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -610,7 +610,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"colorscale red flush\">
+\t\t\t\t\t\t<div class=\"colorscale red flush-bottom\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"color base\"></div>
 \t\t\t\t\t\t\t
@@ -688,7 +688,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<h1>h1. Heading 1</h1>
 \t\t\t\t
@@ -700,7 +700,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t
 \t\t\t\t<h5>h5. Heading 5</h5>
 \t\t\t\t
-\t\t\t\t<h6 class=\"flush\">h6. Heading 6</h6>
+\t\t\t\t<h6 class=\"flush-bottom\">h6. Heading 6</h6>
 \t\t\t\t
 \t\t\t</div>
 \t\t\t
@@ -722,7 +722,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<p>
 \t\t\t\t\t
@@ -736,7 +736,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t</p>
 \t\t\t\t
-\t\t\t\t<p class=\"flush\">
+\t\t\t\t<p class=\"flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\tMaecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 \t\t\t\t\t
@@ -760,9 +760,9 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<p class=\"lead flush\">
+\t\t\t\t<p class=\"lead flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\tVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
 \t\t\t\t\t
@@ -770,7 +770,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t
 \t\t\t</div>
 \t\t\t
-<pre class=\"prettyprint flush\">
+<pre class=\"prettyprint flush-bottom\">
 &lt;p class=\"lead\"&gt;...&lt;/p&gt;
 </pre>
 \t\t\t
@@ -798,9 +798,9 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<ul class=\"flush\">
+\t\t\t\t<ul class=\"flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<li>
 \t\t\t\t\t\t
@@ -881,9 +881,9 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<ol class=\"flush\">
+\t\t\t\t<ol class=\"flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<li>
 \t\t\t\t\t\t
@@ -964,9 +964,9 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<ul class=\"flush unstyled\">
+\t\t\t\t<ul class=\"flush-bottom unstyled\">
 \t\t\t\t\t
 \t\t\t\t\t<li>
 \t\t\t\t\t\t
@@ -1029,11 +1029,98 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t
 \t\t\t</div>
 \t\t\t
-<pre class=\"prettyprint linenums flush\">
+<pre class=\"prettyprint linenums\">
 &lt;ol&gt;
   &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;
 </pre>
+\t\t\t
+\t\t\t<h4>
+\t\t\t\t
+\t\t\t\tDescription
+\t\t\t\t
+\t\t\t</h4>
+\t\t\t
+\t\t\t<p class=\"tall\">
+\t\t\t\t
+\t\t\t\tA list of terms with their associated descriptions.
+\t\t\t\t
+\t\t\t</p>
+\t\t\t
+\t\t\t<div class=\"code-example flush-bottom\">
+\t\t\t\t
+\t\t\t\t<dl class=\"flush-bottom\">
+\t\t\t\t\t
+\t\t\t\t\t<dt>Description lists</dt>
+\t\t\t\t\t
+\t\t\t\t\t<dd>A description list is perfect for defining terms.</dd>
+\t\t\t\t\t
+\t\t\t\t\t<dt>Euismod</dt>
+\t\t\t\t\t
+\t\t\t\t\t<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+\t\t\t\t\t
+\t\t\t\t\t<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+\t\t\t\t\t
+\t\t\t\t\t<dt>Malesuada porta</dt>
+\t\t\t\t\t
+\t\t\t\t\t<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+\t\t\t\t\t
+\t\t\t\t</dl>
+\t\t\t\t
+\t\t\t</div>
+\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;dl&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+\t\t\t<h5>
+\t\t\t\t
+\t\t\t\tHorizontal Description
+\t\t\t\t
+\t\t\t</h5>
+\t\t\t
+\t\t\t<p class=\"tall\">
+\t\t\t\t
+\t\t\t\tMake terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side.
+\t\t\t\t
+\t\t\t</p>
+\t\t\t
+\t\t\t<div class=\"code-example flush-bottom\">
+\t\t\t\t
+\t\t\t\t<dl class=\"dl-horizontal flush-bottom\">
+\t\t\t\t\t
+\t\t\t\t\t<dt>Description lists</dt>
+\t\t\t\t\t
+\t\t\t\t\t<dd>A description list is perfect for defining terms.</dd>
+\t\t\t\t\t
+\t\t\t\t\t<dt>Euismod</dt>
+\t\t\t\t\t
+\t\t\t\t\t<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+\t\t\t\t\t
+\t\t\t\t\t<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+\t\t\t\t\t
+\t\t\t\t\t<dt>Malesuada porta</dt>
+\t\t\t\t\t
+\t\t\t\t\t<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+\t\t\t\t\t
+\t\t\t\t\t<dt>Felis euismod semper eget lacinia</dt>
+\t\t\t\t\t
+\t\t\t\t\t<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+\t\t\t\t\t
+\t\t\t\t</dl>
+\t\t\t\t
+\t\t\t</div>
+\t\t\t
+<pre class=\"prettyprint linenums flush-bottom\">
+&lt;dl class=\"dl-horizontal\"&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
 \t\t\t
 \t\t\t<hr>
 \t\t\t
@@ -1049,11 +1136,11 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t
 \t\t\t<p class=\"tall\">
 \t\t\t\t
-\t\t\t\tAlternatively, you may apply classes to individual typographic tags to adjust the amount of relative margin beneath each element.  This is useful when creating vertical flow.  The following classes are available for all headings <code>&lt;h2&gt;</code> through <code>&lt;h6&gt;</code> and paragraphs <code>&lt;p&gt;</code> tags.
+\t\t\t\tAlternatively, you may apply classes to individual typographic tags to adjust the amount of relative margin beneath each element.  This is useful when creating vertical flow.  The following classes are available for all headings <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> and paragraphs <code>&lt;p&gt;</code> tags.
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<table class=\"table table-bordered table-striped flush\">
+\t\t\t<table class=\"table table-bordered table-striped flush-bottom\">
 \t\t\t\t
 \t\t\t\t<colgroup>
 \t\t\t\t\t
@@ -1111,7 +1198,23 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t\t
 \t\t\t\t\t\t<td>
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<code>.flush</code>
+\t\t\t\t\t\t\t<code>.flush-top</code>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</td>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<td>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\tCompletely remove the vertical margin above the typographic element.
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</td>
+\t\t\t\t\t\t
+\t\t\t\t\t</tr>
+\t\t\t\t\t
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<td>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<code>.flush-bottom</code>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</td>
 \t\t\t\t\t\t
@@ -1155,13 +1258,13 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\tFor example, <code>&lt;section&gt;</code> should be wrapped as inline.
 \t\t\t\t
 \t\t\t</div>
 \t\t\t
-<pre class=\"prettyprint linenums flush\">
+<pre class=\"prettyprint linenums flush-bottom\">
 For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inline.\t\t\t\t
 </pre>
 \t\t\t
@@ -1183,9 +1286,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<pre class=\"flush\">&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+\t\t\t\t<pre class=\"flush-bottom\">&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
 \t\t\t\t
 \t\t\t</div>
 \t\t\t
@@ -1200,7 +1303,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<p class=\"flush\">
+\t\t\t<p class=\"flush-bottom\">
 \t\t\t\t
 \t\t\t\tYou may optionally add the <code>.pre-scrollable</code> class which will set a max-height of 350px and provide a y-axis scrollbar.
 \t\t\t\t
@@ -1234,9 +1337,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<table class=\"table flush\">
+\t\t\t\t<table class=\"table flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<thead>
 \t\t\t\t\t\t
@@ -1286,7 +1389,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</div>
 \t\t\t
-<pre class=\"prettyprint linenums flush\">
+<pre class=\"prettyprint linenums flush-bottom\">
 &lt;table class=\"table\"&gt;
   …
 &lt;/table&gt;
@@ -1322,9 +1425,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<table class=\"table table-striped flush\">
+\t\t\t\t<table class=\"table table-striped flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<thead>
 \t\t\t\t\t\t
@@ -1392,9 +1495,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<table class=\"table table-bordered flush\">
+\t\t\t\t<table class=\"table table-bordered flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<thead>
 \t\t\t\t\t\t
@@ -1469,9 +1572,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<table class=\"table table-hover flush\">
+\t\t\t\t<table class=\"table table-hover flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<thead>
 \t\t\t\t\t\t
@@ -1538,9 +1641,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<table class=\"table table-condensed flush\">
+\t\t\t\t<table class=\"table table-condensed flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<thead>
 \t\t\t\t\t\t
@@ -1588,7 +1691,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</div>
 \t\t\t
-<pre class=\"prettyprint linenums flush\">
+<pre class=\"prettyprint linenums flush-bottom\">
 &lt;table class=\"table table-condensed\"&gt;
   …
 &lt;/table&gt;
@@ -1696,9 +1799,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</table>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<table class=\"table flush\">
+\t\t\t\t<table class=\"table flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<thead>
 \t\t\t\t\t\t
@@ -1748,7 +1851,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</div>
 \t\t\t
-<pre class=\"prettyprint linenums flush\">
+<pre class=\"prettyprint linenums flush-bottom\">
 ...
   &lt;tr class=\"success\"&gt;
     &lt;td&gt;1&lt;/td&gt;
@@ -1926,7 +2029,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</table>
 \t\t\t
-<pre class=\"prettyprint linenums flush\">
+<pre class=\"prettyprint linenums flush-bottom\">
 &lt;table&gt;
   &lt;caption&gt;...&lt;/caption&gt;
   &lt;thead&gt;
@@ -1972,7 +2075,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<fieldset>
 \t\t\t\t\t
@@ -1996,7 +2099,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</form>
 \t\t\t
-<pre class=\"prettyprint linenums flush\">
+<pre class=\"prettyprint linenums flush-bottom\">
 &lt;form&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Legend&lt;/legend&gt;
@@ -2049,9 +2152,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example form-inline flush\">
+\t\t\t<form class=\"code-example form-inline flush-bottom\">
 \t\t\t\t
-\t\t\t\t<input type=\"text\" placeholder=\"Text input\" class=\"flush\">
+\t\t\t\t<input type=\"text\" placeholder=\"Text input\" class=\"flush-bottom\">
 \t\t\t\t
 \t\t\t</form>
 \t\t\t
@@ -2073,9 +2176,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example form-inline flush\">
+\t\t\t<form class=\"code-example form-inline flush-bottom\">
 \t\t\t\t
-\t\t\t\t<textarea rows=\"3\" class=\"flush\"></textarea>
+\t\t\t\t<textarea rows=\"3\" class=\"flush-bottom\"></textarea>
 \t\t\t\t
 \t\t\t</form>
 \t\t\t
@@ -2103,7 +2206,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</h5>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<label class=\"checkbox\">
 \t\t\t\t\t
@@ -2113,7 +2216,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t</label>
 \t\t\t\t
-\t\t\t\t<label class=\"radio flush\">
+\t\t\t\t<label class=\"radio flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios1\" value=\"option1\" checked>
 \t\t\t\t\t
@@ -2121,7 +2224,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t</label>
 \t\t\t\t
-\t\t\t\t<label class=\"radio flush\">
+\t\t\t\t<label class=\"radio flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios2\" value=\"option2\">
 \t\t\t\t\t
@@ -2158,7 +2261,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<label class=\"checkbox inline\">
 \t\t\t\t\t
@@ -2206,9 +2309,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<div class=\"select-wrapper flush\">
+\t\t\t\t<div class=\"select-wrapper flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<select>
 \t\t\t\t\t\t
@@ -2224,7 +2327,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</form>
 \t\t\t
-<pre class=\"prettyprint linenums flush\">
+<pre class=\"prettyprint linenums flush-bottom\">
 &lt;div class=\"select-wrapper\"&gt;
   &lt;select&gt;
     &lt;option&gt;1&lt;/option&gt;
@@ -2280,7 +2383,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t
@@ -2290,7 +2393,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t</div>
 \t            
-\t\t\t\t<div class=\"input-group flush\">
+\t\t\t\t<div class=\"input-group flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<input type=\"text\" style=\"padding-right: 55px;\">
 \t\t\t\t\t
@@ -2323,9 +2426,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<div class=\"input-group flush\">
+\t\t\t\t<div class=\"input-group flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<span class=\"add-on add-on-prepend\">\$</span>
 \t\t\t\t\t
@@ -2357,9 +2460,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<div class=\"input-group flush\">
+\t\t\t\t<div class=\"input-group flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<input type=\"text\">
 \t\t\t\t\t
@@ -2376,7 +2479,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 &lt;/div&gt;
 </pre>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t
@@ -2392,7 +2495,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t</div>
 \t\t\t\t
-\t\t\t\t<div class=\"input-group flush\">
+\t\t\t\t<div class=\"input-group flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<input type=\"text\">
 \t\t\t\t\t
@@ -2431,9 +2534,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</h5>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<div class=\"input-group flush\">
+\t\t\t\t<div class=\"input-group flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<div class=\"add-on-group add-on-prepend\">
 \t\t\t\t\t
@@ -2478,9 +2581,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 &lt;/div&gt;
 </pre>
 \t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<div class=\"input-group flush\">
+\t\t\t\t<div class=\"input-group flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<input type=\"text\">
 \t\t\t\t\t
@@ -2525,9 +2628,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 &lt;/div&gt;
 </pre>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<div class=\"input-group flush\">
+\t\t\t\t<div class=\"input-group flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<div class=\"add-on-group add-on-prepend\">
 \t\t\t\t\t
@@ -2609,7 +2712,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</h5>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t
@@ -2643,7 +2746,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t</div>
 \t\t\t\t
-\t\t\t\t<div class=\"input-group flush\">
+\t\t\t\t<div class=\"input-group flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<input type=\"text\">
 \t\t\t\t\t
@@ -2709,13 +2812,13 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</h5>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<div class=\"controls\">
 \t\t\t\t\t
 \t\t\t\t\t<input class=\"\" type=\"text\" placeholder=\"Normal input\">
 \t\t\t\t\t
-\t\t\t\t\t<input class=\"input-large flush\" type=\"text\" placeholder=\"Input with .input-large class\">
+\t\t\t\t\t<input class=\"input-large flush-bottom\" type=\"text\" placeholder=\"Input with .input-large class\">
 \t\t\t\t\t
 \t\t\t\t</div>
 \t\t\t\t
@@ -2738,7 +2841,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<div class=\"controls\">
 \t\t\t\t\t
@@ -2815,7 +2918,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<div class=\"controls\">
 \t\t\t\t\t
@@ -2878,9 +2981,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<span class=\"uneditable-input flush\">Some value here</span>
+\t\t\t\t<span class=\"uneditable-input flush-bottom\">Some value here</span>
 \t\t\t\t
 \t\t\t</form>
 \t\t\t
@@ -2902,9 +3005,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<div class=\"form-actions flush\">
+\t\t\t\t<div class=\"form-actions flush-bottom\">
 \t\t\t\t\t
 \t\t\t\t\t<button type=\"submit\" class=\"button button-primary\">Save changes</button>
 \t\t\t\t\t
@@ -2935,15 +3038,15 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<input type=\"text\">
 \t\t\t\t
-\t\t\t\t<span class=\"help-block flush\">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+\t\t\t\t<span class=\"help-block flush-bottom\">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
 \t\t\t\t
 \t\t\t</form>
 \t\t\t
-<pre class=\"prettyprint linenums flush\">
+<pre class=\"prettyprint linenums flush-bottom\">
 &lt;input type=\"text\"&gt;
 &lt;span class=\"help-block\"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
 </pre>
@@ -2980,9 +3083,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example form-inline flush\">
+\t\t\t<form class=\"code-example form-inline flush-bottom\">
 \t\t\t\t
-\t\t\t\t<input type=\"text\" class=\"flush focused\" value=\"This is focused...\">
+\t\t\t\t<input type=\"text\" class=\"flush-bottom focused\" value=\"This is focused...\">
 \t\t\t\t
 \t\t\t</form>
 \t\t\t
@@ -3004,9 +3107,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example form-inline flush\">
+\t\t\t<form class=\"code-example form-inline flush-bottom\">
 \t\t\t\t
-\t\t\t\t<input type=\"email\" class=\"flush\" placeholder=\"test@example.com\" required>
+\t\t\t\t<input type=\"email\" class=\"flush-bottom\" placeholder=\"test@example.com\" required>
 \t\t\t\t
 \t\t\t</form>
 \t\t\t
@@ -3028,9 +3131,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example form-inline flush\">
+\t\t\t<form class=\"code-example form-inline flush-bottom\">
 \t\t\t\t
-\t\t\t\t<input type=\"text\" class=\"flush\" placeholder=\"Disabled input\" disabled>
+\t\t\t\t<input type=\"text\" class=\"flush-bottom\" placeholder=\"Disabled input\" disabled>
 \t\t\t\t
 \t\t\t</form>
 \t\t\t
@@ -3052,7 +3155,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<div class=\"control-group success\">
 \t\t\t\t\t
@@ -3094,7 +3197,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t\t<input type=\"text\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<span class=\"help-block flush\">Please correct the error</span>
+\t\t\t\t\t\t<span class=\"help-block flush-bottom\">Please correct the error</span>
 \t\t\t\t\t\t
 \t\t\t\t\t</div>
 \t\t\t\t\t
@@ -3102,7 +3205,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</form>
 \t\t\t
-<pre class=\"prettyprint linenums flush\">
+<pre class=\"prettyprint linenums flush-bottom\">
 &lt;div class=\"control-group success\"&gt;
   &lt;label class=\"control-label\"&gt;Input with success&lt;/label&gt;
   &lt;div class=\"controls\"&gt;
@@ -3253,7 +3356,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<p>
 \t\t\t\t\t
@@ -3276,7 +3379,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t</p>
 \t\t\t\t
-\t\t\t\t<p class=\"flush\">
+\t\t\t\t<p class=\"flush-bottom\">
 \t\t\t\t\t<button type=\"button\" class=\"button button-mini button-primary\">Mini button</button>
 \t\t\t\t\t<button type=\"button\" class=\"button button-mini\">Mini button</button>
 \t\t\t\t</p>
@@ -3308,7 +3411,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<div class=\"well\" style=\"max-width: 400px; margin: 0 auto 10px;\">
 \t\t\t\t\t
@@ -3354,7 +3457,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t\t\t\t
 \t\t\t\t<a href=\"#\" class=\"button button-large button-primary disabled\">Primary link</a>
 \t\t\t\t<a href=\"#\" class=\"button button-large disabled\">Link</a>
@@ -3387,7 +3490,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example flush\">
+\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<button type=\"button\" class=\"button button-large button-primary disabled\" disabled=\"disabled\">Primary button</button>
 \t\t\t\t<button type=\"button\" class=\"button button-large\" disabled>Button</button>
@@ -3415,7 +3518,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<form class=\"code-example flush\">
+\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t
 \t\t\t\t<a class=\"button\" href=\"\">Link</a>
 \t\t\t\t<button class=\"button\" type=\"submit\">Button</button>
@@ -3431,7 +3534,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 &lt;input class=\"button\" type=\"submit\" value=\"Submit\"&gt;
 </pre>
 \t\t\t
-\t\t\t<p class=\"flush\">
+\t\t\t<p class=\"flush-bottom\">
 \t\t\t\t
 \t\t\t\tAs a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type=\"submit\"&gt;</code> for your button.
 \t\t\t\t
@@ -3459,7 +3562,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<div class=\"code-example code-example-images flush\">
+\t\t\t<div class=\"code-example code-example-images flush-bottom\">
 \t\t\t\t
 \t\t\t\t<img data-src=\"holder.js/140x140\" class=\"img-rounded\">
 \t\t\t\t<img data-src=\"holder.js/140x140\" class=\"img-circle\">
@@ -3473,7 +3576,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 &lt;img src=\"...\" class=\"img-polaroid\"&gt;
 </pre>
 \t\t\t
-\t\t\t<p class=\"flush\">
+\t\t\t<p class=\"flush-bottom\">
 \t\t\t\t
 \t\t\t\t<span class=\"label label-info\">Heads up!</span> <code>.img-rounded</code> and <code>.img-circle</code> do not work in IE7-8 due to lack of <code>border-radius</code> support.
 \t\t\t\t
@@ -3959,7 +4062,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t
 \t\t\t</p>
 \t\t\t
-\t\t\t<table class=\"table table-bordered flush\">
+\t\t\t<table class=\"table table-bordered flush-bottom\">
 \t\t\t\t
 \t\t\t\t<thead>
 \t\t\t\t\t
