@@ -2403,6 +2403,375 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				<hr class="tall">
 				
 				<!-- ================================================== -->
+				<!-- ==================== BUTTONS ===================== -->
+				<!-- ================================================== -->
+				
+				<section id="#buttons">	
+					
+					<h2>
+						
+						Buttons
+						
+					</h2>
+					
+					<!-- ================================================== -->
+					<!-- ============== DEFAULT BUTTON STYLES ============= -->
+					<!-- ================================================== -->
+					
+					<h3>
+						
+						Button Styles
+						
+					</h3>
+					
+					<p>
+						
+						Button styles can be applied to anything with the <code>.button</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.
+						
+					</p>
+					
+					<table class="table table-bordered table-striped">
+						
+						<thead>
+							
+							<tr>
+								
+								<th>Button</th>
+								<th>class=""</th>
+								<th>Description</th>
+								
+							</tr>
+							
+						</thead>
+						
+						<tbody>
+							
+							<tr>
+								
+								<td><button type="button" class="button button-default">Default</button></td>
+								<td><code>button button-default</code></td>
+								<td>Standard gray button with gradient</td>
+								
+							</tr>
+							
+							<tr>
+								
+								<td><button type="button" class="button button-primary">Primary</button></td>
+								<td><code>button button-primary</code></td>
+								<td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+								
+							</tr>
+							
+							<tr>
+								
+								<td><button type="button" class="button button-success">Success</button></td>
+								<td><code>button button-success</code></td>
+								<td>Indicates a successful or positive action</td>
+								
+							</tr>
+							
+							<tr>
+								
+								<td><button type="button" class="button button-warning">Warning</button></td>
+								<td><code>button button-warning</code></td>
+								<td>Indicates caution should be taken with this action</td>
+								
+							</tr>
+							
+							<tr>
+								
+								<td><button type="button" class="button button-danger">Danger</button></td>
+								<td><code>button button-danger</code></td>
+								<td>Indicates a dangerous or potentially negative action</td>
+								
+							</tr>
+							
+						</tbody>
+						
+					</table>
+					
+					<!-- ================================================== -->
+					<!-- ================= LINK BUTTONS =================== -->
+					<!-- ================================================== -->
+					
+					<h4>
+						
+						Link Button Styles
+						
+					</h4>
+					
+					<p>
+						
+						You can de-emphasize a button by making it look like a link while maintaining button behavior by adding the class <code>.btn-link</code> to the button.
+						
+					</p>
+					
+					<div class="code-example flush-bottom">
+						
+						<div class="button-toolbar">
+							
+							<button type="button" class="button button-default">Default</button>
+							<button type="button" class="button button-default btn-link">Default</button>
+							<button type="button" class="button button-primary btn-link">Primary</button>
+							<button type="button" class="button button-success btn-link">Success</button>
+							<button type="button" class="button button-warning btn-link">Warning</button>
+							<button type="button" class="button button-danger btn-link">Danger</button>
+							
+						</div>
+						
+					</div>
+					
+<pre class="prettyprint linenums">
+&lt;button type="button" class="button button-default btn-link"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="button button-primary btn-link"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="button button-success btn-link"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="button button-warning btn-link"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="button button-danger btn-link"&gt;Danger&lt;/button&gt;
+</pre>
+					
+					<!-- ================================================== -->
+					<!-- ================ INVERSE BUTTONS ================= -->
+					<!-- ================================================== -->
+					
+					<h4>
+						
+						Inverse Button Styles
+						
+					</h4>
+					
+					<p>
+						
+						Similar to text and tables, buttons offer an inverted state.  Apply the class <code>.inverse</code> to the button to take advantage of the inverse state styling.
+						
+					</p>
+					
+					<div class="code-example flush-bottom">
+						
+						<div class="button-toolbar">
+							
+							<button type="button" class="button button-default inverse">Default</button>
+							<button type="button" class="button button-primary inverse">Primary</button>
+							<button type="button" class="button button-success inverse">Success</button>
+							<button type="button" class="button button-warning inverse">Warning</button>
+							<button type="button" class="button button-danger inverse">Danger</button>
+							
+						</div>
+						
+					</div>
+					
+<pre class="prettyprint linenums">
+&lt;button type="button" class="button button-default inverse"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="button button-primary inverse"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="button button-success inverse"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="button button-warning inverse"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="button button-danger inverse"&gt;Danger&lt;/button&gt;
+</pre>
+					
+					<!-- ================================================== -->
+					<!-- =================== BUTTON SIZES ================= -->
+					<!-- ================================================== -->
+					
+					<h3>
+						
+						Button sizes
+						
+					</h3>
+					
+					<p>
+						
+						Fancy larger or smaller buttons? Add <code>.button-large</code>, <code>.button-small</code>, or <code>.button-mini</code> for additional sizes.
+						
+					</p>
+					
+					<div class="code-example flush-bottom">
+						
+						<p>
+							
+							<button type="button" class="button button-large button-primary">Large button</button>
+							<button type="button" class="button button-large">Large button</button>
+							
+						</p>
+						
+						<p>
+							
+							<button type="button" class="button button-primary">Default button</button>
+							<button type="button" class="button">Default button</button>
+							
+						</p>
+						
+						<p>
+							
+							<button type="button" class="button button-small button-primary">Small button</button>
+							<button type="button" class="button button-small">Small button</button>
+							
+						</p>
+						
+						<p class="flush-bottom">
+							<button type="button" class="button button-mini button-primary">Mini button</button>
+							<button type="button" class="button button-mini">Mini button</button>
+						</p>
+						
+					</div>
+					
+<pre class="prettyprint linenums">
+&lt;p&gt;
+  &lt;button class="button button-large button-primary" type="button"&gt;Large button&lt;/button&gt;
+  &lt;button class="button button-large" type="button"&gt;Large button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class="button button-primary" type="button"&gt;Default button&lt;/button&gt;
+  &lt;button class="button" type="button"&gt;Default button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class="button button-small button-primary" type="button"&gt;Small button&lt;/button&gt;
+  &lt;button class="button button-small" type="button"&gt;Small button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class="button button-mini button-primary" type="button"&gt;Mini button&lt;/button&gt;
+  &lt;button class="button button-mini" type="button"&gt;Mini button&lt;/button&gt;
+&lt;/p&gt;
+</pre>
+					
+					<p>
+						
+						Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.button-block</code>.
+						
+					</p>
+					
+					<div class="code-example flush-bottom">
+						
+						<div class="well" style="max-width: 400px; margin: 0 auto 10px;">
+							
+							<button type="button" class="button button-large button-block button-primary">Block level button</button>
+							<button type="button" class="button button-large button-block">Block level button</button>
+							
+						</div>
+						
+					</div>
+					
+<pre class="prettyprint linenums">
+&lt;button class="button button-large button-block button-primary" type="button"&gt;Block level button&lt;/button&gt;
+&lt;button class="button button-large button-block" type="button"&gt;Block level button&lt;/button&gt;
+</pre>
+					
+					<!-- ================================================== -->
+					<!-- ================= DISABLED STATE ================= -->
+					<!-- ================================================== -->
+					
+					<h3>
+						
+						Disabled state
+						
+					</h3>
+					
+					<p class="tall">
+						
+						Make buttons look unclickable by fading them back 50%.
+						
+					</p>
+					
+					<!-- ================== ANCHOR ELEMENT ================ -->
+					
+					<h4>
+						
+						Anchor element
+						
+					</h4>
+					
+					<p>
+						
+						Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.
+						
+					</p>
+					
+					<div class="code-example flush-bottom">
+									
+						<a href="#" class="button button-large button-primary disabled">Primary link</a>
+						<a href="#" class="button button-large disabled">Link</a>
+						
+					</div>
+					
+<pre class="prettyprint linenums short">
+&lt;a href="#" class="button button-large button-primary disabled"&gt;Primary link&lt;/a&gt;
+&lt;a href="#" class="button button-large disabled"&gt;Link&lt;/a&gt;
+</pre>
+					
+					<p class="tall">
+						
+						<span class="label label-info">Heads up!</span>
+						We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. Also, this class is only for aesthetic; you must use custom JavaScript to disable links here.
+						
+					</p>
+					
+					<!-- ================= BUTTON ELEMENT ================= -->
+					
+					<h4>
+						
+						Button element
+						
+					</h4>
+					
+					<p>
+						
+						Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.
+						
+					</p>
+					
+					<div class="code-example flush-bottom">
+						
+						<button type="button" class="button button-large button-primary disabled" disabled="disabled">Primary button</button>
+						<button type="button" class="button button-large" disabled>Button</button>
+						
+					</div>
+					
+<pre class="prettyprint linenums">
+&lt;button type="button" class="button button-large button-primary disabled" disabled="disabled"&gt;Primary button&lt;/button&gt;
+&lt;button type="button" class="button button-large" disabled&gt;Button&lt;/button&gt;
+</pre>
+					
+					<!-- ================================================== -->
+					<!-- ================== MULTIPLE TAGS ================= -->
+					<!-- ================================================== -->
+					
+					<h3>
+						
+						Using multiple tags
+						
+					</h3>
+					
+					<p>
+						
+						Use the <code>.button</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.
+						
+					</p>
+					
+					<form class="code-example flush-bottom">
+						
+						<a class="button" href="">Link</a>
+						<button class="button" type="submit">Button</button>
+						<input class="button" type="button" value="Input">
+						<input class="button" type="submit" value="Submit">
+						
+					</form>
+					
+<pre class="prettyprint linenums short">
+&lt;a class="button" href=""&gt;Link&lt;/a&gt;
+&lt;button class="button" type="submit"&gt;Button&lt;/button&gt;
+&lt;input class="button" type="button" value="Input"&gt;
+&lt;input class="button" type="submit" value="Submit"&gt;
+</pre>
+					
+					<p class="flush-bottom">
+						
+						As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type="submit"&gt;</code> for your button.
+						
+					</p>
+					
+				</section>
+				
+				<hr class="tall">
+				
+				<!-- ================================================== -->
 				<!-- ====================== FORMS ===================== -->
 				<!-- ================================================== -->
 				
@@ -2430,19 +2799,51 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 						<fieldset>
 							
-							<legend>Legend</legend>
-							
-							<label>Label Name</label>
-							
-							<input type="text" placeholder="Type something…">
-							
-							<span class="help-block">Example block-level help text here.</span>
-							
-							<label class="checkbox">
+							<legend>
 								
-								<input type="checkbox"> Check me out
+								Legend
 								
-							</label>
+							</legend>
+							
+							<div class="form-group">
+								
+								<label for="exampleInputEmail">
+									
+									Email address
+									
+								</label>
+								
+								<input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+								
+							</div>
+							
+							<div class="form-group">
+								
+								<label for="exampleInputPassword">Password</label>
+								
+								<input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+								
+							</div>
+							
+							<div class="form-group">
+								
+								<label for="exampleInputFile">File input</label>
+								
+								<input type="file" id="exampleInputFile">
+								
+								<p class="help-block">Example block-level help text here.</p>
+								
+							</div>
+							
+							<div class="checkbox">
+								
+								<label>
+									
+									<input type="checkbox"> Check me out
+									
+								</label>
+								
+							</div>
 							
 							<button type="submit" class="button">Submit</button>
 							
@@ -2450,20 +2851,32 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums flush-bottom">
-		&lt;form&gt;
-		  &lt;fieldset&gt;
-		    &lt;legend&gt;Legend&lt;/legend&gt;
-		    &lt;label&gt;Label name&lt;/label&gt;
-		    &lt;input type="text" placeholder="Type something…"&gt;
-		    &lt;span class="help-block"&gt;Example block-level help text here.&lt;/span&gt;
-		    &lt;label class="checkbox"&gt;
-		      &lt;input type="checkbox"&gt; Check me out
-		    &lt;/label&gt;
-		    &lt;button type="submit" class="button"&gt;Submit&lt;/button&gt;
-		  &lt;/fieldset&gt;
-		&lt;/form&gt;
-		</pre>
+<pre class="prettyprint linenums flush-bottom">
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Legend&lt;/legend&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="exampleInputEmail"&gt;Email address&lt;/label&gt;
+      &lt;input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter email"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="exampleInputPassword"&gt;Password&lt;/label&gt;
+      &lt;input type="password" class="form-control" id="exampleInputPassword" placeholder="Password"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="exampleInputFile"&gt;File input&lt;/label&gt;
+      &lt;input type="file" id="exampleInputFile"&gt;
+      &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;label&gt;
+        &lt;input type="checkbox"&gt; Check me out
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</pre>
 					
 					<hr>
 					
@@ -2509,9 +2922,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;input type="text" placeholder="Text input"&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;input type="text" placeholder="Text input"&gt;
+</pre>
 					
 					<!-- ==================== TEXTAREA ==================== -->
 					
@@ -2533,9 +2946,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;textarea rows="3"&gt;&lt;/textarea&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;textarea rows="3"&gt;&lt;/textarea&gt;
+</pre>
 					
 					<!-- ============== CHECKBOXES & RADIOS =============== -->
 					
@@ -2585,20 +2998,20 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;label class="checkbox"&gt;
-		  &lt;input type="checkbox" value=""&gt;
-		  Option one is this and that&mdash;be sure to include why it's great
-		&lt;/label&gt;
-		&lt;label class="radio"&gt;
-		  &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;
-		  Option one is this and that&mdash;be sure to include why it's great
-		&lt;/label&gt;
-		&lt;label class="radio"&gt;
-		  &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt;
-		  Option two can be something else and selecting it will deselect option one
-		&lt;/label&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;label class="checkbox"&gt;
+  &lt;input type="checkbox" value=""&gt;
+  Option one is this and that&mdash;be sure to include why it's great
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;
+  Option one is this and that&mdash;be sure to include why it's great
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt;
+  Option two can be something else and selecting it will deselect option one
+&lt;/label&gt;
+</pre>
 					
 					<h5 class="short">
 						
@@ -2614,19 +3027,19 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 					<form class="code-example flush-bottom">
 						
-						<label class="checkbox inline">
+						<label class="checkbox inline flush-bottom">
 							
 							<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
 							
 						</label>
 						
-						<label class="checkbox inline">
+						<label class="checkbox inline flush-bottom">
 							
 							<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
 							
 						</label>
 						
-						<label class="checkbox inline">
+						<label class="checkbox inline flush-bottom">
 							
 							<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
 							
@@ -2634,17 +3047,17 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;label class="checkbox inline"&gt;
-		  &lt;input type="checkbox" id="inlineCheckbox1" value="option1"&gt; 1
-		&lt;/label&gt;
-		&lt;label class="checkbox inline"&gt;
-		  &lt;input type="checkbox" id="inlineCheckbox2" value="option2"&gt; 2
-		&lt;/label&gt;
-		&lt;label class="checkbox inline"&gt;
-		  &lt;input type="checkbox" id="inlineCheckbox3" value="option3"&gt; 3
-		&lt;/label&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox1" value="option1"&gt; 1
+&lt;/label&gt;
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox2" value="option2"&gt; 2
+&lt;/label&gt;
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox3" value="option3"&gt; 3
+&lt;/label&gt;
+</pre>
 					
 					<!-- ===================== SELECTS ==================== -->
 					
@@ -2678,17 +3091,17 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums flush-bottom">
-		&lt;div class="select-wrapper"&gt;
-		  &lt;select&gt;
-		    &lt;option&gt;1&lt;/option&gt;
-		    &lt;option&gt;2&lt;/option&gt;
-		    &lt;option&gt;3&lt;/option&gt;
-		    &lt;option&gt;4&lt;/option&gt;
-		    &lt;option&gt;5&lt;/option&gt;
-		  &lt;/select&gt;
-		&lt;/div&gt;
-		</pre>
+<pre class="prettyprint linenums flush-bottom">
+&lt;div class="select-wrapper"&gt;
+  &lt;select&gt;
+    &lt;option&gt;1&lt;/option&gt;
+    &lt;option&gt;2&lt;/option&gt;
+    &lt;option&gt;3&lt;/option&gt;
+    &lt;option&gt;4&lt;/option&gt;
+    &lt;option&gt;5&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+</pre>
 					
 					<hr>
 					
@@ -2754,16 +3167,16 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;div class="input-group"&gt;
-		  &lt;span class="add-on add-on-prepend"&gt;@&lt;/span&gt;
-		  &lt;input type="text" placeholder="Username" style="padding-left: 50px;"&gt;
-		&lt;/div&gt;
-		&lt;div class="input-group"&gt;
-		  &lt;input type="text" style="padding-right: 55px;"&gt;
-		  &lt;span class="add-on add-on-append"&gt;.00&lt;/span&gt;
-		&lt;/div&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;div class="input-group"&gt;
+  &lt;span class="add-on add-on-prepend"&gt;@&lt;/span&gt;
+  &lt;input type="text" placeholder="Username" style="padding-left: 50px;"&gt;
+&lt;/div&gt;
+&lt;div class="input-group"&gt;
+  &lt;input type="text" style="padding-right: 55px;"&gt;
+  &lt;span class="add-on add-on-append"&gt;.00&lt;/span&gt;
+&lt;/div&gt;
+</pre>
 						
 					<h5 class="short">
 						
@@ -2791,13 +3204,13 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;div class="input-group"&gt;
-		  &lt;span class="add-on add-on-prepend"&gt;$&lt;/span&gt;
-		  &lt;input type="text" style="padding-left: 50px; padding-right: 55px;"&gt;
-		  &lt;span class="add-on add-on-append"&gt;.00&lt;/span&gt;
-		&lt;/div&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;div class="input-group"&gt;
+  &lt;span class="add-on add-on-prepend"&gt;$&lt;/span&gt;
+  &lt;input type="text" style="padding-left: 50px; padding-right: 55px;"&gt;
+  &lt;span class="add-on add-on-append"&gt;.00&lt;/span&gt;
+&lt;/div&gt;
+</pre>
 					
 					<h5 class="short">
 						
@@ -2823,12 +3236,12 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums short">
-		&lt;div class="input-append"&gt;
-		  &lt;input type="text"&gt;
-		  &lt;button class="button" type="button"&gt;Go!&lt;/button&gt;
-		&lt;/div&gt;
-		</pre>
+<pre class="prettyprint linenums short">
+&lt;div class="input-append"&gt;
+  &lt;input type="text"&gt;
+  &lt;button class="button" type="button"&gt;Go!&lt;/button&gt;
+&lt;/div&gt;
+</pre>
 					
 					<form class="code-example flush-bottom">
 						
@@ -2862,22 +3275,22 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;div class="input-group"&gt;
-		  &lt;div class="add-on-group add-on-prepend"&gt;
-		    &lt;button class="button" type="button"&gt;Search&lt;/button&gt;
-		    &lt;button class="button" type="button"&gt;Options&lt;/button&gt;
-		  &lt;/div&gt;
-		  &lt;input type="text"&gt;
-		&lt;/div&gt;
-		&lt;div class="input-group"&gt;
-		  &lt;input type="text"&gt;
-		  &lt;div class="add-on-group add-on-append"&gt;
-		    &lt;button class="button" type="button"&gt;Search&lt;/button&gt;
-		    &lt;button class="button" type="button"&gt;Options&lt;/button&gt;
-		  &lt;/div&gt;
-		&lt;/div&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;div class="input-group"&gt;
+  &lt;div class="add-on-group add-on-prepend"&gt;
+    &lt;button class="button" type="button"&gt;Search&lt;/button&gt;
+    &lt;button class="button" type="button"&gt;Options&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;input type="text"&gt;
+&lt;/div&gt;
+&lt;div class="input-group"&gt;
+  &lt;input type="text"&gt;
+  &lt;div class="add-on-group add-on-append"&gt;
+    &lt;button class="button" type="button"&gt;Search&lt;/button&gt;
+    &lt;button class="button" type="button"&gt;Options&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 					
 					<h5>
 						
@@ -2915,22 +3328,22 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums short">
-		&lt;div class="input-group"&gt;
-		  &lt;div class="add-on-group add-on-prepend"&gt;
-		    &lt;div class="button-group"&gt;
-		      &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
-		        Action
-		        &lt;span class="caret"&gt;&lt;/span&gt;
-		      &lt;/button&gt;
-		      &lt;ul class="dropdown-menu"&gt;
-		        ...
-		      &lt;/ul&gt;
-		    &lt;/div&gt;
-		  &lt;/div&gt;
-		  &lt;input type="text"&gt;
-		&lt;/div&gt;
-		</pre>
+<pre class="prettyprint linenums short">
+&lt;div class="input-group"&gt;
+  &lt;div class="add-on-group add-on-prepend"&gt;
+    &lt;div class="button-group"&gt;
+      &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
+        Action
+        &lt;span class="caret"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;ul class="dropdown-menu"&gt;
+        ...
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;input type="text"&gt;
+&lt;/div&gt;
+</pre>
 			
 					<form class="code-example flush-bottom">
 						
@@ -2962,22 +3375,22 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums short">
-		&lt;div class="input-group"&gt;
-		  &lt;input type="text"&gt;
-		  &lt;div class="add-on-group add-on-append"&gt;
-		    &lt;div class="button-group"&gt;
-		      &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
-		        Action
-		        &lt;span class="caret"&gt;&lt;/span&gt;
-		      &lt;/button&gt;
-		      &lt;ul class="dropdown-menu"&gt;
-		        ...
-		      &lt;/ul&gt;
-		    &lt;/div&gt;
-		  &lt;/div&gt;
-		&lt;/div&gt;
-		</pre>
+<pre class="prettyprint linenums short">
+&lt;div class="input-group"&gt;
+  &lt;input type="text"&gt;
+  &lt;div class="add-on-group add-on-append"&gt;
+    &lt;div class="button-group"&gt;
+      &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
+        Action
+        &lt;span class="caret"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;ul class="dropdown-menu"&gt;
+        ...
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 					
 					<form class="code-example flush-bottom">
 						
@@ -3029,33 +3442,33 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;div class="input-prepend input-append"&gt;
-		  &lt;div class="add-on-group add-on-prepend"&gt;
-		    &lt;div class="button-group"&gt;
-		      &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
-		        Action
-		        &lt;span class="caret"&gt;&lt;/span&gt;
-		      &lt;/button&gt;
-		      &lt;ul class="dropdown-menu"&gt;
-		        ...
-		      &lt;/ul&gt;
-		    &lt;/div&gt;
-		  &lt;/div&gt;
-		  &lt;input type="text"&gt;
-		  &lt;div class="add-on-group add-on-append"&gt;
-		    &lt;div class="button-group"&gt;
-		      &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
-		        Action
-		        &lt;span class="caret"&gt;&lt;/span&gt;
-		      &lt;/button&gt;
-		      &lt;ul class="dropdown-menu"&gt;
-		        ...
-		      &lt;/ul&gt;
-		    &lt;/div&gt;
-		  &lt;/div&gt;
-		&lt;/div&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;div class="input-prepend input-append"&gt;
+  &lt;div class="add-on-group add-on-prepend"&gt;
+    &lt;div class="button-group"&gt;
+      &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
+        Action
+        &lt;span class="caret"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;ul class="dropdown-menu"&gt;
+        ...
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;input type="text"&gt;
+  &lt;div class="add-on-group add-on-append"&gt;
+    &lt;div class="button-group"&gt;
+      &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
+        Action
+        &lt;span class="caret"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;ul class="dropdown-menu"&gt;
+        ...
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 					
 					<h5>
 						
@@ -3131,17 +3544,17 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;form&gt;
-		  &lt;div class="add-on-group add-on-prepend"&gt;
-		    &lt;div class="button-group"&gt;...&lt;/div&gt;
-		  &lt;/div&gt;
-		  &lt;input type="text"&gt;
-		  &lt;div class="add-on-group add-on-append"&gt;
-		    &lt;div class="button-group"&gt;...&lt;/div&gt;
-		  &lt;/div&gt;
-		&lt;/form&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;form&gt;
+  &lt;div class="add-on-group add-on-prepend"&gt;
+    &lt;div class="button-group"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;input type="text"&gt;
+  &lt;div class="add-on-group add-on-append"&gt;
+    &lt;div class="button-group"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</pre>
 					
 					<!-- ================= CONTROL SIZING ================= -->
 					
@@ -3175,10 +3588,10 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;input type="text"&gt;
-		&lt;input class="input-large" type="text" placeholder=".input-large"&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;input type="text"&gt;
+&lt;input class="input-large" type="text" placeholder=".input-large"&gt;
+</pre>
 					
 					<h5>
 						
@@ -3248,20 +3661,20 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;input class="span1" type="text" placeholder=".span1"&gt;
-		&lt;input class="span2" type="text" placeholder=".span2"&gt;
-		&lt;input class="span3" type="text" placeholder=".span3"&gt;
-		&lt;select class="span1"&gt;
-		  ...
-		&lt;/select&gt;
-		&lt;select class="span2"&gt;
-		  ...
-		&lt;/select&gt;
-		&lt;select class="span3"&gt;
-		  ...
-		&lt;/select&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;input class="span1" type="text" placeholder=".span1"&gt;
+&lt;input class="span2" type="text" placeholder=".span2"&gt;
+&lt;input class="span3" type="text" placeholder=".span3"&gt;
+&lt;select class="span1"&gt;
+  ...
+&lt;/select&gt;
+&lt;select class="span2"&gt;
+  ...
+&lt;/select&gt;
+&lt;select class="span3"&gt;
+  ...
+&lt;/select&gt;
+</pre>
 					
 					<p class="tall">
 						
@@ -3307,16 +3720,16 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;div class="controls"&gt;
-		  &lt;input class="span5" type="text" placeholder=".span5"&gt;
-		&lt;/div&gt;
-		&lt;div class="controls controls-row"&gt;
-		  &lt;input class="span4" type="text" placeholder=".span4"&gt;
-		  &lt;input class="span1" type="text" placeholder=".span1"&gt;
-		&lt;/div&gt;
-		...
-		</pre>
+<pre class="prettyprint linenums">
+&lt;div class="controls"&gt;
+  &lt;input class="span5" type="text" placeholder=".span5"&gt;
+&lt;/div&gt;
+&lt;div class="controls controls-row"&gt;
+  &lt;input class="span4" type="text" placeholder=".span4"&gt;
+  &lt;input class="span1" type="text" placeholder=".span1"&gt;
+&lt;/div&gt;
+...
+</pre>
 					
 					<!-- =============== UNEDITABLE INPUTS ================ -->
 					
@@ -3338,9 +3751,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;span class="uneditable-input"&gt;Some value here&lt;/span&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;span class="uneditable-input"&gt;Some value here&lt;/span&gt;
+</pre>
 					
 					<!-- ================== FORM ACTIONS ================== -->
 					
@@ -3368,12 +3781,12 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;div class="form-actions"&gt;
-		  &lt;button type="submit" class="button button-primary"&gt;Save changes&lt;/button&gt;
-		  &lt;button type="button" class="button"&gt;Cancel&lt;/button&gt;
-		&lt;/div&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;div class="form-actions"&gt;
+  &lt;button type="submit" class="button button-primary"&gt;Save changes&lt;/button&gt;
+  &lt;button type="button" class="button"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;
+</pre>
 			
 					<!-- ==================== HELP TEXT =================== -->
 					
@@ -3397,10 +3810,10 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums flush-bottom">
-		&lt;input type="text"&gt;
-		&lt;span class="help-block"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
-		</pre>
+<pre class="prettyprint linenums flush-bottom">
+&lt;input type="text"&gt;
+&lt;span class="help-block"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+</pre>
 					
 					<hr>
 					
@@ -3440,9 +3853,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;input type="text" value="This is focused..."&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;input type="text" value="This is focused..."&gt;
+</pre>
 					
 					<!-- ================= INVALID INPUTS ================= -->
 					
@@ -3464,9 +3877,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;input class="span3" type="email" required&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;input class="span3" type="email" required&gt;
+</pre>
 					
 					<!-- ================= DISABLED INPUTS ================ -->
 					
@@ -3488,9 +3901,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums">
-		&lt;input type="text" placeholder="Disabled input here" disabled&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;input type="text" placeholder="Disabled input here" disabled&gt;
+</pre>
 					
 					<!-- =============== VALIDATION STATES ================ -->
 					
@@ -3556,341 +3969,97 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</form>
 					
-		<pre class="prettyprint linenums flush-bottom">
-		&lt;div class="control-group success"&gt;
-		  &lt;label class="control-label"&gt;Input with success&lt;/label&gt;
-		  &lt;div class="controls"&gt;
-		    &lt;input type="text"&gt;
-		    &lt;span class="help-block"&gt;Woohoo!&lt;/span&gt;
-		  &lt;/div&gt;
-		&lt;/div&gt;
-		&lt;div class="control-group warning"&gt;
-		  &lt;label class="control-label"&gt;Input with warning&lt;/label&gt;
-		  &lt;div class="controls"&gt;
-		    &lt;input type="text"&gt;
-		    &lt;span class="help-block"&gt;Something may have gone wrong&lt;/span&gt;
-		  &lt;/div&gt;
-		&lt;/div&gt;
-		&lt;div class="control-group error"&gt;
-		  &lt;label class="control-label"&gt;Input with error&lt;/label&gt;
-		  &lt;div class="controls"&gt;
-		    &lt;input type="text"&gt;
-		    &lt;span class="help-block"&gt;Please correct the error&lt;/span&gt;
-		  &lt;/div&gt;
-		&lt;/div&gt;
-		</pre>
-						
-				</section>
-				
-				<hr class="tall">
-				
-				<!-- ================================================== -->
-				<!-- ==================== BUTTONS ===================== -->
-				<!-- ================================================== -->
-				
-				<section id="#buttons">	
+<pre class="prettyprint linenums">
+&lt;div class="control-group success"&gt;
+  &lt;label class="control-label"&gt;Input with success&lt;/label&gt;
+  &lt;div class="controls"&gt;
+    &lt;input type="text"&gt;
+    &lt;span class="help-block"&gt;Woohoo!&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="control-group warning"&gt;
+  &lt;label class="control-label"&gt;Input with warning&lt;/label&gt;
+  &lt;div class="controls"&gt;
+    &lt;input type="text"&gt;
+    &lt;span class="help-block"&gt;Something may have gone wrong&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="control-group error"&gt;
+  &lt;label class="control-label"&gt;Input with error&lt;/label&gt;
+  &lt;div class="controls"&gt;
+    &lt;input type="text"&gt;
+    &lt;span class="help-block"&gt;Please correct the error&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 					
-					<h2>
-						
-						Buttons
-						
-					</h2>
-					
-					<!-- ================================================== -->
-					<!-- ================ DEFAULT BUTTONS ================= -->
-					<!-- ================================================== -->
+					<!-- ================ CONTROL SIZING ================== -->
 					
 					<h3>
 						
-						Default buttons
-						
-					</h3>
-					
-					<p>
-						
-						Button styles can be applied to anything with the <code>.button</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.
-						
-					</p>
-					
-					<table class="table table-bordered table-striped short">
-						<thead>
-							
-							<tr>
-								
-								<th>Button</th>
-								<th>class=""</th>
-								<th>Description</th>
-								
-							</tr>
-							
-						</thead>
-						
-						<tbody>
-							
-							<tr>
-								
-								<td><button type="button" class="button">Default</button></td>
-								<td><code>button</code></td>
-								<td>Standard gray button with gradient</td>
-								
-							</tr>
-							
-							<tr>
-								
-								<td><button type="button" class="button button-primary">Primary</button></td>
-								<td><code>button button-primary</code></td>
-								<td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
-								
-							</tr>
-							
-							<tr>
-								
-								<td><button type="button" class="button button-success">Success</button></td>
-								<td><code>button button-success</code></td>
-								<td>Indicates a successful or positive action</td>
-								
-							</tr>
-							
-							<tr>
-								
-								<td><button type="button" class="button button-warning">Warning</button></td>
-								<td><code>button button-warning</code></td>
-								<td>Indicates caution should be taken with this action</td>
-								
-							</tr>
-							
-							<tr>
-								
-								<td><button type="button" class="button button-danger">Danger</button></td>
-								<td><code>button button-danger</code></td>
-								<td>Indicates a dangerous or potentially negative action</td>
-								
-							</tr>
-							
-							<tr>
-								
-								<td><button type="button" class="button button-link">Link</button></td>
-								<td><code>button button-link</code></td>
-								<td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
-								
-							</tr>
-							
-						</tbody>
-						
-					</table>
-					
-					<h5 class="short">
-						
-						Cross browser compatibility
-						
-					</h5>
-					
-					<p class="tall">
-						
-						IE9 doesn't crop background gradients on rounded corners, so we remove it. Related, IE9 jankifies disabled <code>button</code> elements, rendering text gray with a nasty text-shadow that we cannot fix.
-						
-					</p>
-					
-					<!-- ================================================== -->
-					<!-- =================== BUTTON SIZES ================= -->
-					<!-- ================================================== -->
-					
-					<h3>
-						
-						Button sizes
-						
-					</h3>
-					
-					<p>
-						
-						Fancy larger or smaller buttons? Add <code>.button-large</code>, <code>.button-small</code>, or <code>.button-mini</code> for additional sizes.
-						
-					</p>
-					
-					<div class="code-example flush-bottom">
-						
-						<p>
-							
-							<button type="button" class="button button-large button-primary">Large button</button>
-							<button type="button" class="button button-large">Large button</button>
-							
-						</p>
-						
-						<p>
-							
-							<button type="button" class="button button-primary">Default button</button>
-							<button type="button" class="button">Default button</button>
-							
-						</p>
-						
-						<p>
-							
-							<button type="button" class="button button-small button-primary">Small button</button>
-							<button type="button" class="button button-small">Small button</button>
-							
-						</p>
-						
-						<p class="flush-bottom">
-							<button type="button" class="button button-mini button-primary">Mini button</button>
-							<button type="button" class="button button-mini">Mini button</button>
-						</p>
-						
-					</div>
-					
-		<pre class="prettyprint linenums short">
-		&lt;p&gt;
-		  &lt;button class="button button-large button-primary" type="button"&gt;Large button&lt;/button&gt;
-		  &lt;button class="button button-large" type="button"&gt;Large button&lt;/button&gt;
-		&lt;/p&gt;
-		&lt;p&gt;
-		  &lt;button class="button button-primary" type="button"&gt;Default button&lt;/button&gt;
-		  &lt;button class="button" type="button"&gt;Default button&lt;/button&gt;
-		&lt;/p&gt;
-		&lt;p&gt;
-		  &lt;button class="button button-small button-primary" type="button"&gt;Small button&lt;/button&gt;
-		  &lt;button class="button button-small" type="button"&gt;Small button&lt;/button&gt;
-		&lt;/p&gt;
-		&lt;p&gt;
-		  &lt;button class="button button-mini button-primary" type="button"&gt;Mini button&lt;/button&gt;
-		  &lt;button class="button button-mini" type="button"&gt;Mini button&lt;/button&gt;
-		&lt;/p&gt;
-		</pre>
-					
-					<p>
-						
-						Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.button-block</code>.
-						
-					</p>
-					
-					<div class="code-example flush-bottom">
-						
-						<div class="well" style="max-width: 400px; margin: 0 auto 10px;">
-							
-							<button type="button" class="button button-large button-block button-primary">Block level button</button>
-							<button type="button" class="button button-large button-block">Block level button</button>
-							
-						</div>
-						
-					</div>
-					
-		<pre class="prettyprint linenums">
-		&lt;button class="button button-large button-block button-primary" type="button"&gt;Block level button&lt;/button&gt;
-		&lt;button class="button button-large button-block" type="button"&gt;Block level button&lt;/button&gt;
-		</pre>
-					
-					<!-- ================================================== -->
-					<!-- ================= DISABLED STATE ================= -->
-					<!-- ================================================== -->
-					
-					<h3>
-						
-						Disabled state
+						Control sizing
 						
 					</h3>
 					
 					<p class="tall">
 						
-						Make buttons look unclickable by fading them back 50%.
+						Set heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.
 						
 					</p>
-					
-					<!-- ================== ANCHOR ELEMENT ================ -->
 					
 					<h4>
 						
-						Anchor element
+						Height sizing
 						
 					</h4>
-					
-					<p>
-						
-						Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.
-						
-					</p>
-					
-					<div class="code-example flush-bottom">
-									
-						<a href="#" class="button button-large button-primary disabled">Primary link</a>
-						<a href="#" class="button button-large disabled">Link</a>
-						
-					</div>
-					
-		<pre class="prettyprint linenums short">
-		&lt;a href="#" class="button button-large button-primary disabled"&gt;Primary link&lt;/a&gt;
-		&lt;a href="#" class="button button-large disabled"&gt;Link&lt;/a&gt;
-		</pre>
 					
 					<p class="tall">
 						
-						<span class="label label-info">Heads up!</span>
-						We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. Also, this class is only for aesthetic; you must use custom JavaScript to disable links here.
-						
-					</p>
-					
-					<!-- ================= BUTTON ELEMENT ================= -->
-					
-					<h4>
-						
-						Button element
-						
-					</h4>
-					
-					<p>
-						
-						Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.
-						
-					</p>
-					
-					<div class="code-example flush-bottom">
-						
-						<button type="button" class="button button-large button-primary disabled" disabled="disabled">Primary button</button>
-						<button type="button" class="button button-large" disabled>Button</button>
-						
-					</div>
-					
-		<pre class="prettyprint linenums">
-		&lt;button type="button" class="button button-large button-primary disabled" disabled="disabled"&gt;Primary button&lt;/button&gt;
-		&lt;button type="button" class="button button-large" disabled&gt;Button&lt;/button&gt;
-		</pre>
-					
-					<!-- ================================================== -->
-					<!-- ================== MULTIPLE TAGS ================= -->
-					<!-- ================================================== -->
-					
-					<h3>
-						
-						One class, multiple tags
-						
-					</h3>
-					
-					<p>
-						
-						Use the <code>.button</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.
+						Create larger or smaller form controls that match button sizes.
 						
 					</p>
 					
 					<form class="code-example flush-bottom">
 						
-						<a class="button" href="">Link</a>
-						<button class="button" type="submit">Button</button>
-						<input class="button" type="button" value="Input">
-						<input class="button" type="submit" value="Submit">
+						<div class="controls docs-input-sizes">
+							
+							<input class="form-control input-large" type="text" placeholder=".input-large">
+							<input type="text" class="form-control" placeholder="Default input">
+							<input class="form-control input-small" type="text" placeholder=".input-small">
+							
+							<select class="form-control input-large">
+								
+								<option value="">.input-large</option>
+								
+							</select>
+							
+							<select class="form-control">
+								
+								<option value="">Default select</option>
+								
+							</select>
+							
+							<select class="form-control input-small flush-bottom">
+								
+								<option value="">.input-small</option>
+								
+							</select>
+							
+						</div>
 						
 					</form>
 					
-		<pre class="prettyprint linenums short">
-		&lt;a class="button" href=""&gt;Link&lt;/a&gt;
-		&lt;button class="button" type="submit"&gt;Button&lt;/button&gt;
-		&lt;input class="button" type="button" value="Input"&gt;
-		&lt;input class="button" type="submit" value="Submit"&gt;
-		</pre>
-					
-					<p class="flush-bottom">
+<pre class="prettyprint linenums flush-bottom">
+&lt;input class="form-control input-large" type="text" placeholder=".input-large"&gt;
+&lt;input class="form-control" type="text" placeholder="Default input"&gt;
+&lt;input class="form-control input-small" type="text" placeholder=".input-small"&gt;
+
+&lt;select class="form-control input-large"&gt;...&lt;/select&gt;
+&lt;select class="form-control"&gt;...&lt;/select&gt;
+&lt;select class="form-control input-small"&gt;...&lt;/select&gt;
+</pre>
+				
 						
-						As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type="submit"&gt;</code> for your button.
-						
-					</p>
-					
 				</section>
 				
 				<hr class="tall">

@@ -1,6 +1,6 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
-/* utilities/mixins.less                                                     */
+/* utilities/mixins.less                                                                                */
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -8,7 +8,7 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Utilities                                                                 */
+/* Utilities                                                                                            */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -49,7 +49,7 @@
 	
 	// Webkit
 	
-	outline: 5px auto -webkit-focus-ring-color;
+	outline: 4px auto -webkit-focus-ring-color;
 	outline-offset: -2px;
 	
 }
@@ -161,10 +161,32 @@
 }
 
 
+.block-padding-vertical(@height, @line-height) {
+	
+	.block-padding-vertical-a(@height, @line-height);
+	.block-padding-vertical-b(@height, @line-height);
+	
+}
+
+.block-padding-vertical-a(@height, @line-height) when (@height > @line-height) {
+	
+	padding-top: ((@height - @line-height) / 2);
+	padding-bottom: ((@height - @line-height) / 2);
+	
+}
+
+.block-padding-vertical-b(@height, @line-height) when (@line-height >= @height) {
+	
+	padding-top: 0px;
+	padding-bottom: 0px;
+	
+}
+
+
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Fonts                                                                     */
+/* Fonts                                                                                                */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -237,8 +259,57 @@
 	
 	display: block;
 	width: 100%;
-	min-height: @inputHeight; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
 	.box-sizing(border-box); // Makes inputs behave like true block-level elements
+	
+}
+
+.button-states (
+	
+	@button-border-color,
+	@button-text-color,
+	@button-text-shadow,
+	@button-background-color,
+	@button-background-gradient-top-color,
+	@button-background-gradient-bottom-color,
+	@button-shadow,
+	@button-offset-top,
+	@button-offset-bottom
+
+) {
+	
+	.override_gradient_vertical();
+	border-color: @button-border-color;
+	color: @button-text-color;
+	text-shadow: @button-text-shadow;
+	background-color: @button-background-color;
+	#gradient > .vertical(@button-background-gradient-top-color, @button-background-gradient-bottom-color);
+	.box-shadow(@button-shadow);
+	margin-top: @button-offset-top;
+	margin-bottom: @button-offset-bottom;
+	
+}
+
+.input-states (
+	
+	@form-input-default-border-color,
+	@form-input-default-text-color,
+	@form-input-default-text-shadow,
+	@form-input-default-background-color,
+	@form-input-default-background-gradient-top-color,
+	@form-input-default-background-gradient-bottom-color,
+	@form-input-default-shadow,
+	@form-input-default-placeholder-text-color
+
+) {
+	
+	.override_gradient_vertical();
+	border-color: @form-input-default-border-color;
+	color: @form-input-default-text-color;
+	text-shadow: @form-input-default-text-shadow;
+	background-color: @form-input-default-background-color;
+	#gradient > .vertical(@form-input-default-background-gradient-top-color, @form-input-default-background-gradient-bottom-color);
+	.box-shadow(@form-input-default-shadow);
+	.placeholder(@form-input-default-placeholder-text-color);
 	
 }
 

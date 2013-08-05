@@ -1,6 +1,6 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
-/* core/forms.less                                                           */
+/* core/forms.less                                                                                      */
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -8,7 +8,7 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* General Form Styling                                                      */
+/* General Form Styling                                                                                 */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -41,18 +41,42 @@ fieldset {
 
 legend {
 	
-	/*
 	display: block;
 	width: 100%;
-	padding: 0px 0px @body-text-margin-bottom 0px;
-	margin: 0px 0px @body-text-margin-bottom 0px;
-	font-size: @heading-h4-text-font-size;
-	line-height: @heading-h4-text-line-height;
-	color: @headingH4TextColor;
-	text-transform: uppercase;
 	border: none;
-	border-bottom: 1px solid @gray;
-	*/
+	border-bottom: 1px solid @form-legend-border-color;
+	font-family: @form-legend-font-family;
+	font-size: @form-legend-font-size;
+	font-weight: @form-legend-font-weight;
+	line-height: @form-legend-line-height;
+	text-transform: @form-legend-transform;
+	font-style: @form-legend-style;
+	color: @form-legend-color;
+	margin: @form-legend-margin-top 0px @form-legend-margin-bottom 0px;
+	padding: 0px 0px (@form-legend-margin-bottom / 2) 0px;
+	
+	// Tall
+	
+	&.tall {
+		
+		margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall;
+		
+	}
+	
+	// Short
+		
+	&.short {
+		
+		margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short;
+		
+	}
+	
+	&.inverse {
+		
+		color: @form-legend-inverse-color;
+		border-bottom-color: @form-legend-inverse-border-color;
+		
+	}
 	
 }
 
@@ -60,36 +84,52 @@ legend {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Labels                                                                    */
+/* Labels                                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
 label {
 	
 	display: block;
-	margin-bottom: @formLabelMargin;
-	font-family: @formLabelTextFontFamily;
-	font-size: @formLabelTextFontSize;
-	font-weight: @formLabelTextFontWeight;
-	font-style: @formLabelTextFontStyle;
-	line-height: @formLabelTextLineHeight;
-	color: @formLabelTextColor;
-	text-transform: @formLabelTextTransform;
+	font-family: @form-label-font-family;
+	font-size: @form-label-font-size;
+	font-weight: @form-label-font-weight;
+	line-height: @form-label-line-height;
+	text-transform: @form-label-transform;
+	font-style: @form-label-style;
+	color: @form-label-color;
+	margin: @form-label-margin-top 0px @form-label-margin-bottom 0px;
 	
-	&.error {
+	// Tall
+	
+	&.tall {
 		
-		margin: (@body-text-margin-bottom / 4) 0px 0px 0px;
-		font-style: italic;
-		font-size: @formLabelTextFontSize - 1;
+		margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall;
 		
 	}
+	
+	// Short
+		
+	&.short {
+		
+		margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short;
+		
+	}
+	
+	&.inverse {
+		
+		color: @form-label-inverse-color;
+		border-bottom-color: @form-label-inverse-border-color;
+		
+	}
+	
 }
 
 
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Inputs                                                                    */
+/* Inputs                                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -112,34 +152,63 @@ textarea {
 	
 	.input-block-level();
 	-webkit-appearance: none;
-	border: none;
 	width: 100%;
-	height: @inputHeight;
-	.border-radius(@inputBorderRadius);
-	padding: ((@inputHeight - @inputTextLineHeight) / 2) @inputHorizontalPadding ((@inputHeight - @inputTextLineHeight) / 2) @inputHorizontalPadding;
-	font-family: @inputTextFontFamily;
-	font-size: @inputTextFontSize;
-	font-weight: @inputTextFontWeight;
-	font-style: @inputTextFontStyle;
-	line-height: @inputTextLineHeight;
-	text-transform: @inputTextTransform;
-	color: @inputTextColor;
-	text-shadow: @inputTextShadow;
-	.placeholder(@inputPlaceholderTextColor);
-	background-color: @inputBackgroundColor;
-	#gradient > .vertical(@inputBackgroundGradientColorTop, @inputBackgroundGradientColorBottom);
-	.box-shadow(@inputShadow);
-	margin-bottom: @inputMargin;
-	@transition:
-		border linear .1s,
-		box-shadow linear .1s,
-		background linear .1s,
-		width linear .1s;
-	.transition(@transition);
+	height: @form-input-height;
+	.block-padding-vertical(@form-input-height, @form-input-text-line-height);
+	padding-left: @form-input-padding-horizontal;
+	padding-right: @form-input-padding-horizontal;
+	margin-bottom: @form-input-margin;
+	.transition(@form-input-transition);
+	font-family: @form-input-text-font-family;
+	font-size: @form-input-text-font-size;
+	font-weight: @form-input-text-font-weight;
+	font-style: @form-input-text-font-style;
+	line-height: @form-input-text-line-height;
+	text-transform: @form-input-text-transform;
+	border-width: @form-input-border-width;
+	*border: @form-input-border-width;
+	.border-radius(@form-input-border-radius);
+	.input-states (
+		
+		@form-input-default-border-color,
+		@form-input-default-text-color,
+		@form-input-default-text-shadow,
+		@form-input-default-background-color,
+		@form-input-default-background-gradient-top-color,
+		@form-input-default-background-gradient-bottom-color,
+		@form-input-default-shadow,
+		@form-input-default-placeholder-text-color
+		
+	);
 	
 	+ .help-block {
 		
-		margin-top: -@inputMargin;
+		margin-top: -@form-input-margin;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @form-input-margin-tall;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tall;
+			
+		}
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @form-input-margin-short;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-short;
+			
+		}
+		
 		
 	}
 	
@@ -148,60 +217,485 @@ textarea {
 		
 		outline: 0;
 		outline: thin dotted \9;
-		color: @inputFocusTextColor;
-		text-shadow: @inputFocusTextShadow;
-		.placeholder(@inputFocusPlaceholderTextColor);
-		background-color: @inputFocusBackgroundColor;
-		#gradient > .vertical(@inputFocusBackgroundGradientColorTop, @inputFocusBackgroundGradientColorBottom);
-		.box-shadow(@inputFocusShadow);
+		.input-states (
+			
+			@form-input-default-focus-border-color,
+			@form-input-default-focus-text-color,
+			@form-input-default-focus-text-shadow,
+			@form-input-default-focus-background-color,
+			@form-input-default-focus-background-gradient-top-color,
+			@form-input-default-focus-background-gradient-bottom-color,
+			@form-input-default-focus-shadow,
+			@form-input-default-focus-placeholder-text-color
+			
+		);
 		
 	}
 	
 	&[disabled],
 	&[readonly] {
 		
-		color: @inputDisabledTextColor;
-		text-shadow: @inputDisabledTextShadow;
-		.placeholder(@inputDisabledPlaceholderTextColor);
-		background-color: @inputDisabledBackgroundColor;
-		#gradient > .vertical(@inputDisabledBackgroundGradientColorTop, @inputDisabledBackgroundGradientColorBottom);
-		.box-shadow(@inputDisabledShadow);
-		.opacity(@inputDisabledOpacity);
+		.opacity(@form-input-default-disabled-opacity);
+		.input-states (
+			
+			@form-input-default-disabled-border-color,
+			@form-input-default-disabled-text-color,
+			@form-input-default-disabled-text-shadow,
+			@form-input-default-disabled-background-color,
+			@form-input-default-disabled-background-gradient-top-color,
+			@form-input-default-disabled-background-gradient-bottom-color,
+			@form-input-default-disabled-shadow,
+			@form-input-default-disabled-placeholder-text-color
+			
+		);
 		
 	}
 	
-	&.tall {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Inverse                                                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.inverse {
 		
-		margin-bottom: @inputMarginTall;
-		
-		+ .help-block {
+		.input-states (
 			
-			margin-top: -@inputMarginTall;
+			@form-input-default-inverse-border-color,
+			@form-input-default-inverse-text-color,
+			@form-input-default-inverse-text-shadow,
+			@form-input-default-inverse-background-color,
+			@form-input-default-inverse-background-gradient-top-color,
+			@form-input-default-inverse-background-gradient-bottom-color,
+			@form-input-default-inverse-shadow,
+			@form-input-default-inverse-placeholder-text-color
+			
+		);
+		
+		&:focus,
+		&.focused {
+			
+			.input-states (
+				
+				@form-input-default-inverse-focus-border-color,
+				@form-input-default-inverse-focus-text-color,
+				@form-input-default-inverse-focus-text-shadow,
+				@form-input-default-inverse-focus-background-color,
+				@form-input-default-inverse-focus-background-gradient-top-color,
+				@form-input-default-inverse-focus-background-gradient-bottom-color,
+				@form-input-default-inverse-focus-shadow,
+				@form-input-default-inverse-focus-placeholder-text-color
+				
+			);
+			
+		}
+		
+		&[disabled],
+		&[readonly] {
+			
+			.opacity(@form-input-default-inverse-disabled-opacity);
+			.input-states (
+				
+				@form-input-default-inverse-disabled-border-color,
+				@form-input-default-inverse-disabled-text-color,
+				@form-input-default-inverse-disabled-text-shadow,
+				@form-input-default-inverse-disabled-background-color,
+				@form-input-default-inverse-disabled-background-gradient-top-color,
+				@form-input-default-inverse-disabled-background-gradient-bottom-color,
+				@form-input-default-inverse-disabled-shadow,
+				@form-input-default-inverse-disabled-placeholder-text-color
+				
+			);
 			
 		}
 		
 	}
 	
-	&.short {
-		
-		margin-bottom: @inputMarginShort;
-		
-		+ .help-block {
-			
-			margin-top: -@inputMarginShort;
-			
-		}
-		
-		
-	}
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Large Input                                                                                          */
+	/* ---------------------------------------------------------------------------------------------------- */
 	
 	&.input-large {
 		
-		padding-top: (@inputHeightLarge - @inputTextLineHeight) / 2;
-		padding-bottom: (@inputHeightLarge - @inputTextLineHeight) / 2;
-		height: @inputHeightLarge;
-		font-size: @inputTextFontSizeLarge;
-		line-height: @inputTextLineHeightLarge;
+		height: @form-input-large-height;
+		.block-padding-vertical(@form-input-large-height, @form-input-large-text-line-height);
+		padding-left: @form-input-large-padding-horizontal;
+		padding-right: @form-input-large-padding-horizontal;
+		font-size: @form-input-large-text-font-size;
+		font-weight: @form-input-large-text-font-weight;
+		font-style: @form-input-large-text-font-style;
+		line-height: @form-input-large-text-line-height;
+		text-transform: @form-input-large-text-transform;
+		border-width: @form-input-large-border-width;
+		*border: @form-input-large-border-width;
+		.border-radius(@form-input-large-border-radius);
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Small Input                                                                                          */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-small {
+		
+		height: @form-input-small-height;
+		.block-padding-vertical(@form-input-small-height, @form-input-small-text-line-height);
+		padding-left: @form-input-small-padding-horizontal;
+		padding-right: @form-input-small-padding-horizontal;
+		font-size: @form-input-small-text-font-size;
+		font-weight: @form-input-small-text-font-weight;
+		font-style: @form-input-small-text-font-style;
+		line-height: @form-input-small-text-line-height;
+		text-transform: @form-input-small-text-transform;
+		border-width: @form-input-small-border-width;
+		*border: @form-input-small-border-width;
+		.border-radius(@form-input-small-border-radius);
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Success                                                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-success {
+		
+		.input-states (
+			
+			@form-input-success-border-color,
+			@form-input-success-text-color,
+			@form-input-success-text-shadow,
+			@form-input-success-background-color,
+			@form-input-success-background-gradient-top-color,
+			@form-input-success-background-gradient-bottom-color,
+			@form-input-success-shadow,
+			@form-input-success-placeholder-text-color
+			
+		);
+		
+		&:focus,
+		&.focused {
+			
+			.input-states (
+				
+				@form-input-success-focus-border-color,
+				@form-input-success-focus-text-color,
+				@form-input-success-focus-text-shadow,
+				@form-input-success-focus-background-color,
+				@form-input-success-focus-background-gradient-top-color,
+				@form-input-success-focus-background-gradient-bottom-color,
+				@form-input-success-focus-shadow,
+				@form-input-success-focus-placeholder-text-color
+				
+			);
+			
+		}
+		
+		&[disabled],
+		&[readonly] {
+			
+			.opacity(@form-input-success-disabled-opacity);
+			.input-states (
+				
+				@form-input-success-disabled-border-color,
+				@form-input-success-disabled-text-color,
+				@form-input-success-disabled-text-shadow,
+				@form-input-success-disabled-background-color,
+				@form-input-success-disabled-background-gradient-top-color,
+				@form-input-success-disabled-background-gradient-bottom-color,
+				@form-input-success-disabled-shadow,
+				@form-input-success-disabled-placeholder-text-color
+				
+			);
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Inverse                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.inverse {
+			
+			.input-states (
+				
+				@form-input-success-inverse-border-color,
+				@form-input-success-inverse-text-color,
+				@form-input-success-inverse-text-shadow,
+				@form-input-success-inverse-background-color,
+				@form-input-success-inverse-background-gradient-top-color,
+				@form-input-success-inverse-background-gradient-bottom-color,
+				@form-input-success-inverse-shadow,
+				@form-input-success-inverse-placeholder-text-color
+				
+			);
+			
+			&:focus,
+			&.focused {
+				
+				.input-states (
+					
+					@form-input-success-inverse-focus-border-color,
+					@form-input-success-inverse-focus-text-color,
+					@form-input-success-inverse-focus-text-shadow,
+					@form-input-success-inverse-focus-background-color,
+					@form-input-success-inverse-focus-background-gradient-top-color,
+					@form-input-success-inverse-focus-background-gradient-bottom-color,
+					@form-input-success-inverse-focus-shadow,
+					@form-input-success-inverse-focus-placeholder-text-color
+					
+				);
+				
+			}
+			
+			&[disabled],
+			&[readonly] {
+				
+				.opacity(@form-input-success-inverse-disabled-opacity);
+				.input-states (
+					
+					@form-input-success-inverse-disabled-border-color,
+					@form-input-success-inverse-disabled-text-color,
+					@form-input-success-inverse-disabled-text-shadow,
+					@form-input-success-inverse-disabled-background-color,
+					@form-input-success-inverse-disabled-background-gradient-top-color,
+					@form-input-success-inverse-disabled-background-gradient-bottom-color,
+					@form-input-success-inverse-disabled-shadow,
+					@form-input-success-inverse-disabled-placeholder-text-color
+					
+				);
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Warning                                                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-warning {
+		
+		.input-states (
+			
+			@form-input-warning-border-color,
+			@form-input-warning-text-color,
+			@form-input-warning-text-shadow,
+			@form-input-warning-background-color,
+			@form-input-warning-background-gradient-top-color,
+			@form-input-warning-background-gradient-bottom-color,
+			@form-input-warning-shadow,
+			@form-input-warning-placeholder-text-color
+			
+		);
+		
+		&:focus,
+		&.focused {
+			
+			.input-states (
+				
+				@form-input-warning-focus-border-color,
+				@form-input-warning-focus-text-color,
+				@form-input-warning-focus-text-shadow,
+				@form-input-warning-focus-background-color,
+				@form-input-warning-focus-background-gradient-top-color,
+				@form-input-warning-focus-background-gradient-bottom-color,
+				@form-input-warning-focus-shadow,
+				@form-input-warning-focus-placeholder-text-color
+				
+			);
+			
+		}
+		
+		&[disabled],
+		&[readonly] {
+			
+			.opacity(@form-input-warning-disabled-opacity);
+			.input-states (
+				
+				@form-input-warning-disabled-border-color,
+				@form-input-warning-disabled-text-color,
+				@form-input-warning-disabled-text-shadow,
+				@form-input-warning-disabled-background-color,
+				@form-input-warning-disabled-background-gradient-top-color,
+				@form-input-warning-disabled-background-gradient-bottom-color,
+				@form-input-warning-disabled-shadow,
+				@form-input-warning-disabled-placeholder-text-color
+				
+			);
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Inverse                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.inverse {
+			
+			.input-states (
+				
+				@form-input-warning-inverse-border-color,
+				@form-input-warning-inverse-text-color,
+				@form-input-warning-inverse-text-shadow,
+				@form-input-warning-inverse-background-color,
+				@form-input-warning-inverse-background-gradient-top-color,
+				@form-input-warning-inverse-background-gradient-bottom-color,
+				@form-input-warning-inverse-shadow,
+				@form-input-warning-inverse-placeholder-text-color
+				
+			);
+			
+			&:focus,
+			&.focused {
+				
+				.input-states (
+					
+					@form-input-warning-inverse-focus-border-color,
+					@form-input-warning-inverse-focus-text-color,
+					@form-input-warning-inverse-focus-text-shadow,
+					@form-input-warning-inverse-focus-background-color,
+					@form-input-warning-inverse-focus-background-gradient-top-color,
+					@form-input-warning-inverse-focus-background-gradient-bottom-color,
+					@form-input-warning-inverse-focus-shadow,
+					@form-input-warning-inverse-focus-placeholder-text-color
+					
+				);
+				
+			}
+			
+			&[disabled],
+			&[readonly] {
+				
+				.opacity(@form-input-warning-inverse-disabled-opacity);
+				.input-states (
+					
+					@form-input-warning-inverse-disabled-border-color,
+					@form-input-warning-inverse-disabled-text-color,
+					@form-input-warning-inverse-disabled-text-shadow,
+					@form-input-warning-inverse-disabled-background-color,
+					@form-input-warning-inverse-disabled-background-gradient-top-color,
+					@form-input-warning-inverse-disabled-background-gradient-bottom-color,
+					@form-input-warning-inverse-disabled-shadow,
+					@form-input-warning-inverse-disabled-placeholder-text-color
+					
+				);
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Error                                                                                                */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-error {
+		
+		.input-states (
+			
+			@form-input-error-border-color,
+			@form-input-error-text-color,
+			@form-input-error-text-shadow,
+			@form-input-error-background-color,
+			@form-input-error-background-gradient-top-color,
+			@form-input-error-background-gradient-bottom-color,
+			@form-input-error-shadow,
+			@form-input-error-placeholder-text-color
+			
+		);
+		
+		&:focus,
+		&.focused {
+			
+			.input-states (
+				
+				@form-input-error-focus-border-color,
+				@form-input-error-focus-text-color,
+				@form-input-error-focus-text-shadow,
+				@form-input-error-focus-background-color,
+				@form-input-error-focus-background-gradient-top-color,
+				@form-input-error-focus-background-gradient-bottom-color,
+				@form-input-error-focus-shadow,
+				@form-input-error-focus-placeholder-text-color
+				
+			);
+			
+		}
+		
+		&[disabled],
+		&[readonly] {
+			
+			.opacity(@form-input-error-disabled-opacity);
+			.input-states (
+				
+				@form-input-error-disabled-border-color,
+				@form-input-error-disabled-text-color,
+				@form-input-error-disabled-text-shadow,
+				@form-input-error-disabled-background-color,
+				@form-input-error-disabled-background-gradient-top-color,
+				@form-input-error-disabled-background-gradient-bottom-color,
+				@form-input-error-disabled-shadow,
+				@form-input-error-disabled-placeholder-text-color
+				
+			);
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Inverse                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.inverse {
+			
+			.input-states (
+				
+				@form-input-error-inverse-border-color,
+				@form-input-error-inverse-text-color,
+				@form-input-error-inverse-text-shadow,
+				@form-input-error-inverse-background-color,
+				@form-input-error-inverse-background-gradient-top-color,
+				@form-input-error-inverse-background-gradient-bottom-color,
+				@form-input-error-inverse-shadow,
+				@form-input-error-inverse-placeholder-text-color
+				
+			);
+			
+			&:focus,
+			&.focused {
+				
+				.input-states (
+					
+					@form-input-error-inverse-focus-border-color,
+					@form-input-error-inverse-focus-text-color,
+					@form-input-error-inverse-focus-text-shadow,
+					@form-input-error-inverse-focus-background-color,
+					@form-input-error-inverse-focus-background-gradient-top-color,
+					@form-input-error-inverse-focus-background-gradient-bottom-color,
+					@form-input-error-inverse-focus-shadow,
+					@form-input-error-inverse-focus-placeholder-text-color
+					
+				);
+				
+			}
+			
+			&[disabled],
+			&[readonly] {
+				
+				.opacity(@form-input-error-inverse-disabled-opacity);
+				.input-states (
+					
+					@form-input-error-inverse-disabled-border-color,
+					@form-input-error-inverse-disabled-text-color,
+					@form-input-error-inverse-disabled-text-shadow,
+					@form-input-error-inverse-disabled-background-color,
+					@form-input-error-inverse-disabled-background-gradient-top-color,
+					@form-input-error-inverse-disabled-background-gradient-bottom-color,
+					@form-input-error-inverse-disabled-shadow,
+					@form-input-error-inverse-disabled-placeholder-text-color
+					
+				);
+				
+			}
+			
+		}
 		
 	}
 	
@@ -240,18 +734,11 @@ input[type="checkbox"] {
 	
 }
 
-input[type="file"] {
-	
-	height: @inputHeight;
-	*margin-top: 4px;
-	line-height: @inputHeight;
-	
-}
 
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Radio Buttons & Checkboxes                                                */
+/* Radio Buttons & Checkboxes                                                                           */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -259,57 +746,132 @@ input[type="file"] {
 .checkbox {
 	
 	position: relative;
-	padding: 0px 0px 0px 20px;
-	min-height: @body-text-line-height;
-	line-height: @body-text-line-height;
-	margin-bottom: @inputMargin;
+	padding: 0px 0px 0px (@form-input-radio-height * 2);
+	min-height: @form-input-toggles-text-line-height;
+	margin-bottom: @form-input-margin;
+	font-family: @form-input-toggles-text-font-family;
+	font-size: @form-input-toggles-text-font-size;
+	font-weight: @form-input-toggles-text-font-weight;
+	line-height: @form-input-toggles-text-line-height;
+	text-transform: @form-input-toggles-text-transform;
+	font-style: @form-input-toggles-text-font-style;
 	
-	input[type="radio"],
-	input[type="checkbox"] {
+	+ .help-block {
+		
+		margin-top: -(@form-input-radio-height * 2);
+		
+	}
+	
+	input[type="radio"] {
 		
 		position: absolute;
-		margin: 0px 0px 0px -20px;
-		top: (@body-text-line-height / 2) - 6;
+		margin: 0px 0px 0px -25px;
+		top: (@body-text-line-height / 2) - (@form-input-radio-height / 2);
 		width: auto !important;
 		
 	}
 	
-	&.input-height {
+	input[type="checkbox"] {
 		
-		min-height: @inputHeight;
-		line-height: @inputHeight;
-		
-		input[type="radio"],
-		input[type="checkbox"] {
-			
-			top: (@inputHeight / 2) - 6;
-			
-		}
+		position: absolute;
+		margin: 0px 0px 0px -25px;
+		@input-checkbox-height: 12px;
+		top: (@body-text-line-height / 2) - (@form-input-checkbox-height / 2);
+		width: auto !important;
 		
 	}
 	
 	&.tall {
 		
-		margin-bottom: @inputMarginTall;
+		margin-bottom: @form-input-margin-tall;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tall;
+			
+		}
 		
 	}
 	
 	&.short {
 		
-		margin-bottom: @inputMarginShort;
+		margin-bottom: @form-input-margin-short;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-short;
+			
+		}
+		
+		
+	}
+	
+	&.input-height {
+		
+		min-height: @form-input-height;
+		line-height: @form-input-height;
+		
+		input[type="radio"] {
+			
+			top: (@form-input-height / 2) - (@form-input-radio-height / 2);
+			
+		}
+		
+		input[type="checkbox"] {
+			
+			top: (@form-input-height / 2) - (@form-input-checkbox-height / 2);
+			
+		}
+		
+		&.input-large {
+			
+			min-height: @form-input-large-height;
+			line-height: @form-input-large-height;
+			
+			input[type="radio"] {
+				
+				top: (@form-input-large-height / 2) - (@form-input-radio-height / 2);
+				
+			}
+			
+			input[type="checkbox"] {
+				
+				top: (@form-input-large-height / 2) - (@form-input-checkbox-height / 2);
+				
+			}
+			
+		}
+		
+		&.input-small {
+			
+			min-height: @form-input-small-height;
+			line-height: @form-input-small-height;
+			
+			input[type="radio"] {
+				
+				top: (@form-input-small-height / 2) - (@form-input-radio-height / 2);
+				
+			}
+			
+			input[type="checkbox"] {
+				
+				top: (@form-input-small-height / 2) - (@form-input-checkbox-height / 2);
+				
+			}
+			
+		}
 		
 	}
 	
 	&.inline {
 		
 		display: inline-block;
-		margin-bottom: 0;
 		vertical-align: middle;
 		
 		+ .radio.inline,
 		+ .checkbox.inline {
 			
-			margin-left: @formLabelMargin;
+			margin-left: @form-input-toggles-inline-padding-horizontal;
 			
 		}
 		
@@ -321,7 +883,7 @@ input[type="file"] {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Select Boxes                                                              */
+/* Select Boxes                                                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 

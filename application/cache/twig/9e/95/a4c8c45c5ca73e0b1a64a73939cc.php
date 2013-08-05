@@ -2433,6 +2433,375 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t<hr class=\"tall\">
 \t\t\t\t
 \t\t\t\t<!-- ================================================== -->
+\t\t\t\t<!-- ==================== BUTTONS ===================== -->
+\t\t\t\t<!-- ================================================== -->
+\t\t\t\t
+\t\t\t\t<section id=\"#buttons\">\t
+\t\t\t\t\t
+\t\t\t\t\t<h2>
+\t\t\t\t\t\t
+\t\t\t\t\t\tButtons
+\t\t\t\t\t\t
+\t\t\t\t\t</h2>
+\t\t\t\t\t
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t<!-- ============== DEFAULT BUTTON STYLES ============= -->
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t
+\t\t\t\t\t<h3>
+\t\t\t\t\t\t
+\t\t\t\t\t\tButton Styles
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tButton styles can be applied to anything with the <code>.button</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<table class=\"table table-bordered table-striped\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<thead>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<th>Button</th>
+\t\t\t\t\t\t\t\t<th>class=\"\"</th>
+\t\t\t\t\t\t\t\t<th>Description</th>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</thead>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<tbody>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"button button-default\">Default</button></td>
+\t\t\t\t\t\t\t\t<td><code>button button-default</code></td>
+\t\t\t\t\t\t\t\t<td>Standard gray button with gradient</td>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"button button-primary\">Primary</button></td>
+\t\t\t\t\t\t\t\t<td><code>button button-primary</code></td>
+\t\t\t\t\t\t\t\t<td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"button button-success\">Success</button></td>
+\t\t\t\t\t\t\t\t<td><code>button button-success</code></td>
+\t\t\t\t\t\t\t\t<td>Indicates a successful or positive action</td>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"button button-warning\">Warning</button></td>
+\t\t\t\t\t\t\t\t<td><code>button button-warning</code></td>
+\t\t\t\t\t\t\t\t<td>Indicates caution should be taken with this action</td>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"button button-danger\">Danger</button></td>
+\t\t\t\t\t\t\t\t<td><code>button button-danger</code></td>
+\t\t\t\t\t\t\t\t<td>Indicates a dangerous or potentially negative action</td>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</tbody>
+\t\t\t\t\t\t
+\t\t\t\t\t</table>
+\t\t\t\t\t
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t<!-- ================= LINK BUTTONS =================== -->
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t
+\t\t\t\t\t<h4>
+\t\t\t\t\t\t
+\t\t\t\t\t\tLink Button Styles
+\t\t\t\t\t\t
+\t\t\t\t\t</h4>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tYou can de-emphasize a button by making it look like a link while maintaining button behavior by adding the class <code>.btn-link</code> to the button.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"code-example flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"button-toolbar\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-default\">Default</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-default btn-link\">Default</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-primary btn-link\">Primary</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-success btn-link\">Success</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-warning btn-link\">Warning</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-danger btn-link\">Danger</button>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;button type=\"button\" class=\"button button-default btn-link\"&gt;Default&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-primary btn-link\"&gt;Primary&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-success btn-link\"&gt;Success&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-warning btn-link\"&gt;Warning&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-danger btn-link\"&gt;Danger&lt;/button&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t<!-- ================ INVERSE BUTTONS ================= -->
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t
+\t\t\t\t\t<h4>
+\t\t\t\t\t\t
+\t\t\t\t\t\tInverse Button Styles
+\t\t\t\t\t\t
+\t\t\t\t\t</h4>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tSimilar to text and tables, buttons offer an inverted state.  Apply the class <code>.inverse</code> to the button to take advantage of the inverse state styling.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"code-example flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"button-toolbar\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-default inverse\">Default</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-primary inverse\">Primary</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-success inverse\">Success</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-warning inverse\">Warning</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-danger inverse\">Danger</button>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;button type=\"button\" class=\"button button-default inverse\"&gt;Default&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-primary inverse\"&gt;Primary&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-success inverse\"&gt;Success&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-warning inverse\"&gt;Warning&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-danger inverse\"&gt;Danger&lt;/button&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t<!-- =================== BUTTON SIZES ================= -->
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t
+\t\t\t\t\t<h3>
+\t\t\t\t\t\t
+\t\t\t\t\t\tButton sizes
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tFancy larger or smaller buttons? Add <code>.button-large</code>, <code>.button-small</code>, or <code>.button-mini</code> for additional sizes.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"code-example flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<p>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-large button-primary\">Large button</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-large\">Large button</button>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</p>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<p>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-primary\">Default button</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button\">Default button</button>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</p>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<p>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-small button-primary\">Small button</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-small\">Small button</button>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</p>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<p class=\"flush-bottom\">
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-mini button-primary\">Mini button</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-mini\">Mini button</button>
+\t\t\t\t\t\t</p>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;p&gt;
+  &lt;button class=\"button button-large button-primary\" type=\"button\"&gt;Large button&lt;/button&gt;
+  &lt;button class=\"button button-large\" type=\"button\"&gt;Large button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class=\"button button-primary\" type=\"button\"&gt;Default button&lt;/button&gt;
+  &lt;button class=\"button\" type=\"button\"&gt;Default button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class=\"button button-small button-primary\" type=\"button\"&gt;Small button&lt;/button&gt;
+  &lt;button class=\"button button-small\" type=\"button\"&gt;Small button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class=\"button button-mini button-primary\" type=\"button\"&gt;Mini button&lt;/button&gt;
+  &lt;button class=\"button button-mini\" type=\"button\"&gt;Mini button&lt;/button&gt;
+&lt;/p&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tCreate block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.button-block</code>.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"code-example flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"well\" style=\"max-width: 400px; margin: 0 auto 10px;\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-large button-block button-primary\">Block level button</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-large button-block\">Block level button</button>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;button class=\"button button-large button-block button-primary\" type=\"button\"&gt;Block level button&lt;/button&gt;
+&lt;button class=\"button button-large button-block\" type=\"button\"&gt;Block level button&lt;/button&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t<!-- ================= DISABLED STATE ================= -->
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t
+\t\t\t\t\t<h3>
+\t\t\t\t\t\t
+\t\t\t\t\t\tDisabled state
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p class=\"tall\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tMake buttons look unclickable by fading them back 50%.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<!-- ================== ANCHOR ELEMENT ================ -->
+\t\t\t\t\t
+\t\t\t\t\t<h4>
+\t\t\t\t\t\t
+\t\t\t\t\t\tAnchor element
+\t\t\t\t\t\t
+\t\t\t\t\t</h4>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tAdd the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"code-example flush-bottom\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t<a href=\"#\" class=\"button button-large button-primary disabled\">Primary link</a>
+\t\t\t\t\t\t<a href=\"#\" class=\"button button-large disabled\">Link</a>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums short\">
+&lt;a href=\"#\" class=\"button button-large button-primary disabled\"&gt;Primary link&lt;/a&gt;
+&lt;a href=\"#\" class=\"button button-large disabled\"&gt;Link&lt;/a&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<p class=\"tall\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<span class=\"label label-info\">Heads up!</span>
+\t\t\t\t\t\tWe use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. Also, this class is only for aesthetic; you must use custom JavaScript to disable links here.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<!-- ================= BUTTON ELEMENT ================= -->
+\t\t\t\t\t
+\t\t\t\t\t<h4>
+\t\t\t\t\t\t
+\t\t\t\t\t\tButton element
+\t\t\t\t\t\t
+\t\t\t\t\t</h4>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tAdd the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"code-example flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<button type=\"button\" class=\"button button-large button-primary disabled\" disabled=\"disabled\">Primary button</button>
+\t\t\t\t\t\t<button type=\"button\" class=\"button button-large\" disabled>Button</button>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;button type=\"button\" class=\"button button-large button-primary disabled\" disabled=\"disabled\"&gt;Primary button&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-large\" disabled&gt;Button&lt;/button&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t<!-- ================== MULTIPLE TAGS ================= -->
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t
+\t\t\t\t\t<h3>
+\t\t\t\t\t\t
+\t\t\t\t\t\tUsing multiple tags
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tUse the <code>.button</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<form class=\"code-example flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<a class=\"button\" href=\"\">Link</a>
+\t\t\t\t\t\t<button class=\"button\" type=\"submit\">Button</button>
+\t\t\t\t\t\t<input class=\"button\" type=\"button\" value=\"Input\">
+\t\t\t\t\t\t<input class=\"button\" type=\"submit\" value=\"Submit\">
+\t\t\t\t\t\t
+\t\t\t\t\t</form>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums short\">
+&lt;a class=\"button\" href=\"\"&gt;Link&lt;/a&gt;
+&lt;button class=\"button\" type=\"submit\"&gt;Button&lt;/button&gt;
+&lt;input class=\"button\" type=\"button\" value=\"Input\"&gt;
+&lt;input class=\"button\" type=\"submit\" value=\"Submit\"&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<p class=\"flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tAs a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type=\"submit\"&gt;</code> for your button.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t</section>
+\t\t\t\t
+\t\t\t\t<hr class=\"tall\">
+\t\t\t\t
+\t\t\t\t<!-- ================================================== -->
 \t\t\t\t<!-- ====================== FORMS ===================== -->
 \t\t\t\t<!-- ================================================== -->
 \t\t\t\t
@@ -2460,19 +2829,51 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t\t<fieldset>
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<legend>Legend</legend>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<label>Label Name</label>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<input type=\"text\" placeholder=\"Type something…\">
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<span class=\"help-block\">Example block-level help text here.</span>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<label class=\"checkbox\">
+\t\t\t\t\t\t\t<legend>
 \t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<input type=\"checkbox\"> Check me out
+\t\t\t\t\t\t\t\tLegend
 \t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</label>
+\t\t\t\t\t\t\t</legend>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"form-group\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<label for=\"exampleInputEmail\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tEmail address
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</label>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"exampleInputEmail\" placeholder=\"Enter email\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"form-group\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<label for=\"exampleInputPassword\">Password</label>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" id=\"exampleInputPassword\" placeholder=\"Password\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"form-group\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<label for=\"exampleInputFile\">File input</label>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<input type=\"file\" id=\"exampleInputFile\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<p class=\"help-block\">Example block-level help text here.</p>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"checkbox\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<label>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<input type=\"checkbox\"> Check me out
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</label>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<button type=\"submit\" class=\"button\">Submit</button>
 \t\t\t\t\t\t\t
@@ -2480,20 +2881,32 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums flush-bottom\">
-\t\t&lt;form&gt;
-\t\t  &lt;fieldset&gt;
-\t\t    &lt;legend&gt;Legend&lt;/legend&gt;
-\t\t    &lt;label&gt;Label name&lt;/label&gt;
-\t\t    &lt;input type=\"text\" placeholder=\"Type something…\"&gt;
-\t\t    &lt;span class=\"help-block\"&gt;Example block-level help text here.&lt;/span&gt;
-\t\t    &lt;label class=\"checkbox\"&gt;
-\t\t      &lt;input type=\"checkbox\"&gt; Check me out
-\t\t    &lt;/label&gt;
-\t\t    &lt;button type=\"submit\" class=\"button\"&gt;Submit&lt;/button&gt;
-\t\t  &lt;/fieldset&gt;
-\t\t&lt;/form&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums flush-bottom\">
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Legend&lt;/legend&gt;
+    &lt;div class=\"form-group\"&gt;
+      &lt;label for=\"exampleInputEmail\"&gt;Email address&lt;/label&gt;
+      &lt;input type=\"text\" class=\"form-control\" id=\"exampleInputEmail\" placeholder=\"Enter email\"&gt;
+    &lt;/div&gt;
+    &lt;div class=\"form-group\"&gt;
+      &lt;label for=\"exampleInputPassword\"&gt;Password&lt;/label&gt;
+      &lt;input type=\"password\" class=\"form-control\" id=\"exampleInputPassword\" placeholder=\"Password\"&gt;
+    &lt;/div&gt;
+    &lt;div class=\"form-group\"&gt;
+      &lt;label for=\"exampleInputFile\"&gt;File input&lt;/label&gt;
+      &lt;input type=\"file\" id=\"exampleInputFile\"&gt;
+      &lt;p class=\"help-block\"&gt;Example block-level help text here.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=\"checkbox\"&gt;
+      &lt;label&gt;
+        &lt;input type=\"checkbox\"&gt; Check me out
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type=\"submit\" class=\"btn btn-default\"&gt;Submit&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<hr>
 \t\t\t\t\t
@@ -2539,9 +2952,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;input type=\"text\" placeholder=\"Text input\"&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;input type=\"text\" placeholder=\"Text input\"&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<!-- ==================== TEXTAREA ==================== -->
 \t\t\t\t\t
@@ -2563,9 +2976,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;textarea rows=\"3\"&gt;&lt;/textarea&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;textarea rows=\"3\"&gt;&lt;/textarea&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<!-- ============== CHECKBOXES & RADIOS =============== -->
 \t\t\t\t\t
@@ -2615,20 +3028,20 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;label class=\"checkbox\"&gt;
-\t\t  &lt;input type=\"checkbox\" value=\"\"&gt;
-\t\t  Option one is this and that&mdash;be sure to include why it's great
-\t\t&lt;/label&gt;
-\t\t&lt;label class=\"radio\"&gt;
-\t\t  &lt;input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios1\" value=\"option1\" checked&gt;
-\t\t  Option one is this and that&mdash;be sure to include why it's great
-\t\t&lt;/label&gt;
-\t\t&lt;label class=\"radio\"&gt;
-\t\t  &lt;input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios2\" value=\"option2\"&gt;
-\t\t  Option two can be something else and selecting it will deselect option one
-\t\t&lt;/label&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;label class=\"checkbox\"&gt;
+  &lt;input type=\"checkbox\" value=\"\"&gt;
+  Option one is this and that&mdash;be sure to include why it's great
+&lt;/label&gt;
+&lt;label class=\"radio\"&gt;
+  &lt;input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios1\" value=\"option1\" checked&gt;
+  Option one is this and that&mdash;be sure to include why it's great
+&lt;/label&gt;
+&lt;label class=\"radio\"&gt;
+  &lt;input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios2\" value=\"option2\"&gt;
+  Option two can be something else and selecting it will deselect option one
+&lt;/label&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<h5 class=\"short\">
 \t\t\t\t\t\t
@@ -2644,19 +3057,19 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<label class=\"checkbox inline\">
+\t\t\t\t\t\t<label class=\"checkbox inline flush-bottom\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<input type=\"checkbox\" id=\"inlineCheckbox1\" value=\"option1\"> 1
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</label>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<label class=\"checkbox inline\">
+\t\t\t\t\t\t<label class=\"checkbox inline flush-bottom\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<input type=\"checkbox\" id=\"inlineCheckbox2\" value=\"option2\"> 2
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</label>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<label class=\"checkbox inline\">
+\t\t\t\t\t\t<label class=\"checkbox inline flush-bottom\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<input type=\"checkbox\" id=\"inlineCheckbox3\" value=\"option3\"> 3
 \t\t\t\t\t\t\t
@@ -2664,17 +3077,17 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;label class=\"checkbox inline\"&gt;
-\t\t  &lt;input type=\"checkbox\" id=\"inlineCheckbox1\" value=\"option1\"&gt; 1
-\t\t&lt;/label&gt;
-\t\t&lt;label class=\"checkbox inline\"&gt;
-\t\t  &lt;input type=\"checkbox\" id=\"inlineCheckbox2\" value=\"option2\"&gt; 2
-\t\t&lt;/label&gt;
-\t\t&lt;label class=\"checkbox inline\"&gt;
-\t\t  &lt;input type=\"checkbox\" id=\"inlineCheckbox3\" value=\"option3\"&gt; 3
-\t\t&lt;/label&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;label class=\"checkbox inline\"&gt;
+  &lt;input type=\"checkbox\" id=\"inlineCheckbox1\" value=\"option1\"&gt; 1
+&lt;/label&gt;
+&lt;label class=\"checkbox inline\"&gt;
+  &lt;input type=\"checkbox\" id=\"inlineCheckbox2\" value=\"option2\"&gt; 2
+&lt;/label&gt;
+&lt;label class=\"checkbox inline\"&gt;
+  &lt;input type=\"checkbox\" id=\"inlineCheckbox3\" value=\"option3\"&gt; 3
+&lt;/label&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<!-- ===================== SELECTS ==================== -->
 \t\t\t\t\t
@@ -2708,17 +3121,17 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums flush-bottom\">
-\t\t&lt;div class=\"select-wrapper\"&gt;
-\t\t  &lt;select&gt;
-\t\t    &lt;option&gt;1&lt;/option&gt;
-\t\t    &lt;option&gt;2&lt;/option&gt;
-\t\t    &lt;option&gt;3&lt;/option&gt;
-\t\t    &lt;option&gt;4&lt;/option&gt;
-\t\t    &lt;option&gt;5&lt;/option&gt;
-\t\t  &lt;/select&gt;
-\t\t&lt;/div&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums flush-bottom\">
+&lt;div class=\"select-wrapper\"&gt;
+  &lt;select&gt;
+    &lt;option&gt;1&lt;/option&gt;
+    &lt;option&gt;2&lt;/option&gt;
+    &lt;option&gt;3&lt;/option&gt;
+    &lt;option&gt;4&lt;/option&gt;
+    &lt;option&gt;5&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<hr>
 \t\t\t\t\t
@@ -2784,16 +3197,16 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;div class=\"input-group\"&gt;
-\t\t  &lt;span class=\"add-on add-on-prepend\"&gt;@&lt;/span&gt;
-\t\t  &lt;input type=\"text\" placeholder=\"Username\" style=\"padding-left: 50px;\"&gt;
-\t\t&lt;/div&gt;
-\t\t&lt;div class=\"input-group\"&gt;
-\t\t  &lt;input type=\"text\" style=\"padding-right: 55px;\"&gt;
-\t\t  &lt;span class=\"add-on add-on-append\"&gt;.00&lt;/span&gt;
-\t\t&lt;/div&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"input-group\"&gt;
+  &lt;span class=\"add-on add-on-prepend\"&gt;@&lt;/span&gt;
+  &lt;input type=\"text\" placeholder=\"Username\" style=\"padding-left: 50px;\"&gt;
+&lt;/div&gt;
+&lt;div class=\"input-group\"&gt;
+  &lt;input type=\"text\" style=\"padding-right: 55px;\"&gt;
+  &lt;span class=\"add-on add-on-append\"&gt;.00&lt;/span&gt;
+&lt;/div&gt;
+</pre>
 \t\t\t\t\t\t
 \t\t\t\t\t<h5 class=\"short\">
 \t\t\t\t\t\t
@@ -2821,13 +3234,13 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;div class=\"input-group\"&gt;
-\t\t  &lt;span class=\"add-on add-on-prepend\"&gt;\$&lt;/span&gt;
-\t\t  &lt;input type=\"text\" style=\"padding-left: 50px; padding-right: 55px;\"&gt;
-\t\t  &lt;span class=\"add-on add-on-append\"&gt;.00&lt;/span&gt;
-\t\t&lt;/div&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"input-group\"&gt;
+  &lt;span class=\"add-on add-on-prepend\"&gt;\$&lt;/span&gt;
+  &lt;input type=\"text\" style=\"padding-left: 50px; padding-right: 55px;\"&gt;
+  &lt;span class=\"add-on add-on-append\"&gt;.00&lt;/span&gt;
+&lt;/div&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<h5 class=\"short\">
 \t\t\t\t\t\t
@@ -2853,12 +3266,12 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums short\">
-\t\t&lt;div class=\"input-append\"&gt;
-\t\t  &lt;input type=\"text\"&gt;
-\t\t  &lt;button class=\"button\" type=\"button\"&gt;Go!&lt;/button&gt;
-\t\t&lt;/div&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums short\">
+&lt;div class=\"input-append\"&gt;
+  &lt;input type=\"text\"&gt;
+  &lt;button class=\"button\" type=\"button\"&gt;Go!&lt;/button&gt;
+&lt;/div&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
@@ -2892,22 +3305,22 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;div class=\"input-group\"&gt;
-\t\t  &lt;div class=\"add-on-group add-on-prepend\"&gt;
-\t\t    &lt;button class=\"button\" type=\"button\"&gt;Search&lt;/button&gt;
-\t\t    &lt;button class=\"button\" type=\"button\"&gt;Options&lt;/button&gt;
-\t\t  &lt;/div&gt;
-\t\t  &lt;input type=\"text\"&gt;
-\t\t&lt;/div&gt;
-\t\t&lt;div class=\"input-group\"&gt;
-\t\t  &lt;input type=\"text\"&gt;
-\t\t  &lt;div class=\"add-on-group add-on-append\"&gt;
-\t\t    &lt;button class=\"button\" type=\"button\"&gt;Search&lt;/button&gt;
-\t\t    &lt;button class=\"button\" type=\"button\"&gt;Options&lt;/button&gt;
-\t\t  &lt;/div&gt;
-\t\t&lt;/div&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"input-group\"&gt;
+  &lt;div class=\"add-on-group add-on-prepend\"&gt;
+    &lt;button class=\"button\" type=\"button\"&gt;Search&lt;/button&gt;
+    &lt;button class=\"button\" type=\"button\"&gt;Options&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;input type=\"text\"&gt;
+&lt;/div&gt;
+&lt;div class=\"input-group\"&gt;
+  &lt;input type=\"text\"&gt;
+  &lt;div class=\"add-on-group add-on-append\"&gt;
+    &lt;button class=\"button\" type=\"button\"&gt;Search&lt;/button&gt;
+    &lt;button class=\"button\" type=\"button\"&gt;Options&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<h5>
 \t\t\t\t\t\t
@@ -2945,22 +3358,22 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums short\">
-\t\t&lt;div class=\"input-group\"&gt;
-\t\t  &lt;div class=\"add-on-group add-on-prepend\"&gt;
-\t\t    &lt;div class=\"button-group\"&gt;
-\t\t      &lt;button class=\"button dropdown-toggle\" data-toggle=\"dropdown\"&gt;
-\t\t        Action
-\t\t        &lt;span class=\"caret\"&gt;&lt;/span&gt;
-\t\t      &lt;/button&gt;
-\t\t      &lt;ul class=\"dropdown-menu\"&gt;
-\t\t        ...
-\t\t      &lt;/ul&gt;
-\t\t    &lt;/div&gt;
-\t\t  &lt;/div&gt;
-\t\t  &lt;input type=\"text\"&gt;
-\t\t&lt;/div&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums short\">
+&lt;div class=\"input-group\"&gt;
+  &lt;div class=\"add-on-group add-on-prepend\"&gt;
+    &lt;div class=\"button-group\"&gt;
+      &lt;button class=\"button dropdown-toggle\" data-toggle=\"dropdown\"&gt;
+        Action
+        &lt;span class=\"caret\"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;ul class=\"dropdown-menu\"&gt;
+        ...
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;input type=\"text\"&gt;
+&lt;/div&gt;
+</pre>
 \t\t\t
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
@@ -2992,22 +3405,22 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums short\">
-\t\t&lt;div class=\"input-group\"&gt;
-\t\t  &lt;input type=\"text\"&gt;
-\t\t  &lt;div class=\"add-on-group add-on-append\"&gt;
-\t\t    &lt;div class=\"button-group\"&gt;
-\t\t      &lt;button class=\"button dropdown-toggle\" data-toggle=\"dropdown\"&gt;
-\t\t        Action
-\t\t        &lt;span class=\"caret\"&gt;&lt;/span&gt;
-\t\t      &lt;/button&gt;
-\t\t      &lt;ul class=\"dropdown-menu\"&gt;
-\t\t        ...
-\t\t      &lt;/ul&gt;
-\t\t    &lt;/div&gt;
-\t\t  &lt;/div&gt;
-\t\t&lt;/div&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums short\">
+&lt;div class=\"input-group\"&gt;
+  &lt;input type=\"text\"&gt;
+  &lt;div class=\"add-on-group add-on-append\"&gt;
+    &lt;div class=\"button-group\"&gt;
+      &lt;button class=\"button dropdown-toggle\" data-toggle=\"dropdown\"&gt;
+        Action
+        &lt;span class=\"caret\"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;ul class=\"dropdown-menu\"&gt;
+        ...
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
@@ -3059,33 +3472,33 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;div class=\"input-prepend input-append\"&gt;
-\t\t  &lt;div class=\"add-on-group add-on-prepend\"&gt;
-\t\t    &lt;div class=\"button-group\"&gt;
-\t\t      &lt;button class=\"button dropdown-toggle\" data-toggle=\"dropdown\"&gt;
-\t\t        Action
-\t\t        &lt;span class=\"caret\"&gt;&lt;/span&gt;
-\t\t      &lt;/button&gt;
-\t\t      &lt;ul class=\"dropdown-menu\"&gt;
-\t\t        ...
-\t\t      &lt;/ul&gt;
-\t\t    &lt;/div&gt;
-\t\t  &lt;/div&gt;
-\t\t  &lt;input type=\"text\"&gt;
-\t\t  &lt;div class=\"add-on-group add-on-append\"&gt;
-\t\t    &lt;div class=\"button-group\"&gt;
-\t\t      &lt;button class=\"button dropdown-toggle\" data-toggle=\"dropdown\"&gt;
-\t\t        Action
-\t\t        &lt;span class=\"caret\"&gt;&lt;/span&gt;
-\t\t      &lt;/button&gt;
-\t\t      &lt;ul class=\"dropdown-menu\"&gt;
-\t\t        ...
-\t\t      &lt;/ul&gt;
-\t\t    &lt;/div&gt;
-\t\t  &lt;/div&gt;
-\t\t&lt;/div&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"input-prepend input-append\"&gt;
+  &lt;div class=\"add-on-group add-on-prepend\"&gt;
+    &lt;div class=\"button-group\"&gt;
+      &lt;button class=\"button dropdown-toggle\" data-toggle=\"dropdown\"&gt;
+        Action
+        &lt;span class=\"caret\"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;ul class=\"dropdown-menu\"&gt;
+        ...
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;input type=\"text\"&gt;
+  &lt;div class=\"add-on-group add-on-append\"&gt;
+    &lt;div class=\"button-group\"&gt;
+      &lt;button class=\"button dropdown-toggle\" data-toggle=\"dropdown\"&gt;
+        Action
+        &lt;span class=\"caret\"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;ul class=\"dropdown-menu\"&gt;
+        ...
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<h5>
 \t\t\t\t\t\t
@@ -3161,17 +3574,17 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;form&gt;
-\t\t  &lt;div class=\"add-on-group add-on-prepend\"&gt;
-\t\t    &lt;div class=\"button-group\"&gt;...&lt;/div&gt;
-\t\t  &lt;/div&gt;
-\t\t  &lt;input type=\"text\"&gt;
-\t\t  &lt;div class=\"add-on-group add-on-append\"&gt;
-\t\t    &lt;div class=\"button-group\"&gt;...&lt;/div&gt;
-\t\t  &lt;/div&gt;
-\t\t&lt;/form&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;form&gt;
+  &lt;div class=\"add-on-group add-on-prepend\"&gt;
+    &lt;div class=\"button-group\"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;input type=\"text\"&gt;
+  &lt;div class=\"add-on-group add-on-append\"&gt;
+    &lt;div class=\"button-group\"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<!-- ================= CONTROL SIZING ================= -->
 \t\t\t\t\t
@@ -3205,10 +3618,10 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;input type=\"text\"&gt;
-\t\t&lt;input class=\"input-large\" type=\"text\" placeholder=\".input-large\"&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;input type=\"text\"&gt;
+&lt;input class=\"input-large\" type=\"text\" placeholder=\".input-large\"&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<h5>
 \t\t\t\t\t\t
@@ -3278,20 +3691,20 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;input class=\"span1\" type=\"text\" placeholder=\".span1\"&gt;
-\t\t&lt;input class=\"span2\" type=\"text\" placeholder=\".span2\"&gt;
-\t\t&lt;input class=\"span3\" type=\"text\" placeholder=\".span3\"&gt;
-\t\t&lt;select class=\"span1\"&gt;
-\t\t  ...
-\t\t&lt;/select&gt;
-\t\t&lt;select class=\"span2\"&gt;
-\t\t  ...
-\t\t&lt;/select&gt;
-\t\t&lt;select class=\"span3\"&gt;
-\t\t  ...
-\t\t&lt;/select&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;input class=\"span1\" type=\"text\" placeholder=\".span1\"&gt;
+&lt;input class=\"span2\" type=\"text\" placeholder=\".span2\"&gt;
+&lt;input class=\"span3\" type=\"text\" placeholder=\".span3\"&gt;
+&lt;select class=\"span1\"&gt;
+  ...
+&lt;/select&gt;
+&lt;select class=\"span2\"&gt;
+  ...
+&lt;/select&gt;
+&lt;select class=\"span3\"&gt;
+  ...
+&lt;/select&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<p class=\"tall\">
 \t\t\t\t\t\t
@@ -3337,16 +3750,16 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;div class=\"controls\"&gt;
-\t\t  &lt;input class=\"span5\" type=\"text\" placeholder=\".span5\"&gt;
-\t\t&lt;/div&gt;
-\t\t&lt;div class=\"controls controls-row\"&gt;
-\t\t  &lt;input class=\"span4\" type=\"text\" placeholder=\".span4\"&gt;
-\t\t  &lt;input class=\"span1\" type=\"text\" placeholder=\".span1\"&gt;
-\t\t&lt;/div&gt;
-\t\t...
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"controls\"&gt;
+  &lt;input class=\"span5\" type=\"text\" placeholder=\".span5\"&gt;
+&lt;/div&gt;
+&lt;div class=\"controls controls-row\"&gt;
+  &lt;input class=\"span4\" type=\"text\" placeholder=\".span4\"&gt;
+  &lt;input class=\"span1\" type=\"text\" placeholder=\".span1\"&gt;
+&lt;/div&gt;
+...
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<!-- =============== UNEDITABLE INPUTS ================ -->
 \t\t\t\t\t
@@ -3368,9 +3781,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;span class=\"uneditable-input\"&gt;Some value here&lt;/span&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;span class=\"uneditable-input\"&gt;Some value here&lt;/span&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<!-- ================== FORM ACTIONS ================== -->
 \t\t\t\t\t
@@ -3398,12 +3811,12 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;div class=\"form-actions\"&gt;
-\t\t  &lt;button type=\"submit\" class=\"button button-primary\"&gt;Save changes&lt;/button&gt;
-\t\t  &lt;button type=\"button\" class=\"button\"&gt;Cancel&lt;/button&gt;
-\t\t&lt;/div&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"form-actions\"&gt;
+  &lt;button type=\"submit\" class=\"button button-primary\"&gt;Save changes&lt;/button&gt;
+  &lt;button type=\"button\" class=\"button\"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;
+</pre>
 \t\t\t
 \t\t\t\t\t<!-- ==================== HELP TEXT =================== -->
 \t\t\t\t\t
@@ -3427,10 +3840,10 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums flush-bottom\">
-\t\t&lt;input type=\"text\"&gt;
-\t\t&lt;span class=\"help-block\"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums flush-bottom\">
+&lt;input type=\"text\"&gt;
+&lt;span class=\"help-block\"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<hr>
 \t\t\t\t\t
@@ -3470,9 +3883,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;input type=\"text\" value=\"This is focused...\"&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;input type=\"text\" value=\"This is focused...\"&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<!-- ================= INVALID INPUTS ================= -->
 \t\t\t\t\t
@@ -3494,9 +3907,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;input class=\"span3\" type=\"email\" required&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;input class=\"span3\" type=\"email\" required&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<!-- ================= DISABLED INPUTS ================ -->
 \t\t\t\t\t
@@ -3518,9 +3931,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;input type=\"text\" placeholder=\"Disabled input here\" disabled&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;input type=\"text\" placeholder=\"Disabled input here\" disabled&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t\t<!-- =============== VALIDATION STATES ================ -->
 \t\t\t\t\t
@@ -3586,341 +3999,97 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums flush-bottom\">
-\t\t&lt;div class=\"control-group success\"&gt;
-\t\t  &lt;label class=\"control-label\"&gt;Input with success&lt;/label&gt;
-\t\t  &lt;div class=\"controls\"&gt;
-\t\t    &lt;input type=\"text\"&gt;
-\t\t    &lt;span class=\"help-block\"&gt;Woohoo!&lt;/span&gt;
-\t\t  &lt;/div&gt;
-\t\t&lt;/div&gt;
-\t\t&lt;div class=\"control-group warning\"&gt;
-\t\t  &lt;label class=\"control-label\"&gt;Input with warning&lt;/label&gt;
-\t\t  &lt;div class=\"controls\"&gt;
-\t\t    &lt;input type=\"text\"&gt;
-\t\t    &lt;span class=\"help-block\"&gt;Something may have gone wrong&lt;/span&gt;
-\t\t  &lt;/div&gt;
-\t\t&lt;/div&gt;
-\t\t&lt;div class=\"control-group error\"&gt;
-\t\t  &lt;label class=\"control-label\"&gt;Input with error&lt;/label&gt;
-\t\t  &lt;div class=\"controls\"&gt;
-\t\t    &lt;input type=\"text\"&gt;
-\t\t    &lt;span class=\"help-block\"&gt;Please correct the error&lt;/span&gt;
-\t\t  &lt;/div&gt;
-\t\t&lt;/div&gt;
-\t\t</pre>
-\t\t\t\t\t\t
-\t\t\t\t</section>
-\t\t\t\t
-\t\t\t\t<hr class=\"tall\">
-\t\t\t\t
-\t\t\t\t<!-- ================================================== -->
-\t\t\t\t<!-- ==================== BUTTONS ===================== -->
-\t\t\t\t<!-- ================================================== -->
-\t\t\t\t
-\t\t\t\t<section id=\"#buttons\">\t
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"control-group success\"&gt;
+  &lt;label class=\"control-label\"&gt;Input with success&lt;/label&gt;
+  &lt;div class=\"controls\"&gt;
+    &lt;input type=\"text\"&gt;
+    &lt;span class=\"help-block\"&gt;Woohoo!&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=\"control-group warning\"&gt;
+  &lt;label class=\"control-label\"&gt;Input with warning&lt;/label&gt;
+  &lt;div class=\"controls\"&gt;
+    &lt;input type=\"text\"&gt;
+    &lt;span class=\"help-block\"&gt;Something may have gone wrong&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=\"control-group error\"&gt;
+  &lt;label class=\"control-label\"&gt;Input with error&lt;/label&gt;
+  &lt;div class=\"controls\"&gt;
+    &lt;input type=\"text\"&gt;
+    &lt;span class=\"help-block\"&gt;Please correct the error&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 \t\t\t\t\t
-\t\t\t\t\t<h2>
-\t\t\t\t\t\t
-\t\t\t\t\t\tButtons
-\t\t\t\t\t\t
-\t\t\t\t\t</h2>
-\t\t\t\t\t
-\t\t\t\t\t<!-- ================================================== -->
-\t\t\t\t\t<!-- ================ DEFAULT BUTTONS ================= -->
-\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t<!-- ================ CONTROL SIZING ================== -->
 \t\t\t\t\t
 \t\t\t\t\t<h3>
 \t\t\t\t\t\t
-\t\t\t\t\t\tDefault buttons
-\t\t\t\t\t\t
-\t\t\t\t\t</h3>
-\t\t\t\t\t
-\t\t\t\t\t<p>
-\t\t\t\t\t\t
-\t\t\t\t\t\tButton styles can be applied to anything with the <code>.button</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.
-\t\t\t\t\t\t
-\t\t\t\t\t</p>
-\t\t\t\t\t
-\t\t\t\t\t<table class=\"table table-bordered table-striped short\">
-\t\t\t\t\t\t<thead>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<tr>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<th>Button</th>
-\t\t\t\t\t\t\t\t<th>class=\"\"</th>
-\t\t\t\t\t\t\t\t<th>Description</th>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</tr>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</thead>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<tbody>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<tr>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"button\">Default</button></td>
-\t\t\t\t\t\t\t\t<td><code>button</code></td>
-\t\t\t\t\t\t\t\t<td>Standard gray button with gradient</td>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</tr>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<tr>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"button button-primary\">Primary</button></td>
-\t\t\t\t\t\t\t\t<td><code>button button-primary</code></td>
-\t\t\t\t\t\t\t\t<td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</tr>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<tr>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"button button-success\">Success</button></td>
-\t\t\t\t\t\t\t\t<td><code>button button-success</code></td>
-\t\t\t\t\t\t\t\t<td>Indicates a successful or positive action</td>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</tr>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<tr>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"button button-warning\">Warning</button></td>
-\t\t\t\t\t\t\t\t<td><code>button button-warning</code></td>
-\t\t\t\t\t\t\t\t<td>Indicates caution should be taken with this action</td>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</tr>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<tr>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"button button-danger\">Danger</button></td>
-\t\t\t\t\t\t\t\t<td><code>button button-danger</code></td>
-\t\t\t\t\t\t\t\t<td>Indicates a dangerous or potentially negative action</td>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</tr>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<tr>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"button button-link\">Link</button></td>
-\t\t\t\t\t\t\t\t<td><code>button button-link</code></td>
-\t\t\t\t\t\t\t\t<td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</tr>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</tbody>
-\t\t\t\t\t\t
-\t\t\t\t\t</table>
-\t\t\t\t\t
-\t\t\t\t\t<h5 class=\"short\">
-\t\t\t\t\t\t
-\t\t\t\t\t\tCross browser compatibility
-\t\t\t\t\t\t
-\t\t\t\t\t</h5>
-\t\t\t\t\t
-\t\t\t\t\t<p class=\"tall\">
-\t\t\t\t\t\t
-\t\t\t\t\t\tIE9 doesn't crop background gradients on rounded corners, so we remove it. Related, IE9 jankifies disabled <code>button</code> elements, rendering text gray with a nasty text-shadow that we cannot fix.
-\t\t\t\t\t\t
-\t\t\t\t\t</p>
-\t\t\t\t\t
-\t\t\t\t\t<!-- ================================================== -->
-\t\t\t\t\t<!-- =================== BUTTON SIZES ================= -->
-\t\t\t\t\t<!-- ================================================== -->
-\t\t\t\t\t
-\t\t\t\t\t<h3>
-\t\t\t\t\t\t
-\t\t\t\t\t\tButton sizes
-\t\t\t\t\t\t
-\t\t\t\t\t</h3>
-\t\t\t\t\t
-\t\t\t\t\t<p>
-\t\t\t\t\t\t
-\t\t\t\t\t\tFancy larger or smaller buttons? Add <code>.button-large</code>, <code>.button-small</code>, or <code>.button-mini</code> for additional sizes.
-\t\t\t\t\t\t
-\t\t\t\t\t</p>
-\t\t\t\t\t
-\t\t\t\t\t<div class=\"code-example flush-bottom\">
-\t\t\t\t\t\t
-\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-large button-primary\">Large button</button>
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-large\">Large button</button>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</p>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-primary\">Default button</button>
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button\">Default button</button>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</p>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-small button-primary\">Small button</button>
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-small\">Small button</button>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</p>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<p class=\"flush-bottom\">
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-mini button-primary\">Mini button</button>
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-mini\">Mini button</button>
-\t\t\t\t\t\t</p>
-\t\t\t\t\t\t
-\t\t\t\t\t</div>
-\t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums short\">
-\t\t&lt;p&gt;
-\t\t  &lt;button class=\"button button-large button-primary\" type=\"button\"&gt;Large button&lt;/button&gt;
-\t\t  &lt;button class=\"button button-large\" type=\"button\"&gt;Large button&lt;/button&gt;
-\t\t&lt;/p&gt;
-\t\t&lt;p&gt;
-\t\t  &lt;button class=\"button button-primary\" type=\"button\"&gt;Default button&lt;/button&gt;
-\t\t  &lt;button class=\"button\" type=\"button\"&gt;Default button&lt;/button&gt;
-\t\t&lt;/p&gt;
-\t\t&lt;p&gt;
-\t\t  &lt;button class=\"button button-small button-primary\" type=\"button\"&gt;Small button&lt;/button&gt;
-\t\t  &lt;button class=\"button button-small\" type=\"button\"&gt;Small button&lt;/button&gt;
-\t\t&lt;/p&gt;
-\t\t&lt;p&gt;
-\t\t  &lt;button class=\"button button-mini button-primary\" type=\"button\"&gt;Mini button&lt;/button&gt;
-\t\t  &lt;button class=\"button button-mini\" type=\"button\"&gt;Mini button&lt;/button&gt;
-\t\t&lt;/p&gt;
-\t\t</pre>
-\t\t\t\t\t
-\t\t\t\t\t<p>
-\t\t\t\t\t\t
-\t\t\t\t\t\tCreate block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.button-block</code>.
-\t\t\t\t\t\t
-\t\t\t\t\t</p>
-\t\t\t\t\t
-\t\t\t\t\t<div class=\"code-example flush-bottom\">
-\t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"well\" style=\"max-width: 400px; margin: 0 auto 10px;\">
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-large button-block button-primary\">Block level button</button>
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-large button-block\">Block level button</button>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t
-\t\t\t\t\t</div>
-\t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;button class=\"button button-large button-block button-primary\" type=\"button\"&gt;Block level button&lt;/button&gt;
-\t\t&lt;button class=\"button button-large button-block\" type=\"button\"&gt;Block level button&lt;/button&gt;
-\t\t</pre>
-\t\t\t\t\t
-\t\t\t\t\t<!-- ================================================== -->
-\t\t\t\t\t<!-- ================= DISABLED STATE ================= -->
-\t\t\t\t\t<!-- ================================================== -->
-\t\t\t\t\t
-\t\t\t\t\t<h3>
-\t\t\t\t\t\t
-\t\t\t\t\t\tDisabled state
+\t\t\t\t\t\tControl sizing
 \t\t\t\t\t\t
 \t\t\t\t\t</h3>
 \t\t\t\t\t
 \t\t\t\t\t<p class=\"tall\">
 \t\t\t\t\t\t
-\t\t\t\t\t\tMake buttons look unclickable by fading them back 50%.
+\t\t\t\t\t\tSet heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.
 \t\t\t\t\t\t
 \t\t\t\t\t</p>
-\t\t\t\t\t
-\t\t\t\t\t<!-- ================== ANCHOR ELEMENT ================ -->
 \t\t\t\t\t
 \t\t\t\t\t<h4>
 \t\t\t\t\t\t
-\t\t\t\t\t\tAnchor element
+\t\t\t\t\t\tHeight sizing
 \t\t\t\t\t\t
 \t\t\t\t\t</h4>
-\t\t\t\t\t
-\t\t\t\t\t<p>
-\t\t\t\t\t\t
-\t\t\t\t\t\tAdd the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.
-\t\t\t\t\t\t
-\t\t\t\t\t</p>
-\t\t\t\t\t
-\t\t\t\t\t<div class=\"code-example flush-bottom\">
-\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t<a href=\"#\" class=\"button button-large button-primary disabled\">Primary link</a>
-\t\t\t\t\t\t<a href=\"#\" class=\"button button-large disabled\">Link</a>
-\t\t\t\t\t\t
-\t\t\t\t\t</div>
-\t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums short\">
-\t\t&lt;a href=\"#\" class=\"button button-large button-primary disabled\"&gt;Primary link&lt;/a&gt;
-\t\t&lt;a href=\"#\" class=\"button button-large disabled\"&gt;Link&lt;/a&gt;
-\t\t</pre>
 \t\t\t\t\t
 \t\t\t\t\t<p class=\"tall\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<span class=\"label label-info\">Heads up!</span>
-\t\t\t\t\t\tWe use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. Also, this class is only for aesthetic; you must use custom JavaScript to disable links here.
-\t\t\t\t\t\t
-\t\t\t\t\t</p>
-\t\t\t\t\t
-\t\t\t\t\t<!-- ================= BUTTON ELEMENT ================= -->
-\t\t\t\t\t
-\t\t\t\t\t<h4>
-\t\t\t\t\t\t
-\t\t\t\t\t\tButton element
-\t\t\t\t\t\t
-\t\t\t\t\t</h4>
-\t\t\t\t\t
-\t\t\t\t\t<p>
-\t\t\t\t\t\t
-\t\t\t\t\t\tAdd the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.
-\t\t\t\t\t\t
-\t\t\t\t\t</p>
-\t\t\t\t\t
-\t\t\t\t\t<div class=\"code-example flush-bottom\">
-\t\t\t\t\t\t
-\t\t\t\t\t\t<button type=\"button\" class=\"button button-large button-primary disabled\" disabled=\"disabled\">Primary button</button>
-\t\t\t\t\t\t<button type=\"button\" class=\"button button-large\" disabled>Button</button>
-\t\t\t\t\t\t
-\t\t\t\t\t</div>
-\t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;button type=\"button\" class=\"button button-large button-primary disabled\" disabled=\"disabled\"&gt;Primary button&lt;/button&gt;
-\t\t&lt;button type=\"button\" class=\"button button-large\" disabled&gt;Button&lt;/button&gt;
-\t\t</pre>
-\t\t\t\t\t
-\t\t\t\t\t<!-- ================================================== -->
-\t\t\t\t\t<!-- ================== MULTIPLE TAGS ================= -->
-\t\t\t\t\t<!-- ================================================== -->
-\t\t\t\t\t
-\t\t\t\t\t<h3>
-\t\t\t\t\t\t
-\t\t\t\t\t\tOne class, multiple tags
-\t\t\t\t\t\t
-\t\t\t\t\t</h3>
-\t\t\t\t\t
-\t\t\t\t\t<p>
-\t\t\t\t\t\t
-\t\t\t\t\t\tUse the <code>.button</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.
+\t\t\t\t\t\tCreate larger or smaller form controls that match button sizes.
 \t\t\t\t\t\t
 \t\t\t\t\t</p>
 \t\t\t\t\t
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<a class=\"button\" href=\"\">Link</a>
-\t\t\t\t\t\t<button class=\"button\" type=\"submit\">Button</button>
-\t\t\t\t\t\t<input class=\"button\" type=\"button\" value=\"Input\">
-\t\t\t\t\t\t<input class=\"button\" type=\"submit\" value=\"Submit\">
+\t\t\t\t\t\t<div class=\"controls docs-input-sizes\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<input class=\"form-control input-large\" type=\"text\" placeholder=\".input-large\">
+\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" placeholder=\"Default input\">
+\t\t\t\t\t\t\t<input class=\"form-control input-small\" type=\"text\" placeholder=\".input-small\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<select class=\"form-control input-large\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<option value=\"\">.input-large</option>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<select class=\"form-control\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<option value=\"\">Default select</option>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<select class=\"form-control input-small flush-bottom\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<option value=\"\">.input-small</option>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums short\">
-\t\t&lt;a class=\"button\" href=\"\"&gt;Link&lt;/a&gt;
-\t\t&lt;button class=\"button\" type=\"submit\"&gt;Button&lt;/button&gt;
-\t\t&lt;input class=\"button\" type=\"button\" value=\"Input\"&gt;
-\t\t&lt;input class=\"button\" type=\"submit\" value=\"Submit\"&gt;
-\t\t</pre>
-\t\t\t\t\t
-\t\t\t\t\t<p class=\"flush-bottom\">
+<pre class=\"prettyprint linenums flush-bottom\">
+&lt;input class=\"form-control input-large\" type=\"text\" placeholder=\".input-large\"&gt;
+&lt;input class=\"form-control\" type=\"text\" placeholder=\"Default input\"&gt;
+&lt;input class=\"form-control input-small\" type=\"text\" placeholder=\".input-small\"&gt;
+
+&lt;select class=\"form-control input-large\"&gt;...&lt;/select&gt;
+&lt;select class=\"form-control\"&gt;...&lt;/select&gt;
+&lt;select class=\"form-control input-small\"&gt;...&lt;/select&gt;
+</pre>
+\t\t\t\t
 \t\t\t\t\t\t
-\t\t\t\t\t\tAs a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type=\"submit\"&gt;</code> for your button.
-\t\t\t\t\t\t
-\t\t\t\t\t</p>
-\t\t\t\t\t
 \t\t\t\t</section>
 \t\t\t\t
 \t\t\t\t<hr class=\"tall\">
