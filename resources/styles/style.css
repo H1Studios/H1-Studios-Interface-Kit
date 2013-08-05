@@ -117,6 +117,24 @@
 /* Tables                                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Table Header                                                                                         */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Table Body                                                                                           */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Condensed Table                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Success Row                                                                                          */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Warning Row                                                                                          */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Error Row                                                                                            */
+/* ---------------------------------------------------------------------------------------------------- */
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Buttons                                                                                              */
@@ -617,7 +635,7 @@ body {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Links                                                                     */
+/* Links                                                                                                */
 /*                                                                                                      */
 /* ==================================================================================================== */
 a {
@@ -626,7 +644,7 @@ a {
 }
 a:hover {
   color: #003d7a;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:active {
   color: #001429;
@@ -1044,6 +1062,52 @@ a:active {
 .row-pod.tall {
   padding-bottom: 80px;
 }
+hr {
+  margin: 60px 0px 60px 0px;
+  border: 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+}
+hr.inverse {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+hr.short {
+  margin: 30px 0 30px 0;
+}
+hr.tall {
+  margin: 80px 0 80px 0;
+}
+hr.flush-bottom {
+  margin: 0px;
+}
+hr.narrow {
+  margin: 0 auto;
+  width: 120px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+hr.narrow.short {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+hr.narrow.tall {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+hr + h1,
+hr + .h1-clone,
+hr + h2,
+hr + .h2-clone,
+hr + h3,
+hr + .h3-clone,
+hr + h4,
+hr + .h4-clone,
+hr + h5,
+hr + .h5-clone,
+hr + h6,
+hr + .h6-clone {
+  margin-top: 0px;
+}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Responsive changes to styling for widescreen (@viewport-widescreen) and   */
@@ -1361,6 +1425,28 @@ a:active {
   }
   .row-pod.tall {
     padding-bottom: 100px;
+  }
+  hr {
+    margin: 70px 0px 70px 0px;
+  }
+  hr.short {
+    margin: 35px 0px 35px 0px;
+  }
+  hr.tall {
+    margin: 100px 0px 100px 0px;
+  }
+  hr.narrow {
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  hr.narrow.short {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  hr.narrow.tall {
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 }
 /* ==================================================================================================== */
@@ -1681,6 +1767,28 @@ a:active {
   .row-pod.tall {
     padding-bottom: 88px;
   }
+  hr {
+    margin: 44px 0px 44px 0px;
+  }
+  hr.short {
+    margin: 22px 0px 22px 0px;
+  }
+  hr.tall {
+    margin: 88px 0px 88px 0px;
+  }
+  hr.narrow {
+    margin: 0 auto;
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+  hr.narrow.short {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  hr.narrow.tall {
+    margin-top: 88px;
+    margin-bottom: 88px;
+  }
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -1754,6 +1862,28 @@ a:active {
   }
   .row-fluid {
     width: 100%;
+  }
+  hr {
+    margin: 44px 0px 44px 0px;
+  }
+  hr.short {
+    margin: 22px 0px 22px 0px;
+  }
+  hr.tall {
+    margin: 88px 0px 88px 0px;
+  }
+  hr.narrow {
+    margin: 0 auto;
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+  hr.narrow.short {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  hr.narrow.tall {
+    margin-top: 88px;
+    margin-bottom: 88px;
   }
 }
 /* ==================================================================================================== */
@@ -2738,7 +2868,7 @@ footer .fineprint {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Typographic Text                                                                                     */
+/* Typographic Attributes                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
 .align-left {
@@ -2749,6 +2879,14 @@ footer .fineprint {
 }
 .align-justified {
   text-align: justify;
+}
+strong {
+  font-weight: 500;
+  color: #8c8c8c;
+  font-style: normal;
+}
+em {
+  font-style: italic;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -2779,15 +2917,15 @@ p.short {
 }
 p a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 p a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 p a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 p.emphasis,
 p .emphasis,
@@ -2800,19 +2938,19 @@ p.emphasis a,
 p .emphasis a,
 p strong a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 p.emphasis a:hover,
 p .emphasis a:hover,
 p strong a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 p.emphasis a:active,
 p .emphasis a:active,
 p strong a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 p.muted {
   font-weight: 600;
@@ -2821,15 +2959,15 @@ p.muted {
 }
 p.muted a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 p.muted a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 p.muted a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 p.inverse {
   color: #bbbbbb;
@@ -2890,7 +3028,7 @@ p .lead {
   text-transform: normal;
   font-style: normal;
   color: #9f9f9f;
-  margin: 30px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Inverse                                                                                              */
@@ -2912,19 +3050,19 @@ p.lead a,
 p lead a,
 p .lead a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 p.lead a:hover,
 p lead a:hover,
 p .lead a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 p.lead a:active,
 p lead a:active,
 p .lead a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 p.lead.emphasis,
 p lead.emphasis,
@@ -2949,7 +3087,7 @@ p.lead strong a,
 p lead strong a,
 p .lead strong a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 p.lead.emphasis a:hover,
 p lead.emphasis a:hover,
@@ -2961,7 +3099,7 @@ p.lead strong a:hover,
 p lead strong a:hover,
 p .lead strong a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 p.lead.emphasis a:active,
 p lead.emphasis a:active,
@@ -2973,7 +3111,7 @@ p.lead strong a:active,
 p lead strong a:active,
 p .lead strong a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 p.lead.muted,
 p lead.muted,
@@ -2986,19 +3124,19 @@ p.lead.muted a,
 p lead.muted a,
 p .lead.muted a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 p.lead.muted a:hover,
 p lead.muted a:hover,
 p .lead.muted a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 p.lead.muted a:active,
 p lead.muted a:active,
 p .lead.muted a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 p.lead.inverse,
 p lead.inverse,
@@ -3093,13 +3231,13 @@ p.small,
 p small,
 p .small {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 24px;
   text-transform: normal;
   font-style: normal;
   color: #bbbbbb;
-  margin: 30px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Inverse                                                                                              */
@@ -3121,19 +3259,19 @@ p.small a,
 p small a,
 p .small a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 p.small a:hover,
 p small a:hover,
 p .small a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 p.small a:active,
 p small a:active,
 p .small a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 p.small.emphasis,
 p small.emphasis,
@@ -3158,7 +3296,7 @@ p.small strong a,
 p small strong a,
 p .small strong a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 p.small.emphasis a:hover,
 p small.emphasis a:hover,
@@ -3170,7 +3308,7 @@ p.small strong a:hover,
 p small strong a:hover,
 p .small strong a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 p.small.emphasis a:active,
 p small.emphasis a:active,
@@ -3182,7 +3320,7 @@ p.small strong a:active,
 p small strong a:active,
 p .small strong a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 p.small.muted,
 p small.muted,
@@ -3195,19 +3333,19 @@ p.small.muted a,
 p small.muted a,
 p .small.muted a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 p.small.muted a:hover,
 p small.muted a:hover,
 p .small.muted a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 p.small.muted a:active,
 p small.muted a:active,
 p .small.muted a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 p.small.inverse,
 p small.inverse,
@@ -3383,17 +3521,17 @@ h1.short,
 h1 a,
 .h1-clone a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h1 a:hover,
 .h1-clone a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h1 a:active,
 .h1-clone a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h1.emphasis,
 .h1-clone.emphasis,
@@ -3412,7 +3550,7 @@ h1 .emphasis a,
 h1 strong a,
 .h1-clone strong a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h1.emphasis a:hover,
 .h1-clone.emphasis a:hover,
@@ -3421,7 +3559,7 @@ h1 .emphasis a:hover,
 h1 strong a:hover,
 .h1-clone strong a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h1.emphasis a:active,
 .h1-clone.emphasis a:active,
@@ -3430,7 +3568,7 @@ h1 .emphasis a:active,
 h1 strong a:active,
 .h1-clone strong a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h1.muted,
 .h1-clone.muted {
@@ -3441,17 +3579,17 @@ h1.muted,
 h1.muted a,
 .h1-clone.muted a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h1.muted a:hover,
 .h1-clone.muted a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h1.muted a:active,
 .h1-clone.muted a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h1.inverse,
 .h1-clone.inverse {
@@ -3550,17 +3688,17 @@ h2.short,
 h2 a,
 .h2-clone a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h2 a:hover,
 .h2-clone a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h2 a:active,
 .h2-clone a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h2.emphasis,
 .h2-clone.emphasis,
@@ -3579,7 +3717,7 @@ h2 .emphasis a,
 h2 strong a,
 .h2-clone strong a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h2.emphasis a:hover,
 .h2-clone.emphasis a:hover,
@@ -3588,7 +3726,7 @@ h2 .emphasis a:hover,
 h2 strong a:hover,
 .h2-clone strong a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h2.emphasis a:active,
 .h2-clone.emphasis a:active,
@@ -3597,7 +3735,7 @@ h2 .emphasis a:active,
 h2 strong a:active,
 .h2-clone strong a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h2.muted,
 .h2-clone.muted {
@@ -3608,17 +3746,17 @@ h2.muted,
 h2.muted a,
 .h2-clone.muted a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h2.muted a:hover,
 .h2-clone.muted a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h2.muted a:active,
 .h2-clone.muted a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h2.inverse,
 .h2-clone.inverse {
@@ -3694,7 +3832,7 @@ h3,
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 32px;
   font-weight: 200;
-  line-height: 38px;
+  line-height: 36px;
   text-transform: normal;
   font-style: normal;
   color: #5e5e5e;
@@ -3717,17 +3855,17 @@ h3.short,
 h3 a,
 .h3-clone a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h3 a:hover,
 .h3-clone a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h3 a:active,
 .h3-clone a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h3.emphasis,
 .h3-clone.emphasis,
@@ -3746,7 +3884,7 @@ h3 .emphasis a,
 h3 strong a,
 .h3-clone strong a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h3.emphasis a:hover,
 .h3-clone.emphasis a:hover,
@@ -3755,7 +3893,7 @@ h3 .emphasis a:hover,
 h3 strong a:hover,
 .h3-clone strong a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h3.emphasis a:active,
 .h3-clone.emphasis a:active,
@@ -3764,7 +3902,7 @@ h3 .emphasis a:active,
 h3 strong a:active,
 .h3-clone strong a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h3.muted,
 .h3-clone.muted {
@@ -3775,17 +3913,17 @@ h3.muted,
 h3.muted a,
 .h3-clone.muted a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h3.muted a:hover,
 .h3-clone.muted a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h3.muted a:active,
 .h3-clone.muted a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h3.inverse,
 .h3-clone.inverse {
@@ -3884,17 +4022,17 @@ h4.short,
 h4 a,
 .h4-clone a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h4 a:hover,
 .h4-clone a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h4 a:active,
 .h4-clone a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h4.emphasis,
 .h4-clone.emphasis,
@@ -3913,7 +4051,7 @@ h4 .emphasis a,
 h4 strong a,
 .h4-clone strong a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h4.emphasis a:hover,
 .h4-clone.emphasis a:hover,
@@ -3922,7 +4060,7 @@ h4 .emphasis a:hover,
 h4 strong a:hover,
 .h4-clone strong a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h4.emphasis a:active,
 .h4-clone.emphasis a:active,
@@ -3931,7 +4069,7 @@ h4 .emphasis a:active,
 h4 strong a:active,
 .h4-clone strong a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h4.muted,
 .h4-clone.muted {
@@ -3942,17 +4080,17 @@ h4.muted,
 h4.muted a,
 .h4-clone.muted a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h4.muted a:hover,
 .h4-clone.muted a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h4.muted a:active,
 .h4-clone.muted a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h4.inverse,
 .h4-clone.inverse {
@@ -4051,17 +4189,17 @@ h5.short,
 h5 a,
 .h5-clone a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h5 a:hover,
 .h5-clone a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h5 a:active,
 .h5-clone a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h5.emphasis,
 .h5-clone.emphasis,
@@ -4080,7 +4218,7 @@ h5 .emphasis a,
 h5 strong a,
 .h5-clone strong a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h5.emphasis a:hover,
 .h5-clone.emphasis a:hover,
@@ -4089,7 +4227,7 @@ h5 .emphasis a:hover,
 h5 strong a:hover,
 .h5-clone strong a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h5.emphasis a:active,
 .h5-clone.emphasis a:active,
@@ -4098,7 +4236,7 @@ h5 .emphasis a:active,
 h5 strong a:active,
 .h5-clone strong a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h5.muted,
 .h5-clone.muted {
@@ -4109,17 +4247,17 @@ h5.muted,
 h5.muted a,
 .h5-clone.muted a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h5.muted a:hover,
 .h5-clone.muted a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h5.muted a:active,
 .h5-clone.muted a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h5.inverse,
 .h5-clone.inverse {
@@ -4218,17 +4356,17 @@ h6.short,
 h6 a,
 .h6-clone a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h6 a:hover,
 .h6-clone a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h6 a:active,
 .h6-clone a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h6.emphasis,
 .h6-clone.emphasis,
@@ -4247,7 +4385,7 @@ h6 .emphasis a,
 h6 strong a,
 .h6-clone strong a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h6.emphasis a:hover,
 .h6-clone.emphasis a:hover,
@@ -4256,7 +4394,7 @@ h6 .emphasis a:hover,
 h6 strong a:hover,
 .h6-clone strong a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h6.emphasis a:active,
 .h6-clone.emphasis a:active,
@@ -4265,7 +4403,7 @@ h6 .emphasis a:active,
 h6 strong a:active,
 .h6-clone strong a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h6.muted,
 .h6-clone.muted {
@@ -4276,17 +4414,17 @@ h6.muted,
 h6.muted a,
 .h6-clone.muted a {
   color: #0066cc;
-  text-transform: none;
+  text-decoration: none;
 }
 h6.muted a:hover,
 .h6-clone.muted a:hover {
   color: #003d7a;
-  text-transform: none;
+  text-decoration: underline;
 }
 h6.muted a:active,
 .h6-clone.muted a:active {
   color: #001429;
-  text-transform: none;
+  text-decoration: none;
 }
 h6.inverse,
 .h6-clone.inverse {
@@ -4457,14 +4595,26 @@ dl dd {
 dl dd + dt {
   margin-top: 15px;
 }
+dl.dl-horizontal {
+  *zoom: 1;
+}
+dl.dl-horizontal:before,
+dl.dl-horizontal:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+dl.dl-horizontal:after {
+  clear: both;
+}
 dl.dl-horizontal dt {
   float: left;
   width: 170px;
   clear: left;
   text-align: right;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+}
+dl.dl-horizontal dt:last-of-type {
+  margin-bottom: 0px;
 }
 dl.dl-horizontal dd {
   margin-left: 200px;
@@ -4486,119 +4636,88 @@ dl.short {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Miscellaneous                                                                                        */
+/* Address                                                                                              */
 /*                                                                                                      */
 /* ==================================================================================================== */
-hr {
-  margin: 60px 0px 60px 0px;
-  border: 0px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: none;
+address {
+  display: block;
+  font-style: normal;
+  margin: 0px 0px 15px 0px;
 }
-hr.inverse {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-hr.short {
-  margin: 30px 0 30px 0;
-}
-hr.tall {
-  margin: 80px 0 80px 0;
-}
-hr.flush-bottom {
-  margin: 0px;
-}
-hr.narrow {
-  margin: 0 auto;
-  width: 120px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-hr.narrow.short {
-  margin-top: 30px;
+address.tall {
   margin-bottom: 30px;
 }
-hr.narrow.tall {
-  margin-top: 80px;
-  margin-bottom: 80px;
+address.short {
+  margin-bottom: 7.5px;
 }
-hr + h1,
-hr + .h1-clone,
-hr + h2,
-hr + .h2-clone,
-hr + h3,
-hr + .h3-clone,
-hr + h4,
-hr + .h4-clone,
-hr + h5,
-hr + .h5-clone,
-hr + h6,
-hr + .h6-clone {
-  margin-top: 0px;
-}
-strong {
-  font-weight: bold;
-}
-em {
-  font-style: italic;
-}
-.muted {
-  color: #bbbbbb;
-}
-abbr[title] {
-  cursor: help;
-  border-bottom: 1px dotted #bbbbbb;
-}
-abbr.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Blockquote                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
 blockquote {
-  padding: 0px 0px 0px 7.5px;
   margin: 0px 0px 15px 0px;
-  border-left: 5px solid #bbbbbb;
+  padding: 0px 0px 0px 15px;
+  border-left: 3px solid #bbbbbb;
 }
 blockquote p {
-  margin-bottom: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 200;
   line-height: 32px;
+  text-transform: normal;
+  font-style: normal;
+  color: #9f9f9f;
+  margin: 0px 0px 15px 0px;
+}
+blockquote p.tall {
+  margin-bottom: 30px;
+}
+blockquote p.short {
+  margin-bottom: 7.5px;
 }
 blockquote small {
-  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
   line-height: 24px;
+  text-transform: normal;
+  font-style: normal;
   color: #bbbbbb;
+  margin: 0px 0px 0px 0px;
 }
 blockquote small:before {
   content: '\2014 \00A0';
+}
+blockquote.tall {
+  margin-bottom: 30px;
+}
+blockquote.short {
+  margin-bottom: 7.5px;
 }
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
   padding-left: 0px;
-  border-right: 5px solid #bbbbbb;
+  border-right: 3px solid #bbbbbb;
   border-left: 0px;
 }
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
+  display: block;
+}
+blockquote.pull-right small:before {
+  content: '';
+}
+blockquote.pull-right small:after {
+  content: '\00A0 \2014';
 }
 q:before,
 q:after,
 blockquote:before,
 blockquote:after {
   content: "";
-}
-address {
-  display: block;
-  margin-bottom: 15px;
-  font-style: normal;
-  line-height: 24px;
-}
-small {
-  font-size: 100%;
-}
-cite {
-  font-style: normal;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -4633,7 +4752,7 @@ cite {
   p .lead {
     font-size: 22px;
     line-height: 35.2px;
-    margin: 33px 0px 16.5px 0px;
+    margin: 0px 0px 16.5px 0px;
   }
   p.lead.tall,
   p lead.tall,
@@ -4653,9 +4772,9 @@ cite {
   p.small,
   p small,
   p .small {
-    font-size: 12.100000000000001px;
-    line-height: 22px;
-    margin: 33px 0px 16.5px 0px;
+    font-size: 15.400000000000002px;
+    line-height: 26.400000000000002px;
+    margin: 0px 0px 16.5px 0px;
   }
   p.small.tall,
   p small.tall,
@@ -4713,7 +4832,7 @@ cite {
   h3,
   .h3-clone {
     font-size: 35.2px;
-    line-height: 41.800000000000004px;
+    line-height: 39.6px;
     margin: 66px 0px 49.50000000000001px 0px;
   }
   h3.tall,
@@ -4859,46 +4978,48 @@ cite {
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
-  /* Miscellaneous                                                                                        */
+  /* Address                                                                                              */
   /*                                                                                                      */
   /* ==================================================================================================== */
-  hr {
-    margin: 70px 0px 70px 0px;
-  }
-  hr.short {
-    margin: 35px 0px 35px 0px;
-  }
-  hr.tall {
-    margin: 100px 0px 100px 0px;
-  }
-  hr.narrow {
-    margin: 0 auto;
-    margin-top: 70px;
-    margin-bottom: 70px;
-  }
-  hr.narrow.short {
-    margin-top: 35px;
-    margin-bottom: 35px;
-  }
-  hr.narrow.tall {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  blockquote {
-    padding: 0px 0px 0px 8.25px;
+  address {
     margin: 0px 0px 16.5px 0px;
+  }
+  address.tall {
+    margin-bottom: 33px;
+  }
+  address.short {
+    margin-bottom: 8.25px;
+  }
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Blockquote                                                                                           */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  blockquote {
+    margin: 0px 0px 16.5px 0px;
+    padding: 0px 0px 0px 16.5px;
   }
   blockquote p {
     font-size: 22px;
-    font-weight: 220.00000000000003;
     line-height: 35.2px;
+    margin: 0px 0px 16.5px 0px;
+  }
+  blockquote p.tall {
+    margin-bottom: 33px;
+  }
+  blockquote p.short {
+    margin-bottom: 8.25px;
   }
   blockquote small {
+    font-size: 15.400000000000002px;
     line-height: 26.400000000000002px;
+    margin: 0px 0px 16.5px 0px;
   }
-  address {
-    margin-bottom: 16.5px;
-    line-height: 26.400000000000002px;
+  blockquote.tall {
+    margin-bottom: 33px;
+  }
+  blockquote.short {
+    margin-bottom: 8.25px;
   }
 }
 /* ==================================================================================================== */
@@ -4934,7 +5055,7 @@ cite {
   p .lead {
     font-size: 18px;
     line-height: 28.8px;
-    margin: 27px 0px 13.5px 0px;
+    margin: 0px 0px 13.5px 0px;
   }
   p.lead.tall,
   p lead.tall,
@@ -4954,19 +5075,19 @@ cite {
   p.small,
   p small,
   p .small {
-    font-size: 10.45px;
-    line-height: 19px;
-    margin: 28.5px 0px 14.25px 0px;
+    font-size: 12.6px;
+    line-height: 21.6px;
+    margin: 0px 0px 13.5px 0px;
   }
   p.small.tall,
   p small.tall,
   p .small.tall {
-    margin-bottom: 28.5px;
+    margin-bottom: 27px;
   }
   p.small.short,
   p small.short,
   p .small.short {
-    margin-bottom: 7.125px;
+    margin-bottom: 6.75px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5014,7 +5135,7 @@ cite {
   h3,
   .h3-clone {
     font-size: 28.8px;
-    line-height: 34.2px;
+    line-height: 32.4px;
     margin: 54px 0px 40.5px 0px;
   }
   h3.tall,
@@ -5158,64 +5279,50 @@ cite {
   dl.short {
     margin-bottom: 6.75px;
   }
-  dl {
-    margin-bottom: 13.5px;
-  }
-  dt,
-  dd {
-    font-size: 12.6px;
-    line-height: 21.6px;
-  }
-  dt {
-    font-size: 12.6px;
-    line-height: 20.6px;
-    margin-bottom: 13.5px;
-  }
-  dd {
-    margin-bottom: 13.5px;
-  }
   /* ==================================================================================================== */
   /*                                                                                                      */
-  /* Miscellaneous                                                                                        */
+  /* Address                                                                                              */
   /*                                                                                                      */
   /* ==================================================================================================== */
-  hr {
-    margin: 44px 0px 44px 0px;
-  }
-  hr.short {
-    margin: 22px 0px 22px 0px;
-  }
-  hr.tall {
-    margin: 88px 0px 88px 0px;
-  }
-  hr.narrow {
-    margin: 0 auto;
-    margin-top: 44px;
-    margin-bottom: 44px;
-  }
-  hr.narrow.short {
-    margin-top: 22px;
-    margin-bottom: 22px;
-  }
-  hr.narrow.tall {
-    margin-top: 88px;
-    margin-bottom: 88px;
-  }
-  blockquote {
-    padding: 0px 0px 0px 6.75px;
+  address {
     margin: 0px 0px 13.5px 0px;
+  }
+  address.tall {
+    margin-bottom: 27px;
+  }
+  address.short {
+    margin-bottom: 6.75px;
+  }
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Blockquote                                                                                           */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  blockquote {
+    margin: 0px 0px 13.5px 0px;
+    padding: 0px 0px 0px 13.5px;
   }
   blockquote p {
     font-size: 18px;
-    font-weight: 180;
     line-height: 28.8px;
+    margin: 0px 0px 13.5px 0px;
+  }
+  blockquote p.tall {
+    margin-bottom: 27px;
+  }
+  blockquote p.short {
+    margin-bottom: 6.75px;
   }
   blockquote small {
-    line-height: 22.799999999999997px;
-  }
-  address {
-    margin-bottom: 13.5px;
+    font-size: 12.6px;
     line-height: 21.6px;
+    margin: 0px 0px 13.5px 0px;
+  }
+  blockquote.tall {
+    margin-bottom: 27px;
+  }
+  blockquote.short {
+    margin-bottom: 6.75px;
   }
 }
 /* ==================================================================================================== */
@@ -5250,7 +5357,7 @@ cite {
   p .lead {
     font-size: 17px;
     line-height: 27.2px;
-    margin: 25.5px 0px 12.75px 0px;
+    margin: 0px 0px 12.75px 0px;
   }
   p.lead.tall,
   p lead.tall,
@@ -5270,19 +5377,19 @@ cite {
   p.small,
   p small,
   p .small {
-    font-size: 9.9px;
-    line-height: 18px;
-    margin: 27px 0px 13.5px 0px;
+    font-size: 11.9px;
+    line-height: 20.4px;
+    margin: 0px 0px 12.75px 0px;
   }
   p.small.tall,
   p small.tall,
   p .small.tall {
-    margin-bottom: 27px;
+    margin-bottom: 25.5px;
   }
   p.small.short,
   p small.short,
   p .small.short {
-    margin-bottom: 6.75px;
+    margin-bottom: 6.375px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5330,7 +5437,7 @@ cite {
   h3,
   .h3-clone {
     font-size: 27.2px;
-    line-height: 32.3px;
+    line-height: 30.599999999999998px;
     margin: 51px 0px 38.25px 0px;
   }
   h3.tall,
@@ -5474,64 +5581,50 @@ cite {
   dl.short {
     margin-bottom: 6.75px;
   }
-  dl {
-    margin-bottom: 13.5px;
-  }
-  dt,
-  dd {
-    font-size: 12.6px;
-    line-height: 21.6px;
-  }
-  dt {
-    font-size: 12.6px;
-    line-height: 20.6px;
-    margin-bottom: 13.5px;
-  }
-  dd {
-    margin-bottom: 13.5px;
-  }
   /* ==================================================================================================== */
   /*                                                                                                      */
-  /* Miscellaneous                                                                                        */
+  /* Address                                                                                              */
   /*                                                                                                      */
   /* ==================================================================================================== */
-  hr {
-    margin: 44px 0px 44px 0px;
-  }
-  hr.short {
-    margin: 22px 0px 22px 0px;
-  }
-  hr.tall {
-    margin: 88px 0px 88px 0px;
-  }
-  hr.narrow {
-    margin: 0 auto;
-    margin-top: 44px;
-    margin-bottom: 44px;
-  }
-  hr.narrow.short {
-    margin-top: 22px;
-    margin-bottom: 22px;
-  }
-  hr.narrow.tall {
-    margin-top: 88px;
-    margin-bottom: 88px;
-  }
-  blockquote {
-    padding: 0px 0px 0px 6.75px;
+  address {
     margin: 0px 0px 13.5px 0px;
   }
+  address.tall {
+    margin-bottom: 27px;
+  }
+  address.short {
+    margin-bottom: 6.75px;
+  }
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Blockquote                                                                                           */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  blockquote {
+    margin: 0px 0px 12.75px 0px;
+    padding: 0px 0px 0px 12.75px;
+  }
   blockquote p {
-    font-size: 18px;
-    font-weight: 180;
-    line-height: 28.8px;
+    font-size: 17px;
+    line-height: 27.2px;
+    margin: 0px 0px 12.75px 0px;
+  }
+  blockquote p.tall {
+    margin-bottom: 25.5px;
+  }
+  blockquote p.short {
+    margin-bottom: 6.375px;
   }
   blockquote small {
-    line-height: 21.6px;
+    font-size: 11.9px;
+    line-height: 20.4px;
+    margin: 0px 0px 12.75px 0px;
   }
-  address {
-    margin-bottom: 13.5px;
-    line-height: 21.6px;
+  blockquote.tall {
+    margin-bottom: 25.5px;
+  }
+  blockquote.short {
+    margin-bottom: 6.375px;
   }
 }
 /* ==================================================================================================== */
@@ -5552,12 +5645,12 @@ cite {
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
-/* core/tables.less                                                          */
+/* core/tables.less                                                                                     */
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Base Tables                                                               */
+/* Base Tables                                                                                          */
 /*                                                                                                      */
 /* ==================================================================================================== */
 table {
@@ -5566,12 +5659,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-table.inverse {
-  background-color: transparent;
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Baseline Styles                                                           */
+/* Default Table Styles                                                                                 */
 /*                                                                                                      */
 /* ==================================================================================================== */
 .table {
@@ -5580,16 +5670,68 @@ table.inverse {
 }
 .table th,
 .table td {
-  padding: 8px;
-  color: #bbbbbb;
-  line-height: 24px;
+  padding: 10px 10px;
   text-align: left;
   vertical-align: top;
   border-top: 1px solid #e4e4e4;
 }
 .table th {
-  font-weight: 600;
-  color: #838383;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.table td {
+  color: #bbbbbb;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.table tr {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Active State                                                                               */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Success State                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row warning State                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Error State                                                                                */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.table tr.active td {
+  background-color: #f9f9f9;
+  color: #8c8c8c;
+  font-weight: 300;
+}
+.table tr.success td {
+  background-color: #f7fbf2;
+  color: #70af2f;
+  font-weight: 300;
+}
+.table tr.warning td {
+  background-color: #fef8f4;
+  color: #f38339;
+  font-weight: 300;
+}
+.table tr.error td {
+  background-color: #fff5f5;
+  color: #fd3c2b;
+  font-weight: 300;
 }
 .table thead th {
   vertical-align: bottom;
@@ -5600,13 +5742,10 @@ table.inverse {
 .table colgroup + thead tr:first-child td,
 .table thead:first-child tr:first-child th,
 .table thead:first-child tr:first-child td {
-  border-top: 0;
+  border-top: 0px;
 }
 .table tbody + tbody {
   border-top: 2px solid #e4e4e4;
-}
-.table .table {
-  background-color: #ffffff;
 }
 .table.short {
   margin-bottom: 30px;
@@ -5614,137 +5753,204 @@ table.inverse {
 .table.tall {
   margin-bottom: 80px;
 }
-.table.inverse th,
-.table.inverse td {
-  border-top: 1px solid #c2c2c2;
-  color: #bbbbbb;
-}
-.table.inverse th {
-  color: #ebebeb;
-}
-.table.inverse tbody + tbody {
-  border-top: 2px solid #c2c2c2;
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Condensed Table                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+.table.table-condensed th,
+.table.table-condensed td {
+  padding: 4px 4px;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Condensed Table                                                           */
+/* Bordered Table                                                                                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
-.table-condensed th,
-.table-condensed td {
-  padding: 4px 5px;
-}
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Bordered Table                                                            */
-/*                                                                                                      */
-/* ==================================================================================================== */
-.table-bordered {
+.table.table-bordered {
   border: 1px solid #e4e4e4;
   border-collapse: separate;
   *border-collapse: collapse;
-  border-left: 0;
+  border-left: 0px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.table-bordered th,
-.table-bordered td {
+.table.table-bordered th,
+.table.table-bordered td {
   border-left: 1px solid #e4e4e4;
 }
-.table-bordered caption + thead tr:first-child th,
-.table-bordered caption + tbody tr:first-child th,
-.table-bordered caption + tbody tr:first-child td,
-.table-bordered colgroup + thead tr:first-child th,
-.table-bordered colgroup + tbody tr:first-child th,
-.table-bordered colgroup + tbody tr:first-child td,
-.table-bordered thead:first-child tr:first-child th,
-.table-bordered tbody:first-child tr:first-child th,
-.table-bordered tbody:first-child tr:first-child td {
+.table.table-bordered caption + thead tr:first-child th,
+.table.table-bordered caption + tbody tr:first-child th,
+.table.table-bordered caption + tbody tr:first-child td,
+.table.table-bordered colgroup + thead tr:first-child th,
+.table.table-bordered colgroup + tbody tr:first-child th,
+.table.table-bordered colgroup + tbody tr:first-child td,
+.table.table-bordered thead:first-child tr:first-child th,
+.table.table-bordered tbody:first-child tr:first-child th,
+.table.table-bordered tbody:first-child tr:first-child td {
   border-top: 0;
 }
-.table-bordered thead:first-child tr:first-child > th:first-child,
-.table-bordered tbody:first-child tr:first-child > td:first-child,
-.table-bordered tbody:first-child tr:first-child > th:first-child {
+.table.table-bordered thead:first-child tr:first-child > th:first-child,
+.table.table-bordered tbody:first-child tr:first-child > td:first-child,
+.table.table-bordered tbody:first-child tr:first-child > th:first-child {
   -webkit-border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
   border-top-left-radius: 4px;
 }
-.table-bordered thead:first-child tr:first-child > th:last-child,
-.table-bordered tbody:first-child tr:first-child > td:last-child {
+.table.table-bordered thead:first-child tr:first-child > th:last-child,
+.table.table-bordered tbody:first-child tr:first-child > td:last-child {
   -webkit-border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
   border-top-right-radius: 4px;
 }
-.table-bordered thead:last-child tr:last-child > th:first-child,
-.table-bordered tbody:last-child tr:last-child > td:first-child,
-.table-bordered tbody:last-child tr:last-child > th:first-child,
-.table-bordered tfoot:last-child tr:last-child > td:first-child {
+.table.table-bordered thead:last-child tr:last-child > th:first-child,
+.table.table-bordered tbody:last-child tr:last-child > td:first-child,
+.table.table-bordered tbody:last-child tr:last-child > th:first-child,
+.table.table-bordered tfoot:last-child tr:last-child > td:first-child {
   -webkit-border-bottom-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
   border-bottom-left-radius: 4px;
 }
-.table-bordered thead:last-child tr:last-child > th:last-child,
-.table-bordered tbody:last-child tr:last-child > td:last-child,
-.table-bordered tfoot:last-child tr:last-child > td:last-child {
+.table.table-bordered thead:last-child tr:last-child > th:last-child,
+.table.table-bordered tbody:last-child tr:last-child > td:last-child,
+.table.table-bordered tfoot:last-child tr:last-child > td:last-child {
   -webkit-border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
   border-bottom-right-radius: 4px;
 }
-.table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
-  -webkit-border-bottom-left-radius: 0;
-  -moz-border-radius-bottomleft: 0;
-  border-bottom-left-radius: 0;
+.table.table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
 }
-.table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
-  -webkit-border-bottom-right-radius: 0;
-  -moz-border-radius-bottomright: 0;
-  border-bottom-right-radius: 0;
+.table.table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
 }
-.table-bordered caption + thead tr:first-child th:first-child,
-.table-bordered caption + tbody tr:first-child td:first-child,
-.table-bordered colgroup + thead tr:first-child th:first-child,
-.table-bordered colgroup + tbody tr:first-child td:first-child {
+.table.table-bordered caption + thead tr:first-child th:first-child,
+.table.table-bordered caption + tbody tr:first-child td:first-child,
+.table.table-bordered colgroup + thead tr:first-child th:first-child,
+.table.table-bordered colgroup + tbody tr:first-child td:first-child {
   -webkit-border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
   border-top-left-radius: 4px;
 }
-.table-bordered caption + thead tr:first-child th:last-child,
-.table-bordered caption + tbody tr:first-child td:last-child,
-.table-bordered colgroup + thead tr:first-child th:last-child,
-.table-bordered colgroup + tbody tr:first-child td:last-child {
+.table.table-bordered caption + thead tr:first-child th:last-child,
+.table.table-bordered caption + tbody tr:first-child td:last-child,
+.table.table-bordered colgroup + thead tr:first-child th:last-child,
+.table.table-bordered colgroup + tbody tr:first-child td:last-child {
   -webkit-border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
   border-top-right-radius: 4px;
 }
-.table-bordered.inverse {
-  border-color: #c2c2c2;
-}
-.table-bordered.inverse th,
-.table-bordered.inverse td {
-  border-left-color: #c2c2c2;
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Striped Table                                                             */
+/* Striped Table                                                                                        */
 /*                                                                                                      */
 /* ==================================================================================================== */
-.table-striped tbody > tr:nth-child(odd) > td,
-.table-striped tbody > tr:nth-child(odd) > th {
+.table.table-striped tbody > tr:nth-child(odd) {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Success States                                                                             */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Warning States                                                                             */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Error States                                                                               */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.table.table-striped tbody > tr:nth-child(odd) td,
+.table.table-striped tbody > tr:nth-child(odd) th {
   background-color: #f9f9f9;
+  color: #bbbbbb;
+  font-weight: 300;
+}
+.table.table-striped tbody > tr:nth-child(odd).success td {
+  background-color: #f7fbf2;
+  color: #548323;
+  font-weight: 300;
+}
+.table.table-striped tbody > tr:nth-child(odd).warning td {
+  background-color: #fef8f4;
+  color: #d45c0d;
+  font-weight: 300;
+}
+.table.table-striped tbody > tr:nth-child(odd).error td {
+  background-color: #fff5f5;
+  color: #dc1402;
+  font-weight: 300;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Hover Table                                                               */
+/* Hover Table                                                                                          */
 /*                                                                                                      */
 /* ==================================================================================================== */
-.table-hover tbody tr:hover td,
-.table-hover tbody tr:hover th {
+.table.table-hover tbody tr {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Active State                                                                               */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Success States                                                                             */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Warning States                                                                             */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Error States                                                                               */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.table.table-hover tbody tr:hover td,
+.table.table-hover tbody tr:hover th {
   background-color: #f9f9f9;
+  color: #8c8c8c;
+  font-weight: 300;
+}
+.table.table-hover tbody tr.active:hover td {
+  background-color: #f9f9f9;
+  color: #8c8c8c;
+  font-weight: 300;
+}
+.table.table-hover tbody tr.success:hover td {
+  background-color: #e9f5db;
+  color: #548323;
+  font-weight: 300;
+}
+.table.table-hover tbody tr.warning:hover td {
+  background-color: #fdece1;
+  color: #d45c0d;
+  font-weight: 300;
+}
+.table.table-hover tbody tr.error:hover td {
+  background-color: #ffe2df;
+  color: #dc1402;
+  font-weight: 300;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Cell Sizing                                                               */
+/* Cell Sizing                                                                                          */
 /*                                                                                                      */
 /* ==================================================================================================== */
 table td[class*="span"],
@@ -5829,49 +6035,35 @@ table th[class*="span"],
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Table Backgrounds                                                         */
-/*                                                                                                      */
-/* ==================================================================================================== */
-.table tbody tr.success td {
-  background-color: #f7fbf2;
-  color: #70af2f;
-}
-.table tbody tr.error td {
-  background-color: #fff5f5;
-  color: #fd3c2b;
-}
-.table tbody tr.warning td {
-  background-color: #fef8f4;
-  color: #f38339;
-}
-.table-hover tbody tr.success:hover td {
-  background-color: #eaf6de;
-}
-.table-hover tbody tr.error:hover td {
-  background-color: #ffdedb;
-}
-.table-hover tbody tr.warning:hover td {
-  background-color: #fde9dc;
-}
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive changes to styling for widescreen (@viewport-widescreen) and   */
-/* above.                                                                    */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and above.                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media (min-width: 1240px) {
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Default Table Styles                                                                                 */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
   .table {
-    margin-bottom: 70px;
-  }
-  .table.short {
-    margin-bottom: 70px;
-  }
-  .table.tall {
     margin-bottom: 70px;
   }
   .table th,
   .table td {
+    padding: 11px 11px;
+  }
+  .table th {
+    font-size: 15.400000000000002px;
     line-height: 26.400000000000002px;
+  }
+  .table td {
+    font-size: 15.400000000000002px;
+    line-height: 26.400000000000002px;
+  }
+  .table.short {
+    margin-bottom: 35px;
+  }
+  .table.tall {
+    margin-bottom: 100px;
   }
 }
 /* ==================================================================================================== */
@@ -5881,18 +6073,31 @@ table th[class*="span"],
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media (min-width: 768px) and (max-width: 989px) {
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Default Table Styles                                                                                 */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
   .table {
-    margin-bottom: 44px;
-  }
-  .table.short {
-    margin-bottom: 44px;
-  }
-  .table.tall {
     margin-bottom: 44px;
   }
   .table th,
   .table td {
+    padding: 9px 9px;
+  }
+  .table th {
+    font-size: 12.6px;
     line-height: 21.6px;
+  }
+  .table td {
+    font-size: 12.6px;
+    line-height: 21.6px;
+  }
+  .table.short {
+    margin-bottom: 22px;
+  }
+  .table.tall {
+    margin-bottom: 88px;
   }
 }
 /* ==================================================================================================== */
@@ -5901,18 +6106,31 @@ table th[class*="span"],
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media (max-width: 767px) {
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Default Table Styles                                                                                 */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
   .table {
-    margin-bottom: 30px;
-  }
-  .table.short {
-    margin-bottom: 30px;
-  }
-  .table.tall {
     margin-bottom: 30px;
   }
   .table th,
   .table td {
+    padding: 9px 9px;
+  }
+  .table th {
+    font-size: 12.6px;
     line-height: 21.6px;
+  }
+  .table td {
+    font-size: 12.6px;
+    line-height: 21.6px;
+  }
+  .table.short {
+    margin-bottom: 20px;
+  }
+  .table.tall {
+    margin-bottom: 60px;
   }
 }
 /* ==================================================================================================== */
