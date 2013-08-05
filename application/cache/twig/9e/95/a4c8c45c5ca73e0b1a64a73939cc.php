@@ -750,7 +750,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t
 \t\t\t<h4>
 \t\t\t\t
-\t\t\t\tLead Body copy
+\t\t\t\tLead Body Copy
 \t\t\t\t
 \t\t\t</h4>
 \t\t\t
@@ -762,9 +762,47 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t
 \t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<p class=\"lead flush-bottom\">
+\t\t\t\t<p class=\"lead\">
 \t\t\t\t\t
-\t\t\t\t\tVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+\t\t\t\t\tEfficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+\t\t\t\t\t
+\t\t\t\t</p>
+\t\t\t\t
+\t\t\t\t<p class=\"flush-bottom\">
+\t\t\t\t\t
+\t\t\t\t\tCollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+\t\t\t\t\t
+\t\t\t\t</p>
+\t\t\t\t
+\t\t\t</div>
+\t\t\t
+<pre class=\"prettyprint\">
+&lt;p class=\"lead\"&gt;...&lt;/p&gt;
+</pre>
+\t\t\t
+\t\t\t<h4>
+\t\t\t\t
+\t\t\t\tSmall Body Copy
+\t\t\t\t
+\t\t\t</h4>
+\t\t\t
+\t\t\t<p class=\"tall\">
+\t\t\t\t
+\t\t\t\tGive a paragraph less importance by adding <code>.small</code>.
+\t\t\t\t
+\t\t\t</p>
+\t\t\t
+\t\t\t<div class=\"code-example flush-bottom\">
+\t\t\t\t
+\t\t\t\t<p class=\"\">
+\t\t\t\t\t
+\t\t\t\t\tCollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+\t\t\t\t\t
+\t\t\t\t</p>
+\t\t\t\t
+\t\t\t\t<p class=\"small flush-bottom\">
+\t\t\t\t\t
+\t\t\t\t\tEfficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
 \t\t\t\t\t
 \t\t\t\t</p>
 \t\t\t\t

@@ -720,7 +720,7 @@
 			
 			<h4>
 				
-				Lead Body copy
+				Lead Body Copy
 				
 			</h4>
 			
@@ -732,9 +732,47 @@
 			
 			<div class="code-example flush-bottom">
 				
-				<p class="lead flush-bottom">
+				<p class="lead">
 					
-					Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+					Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+					
+				</p>
+				
+				<p class="flush-bottom">
+					
+					Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+					
+				</p>
+				
+			</div>
+			
+<pre class="prettyprint">
+&lt;p class="lead"&gt;...&lt;/p&gt;
+</pre>
+			
+			<h4>
+				
+				Small Body Copy
+				
+			</h4>
+			
+			<p class="tall">
+				
+				Give a paragraph less importance by adding <code>.small</code>.
+				
+			</p>
+			
+			<div class="code-example flush-bottom">
+				
+				<p class="">
+					
+					Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+					
+				</p>
+				
+				<p class="small flush-bottom">
+					
+					Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
 					
 				</p>
 				

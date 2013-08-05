@@ -3093,9 +3093,9 @@ p.small,
 p small,
 p .small {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 20px;
   text-transform: normal;
   font-style: normal;
   color: #bbbbbb;
@@ -4653,8 +4653,8 @@ cite {
   p.small,
   p small,
   p .small {
-    font-size: 15.400000000000002px;
-    line-height: 26.400000000000002px;
+    font-size: 12.100000000000001px;
+    line-height: 22px;
     margin: 33px 0px 16.5px 0px;
   }
   p.small.tall,
@@ -4954,19 +4954,19 @@ cite {
   p.small,
   p small,
   p .small {
-    font-size: 12.6px;
-    line-height: 21.6px;
-    margin: 27px 0px 13.5px 0px;
+    font-size: 10.45px;
+    line-height: 19px;
+    margin: 28.5px 0px 14.25px 0px;
   }
   p.small.tall,
   p small.tall,
   p .small.tall {
-    margin-bottom: 27px;
+    margin-bottom: 28.5px;
   }
   p.small.short,
   p small.short,
   p .small.short {
-    margin-bottom: 6.75px;
+    margin-bottom: 7.125px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5211,7 +5211,7 @@ cite {
     line-height: 28.8px;
   }
   blockquote small {
-    line-height: 21.6px;
+    line-height: 22.799999999999997px;
   }
   address {
     margin-bottom: 13.5px;
@@ -5270,19 +5270,19 @@ cite {
   p.small,
   p small,
   p .small {
-    font-size: 11.9px;
-    line-height: 20.4px;
-    margin: 25.5px 0px 12.75px 0px;
+    font-size: 9.9px;
+    line-height: 18px;
+    margin: 27px 0px 13.5px 0px;
   }
   p.small.tall,
   p small.tall,
   p .small.tall {
-    margin-bottom: 25.5px;
+    margin-bottom: 27px;
   }
   p.small.short,
   p small.short,
   p .small.short {
-    margin-bottom: 6.375px;
+    margin-bottom: 6.75px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5527,7 +5527,7 @@ cite {
     line-height: 28.8px;
   }
   blockquote small {
-    line-height: 20.4px;
+    line-height: 21.6px;
   }
   address {
     margin-bottom: 13.5px;
