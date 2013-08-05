@@ -8,9 +8,11 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Typographic Text                                                                                     */
+/* Typographic Attributes                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
+
+// Align Text Left
 
 .align-left {
 	
@@ -18,15 +20,35 @@
 	
 }
 
+// Align Text Right
+
 .align-right {
 	
 	text-align: right;
 	
 }
 
+// Align Text Justified
+
 .align-justified {
 	
 	text-align: justify;
+	
+}
+
+// Emphasis
+
+strong {
+	
+	font-weight: @body-text-emphasis-font-weight;
+	color: @body-text-emphasis-color;
+	font-style: @body-text-emphasis-style;
+	
+}
+
+em {
+	
+	font-style: italic;
 	
 }
 
@@ -70,19 +92,19 @@ p {
 	a {
 		
 		color: @body-text-link-text-color;
-		text-transform: @body-text-link-text-transform;
+		text-decoration: @body-text-link-text-decoration;
 		
 		&:hover {
 			
 			color: @body-text-link-hover-text-color;
-			text-transform: @body-text-link-hover-text-transform;
+			text-decoration: @body-text-link-hover-text-decoration;
 			
 		}
 		
 		&:active {
 			
 			color: @body-text-link-active-text-color;
-			text-transform: @body-text-link-active-text-transform;
+			text-decoration: @body-text-link-active-text-decoration;
 			
 		}
 		
@@ -103,19 +125,19 @@ p {
 		a {
 			
 			color: @body-text-emphasis-link-text-color;
-			text-transform: @body-text-emphasis-link-text-transform;
+			text-decoration: @body-text-emphasis-link-text-decoration;
 			
 			&:hover {
 				
 				color: @body-text-emphasis-link-hover-text-color;
-				text-transform: @body-text-emphasis-link-hover-text-transform;
+				text-decoration: @body-text-emphasis-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @body-text-emphasis-link-active-text-color;
-				text-transform: @body-text-emphasis-link-active-text-transform;
+				text-decoration: @body-text-emphasis-link-active-text-decoration;
 				
 			}
 			
@@ -136,19 +158,19 @@ p {
 		a {
 			
 			color: @body-text-muted-link-text-color;
-			text-transform: @body-text-muted-link-text-transform;
+			text-decoration: @body-text-muted-link-text-decoration;
 			
 			&:hover {
 				
 				color: @body-text-muted-link-hover-text-color;
-				text-transform: @body-text-muted-link-hover-text-transform;
+				text-decoration: @body-text-muted-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @body-text-muted-link-active-text-color;
-				text-transform: @body-text-muted-link-active-text-transform;
+				text-decoration: @body-text-muted-link-active-text-decoration;
 				
 			}
 			
@@ -288,19 +310,19 @@ p .lead {
 	a {
 		
 		color: @lead-text-link-text-color;
-		text-transform: @lead-text-link-text-transform;
+		text-decoration: @lead-text-link-text-decoration;
 		
 		&:hover {
 			
 			color: @lead-text-link-hover-text-color;
-			text-transform: @lead-text-link-hover-text-transform;
+			text-decoration: @lead-text-link-hover-text-decoration;
 			
 		}
 		
 		&:active {
 			
 			color: @lead-text-link-active-text-color;
-			text-transform: @lead-text-link-active-text-transform;
+			text-decoration: @lead-text-link-active-text-decoration;
 			
 		}
 		
@@ -321,19 +343,19 @@ p .lead {
 		a {
 			
 			color: @lead-text-emphasis-link-text-color;
-			text-transform: @lead-text-emphasis-link-text-transform;
+			text-decoration: @lead-text-emphasis-link-text-decoration;
 			
 			&:hover {
 				
 				color: @lead-text-emphasis-link-hover-text-color;
-				text-transform: @lead-text-emphasis-link-hover-text-transform;
+				text-decoration: @lead-text-emphasis-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @lead-text-emphasis-link-active-text-color;
-				text-transform: @lead-text-emphasis-link-active-text-transform;
+				text-decoration: @lead-text-emphasis-link-active-text-decoration;
 				
 			}
 			
@@ -354,19 +376,19 @@ p .lead {
 		a {
 			
 			color: @lead-text-muted-link-text-color;
-			text-transform: @lead-text-muted-link-text-transform;
+			text-decoration: @lead-text-muted-link-text-decoration;
 			
 			&:hover {
 				
 				color: @lead-text-muted-link-hover-text-color;
-				text-transform: @lead-text-muted-link-hover-text-transform;
+				text-decoration: @lead-text-muted-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @lead-text-muted-link-active-text-color;
-				text-transform: @lead-text-muted-link-active-text-transform;
+				text-decoration: @lead-text-muted-link-active-text-decoration;
 				
 			}
 			
@@ -506,19 +528,19 @@ p .small {
 	a {
 		
 		color: @small-text-link-text-color;
-		text-transform: @small-text-link-text-transform;
+		text-decoration: @small-text-link-text-decoration;
 		
 		&:hover {
 			
 			color: @small-text-link-hover-text-color;
-			text-transform: @small-text-link-hover-text-transform;
+			text-decoration: @small-text-link-hover-text-decoration;
 			
 		}
 		
 		&:active {
 			
 			color: @small-text-link-active-text-color;
-			text-transform: @small-text-link-active-text-transform;
+			text-decoration: @small-text-link-active-text-decoration;
 			
 		}
 		
@@ -539,19 +561,19 @@ p .small {
 		a {
 			
 			color: @small-text-emphasis-link-text-color;
-			text-transform: @small-text-emphasis-link-text-transform;
+			text-decoration: @small-text-emphasis-link-text-decoration;
 			
 			&:hover {
 				
 				color: @small-text-emphasis-link-hover-text-color;
-				text-transform: @small-text-emphasis-link-hover-text-transform;
+				text-decoration: @small-text-emphasis-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @small-text-emphasis-link-active-text-color;
-				text-transform: @small-text-emphasis-link-active-text-transform;
+				text-decoration: @small-text-emphasis-link-active-text-decoration;
 				
 			}
 			
@@ -572,19 +594,19 @@ p .small {
 		a {
 			
 			color: @small-text-muted-link-text-color;
-			text-transform: @small-text-muted-link-text-transform;
+			text-decoration: @small-text-muted-link-text-decoration;
 			
 			&:hover {
 				
 				color: @small-text-muted-link-hover-text-color;
-				text-transform: @small-text-muted-link-hover-text-transform;
+				text-decoration: @small-text-muted-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @small-text-muted-link-active-text-color;
-				text-transform: @small-text-muted-link-active-text-transform;
+				text-decoration: @small-text-muted-link-active-text-decoration;
 				
 			}
 			
@@ -766,19 +788,19 @@ h1,
 	a {
 		
 		color: @heading-h1-text-link-text-color;
-		text-transform: @heading-h1-text-link-text-transform;
+		text-decoration: @heading-h1-text-link-text-decoration;
 		
 		&:hover {
 			
 			color: @heading-h1-text-link-hover-text-color;
-			text-transform: @heading-h1-text-link-hover-text-transform;
+			text-decoration: @heading-h1-text-link-hover-text-decoration;
 			
 		}
 		
 		&:active {
 			
 			color: @heading-h1-text-link-active-text-color;
-			text-transform: @heading-h1-text-link-active-text-transform;
+			text-decoration: @heading-h1-text-link-active-text-decoration;
 			
 		}
 		
@@ -799,19 +821,19 @@ h1,
 		a {
 			
 			color: @heading-h1-text-emphasis-link-text-color;
-			text-transform: @heading-h1-text-emphasis-link-text-transform;
+			text-decoration: @heading-h1-text-emphasis-link-text-decoration;
 			
 			&:hover {
 				
 				color: @heading-h1-text-emphasis-link-hover-text-color;
-				text-transform: @heading-h1-text-emphasis-link-hover-text-transform;
+				text-decoration: @heading-h1-text-emphasis-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @heading-h1-text-emphasis-link-active-text-color;
-				text-transform: @heading-h1-text-emphasis-link-active-text-transform;
+				text-decoration: @heading-h1-text-emphasis-link-active-text-decoration;
 				
 			}
 			
@@ -832,19 +854,19 @@ h1,
 		a {
 			
 			color: @heading-h1-text-muted-link-text-color;
-			text-transform: @heading-h1-text-muted-link-text-transform;
+			text-decoration: @heading-h1-text-muted-link-text-decoration;
 			
 			&:hover {
 				
 				color: @heading-h1-text-muted-link-hover-text-color;
-				text-transform: @heading-h1-text-muted-link-hover-text-transform;
+				text-decoration: @heading-h1-text-muted-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @heading-h1-text-muted-link-active-text-color;
-				text-transform: @heading-h1-text-muted-link-active-text-transform;
+				text-decoration: @heading-h1-text-muted-link-active-text-decoration;
 				
 			}
 			
@@ -983,19 +1005,19 @@ h2,
 	a {
 		
 		color: @heading-h2-text-link-text-color;
-		text-transform: @heading-h2-text-link-text-transform;
+		text-decoration: @heading-h2-text-link-text-decoration;
 		
 		&:hover {
 			
 			color: @heading-h2-text-link-hover-text-color;
-			text-transform: @heading-h2-text-link-hover-text-transform;
+			text-decoration: @heading-h2-text-link-hover-text-decoration;
 			
 		}
 		
 		&:active {
 			
 			color: @heading-h2-text-link-active-text-color;
-			text-transform: @heading-h2-text-link-active-text-transform;
+			text-decoration: @heading-h2-text-link-active-text-decoration;
 			
 		}
 		
@@ -1016,19 +1038,19 @@ h2,
 		a {
 			
 			color: @heading-h2-text-emphasis-link-text-color;
-			text-transform: @heading-h2-text-emphasis-link-text-transform;
+			text-decoration: @heading-h2-text-emphasis-link-text-decoration;
 			
 			&:hover {
 				
 				color: @heading-h2-text-emphasis-link-hover-text-color;
-				text-transform: @heading-h2-text-emphasis-link-hover-text-transform;
+				text-decoration: @heading-h2-text-emphasis-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @heading-h2-text-emphasis-link-active-text-color;
-				text-transform: @heading-h2-text-emphasis-link-active-text-transform;
+				text-decoration: @heading-h2-text-emphasis-link-active-text-decoration;
 				
 			}
 			
@@ -1049,19 +1071,19 @@ h2,
 		a {
 			
 			color: @heading-h2-text-muted-link-text-color;
-			text-transform: @heading-h2-text-muted-link-text-transform;
+			text-decoration: @heading-h2-text-muted-link-text-decoration;
 			
 			&:hover {
 				
 				color: @heading-h2-text-muted-link-hover-text-color;
-				text-transform: @heading-h2-text-muted-link-hover-text-transform;
+				text-decoration: @heading-h2-text-muted-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @heading-h2-text-muted-link-active-text-color;
-				text-transform: @heading-h2-text-muted-link-active-text-transform;
+				text-decoration: @heading-h2-text-muted-link-active-text-decoration;
 				
 			}
 			
@@ -1200,19 +1222,19 @@ h3,
 	a {
 		
 		color: @heading-h3-text-link-text-color;
-		text-transform: @heading-h3-text-link-text-transform;
+		text-decoration: @heading-h3-text-link-text-decoration;
 		
 		&:hover {
 			
 			color: @heading-h3-text-link-hover-text-color;
-			text-transform: @heading-h3-text-link-hover-text-transform;
+			text-decoration: @heading-h3-text-link-hover-text-decoration;
 			
 		}
 		
 		&:active {
 			
 			color: @heading-h3-text-link-active-text-color;
-			text-transform: @heading-h3-text-link-active-text-transform;
+			text-decoration: @heading-h3-text-link-active-text-decoration;
 			
 		}
 		
@@ -1233,19 +1255,19 @@ h3,
 		a {
 			
 			color: @heading-h3-text-emphasis-link-text-color;
-			text-transform: @heading-h3-text-emphasis-link-text-transform;
+			text-decoration: @heading-h3-text-emphasis-link-text-decoration;
 			
 			&:hover {
 				
 				color: @heading-h3-text-emphasis-link-hover-text-color;
-				text-transform: @heading-h3-text-emphasis-link-hover-text-transform;
+				text-decoration: @heading-h3-text-emphasis-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @heading-h3-text-emphasis-link-active-text-color;
-				text-transform: @heading-h3-text-emphasis-link-active-text-transform;
+				text-decoration: @heading-h3-text-emphasis-link-active-text-decoration;
 				
 			}
 			
@@ -1266,19 +1288,19 @@ h3,
 		a {
 			
 			color: @heading-h3-text-muted-link-text-color;
-			text-transform: @heading-h3-text-muted-link-text-transform;
+			text-decoration: @heading-h3-text-muted-link-text-decoration;
 			
 			&:hover {
 				
 				color: @heading-h3-text-muted-link-hover-text-color;
-				text-transform: @heading-h3-text-muted-link-hover-text-transform;
+				text-decoration: @heading-h3-text-muted-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @heading-h3-text-muted-link-active-text-color;
-				text-transform: @heading-h3-text-muted-link-active-text-transform;
+				text-decoration: @heading-h3-text-muted-link-active-text-decoration;
 				
 			}
 			
@@ -1417,19 +1439,19 @@ h4,
 	a {
 		
 		color: @heading-h4-text-link-text-color;
-		text-transform: @heading-h4-text-link-text-transform;
+		text-decoration: @heading-h4-text-link-text-decoration;
 		
 		&:hover {
 			
 			color: @heading-h4-text-link-hover-text-color;
-			text-transform: @heading-h4-text-link-hover-text-transform;
+			text-decoration: @heading-h4-text-link-hover-text-decoration;
 			
 		}
 		
 		&:active {
 			
 			color: @heading-h4-text-link-active-text-color;
-			text-transform: @heading-h4-text-link-active-text-transform;
+			text-decoration: @heading-h4-text-link-active-text-decoration;
 			
 		}
 		
@@ -1450,19 +1472,19 @@ h4,
 		a {
 			
 			color: @heading-h4-text-emphasis-link-text-color;
-			text-transform: @heading-h4-text-emphasis-link-text-transform;
+			text-decoration: @heading-h4-text-emphasis-link-text-decoration;
 			
 			&:hover {
 				
 				color: @heading-h4-text-emphasis-link-hover-text-color;
-				text-transform: @heading-h4-text-emphasis-link-hover-text-transform;
+				text-decoration: @heading-h4-text-emphasis-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @heading-h4-text-emphasis-link-active-text-color;
-				text-transform: @heading-h4-text-emphasis-link-active-text-transform;
+				text-decoration: @heading-h4-text-emphasis-link-active-text-decoration;
 				
 			}
 			
@@ -1483,19 +1505,19 @@ h4,
 		a {
 			
 			color: @heading-h4-text-muted-link-text-color;
-			text-transform: @heading-h4-text-muted-link-text-transform;
+			text-decoration: @heading-h4-text-muted-link-text-decoration;
 			
 			&:hover {
 				
 				color: @heading-h4-text-muted-link-hover-text-color;
-				text-transform: @heading-h4-text-muted-link-hover-text-transform;
+				text-decoration: @heading-h4-text-muted-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @heading-h4-text-muted-link-active-text-color;
-				text-transform: @heading-h4-text-muted-link-active-text-transform;
+				text-decoration: @heading-h4-text-muted-link-active-text-decoration;
 				
 			}
 			
@@ -1634,19 +1656,19 @@ h5,
 	a {
 		
 		color: @heading-h5-text-link-text-color;
-		text-transform: @heading-h5-text-link-text-transform;
+		text-decoration: @heading-h5-text-link-text-decoration;
 		
 		&:hover {
 			
 			color: @heading-h5-text-link-hover-text-color;
-			text-transform: @heading-h5-text-link-hover-text-transform;
+			text-decoration: @heading-h5-text-link-hover-text-decoration;
 			
 		}
 		
 		&:active {
 			
 			color: @heading-h5-text-link-active-text-color;
-			text-transform: @heading-h5-text-link-active-text-transform;
+			text-decoration: @heading-h5-text-link-active-text-decoration;
 			
 		}
 		
@@ -1667,19 +1689,19 @@ h5,
 		a {
 			
 			color: @heading-h5-text-emphasis-link-text-color;
-			text-transform: @heading-h5-text-emphasis-link-text-transform;
+			text-decoration: @heading-h5-text-emphasis-link-text-decoration;
 			
 			&:hover {
 				
 				color: @heading-h5-text-emphasis-link-hover-text-color;
-				text-transform: @heading-h5-text-emphasis-link-hover-text-transform;
+				text-decoration: @heading-h5-text-emphasis-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @heading-h5-text-emphasis-link-active-text-color;
-				text-transform: @heading-h5-text-emphasis-link-active-text-transform;
+				text-decoration: @heading-h5-text-emphasis-link-active-text-decoration;
 				
 			}
 			
@@ -1700,19 +1722,19 @@ h5,
 		a {
 			
 			color: @heading-h5-text-muted-link-text-color;
-			text-transform: @heading-h5-text-muted-link-text-transform;
+			text-decoration: @heading-h5-text-muted-link-text-decoration;
 			
 			&:hover {
 				
 				color: @heading-h5-text-muted-link-hover-text-color;
-				text-transform: @heading-h5-text-muted-link-hover-text-transform;
+				text-decoration: @heading-h5-text-muted-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @heading-h5-text-muted-link-active-text-color;
-				text-transform: @heading-h5-text-muted-link-active-text-transform;
+				text-decoration: @heading-h5-text-muted-link-active-text-decoration;
 				
 			}
 			
@@ -1851,19 +1873,19 @@ h6,
 	a {
 		
 		color: @heading-h6-text-link-text-color;
-		text-transform: @heading-h6-text-link-text-transform;
+		text-decoration: @heading-h6-text-link-text-decoration;
 		
 		&:hover {
 			
 			color: @heading-h6-text-link-hover-text-color;
-			text-transform: @heading-h6-text-link-hover-text-transform;
+			text-decoration: @heading-h6-text-link-hover-text-decoration;
 			
 		}
 		
 		&:active {
 			
 			color: @heading-h6-text-link-active-text-color;
-			text-transform: @heading-h6-text-link-active-text-transform;
+			text-decoration: @heading-h6-text-link-active-text-decoration;
 			
 		}
 		
@@ -1884,19 +1906,19 @@ h6,
 		a {
 			
 			color: @heading-h6-text-emphasis-link-text-color;
-			text-transform: @heading-h6-text-emphasis-link-text-transform;
+			text-decoration: @heading-h6-text-emphasis-link-text-decoration;
 			
 			&:hover {
 				
 				color: @heading-h6-text-emphasis-link-hover-text-color;
-				text-transform: @heading-h6-text-emphasis-link-hover-text-transform;
+				text-decoration: @heading-h6-text-emphasis-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @heading-h6-text-emphasis-link-active-text-color;
-				text-transform: @heading-h6-text-emphasis-link-active-text-transform;
+				text-decoration: @heading-h6-text-emphasis-link-active-text-decoration;
 				
 			}
 			
@@ -1917,19 +1939,19 @@ h6,
 		a {
 			
 			color: @heading-h6-text-muted-link-text-color;
-			text-transform: @heading-h6-text-muted-link-text-transform;
+			text-decoration: @heading-h6-text-muted-link-text-decoration;
 			
 			&:hover {
 				
 				color: @heading-h6-text-muted-link-hover-text-color;
-				text-transform: @heading-h6-text-muted-link-hover-text-transform;
+				text-decoration: @heading-h6-text-muted-link-hover-text-decoration;
 				
 			}
 			
 			&:active {
 				
 				color: @heading-h6-text-muted-link-active-text-color;
-				text-transform: @heading-h6-text-muted-link-active-text-transform;
+				text-decoration: @heading-h6-text-muted-link-active-text-decoration;
 				
 			}
 			
@@ -2204,13 +2226,20 @@ dl {
 	
 	&.dl-horizontal {
 		
+		.clearfix();
+		
 		dt {
 			
 			float: left;
 			width: 200px - (@primary-margin / 2);
 			clear: left;
 			text-align: right;
-			.text-overflow();
+			
+			&:last-of-type {
+				
+				margin-bottom: 0px;
+				
+			}
 			
 		}
 		
@@ -2264,152 +2293,90 @@ dl {
 
 
 
-
-
-
-
-
-
-
-
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Miscellaneous                                                                                        */
+/* Address                                                                                              */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-// Horizontal rules
-
-hr {
+address {
 	
-	margin: @primary-margin 0px @primary-margin 0px;
-	border: 0px;
-	border-top: 1px solid @border-color;
-	border-bottom: none;
+	display: block;
+	font-style: normal;
+	margin: 0px 0px @body-text-margin-bottom 0px;
 	
-	&.inverse {
-		
-		border-top: 1px solid @border-inverse-color;
-		
-	}
-		
-	&.short {
-		
-		margin: @primary-margin-short 0 @primary-margin-short 0;
-		
-	}
+	// Tall
 	
 	&.tall {
 		
-		margin: @primary-margin-tall 0 @primary-margin-tall 0;
+		margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall;
 		
 	}
 	
-	&.flush-bottom {
+	// Short
 		
-		margin: 0px;
+	&.short {
 		
-	}
-	
-	&.narrow {
-		
-		margin: 0 auto;
-		width: 120px;
-		margin-top: @primary-margin;
-		margin-bottom: @primary-margin;
-		
-		&.short {
-			
-			margin-top: @primary-margin-short;
-			margin-bottom: @primary-margin-short;
-			
-		}
-		
-		&.tall {
-			
-			margin-top: @primary-margin-tall;
-			margin-bottom: @primary-margin-tall;
-			
-		}
-		
-	}
-	
-	+ h1,
-	+ .h1-clone,
-	+ h2,
-	+ .h2-clone,
-	+ h3,
-	+ .h3-clone,
-	+ h4,
-	+ .h4-clone,
-	+ h5,
-	+ .h5-clone,
-	+ h6,
-	+ .h6-clone {
-		
-		margin-top: 0px;
+		margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short;
 		
 	}
 	
 }
 
-// Emphasis
 
-strong {
-	
-	font-weight: bold;
-	
-}
 
-em {
-	
-	font-style: italic;
-	
-}
-
-.muted {
-	
-	color: @gray;
-	
-}
-
-// Abbreviations and acronyms
-
-abbr[title] {
-	
-	cursor: help;
-	border-bottom: 1px dotted @gray;
-	
-}
-
-abbr.initialism {
-	
-	font-size: 90%;
-	text-transform: uppercase;
-	
-}
-
-// Blockquotes
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Blockquote                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 blockquote {
 	
-	padding: 0px 0px 0px (@body-text-margin-bottom / 2);
-	margin: 0px 0px @body-text-margin-bottom 0px;
-	border-left: 5px solid @gray;
+	margin: 0px 0px @lead-text-margin-bottom 0px;
+	padding: 0px 0px 0px @lead-text-margin-bottom;
+	border-left: 3px solid @gray;
 	
 	p {
 		
-		margin-bottom: 0px;
-		#font > .shorthand(@lead-text-font-size, @lead-text-font-weight, @lead-text-line-height);
+		font-family: @lead-text-font-family;
+		font-size: @lead-text-font-size;
+		font-weight: @lead-text-font-weight;
+		line-height: @lead-text-line-height;
+		text-transform: @lead-text-transform;
+		font-style: @lead-text-style;
+		color: @lead-text-color;
+		margin: @lead-text-margin-top 0px @lead-text-margin-bottom 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @lead-text-margin-bottom * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @lead-text-margin-bottom * @text-margin-ratio-short;
+			
+		}
 		
 	}
 	
 	small {
 		
-		display: block;
-		line-height: @body-text-line-height;
-		color: @gray;
-		
+		font-family: @small-text-font-family;
+		font-size: @small-text-font-size;
+		font-weight: @small-text-font-weight;
+		line-height: @small-text-line-height;
+		text-transform: @small-text-transform;
+		font-style: @small-text-style;
+		color: @small-text-color;
+		margin: @small-text-margin-top 0px 0px 0px;
+				
 		&:before {
 			
 			content: '\2014 \00A0';
@@ -2418,20 +2385,53 @@ blockquote {
 		
 	}
 	
+	// Tall
+	
+	&.tall {
+		
+		margin-bottom: @lead-text-margin-bottom * @text-margin-ratio-tall;
+		
+	}
+	
+	// Short
+		
+	&.short {
+		
+		margin-bottom: @lead-text-margin-bottom * @text-margin-ratio-short;
+		
+	}
+	
 	// Float right with text-align: right
 	
 	&.pull-right {
 		
 		float: right;
-		padding-right: 15px;
+		padding-right: @lead-text-margin-bottom;
 		padding-left: 0px;
-		border-right: 5px solid @gray;
+		border-right: 3px solid @gray;
 		border-left: 0px;
 		
 		p,
 		small {
 			
 			text-align: right;
+			display: block;
+			
+		}
+		
+		small {
+			
+			&:before {
+				
+				content: '';
+				
+			}
+			
+			&:after {
+				
+				content: '\00A0 \2014';
+				
+			}
 			
 		}
 		
@@ -2447,31 +2447,6 @@ blockquote:before,
 blockquote:after {
 	
 	content: "";
-	
-}
-
-// Addresses
-
-address {
-	
-	display: block;
-	margin-bottom: @body-text-margin-bottom;
-	font-style: normal;
-	line-height: @body-text-line-height;
-	
-}
-
-// Misc
-
-small {
-	
-	font-size: 100%;
-	
-}
-
-cite {
-	
-	font-style: normal;
 	
 }
 
@@ -2925,88 +2900,95 @@ cite {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Miscellaneous                                                                                        */
+	/* Address                                                                                              */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
-	// Horizontal rules
-	
-	hr {
+	address {
 		
-		margin: @primary-margin-widescreen 0px @primary-margin-widescreen 0px;
-			
-		&.short {
-			
-			margin: @primary-margin-short-widescreen 0px @primary-margin-short-widescreen 0px;
-			
-		}
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) 0px;
+		
+		// Tall
 		
 		&.tall {
 			
-			margin: @primary-margin-tall-widescreen 0px @primary-margin-tall-widescreen 0px;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-responsive-ratio-widescreen;
 			
 		}
-	
-		&.narrow {
+		
+		// Short
 			
-			margin: 0 auto;
-			margin-top: @primary-margin-widescreen;
-			margin-bottom: @primary-margin-widescreen;
+		&.short {
 			
-			&.short {
-				
-				margin-top: @primary-margin-short-widescreen;
-				margin-bottom: @primary-margin-short-widescreen;
-				
-			}
-			
-			&.tall {
-				
-				margin-top: @primary-margin-tall-widescreen;
-				margin-bottom: @primary-margin-tall-widescreen;
-				
-			}
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-responsive-ratio-widescreen;
 			
 		}
+		
 		
 	}
 	
-	// Blockquotes
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Blockquote                                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
 	
 	blockquote {
 		
-		padding: 0px 0px 0px ((@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) / 2);
-		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) 0px;
+		margin: 0px 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen) 0px;
+		padding: 0px 0px 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen);
 		
 		p {
 			
-			#font > .shorthand(@lead-text-font-size * @body-text-responsive-ratio-widescreen, @lead-text-font-weight * @body-text-responsive-ratio-widescreen, @lead-text-line-height * @body-text-responsive-ratio-widescreen);
+			font-size: @lead-text-font-size * @lead-text-responsive-ratio-widescreen;
+			line-height: @lead-text-line-height * @lead-text-responsive-ratio-widescreen;
+			margin: (@lead-text-margin-top * @lead-text-responsive-ratio-widescreen) 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen) 0px;
+			
+			// Tall
+			
+			&.tall {
+				
+				margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+				
+			}
+			
+			// Short
+				
+			&.short {
+				
+				margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+				
+			}
 			
 		}
 		
 		small {
 			
-			line-height: @body-text-line-height * @small-text-responsive-ratio-widescreen;
+			font-size: @small-text-font-size * @small-text-responsive-ratio-widescreen;
+			line-height: @small-text-line-height * @small-text-responsive-ratio-widescreen;
+			margin: (@small-text-margin-top * @small-text-responsive-ratio-widescreen) 0px (@small-text-margin-bottom * @small-text-responsive-ratio-widescreen) 0px;
 			
 		}
 		
-	}
-	
-	// Addresses
-	
-	address {
+		// Tall
 		
-		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-widescreen;
-		line-height: @body-text-line-height * @body-text-responsive-ratio-widescreen;
+		&.tall {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+			
+		}
 		
 	}
 	
@@ -3462,117 +3444,95 @@ cite {
 	
 	
 	
-	
-	
-	
-	
-	// Description Lists
-	
-	dl {
-		
-		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet;
-		
-	}
-	
-	dt,
-	dd {
-		
-		font-size: @body-text-font-size * @body-text-responsive-ratio-tablet;
-		line-height: @body-text-line-height * @body-text-responsive-ratio-tablet;
-		
-	}
-	
-	dt {
-		
-		font-size: @body-text-font-size * @body-text-responsive-ratio-tablet;
-		line-height: (@body-text-line-height * @body-text-responsive-ratio-tablet) - 1; // fix jank Helvetica Neue font bug
-		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet;
-		
-	}
-	
-	dd {
-		
-		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet;
-		
-	}
-	
-	
-	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Miscellaneous                                                                                        */
+	/* Address                                                                                              */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
-	// Horizontal rules
-	
-	hr {
+	address {
 		
-		margin: @primary-margin-tablet 0px @primary-margin-tablet 0px;
-			
-		&.short {
-			
-			margin: @primary-margin-short-tablet 0px @primary-margin-short-tablet 0px;
-			
-		}
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-tablet) 0px;
+		
+		// Tall
 		
 		&.tall {
 			
-			margin: @primary-margin-tall-tablet 0px @primary-margin-tall-tablet 0px;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-responsive-ratio-tablet;
 			
 		}
-	
-		&.narrow {
+		
+		// Short
 			
-			margin: 0 auto;
-			margin-top: @primary-margin-tablet;
-			margin-bottom: @primary-margin-tablet;
+		&.short {
 			
-			&.short {
-				
-				margin-top: @primary-margin-short-tablet;
-				margin-bottom: @primary-margin-short-tablet;
-				
-			}
-			
-			&.tall {
-				
-				margin-top: @primary-margin-tall-tablet;
-				margin-bottom: @primary-margin-tall-tablet;
-				
-			}
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-responsive-ratio-tablet;
 			
 		}
+		
 		
 	}
 	
-	// Blockquotes
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Blockquote                                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
 	
 	blockquote {
 		
-		padding: 0px 0px 0px ((@body-text-margin-bottom * @body-text-responsive-ratio-tablet) / 2);
-		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-tablet) 0px;
+		margin: 0px 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-tablet) 0px;
+		padding: 0px 0px 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-tablet);
 		
 		p {
 			
-			#font > .shorthand(@lead-text-font-size * @body-text-responsive-ratio-tablet, @lead-text-font-weight * @body-text-responsive-ratio-tablet, @lead-text-line-height * @body-text-responsive-ratio-tablet);
+			font-size: @lead-text-font-size * @lead-text-responsive-ratio-tablet;
+			line-height: @lead-text-line-height * @lead-text-responsive-ratio-tablet;
+			margin: (@lead-text-margin-top * @lead-text-responsive-ratio-tablet) 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-tablet) 0px;
+			
+			// Tall
+			
+			&.tall {
+				
+				margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-tablet * @text-margin-ratio-tall;
+				
+			}
+			
+			// Short
+				
+			&.short {
+				
+				margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-tablet * @text-margin-ratio-short;
+				
+			}
 			
 		}
 		
 		small {
 			
-			line-height: @body-text-line-height * @small-text-responsive-ratio-tablet;
+			font-size: @small-text-font-size * @small-text-responsive-ratio-tablet;
+			line-height: @small-text-line-height * @small-text-responsive-ratio-tablet;
+			margin: (@small-text-margin-top * @small-text-responsive-ratio-tablet) 0px (@small-text-margin-bottom * @small-text-responsive-ratio-tablet) 0px;
 			
 		}
 		
-	}
-	
-	// Addresses
-	
-	address {
+		// Tall
 		
-		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet;
-		line-height: @body-text-line-height * @body-text-responsive-ratio-tablet;
+		&.tall {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-tablet * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-tablet * @text-margin-ratio-short;
+			
+		}
 		
 	}
 	
@@ -4027,122 +3987,95 @@ cite {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	// Description Lists
-	
-	dl {
-		
-		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile;
-		
-	}
-	
-	dt,
-	dd {
-		
-		font-size: @body-text-font-size * @body-text-responsive-ratio-mobile;
-		line-height: @body-text-line-height * @body-text-responsive-ratio-mobile;
-		
-	}
-	
-	dt {
-		
-		font-size: @body-text-font-size * @body-text-responsive-ratio-mobile;
-		line-height: (@body-text-line-height * @body-text-responsive-ratio-mobile) - 1; // fix jank Helvetica Neue font bug
-		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile;
-		
-	}
-	
-	dd {
-		
-		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile;
-		
-	}
-	
-	
-	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Miscellaneous                                                                                        */
+	/* Address                                                                                              */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
-	// Horizontal rules
-	
-	hr {
+	address {
 		
-		margin: @primary-margin-tablet 0px @primary-margin-tablet 0px;
-			
-		&.short {
-			
-			margin: @primary-margin-short-tablet 0px @primary-margin-short-tablet 0px;
-			
-		}
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-mobile) 0px;
+		
+		// Tall
 		
 		&.tall {
 			
-			margin: @primary-margin-tall-tablet 0px @primary-margin-tall-tablet 0px;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-responsive-ratio-mobile;
 			
 		}
-	
-		&.narrow {
+		
+		// Short
 			
-			margin: 0 auto;
-			margin-top: @primary-margin-tablet;
-			margin-bottom: @primary-margin-tablet;
+		&.short {
 			
-			&.short {
-				
-				margin-top: @primary-margin-short-tablet;
-				margin-bottom: @primary-margin-short-tablet;
-				
-			}
-			
-			&.tall {
-				
-				margin-top: @primary-margin-tall-tablet;
-				margin-bottom: @primary-margin-tall-tablet;
-				
-			}
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-responsive-ratio-mobile;
 			
 		}
+		
 		
 	}
 	
-	// Blockquotes
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Blockquote                                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
 	
 	blockquote {
 		
-		padding: 0px 0px 0px ((@body-text-margin-bottom * @body-text-responsive-ratio-mobile) / 2);
-		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-mobile) 0px;
+		margin: 0px 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-mobile) 0px;
+		padding: 0px 0px 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-mobile);
 		
 		p {
 			
-			#font > .shorthand(@lead-text-font-size * @body-text-responsive-ratio-mobile, @lead-text-font-weight * @body-text-responsive-ratio-mobile, @lead-text-line-height * @body-text-responsive-ratio-mobile);
+			font-size: @lead-text-font-size * @lead-text-responsive-ratio-mobile;
+			line-height: @lead-text-line-height * @lead-text-responsive-ratio-mobile;
+			margin: (@lead-text-margin-top * @lead-text-responsive-ratio-mobile) 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-mobile) 0px;
+			
+			// Tall
+			
+			&.tall {
+				
+				margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+				
+			}
+			
+			// Short
+				
+			&.short {
+				
+				margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-mobile * @text-margin-ratio-short;
+				
+			}
 			
 		}
 		
 		small {
 			
-			line-height: @body-text-line-height * @small-text-responsive-ratio-mobile;
+			font-size: @small-text-font-size * @small-text-responsive-ratio-mobile;
+			line-height: @small-text-line-height * @small-text-responsive-ratio-mobile;
+			margin: (@small-text-margin-top * @small-text-responsive-ratio-mobile) 0px (@small-text-margin-bottom * @small-text-responsive-ratio-mobile) 0px;
 			
 		}
 		
-	}
-	
-	// Addresses
-	
-	address {
+		// Tall
 		
-		margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile;
-		line-height: @body-text-line-height * @body-text-responsive-ratio-mobile;
+		&.tall {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			
+		}
 		
 	}
 		

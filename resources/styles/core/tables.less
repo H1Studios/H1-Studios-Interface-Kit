@@ -1,6 +1,6 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
-/* core/tables.less                                                          */
+/* core/tables.less                                                                                     */
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -8,28 +8,22 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Base Tables                                                               */
+/* Base Tables                                                                                          */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
 table {
 	
 	max-width: 100%;
-	background-color: @tableBackground;
+	background-color: @table-background;
 	border-collapse: collapse;
 	border-spacing: 0;
-	
-	&.inverse {
-		
-		background-color: @tableInverseBackground;
-		
-	}
 	
 }
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Baseline Styles                                                           */
+/* Default Table Styles                                                                                 */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -38,24 +32,83 @@ table {
 	width: 100%;
 	margin-bottom: @primary-margin;
 	
-	// Cells
-	
 	th,
 	td {
 		
-		padding: 8px;
-		color: @tableCellTextColor;
-		line-height: @body-text-line-height;
+		padding: @table-cell-padding-vertical @table-cell-padding-horizontal;
 		text-align: left;
 		vertical-align: top;
-		border-top: 1px solid @tableBorder;
+		border-top: 1px solid @table-border;
 		
 	}
 	
 	th {
 		
-		font-weight: @tableCellHeaderTextFontWeight;
-		color: @tableCellHeaderTextColor;
+		color: @table-header-text-color;
+		font-size: @table-header-text-font-size;
+		font-weight: @table-header-text-font-weight;
+		line-height: @table-header-text-line-height;
+		
+	}
+	
+	td {
+		
+		color: @table-body-row-text-color;
+		font-size: @table-body-row-text-font-size;
+		font-weight: @table-body-row-text-font-weight;
+		line-height: @table-body-row-text-line-height;
+		
+	}
+	
+	tr {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Table Row Active State                                                                               */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.active td {
+			
+			background-color: @table-body-row-hover-background;
+			color: @table-body-row-hover-text-color;
+			font-weight: @table-body-row-hover-text-font-weight;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Table Row Success State                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.success td {
+			
+			background-color: @table-body-row-success-background;
+			color: @table-body-row-success-text-color;
+			font-weight: @table-body-row-success-text-font-weight;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Table Row warning State                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.warning td {
+			
+			background-color: @table-body-row-warning-background;
+			color: @table-body-row-warning-text-color;
+			font-weight: @table-body-row-warning-text-font-weight;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Table Row Error State                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.error td {
+			
+			background-color: @table-body-row-error-background;
+			color: @table-body-row-error-text-color;
+			font-weight: @table-body-row-error-text-font-weight;
+			
+		}
 		
 	}
 	
@@ -76,7 +129,7 @@ table {
 	thead:first-child tr:first-child th,
 	thead:first-child tr:first-child td {
 		
-		border-top: 0;
+		border-top: 0px;
 		
 	}
 	
@@ -84,15 +137,7 @@ table {
 	
 	tbody + tbody {
 		
-		border-top: 2px solid @tableBorder;
-		
-	}
-	
-	// Nesting
-	
-	.table {
-		
-		background-color: @white;
+		border-top: 2px solid @table-border;
 		
 	}
 	
@@ -108,27 +153,22 @@ table {
 		
 	}
 	
-	&.inverse {
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Condensed Table                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.table.table-condensed {
+	
+	th,
+	td {
 		
-		th,
-		td {
-			
-			border-top: 1px solid @tableInverseBorder;
-			color: @tableInverseCellTextColor;
-			
-		}
-		
-		th {
-			
-			color: @tableInverseCellHeaderTextColor;
-			
-		}
-		
-		tbody + tbody {
-			
-			border-top: 2px solid @tableInverseBorder;
-			
-		}
+		padding: @table-condensed-cell-padding-vertical @table-condensed-cell-padding-horizontal;
 		
 	}
 	
@@ -138,46 +178,22 @@ table {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Condensed Table                                                           */
+/* Bordered Table                                                                                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-.table-condensed {
+.table.table-bordered {
+	
+	border: 1px solid @table-border;
+	border-collapse: separate;
+	*border-collapse: collapse;
+	border-left: 0px;
+	.border-radius(@table-border-radius);
 	
 	th,
 	td {
 		
-		padding: 4px 5px;
-		
-	}
-	
-}
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Bordered Table                                                            */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-.table-bordered {
-	
-	border: 1px solid @tableBorder;
-	border-collapse: separate; // Done so we can round those corners!
-	*border-collapse: collapse; // IE7 can't round corners anyway
-	border-left: 0;
-	.border-radius(@tableBorderRadius);
-	
-	th,
-	td {
-		
-		border-left: 1px solid @tableBorder;
-		
-		&:first-child {
-			
-			//border-left: none;
-			
-		}
+		border-left: 1px solid @table-border;
 		
 	}
 	
@@ -203,14 +219,14 @@ table {
 	tbody:first-child tr:first-child > td:first-child,
 	tbody:first-child tr:first-child > th:first-child {
 		
-		.border-top-left-radius(@tableBorderRadius);
+		.border-top-left-radius(@table-border-radius);
 		
 	}
 	
 	thead:first-child tr:first-child > th:last-child,
 	tbody:first-child tr:first-child > td:last-child {
 		
-		.border-top-right-radius(@tableBorderRadius);
+		.border-top-right-radius(@table-border-radius);
 		
 	}
 	
@@ -221,7 +237,7 @@ table {
 	tbody:last-child tr:last-child > th:first-child,
 	tfoot:last-child tr:last-child > td:first-child {
 		
-		.border-bottom-left-radius(@tableBorderRadius);
+		.border-bottom-left-radius(@table-border-radius);
 		
 	}
 	
@@ -229,7 +245,7 @@ table {
 	tbody:last-child tr:last-child > td:last-child,
 	tfoot:last-child tr:last-child > td:last-child {
 		
-		.border-bottom-right-radius(@tableBorderRadius);
+		.border-bottom-right-radius(@table-border-radius);
 		
 	}
 	
@@ -237,13 +253,13 @@ table {
 	
 	tfoot + tbody:last-child tr:last-child td:first-child {
 		
-		.border-bottom-left-radius(0);
+		.border-bottom-left-radius(0px);
 		
 	}
 	
 	tfoot + tbody:last-child tr:last-child td:last-child {
 		
-		.border-bottom-right-radius(0);
+		.border-bottom-right-radius(0px);
 		
 	}
 	
@@ -253,7 +269,7 @@ table {
 	colgroup + thead tr:first-child th:first-child,
 	colgroup + tbody tr:first-child td:first-child {
 		
-		.border-top-left-radius(@tableBorderRadius);
+		.border-top-left-radius(@table-border-radius);
 		
 	}
 	
@@ -262,20 +278,7 @@ table {
 	colgroup + thead tr:first-child th:last-child,
 	colgroup + tbody tr:first-child td:last-child {
 		
-		.border-top-right-radius(@tableBorderRadius);
-		
-	}
-	
-	&.inverse {
-		
-		border-color: @tableInverseBorder;
-		
-		th,
-		td {
-			
-			border-left-color: @tableInverseBorder;
-			
-		}
+		.border-top-right-radius(@table-border-radius);
 		
 	}
 
@@ -285,20 +288,62 @@ table {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Striped Table                                                             */
+/* Striped Table                                                                                        */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
-.table-striped {
+.table.table-striped {
 	
 	tbody {
 		
-		> tr:nth-child(odd) > td,
-		> tr:nth-child(odd) > th {
+		> tr:nth-child(odd) {
 			
-			background-color: @tableCellBackgroundAccent;
+			td,
+			th {
+				
+				background-color: @table-body-row-accent-background;
+				color: @table-body-row-accent-text-color;
+				font-weight: @table-body-row-accent-text-font-weight;
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Table Row Success States                                                                             */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.success td {
+				
+				background-color: @table-body-row-success-accent-background;
+				color: @table-body-row-success-accent-text-color;
+				font-weight: @table-body-row-success-accent-text-font-weight;
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Table Row Warning States                                                                             */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.warning td {
+				
+				background-color: @table-body-row-warning-accent-background;
+				color: @table-body-row-warning-accent-text-color;
+				font-weight: @table-body-row-warning-accent-text-font-weight;
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Table Row Error States                                                                               */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.error td {
+				
+				background-color: @table-body-row-error-accent-background;
+				color: @table-body-row-error-accent-text-color;
+				font-weight: @table-body-row-error-accent-text-font-weight;
+				
+			}
 			
 		}
 		
@@ -308,18 +353,76 @@ table {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Hover Table                                                               */
+/* Hover Table                                                                                          */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-.table-hover {
+.table.table-hover {
 	
 	tbody {
 		
-		tr:hover td,
-		tr:hover th {
+		tr {
 			
-			background-color: @tableCellBackgroundHover;
+			&:hover {
+				
+				td,
+				th {
+					
+					background-color: @table-body-row-hover-background;
+					color: @table-body-row-hover-text-color;
+					font-weight: @table-body-row-hover-text-font-weight;
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Table Row Active State                                                                               */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.active:hover td {
+				
+				background-color: @table-body-row-hover-background;
+				color: @table-body-row-hover-text-color;
+				font-weight: @table-body-row-hover-text-font-weight;
+				
+			}
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Table Row Success States                                                                             */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.success:hover td {
+				
+				background-color: @table-body-row-success-hover-background;
+				color: @table-body-row-success-hover-text-color;
+				font-weight: @table-body-row-success-hover-text-font-weight;
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Table Row Warning States                                                                             */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.warning:hover td {
+				
+				background-color: @table-body-row-warning-hover-background;
+				color: @table-body-row-warning-hover-text-color;
+				font-weight: @table-body-row-warning-hover-text-font-weight;
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Table Row Error States                                                                               */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.error:hover td {
+				
+				background-color: @table-body-row-error-hover-background;
+				color: @table-body-row-error-hover-text-color;
+				font-weight: @table-body-row-error-hover-text-font-weight;
+				
+			}
 			
 		}
 		
@@ -331,7 +434,7 @@ table {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Cell Sizing                                                               */
+/* Cell Sizing                                                                                          */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -372,90 +475,52 @@ table th[class*="span"],
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Table Backgrounds                                                         */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-.table tbody tr {
-	
-	&.success td {
-		
-		background-color: @tableCellSuccessBackground;
-		color: @tableCellSuccessTextColor;
-		
-	}
-	
-	&.error td {
-		
-		background-color: @tableCellErrorBackground;
-		color: @tableCellErrorTextColor;
-		
-	}
-	
-	&.warning td {
-		
-		background-color: @tableCellWarningBackground;
-		color: @tableCellWarningTextColor;
-		
-	}
-	
-}
-
-// Hover states for .table-hover
-
-.table-hover tbody tr {
-	
-	&.success:hover td {
-		
-		background-color: darken(@tableCellSuccessBackground, 5%);
-		
-	}
-	
-	&.error:hover td {
-		
-		background-color: darken(@tableCellErrorBackground, 5%);
-		
-	}
-	
-	&.warning:hover td {
-		
-		background-color: darken(@tableCellWarningBackground, 5%);
-		
-	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive changes to styling for widescreen (@viewport-widescreen) and   */
-/* above.                                                                    */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and above.                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
 @media (min-width: @viewport-widescreen) {
 	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Default Table Styles                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
 	.table {
 		
 		margin-bottom: @primary-margin-widescreen;
 		
+		th,
+		td {
+			
+			padding: (@table-cell-padding-vertical * @table-responsive-ratio-widescreen) (@table-cell-padding-horizontal * @table-responsive-ratio-widescreen);
+						
+		}
+		
+		th {
+			
+			font-size: @table-header-text-font-size * @table-responsive-ratio-widescreen;
+			line-height: @table-header-text-line-height * @table-responsive-ratio-widescreen;
+			
+		}
+		
+		td {
+			
+			font-size: @table-body-row-text-font-size * @table-responsive-ratio-widescreen;
+			line-height: @table-body-row-text-line-height * @body-text-responsive-ratio-widescreen;
+			
+		}
+		
 		&.short {
 			
-			margin-bottom: @primary-margin-widescreen;
+			margin-bottom: @primary-margin-short-widescreen;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primary-margin-widescreen;
-			
-		}
-		
-		th,
-		td {
-			
-			line-height: @body-text-line-height * @body-text-responsive-ratio-widescreen;
+			margin-bottom: @primary-margin-tall-widescreen;
 			
 		}
 		
@@ -474,26 +539,46 @@ table th[class*="span"],
 
 @media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
 	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Default Table Styles                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
 	.table {
 		
 		margin-bottom: @primary-margin-tablet;
 		
+		th,
+		td {
+			
+			padding: (@table-cell-padding-vertical * @table-responsive-ratio-tablet) (@table-cell-padding-horizontal * @table-responsive-ratio-tablet);
+						
+		}
+		
+		th {
+			
+			font-size: @table-header-text-font-size * @table-responsive-ratio-tablet;
+			line-height: @table-header-text-line-height * @table-responsive-ratio-tablet;
+			
+		}
+		
+		td {
+			
+			font-size: @table-body-row-text-font-size * @table-responsive-ratio-tablet;
+			line-height: @table-body-row-text-line-height * @body-text-responsive-ratio-tablet;
+			
+		}
+		
 		&.short {
 			
-			margin-bottom: @primary-margin-tablet;
+			margin-bottom: @primary-margin-short-tablet;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primary-margin-tablet;
-			
-		}
-		
-		th,
-		td {
-			
-			line-height: @body-text-line-height * @body-text-responsive-ratio-tablet;
+			margin-bottom: @primary-margin-tall-tablet;
 			
 		}
 		
@@ -511,26 +596,46 @@ table th[class*="span"],
 
 @media (max-width: @viewport-mobile-landscape-max) {
 	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Default Table Styles                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
 	.table {
 		
 		margin-bottom: @primary-margin-mobile;
 		
+		th,
+		td {
+			
+			padding: (@table-cell-padding-vertical * @table-responsive-ratio-mobile) (@table-cell-padding-horizontal * @table-responsive-ratio-mobile);
+						
+		}
+		
+		th {
+			
+			font-size: @table-header-text-font-size * @table-responsive-ratio-mobile;
+			line-height: @table-header-text-line-height * @table-responsive-ratio-mobile;
+			
+		}
+		
+		td {
+			
+			font-size: @table-body-row-text-font-size * @table-responsive-ratio-mobile;
+			line-height: @table-body-row-text-line-height * @body-text-responsive-ratio-mobile;
+			
+		}
+		
 		&.short {
 			
-			margin-bottom: @primary-margin-mobile;
+			margin-bottom: @primary-margin-short-mobile;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primary-margin-mobile;
-			
-		}
-		
-		th,
-		td {
-			
-			line-height: @body-text-line-height * @body-text-responsive-ratio-mobile;
+			margin-bottom: @primary-margin-tall-mobile;
 			
 		}
 		
