@@ -153,6 +153,85 @@ table {
 		
 	}
 	
+	&.inverse {
+		
+		th,
+		td {
+			
+			border-top: 1px solid @table-inverse-border;
+			
+		}
+		
+		th {
+			
+			color: @table-inverse-header-text-color;
+			
+		}
+		
+		td {
+			
+			color: @table-inverse-body-row-text-color;
+			
+		}
+		
+		tr {
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Table Row Active State                                                                               */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.active td {
+				
+				background-color: @table-inverse-body-row-hover-background;
+				color: @table-inverse-body-row-hover-text-color;
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Table Row Success State                                                                              */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.success td {
+				
+				background-color: @table-inverse-body-row-success-background;
+				color: @table-inverse-body-row-success-text-color;
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Table Row warning State                                                                              */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.warning td {
+				
+				background-color: @table-inverse-body-row-warning-background;
+				color: @table-inverse-body-row-warning-text-color;
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Table Row Error State                                                                                */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.error td {
+				
+				background-color: @table-inverse-body-row-error-background;
+				color: @table-inverse-body-row-error-text-color;
+				
+			}
+			
+		}
+		
+		// Account for multiple tbody instances
+		
+		tbody + tbody {
+			
+			border-top: 2px solid @table-inverse-border;
+			
+		}
+		
+	}
+	
 }
 
 
@@ -281,7 +360,21 @@ table {
 		.border-top-right-radius(@table-border-radius);
 		
 	}
-
+	
+	&.inverse {
+		
+		border: 1px solid @table-inverse-border;
+		border-left: 0px;
+		
+		th,
+		td {
+			
+			border-left: 1px solid @table-inverse-border;
+			
+		}
+		
+	}
+	
 }
 
 
@@ -342,6 +435,59 @@ table {
 				background-color: @table-body-row-error-accent-background;
 				color: @table-body-row-error-accent-text-color;
 				font-weight: @table-body-row-error-accent-text-font-weight;
+				
+			}
+			
+		}
+		
+	}
+	
+	&.inverse {
+		
+		tbody {
+			
+			> tr:nth-child(odd) {
+				
+				td,
+				th {
+					
+					background-color: @table-inverse-body-row-accent-background;
+					color: @table-inverse-body-row-accent-text-color;
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Table Row Success States                                                                             */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.success td {
+					
+					background-color: @table-inverse-body-row-success-accent-background;
+					color: @table-inverse-body-row-success-accent-text-color;
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Table Row Warning States                                                                             */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.warning td {
+					
+					background-color: @table-inverse-body-row-warning-accent-background;
+					color: @table-inverse-body-row-warning-accent-text-color;
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Table Row Error States                                                                               */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.error td {
+					
+					background-color: @table-inverse-body-row-error-accent-background;
+					color: @table-inverse-body-row-error-accent-text-color;
+					
+				}
 				
 			}
 			
@@ -421,6 +567,74 @@ table {
 				background-color: @table-body-row-error-hover-background;
 				color: @table-body-row-error-hover-text-color;
 				font-weight: @table-body-row-error-hover-text-font-weight;
+				
+			}
+			
+		}
+		
+	}
+	
+	&.inverse {
+		
+		tbody {
+			
+			tr {
+				
+				&:hover {
+					
+					td,
+					th {
+						
+						background-color: @table-inverse-body-row-hover-background;
+						color: @table-inverse-body-row-hover-text-color;
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Table Row Active State                                                                               */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.active:hover td {
+					
+					background-color: @table-inverse-body-row-hover-background;
+					color: @table-inverse-body-row-hover-text-color;
+					
+				}
+					
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Table Row Success States                                                                             */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.success:hover td {
+					
+					background-color: @table-inverse-body-row-success-hover-background;
+					color: @table-inverse-body-row-success-hover-text-color;
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Table Row Warning States                                                                             */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.warning:hover td {
+					
+					background-color: @table-inverse-body-row-warning-hover-background;
+					color: @table-inverse-body-row-warning-hover-text-color;
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Table Row Error States                                                                               */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.error:hover td {
+					
+					background-color: @table-inverse-body-row-error-hover-background;
+					color: @table-inverse-body-row-error-hover-text-color;
+					
+				}
 				
 			}
 			

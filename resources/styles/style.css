@@ -118,22 +118,7 @@
 /*                                                                                                      */
 /* ==================================================================================================== */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Table Header                                                                                         */
-/* ---------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------- */
-/* Table Body                                                                                           */
-/* ---------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------- */
-/* Condensed Table                                                                                      */
-/* ---------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------- */
-/* Success Row                                                                                          */
-/* ---------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------- */
-/* Warning Row                                                                                          */
-/* ---------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------- */
-/* Error Row                                                                                            */
+/* Inverse Table                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -629,7 +614,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #bbbbbb;
-  background-color: #5e5e5e;
+  background-color: #1d1d1d;
   height: 100%;
   overflow-x: hidden;
 }
@@ -2984,7 +2969,7 @@ p.inverse a:active {
 p.inverse.emphasis,
 p.inverse .emphasis,
 p.inverse strong {
-  color: #8c8c8c;
+  color: #dddddd;
 }
 p.inverse.emphasis a,
 p.inverse .emphasis a,
@@ -3231,9 +3216,9 @@ p.small,
 p small,
 p .small {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 20px;
   text-transform: normal;
   font-style: normal;
   color: #bbbbbb;
@@ -4626,7 +4611,7 @@ dl.dl-horizontal dd + dt + dd {
   margin-top: 22.5px;
 }
 dl.inverse dt {
-  color: #8c8c8c;
+  color: #dddddd;
 }
 dl.tall {
   margin-bottom: 30px;
@@ -4678,9 +4663,9 @@ blockquote p.short {
 }
 blockquote small {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 20px;
   text-transform: normal;
   font-style: normal;
   color: #bbbbbb;
@@ -4772,8 +4757,8 @@ blockquote:after {
   p.small,
   p small,
   p .small {
-    font-size: 15.400000000000002px;
-    line-height: 26.400000000000002px;
+    font-size: 12.100000000000001px;
+    line-height: 22px;
     margin: 0px 0px 16.5px 0px;
   }
   p.small.tall,
@@ -5011,8 +4996,8 @@ blockquote:after {
     margin-bottom: 8.25px;
   }
   blockquote small {
-    font-size: 15.400000000000002px;
-    line-height: 26.400000000000002px;
+    font-size: 12.100000000000001px;
+    line-height: 22px;
     margin: 0px 0px 16.5px 0px;
   }
   blockquote.tall {
@@ -5075,19 +5060,19 @@ blockquote:after {
   p.small,
   p small,
   p .small {
-    font-size: 12.6px;
-    line-height: 21.6px;
-    margin: 0px 0px 13.5px 0px;
+    font-size: 10.45px;
+    line-height: 19px;
+    margin: 0px 0px 14.25px 0px;
   }
   p.small.tall,
   p small.tall,
   p .small.tall {
-    margin-bottom: 27px;
+    margin-bottom: 28.5px;
   }
   p.small.short,
   p small.short,
   p .small.short {
-    margin-bottom: 6.75px;
+    margin-bottom: 7.125px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5314,9 +5299,9 @@ blockquote:after {
     margin-bottom: 6.75px;
   }
   blockquote small {
-    font-size: 12.6px;
-    line-height: 21.6px;
-    margin: 0px 0px 13.5px 0px;
+    font-size: 10.45px;
+    line-height: 19px;
+    margin: 0px 0px 14.25px 0px;
   }
   blockquote.tall {
     margin-bottom: 27px;
@@ -5377,19 +5362,19 @@ blockquote:after {
   p.small,
   p small,
   p .small {
-    font-size: 11.9px;
-    line-height: 20.4px;
-    margin: 0px 0px 12.75px 0px;
+    font-size: 9.9px;
+    line-height: 18px;
+    margin: 0px 0px 13.5px 0px;
   }
   p.small.tall,
   p small.tall,
   p .small.tall {
-    margin-bottom: 25.5px;
+    margin-bottom: 27px;
   }
   p.small.short,
   p small.short,
   p .small.short {
-    margin-bottom: 6.375px;
+    margin-bottom: 6.75px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5616,9 +5601,9 @@ blockquote:after {
     margin-bottom: 6.375px;
   }
   blockquote small {
-    font-size: 11.9px;
-    line-height: 20.4px;
-    margin: 0px 0px 12.75px 0px;
+    font-size: 9.9px;
+    line-height: 18px;
+    margin: 0px 0px 13.5px 0px;
   }
   blockquote.tall {
     margin-bottom: 25.5px;
@@ -5753,6 +5738,61 @@ table {
 .table.tall {
   margin-bottom: 80px;
 }
+.table.inverse th,
+.table.inverse td {
+  border-top: 1px solid #424242;
+}
+.table.inverse th {
+  color: #dddddd;
+}
+.table.inverse td {
+  color: #bbbbbb;
+}
+.table.inverse tr {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Active State                                                                               */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Success State                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row warning State                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Error State                                                                                */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.table.inverse tr.active td {
+  background-color: #262626;
+  color: #dddddd;
+}
+.table.inverse tr.success td {
+  background-color: #1b2a0b;
+  color: #70af2f;
+}
+.table.inverse tr.warning td {
+  background-color: #461e04;
+  color: #f38339;
+}
+.table.inverse tr.error td {
+  background-color: #490701;
+  color: #fd3c2b;
+}
+.table.inverse tbody + tbody {
+  border-top: 2px solid #424242;
+}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Condensed Table                                                                                      */
@@ -5845,6 +5885,14 @@ table {
   -moz-border-radius-topright: 4px;
   border-top-right-radius: 4px;
 }
+.table.table-bordered.inverse {
+  border: 1px solid #424242;
+  border-left: 0px;
+}
+.table.table-bordered.inverse th,
+.table.table-bordered.inverse td {
+  border-left: 1px solid #424242;
+}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Striped Table                                                                                        */
@@ -5890,6 +5938,43 @@ table {
   background-color: #fff5f5;
   color: #dc1402;
   font-weight: 300;
+}
+.table.table-striped.inverse tbody > tr:nth-child(odd) {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Success States                                                                             */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Warning States                                                                             */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Error States                                                                               */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.table.table-striped.inverse tbody > tr:nth-child(odd) td,
+.table.table-striped.inverse tbody > tr:nth-child(odd) th {
+  background-color: #262626;
+  color: #bbbbbb;
+}
+.table.table-striped.inverse tbody > tr:nth-child(odd).success td {
+  background-color: #21330e;
+  color: #94d154;
+}
+.table.table-striped.inverse tbody > tr:nth-child(odd).warning td {
+  background-color: #542505;
+  color: #f6a26a;
+}
+.table.table-striped.inverse tbody > tr:nth-child(odd).error td {
+  background-color: #580801;
+  color: #fe6d60;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -5947,6 +6032,53 @@ table {
   background-color: #ffe2df;
   color: #dc1402;
   font-weight: 300;
+}
+.table.table-hover.inverse tbody tr {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Active State                                                                               */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Success States                                                                             */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Warning States                                                                             */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Table Row Error States                                                                               */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.table.table-hover.inverse tbody tr:hover td,
+.table.table-hover.inverse tbody tr:hover th {
+  background-color: #262626;
+  color: #dddddd;
+}
+.table.table-hover.inverse tbody tr.active:hover td {
+  background-color: #262626;
+  color: #dddddd;
+}
+.table.table-hover.inverse tbody tr.success:hover td {
+  background-color: #21330e;
+  color: #94d154;
+}
+.table.table-hover.inverse tbody tr.warning:hover td {
+  background-color: #542505;
+  color: #f6a26a;
+}
+.table.table-hover.inverse tbody tr.error:hover td {
+  background-color: #580801;
+  color: #fe6d60;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -10095,7 +10227,6 @@ form.code-example {
   margin: 0px 0px 60px 0px;
   padding: 74px 30px 30px 30px;
   *padding-top: 60px;
-  background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);

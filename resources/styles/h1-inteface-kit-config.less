@@ -415,7 +415,7 @@
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@body-background-color:											@gray-darken-50;
+@body-background-color:											@gray-darken-85;
 
 @border-color:													rgba(0, 0, 0, 0.1);
 @border-inverse-color:											rgba(255, 255, 255, 0.1);
@@ -482,7 +482,7 @@
 // Link
 
 @body-text-link-text-color:										@link-text-color;
-@body-text-link-text-decoration:									@link-text-decoration;
+@body-text-link-text-decoration:								@link-text-decoration;
 @body-text-link-hover-text-color:								@link-hover-text-color;
 @body-text-link-hover-text-decoration:							@link-hover-text-decoration;
 @body-text-link-active-text-color:								@link-active-text-color;
@@ -514,13 +514,13 @@
 
 // Inverse
 
-@body-text-inverse-color:										@body-text-color;
+@body-text-inverse-color:										@gray;
 
 @body-text-inverse-link-text-color:								@body-text-link-text-color;
 @body-text-inverse-link-hover-text-color:						@body-text-link-hover-text-color;
 @body-text-inverse-link-active-text-color:						@body-text-link-active-text-color;
 
-@body-text-inverse-emphasis-color:								@body-text-emphasis-color;
+@body-text-inverse-emphasis-color:								@gray-lighten-50;
 @body-text-inverse-emphasis-link-text-color:					@body-text-emphasis-link-text-color;
 @body-text-inverse-emphasis-link-hover-text-color:				@body-text-emphasis-link-hover-text-color;
 @body-text-inverse-emphasis-link-active-text-color:				@body-text-emphasis-link-active-text-color;
@@ -1190,9 +1190,7 @@
 @table-responsive-ratio-tablet:									0.9;
 @table-responsive-ratio-mobile:									0.9;
 
-/* ---------------------------------------------------------------------------------------------------- */
-/* Table Header                                                                                         */
-/* ---------------------------------------------------------------------------------------------------- */
+// Table Header
 
 @table-header-background:										transparent;
 @table-header-text-color:										@body-text-emphasis-color;
@@ -1200,9 +1198,7 @@
 @table-header-text-font-weight:									@body-text-emphasis-font-weight;
 @table-header-text-line-height:									@body-text-line-height;
 
-/* ---------------------------------------------------------------------------------------------------- */
-/* Table Body                                                                                           */
-/* ---------------------------------------------------------------------------------------------------- */
+// Table Body
 
 @table-body-row-background:										transparent;
 @table-body-row-text-color:										@body-text-color;
@@ -1218,16 +1214,12 @@
 @table-body-row-accent-text-color:								@body-text-color;
 @table-body-row-accent-text-font-weight:						@body-text-font-weight;
 
-/* ---------------------------------------------------------------------------------------------------- */
-/* Condensed Table                                                                                      */
-/* ---------------------------------------------------------------------------------------------------- */
+// Condensed Table
 
 @table-condensed-cell-padding-horizontal:						4px;
 @table-condensed-cell-padding-vertical:							4px;
 
-/* ---------------------------------------------------------------------------------------------------- */
-/* Success Row                                                                                          */
-/* ---------------------------------------------------------------------------------------------------- */
+// Success Row
 
 @table-body-row-success-background:								@green-lighten-95;
 @table-body-row-success-text-color:								@green;
@@ -1241,9 +1233,8 @@
 @table-body-row-success-accent-text-color:						@green-darken-25;
 @table-body-row-success-accent-text-font-weight:				@body-text-font-weight;
 
-/* ---------------------------------------------------------------------------------------------------- */
-/* Warning Row                                                                                          */
-/* ---------------------------------------------------------------------------------------------------- */
+
+// Warning Row
 
 @table-body-row-warning-background:								@orange-lighten-95;
 @table-body-row-warning-text-color:								@orange;
@@ -1257,9 +1248,7 @@
 @table-body-row-warning-accent-text-color:						@orange-darken-25;
 @table-body-row-warning-accent-text-font-weight:				@body-text-font-weight;
 
-/* ---------------------------------------------------------------------------------------------------- */
-/* Error Row                                                                                            */
-/* ---------------------------------------------------------------------------------------------------- */
+// Error Row
 
 @table-body-row-error-background:								@red-lighten-95;
 @table-body-row-error-text-color:								@red;
@@ -1272,6 +1261,64 @@
 @table-body-row-error-accent-background:						@red-lighten-95;
 @table-body-row-error-accent-text-color:						@red-darken-25;
 @table-body-row-error-accent-text-font-weight:					@body-text-font-weight;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Inverse Table                                                                                        */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@table-inverse-background:										transparent;
+@table-inverse-border:											@gray-darken-65;
+@table-inverse-shadow:											none;
+
+// Table Header
+
+@table-inverse-header-background:								transparent;
+@table-inverse-header-text-color:								@body-text-inverse-emphasis-color;
+
+// Table Body
+
+@table-inverse-body-row-background:								transparent;
+@table-inverse-body-row-text-color:								@body-text-inverse-color;
+
+@table-inverse-body-row-hover-background:						@gray-darken-80;
+@table-inverse-body-row-hover-text-color:						@body-text-inverse-emphasis-color;
+
+@table-inverse-body-row-accent-background:						@gray-darken-80;
+@table-inverse-body-row-accent-text-color:						@body-text-inverse-color;
+
+// Success Row
+
+@table-inverse-body-row-success-background:						@green-darken-75;
+@table-inverse-body-row-success-text-color:						@green;
+
+@table-inverse-body-row-success-hover-background:				@green-darken-70;
+@table-inverse-body-row-success-hover-text-color:				@green-lighten-25;
+
+@table-inverse-body-row-success-accent-background:				@green-darken-70;
+@table-inverse-body-row-success-accent-text-color:				@green-lighten-25;
+
+
+// Warning Row
+
+@table-inverse-body-row-warning-background:						@orange-darken-75;
+@table-inverse-body-row-warning-text-color:						@orange;
+
+@table-inverse-body-row-warning-hover-background:				@orange-darken-70;
+@table-inverse-body-row-warning-hover-text-color:				@orange-lighten-25;
+
+@table-inverse-body-row-warning-accent-background:				@orange-darken-70;
+@table-inverse-body-row-warning-accent-text-color:				@orange-lighten-25;
+
+// Error Row
+
+@table-inverse-body-row-error-background:						@red-darken-75;
+@table-inverse-body-row-error-text-color:						@red;
+
+@table-inverse-body-row-error-hover-background:					@red-darken-70;
+@table-inverse-body-row-error-hover-text-color:					@red-lighten-25;
+
+@table-inverse-body-row-error-accent-background:				@red-darken-70;
+@table-inverse-body-row-error-accent-text-color:				@red-lighten-25;
 
 
 
