@@ -3105,9 +3105,148 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"select-wrapper flush-bottom\">
+\t\t\t\t\t\t<div class=\"select-wrapper\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
+\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<select>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<option>1</option>
+\t\t\t\t\t\t\t\t<option>2</option>
+\t\t\t\t\t\t\t\t<option>3</option>
+\t\t\t\t\t\t\t\t<option>4</option>
+\t\t\t\t\t\t\t\t<option>5</option>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"select-wrapper tall\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<select>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<option>1</option>
+\t\t\t\t\t\t\t\t<option>2</option>
+\t\t\t\t\t\t\t\t<option>3</option>
+\t\t\t\t\t\t\t\t<option>4</option>
+\t\t\t\t\t\t\t\t<option>5</option>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"select-wrapper short\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<select>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<option>1</option>
+\t\t\t\t\t\t\t\t<option>2</option>
+\t\t\t\t\t\t\t\t<option>3</option>
+\t\t\t\t\t\t\t\t<option>4</option>
+\t\t\t\t\t\t\t\t<option>5</option>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"select-wrapper select-wrapper-large\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<select class=\"input-large\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<option>1</option>
+\t\t\t\t\t\t\t\t<option>2</option>
+\t\t\t\t\t\t\t\t<option>3</option>
+\t\t\t\t\t\t\t\t<option>4</option>
+\t\t\t\t\t\t\t\t<option>5</option>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"select-wrapper select-wrapper-large tall\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<select class=\"input-large\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<option>1</option>
+\t\t\t\t\t\t\t\t<option>2</option>
+\t\t\t\t\t\t\t\t<option>3</option>
+\t\t\t\t\t\t\t\t<option>4</option>
+\t\t\t\t\t\t\t\t<option>5</option>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"select-wrapper select-wrapper-large short\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<select class=\"input-large\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<option>1</option>
+\t\t\t\t\t\t\t\t<option>2</option>
+\t\t\t\t\t\t\t\t<option>3</option>
+\t\t\t\t\t\t\t\t<option>4</option>
+\t\t\t\t\t\t\t\t<option>5</option>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"select-wrapper select-wrapper-small\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<select class=\"input-small\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<option>1</option>
+\t\t\t\t\t\t\t\t<option>2</option>
+\t\t\t\t\t\t\t\t<option>3</option>
+\t\t\t\t\t\t\t\t<option>4</option>
+\t\t\t\t\t\t\t\t<option>5</option>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"select-wrapper select-wrapper-small tall\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<select class=\"input-small\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<option>1</option>
+\t\t\t\t\t\t\t\t<option>2</option>
+\t\t\t\t\t\t\t\t<option>3</option>
+\t\t\t\t\t\t\t\t<option>4</option>
+\t\t\t\t\t\t\t\t<option>5</option>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"select-wrapper select-wrapper-small short\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<select class=\"input-small\">
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t<option>1</option>
 \t\t\t\t\t\t\t\t<option>2</option>

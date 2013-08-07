@@ -9808,25 +9808,69 @@ input[type="checkbox"] {
 /* Select Boxes                                                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Standard Select Box                                                                                  */
+/* ---------------------------------------------------------------------------------------------------- */
 select {
   display: inline-block;
-  height: 40px;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *margin-left: .3em;
+  text-rendering: optimizelegibility;
+  text-align: left;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
   width: 100%;
-  padding: 0px;
+  height: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 40px;
-  color: #bbbbbb;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  *line-height: 24px;
+  text-transform: normal;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  color: #838383;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  *zoom: 1;
   border: 1px solid #bbbbbb;
   background: #ffffff;
-  position: relative;
-  padding-top: 6px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Large Input                                                                                          */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Small Input                                                                                          */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+select:first-child {
+  *margin-left: 0;
+}
+select:before,
+select:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+select:after {
+  clear: both;
+}
+select + .help-block {
+  margin-top: -30px;
 }
 select.tall {
   margin-bottom: 40px;
@@ -9840,23 +9884,55 @@ select.short {
 select.short + .help-block {
   margin-top: -15px;
 }
-select.large {
+select.input-large {
+  height: 52px;
   padding-top: 14px;
   padding-bottom: 14px;
-  height: 52px;
-  font-size: 16px;
-  line-height: 26px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  text-transform: normal;
+}
+select.input-small {
+  height: 26px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 16px;
+  text-transform: normal;
 }
 select[multiple],
 select[size] {
   height: auto;
 }
+/* ---------------------------------------------------------------------------------------------------- */
+/* Stylized Select Box                                                                                  */
+/* ---------------------------------------------------------------------------------------------------- */
 .select-wrapper {
   display: block;
   width: 100%;
   position: relative;
   *zoom: 1;
   margin-bottom: 30px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Large Select Wrapper                                                                                 */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Small Select Wrapper                                                                                 */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
 }
 .select-wrapper:before,
 .select-wrapper:after {
@@ -9872,7 +9948,34 @@ select[size] {
   width: 100%;
   padding: 0px;
   height: 40px;
-  position: relative;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  *margin-left: .3em;
+  text-rendering: optimizelegibility;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0px;
+  *border: 0px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: border linear 0.1s, box-shadow linear 0.1s, background linear 0.1s, width linear 0.1s 0.1s linear;
+  -moz-transition: border linear 0.1s, box-shadow linear 0.1s, background linear 0.1s, width linear 0.1s 0.1s linear;
+  -o-transition: border linear 0.1s, box-shadow linear 0.1s, background linear 0.1s, width linear 0.1s 0.1s linear;
+  transition: border linear 0.1s, box-shadow linear 0.1s, background linear 0.1s, width linear 0.1s 0.1s linear;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #838383;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   background-color: #f2f2f2;
   background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#ebebeb));
@@ -9881,17 +9984,14 @@ select[size] {
   background-image: linear-gradient(to bottom, #f9f9f9, #ebebeb);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffebebeb', GradientType=0);
-  border: none;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
   -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-  -webkit-transition: background-position 0.1s linear;
-  -moz-transition: background-position 0.1s linear;
-  -o-transition: background-position 0.1s linear;
-  transition: background-position 0.1s linear;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.select-wrapper .select-wrapper-inner:first-child {
+  *margin-left: 0;
 }
 .select-wrapper .select-wrapper-inner:after {
   content: '';
@@ -9908,31 +10008,14 @@ select[size] {
 }
 .select-wrapper select {
   -webkit-appearance: none;
-  width: 100%;
-  height: 40px;
-  padding: 0px 32.5px 0px 15px;
-  margin: 0px;
+  background: none ;
   border: none;
   *border: 0;
-  background: none ;
+  margin: 0px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
   *zoom: 1;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 24px;
-  color: #838383;
-  text-transform: normal;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  text-rendering: optimizelegibility;
-  text-align: center;
-  *margin-left: .3em;
 }
 .select-wrapper select:before,
 .select-wrapper select:after {
@@ -9943,54 +10026,8 @@ select[size] {
 .select-wrapper select:after {
   clear: both;
 }
-.select-wrapper select:first-child {
-  *margin-left: 0;
-}
 .select-wrapper select:focus {
   outline: 0;
-}
-.select-wrapper:hover .select-wrapper-inner {
-  text-decoration: none;
-  background-color: #ebebeb;
-  background-image: -moz-linear-gradient(top, #f9f9f9, #dddddd);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#dddddd));
-  background-image: -webkit-linear-gradient(top, #f9f9f9, #dddddd);
-  background-image: -o-linear-gradient(top, #f9f9f9, #dddddd);
-  background-image: linear-gradient(to bottom, #f9f9f9, #dddddd);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffdddddd', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.25), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.25), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.25), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
-}
-.select-wrapper:hover .select-wrapper-inner:after {
-  border-top-color: #838383;
-}
-.select-wrapper:hover select {
-  cursor: pointer;
-  color: #838383;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-}
-.select-wrapper:active .select-wrapper-inner {
-  outline: 0;
-  background-image: -moz-linear-gradient(top, #e4e4e4, #f9f9f9);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#f9f9f9));
-  background-image: -webkit-linear-gradient(top, #e4e4e4, #f9f9f9);
-  background-image: -o-linear-gradient(top, #e4e4e4, #f9f9f9);
-  background-image: linear-gradient(to bottom, #e4e4e4, #f9f9f9);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe4e4e4', endColorstr='#fff9f9f9', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-}
-.select-wrapper:active .select-wrapper-inner:after {
-  border-top-color: #a8a8a8;
-}
-.select-wrapper:active select {
-  outline: 0;
-  color: #838383;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 }
 .select-wrapper.tall {
   margin-bottom: 40px;
@@ -10004,15 +10041,80 @@ select[size] {
 .select-wrapper.short + .help-block {
   margin-top: -15px;
 }
-.select-wrapper.large .select-wrapper-inner {
+.select-wrapper:hover .select-wrapper-inner {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #838383;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #ebebeb;
+  background-image: -moz-linear-gradient(top, #f9f9f9, #dddddd);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#dddddd));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #dddddd);
+  background-image: -o-linear-gradient(top, #f9f9f9, #dddddd);
+  background-image: linear-gradient(to bottom, #f9f9f9, #dddddd);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffdddddd', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.25), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.25), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.25), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.select-wrapper:hover .select-wrapper-inner:after {
+  border-top-color: #838383;
+}
+.select-wrapper:hover select {
+  cursor: pointer;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  color: #838383;
+}
+.select-wrapper:active .select-wrapper-inner {
+  outline: 0;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #a8a8a8;
+  text-shadow: none;
+  background-color: #ebebeb;
+  background-image: -moz-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: -o-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: linear-gradient(to bottom, #e4e4e4, #f9f9f9);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe4e4e4', endColorstr='#fff9f9f9', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.select-wrapper:active .select-wrapper-inner:after {
+  border-top-color: #a8a8a8;
+}
+.select-wrapper:active select {
+  outline: 0;
+  text-shadow: none;
+  color: #a8a8a8;
+}
+.select-wrapper.select-wrapper-large .select-wrapper-inner {
   height: 52px;
 }
-.select-wrapper.large .select-wrapper-inner:after {
+.select-wrapper.select-wrapper-large .select-wrapper-inner:after {
   top: 23px;
+  right: 30px;
 }
-.select-wrapper.large select {
-  height: 52px;
-  padding: 0px 55px 0px 30px;
+.select-wrapper.select-wrapper-small .select-wrapper-inner {
+  height: 26px;
+}
+.select-wrapper.select-wrapper-small .select-wrapper-inner:after {
+  top: 10px;
+  right: 15px;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -11090,11 +11192,37 @@ textarea.span1,
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
-  /* Select Boxes                                                              */
+  /* Select Boxes                                                                                         */
   /*                                                                                                      */
   /* ==================================================================================================== */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Standard Select Box                                                                                  */
+  /* ---------------------------------------------------------------------------------------------------- */
   select {
+    height: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 24px;
+    *line-height: 24px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Large Input                                                                                          */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Small Input                                                                                          */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  select + .help-block {
+    margin-top: -35px;
   }
   select.tall {
     margin-bottom: 50px;
@@ -11108,11 +11236,53 @@ textarea.span1,
   select.short + .help-block {
     margin-top: -17.5px;
   }
+  select.input-large {
+    height: 52px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 22px;
+    line-height: 24px;
+    *line-height: 24px;
+  }
+  select.input-small {
+    height: 26px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    line-height: 16px;
+    *line-height: 16px;
+  }
+  select[multiple],
+  select[size] {
+    height: auto;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Stylized Select Box                                                                                  */
+  /* ---------------------------------------------------------------------------------------------------- */
   .select-wrapper {
     margin-bottom: 35px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Large Select Wrapper                                                                                 */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Small Select Wrapper                                                                                 */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
   }
-  .select-wrapper select {
-    margin: 0px;
+  .select-wrapper .select-wrapper-inner {
+    height: 40px;
+  }
+  .select-wrapper .select-wrapper-inner:after {
+    top: 17px;
   }
   .select-wrapper.tall {
     margin-bottom: 50px;
@@ -11125,6 +11295,20 @@ textarea.span1,
   }
   .select-wrapper.short + .help-block {
     margin-top: -17.5px;
+  }
+  .select-wrapper.select-wrapper-large .select-wrapper-inner {
+    height: 52px;
+  }
+  .select-wrapper.select-wrapper-large .select-wrapper-inner:after {
+    top: 23px;
+    right: 30px;
+  }
+  .select-wrapper.select-wrapper-small .select-wrapper-inner {
+    height: 26px;
+  }
+  .select-wrapper.select-wrapper-small .select-wrapper-inner:after {
+    top: 10px;
+    right: 15px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -11408,11 +11592,37 @@ textarea.span1,
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
-  /* Select Boxes                                                              */
+  /* Select Boxes                                                                                         */
   /*                                                                                                      */
   /* ==================================================================================================== */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Standard Select Box                                                                                  */
+  /* ---------------------------------------------------------------------------------------------------- */
   select {
+    height: 36px;
+    padding-top: 7.199999999999999px;
+    padding-bottom: 7.199999999999999px;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
     margin-bottom: 22px;
+    font-size: 12.6px;
+    line-height: 21.6px;
+    *line-height: 21.6px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Large Input                                                                                          */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Small Input                                                                                          */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  select + .help-block {
+    margin-top: -22px;
   }
   select.tall {
     margin-bottom: 44px;
@@ -11426,11 +11636,53 @@ textarea.span1,
   select.short + .help-block {
     margin-top: -11px;
   }
+  select.input-large {
+    height: 46.800000000000004px;
+    padding-top: 12.600000000000001px;
+    padding-bottom: 12.600000000000001px;
+    padding-left: 27px;
+    padding-right: 27px;
+    font-size: 19.8px;
+    line-height: 21.6px;
+    *line-height: 21.6px;
+  }
+  select.input-small {
+    height: 23.400000000000002px;
+    padding-top: 4.500000000000001px;
+    padding-bottom: 4.500000000000001px;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+    font-size: 10.8px;
+    line-height: 14.4px;
+    *line-height: 14.4px;
+  }
+  select[multiple],
+  select[size] {
+    height: auto;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Stylized Select Box                                                                                  */
+  /* ---------------------------------------------------------------------------------------------------- */
   .select-wrapper {
     margin-bottom: 22px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Large Select Wrapper                                                                                 */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Small Select Wrapper                                                                                 */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
   }
-  .select-wrapper select {
-    margin: 0px;
+  .select-wrapper .select-wrapper-inner {
+    height: 36px;
+  }
+  .select-wrapper .select-wrapper-inner:after {
+    top: 15px;
   }
   .select-wrapper.tall {
     margin-bottom: 44px;
@@ -11443,6 +11695,20 @@ textarea.span1,
   }
   .select-wrapper.short + .help-block {
     margin-top: -11px;
+  }
+  .select-wrapper.select-wrapper-large .select-wrapper-inner {
+    height: 46.800000000000004px;
+  }
+  .select-wrapper.select-wrapper-large .select-wrapper-inner:after {
+    top: 20.400000000000002px;
+    right: 30px;
+  }
+  .select-wrapper.select-wrapper-small .select-wrapper-inner {
+    height: 23.400000000000002px;
+  }
+  .select-wrapper.select-wrapper-small .select-wrapper-inner:after {
+    top: 8.700000000000001px;
+    right: 15px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -11805,59 +12071,123 @@ textarea.span1,
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
-  /* Select Boxes                                                              */
+  /* Select Boxes                                                                                         */
   /*                                                                                                      */
   /* ==================================================================================================== */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Standard Select Box                                                                                  */
+  /* ---------------------------------------------------------------------------------------------------- */
   select {
+    height: 34px;
+    padding-top: 6.800000000000001px;
+    padding-bottom: 6.800000000000001px;
+    padding-left: 12.75px;
+    padding-right: 12.75px;
     margin-bottom: 15px;
+    font-size: 11.9px;
+    line-height: 20.4px;
+    *line-height: 20.4px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Large Input                                                                                          */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Small Input                                                                                          */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
   }
-  select.spill {
-    margin-top: 15px;
+  select + .help-block {
+    margin-top: -15px;
   }
   select.tall {
     margin-bottom: 30px;
-  }
-  select.tall.spill {
-    margin-top: 30px;
   }
   select.tall + .help-block {
     margin-top: -30px;
   }
   select.short {
-    margin-bottom: 15px;
-  }
-  select.short.spill {
-    margin-top: 15px;
+    margin-bottom: 10px;
   }
   select.short + .help-block {
-    margin-top: -15px;
+    margin-top: -10px;
   }
+  select.input-large {
+    height: 41.6px;
+    padding-top: 11.2px;
+    padding-bottom: 11.2px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 17.6px;
+    line-height: 19.200000000000003px;
+    *line-height: 19.200000000000003px;
+  }
+  select.input-small {
+    height: 23.400000000000002px;
+    padding-top: 4.500000000000001px;
+    padding-bottom: 4.500000000000001px;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+    font-size: 10.8px;
+    line-height: 14.4px;
+    *line-height: 14.4px;
+  }
+  select[multiple],
+  select[size] {
+    height: auto;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Stylized Select Box                                                                                  */
+  /* ---------------------------------------------------------------------------------------------------- */
   .select-wrapper {
     margin-bottom: 15px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Large Select Wrapper                                                                                 */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Small Select Wrapper                                                                                 */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
   }
-  .select-wrapper.spill {
-    margin-top: 15px;
+  .select-wrapper .select-wrapper-inner {
+    height: 34px;
   }
-  .select-wrapper select {
-    margin: 0px;
+  .select-wrapper .select-wrapper-inner:after {
+    top: 14px;
   }
   .select-wrapper.tall {
     margin-bottom: 30px;
-  }
-  .select-wrapper.tall.spill {
-    margin-top: 30px;
   }
   .select-wrapper.tall + .help-block {
     margin-top: -30px;
   }
   .select-wrapper.short {
-    margin-bottom: 15px;
-  }
-  .select-wrapper.short.spill {
-    margin-top: 15px;
+    margin-bottom: 10px;
   }
   .select-wrapper.short + .help-block {
-    margin-top: -15px;
+    margin-top: -10px;
+  }
+  .select-wrapper.select-wrapper-large .select-wrapper-inner {
+    height: 41.6px;
+  }
+  .select-wrapper.select-wrapper-large .select-wrapper-inner:after {
+    top: 17.8px;
+    right: 30px;
+  }
+  .select-wrapper.select-wrapper-small .select-wrapper-inner {
+    height: 23.400000000000002px;
+  }
+  .select-wrapper.select-wrapper-small .select-wrapper-inner:after {
+    top: 8.700000000000001px;
+    right: 15px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */

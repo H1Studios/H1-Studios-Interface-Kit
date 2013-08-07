@@ -3075,9 +3075,148 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 					<form class="code-example flush-bottom">
 						
-						<div class="select-wrapper flush-bottom">
+						<div class="select-wrapper">
+							
+							<div class="select-wrapper-inner">
+							</div>
 							
 							<select>
+								
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								
+							</select>
+							
+						</div>
+						
+						<div class="select-wrapper tall">
+							
+							<div class="select-wrapper-inner">
+							</div>
+							
+							<select>
+								
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								
+							</select>
+							
+						</div>
+						
+						<div class="select-wrapper short">
+							
+							<div class="select-wrapper-inner">
+							</div>
+							
+							<select>
+								
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								
+							</select>
+							
+						</div>
+						
+						<div class="select-wrapper select-wrapper-large">
+							
+							<div class="select-wrapper-inner">
+							</div>
+							
+							<select class="input-large">
+								
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								
+							</select>
+							
+						</div>
+						
+						<div class="select-wrapper select-wrapper-large tall">
+							
+							<div class="select-wrapper-inner">
+							</div>
+							
+							<select class="input-large">
+								
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								
+							</select>
+							
+						</div>
+						
+						<div class="select-wrapper select-wrapper-large short">
+							
+							<div class="select-wrapper-inner">
+							</div>
+							
+							<select class="input-large">
+								
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								
+							</select>
+							
+						</div>
+						
+						<div class="select-wrapper select-wrapper-small">
+							
+							<div class="select-wrapper-inner">
+							</div>
+							
+							<select class="input-small">
+								
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								
+							</select>
+							
+						</div>
+						
+						<div class="select-wrapper select-wrapper-small tall">
+							
+							<div class="select-wrapper-inner">
+							</div>
+							
+							<select class="input-small">
+								
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								
+							</select>
+							
+						</div>
+						
+						<div class="select-wrapper select-wrapper-small short">
+							
+							<div class="select-wrapper-inner">
+							</div>
+							
+							<select class="input-small">
 								
 								<option>1</option>
 								<option>2</option>

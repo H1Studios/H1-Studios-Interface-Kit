@@ -887,34 +887,53 @@ input[type="checkbox"] {
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-// Default Select Box
+/* ---------------------------------------------------------------------------------------------------- */
+/* Standard Select Box                                                                                  */
+/* ---------------------------------------------------------------------------------------------------- */
 
 select {
 	
 	display: inline-block;
-	height: @inputHeight;
-	width: 100%;
-	padding: 0px;
-	margin-bottom: @inputMargin;
-	font-family: @buttonTextFontFamily;
-	font-size: @buttonTextFontSize;
-	font-weight: @buttonTextFontWeight;
-	line-height: @inputHeight;
-	color: @formLabelTextColor;
-	.border-radius(@inputBorderRadius);
+	.ie7-inline-block();
+	.ie7-restore-left-whitespace();
+	text-rendering: optimizelegibility;
+	text-align: left;
 	vertical-align: middle;
-	border: 1px solid @gray;
-	background: @inputBackgroundColor;
+	cursor: pointer;
 	position: relative;
-	padding-top: 6px;
+	width: 100%;
+	height: @form-input-height;
+	.block-padding-vertical(@form-input-height, @button-text-line-height);
+	padding-left: @button-padding-horizontal;
+	padding-right: @button-padding-horizontal;
+	margin-bottom: @form-input-margin;
+	font-family: @button-text-font-family;
+	font-size: @button-text-font-size;
+	font-weight: @button-text-font-weight;
+	font-style: @button-text-font-style;
+	line-height: @button-text-line-height;
+	*line-height:  @button-text-line-height;
+	text-transform: @button-text-transform;
+	text-shadow: @button-default-text-shadow;
+	color: @button-default-text-color;
+	.box-shadow(none);
+	.clearfix();
+	border: 1px solid @gray;
+	background: @white;
+	
+	+ .help-block {
+		
+		margin-top: -@form-input-margin;
+		
+	}
 	
 	&.tall {
 		
-		margin-bottom: @inputMarginTall;
+		margin-bottom: @form-input-margin-tall;
 		
 		+ .help-block {
 			
-			margin-top: -@inputMarginTall;
+			margin-top: -@form-input-margin-tall;
 			
 		}
 		
@@ -922,35 +941,65 @@ select {
 	
 	&.short {
 		
-		margin-bottom: @inputMarginShort;
+		margin-bottom: @form-input-margin-short;
 		
 		+ .help-block {
 			
-			margin-top: -@inputMarginShort;
+			margin-top: -@form-input-margin-short;
 			
 		}
 		
 		
 	}
 	
-	&.large {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Large Input                                                                                          */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-large {
 		
-		padding-top: (@inputHeightLarge - @inputTextLineHeight) / 2;
-		padding-bottom: (@inputHeightLarge - @inputTextLineHeight) / 2;
-		height: @inputHeightLarge;
-		font-size: @inputTextFontSizeLarge;
-		line-height: @inputTextLineHeightLarge;
+		height: @form-input-large-height;
+		.block-padding-vertical(@form-input-large-height, @button-large-text-line-height);
+		padding-left: @button-large-padding-horizontal;
+		padding-right: @button-large-padding-horizontal;
+		font-size: @button-large-text-font-size;
+		font-weight: @button-large-text-font-weight;
+		font-style: @button-large-text-font-style;
+		line-height: @button-large-text-line-height;
+		text-transform: @button-large-text-transform;
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Small Input                                                                                          */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-small {
+		
+		height: @form-input-small-height;
+		.block-padding-vertical(@form-input-small-height, @button-small-text-line-height);
+		padding-left: @button-small-padding-horizontal;
+		padding-right: @button-small-padding-horizontal;
+		font-size: @button-small-text-font-size;
+		font-weight: @button-small-text-font-weight;
+		font-style: @button-small-text-font-style;
+		line-height: @button-small-text-line-height;
+		text-transform: @button-small-text-transform;
+		
+	}
+	
+	&[multiple],
+	&[size] {
+		
+		height: auto;
 		
 	}
 	
 }
 
-select[multiple],
-select[size] {
-	
-	height: auto;
-	
-}
+/* ---------------------------------------------------------------------------------------------------- */
+/* Stylized Select Box                                                                                  */
+/* ---------------------------------------------------------------------------------------------------- */
 
 .select-wrapper {
 	
@@ -958,35 +1007,54 @@ select[size] {
 	width: 100%;
 	position: relative;
 	.clearfix();
-	margin-bottom: @inputMargin;
+	margin-bottom: @form-input-margin;
 	
 	.select-wrapper-inner {
 		
 		display: block;
 		width: 100%;
 		padding: 0px;
-		height: @inputHeight;
-		position: relative;
-		background-color: @buttonBackgroundColor;
-		#gradient > .vertical(@buttonBackgroundGradientColorTop, @buttonBackgroundGradientColorBottom);
-		border: none;
-		.border-radius(@buttonBorderRadius);
-		.box-shadow(@buttonShadow);
-		.transition(background-position .1s linear);
+		height: @form-input-height;
+		.ie7-inline-block();
+		.ie7-restore-left-whitespace();
+		text-rendering: optimizelegibility;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		border: @button-border-width;
+		*border: @button-border-width;
+		.border-radius(@button-border-radius);
+		.transition(@form-input-transition .1s linear);
+		.button-states (
+			
+			@button-default-border-color,
+			@button-default-text-color,
+			@button-default-text-shadow,
+			@button-default-background-color,
+			@button-default-background-gradient-top-color,
+			@button-default-background-gradient-bottom-color,
+			@button-default-shadow,
+			@button-default-offset-top,
+			@button-default-offset-bottom
+		
+		);
 		
 		&:after {
 			
 			content: '';
 			display: block;
 			position: absolute;
-			top: (@inputHeight / 2) - (6 / 2);
-			right: @buttonHorizontalPadding;
+			top: (@button-height / 2) - (6 / 2);
+			right: @button-padding-horizontal;
 			width: 0;
 			height: 0;
 			border-color: transparent;
 			border-style: solid;
 			border-width: 6px 5px 0;
-			border-top-color: @buttonTextColor;
+			border-top-color: @button-default-text-color;
 			
 		}
 		
@@ -995,29 +1063,12 @@ select[size] {
 	select {
 		
 		-webkit-appearance: none;
-		width: 100%;
-		height: @inputHeight;
-		padding: 0px (@buttonHorizontalPadding + 10 + (@buttonHorizontalPadding / 2)) 0px @buttonHorizontalPadding;
-		margin: 0px;
+		background: none ;
 		border: none;
 		*border: 0;
-		background: none ;
+		margin: 0px;
 		.box-shadow(none);
-		position: absolute;
-		top: 0px;
-		left: 0px;
 		.clearfix();
-		font-family: @buttonTextFontFamily;
-		font-size: @buttonTextFontSize;
-		font-weight: @buttonTextFontWeight;
-		font-style: @buttonTextFontStyle;
-		line-height: @buttonTextLineHeight;
-		color: @buttonTextColor;
-		text-transform: @buttonTextTransform;
-		text-shadow: @buttonTextShadow;
-		text-rendering: optimizelegibility;
-		text-align: center;
-		.ie7-restore-left-whitespace();
 		
 		&:focus {
 			
@@ -1027,18 +1078,53 @@ select[size] {
 		
 	}
 	
+	&.tall {
+		
+		margin-bottom: @form-input-margin-tall;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tall;
+			
+		}
+		
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @form-input-margin-short;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-short;
+			
+		}
+		
+		
+	}
+	
 	&:hover {
 		
 		.select-wrapper-inner {
 			
-			text-decoration: none;
-			background-color: @buttonHoverBackgroundColor;
-			#gradient > .vertical(@buttonHoverBackgroundGradientColorTop, @buttonHoverBackgroundGradientColorBottom);
-			.box-shadow(@buttonHoverShadow);
+			.button-states (
+				
+				@button-default-hover-border-color,
+				@button-default-hover-text-color,
+				@button-default-hover-text-shadow,
+				@button-default-hover-background-color,
+				@button-default-hover-background-gradient-top-color,
+				@button-default-hover-background-gradient-bottom-color,
+				@button-default-hover-shadow,
+				@button-default-hover-offset-top,
+				@button-default-hover-offset-bottom
+			
+			);
 			
 			&:after {
 				
-				border-top-color: @buttonHoverTextColor;
+				border-top-color: @button-default-hover-text-color;
 				
 			}
 		
@@ -1047,8 +1133,8 @@ select[size] {
 		select {
 			
 			cursor: pointer;
-			color: @buttonHoverTextColor;
-			text-shadow: @buttonHoverTextShadow;
+			text-shadow: @button-default-hover-text-shadow;
+			color: @button-default-hover-text-color;
 			
 		}
 		
@@ -1059,70 +1145,75 @@ select[size] {
 		.select-wrapper-inner {
 			
 			outline: 0;
-			#gradient > .vertical(@buttonActiveBackgroundGradientColorTop, @buttonActiveBackgroundGradientColorBottom);
-			.box-shadow(@buttonActiveShadow);
-		
+			.button-states (
+				
+				@button-default-active-border-color,
+				@button-default-active-text-color,
+				@button-default-active-text-shadow,
+				@button-default-active-background-color,
+				@button-default-active-background-gradient-top-color,
+				@button-default-active-background-gradient-bottom-color,
+				@button-default-active-shadow,
+				@button-default-active-offset-top,
+				@button-default-active-offset-bottom
+			
+			);
+			
 			&:after {
 				
-				border-top-color: @buttonActiveTextColor;
+				border-top-color: @button-default-active-text-color;
 				
 			}
-			
+		
 		}
 		
 		select {
 			
 			outline: 0;
-			color: @buttonHoverTextColor;
-			text-shadow: @buttonHoverTextShadow;
+			text-shadow: @button-default-active-text-shadow;
+			color: @button-default-active-text-color;
 			
 		}
 		
 	}
 	
-	&.tall {
-		
-		margin-bottom: @inputMarginTall;
-		
-		+ .help-block {
-			
-			margin-top: -@inputMarginTall;
-			
-		}
-		
-	}
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Large Select Wrapper                                                                                 */
+	/* ---------------------------------------------------------------------------------------------------- */
 	
-	&.short {
-		
-		margin-bottom: @inputMarginShort;
-		
-		+ .help-block {
-			
-			margin-top: -@inputMarginShort;
-			
-		}
-		
-		
-	}
-	
-	&.large {
+	&.select-wrapper-large {
 		
 		.select-wrapper-inner {
 			
-			height: @inputHeightLarge;
+			height: @form-input-large-height;
 			
 			&:after {
 				
-				top: (@inputHeightLarge / 2) - (6 / 2);
+				top: (@form-input-large-height / 2) - (6 / 2);
+				right: @button-large-padding-horizontal;
 				
 			}
 			
 		}
 		
-		select {
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Small Select Wrapper                                                                                 */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.select-wrapper-small {
+		
+		.select-wrapper-inner {
 			
-			height: @inputHeightLarge;
-			padding: 0px (@buttonHorizontalPaddingLarge + 10 + (@buttonHorizontalPaddingLarge / 2)) 0px @buttonHorizontalPaddingLarge;
+			height: @form-input-small-height;
+			
+			&:after {
+				
+				top: (@form-input-small-height / 2) - (6 / 2);
+				right: @button-small-padding-horizontal;
+				
+			}
 			
 		}
 		
@@ -2118,21 +2209,38 @@ textarea[class*="span"],
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Select Boxes                                                              */
+	/* Select Boxes                                                                                         */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Standard Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
 	select {
 		
-		margin-bottom: @inputMarginWidescreen;
+		height: @form-input-height * @form-input-responsive-ratio-widescreen;
+		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-widescreen, @button-text-line-height * @button-responsive-ratio-widescreen);
+		padding-left: @button-padding-horizontal * @button-responsive-ratio-widescreen;
+		padding-right: @button-padding-horizontal * @button-responsive-ratio-widescreen;
+		margin-bottom: @form-input-margin-widescreen;
+		font-size: @button-text-font-size * @button-responsive-ratio-widescreen;
+		line-height: @button-text-line-height * @button-responsive-ratio-widescreen;
+		*line-height:  @button-text-line-height * @button-responsive-ratio-widescreen;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-widescreen;
+			
+		}
 		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallWidescreen;
+			margin-bottom: @form-input-margin-tall-widescreen;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginTallWidescreen;
+				margin-top: -@form-input-margin-tall-widescreen;
 				
 			}
 			
@@ -2140,56 +2248,148 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortWidescreen;
+			margin-bottom: @form-input-margin-short-widescreen;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginShortWidescreen;
+				margin-top: -@form-input-margin-short-widescreen;
 				
 			}
 			
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-responsive-ratio-widescreen;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-widescreen, @button-large-text-line-height * @button-large-responsive-ratio-widescreen);
+			padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-widescreen;
+			padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-widescreen;
+			font-size: @button-large-text-font-size * @button-large-responsive-ratio-widescreen;
+			line-height: @button-large-text-line-height * @button-large-responsive-ratio-widescreen;
+			*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-widescreen;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-responsive-ratio-widescreen;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-widescreen, @button-small-text-line-height * @button-small-responsive-ratio-widescreen);
+			padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-widescreen;
+			padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-widescreen;
+			font-size: @button-small-text-font-size * @button-small-responsive-ratio-widescreen;
+			line-height: @button-small-text-line-height * @button-small-responsive-ratio-widescreen;
+			*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-widescreen;
+			
+		}
+		
+		&[multiple],
+		&[size] {
+			
+			height: auto;
 			
 		}
 		
 	}
 	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Stylized Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
 	.select-wrapper {
 		
-		margin-bottom: @inputMarginWidescreen;
-		
-		select {
+		margin-bottom: @form-input-margin-widescreen;
 			
-			margin: 0px;
+		.select-wrapper-inner {
+			
+			height: @form-input-height * @form-input-responsive-ratio-widescreen;
+			
+			&:after {
+				
+				top: ((@button-height * @button-responsive-ratio-widescreen) / 2) - (6 / 2);
+				
+			}
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallWidescreen;
+			margin-bottom: @form-input-margin-tall-widescreen;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginTallWidescreen;
+				margin-top: -@form-input-margin-tall-widescreen;
 				
 			}
+			
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortWidescreen;
+			margin-bottom: @form-input-margin-short-widescreen;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginShortWidescreen;
+				margin-top: -@form-input-margin-short-widescreen;
 				
 			}
 			
 			
 		}
 		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-large {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-large-height * @form-input-large-responsive-ratio-widescreen;
+				
+				&:after {
+					
+					top: ((@form-input-large-height * @form-input-large-responsive-ratio-widescreen) / 2) - (6 / 2);
+					right: @button-large-padding-horizontal;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-small {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-small-height * @form-input-small-responsive-ratio-widescreen;
+				
+				&:after {
+					
+					top: ((@form-input-small-height * @form-input-small-responsive-ratio-widescreen) / 2) - (6 / 2);
+					right: @button-small-padding-horizontal;
+					
+				}
+				
+			}
+			
+		}
+		
 	}
-
+	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
 	/* Input Groups                                                              */
@@ -2414,21 +2614,38 @@ textarea[class*="span"],
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Select Boxes                                                              */
+	/* Select Boxes                                                                                         */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Standard Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
 	select {
 		
-		margin-bottom: @inputMarginTablet;
+		height: @form-input-height * @form-input-responsive-ratio-tablet;
+		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-tablet, @button-text-line-height * @button-responsive-ratio-tablet);
+		padding-left: @button-padding-horizontal * @button-responsive-ratio-tablet;
+		padding-right: @button-padding-horizontal * @button-responsive-ratio-tablet;
+		margin-bottom: @form-input-margin-tablet;
+		font-size: @button-text-font-size * @button-responsive-ratio-tablet;
+		line-height: @button-text-line-height * @button-responsive-ratio-tablet;
+		*line-height:  @button-text-line-height * @button-responsive-ratio-tablet;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tablet;
+			
+		}
 		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallTablet;
+			margin-bottom: @form-input-margin-tall-tablet;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginTallTablet;
+				margin-top: -@form-input-margin-tall-tablet;
 				
 			}
 			
@@ -2436,51 +2653,143 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortTablet;
+			margin-bottom: @form-input-margin-short-tablet;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginShortTablet;
+				margin-top: -@form-input-margin-short-tablet;
 				
 			}
 			
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-responsive-ratio-tablet;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-tablet, @button-large-text-line-height * @button-large-responsive-ratio-tablet);
+			padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-tablet;
+			padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-tablet;
+			font-size: @button-large-text-font-size * @button-large-responsive-ratio-tablet;
+			line-height: @button-large-text-line-height * @button-large-responsive-ratio-tablet;
+			*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-tablet;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-responsive-ratio-tablet;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-tablet, @button-small-text-line-height * @button-small-responsive-ratio-tablet);
+			padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-tablet;
+			padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-tablet;
+			font-size: @button-small-text-font-size * @button-small-responsive-ratio-tablet;
+			line-height: @button-small-text-line-height * @button-small-responsive-ratio-tablet;
+			*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-tablet;
+			
+		}
+		
+		&[multiple],
+		&[size] {
+			
+			height: auto;
 			
 		}
 		
 	}
 	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Stylized Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
 	.select-wrapper {
 		
-		margin-bottom: @inputMarginTablet;
-		
-		select {
+		margin-bottom: @form-input-margin-tablet;
 			
-			margin: 0px;
+		.select-wrapper-inner {
+			
+			height: @form-input-height * @form-input-responsive-ratio-tablet;
+			
+			&:after {
+				
+				top: ((@button-height * @button-responsive-ratio-tablet) / 2) - (6 / 2);
+				
+			}
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallTablet;
+			margin-bottom: @form-input-margin-tall-tablet;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginTallTablet;
+				margin-top: -@form-input-margin-tall-tablet;
 				
 			}
+			
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortTablet;
+			margin-bottom: @form-input-margin-short-tablet;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginShortTablet;
+				margin-top: -@form-input-margin-short-tablet;
 				
 			}
 			
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-large {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-large-height * @form-input-large-responsive-ratio-tablet;
+				
+				&:after {
+					
+					top: ((@form-input-large-height * @form-input-large-responsive-ratio-tablet) / 2) - (6 / 2);
+					right: @button-large-padding-horizontal;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-small {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-small-height * @form-input-small-responsive-ratio-tablet;
+				
+				&:after {
+					
+					top: ((@form-input-small-height * @form-input-small-responsive-ratio-tablet) / 2) - (6 / 2);
+					right: @button-small-padding-horizontal;
+					
+				}
+				
+			}
 			
 		}
 		
@@ -2765,33 +3074,38 @@ textarea[class*="span"],
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Select Boxes                                                              */
+	/* Select Boxes                                                                                         */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Standard Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
 	select {
 		
-		margin-bottom: @inputMarginMobile;
+		height: @form-input-height * @form-input-responsive-ratio-mobile;
+		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-mobile, @button-text-line-height * @button-responsive-ratio-mobile);
+		padding-left: @button-padding-horizontal * @button-responsive-ratio-mobile;
+		padding-right: @button-padding-horizontal * @button-responsive-ratio-mobile;
+		margin-bottom: @form-input-margin-mobile;
+		font-size: @button-text-font-size * @button-responsive-ratio-mobile;
+		line-height: @button-text-line-height * @button-responsive-ratio-mobile;
+		*line-height:  @button-text-line-height * @button-responsive-ratio-mobile;
 		
-		&.spill {
+		+ .help-block {
 			
-			margin-top: @inputMarginMobile;
+			margin-top: -@form-input-margin-mobile;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallMobile;
-			
-			&.spill {
-				
-				margin-top: @inputMarginTallMobile;
-				
-			}
+			margin-bottom: @form-input-margin-tall-mobile;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginTallMobile;
+				margin-top: -@form-input-margin-tall-mobile;
 				
 			}
 			
@@ -2799,76 +3113,143 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortMobile;
-			
-			&.spill {
-				
-				margin-top: @inputMarginShortMobile;
-				
-			}
+			margin-bottom: @form-input-margin-short-mobile;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginShortMobile;
+				margin-top: -@form-input-margin-short-mobile;
 				
 			}
 			
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-responsive-ratio-mobile;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-mobile, @button-large-text-line-height * @button-large-responsive-ratio-mobile);
+			padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-mobile;
+			padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-mobile;
+			font-size: @button-large-text-font-size * @button-large-responsive-ratio-mobile;
+			line-height: @button-large-text-line-height * @button-large-responsive-ratio-mobile;
+			*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-mobile;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-responsive-ratio-mobile;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-mobile, @button-small-text-line-height * @button-small-responsive-ratio-mobile);
+			padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-mobile;
+			padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-mobile;
+			font-size: @button-small-text-font-size * @button-small-responsive-ratio-mobile;
+			line-height: @button-small-text-line-height * @button-small-responsive-ratio-mobile;
+			*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-mobile;
+			
+		}
+		
+		&[multiple],
+		&[size] {
+			
+			height: auto;
 			
 		}
 		
 	}
 	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Stylized Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
 	.select-wrapper {
 		
-		margin-bottom: @inputMarginMobile;
-		
-		&.spill {
+		margin-bottom: @form-input-margin-mobile;
 			
-			margin-top: @inputMarginMobile;
+		.select-wrapper-inner {
 			
-		}
-		
-		select {
+			height: @form-input-height * @form-input-responsive-ratio-mobile;
 			
-			margin: 0px;
+			&:after {
+				
+				top: ((@button-height * @button-responsive-ratio-mobile) / 2) - (6 / 2);
+				
+			}
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallMobile;
-			
-			&.spill {
-				
-				margin-top: @inputMarginTallMobile;
-				
-			}
+			margin-bottom: @form-input-margin-tall-mobile;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginTallMobile;
+				margin-top: -@form-input-margin-tall-mobile;
 				
 			}
+			
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortMobile;
-			
-			&.spill {
-				
-				margin-top: @inputMarginShortMobile;
-				
-			}
-
+			margin-bottom: @form-input-margin-short-mobile;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginShortMobile;
+				margin-top: -@form-input-margin-short-mobile;
 				
 			}
 			
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-large {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-large-height * @form-input-large-responsive-ratio-mobile;
+				
+				&:after {
+					
+					top: ((@form-input-large-height * @form-input-large-responsive-ratio-mobile) / 2) - (6 / 2);
+					right: @button-large-padding-horizontal;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-small {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-small-height * @form-input-small-responsive-ratio-mobile;
+				
+				&:after {
+					
+					top: ((@form-input-small-height * @form-input-small-responsive-ratio-mobile) / 2) - (6 / 2);
+					right: @button-small-padding-horizontal;
+					
+				}
+				
+			}
 			
 		}
 		
