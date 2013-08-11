@@ -1225,14 +1225,14 @@ select {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Input Groups                                                              */
+/* Input Groups                                                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
 .input-group {
 	
 	position: relative;
-	margin-bottom: @inputMargin;
+	margin-bottom: @form-input-margin;
 	.clearfix();
 	
 	input,
@@ -1240,47 +1240,80 @@ select {
 	.uneditable-input {
 		
 		position: relative;
-		z-index: 1;
 		margin-bottom: 0px;
 		
 	}
 	
-	.uneditable-input {
+	+ .help-block {
+		
+		margin-top: -@form-input-margin;
 		
 	}
 	
+	&.tall {
+		
+		margin-bottom: @form-input-margin-tall;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tall;
+			
+		}
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @form-input-margin-short;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-short;
+			
+		}
+		
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Input Group Add-On                                                                                   */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
 	.add-on {
 		
+		vertical-align: top;
 		position: absolute;
 		top: 0px;
 		left: 0px;
 		display: block;
 		width: auto;
-		height: @inputHeight;
 		min-width: 16px;
 		margin: 0px;
-		padding: 0px @inputHorizontalPadding 0px @inputHorizontalPadding;
-		background-color: @buttonBackgroundColor;
-		#gradient > .vertical(@buttonBackgroundGradientColorTop, @buttonBackgroundGradientColorBottom);
 		text-align: center;
-		color: @buttonTextColor;
-		font-family: @buttonTextFontFamily;
-		font-size: @buttonTextFontSize;
-		font-weight: @buttonTextFontWeight;
-		font-style: @buttonTextFontStyle;
-		text-transform: @buttonTextTransform;
-		text-shadow: @buttonTextShadow;
-		line-height: @inputHeight;
-		.box-shadow(@inputGroupButtonShadow);
-		.border-radius(@inputBorderRadius 0px 0px @inputBorderRadius);
-		vertical-align: top;
-		@transition:
-			border linear .2s,
-			box-shadow linear .2s,
-			background linear .1s,
-			width linear .1s;
-		.transition(@transition);
-		z-index: 2;
+		padding-left: @form-input-add-on-padding-horizontal;
+		padding-right: @form-input-add-on-padding-horizontal;
+		.block-padding-vertical(@form-input-height, @form-input-add-on-text-line-height);
+		font-family: @form-input-add-on-text-font-family;
+		font-size: @form-input-add-on-text-font-size;
+		font-weight: @form-input-add-on-text-font-weight;
+		line-height: @form-input-add-on-text-line-height;
+		text-transform: @form-input-add-on-text-transform;
+		font-style: @form-input-add-on-text-font-style;
+		border-width: @form-input-border-width;
+		.border-radius(@form-input-border-radius 0px 0px @form-input-border-radius);
+		.input-add-on-states (
+			
+			@form-input-add-on-default-border-color,
+			@form-input-add-on-default-text-color,
+			@form-input-add-on-default-text-shadow,
+			@form-input-add-on-default-background-color,
+			@form-input-add-on-default-background-gradient-top-color,
+			@form-input-add-on-default-background-gradient-bottom-color,
+			@form-input-add-on-default-shadow
+		
+		);
+		
+		// Knock-Out Styling (Text-Only)
 		
 		&.knockout {
 			
@@ -1296,6 +1329,8 @@ select {
 			
 		}
 		
+		// Add-On Prepend
+		
 		&.add-on-prepend {
 			
 			top: 0px;
@@ -1304,25 +1339,30 @@ select {
 			
 		}
 		
+		// Add-On Append
+		
 		&.add-on-append {
 			
 			top: 0px;
 			left: auto;
 			right: 0px;
-			.border-radius(0px @inputBorderRadius @inputBorderRadius 0px);
+			.border-radius(0px @form-input-border-radius @form-input-border-radius 0px);
+			.box-shadow(@form-input-add-on-append-default-shadow);
 			
 		}
 		
 	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Input Group Add-On Button                                                                            */
+	/* ---------------------------------------------------------------------------------------------------- */
 	
 	.button {
 		
 		position: absolute;
 		top: 0px;
 		left: 0px;
-		.border-radius(@inputBorderRadius 0px 0px @inputBorderRadius);
-		z-index: 2;
-		.box-shadow(@inputGroupButtonShadow);
+		.border-radius(@form-input-border-radius 0px 0px @form-input-border-radius);
 		
 		&.add-on-prepend {
 			
@@ -1337,163 +1377,15 @@ select {
 			top: 0px;
 			left: auto;
 			right: 0px;
-			.border-radius(0px @inputBorderRadius @inputBorderRadius 0px);
-			
-		}
-		
-		&:hover {
-			
-			.box-shadow(@inputGroupButtonHoverShadow);
-			margin-top: 0px;
-			margin-bottom: 0px;
-			
-		}
-		
-		&.active,
-		&:active {
-			
-			.box-shadow(@inputGroupButtonActiveShadow);
-			margin-top: 0px;
-			margin-bottom: 0px;
-			
-		}
-		
-		&.disabled,
-		&[disabled] {
-			
-			.box-shadow(@inputGroupButtonDisabledShadow);
-			
-		}
-		
-		// Primary
-		
-		&.button-primary {
-			
-			.box-shadow(@inputGroupButtonPrimaryShadow);
-			
-			&:hover {
-				
-				.box-shadow(@inputGroupButtonPrimaryHoverShadow);
-				margin-top: 0px;
-				margin-bottom: 0px;
-				
-			}
-			
-			&.active,
-			&:active {
-				
-				.box-shadow(@inputGroupButtonPrimaryActiveShadow);
-				margin-top: 0px;
-				margin-bottom: 0px;
-				
-			}
-			
-			&.disabled,
-			&[disabled] {
-				
-				.box-shadow(@inputGroupButtonPrimaryDisabledShadow);
-				
-			}
-			
-		}
-		
-		// Success
-		
-		&.button-success {
-			
-			.box-shadow(@inputGroupButtonSuccessShadow);
-			
-			&:hover {
-				
-				.box-shadow(@inputGroupButtonSuccessHoverShadow);
-				margin-top: 0px;
-				margin-bottom: 0px;
-				
-			}
-			
-			&.active,
-			&:active {
-				
-				.box-shadow(@inputGroupButtonSuccessActiveShadow);
-				margin-top: 0px;
-				margin-bottom: 0px;
-				
-			}
-			
-			&.disabled,
-			&[disabled] {
-				
-				.box-shadow(@inputGroupButtonSuccessDisabledShadow);
-				
-			}
-			
-		}
-		
-		// Danger
-		
-		&.button-danger {
-			
-			.box-shadow(@inputGroupButtonDangerShadow);
-			
-			&:hover {
-				
-				.box-shadow(@inputGroupButtonDangerHoverShadow);
-				margin-top: 0px;
-				margin-bottom: 0px;
-				
-			}
-			
-			&.active,
-			&:active {
-				
-				.box-shadow(@inputGroupButtonDangerActiveShadow);
-				margin-top: 0px;
-				margin-bottom: 0px;
-				
-			}
-			
-			&.disabled,
-			&[disabled] {
-				
-				.box-shadow(@inputGroupButtonDangerDisabledShadow);
-				
-			}
-			
-		}
-		
-		// Warning
-		
-		&.button-warning {
-			
-			.box-shadow(@inputGroupButtonWarningShadow);
-			
-			&:hover {
-				
-				.box-shadow(@inputGroupButtonWarningHoverShadow);
-				margin-top: 0px;
-				margin-bottom: 0px;
-				
-			}
-			
-			&.active,
-			&:active {
-				
-				.box-shadow(@inputGroupButtonWarningActiveShadow);
-				margin-top: 0px;
-				margin-bottom: 0px;
-				
-			}
-			
-			&.disabled,
-			&[disabled] {
-				
-				.box-shadow(@inputGroupButtonWarningDisabledShadow);
-				
-			}
+			.border-radius(0px @form-input-border-radius @form-input-border-radius 0px);
 			
 		}
 		
 	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Input Group Add-On Group                                                                             */
+	/* ---------------------------------------------------------------------------------------------------- */
 	
 	.add-on-group {
 		
@@ -1502,7 +1394,7 @@ select {
 		left: 0px;
 		display: block;
 		width: auto;
-		height: @inputHeight;
+		height:  @form-input-height;
 		
 		.button,
 		.add-on {
@@ -1536,12 +1428,14 @@ select {
 				
 				&:first-child {
 					
-					.border-radius(@inputBorderRadius 0px 0px @inputBorderRadius);
+					.border-radius(@form-input-border-radius 0px 0px @form-input-border-radius);
 					
 				}
 				
-				&:last-child {
-			
+				&:last-of-type {
+					
+					.border-radius(0px);
+					
 					&:before {
 						
 						display: block;
@@ -1576,15 +1470,15 @@ select {
 					
 				}
 				
-				&:first-child {
+				&:first-of-type {
 					
-					.border-radius(0);
+					.border-radius(0px);
 					
 				}
 				
 				&:last-of-type {
 					
-					.border-radius(0px @inputBorderRadius @inputBorderRadius 0px);
+					.border-radius(0px @form-input-border-radius @form-input-border-radius 0px);
 					
 				}
 				
@@ -1594,32 +1488,79 @@ select {
 		
 	}
 	
-	&.tall {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Large Input Add-On                                                                                   */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-group-large {
 		
-		margin-bottom: @inputMarginTall;
-		
-		+ .help-block {
+		.add-on {
 			
-			margin-top: -@inputMarginTall;
+			padding-left: @form-input-add-on-large-padding-horizontal;
+			padding-right: @form-input-add-on-large-padding-horizontal;
+			.block-padding-vertical(@form-input-large-height, @form-input-add-on-large-text-line-height);
+			font-size: @form-input-add-on-large-text-font-size;
+			font-weight: @form-input-add-on-large-text-font-weight;
+			line-height: @form-input-add-on-large-text-line-height;
+			text-transform: @form-input-add-on-large-text-transform;
+			font-style: @form-input-add-on-large-text-font-style;
+			border-width: @form-input-large-border-width;
+			.border-radius(@form-input-large-border-radius 0px 0px @form-input-large-border-radius);
 			
 		}
 		
+		.add-on-group {
+			
+			height:  @form-input-large-height;
+			
+		}
 	}
 	
-	&.short {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Small Input Add-On                                                                                   */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-group-small {
 		
-		margin-bottom: @inputMarginShort;
-		
-		+ .help-block {
+		.add-on {
 			
-			margin-top: -@inputMarginShort;
+			padding-left: @form-input-add-on-small-padding-horizontal;
+			padding-right: @form-input-add-on-small-padding-horizontal;
+			.block-padding-vertical(@form-input-small-height, @form-input-add-on-small-text-line-height);
+			font-size: @form-input-add-on-small-text-font-size;
+			font-weight: @form-input-add-on-small-text-font-weight;
+			line-height: @form-input-add-on-small-text-line-height;
+			text-transform: @form-input-add-on-small-text-transform;
+			font-style: @form-input-add-on-small-text-font-style;
+			border-width: @form-input-small-border-width;
+			.border-radius(@form-input-small-border-radius 0px 0px @form-input-small-border-radius);
 			
 		}
 		
+		.add-on-group {
+			
+			height:  @form-input-small-height;
+			
+		}
 		
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2091,10 +2032,31 @@ textarea[class*="span"],
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling for widescreen (@viewport-widescreen) and   */
-/* above.                                                                    */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and                              */
+/* above.                                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -2102,7 +2064,7 @@ textarea[class*="span"],
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* General Form Styling                                                      */
+	/* General Form Styling                                                                                 */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
@@ -2126,7 +2088,7 @@ textarea[class*="span"],
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Inputs                                                                    */
+	/* Inputs                                                                                               */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
@@ -2147,21 +2109,21 @@ textarea[class*="span"],
 	.uneditable-input,
 	textarea {
 		
-		margin-bottom: @inputMarginWidescreen;
+		margin-bottom: @form-input-margin-widescreen;
 		
 		+ .help-block {
 			
-			margin-top: -@inputMarginWidescreen;
+			margin-top: -@form-input-margin-widescreen;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallWidescreen;
+			margin-bottom: @form-input-margin-tall-widescreen;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginTallWidescreen;
+				margin-top: -@form-input-margin-tall-widescreen;
 				
 			}
 			
@@ -2169,11 +2131,11 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortWidescreen;
+			margin-bottom: @form-input-margin-short-widescreen;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginShortWidescreen;
+				margin-top: -@form-input-margin-short-widescreen;
 				
 			}
 			
@@ -2184,24 +2146,43 @@ textarea[class*="span"],
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Radio Buttons & Checkboxes                                                */
+	/* Radio Buttons & Checkboxes                                                                           */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
 	.radio,
 	.checkbox {
 		
-		margin-bottom: @inputMarginWidescreen;
+		margin-bottom: @form-input-margin-widescreen;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-widescreen;
+			
+		}
 		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallWidescreen;
+			margin-bottom: @form-input-margin-tall-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-widescreen;
+				
+			}
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortWidescreen;
+			margin-bottom: @form-input-margin-short-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-widescreen;
+				
+			}
+			
 			
 		}
 		
@@ -2389,6 +2370,129 @@ textarea[class*="span"],
 		}
 		
 	}
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Input Groups                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.input-group {
+		
+		margin-bottom: @form-input-margin-widescreen;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-widescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-widescreen;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-widescreen;
+				
+			}
+			
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on {
+			
+			padding-left: @form-input-add-on-padding-horizontal * @form-input-responsive-ratio-widescreen;
+			padding-right: @form-input-add-on-padding-horizontal * @form-input-responsive-ratio-widescreen;
+			.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-widescreen, @form-input-add-on-text-line-height * @form-input-responsive-ratio-widescreen);
+			font-size: @form-input-add-on-text-font-size * @form-input-responsive-ratio-widescreen;
+			line-height: @form-input-add-on-text-line-height * @form-input-responsive-ratio-widescreen;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On Group                                                                             */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on-group {
+			
+			height:  @form-input-height * @form-input-responsive-ratio-widescreen;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-large {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-large-responsive-ratio-widescreen;
+				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-large-responsive-ratio-widescreen;
+				.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-widescreen, @form-input-add-on-large-text-line-height * @form-input-large-responsive-ratio-widescreen);
+				font-size: @form-input-add-on-large-text-font-size * @form-input-large-responsive-ratio-widescreen;
+				line-height: @form-input-add-on-large-text-line-height * @form-input-large-responsive-ratio-widescreen;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-large-height * @form-input-large-responsive-ratio-widescreen;
+				
+			}
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-small {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-small-responsive-ratio-widescreen;
+				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-small-responsive-ratio-widescreen;
+				.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-widescreen, @form-input-add-on-small-text-line-height * @form-input-small-responsive-ratio-widescreen);
+				font-size: @form-input-add-on-small-text-font-size * @form-input-small-responsive-ratio-widescreen;
+				line-height: @form-input-add-on-small-text-line-height * @form-input-small-responsive-ratio-widescreen;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-small-height * @form-input-small-responsive-ratio-widescreen;
+				
+			}
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */

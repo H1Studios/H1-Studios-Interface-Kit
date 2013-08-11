@@ -2585,31 +2585,33 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 					<div class="code-example flush-bottom">
 						
-						<p>
+						<div class="button-toolbar short">
 							
 							<button type="button" class="button button-large button-primary">Large button</button>
 							<button type="button" class="button button-large">Large button</button>
 							
-						</p>
+						</div>
 						
-						<p>
+						<div class="button-toolbar short">
 							
 							<button type="button" class="button button-primary">Default button</button>
 							<button type="button" class="button">Default button</button>
 							
-						</p>
+						</div>
 						
-						<p>
+						<div class="button-toolbar short">
 							
 							<button type="button" class="button button-small button-primary">Small button</button>
 							<button type="button" class="button button-small">Small button</button>
 							
-						</p>
+						</div>
 						
-						<p class="flush-bottom">
+						<div class="button-toolbar flush-bottom">
+							
 							<button type="button" class="button button-mini button-primary">Mini button</button>
 							<button type="button" class="button button-mini">Mini button</button>
-						</p>
+							
+						</div>
 						
 					</div>
 					
@@ -3075,148 +3077,12 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 					<form class="code-example flush-bottom">
 						
-						<div class="select-wrapper">
+						<div class="select-wrapper flush-bottom">
 							
 							<div class="select-wrapper-inner">
 							</div>
 							
 							<select>
-								
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								
-							</select>
-							
-						</div>
-						
-						<div class="select-wrapper tall">
-							
-							<div class="select-wrapper-inner">
-							</div>
-							
-							<select>
-								
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								
-							</select>
-							
-						</div>
-						
-						<div class="select-wrapper short">
-							
-							<div class="select-wrapper-inner">
-							</div>
-							
-							<select>
-								
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								
-							</select>
-							
-						</div>
-						
-						<div class="select-wrapper select-wrapper-large">
-							
-							<div class="select-wrapper-inner">
-							</div>
-							
-							<select class="input-large">
-								
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								
-							</select>
-							
-						</div>
-						
-						<div class="select-wrapper select-wrapper-large tall">
-							
-							<div class="select-wrapper-inner">
-							</div>
-							
-							<select class="input-large">
-								
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								
-							</select>
-							
-						</div>
-						
-						<div class="select-wrapper select-wrapper-large short">
-							
-							<div class="select-wrapper-inner">
-							</div>
-							
-							<select class="input-large">
-								
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								
-							</select>
-							
-						</div>
-						
-						<div class="select-wrapper select-wrapper-small">
-							
-							<div class="select-wrapper-inner">
-							</div>
-							
-							<select class="input-small">
-								
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								
-							</select>
-							
-						</div>
-						
-						<div class="select-wrapper select-wrapper-small tall">
-							
-							<div class="select-wrapper-inner">
-							</div>
-							
-							<select class="input-small">
-								
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								
-							</select>
-							
-						</div>
-						
-						<div class="select-wrapper select-wrapper-small short">
-							
-							<div class="select-wrapper-inner">
-							</div>
-							
-							<select class="input-small">
 								
 								<option>1</option>
 								<option>2</option>
@@ -3288,17 +3154,25 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 					<form class="code-example flush-bottom">
 						
-						<div class="input-group">
+						<div class="input-group input-group-large">
+							
+							<input type="text" placeholder="Username" class="input-large" style="padding-left: 60px;">
 							
 							<span class="add-on add-on-prepend">@</span>
 							
-							<input type="text" placeholder="Username" style="padding-left: 50px;">
+						</div>
+						
+						<div class="input-group input-group-small">
+							
+							<input type="text" placeholder="Username" class="input-small" style="padding-left: 60px;">
+							
+							<span class="add-on add-on-prepend">@</span>
 							
 						</div>
 			            
 						<div class="input-group flush-bottom">
 							
-							<input type="text" style="padding-right: 55px;">
+							<input type="text" style="padding-right: 65px;">
 							
 							<span class="add-on add-on-append">.00</span>
 							
@@ -3308,11 +3182,11 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 <pre class="prettyprint linenums">
 &lt;div class="input-group"&gt;
+  &lt;input type="text" placeholder="Username" style="padding-left: 60px;"&gt;
   &lt;span class="add-on add-on-prepend"&gt;@&lt;/span&gt;
-  &lt;input type="text" placeholder="Username" style="padding-left: 50px;"&gt;
 &lt;/div&gt;
 &lt;div class="input-group"&gt;
-  &lt;input type="text" style="padding-right: 55px;"&gt;
+  &lt;input type="text" style="padding-right: 65px;"&gt;
   &lt;span class="add-on add-on-append"&gt;.00&lt;/span&gt;
 &lt;/div&gt;
 </pre>
@@ -3333,9 +3207,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 						<div class="input-group flush-bottom">
 							
-							<span class="add-on add-on-prepend">$</span>
+							<input type="text" style="padding-left: 60px; padding-right: 65px;">
 							
-							<input type="text" style="padding-left: 50px; padding-right: 55px;">
+							<span class="add-on add-on-prepend">$</span>
 							
 							<span class="add-on add-on-append">.00</span>
 							
@@ -3345,8 +3219,8 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 <pre class="prettyprint linenums">
 &lt;div class="input-group"&gt;
+  &lt;input type="text" style="padding-left: 60px; padding-right: 65px;"&gt;
   &lt;span class="add-on add-on-prepend"&gt;$&lt;/span&gt;
-  &lt;input type="text" style="padding-left: 50px; padding-right: 55px;"&gt;
   &lt;span class="add-on add-on-append"&gt;.00&lt;/span&gt;
 &lt;/div&gt;
 </pre>
@@ -3386,6 +3260,8 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 						<div class="input-group">
 							
+							<input type="text">
+							
 							<div class="add-on-group add-on-prepend">
 								
 								<button class="button" type="button">Search</button>
@@ -3393,8 +3269,6 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 								<button class="button" type="button">Options</button>
 								
 							</div>
-							
-							<input type="text">
 								
 						</div>
 						
@@ -3416,11 +3290,11 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 <pre class="prettyprint linenums">
 &lt;div class="input-group"&gt;
+  &lt;input type="text"&gt;
   &lt;div class="add-on-group add-on-prepend"&gt;
     &lt;button class="button" type="button"&gt;Search&lt;/button&gt;
     &lt;button class="button" type="button"&gt;Options&lt;/button&gt;
   &lt;/div&gt;
-  &lt;input type="text"&gt;
 &lt;/div&gt;
 &lt;div class="input-group"&gt;
   &lt;input type="text"&gt;
@@ -3440,6 +3314,8 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					<form class="code-example flush-bottom">
 						
 						<div class="input-group flush-bottom">
+							
+							<input type="text">
 							
 							<div class="add-on-group add-on-prepend">
 							
@@ -3461,14 +3337,13 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 								
 							</div>
 							
-							<input type="text">
-							
 						</div>
 						
 					</form>
 					
 <pre class="prettyprint linenums short">
 &lt;div class="input-group"&gt;
+  &lt;input type="text"&gt;
   &lt;div class="add-on-group add-on-prepend"&gt;
     &lt;div class="button-group"&gt;
       &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
@@ -3480,7 +3355,6 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
       &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;input type="text"&gt;
 &lt;/div&gt;
 </pre>
 			
@@ -3535,6 +3409,8 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 						<div class="input-group flush-bottom">
 							
+							<input type="text">
+							
 							<div class="add-on-group add-on-prepend">
 							
 								<div class="button-group">
@@ -3554,8 +3430,6 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 								</div>
 								
 							</div>
-							
-							<input type="text">
 							
 							<div class="add-on-group add-on-append">
 							
@@ -3583,6 +3457,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 <pre class="prettyprint linenums">
 &lt;div class="input-prepend input-append"&gt;
+  &lt;input type="text"&gt;
   &lt;div class="add-on-group add-on-prepend"&gt;
     &lt;div class="button-group"&gt;
       &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
@@ -3594,7 +3469,6 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
       &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;input type="text"&gt;
   &lt;div class="add-on-group add-on-append"&gt;
     &lt;div class="button-group"&gt;
       &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
@@ -3618,6 +3492,8 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					<form class="code-example flush-bottom">
 						
 						<div class="input-group">
+							
+							<input type="text">
 							
 							<div class="add-on-group add-on-prepend">
 							
@@ -3644,8 +3520,6 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 								</div>
 								
 							</div>
-							
-							<input type="text">
 							
 						</div>
 						
@@ -3685,23 +3559,113 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 <pre class="prettyprint linenums">
 &lt;form&gt;
+  &lt;input type="text"&gt;
   &lt;div class="add-on-group add-on-prepend"&gt;
     &lt;div class="button-group"&gt;...&lt;/div&gt;
   &lt;/div&gt;
-  &lt;input type="text"&gt;
   &lt;div class="add-on-group add-on-append"&gt;
     &lt;div class="button-group"&gt;...&lt;/div&gt;
   &lt;/div&gt;
 &lt;/form&gt;
 </pre>
 					
-					<!-- ================= CONTROL SIZING ================= -->
+					<hr>
+					
+					<!-- =============== UNEDITABLE INPUTS ================ -->
 					
 					<h4>
 						
-						Control sizing
+						Uneditable inputs
 						
 					</h4>
+					
+					<p class="tall">
+						
+						Present data in a form that's not editable without using actual form markup.
+						
+					</p>
+					
+					<form class="code-example flush-bottom">
+						
+						<span class="uneditable-input flush-bottom">Some value here</span>
+						
+					</form>
+					
+<pre class="prettyprint linenums">
+&lt;span class="uneditable-input"&gt;Some value here&lt;/span&gt;
+</pre>
+					
+					<!-- ================== FORM ACTIONS ================== -->
+					
+					<h4>
+						
+						Form actions
+						
+					</h4>
+					
+					<p class="tall">
+						
+						End a form with a group of actions (buttons). When placed within a <code>.form-horizontal</code>, the buttons will automatically indent to line up with the form controls.
+						
+					</p>
+							
+					<form class="code-example flush-bottom">
+						
+						<div class="form-actions flush-bottom">
+							
+							<button type="submit" class="button button-primary">Save changes</button>
+							
+							<button type="button" class="button">Cancel</button>
+							
+						</div>
+						
+					</form>
+					
+<pre class="prettyprint linenums">
+&lt;div class="form-actions"&gt;
+  &lt;button type="submit" class="button button-primary"&gt;Save changes&lt;/button&gt;
+  &lt;button type="button" class="button"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+			
+					<!-- ==================== HELP TEXT =================== -->
+					
+					<h4>
+						
+						Help text
+						
+					</h4>
+					
+					<p class="tall">
+						
+						Inline and block level support for help text that appears around form controls.
+						
+					</p>
+					
+					<form class="code-example flush-bottom">
+						
+						<input type="text">
+						
+						<span class="help-block flush-bottom">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+						
+					</form>
+					
+<pre class="prettyprint linenums flush-bottom">
+&lt;input type="text"&gt;
+&lt;span class="help-block"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+</pre>
+					
+					<hr>
+					
+					<!-- ================================================== -->
+					<!-- ================= CONTROL SIZING ================= -->
+					<!-- ================================================== -->
+					
+					<h3>
+						
+						Control sizing
+						
+					</h3>
 					
 					<p class="tall">
 						
@@ -3709,11 +3673,11 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						
 					</p>
 					
-					<h5>
+					<h4>
 						
 						Input sizing
 						
-					</h5>
+					</h4>
 					
 					<form class="code-example flush-bottom">
 						
@@ -3732,11 +3696,11 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 &lt;input class="input-large" type="text" placeholder=".input-large"&gt;
 </pre>
 					
-					<h5>
+					<h4>
 						
 						Grid sizing
 						
-					</h5>
+					</h4>
 					
 					<p class="tall">
 						
@@ -3868,90 +3832,6 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
   &lt;input class="span1" type="text" placeholder=".span1"&gt;
 &lt;/div&gt;
 ...
-</pre>
-					
-					<!-- =============== UNEDITABLE INPUTS ================ -->
-					
-					<h4>
-						
-						Uneditable inputs
-						
-					</h4>
-					
-					<p class="tall">
-						
-						Present data in a form that's not editable without using actual form markup.
-						
-					</p>
-					
-					<form class="code-example flush-bottom">
-						
-						<span class="uneditable-input flush-bottom">Some value here</span>
-						
-					</form>
-					
-<pre class="prettyprint linenums">
-&lt;span class="uneditable-input"&gt;Some value here&lt;/span&gt;
-</pre>
-					
-					<!-- ================== FORM ACTIONS ================== -->
-					
-					<h4>
-						
-						Form actions
-						
-					</h4>
-					
-					<p class="tall">
-						
-						End a form with a group of actions (buttons). When placed within a <code>.form-horizontal</code>, the buttons will automatically indent to line up with the form controls.
-						
-					</p>
-							
-					<form class="code-example flush-bottom">
-						
-						<div class="form-actions flush-bottom">
-							
-							<button type="submit" class="button button-primary">Save changes</button>
-							
-							<button type="button" class="button">Cancel</button>
-							
-						</div>
-						
-					</form>
-					
-<pre class="prettyprint linenums">
-&lt;div class="form-actions"&gt;
-  &lt;button type="submit" class="button button-primary"&gt;Save changes&lt;/button&gt;
-  &lt;button type="button" class="button"&gt;Cancel&lt;/button&gt;
-&lt;/div&gt;
-</pre>
-			
-					<!-- ==================== HELP TEXT =================== -->
-					
-					<h4>
-						
-						Help text
-						
-					</h4>
-					
-					<p class="tall">
-						
-						Inline and block level support for help text that appears around form controls.
-						
-					</p>
-					
-					<form class="code-example flush-bottom">
-						
-						<input type="text">
-						
-						<span class="help-block flush-bottom">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
-						
-					</form>
-					
-<pre class="prettyprint linenums flush-bottom">
-&lt;input type="text"&gt;
-&lt;span class="help-block"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
 </pre>
 					
 					<hr>

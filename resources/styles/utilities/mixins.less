@@ -291,25 +291,47 @@
 
 .input-states (
 	
-	@form-input-default-border-color,
-	@form-input-default-text-color,
-	@form-input-default-text-shadow,
-	@form-input-default-background-color,
-	@form-input-default-background-gradient-top-color,
-	@form-input-default-background-gradient-bottom-color,
-	@form-input-default-shadow,
-	@form-input-default-placeholder-text-color
+	@form-input-border-color,
+	@form-input-text-color,
+	@form-input-text-shadow,
+	@form-input-background-color,
+	@form-input-background-gradient-top-color,
+	@form-input-background-gradient-bottom-color,
+	@form-input-shadow,
+	@form-input-placeholder-text-color
 
 ) {
 	
 	.override_gradient_vertical();
-	border-color: @form-input-default-border-color;
-	color: @form-input-default-text-color;
-	text-shadow: @form-input-default-text-shadow;
-	background-color: @form-input-default-background-color;
-	#gradient > .vertical(@form-input-default-background-gradient-top-color, @form-input-default-background-gradient-bottom-color);
-	.box-shadow(@form-input-default-shadow);
-	.placeholder(@form-input-default-placeholder-text-color);
+	border-color: @form-input-border-color;
+	color: @form-input-text-color;
+	text-shadow: @form-input-text-shadow;
+	background-color: @form-input-background-color;
+	#gradient > .vertical(@form-input-background-gradient-top-color, @form-input-background-gradient-bottom-color);
+	.box-shadow(@form-input-shadow);
+	.placeholder(@form-input-placeholder-text-color);
+	
+}
+
+.input-add-on-states (
+	
+	@form-input-add-on-border-color,
+	@form-input-add-on-text-color,
+	@form-input-add-on-text-shadow,
+	@form-input-add-on-background-color,
+	@form-input-add-on-background-gradient-top-color,
+	@form-input-add-on-background-gradient-bottom-color,
+	@form-input-add-on-shadow
+
+) {
+	
+	.override_gradient_vertical();
+	border-color: @form-input-add-on-border-color;
+	color: @form-input-add-on-text-color;
+	text-shadow: @form-input-add-on-text-shadow;
+	background-color: @form-input-add-on-background-color;
+	#gradient > .vertical(@form-input-add-on-background-gradient-top-color, @form-input-add-on-background-gradient-bottom-color);
+	.box-shadow(@form-input-add-on-shadow);
 	
 }
 

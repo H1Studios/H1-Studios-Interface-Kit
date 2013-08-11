@@ -2615,31 +2615,33 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<p>
+\t\t\t\t\t\t<div class=\"button-toolbar short\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<button type=\"button\" class=\"button button-large button-primary\">Large button</button>
 \t\t\t\t\t\t\t<button type=\"button\" class=\"button button-large\">Large button</button>
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t</p>
+\t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<p>
+\t\t\t\t\t\t<div class=\"button-toolbar short\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<button type=\"button\" class=\"button button-primary\">Default button</button>
 \t\t\t\t\t\t\t<button type=\"button\" class=\"button\">Default button</button>
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t</p>
+\t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<p>
+\t\t\t\t\t\t<div class=\"button-toolbar short\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<button type=\"button\" class=\"button button-small button-primary\">Small button</button>
 \t\t\t\t\t\t\t<button type=\"button\" class=\"button button-small\">Small button</button>
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t</p>
+\t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<p class=\"flush-bottom\">
+\t\t\t\t\t\t<div class=\"button-toolbar flush-bottom\">
+\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<button type=\"button\" class=\"button button-mini button-primary\">Mini button</button>
 \t\t\t\t\t\t\t<button type=\"button\" class=\"button button-mini\">Mini button</button>
-\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t</div>
 \t\t\t\t\t
@@ -3105,148 +3107,12 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"select-wrapper\">
+\t\t\t\t\t\t<div class=\"select-wrapper flush-bottom\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<select>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<option>1</option>
-\t\t\t\t\t\t\t\t<option>2</option>
-\t\t\t\t\t\t\t\t<option>3</option>
-\t\t\t\t\t\t\t\t<option>4</option>
-\t\t\t\t\t\t\t\t<option>5</option>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</select>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"select-wrapper tall\">
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<select>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<option>1</option>
-\t\t\t\t\t\t\t\t<option>2</option>
-\t\t\t\t\t\t\t\t<option>3</option>
-\t\t\t\t\t\t\t\t<option>4</option>
-\t\t\t\t\t\t\t\t<option>5</option>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</select>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"select-wrapper short\">
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<select>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<option>1</option>
-\t\t\t\t\t\t\t\t<option>2</option>
-\t\t\t\t\t\t\t\t<option>3</option>
-\t\t\t\t\t\t\t\t<option>4</option>
-\t\t\t\t\t\t\t\t<option>5</option>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</select>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"select-wrapper select-wrapper-large\">
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<select class=\"input-large\">
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<option>1</option>
-\t\t\t\t\t\t\t\t<option>2</option>
-\t\t\t\t\t\t\t\t<option>3</option>
-\t\t\t\t\t\t\t\t<option>4</option>
-\t\t\t\t\t\t\t\t<option>5</option>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</select>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"select-wrapper select-wrapper-large tall\">
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<select class=\"input-large\">
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<option>1</option>
-\t\t\t\t\t\t\t\t<option>2</option>
-\t\t\t\t\t\t\t\t<option>3</option>
-\t\t\t\t\t\t\t\t<option>4</option>
-\t\t\t\t\t\t\t\t<option>5</option>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</select>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"select-wrapper select-wrapper-large short\">
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<select class=\"input-large\">
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<option>1</option>
-\t\t\t\t\t\t\t\t<option>2</option>
-\t\t\t\t\t\t\t\t<option>3</option>
-\t\t\t\t\t\t\t\t<option>4</option>
-\t\t\t\t\t\t\t\t<option>5</option>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</select>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"select-wrapper select-wrapper-small\">
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<select class=\"input-small\">
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<option>1</option>
-\t\t\t\t\t\t\t\t<option>2</option>
-\t\t\t\t\t\t\t\t<option>3</option>
-\t\t\t\t\t\t\t\t<option>4</option>
-\t\t\t\t\t\t\t\t<option>5</option>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</select>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"select-wrapper select-wrapper-small tall\">
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<select class=\"input-small\">
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<option>1</option>
-\t\t\t\t\t\t\t\t<option>2</option>
-\t\t\t\t\t\t\t\t<option>3</option>
-\t\t\t\t\t\t\t\t<option>4</option>
-\t\t\t\t\t\t\t\t<option>5</option>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</select>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"select-wrapper select-wrapper-small short\">
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"select-wrapper-inner\">
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<select class=\"input-small\">
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t<option>1</option>
 \t\t\t\t\t\t\t\t<option>2</option>
@@ -3318,17 +3184,25 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t<div class=\"input-group input-group-large\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<input type=\"text\" placeholder=\"Username\" class=\"input-large\" style=\"padding-left: 60px;\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<span class=\"add-on add-on-prepend\">@</span>
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<input type=\"text\" placeholder=\"Username\" style=\"padding-left: 50px;\">
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"input-group input-group-small\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<input type=\"text\" placeholder=\"Username\" class=\"input-small\" style=\"padding-left: 60px;\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"add-on add-on-prepend\">@</span>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t            
 \t\t\t\t\t\t<div class=\"input-group flush-bottom\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<input type=\"text\" style=\"padding-right: 55px;\">
+\t\t\t\t\t\t\t<input type=\"text\" style=\"padding-right: 65px;\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<span class=\"add-on add-on-append\">.00</span>
 \t\t\t\t\t\t\t
@@ -3338,11 +3212,11 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
 &lt;div class=\"input-group\"&gt;
+  &lt;input type=\"text\" placeholder=\"Username\" style=\"padding-left: 60px;\"&gt;
   &lt;span class=\"add-on add-on-prepend\"&gt;@&lt;/span&gt;
-  &lt;input type=\"text\" placeholder=\"Username\" style=\"padding-left: 50px;\"&gt;
 &lt;/div&gt;
 &lt;div class=\"input-group\"&gt;
-  &lt;input type=\"text\" style=\"padding-right: 55px;\"&gt;
+  &lt;input type=\"text\" style=\"padding-right: 65px;\"&gt;
   &lt;span class=\"add-on add-on-append\"&gt;.00&lt;/span&gt;
 &lt;/div&gt;
 </pre>
@@ -3363,9 +3237,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"input-group flush-bottom\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<span class=\"add-on add-on-prepend\">\$</span>
+\t\t\t\t\t\t\t<input type=\"text\" style=\"padding-left: 60px; padding-right: 65px;\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<input type=\"text\" style=\"padding-left: 50px; padding-right: 55px;\">
+\t\t\t\t\t\t\t<span class=\"add-on add-on-prepend\">\$</span>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<span class=\"add-on add-on-append\">.00</span>
 \t\t\t\t\t\t\t
@@ -3375,8 +3249,8 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
 &lt;div class=\"input-group\"&gt;
+  &lt;input type=\"text\" style=\"padding-left: 60px; padding-right: 65px;\"&gt;
   &lt;span class=\"add-on add-on-prepend\"&gt;\$&lt;/span&gt;
-  &lt;input type=\"text\" style=\"padding-left: 50px; padding-right: 55px;\"&gt;
   &lt;span class=\"add-on add-on-append\"&gt;.00&lt;/span&gt;
 &lt;/div&gt;
 </pre>
@@ -3416,6 +3290,8 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"input-group\">
 \t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<input type=\"text\">
+\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"add-on-group add-on-prepend\">
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t<button class=\"button\" type=\"button\">Search</button>
@@ -3423,8 +3299,6 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t\t\t<button class=\"button\" type=\"button\">Options</button>
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<input type=\"text\">
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
@@ -3446,11 +3320,11 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
 &lt;div class=\"input-group\"&gt;
+  &lt;input type=\"text\"&gt;
   &lt;div class=\"add-on-group add-on-prepend\"&gt;
     &lt;button class=\"button\" type=\"button\"&gt;Search&lt;/button&gt;
     &lt;button class=\"button\" type=\"button\"&gt;Options&lt;/button&gt;
   &lt;/div&gt;
-  &lt;input type=\"text\"&gt;
 &lt;/div&gt;
 &lt;div class=\"input-group\"&gt;
   &lt;input type=\"text\"&gt;
@@ -3470,6 +3344,8 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"input-group flush-bottom\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<input type=\"text\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"add-on-group add-on-prepend\">
 \t\t\t\t\t\t\t
@@ -3491,14 +3367,13 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<input type=\"text\">
-\t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
 <pre class=\"prettyprint linenums short\">
 &lt;div class=\"input-group\"&gt;
+  &lt;input type=\"text\"&gt;
   &lt;div class=\"add-on-group add-on-prepend\"&gt;
     &lt;div class=\"button-group\"&gt;
       &lt;button class=\"button dropdown-toggle\" data-toggle=\"dropdown\"&gt;
@@ -3510,7 +3385,6 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
       &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;input type=\"text\"&gt;
 &lt;/div&gt;
 </pre>
 \t\t\t
@@ -3565,6 +3439,8 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"input-group flush-bottom\">
 \t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<input type=\"text\">
+\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"add-on-group add-on-prepend\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t<div class=\"button-group\">
@@ -3584,8 +3460,6 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<input type=\"text\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"add-on-group add-on-append\">
 \t\t\t\t\t\t\t
@@ -3613,6 +3487,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
 &lt;div class=\"input-prepend input-append\"&gt;
+  &lt;input type=\"text\"&gt;
   &lt;div class=\"add-on-group add-on-prepend\"&gt;
     &lt;div class=\"button-group\"&gt;
       &lt;button class=\"button dropdown-toggle\" data-toggle=\"dropdown\"&gt;
@@ -3624,7 +3499,6 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
       &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;input type=\"text\"&gt;
   &lt;div class=\"add-on-group add-on-append\"&gt;
     &lt;div class=\"button-group\"&gt;
       &lt;button class=\"button dropdown-toggle\" data-toggle=\"dropdown\"&gt;
@@ -3648,6 +3522,8 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"input-group\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<input type=\"text\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"add-on-group add-on-prepend\">
 \t\t\t\t\t\t\t
@@ -3674,8 +3550,6 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<input type=\"text\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
@@ -3715,23 +3589,113 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
 &lt;form&gt;
+  &lt;input type=\"text\"&gt;
   &lt;div class=\"add-on-group add-on-prepend\"&gt;
     &lt;div class=\"button-group\"&gt;...&lt;/div&gt;
   &lt;/div&gt;
-  &lt;input type=\"text\"&gt;
   &lt;div class=\"add-on-group add-on-append\"&gt;
     &lt;div class=\"button-group\"&gt;...&lt;/div&gt;
   &lt;/div&gt;
 &lt;/form&gt;
 </pre>
 \t\t\t\t\t
-\t\t\t\t\t<!-- ================= CONTROL SIZING ================= -->
+\t\t\t\t\t<hr>
+\t\t\t\t\t
+\t\t\t\t\t<!-- =============== UNEDITABLE INPUTS ================ -->
 \t\t\t\t\t
 \t\t\t\t\t<h4>
 \t\t\t\t\t\t
-\t\t\t\t\t\tControl sizing
+\t\t\t\t\t\tUneditable inputs
 \t\t\t\t\t\t
 \t\t\t\t\t</h4>
+\t\t\t\t\t
+\t\t\t\t\t<p class=\"tall\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tPresent data in a form that's not editable without using actual form markup.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<form class=\"code-example flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<span class=\"uneditable-input flush-bottom\">Some value here</span>
+\t\t\t\t\t\t
+\t\t\t\t\t</form>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;span class=\"uneditable-input\"&gt;Some value here&lt;/span&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<!-- ================== FORM ACTIONS ================== -->
+\t\t\t\t\t
+\t\t\t\t\t<h4>
+\t\t\t\t\t\t
+\t\t\t\t\t\tForm actions
+\t\t\t\t\t\t
+\t\t\t\t\t</h4>
+\t\t\t\t\t
+\t\t\t\t\t<p class=\"tall\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tEnd a form with a group of actions (buttons). When placed within a <code>.form-horizontal</code>, the buttons will automatically indent to line up with the form controls.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t\t\t
+\t\t\t\t\t<form class=\"code-example flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"form-actions flush-bottom\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<button type=\"submit\" class=\"button button-primary\">Save changes</button>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button\">Cancel</button>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</form>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"form-actions\"&gt;
+  &lt;button type=\"submit\" class=\"button button-primary\"&gt;Save changes&lt;/button&gt;
+  &lt;button type=\"button\" class=\"button\"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+\t\t\t
+\t\t\t\t\t<!-- ==================== HELP TEXT =================== -->
+\t\t\t\t\t
+\t\t\t\t\t<h4>
+\t\t\t\t\t\t
+\t\t\t\t\t\tHelp text
+\t\t\t\t\t\t
+\t\t\t\t\t</h4>
+\t\t\t\t\t
+\t\t\t\t\t<p class=\"tall\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tInline and block level support for help text that appears around form controls.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<form class=\"code-example flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<input type=\"text\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<span class=\"help-block flush-bottom\">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+\t\t\t\t\t\t
+\t\t\t\t\t</form>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums flush-bottom\">
+&lt;input type=\"text\"&gt;
+&lt;span class=\"help-block\"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<hr>
+\t\t\t\t\t
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t<!-- ================= CONTROL SIZING ================= -->
+\t\t\t\t\t<!-- ================================================== -->
+\t\t\t\t\t
+\t\t\t\t\t<h3>
+\t\t\t\t\t\t
+\t\t\t\t\t\tControl sizing
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
 \t\t\t\t\t
 \t\t\t\t\t<p class=\"tall\">
 \t\t\t\t\t\t
@@ -3739,11 +3703,11 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t
 \t\t\t\t\t</p>
 \t\t\t\t\t
-\t\t\t\t\t<h5>
+\t\t\t\t\t<h4>
 \t\t\t\t\t\t
 \t\t\t\t\t\tInput sizing
 \t\t\t\t\t\t
-\t\t\t\t\t</h5>
+\t\t\t\t\t</h4>
 \t\t\t\t\t
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
@@ -3762,11 +3726,11 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 &lt;input class=\"input-large\" type=\"text\" placeholder=\".input-large\"&gt;
 </pre>
 \t\t\t\t\t
-\t\t\t\t\t<h5>
+\t\t\t\t\t<h4>
 \t\t\t\t\t\t
 \t\t\t\t\t\tGrid sizing
 \t\t\t\t\t\t
-\t\t\t\t\t</h5>
+\t\t\t\t\t</h4>
 \t\t\t\t\t
 \t\t\t\t\t<p class=\"tall\">
 \t\t\t\t\t\t
@@ -3898,90 +3862,6 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
   &lt;input class=\"span1\" type=\"text\" placeholder=\".span1\"&gt;
 &lt;/div&gt;
 ...
-</pre>
-\t\t\t\t\t
-\t\t\t\t\t<!-- =============== UNEDITABLE INPUTS ================ -->
-\t\t\t\t\t
-\t\t\t\t\t<h4>
-\t\t\t\t\t\t
-\t\t\t\t\t\tUneditable inputs
-\t\t\t\t\t\t
-\t\t\t\t\t</h4>
-\t\t\t\t\t
-\t\t\t\t\t<p class=\"tall\">
-\t\t\t\t\t\t
-\t\t\t\t\t\tPresent data in a form that's not editable without using actual form markup.
-\t\t\t\t\t\t
-\t\t\t\t\t</p>
-\t\t\t\t\t
-\t\t\t\t\t<form class=\"code-example flush-bottom\">
-\t\t\t\t\t\t
-\t\t\t\t\t\t<span class=\"uneditable-input flush-bottom\">Some value here</span>
-\t\t\t\t\t\t
-\t\t\t\t\t</form>
-\t\t\t\t\t
-<pre class=\"prettyprint linenums\">
-&lt;span class=\"uneditable-input\"&gt;Some value here&lt;/span&gt;
-</pre>
-\t\t\t\t\t
-\t\t\t\t\t<!-- ================== FORM ACTIONS ================== -->
-\t\t\t\t\t
-\t\t\t\t\t<h4>
-\t\t\t\t\t\t
-\t\t\t\t\t\tForm actions
-\t\t\t\t\t\t
-\t\t\t\t\t</h4>
-\t\t\t\t\t
-\t\t\t\t\t<p class=\"tall\">
-\t\t\t\t\t\t
-\t\t\t\t\t\tEnd a form with a group of actions (buttons). When placed within a <code>.form-horizontal</code>, the buttons will automatically indent to line up with the form controls.
-\t\t\t\t\t\t
-\t\t\t\t\t</p>
-\t\t\t\t\t\t\t
-\t\t\t\t\t<form class=\"code-example flush-bottom\">
-\t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"form-actions flush-bottom\">
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<button type=\"submit\" class=\"button button-primary\">Save changes</button>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button\">Cancel</button>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t
-\t\t\t\t\t</form>
-\t\t\t\t\t
-<pre class=\"prettyprint linenums\">
-&lt;div class=\"form-actions\"&gt;
-  &lt;button type=\"submit\" class=\"button button-primary\"&gt;Save changes&lt;/button&gt;
-  &lt;button type=\"button\" class=\"button\"&gt;Cancel&lt;/button&gt;
-&lt;/div&gt;
-</pre>
-\t\t\t
-\t\t\t\t\t<!-- ==================== HELP TEXT =================== -->
-\t\t\t\t\t
-\t\t\t\t\t<h4>
-\t\t\t\t\t\t
-\t\t\t\t\t\tHelp text
-\t\t\t\t\t\t
-\t\t\t\t\t</h4>
-\t\t\t\t\t
-\t\t\t\t\t<p class=\"tall\">
-\t\t\t\t\t\t
-\t\t\t\t\t\tInline and block level support for help text that appears around form controls.
-\t\t\t\t\t\t
-\t\t\t\t\t</p>
-\t\t\t\t\t
-\t\t\t\t\t<form class=\"code-example flush-bottom\">
-\t\t\t\t\t\t
-\t\t\t\t\t\t<input type=\"text\">
-\t\t\t\t\t\t
-\t\t\t\t\t\t<span class=\"help-block flush-bottom\">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
-\t\t\t\t\t\t
-\t\t\t\t\t</form>
-\t\t\t\t\t
-<pre class=\"prettyprint linenums flush-bottom\">
-&lt;input type=\"text\"&gt;
-&lt;span class=\"help-block\"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
 </pre>
 \t\t\t\t\t
 \t\t\t\t\t<hr>
