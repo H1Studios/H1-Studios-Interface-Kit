@@ -2175,6 +2175,24 @@
 /* ==================================================================================================== */
 
 /* ---------------------------------------------------------------------------------------------------- */
+/* Form Actions                                                                                         */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@form-actions-background-color:											@gray-lighten-90;
+@form-actions-shadow:													0px -1px 0px 0px @border-color;
+@form-actions-padding-horizontal:										@primary-margin * 0.5;
+@form-actions-padding-vertical:											@primary-margin * 0.5;
+
+@form-actions-padding-horizontal-widescreen:							@primary-margin-widescreen * 0.5;
+@form-actions-padding-vertical-widescreen:								@primary-margin-widescreen * 0.5;
+
+@form-actions-padding-horizontal-tablet:								@primary-margin-tablet * 0.5;
+@form-actions-padding-vertical-tablet:									@primary-margin-tablet * 0.5;
+
+@form-actions-padding-horizontal-mobile:								@primary-margin-mobile * 0.5;
+@form-actions-padding-vertical-mobile:									@primary-margin-mobile * 0.5;
+
+/* ---------------------------------------------------------------------------------------------------- */
 /* Form Legend                                                                                          */
 /* ---------------------------------------------------------------------------------------------------- */
 
@@ -2231,6 +2249,50 @@
 @form-label-inverse-color:												@heading-h4-text-inverse-color;
 @form-label-inverse-border-color:										@table-inverse-border;
 
+// Success
+
+@form-label-success-text-color:											@green;
+
+// Warning
+
+@form-label-warning-text-color:											@orange;
+
+// Error
+
+@form-label-error-text-color:											@red;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Form Help Block                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@form-help-block-text-font-family:										@small-text-font-family;
+@form-help-block-text-font-size:										@small-text-font-size * 1.0;
+@form-help-block-text-font-weight:										@small-text-font-weight;
+@form-help-block-text-line-height:										@small-text-line-height * 1.0;
+@form-help-block-text-transform:										@small-text-transform;
+@form-help-block-text-font-style:										@small-text-font-style;
+@form-help-block-text-color:											@small-text-color;
+@form-help-block-margin:												2px;
+
+// Responsive Sizing
+
+@form-help-block-responsive-ratio-widescreen:							@small-text-responsive-ratio-widescreen;
+@form-help-block-responsive-ratio-tablet:								@small-text-responsive-ratio-tablet;
+@form-help-block-responsive-ratio-mobile:								@small-text-responsive-ratio-mobile;
+
+// Success
+
+@form-help-block-success-text-color:									@green-lighten-50;
+
+// Warning
+
+@form-help-block-warning-text-color:									@orange-lighten-50;
+
+// Error
+
+@form-help-block-error-text-color:										@red-lighten-50;
+
+
 /* ---------------------------------------------------------------------------------------------------- */
 /* Form Radio/Checkbox                                                                                  */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -2244,8 +2306,14 @@
 
 @form-input-toggles-inline-padding-horizontal:							15px;
 
-@form-input-radio-height:												14px;
+@form-input-radio-height:												12px;
 @form-input-checkbox-height:											12px;
+
+// Responsive Sizing
+
+@form-input-toggles-responsive-ratio-widescreen:						@body-text-responsive-ratio-widescreen;
+@form-input-toggles-responsive-ratio-tablet:							@body-text-responsive-ratio-tablet;
+@form-input-toggles-responsive-ratio-mobile:							@body-text-responsive-ratio-mobile;
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* Default Form Input                                                                                   */
@@ -2399,199 +2467,199 @@
 /* Success Form Input                                                                                   */
 /* ---------------------------------------------------------------------------------------------------- */
 
-@form-input-success-text-color:											@body-text-color;
+@form-input-success-text-color:											@green;
 @form-input-success-text-shadow:										none;
-@form-input-success-placeholder-text-color:								@gray;
-@form-input-success-background-color:									@white;
+@form-input-success-placeholder-text-color:								@green-lighten-50;
+@form-input-success-background-color:									@green-lighten-95;
 @form-input-success-background-gradient-top-color:						none;
 @form-input-success-background-gradient-bottom-color:					none;
 @form-input-success-border-color:										none;
-@form-input-success-shadow:												0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+@form-input-success-shadow:												0px 0px 0px 1px hsla(hue(@green), saturation(@green), lightness(@green), 0.5);
 
-@form-input-success-focus-text-color:									@blue;
+@form-input-success-focus-text-color:									@green;
 @form-input-success-focus-text-shadow:									none;
-@form-input-success-focus-placeholder-text-color:						@blue-lighten-65;
-@form-input-success-focus-background-color:								@blue-lighten-95;
+@form-input-success-focus-placeholder-text-color:						@green-lighten-35;
+@form-input-success-focus-background-color:								@green-lighten-90;
 @form-input-success-focus-background-gradient-top-color:				none;
 @form-input-success-focus-background-gradient-bottom-color:				none;
 @form-input-success-focus-border-color:									none;
-@form-input-success-focus-shadow:										0px 0px 0px 1px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.75),
-			    														0px 0px 4px 2px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.20),
-																		inset 0px 1px 2px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.20);
+@form-input-success-focus-shadow:										0px 0px 0px 1px hsla(hue(@green), saturation(@green), lightness(@green), 0.75),
+			    														0px 0px 4px 2px hsla(hue(@green), saturation(@green), lightness(@green), 0.20),
+																		inset 0px 1px 2px 0px hsla(hue(@green), saturation(@green), lightness(@green), 0.20);
 
 @form-input-success-disabled-opacity:									75;
-@form-input-success-disabled-text-color:								@body-text-color;
+@form-input-success-disabled-text-color:								@green;
 @form-input-success-disabled-text-shadow:								none;
-@form-input-success-disabled-placeholder-text-color:					@gray;
-@form-input-success-disabled-background-color:							@gray-lighten-90;
+@form-input-success-disabled-placeholder-text-color:					@green-lighten-50;
+@form-input-success-disabled-background-color:							@green-lighten-95;
 @form-input-success-disabled-background-gradient-top-color:				none;
 @form-input-success-disabled-background-gradient-bottom-color:			none;
 @form-input-success-disabled-border-color:								none;
-@form-input-success-disabled-shadow:									0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+@form-input-success-disabled-shadow:									0px 0px 0px 1px hsla(hue(@green), saturation(@green), lightness(@green), 0.5);
 
 // Inverse
 
-@form-input-success-inverse-text-color:									@body-text-color;
+@form-input-success-inverse-text-color:									@green;
 @form-input-success-inverse-text-shadow:								none;
-@form-input-success-inverse-placeholder-text-color:						@gray;
-@form-input-success-inverse-background-color:							@white;
+@form-input-success-inverse-placeholder-text-color:						@green-lighten-50;
+@form-input-success-inverse-background-color:							@green-lighten-95;
 @form-input-success-inverse-background-gradient-top-color:				none;
 @form-input-success-inverse-background-gradient-bottom-color:			none;
 @form-input-success-inverse-border-color:								none;
-@form-input-success-inverse-shadow:										0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+@form-input-success-inverse-shadow:										0px 0px 0px 1px hsla(hue(@green), saturation(@green), lightness(@green), 0.5);
 
-@form-input-success-inverse-focus-text-color:							@blue;
+@form-input-success-inverse-focus-text-color:							@green;
 @form-input-success-inverse-focus-text-shadow:							none;
-@form-input-success-inverse-focus-placeholder-text-color:				@blue-lighten-65;
-@form-input-success-inverse-focus-background-color:						@blue-lighten-95;
+@form-input-success-inverse-focus-placeholder-text-color:				@green-lighten-35;
+@form-input-success-inverse-focus-background-color:						@green-lighten-90;
 @form-input-success-inverse-focus-background-gradient-top-color:		none;
 @form-input-success-inverse-focus-background-gradient-bottom-color:		none;
 @form-input-success-inverse-focus-border-color:							none;
-@form-input-success-inverse-focus-shadow:								0px 0px 0px 1px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.75),
-			    														0px 0px 4px 2px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.20),
-																		inset 0px 1px 2px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.20);
+@form-input-success-inverse-focus-shadow:								0px 0px 0px 1px hsla(hue(@green), saturation(@green), lightness(@green), 0.75),
+			    														0px 0px 4px 2px hsla(hue(@green), saturation(@green), lightness(@green), 0.20),
+																		inset 0px 1px 2px 0px hsla(hue(@green), saturation(@green), lightness(@green), 0.20);
 
 @form-input-success-inverse-disabled-opacity:							75;
-@form-input-success-inverse-disabled-text-color:						@body-text-color;
+@form-input-success-inverse-disabled-text-color:						@green;
 @form-input-success-inverse-disabled-text-shadow:						none;
-@form-input-success-inverse-disabled-placeholder-text-color:			@gray;
-@form-input-success-inverse-disabled-background-color:					@gray-lighten-90;
+@form-input-success-inverse-disabled-placeholder-text-color:			@green-lighten-50;
+@form-input-success-inverse-disabled-background-color:					@green-lighten-95;
 @form-input-success-inverse-disabled-background-gradient-top-color:		none;
 @form-input-success-inverse-disabled-background-gradient-bottom-color:	none;
 @form-input-success-inverse-disabled-border-color:						none;
-@form-input-success-inverse-disabled-shadow:							0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+@form-input-success-inverse-disabled-shadow:							0px 0px 0px 1px hsla(hue(@green), saturation(@green), lightness(@green), 0.5);
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* Warning Form Input                                                                                   */
 /* ---------------------------------------------------------------------------------------------------- */
 
-@form-input-warning-text-color:											@body-text-color;
+@form-input-warning-text-color:											@orange;
 @form-input-warning-text-shadow:										none;
-@form-input-warning-placeholder-text-color:								@gray;
-@form-input-warning-background-color:									@white;
+@form-input-warning-placeholder-text-color:								@orange-lighten-60;
+@form-input-warning-background-color:									@orange-lighten-95;
 @form-input-warning-background-gradient-top-color:						none;
 @form-input-warning-background-gradient-bottom-color:					none;
 @form-input-warning-border-color:										none;
-@form-input-warning-shadow:												0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+@form-input-warning-shadow:												0px 0px 0px 1px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.5);
 
-@form-input-warning-focus-text-color:									@blue;
+@form-input-warning-focus-text-color:									@orange;
 @form-input-warning-focus-text-shadow:									none;
-@form-input-warning-focus-placeholder-text-color:						@blue-lighten-65;
-@form-input-warning-focus-background-color:								@blue-lighten-95;
+@form-input-warning-focus-placeholder-text-color:						@orange-lighten-45;
+@form-input-warning-focus-background-color:								@orange-lighten-90;
 @form-input-warning-focus-background-gradient-top-color:				none;
 @form-input-warning-focus-background-gradient-bottom-color:				none;
 @form-input-warning-focus-border-color:									none;
-@form-input-warning-focus-shadow:										0px 0px 0px 1px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.75),
-			    														0px 0px 4px 2px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.20),
-																		inset 0px 1px 2px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.20);
+@form-input-warning-focus-shadow:										0px 0px 0px 1px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.75),
+			    														0px 0px 4px 2px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.20),
+																		inset 0px 1px 2px 0px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.20);
 
 @form-input-warning-disabled-opacity:									75;
-@form-input-warning-disabled-text-color:								@body-text-color;
+@form-input-warning-disabled-text-color:								@orange;
 @form-input-warning-disabled-text-shadow:								none;
-@form-input-warning-disabled-placeholder-text-color:					@gray;
-@form-input-warning-disabled-background-color:							@gray-lighten-90;
+@form-input-warning-disabled-placeholder-text-color:					@orange-lighten-60;
+@form-input-warning-disabled-background-color:							@orange-lighten-95;
 @form-input-warning-disabled-background-gradient-top-color:				none;
 @form-input-warning-disabled-background-gradient-bottom-color:			none;
 @form-input-warning-disabled-border-color:								none;
-@form-input-warning-disabled-shadow:									0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+@form-input-warning-disabled-shadow:									0px 0px 0px 1px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.5);
 
 // Inverse
 
-@form-input-warning-inverse-text-color:									@body-text-color;
+@form-input-warning-inverse-text-color:									@orange;
 @form-input-warning-inverse-text-shadow:								none;
-@form-input-warning-inverse-placeholder-text-color:						@gray;
-@form-input-warning-inverse-background-color:							@white;
+@form-input-warning-inverse-placeholder-text-color:						@orange-lighten-60;
+@form-input-warning-inverse-background-color:							@orange-lighten-95;
 @form-input-warning-inverse-background-gradient-top-color:				none;
 @form-input-warning-inverse-background-gradient-bottom-color:			none;
 @form-input-warning-inverse-border-color:								none;
-@form-input-warning-inverse-shadow:										0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+@form-input-warning-inverse-shadow:										0px 0px 0px 1px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.5);
 
-@form-input-warning-inverse-focus-text-color:							@blue;
+@form-input-warning-inverse-focus-text-color:							@orange;
 @form-input-warning-inverse-focus-text-shadow:							none;
-@form-input-warning-inverse-focus-placeholder-text-color:				@blue-lighten-65;
-@form-input-warning-inverse-focus-background-color:						@blue-lighten-95;
+@form-input-warning-inverse-focus-placeholder-text-color:				@orange-lighten-45;
+@form-input-warning-inverse-focus-background-color:						@orange-lighten-90;
 @form-input-warning-inverse-focus-background-gradient-top-color:		none;
 @form-input-warning-inverse-focus-background-gradient-bottom-color:		none;
 @form-input-warning-inverse-focus-border-color:							none;
-@form-input-warning-inverse-focus-shadow:								0px 0px 0px 1px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.75),
-			    														0px 0px 4px 2px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.20),
-																		inset 0px 1px 2px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.20);
+@form-input-warning-inverse-focus-shadow:								0px 0px 0px 1px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.75),
+			    														0px 0px 4px 2px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.20),
+																		inset 0px 1px 2px 0px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.20);
 
 @form-input-warning-inverse-disabled-opacity:							75;
-@form-input-warning-inverse-disabled-text-color:						@body-text-color;
+@form-input-warning-inverse-disabled-text-color:						@orange;
 @form-input-warning-inverse-disabled-text-shadow:						none;
-@form-input-warning-inverse-disabled-placeholder-text-color:			@gray;
-@form-input-warning-inverse-disabled-background-color:					@gray-lighten-90;
+@form-input-warning-inverse-disabled-placeholder-text-color:			@orange-lighten-60;
+@form-input-warning-inverse-disabled-background-color:					@orange-lighten-95;
 @form-input-warning-inverse-disabled-background-gradient-top-color:		none;
 @form-input-warning-inverse-disabled-background-gradient-bottom-color:	none;
 @form-input-warning-inverse-disabled-border-color:						none;
-@form-input-warning-inverse-disabled-shadow:							0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+@form-input-warning-inverse-disabled-shadow:							0px 0px 0px 1px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.5);
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* Error Form Input                                                                                     */
 /* ---------------------------------------------------------------------------------------------------- */
 
-@form-input-error-text-color:											@body-text-color;
+@form-input-error-text-color:											@red;
 @form-input-error-text-shadow:											none;
-@form-input-error-placeholder-text-color:								@gray;
-@form-input-error-background-color:										@white;
+@form-input-error-placeholder-text-color:								@red-lighten-65;
+@form-input-error-background-color:										@red-lighten-95;
 @form-input-error-background-gradient-top-color:						none;
 @form-input-error-background-gradient-bottom-color:						none;
 @form-input-error-border-color:											none;
-@form-input-error-shadow:												0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+@form-input-error-shadow:												0px 0px 0px 1px hsla(hue(@red), saturation(@red), lightness(@red), 0.5);
 
-@form-input-error-focus-text-color:										@blue;
+@form-input-error-focus-text-color:										@red;
 @form-input-error-focus-text-shadow:									none;
-@form-input-error-focus-placeholder-text-color:							@blue-lighten-65;
-@form-input-error-focus-background-color:								@blue-lighten-95;
+@form-input-error-focus-placeholder-text-color:							@red-lighten-50;
+@form-input-error-focus-background-color:								@red-lighten-90;
 @form-input-error-focus-background-gradient-top-color:					none;
 @form-input-error-focus-background-gradient-bottom-color:				none;
 @form-input-error-focus-border-color:									none;
-@form-input-error-focus-shadow:											0px 0px 0px 1px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.75),
-			    														0px 0px 4px 2px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.20),
-																		inset 0px 1px 2px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.20);
+@form-input-error-focus-shadow:											0px 0px 0px 1px hsla(hue(@red), saturation(@red), lightness(@red), 0.75),
+			    														0px 0px 4px 2px hsla(hue(@red), saturation(@red), lightness(@red), 0.20),
+																		inset 0px 1px 2px 0px hsla(hue(@red), saturation(@red), lightness(@red), 0.20);
 
 @form-input-error-disabled-opacity:										75;
-@form-input-error-disabled-text-color:									@body-text-color;
+@form-input-error-disabled-text-color:									@red;
 @form-input-error-disabled-text-shadow:									none;
-@form-input-error-disabled-placeholder-text-color:						@gray;
-@form-input-error-disabled-background-color:							@gray-lighten-90;
+@form-input-error-disabled-placeholder-text-color:						@red-lighten-65;
+@form-input-error-disabled-background-color:							@red-lighten-95;
 @form-input-error-disabled-background-gradient-top-color:				none;
 @form-input-error-disabled-background-gradient-bottom-color:			none;
 @form-input-error-disabled-border-color:								none;
-@form-input-error-disabled-shadow:										0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+@form-input-error-disabled-shadow:										0px 0px 0px 1px hsla(hue(@red), saturation(@red), lightness(@red), 0.5);
 
 // Inverse
 
-@form-input-error-inverse-text-color:									@body-text-color;
+@form-input-error-inverse-text-color:									@red;
 @form-input-error-inverse-text-shadow:									none;
-@form-input-error-inverse-placeholder-text-color:						@gray;
-@form-input-error-inverse-background-color:								@white;
+@form-input-error-inverse-placeholder-text-color:						@red-lighten-65;
+@form-input-error-inverse-background-color:								@red-lighten-95;
 @form-input-error-inverse-background-gradient-top-color:				none;
 @form-input-error-inverse-background-gradient-bottom-color:				none;
 @form-input-error-inverse-border-color:									none;
-@form-input-error-inverse-shadow:										0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+@form-input-error-inverse-shadow:										0px 0px 0px 1px hsla(hue(@red), saturation(@red), lightness(@red), 0.5);
 
-@form-input-error-inverse-focus-text-color:								@blue;
+@form-input-error-inverse-focus-text-color:								@red;
 @form-input-error-inverse-focus-text-shadow:							none;
-@form-input-error-inverse-focus-placeholder-text-color:					@blue-lighten-65;
-@form-input-error-inverse-focus-background-color:						@blue-lighten-95;
+@form-input-error-inverse-focus-placeholder-text-color:					@red-lighten-50;
+@form-input-error-inverse-focus-background-color:						@red-lighten-90;
 @form-input-error-inverse-focus-background-gradient-top-color:			none;
 @form-input-error-inverse-focus-background-gradient-bottom-color:		none;
 @form-input-error-inverse-focus-border-color:							none;
-@form-input-error-inverse-focus-shadow:									0px 0px 0px 1px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.75),
-			    														0px 0px 4px 2px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.20),
-																		inset 0px 1px 2px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.20);
+@form-input-error-inverse-focus-shadow:									0px 0px 0px 1px hsla(hue(@red), saturation(@red), lightness(@red), 0.75),
+			    														0px 0px 4px 2px hsla(hue(@red), saturation(@red), lightness(@red), 0.20),
+																		inset 0px 1px 2px 0px hsla(hue(@red), saturation(@red), lightness(@red), 0.20);
 
 @form-input-error-inverse-disabled-opacity:								75;
-@form-input-error-inverse-disabled-text-color:							@body-text-color;
+@form-input-error-inverse-disabled-text-color:							@red;
 @form-input-error-inverse-disabled-text-shadow:							none;
-@form-input-error-inverse-disabled-placeholder-text-color:				@gray;
-@form-input-error-inverse-disabled-background-color:					@gray-lighten-90;
+@form-input-error-inverse-disabled-placeholder-text-color:				@red-lighten-65;
+@form-input-error-inverse-disabled-background-color:					@red-lighten-95;
 @form-input-error-inverse-disabled-background-gradient-top-color:		none;
 @form-input-error-inverse-disabled-background-gradient-bottom-color:	none;
 @form-input-error-inverse-disabled-border-color:						none;
-@form-input-error-inverse-disabled-shadow:								0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+@form-input-error-inverse-disabled-shadow:								0px 0px 0px 1px hsla(hue(@red), saturation(@red), lightness(@red), 0.5);
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* Input Add-On                                                                                         */
@@ -2605,6 +2673,12 @@
 @form-input-add-on-text-transform:										@form-input-text-transform;
 @form-input-add-on-text-font-style:										@form-input-text-font-style;
 
+// Responsive Sizing
+
+@form-input-add-on-responsive-ratio-widescreen:							@form-input-responsive-ratio-widescreen;
+@form-input-add-on-responsive-ratio-tablet:								@form-input-responsive-ratio-tablet;
+@form-input-add-on-responsive-ratio-mobile:								@form-input-responsive-ratio-mobile;
+
 /* ---------------------------------------------------------------------------------------------------- */
 /* Large Form Input                                                                                     */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -2616,6 +2690,12 @@
 @form-input-add-on-large-text-transform:								@form-input-large-text-transform;
 @form-input-add-on-large-text-font-style:								@form-input-large-text-font-style;
 
+// Responsive Sizing
+
+@form-input-add-on-large-responsive-ratio-widescreen:					@form-input-large-responsive-ratio-widescreen;
+@form-input-add-on-large-responsive-ratio-tablet:						@form-input-large-responsive-ratio-tablet;
+@form-input-add-on-large-responsive-ratio-mobile:						@form-input-large-responsive-ratio-mobile;
+
 /* ---------------------------------------------------------------------------------------------------- */
 /* Small Form Input                                                                                     */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -2626,6 +2706,12 @@
 @form-input-add-on-small-text-line-height:								@form-input-small-text-line-height;
 @form-input-add-on-small-text-transform:								@form-input-small-text-transform;
 @form-input-add-on-small-text-font-style:								@form-input-small-text-font-style;
+
+// Responsive Sizing
+
+@form-input-add-on-small-responsive-ratio-widescreen:					@form-input-small-responsive-ratio-widescreen;
+@form-input-add-on-small-responsive-ratio-tablet:						@form-input-small-responsive-ratio-tablet;
+@form-input-add-on-small-responsive-ratio-mobile:						@form-input-small-responsive-ratio-mobile;
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* Default Input Add-On                                                                                 */
@@ -2639,266 +2725,6 @@
 @form-input-add-on-default-border-color:								none;
 @form-input-add-on-default-shadow:										1px 0px 0px 0px rgba(0, 0, 0, 0.15);
 @form-input-add-on-append-default-shadow:								-1px 0px 0px 0px rgba(0, 0, 0, 0.15);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Forms                                                                                                */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-// Input Sizes
-
-@inputHeight:													@buttonHeight;
-@inputHeightLarge:												@buttonHeightLarge;
-
-// Form Labels
-
-@formLabelTextFontFamily:										@font-family-primary;
-@formLabelTextFontSize:											@body-text-font-size - 1;
-@formLabelTextFontWeight:										600;
-@formLabelTextFontStyle:										normal;
-@formLabelTextLineHeight:										@body-text-line-height;
-@formLabelTextColor:											@gray;
-@formLabelTextTransform:										uppercase;
-@formLabelMargin:												@body-text-margin-bottom / 2;
-
-// Help Labels
-
-@helpLabelTextFontFamily:										@font-family-primary;
-@helpLabelTextFontSize:											@body-text-font-size - 2;
-@helpLabelTextFontWeight:										400;
-@helpLabelTextFontStyle:										italic;
-@helpLabelTextLineHeight:										@body-text-line-height;
-@helpLabelTextColor:											@body-text-color;
-@helpLabelTextTransform:										normal;
-@helpLabelMargin:												@body-text-margin-bottom;
-
-// Universal Input Attributes
-	
-@inputBorderRadius:												3px;
-@inputHorizontalPadding:										10px;
-@inputTextFontFamily:											@font-family-primary;
-@inputTextFontSize:												@body-text-font-size;
-@inputTextFontWeight:											@body-text-font-weight;
-@inputTextFontStyle:											normal;
-@inputTextLineHeight:											@body-text-line-height;
-@inputTextTransform:											none;
-
-@inputMargin:													@primary-margin / 2;
-@inputMarginWidescreen:											@primary-margin-widescreen / 2;
-@inputMarginTablet:												@primary-margin-tablet / 2;
-@inputMarginMobile:												@primary-margin-mobile / 2;
-
-@inputMarginShort:												@primary-margin-short / 2;
-@inputMarginShortWidescreen:									@primary-margin-short-widescreen / 2;
-@inputMarginShortTablet:										@primary-margin-short-tablet / 2;
-@inputMarginShortMobile:										@primary-margin-mobile / 2;
-
-@inputMarginTall:												@primary-margin-tall / 2;
-@inputMarginTallWidescreen:										@primary-margin-tall-widescreen / 2;
-@inputMarginTallTablet:											@primary-margin-tall-tablet / 2;
-@inputMarginTallMobile:											@primary-margin-tall-mobile / 2;
-
-// Large Input Attributes
-
-@inputBorderRadiusLarge:										6px;
-@inputHorizontalPaddingLarge:									@buttonHorizontalPadding * 2.0;
-@inputTextFontSizeLarge:										@body-text-font-size + 2;
-@inputTextFontWeightLarge:										500;
-@inputTextLineHeightLarge:										@body-text-line-height + 2;
-
-// Default Input
-
-@inputTextColor:												@body-text-color;
-@inputTextShadow:												none;
-@inputPlaceholderTextColor:										@gray;
-@inputBackgroundColor:											@white;
-@inputBackgroundGradientColorTop:								none;
-@inputBackgroundGradientColorBottom:							none;
-@inputShadow:													0px 0px 0px 1px rgba(0, 0, 0, 0.2);
-
-@inputFocusTextColor:											@blue;
-@inputFocusTextShadow:											none;
-@inputFocusPlaceholderTextColor:								hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.5);
-@inputFocusBackgroundColor:										@blue-lighten-90;
-@inputFocusBackgroundGradientColorTop:							none;
-@inputFocusBackgroundGradientColorBottom:						none;
-@inputFocusShadow:												0px 0px 0px 1px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.75),
-			    												0px 0px 5px 3px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.25),
-																inset 0px 1px 3px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.15);
-
-@inputDisabledTextColor:										@body-text-color;
-@inputDisabledTextShadow:										none;
-@inputDisabledPlaceholderTextColor:								@gray;
-@inputDisabledBackgroundColor:									@white;
-@inputDisabledBackgroundGradientColorTop:						none;
-@inputDisabledBackgroundGradientColorBottom:					none;
-@inputDisabledShadow:											0px 0px 0px 1px rgba(0, 0, 0, 0.2);
-@inputDisabledOpacity:											50;
-
-// Success Input
-
-@formLabelSuccessTextColor:										@green;
-@helpLabelSuccessTextColor:										@green-lighten-20;
-
-@inputSuccessTextColor:											@green;
-@inputSuccessTextShadow:										none;
-@inputSuccessPlaceholderTextColor:								@green-lighten-50;
-@inputSuccessBackgroundColor:									@green-lighten-90;
-@inputSuccessBackgroundGradientColorTop:						none;
-@inputSuccessBackgroundGradientColorBottom:						none;
-@inputSuccessShadow:											0px 0px 0px 1px hsla(hue(@green), saturation(@green), lightness(@green), 0.6),
-	    														inset 0px 1px 3px 0px hsla(hue(@green-lighten-50), saturation(@green-lighten-50), lightness(@green-lighten-50), 0.15);
-
-@inputSuccessFocusTextColor:									@green;
-@inputSuccessFocusTextShadow:									none;
-@inputSuccessFocusPlaceholderTextColor:							@green;
-@inputSuccessFocusBackgroundColor:								@green-lighten-80;
-@inputSuccessFocusBackgroundGradientColorTop:					none;
-@inputSuccessFocusBackgroundGradientColorBottom:				none;
-@inputSuccessFocusShadow:										0px 0px 0px 1px hsla(hue(@green), saturation(@green), lightness(@green), 0.75),
-			    												0px 0px 5px 3px hsla(hue(@green), saturation(@green), lightness(@green), 0.25),
-																inset 0px 1px 3px 0px hsla(hue(@green), saturation(@green), lightness(@green), 0.15);
-
-@inputSuccessDisabledTextColor:									@green;
-@inputSuccessDisabledTextShadow:								none;
-@inputSuccessDisabledPlaceholderTextColor:						@green-lighten-50;
-@inputSuccessDisabledBackgroundColor:							@green-lighten-90;
-@inputSuccessDisabledBackgroundGradientColorTop:				none;
-@inputSuccessDisabledBackgroundGradientColorBottom:				none;
-@inputSuccessDisabledShadow:									0px 0px 0px 1px hsla(hue(@green), saturation(@green), lightness(@green), 0.6);
-@inputSuccessDisabledOpacity:									50;
-
-// Warning Input
-
-@formLabelWarningTextColor:										@orange;
-@helpLabelWarningTextColor:										@orange-lighten-30;
-
-@inputWarningTextColor:											@orange;
-@inputWarningTextShadow:										none;
-@inputWarningPlaceholderTextColor:								@orange-lighten-50;
-@inputWarningBackgroundColor:									@orange-lighten-90;
-@inputWarningBackgroundGradientColorTop:						none;
-@inputWarningBackgroundGradientColorBottom:						none;
-@inputWarningShadow:											0px 0px 0px 1px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.6),
-	    														inset 0px 1px 3px 0px hsla(hue(@orange-lighten-50), saturation(@orange-lighten-50), lightness(@orange-lighten-50), 0.15);
-
-@inputWarningFocusTextColor:									@orange;
-@inputWarningFocusTextShadow:									none;
-@inputWarningFocusPlaceholderTextColor:							@orange;
-@inputWarningFocusBackgroundColor:								@orange-lighten-80;
-@inputWarningFocusBackgroundGradientColorTop:					none;
-@inputWarningFocusBackgroundGradientColorBottom:				none;
-@inputWarningFocusShadow:										0px 0px 0px 1px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.75),
-			    												0px 0px 5px 3px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.25),
-																inset 0px 1px 3px 0px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.15);
-
-@inputWarningDisabledTextColor:									@orange;
-@inputWarningDisabledTextShadow:								none;
-@inputWarningDisabledPlaceholderTextColor:						@orange-lighten-50;
-@inputWarningDisabledBackgroundColor:							@orange-lighten-90;
-@inputWarningDisabledBackgroundGradientColorTop:				none;
-@inputWarningDisabledBackgroundGradientColorBottom:				none;
-@inputWarningDisabledShadow:									0px 0px 0px 1px hsla(hue(@orange), saturation(@orange), lightness(@orange), 0.6);
-@inputWarningDisabledOpacity:									50;
-
-// Error Input
-
-@formLabelErrorTextColor:										@red;
-@helpLabelErrorTextColor:										@red-lighten-30;
-
-@inputErrorTextColor:											@red;
-@inputErrorTextShadow:											none;
-@inputErrorPlaceholderTextColor:								@red-lighten-50;
-@inputErrorBackgroundColor:										@red-lighten-90;
-@inputErrorBackgroundGradientColorTop:							none;
-@inputErrorBackgroundGradientColorBottom:						none;
-@inputErrorShadow:												0px 0px 0px 1px hsla(hue(@red), saturation(@red), lightness(@red), 0.6),
-	    														inset 0px 1px 3px 0px hsla(hue(@red-lighten-50), saturation(@red-lighten-50), lightness(@red-lighten-50), 0.15);
-
-@inputErrorFocusTextColor:										@red;
-@inputErrorFocusTextShadow:										none;
-@inputErrorFocusPlaceholderTextColor:							@red;
-@inputErrorFocusBackgroundColor:								@red-lighten-80;
-@inputErrorFocusBackgroundGradientColorTop:						none;
-@inputErrorFocusBackgroundGradientColorBottom:					none;
-@inputErrorFocusShadow:											0px 0px 0px 1px hsla(hue(@red), saturation(@red), lightness(@red), 0.75),
-			    												0px 0px 5px 3px hsla(hue(@red), saturation(@red), lightness(@red), 0.25),
-																inset 0px 1px 3px 0px hsla(hue(@red), saturation(@red), lightness(@red), 0.15);
-
-@inputErrorDisabledTextColor:									@red;
-@inputErrorDisabledTextShadow:									none;
-@inputErrorDisabledPlaceholderTextColor:						@red-lighten-50;
-@inputErrorDisabledBackgroundColor:								@red-lighten-90;
-@inputErrorDisabledBackgroundGradientColorTop:					none;
-@inputErrorDisabledBackgroundGradientColorBottom:				none;
-@inputErrorDisabledShadow:										0px 0px 0px 1px hsla(hue(@red), saturation(@red), lightness(@red), 0.6);
-@inputErrorDisabledOpacity:										50;
-
-// Input Group Button Styling
-
-@inputGroupButtonShadow:										inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
-																0px 0px 0px 1px rgba(0, 0, 0, 0.15);
-@inputGroupButtonHoverShadow:									inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
-																0px 0px 0px 1px rgba(0, 0, 0, 0.25);
-@inputGroupButtonActiveShadow:									inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px rgba(0, 0, 0, 0.3);
-@inputGroupButtonDisabledShadow:								inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
-																0px 0px 0px 1px rgba(0, 0, 0, 0.15);
-
-@inputGroupButtonPrimaryShadow:									inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@blue-darken-40), saturation(@blue-darken-40), lightness(@blue-darken-40), 0.75);
-@inputGroupButtonPrimaryHoverShadow:							inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@blue-darken-60), saturation(@blue-darken-60), lightness(@blue-darken-60), 0.75);
-@inputGroupButtonPrimaryActiveShadow:							inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@blue-darken-60), saturation(@blue-darken-60), lightness(@blue-darken-60), 0.75);
-@inputGroupButtonPrimaryDisabledShadow:							inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@blue-darken-40), saturation(@blue-darken-40), lightness(@blue-darken-40), 0.75);
-
-@inputGroupButtonSuccessShadow:									inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@green-darken-40), saturation(@green-darken-40), lightness(@green-darken-40), 0.75);
-@inputGroupButtonSuccessHoverShadow:							inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@green-darken-60), saturation(@green-darken-60), lightness(@green-darken-60), 0.75);
-@inputGroupButtonSuccessActiveShadow:							inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@green-darken-60), saturation(@green-darken-60), lightness(@green-darken-60), 0.75);
-@inputGroupButtonSuccessDisabledShadow:							inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@green-darken-40), saturation(@green-darken-40), lightness(@green-darken-40), 0.75);
-
-@inputGroupButtonWarningShadow:									inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@orange-darken-50), saturation(@orange-darken-50), lightness(@orange-darken-50), 0.75);
-@inputGroupButtonWarningHoverShadow:							inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@orange-darken-60), saturation(@orange-darken-60), lightness(@orange-darken-60), 0.75);
-@inputGroupButtonWarningActiveShadow:							inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@orange-darken-60), saturation(@orange-darken-60), lightness(@orange-darken-60), 0.75);
-@inputGroupButtonWarningDisabledShadow:							inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@orange-darken-50), saturation(@orange-darken-50), lightness(@orange-darken-50), 0.75);
-
-@inputGroupButtonDangerShadow:									inset 0px 1px 0px 0px hsla(hue(@red-lighten-20), saturation(@red-lighten-20), lightness(@red-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@red-darken-50), saturation(@red-darken-50), lightness(@red-darken-50), 0.75);
-@inputGroupButtonDangerHoverShadow:								inset 0px 1px 0px 0px hsla(hue(@red-lighten-20), saturation(@red-lighten-20), lightness(@red-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@red-darken-60), saturation(@red-darken-60), lightness(@red-darken-60), 0.75);
-@inputGroupButtonDangerActiveShadow:							inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@red-darken-60), saturation(@red-darken-60), lightness(@red-darken-60), 0.75);
-@inputGroupButtonDangerDisabledShadow:							inset 0px 1px 0px 0px hsla(hue(@red-lighten-20), saturation(@red-lighten-20), lightness(@red-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@red-darken-50), saturation(@red-darken-50), lightness(@red-darken-50), 0.75);
-
-
-
-
-
 
 
 

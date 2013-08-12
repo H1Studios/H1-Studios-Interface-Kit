@@ -31,6 +31,14 @@ form {
 	
 }
 
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Fieldset                                                                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
 fieldset {
 	
 	padding: 0px;
@@ -38,6 +46,14 @@ fieldset {
 	border: 0px;
 	
 }
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Legend                                                                                               */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
 legend {
 	
@@ -129,6 +145,36 @@ label {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
+/* Help Block                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.help-block {
+	
+	display: block;
+	margin-bottom: 0px;
+	font-family: @form-help-block-text-font-family;
+	font-size: @form-help-block-text-font-size;
+	font-weight: @form-help-block-text-font-weight;
+	line-height: @form-help-block-text-line-height;
+	text-transform: @form-help-block-text-transform;
+	font-style: @form-help-block-text-font-style;
+	color: @form-help-block-text-color;
+	
+	&.help-block-inline {
+		
+		display: inline-block;
+		.ie7-inline-block();
+		vertical-align: middle;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Inputs                                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
@@ -183,7 +229,8 @@ textarea {
 	
 	+ .help-block {
 		
-		margin-top: -@form-input-margin;
+		margin-top: -@form-input-margin + @form-help-block-margin;
+		margin-bottom: @form-input-margin;
 		
 	}
 	
@@ -193,7 +240,8 @@ textarea {
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-tall;
+			margin-top: -@form-input-margin-tall + @form-help-block-margin;
+			margin-bottom: @form-input-margin-tall;
 			
 		}
 		
@@ -205,10 +253,22 @@ textarea {
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-short;
+			margin-top: -@form-input-margin-short + @form-help-block-margin;
+			margin-bottom: @form-input-margin-short;
 			
 		}
 		
+		
+	}
+	
+	&.flush-bottom {
+		
+		+ .help-block {
+			
+			margin-top: @form-help-block-margin;
+			margin-bottom: 0px;
+			
+		}
 		
 	}
 	
@@ -235,6 +295,7 @@ textarea {
 	&[disabled],
 	&[readonly] {
 		
+		cursor: not-allowed;
 		.opacity(@form-input-default-disabled-opacity);
 		.input-states (
 			
@@ -250,7 +311,7 @@ textarea {
 		);
 		
 	}
-	
+		
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* Inverse                                                                                              */
 	/* ---------------------------------------------------------------------------------------------------- */
@@ -587,7 +648,8 @@ textarea {
 	/* Error                                                                                                */
 	/* ---------------------------------------------------------------------------------------------------- */
 	
-	&.input-error {
+	&.input-error,
+	&:required:invalid {
 		
 		.input-states (
 			
@@ -746,7 +808,7 @@ input[type="checkbox"] {
 .checkbox {
 	
 	position: relative;
-	padding: 0px 0px 0px (@form-input-radio-height * 2);
+	padding: 0px 0px 0px (@form-input-radio-height + @form-input-toggles-inline-padding-horizontal);
 	min-height: @form-input-toggles-text-line-height;
 	margin-bottom: @form-input-margin;
 	font-family: @form-input-toggles-text-font-family;
@@ -756,28 +818,42 @@ input[type="checkbox"] {
 	text-transform: @form-input-toggles-text-transform;
 	font-style: @form-input-toggles-text-font-style;
 	
-	+ .help-block {
-		
-		margin-top: -(@form-input-radio-height * 2);
-		
-	}
-	
 	input[type="radio"] {
 		
 		position: absolute;
-		margin: 0px 0px 0px -25px;
+		margin: 0px 0px 0px -(@form-input-radio-height + @form-input-toggles-inline-padding-horizontal);
 		top: (@body-text-line-height / 2) - (@form-input-radio-height / 2);
 		width: auto !important;
+		
+		&[disabled],
+		&[readonly] {
+			
+			background-color: transparent;
+			
+		}
 		
 	}
 	
 	input[type="checkbox"] {
 		
 		position: absolute;
-		margin: 0px 0px 0px -25px;
-		@input-checkbox-height: 12px;
+		margin: 0px 0px 0px -(@form-input-checkbox-height + @form-input-toggles-inline-padding-horizontal);
 		top: (@body-text-line-height / 2) - (@form-input-checkbox-height / 2);
 		width: auto !important;
+		
+		&[disabled],
+		&[readonly] {
+			
+			background-color: transparent;
+			
+		}
+		
+	}
+	
+	+ .help-block {
+		
+		margin-top: -@form-input-margin + @form-help-block-margin;
+		margin-bottom: @form-input-margin;
 		
 	}
 	
@@ -787,7 +863,8 @@ input[type="checkbox"] {
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-tall;
+			margin-top: -@form-input-margin-tall + @form-help-block-margin;
+			margin-bottom: @form-input-margin-tall;
 			
 		}
 		
@@ -799,10 +876,21 @@ input[type="checkbox"] {
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-short;
+			margin-top: -@form-input-margin-short + @form-help-block-margin;
+			margin-bottom: @form-input-margin-short;
 			
 		}
 		
+	}
+	
+	&.flush-bottom {
+		
+		+ .help-block {
+			
+			margin-top: @form-help-block-margin;
+			margin-bottom: 0px;
+			
+		}
 		
 	}
 	
@@ -923,7 +1011,8 @@ select {
 	
 	+ .help-block {
 		
-		margin-top: -@form-input-margin;
+		margin-top: -@form-input-margin + @form-help-block-margin;
+		margin-bottom: @form-input-margin;
 		
 	}
 	
@@ -933,7 +1022,8 @@ select {
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-tall;
+			margin-top: -@form-input-margin-tall + @form-help-block-margin;
+			margin-bottom: @form-input-margin-tall;
 			
 		}
 		
@@ -945,13 +1035,31 @@ select {
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-short;
+			margin-top: -@form-input-margin-short + @form-help-block-margin;
+			margin-bottom: @form-input-margin-short;
 			
 		}
 		
+	}
+	
+	&.flush-bottom {
+		
+		+ .help-block {
+			
+			margin-top: @form-help-block-margin;
+			margin-bottom: 0px;
+			
+		}
 		
 	}
 	
+	&[disabled],
+	&[readonly] {
+	
+	cursor: not-allowed;
+	
+	}
+		
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* Large Input                                                                                          */
 	/* ---------------------------------------------------------------------------------------------------- */
@@ -1246,7 +1354,8 @@ select {
 	
 	+ .help-block {
 		
-		margin-top: -@form-input-margin;
+		margin-top: -@form-input-margin + @form-help-block-margin;
+		margin-bottom: @form-input-margin;
 		
 	}
 	
@@ -1256,7 +1365,8 @@ select {
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-tall;
+			margin-top: -@form-input-margin-tall + @form-help-block-margin;
+			margin-bottom: @form-input-margin-tall;
 			
 		}
 		
@@ -1268,10 +1378,21 @@ select {
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-short;
+			margin-top: -@form-input-margin-short + @form-help-block-margin;
+			margin-bottom: @form-input-margin-short;
 			
 		}
 		
+	}
+	
+	&.flush-bottom {
+		
+		+ .help-block {
+			
+			margin-top: @form-help-block-margin;
+			margin-bottom: 0px;
+			
+		}
 		
 	}
 	
@@ -1434,7 +1555,8 @@ select {
 				
 				&:last-of-type {
 					
-					.border-radius(0px);
+					.border-top-right-radius(0px);
+					.border-bottom-right-radius(0px);
 					
 					&:before {
 						
@@ -1472,7 +1594,8 @@ select {
 				
 				&:first-of-type {
 					
-					.border-radius(0px);
+					.border-top-left-radius(0px);
+					.border-bottom-left-radius(0px);
 					
 				}
 				
@@ -1549,378 +1672,325 @@ select {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Help Text                                                                 */
+/* Form Group                                                                                           */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-.help-block,
-.help-inline {
+.form-group {
 	
-	font-family: @helpLabelTextFontFamily;
-	font-size: @helpLabelTextFontSize;
-	font-weight: @helpLabelTextFontWeight;
-	font-style: @helpLabelTextFontStyle;
-	line-height: @helpLabelTextLineHeight;
-	color: @helpLabelTextColor;
-	text-transform: @helpLabelTextTransform;
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Success                                                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
 	
-}
-
-.help-block {
-	
-	display: block;
-	margin-bottom: @inputMargin;
-	
-	&.tall {
+	&.form-group-success {
 		
-		margin-bottom: @inputMarginTall;
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Label                                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
 		
-	}
-	
-	&.short {
-		
-		margin-bottom: @inputMarginShort;
-		
-	}
-	
-}
-
-.help-inline {
-	
-	display: inline-block;
-	.ie7-inline-block();
-	vertical-align: middle;
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Disabled states                                                           */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-// Disabled and read-only inputs
-
-input[disabled],
-select[disabled],
-textarea[disabled],
-input[readonly],
-select[readonly],
-textarea[readonly] {
-	
-/*
-	cursor: not-allowed;
-	background-color: lighten(@inputDisabledBackground, 3);
-	color: @inputDisabledTextColor;
-	.box-shadow(@inputDisabledShadow);
-	.placeholder(@inputDisabledPlaceholderTextColor);
-*/
-	
-}
-
-// Explicitly reset the colors here
-
-input[type="radio"][disabled],
-input[type="checkbox"][disabled],
-input[type="radio"][readonly],
-input[type="checkbox"][readonly] {
-	
-	background-color: transparent;
-	
-}
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Form States                                                               */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-input:required:invalid,
-textarea:required:invalid,
-select:required:invalid {
-
-	color: @inputErrorFocusTextColor;
-	text-shadow: @inputErrorFocusTextShadow;
-	.placeholder(@inputErrorFocusPlaceholderTextColor);
-	background-color: @inputErrorFocusBackgroundColor;
-	#gradient > .vertical(@inputErrorFocusBackgroundGradientColorTop, @inputErrorFocusBackgroundGradientColorBottom);
-	.box-shadow(@inputErrorFocusShadow);
-		
-}
-
-
-// Warning
-
-.control-group.warning {
-	
-	label {
-		
-		color: @formLabelWarningTextColor;
-		
-	}
-	
-	input,
-	textarea {
-		
-		color: @inputWarningTextColor;
-		text-shadow: @inputWarningTextShadow;
-		.placeholder(@inputWarningPlaceholderTextColor);
-		background-color: @inputWarningBackgroundColor;
-		#gradient > .vertical(@inputWarningBackgroundGradientColorTop, @inputWarningBackgroundGradientColorBottom);
-		.box-shadow(@inputWarningShadow);
-		
-		&:focus,
-		&.focused {
+		label {
 			
-			color: @inputWarningFocusTextColor;
-			text-shadow: @inputWarningFocusTextShadow;
-			.placeholder(@inputWarningFocusPlaceholderTextColor);
-			background-color: @inputWarningFocusBackgroundColor;
-			#gradient > .vertical(@inputWarningFocusBackgroundGradientColorTop, @inputWarningFocusBackgroundGradientColorBottom);
-			.box-shadow(@inputWarningFocusShadow);
+			color: @form-label-success-text-color;
 			
 		}
 		
-		&[disabled],
-		&[readonly] {
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Help Block                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.help-block {
 			
-			color: @inputWarningDisabledTextColor;
-			text-shadow: @inputWarningDisabledTextShadow;
-			.placeholder(@inputWarningDisabledPlaceholderTextColor);
-			background-color: @inputWarningDisabledBackgroundColor;
-			#gradient > .vertical(@inputWarningDisabledBackgroundGradientColorTop, @inputWarningDisabledBackgroundGradientColorBottom);
-			.box-shadow(@inputWarningDisabledShadow);
-			.opacity(@inputWarningDisabledOpacity);
+			color: @form-help-block-success-text-color;
 			
 		}
 		
-	}
-	
-	.help-block,
-	.help-inline {
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input                                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
 		
-		color: @helpLabelWarningTextColor;
-		
-	}
-	
-}
-
-// Success
-
-.control-group.success {
-	
-	label {
-		
-		color: @formLabelSuccessTextColor;
-		
-	}
-	
-	input,
-	textarea {
-		
-		color: @inputSuccessTextColor;
-		text-shadow: @inputSuccessTextShadow;
-		.placeholder(@inputSuccessPlaceholderTextColor);
-		background-color: @inputSuccessBackgroundColor;
-		#gradient > .vertical(@inputSuccessBackgroundGradientColorTop, @inputSuccessBackgroundGradientColorBottom);
-		.box-shadow(@inputSuccessShadow);
-		
-		&:focus,
-		&.focused {
+		input[type="text"],
+		input[type="password"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="date"],
+		input[type="month"],
+		input[type="time"],
+		input[type="week"],
+		input[type="number"],
+		input[type="email"],
+		input[type="url"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="color"],
+		.uneditable-input,
+		textarea {
 			
-			color: @inputSuccessFocusTextColor;
-			text-shadow: @inputSuccessFocusTextShadow;
-			.placeholder(@inputSuccessFocusPlaceholderTextColor);
-			background-color: @inputSuccessFocusBackgroundColor;
-			#gradient > .vertical(@inputSuccessFocusBackgroundGradientColorTop, @inputSuccessFocusBackgroundGradientColorBottom);
-			.box-shadow(@inputSuccessFocusShadow);
-			
-		}
-		
-		&[disabled],
-		&[readonly] {
-			
-			color: @inputSuccessDisabledTextColor;
-			text-shadow: @inputSuccessDisabledTextShadow;
-			.placeholder(@inputSuccessDisabledPlaceholderTextColor);
-			background-color: @inputSuccessDisabledBackgroundColor;
-			#gradient > .vertical(@inputSuccessDisabledBackgroundGradientColorTop, @inputSuccessDisabledBackgroundGradientColorBottom);
-			.box-shadow(@inputSuccessDisabledShadow);
-			.opacity(@inputSuccessDisabledOpacity);
-			
-		}
-		
-	}
-	
-	.help-block,
-	.help-inline {
-		
-		color: @helpLabelSuccessTextColor;
-		
-	}
-	
-}
-
-// Error
-
-.control-group.error {
-	
-	label {
-		
-		color: @formLabelErrorTextColor;
-		
-	}
-	
-	input,
-	textarea {
-		
-		color: @inputErrorTextColor;
-		text-shadow: @inputErrorTextShadow;
-		.placeholder(@inputErrorPlaceholderTextColor);
-		background-color: @inputErrorBackgroundColor;
-		#gradient > .vertical(@inputErrorBackgroundGradientColorTop, @inputErrorBackgroundGradientColorBottom);
-		.box-shadow(@inputErrorShadow);
-		
-		&:focus,
-		&.focused {
-			
-			color: @inputErrorFocusTextColor;
-			text-shadow: @inputErrorFocusTextShadow;
-			.placeholder(@inputErrorFocusPlaceholderTextColor);
-			background-color: @inputErrorFocusBackgroundColor;
-			#gradient > .vertical(@inputErrorFocusBackgroundGradientColorTop, @inputErrorFocusBackgroundGradientColorBottom);
-			.box-shadow(@inputErrorFocusShadow);
-			
-		}
-		
-		&[disabled],
-		&[readonly] {
-			
-			color: @inputErrorDisabledTextColor;
-			text-shadow: @inputErrorDisabledTextShadow;
-			.placeholder(@inputErrorDisabledPlaceholderTextColor);
-			background-color: @inputErrorDisabledBackgroundColor;
-			#gradient > .vertical(@inputErrorDisabledBackgroundGradientColorTop, @inputErrorDisabledBackgroundGradientColorBottom);
-			.box-shadow(@inputErrorDisabledShadow);
-			.opacity(@inputErrorDisabledOpacity);
-			
-		}
-		
-	}
-	
-	.help-block,
-	.help-inline {
-		
-		color: @helpLabelErrorTextColor;
-		
-	}
-	
-	.select-wrapper {
-		
-		.select-wrapper-inner {
-			
-			#gradient > .vertical(@buttonDangerBackgroundGradientColorTop, @buttonDangerBackgroundGradientColorBottom);
-			.box-shadow(@buttonDangerShadow);
-			
-			&:after {
+			.input-states (
 				
-				border-top-color: @buttonDangerTextColor;
+				@form-input-success-border-color,
+				@form-input-success-text-color,
+				@form-input-success-text-shadow,
+				@form-input-success-background-color,
+				@form-input-success-background-gradient-top-color,
+				@form-input-success-background-gradient-bottom-color,
+				@form-input-success-shadow,
+				@form-input-success-placeholder-text-color
 				
-			}
+			);
 			
-			&:before {
+			&:focus,
+			&.focused {
 				
-				#gradient > .vertical(@buttonDangerBackgroundGradientColorTop, @buttonDangerBackgroundGradientColorBottom);
-				.box-shadow(@buttonDangerShadow);
-				
-			}
-			
-		}
-		
-		select {
-			
-			color: @buttonDangerTextColor;
-			text-shadow: @buttonDangerTextShadow;
-			
-			
-		}
-		
-		&:hover {
-			
-			.select-wrapper-inner {
-				
-				#gradient > .vertical(@buttonDangerHoverBackgroundGradientColorTop, @buttonDangerHoverBackgroundGradientColorBottom);
-				.box-shadow(@buttonDangerHoverShadow);
-				
-				&:after {
+				.input-states (
 					
-					border-top-color: @buttonDangerHoverTextColor;
+					@form-input-success-focus-border-color,
+					@form-input-success-focus-text-color,
+					@form-input-success-focus-text-shadow,
+					@form-input-success-focus-background-color,
+					@form-input-success-focus-background-gradient-top-color,
+					@form-input-success-focus-background-gradient-bottom-color,
+					@form-input-success-focus-shadow,
+					@form-input-success-focus-placeholder-text-color
+					
+				);
+				
+			}
+			
+			&[disabled],
+			&[readonly] {
+				
+				.opacity(@form-input-success-disabled-opacity);
+				.input-states (
+					
+					@form-input-success-disabled-border-color,
+					@form-input-success-disabled-text-color,
+					@form-input-success-disabled-text-shadow,
+					@form-input-success-disabled-background-color,
+					@form-input-success-disabled-background-gradient-top-color,
+					@form-input-success-disabled-background-gradient-bottom-color,
+					@form-input-success-disabled-shadow,
+					@form-input-success-disabled-placeholder-text-color
+					
+				);
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Inverse                                                                                              */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.inverse {
+				
+				.input-states (
+					
+					@form-input-success-inverse-border-color,
+					@form-input-success-inverse-text-color,
+					@form-input-success-inverse-text-shadow,
+					@form-input-success-inverse-background-color,
+					@form-input-success-inverse-background-gradient-top-color,
+					@form-input-success-inverse-background-gradient-bottom-color,
+					@form-input-success-inverse-shadow,
+					@form-input-success-inverse-placeholder-text-color
+					
+				);
+				
+				&:focus,
+				&.focused {
+					
+					.input-states (
+						
+						@form-input-success-inverse-focus-border-color,
+						@form-input-success-inverse-focus-text-color,
+						@form-input-success-inverse-focus-text-shadow,
+						@form-input-success-inverse-focus-background-color,
+						@form-input-success-inverse-focus-background-gradient-top-color,
+						@form-input-success-inverse-focus-background-gradient-bottom-color,
+						@form-input-success-inverse-focus-shadow,
+						@form-input-success-inverse-focus-placeholder-text-color
+						
+					);
 					
 				}
 				
-				&:before {
+				&[disabled],
+				&[readonly] {
 					
-					#gradient > .vertical(@buttonDangerHoverBackgroundGradientColorTop, @buttonDangerHoverBackgroundGradientColorBottom);
-					.box-shadow(@buttonDangerHoverShadow);
+					.opacity(@form-input-success-inverse-disabled-opacity);
+					.input-states (
+						
+						@form-input-success-inverse-disabled-border-color,
+						@form-input-success-inverse-disabled-text-color,
+						@form-input-success-inverse-disabled-text-shadow,
+						@form-input-success-inverse-disabled-background-color,
+						@form-input-success-inverse-disabled-background-gradient-top-color,
+						@form-input-success-inverse-disabled-background-gradient-bottom-color,
+						@form-input-success-inverse-disabled-shadow,
+						@form-input-success-inverse-disabled-placeholder-text-color
+						
+					);
 					
 				}
 				
 			}
 			
-			select {
-				
-				color: @buttonDangerHoverTextColor;
-				text-shadow: @buttonDangerHoverTextShadow;
-				
-			}
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Warning                                                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.form-group-warning {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Label                                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		label {
+			
+			color: @form-label-warning-text-color;
 			
 		}
 		
-		&:active {
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Help Block                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.help-block {
 			
-			.select-wrapper-inner {
+			color: @form-help-block-warning-text-color;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input                                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		input[type="text"],
+		input[type="password"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="date"],
+		input[type="month"],
+		input[type="time"],
+		input[type="week"],
+		input[type="number"],
+		input[type="email"],
+		input[type="url"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="color"],
+		.uneditable-input,
+		textarea {
+			
+			.input-states (
 				
-				#gradient > .vertical(@buttonDangerActiveBackgroundGradientColorTop, @buttonDangerActiveBackgroundGradientColorBottom);
-				.box-shadow(@buttonDangerActiveShadow);
+				@form-input-warning-border-color,
+				@form-input-warning-text-color,
+				@form-input-warning-text-shadow,
+				@form-input-warning-background-color,
+				@form-input-warning-background-gradient-top-color,
+				@form-input-warning-background-gradient-bottom-color,
+				@form-input-warning-shadow,
+				@form-input-warning-placeholder-text-color
 				
-				&:after {
-					
-					border-top-color: @buttonDangerActiveTextColor;
-					
-				}
+			);
+			
+			&:focus,
+			&.focused {
 				
-				&:before {
+				.input-states (
 					
-					#gradient > .vertical(@buttonDangerActiveBackgroundGradientColorTop, @buttonDangerActiveBackgroundGradientColorBottom);
-					.box-shadow(@buttonDangerActiveShadow);
+					@form-input-warning-focus-border-color,
+					@form-input-warning-focus-text-color,
+					@form-input-warning-focus-text-shadow,
+					@form-input-warning-focus-background-color,
+					@form-input-warning-focus-background-gradient-top-color,
+					@form-input-warning-focus-background-gradient-bottom-color,
+					@form-input-warning-focus-shadow,
+					@form-input-warning-focus-placeholder-text-color
 					
-				}
+				);
 				
 			}
 			
-			select {
+			&[disabled],
+			&[readonly] {
 				
-				color: @buttonDangerActiveTextColor;
-				text-shadow: @buttonDangerActiveTextShadow;
+				.opacity(@form-input-warning-disabled-opacity);
+				.input-states (
+					
+					@form-input-warning-disabled-border-color,
+					@form-input-warning-disabled-text-color,
+					@form-input-warning-disabled-text-shadow,
+					@form-input-warning-disabled-background-color,
+					@form-input-warning-disabled-background-gradient-top-color,
+					@form-input-warning-disabled-background-gradient-bottom-color,
+					@form-input-warning-disabled-shadow,
+					@form-input-warning-disabled-placeholder-text-color
+					
+				);
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Inverse                                                                                              */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.inverse {
+				
+				.input-states (
+					
+					@form-input-warning-inverse-border-color,
+					@form-input-warning-inverse-text-color,
+					@form-input-warning-inverse-text-shadow,
+					@form-input-warning-inverse-background-color,
+					@form-input-warning-inverse-background-gradient-top-color,
+					@form-input-warning-inverse-background-gradient-bottom-color,
+					@form-input-warning-inverse-shadow,
+					@form-input-warning-inverse-placeholder-text-color
+					
+				);
+				
+				&:focus,
+				&.focused {
+					
+					.input-states (
+						
+						@form-input-warning-inverse-focus-border-color,
+						@form-input-warning-inverse-focus-text-color,
+						@form-input-warning-inverse-focus-text-shadow,
+						@form-input-warning-inverse-focus-background-color,
+						@form-input-warning-inverse-focus-background-gradient-top-color,
+						@form-input-warning-inverse-focus-background-gradient-bottom-color,
+						@form-input-warning-inverse-focus-shadow,
+						@form-input-warning-inverse-focus-placeholder-text-color
+						
+					);
+					
+				}
+				
+				&[disabled],
+				&[readonly] {
+					
+					.opacity(@form-input-warning-inverse-disabled-opacity);
+					.input-states (
+						
+						@form-input-warning-inverse-disabled-border-color,
+						@form-input-warning-inverse-disabled-text-color,
+						@form-input-warning-inverse-disabled-text-shadow,
+						@form-input-warning-inverse-disabled-background-color,
+						@form-input-warning-inverse-disabled-background-gradient-top-color,
+						@form-input-warning-inverse-disabled-background-gradient-bottom-color,
+						@form-input-warning-inverse-disabled-shadow,
+						@form-input-warning-inverse-disabled-placeholder-text-color
+						
+					);
+					
+				}
 				
 			}
 			
@@ -1928,58 +1998,181 @@ select:required:invalid {
 		
 	}
 	
-	.input-append,
-	.input-prepend {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Error                                                                                                */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.form-group-error {
 		
-		.add-on {
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Label                                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		label {
 			
-			#gradient > .vertical(@buttonDangerBackgroundGradientColorTop, @buttonDangerBackgroundGradientColorBottom);
-			.box-shadow(@buttonDangerShadow);
-			color: @buttonDangerTextColor;
+			color: @form-label-error-text-color;
 			
-			&:before {
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Help Block                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.help-block {
+			
+			color: @form-help-block-error-text-color;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input                                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		input[type="text"],
+		input[type="password"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="date"],
+		input[type="month"],
+		input[type="time"],
+		input[type="week"],
+		input[type="number"],
+		input[type="email"],
+		input[type="url"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="color"],
+		.uneditable-input,
+		textarea {
+			
+			.input-states (
 				
-				background: @buttonDangerBackgroundGradientColorBottom;
-				@shadow:
-			    	-1px 0px 1px 0px rgba(0, 0, 0, 0.02);
-				.box-shadow(@shadow);
+				@form-input-error-border-color,
+				@form-input-error-text-color,
+				@form-input-error-text-shadow,
+				@form-input-error-background-color,
+				@form-input-error-background-gradient-top-color,
+				@form-input-error-background-gradient-bottom-color,
+				@form-input-error-shadow,
+				@form-input-error-placeholder-text-color
+				
+			);
+			
+			&:focus,
+			&.focused {
+				
+				.input-states (
+					
+					@form-input-error-focus-border-color,
+					@form-input-error-focus-text-color,
+					@form-input-error-focus-text-shadow,
+					@form-input-error-focus-background-color,
+					@form-input-error-focus-background-gradient-top-color,
+					@form-input-error-focus-background-gradient-bottom-color,
+					@form-input-error-focus-shadow,
+					@form-input-error-focus-placeholder-text-color
+					
+				);
+				
+			}
+			
+			&[disabled],
+			&[readonly] {
+				
+				.opacity(@form-input-error-disabled-opacity);
+				.input-states (
+					
+					@form-input-error-disabled-border-color,
+					@form-input-error-disabled-text-color,
+					@form-input-error-disabled-text-shadow,
+					@form-input-error-disabled-background-color,
+					@form-input-error-disabled-background-gradient-top-color,
+					@form-input-error-disabled-background-gradient-bottom-color,
+					@form-input-error-disabled-shadow,
+					@form-input-error-disabled-placeholder-text-color
+					
+				);
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Inverse                                                                                              */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.inverse {
+				
+				.input-states (
+					
+					@form-input-error-inverse-border-color,
+					@form-input-error-inverse-text-color,
+					@form-input-error-inverse-text-shadow,
+					@form-input-error-inverse-background-color,
+					@form-input-error-inverse-background-gradient-top-color,
+					@form-input-error-inverse-background-gradient-bottom-color,
+					@form-input-error-inverse-shadow,
+					@form-input-error-inverse-placeholder-text-color
+					
+				);
+				
+				&:focus,
+				&.focused {
+					
+					.input-states (
+						
+						@form-input-error-inverse-focus-border-color,
+						@form-input-error-inverse-focus-text-color,
+						@form-input-error-inverse-focus-text-shadow,
+						@form-input-error-inverse-focus-background-color,
+						@form-input-error-inverse-focus-background-gradient-top-color,
+						@form-input-error-inverse-focus-background-gradient-bottom-color,
+						@form-input-error-inverse-focus-shadow,
+						@form-input-error-inverse-focus-placeholder-text-color
+						
+					);
+					
+				}
+				
+				&[disabled],
+				&[readonly] {
+					
+					.opacity(@form-input-error-inverse-disabled-opacity);
+					.input-states (
+						
+						@form-input-error-inverse-disabled-border-color,
+						@form-input-error-inverse-disabled-text-color,
+						@form-input-error-inverse-disabled-text-shadow,
+						@form-input-error-inverse-disabled-background-color,
+						@form-input-error-inverse-disabled-background-gradient-top-color,
+						@form-input-error-inverse-disabled-background-gradient-bottom-color,
+						@form-input-error-inverse-disabled-shadow,
+						@form-input-error-inverse-disabled-placeholder-text-color
+						
+					);
+					
+				}
 				
 			}
 			
 		}
 		
 	}
-		
+	
 }
 
 
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Form Actions                                                              */
+/* Form Actions                                                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
 .form-actions {
 	
-	padding: @primary-margin;
-	margin-bottom: @primary-margin;
-	background-color: @gray-lighten-90;
 	.clearfix();
-	@shadow:	0px -1px 0px 0px rgba(0, 0, 0, 0.1);
-	.box-shadow(@shadow);
-	
-	&.tall {
-		
-		margin-bottom: @primary-margin-tall;
-		
-	}
-	
-	&.short {
-		
-		margin-bottom: @primary-margin-short;
-		
-	}
+	padding: @form-actions-padding-vertical @form-actions-padding-horizontal;
+	background-color: @form-actions-background-color;
+	.box-shadow(@form-actions-shadow);
 	
 }
 
@@ -1987,11 +2180,9 @@ select:required:invalid {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Input Sizes                                                               */
+/* Grid Sizing for Inputs                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
-
-// Grid style input sizes
 
 input[class*="span"],
 select[class*="span"],
@@ -2008,48 +2199,19 @@ textarea[class*="span"],
 	
 }
 
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Grid Sizing for Inputs                                                    */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
 #grid > .input(@grid-column-width-standard, @grid-gutter-width-standard);
 
 .controls {
 	
-	.clearfix(); // Clear the float from controls
+	.clearfix();
 	
 }
 
 .controls-row [class*="span"] {
 	
-	float: left; // Float to collapse white-space for proper grid alignment
+	float: left;
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2086,6 +2248,88 @@ textarea[class*="span"],
 		
 	}
 	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Legend                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	legend {
+		
+		font-size: @form-legend-font-size * @form-legend-responsive-ratio-widescreen;
+		line-height: @form-legend-line-height * @form-legend-responsive-ratio-widescreen;
+		margin: (@form-legend-margin-top * @form-legend-responsive-ratio-widescreen) 0px (@form-legend-margin-bottom * @form-legend-responsive-ratio-widescreen) 0px;
+		padding: 0px 0px ((@form-legend-margin-bottom * @form-legend-responsive-ratio-widescreen) / 2) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall * @form-legend-responsive-ratio-widescreen;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short * @form-legend-responsive-ratio-widescreen;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Labels                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	label {
+		
+		font-size: @form-label-font-size * @form-label-responsive-ratio-widescreen;
+		line-height: @form-label-line-height * @form-label-responsive-ratio-widescreen;
+		margin: (@form-label-margin-top * @form-label-responsive-ratio-widescreen) 0px (@form-label-margin-bottom * @form-label-responsive-ratio-widescreen) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall * @form-label-responsive-ratio-widescreen;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-responsive-ratio-widescreen;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Help Block                                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.help-block {
+		
+		font-size: @form-help-block-text-font-size * @form-help-block-responsive-ratio-widescreen;
+		line-height: @form-help-block-text-line-height * @form-help-block-responsive-ratio-widescreen;
+		
+	}
+	
+	
+	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
 	/* Inputs                                                                                               */
@@ -2109,11 +2353,18 @@ textarea[class*="span"],
 	.uneditable-input,
 	textarea {
 		
+		height: @form-input-height * @form-input-responsive-ratio-widescreen;
+		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-widescreen, @form-input-text-line-height * @form-input-responsive-ratio-widescreen);
+		padding-left: @form-input-padding-horizontal * @form-input-responsive-ratio-widescreen;
+		padding-right: @form-input-padding-horizontal * @form-input-responsive-ratio-widescreen;
+		font-size: @form-input-text-font-size * @form-input-responsive-ratio-widescreen;
+		line-height: @form-input-text-line-height * @form-input-responsive-ratio-widescreen;
 		margin-bottom: @form-input-margin-widescreen;
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-widescreen;
+			margin-top: -@form-input-margin-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+			margin-bottom: @form-input-margin-widescreen;
 			
 		}
 		
@@ -2123,7 +2374,8 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-widescreen;
+				margin-top: -@form-input-margin-tall-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-tall-widescreen;
 				
 			}
 			
@@ -2135,14 +2387,63 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-widescreen;
+				margin-top: -@form-input-margin-short-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-short-widescreen;
 				
 			}
 			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-widescreen;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-responsive-ratio-widescreen;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-widescreen, @form-input-large-text-line-height * @form-input-large-responsive-ratio-widescreen);
+			padding-left: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-widescreen;
+			padding-right: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-widescreen;
+			font-size: @form-input-large-text-font-size * @form-input-large-responsive-ratio-widescreen;
+			line-height: @form-input-large-text-line-height * @form-input-large-responsive-ratio-widescreen;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-responsive-ratio-widescreen;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-widescreen, @form-input-small-text-line-height * @form-input-small-responsive-ratio-widescreen);
+			padding-left: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-widescreen;
+			padding-right: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-widescreen;
+			font-size: @form-input-small-text-font-size * @form-input-small-responsive-ratio-widescreen;
+			line-height: @form-input-small-text-line-height * @form-input-small-responsive-ratio-widescreen;
 			
 		}
 		
 	}
+	
+	textarea {
+		
+		height: auto;
+		
+	}
+	
+	
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -2153,11 +2454,30 @@ textarea[class*="span"],
 	.radio,
 	.checkbox {
 		
+		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-widescreen));
+		min-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-widescreen;
+		font-size: @form-input-toggles-text-font-size * @form-input-toggles-responsive-ratio-widescreen;
+		line-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-widescreen;
 		margin-bottom: @form-input-margin-widescreen;
+		
+		input[type="radio"] {
+			
+			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-widescreen));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-widescreen) / 2) - (@form-input-radio-height / 2);
+			
+		}
+		
+		input[type="checkbox"] {
+			
+			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-widescreen));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-widescreen) / 2) - (@form-input-checkbox-height / 2);
+			
+		}
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-widescreen;
+			margin-top: -@form-input-margin-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+			margin-bottom: @form-input-margin-widescreen;
 			
 		}
 		
@@ -2167,7 +2487,8 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-widescreen;
+				margin-top: -@form-input-margin-tall-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-tall-widescreen;
 				
 			}
 			
@@ -2179,14 +2500,95 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-widescreen;
+				margin-top: -@form-input-margin-short-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-short-widescreen;
 				
 			}
 			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-widescreen;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		&.input-height {
+			
+			min-height: @form-input-height * @form-input-responsive-ratio-widescreen;
+			line-height: @form-input-height * @form-input-responsive-ratio-widescreen;
+			
+			input[type="radio"] {
+				
+				top: ((@form-input-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-radio-height / 2);
+				
+			}
+			
+			input[type="checkbox"] {
+				
+				top: ((@form-input-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-checkbox-height / 2);
+				
+			}
+			
+			&.input-large {
+				
+				min-height: @form-input-large-height * @form-input-responsive-ratio-widescreen;
+				line-height: @form-input-large-height * @form-input-responsive-ratio-widescreen;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-large-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-large-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+			&.input-small {
+				
+				min-height: @form-input-small-height * @form-input-responsive-ratio-widescreen;
+				line-height: @form-input-small-height * @form-input-responsive-ratio-widescreen;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-small-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-small-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+		}
+		
+		&.inline {
+			
+			+ .radio.inline,
+			+ .checkbox.inline {
+				
+				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-responsive-ratio-widescreen;
+				
+			}
 			
 		}
 		
 	}
+	
+	
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -2211,7 +2613,8 @@ textarea[class*="span"],
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-widescreen;
+			margin-top: -@form-input-margin-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+			margin-bottom: @form-input-margin-widescreen;
 			
 		}
 		
@@ -2221,7 +2624,8 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-widescreen;
+				margin-top: -@form-input-margin-tall-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-tall-widescreen;
 				
 			}
 			
@@ -2233,10 +2637,21 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-widescreen;
+				margin-top: -@form-input-margin-short-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-short-widescreen;
 				
 			}
 			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-widescreen;
+				margin-bottom: 0px;
+				
+			}
 			
 		}
 		
@@ -2371,6 +2786,8 @@ textarea[class*="span"],
 		
 	}
 	
+	
+	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
 	/* Input Groups                                                                                         */
@@ -2381,9 +2798,18 @@ textarea[class*="span"],
 		
 		margin-bottom: @form-input-margin-widescreen;
 		
+		input,
+		select,
+		.uneditable-input {
+			
+			margin-bottom: 0px;
+			
+		}
+		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-widescreen;
+			margin-top: -@form-input-margin-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+			margin-bottom: @form-input-margin-widescreen;
 			
 		}
 		
@@ -2393,7 +2819,8 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-widescreen;
+				margin-top: -@form-input-margin-tall-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-tall-widescreen;
 				
 			}
 			
@@ -2405,10 +2832,21 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-widescreen;
+				margin-top: -@form-input-margin-short-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-short-widescreen;
 				
 			}
 			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-widescreen;
+				margin-bottom: 0px;
+				
+			}
 			
 		}
 		
@@ -2418,11 +2856,11 @@ textarea[class*="span"],
 		
 		.add-on {
 			
-			padding-left: @form-input-add-on-padding-horizontal * @form-input-responsive-ratio-widescreen;
-			padding-right: @form-input-add-on-padding-horizontal * @form-input-responsive-ratio-widescreen;
-			.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-widescreen, @form-input-add-on-text-line-height * @form-input-responsive-ratio-widescreen);
-			font-size: @form-input-add-on-text-font-size * @form-input-responsive-ratio-widescreen;
-			line-height: @form-input-add-on-text-line-height * @form-input-responsive-ratio-widescreen;
+			padding-left: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
+			padding-right: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
+			.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-widescreen, @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-widescreen);
+			font-size: @form-input-add-on-text-font-size * @form-input-add-on-responsive-ratio-widescreen;
+			line-height: @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-widescreen;
 			
 		}
 		
@@ -2444,19 +2882,20 @@ textarea[class*="span"],
 			
 			.add-on {
 				
-				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-large-responsive-ratio-widescreen;
-				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-large-responsive-ratio-widescreen;
-				.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-widescreen, @form-input-add-on-large-text-line-height * @form-input-large-responsive-ratio-widescreen);
-				font-size: @form-input-add-on-large-text-font-size * @form-input-large-responsive-ratio-widescreen;
-				line-height: @form-input-add-on-large-text-line-height * @form-input-large-responsive-ratio-widescreen;
+				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
+				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
+				.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-widescreen, @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-widescreen);
+				font-size: @form-input-add-on-large-text-font-size * @form-input-add-on-responsive-ratio-widescreen;
+				line-height: @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-widescreen;
 				
 			}
 			
 			.add-on-group {
 				
-				height:  @form-input-large-height * @form-input-large-responsive-ratio-widescreen;
+				height:  @form-input-large-height * @form-input-responsive-ratio-widescreen;
 				
 			}
+			
 		}
 		
 		/* ---------------------------------------------------------------------------------------------------- */
@@ -2467,131 +2906,42 @@ textarea[class*="span"],
 			
 			.add-on {
 				
-				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-small-responsive-ratio-widescreen;
-				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-small-responsive-ratio-widescreen;
-				.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-widescreen, @form-input-add-on-small-text-line-height * @form-input-small-responsive-ratio-widescreen);
-				font-size: @form-input-add-on-small-text-font-size * @form-input-small-responsive-ratio-widescreen;
-				line-height: @form-input-add-on-small-text-line-height * @form-input-small-responsive-ratio-widescreen;
+				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
+				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
+				.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-widescreen, @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-widescreen);
+				font-size: @form-input-add-on-small-text-font-size * @form-input-add-on-responsive-ratio-widescreen;
+				line-height: @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-widescreen;
 				
 			}
 			
 			.add-on-group {
 				
-				height:  @form-input-small-height * @form-input-small-responsive-ratio-widescreen;
-				
-			}
-		}
-		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Input Groups                                                              */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	.input-group {
-		
-		margin-bottom: @inputMarginWidescreen;
-		
-		input,
-		select,
-		.uneditable-input {
-			
-			margin-bottom: 0px;
-			
-		}
-		
-		&.tall {
-			
-			margin-bottom: @inputMarginTallWidescreen;
-			
-			+ .help-block {
-				
-				margin-top: -@inputMarginTallWidescreen;
+				height:  @form-input-small-height * @form-input-responsive-ratio-widescreen;
 				
 			}
 			
 		}
 		
-		&.short {
-			
-			margin-bottom: @inputMarginShortWidescreen;
-			
-			+ .help-block {
-				
-				margin-top: -@inputMarginShortWidescreen;
-				
-			}
-			
-			
-		}
-		
 	}
 	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Help Text                                                                 */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	.help-block {
-		
-		display: block;
-		margin-bottom: @inputMarginWidescreen;
-		
-		&.tall {
-			
-			margin-bottom: @inputMarginTallWidescreen;
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @inputMarginShortWidescreen;
-			
-		}
-		
-	}
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Form Actions                                                              */
+	/* Form Actions                                                                                         */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
 	.form-actions {
 		
-		padding: @primary-margin-widescreen;
-		margin-bottom: @primary-margin-widescreen;
-		
-		&.tall {
-			
-			margin-bottom: @primary-margin-tall-widescreen;
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @primary-margin-short-widescreen;
-			
-		}
+		padding: @form-actions-padding-vertical-widescreen @form-actions-padding-horizontal-widescreen;
 		
 	}
 	
+	
+	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Grid Sizing for Inputs                                                    */
+	/* Grid Sizing for Inputs                                                                               */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
@@ -2603,8 +2953,8 @@ textarea[class*="span"],
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling for portrait tablet (@viewport-tablet)      */
-/* to default desktop (@viewport-standard).                                  */
+/* Responsive changes to styling for portrait tablet (@viewport-tablet) to default desktop              */
+/* (@viewport-standard).                                                                                */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -2612,7 +2962,7 @@ textarea[class*="span"],
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* General Form Styling                                                      */
+	/* General Form Styling                                                                                 */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
@@ -2634,9 +2984,91 @@ textarea[class*="span"],
 		
 	}
 	
+	
+	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Inputs                                                                    */
+	/* Legend                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	legend {
+		
+		font-size: @form-legend-font-size * @form-legend-responsive-ratio-tablet;
+		line-height: @form-legend-line-height * @form-legend-responsive-ratio-tablet;
+		margin: (@form-legend-margin-top * @form-legend-responsive-ratio-tablet) 0px (@form-legend-margin-bottom * @form-legend-responsive-ratio-tablet) 0px;
+		padding: 0px 0px ((@form-legend-margin-bottom * @form-legend-responsive-ratio-tablet) / 2) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall * @form-legend-responsive-ratio-tablet;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short * @form-legend-responsive-ratio-tablet;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Labels                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	label {
+		
+		font-size: @form-label-font-size * @form-label-responsive-ratio-tablet;
+		line-height: @form-label-line-height * @form-label-responsive-ratio-tablet;
+		margin: (@form-label-margin-top * @form-label-responsive-ratio-tablet) 0px (@form-label-margin-bottom * @form-label-responsive-ratio-tablet) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall * @form-label-responsive-ratio-tablet;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-responsive-ratio-tablet;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Help Block                                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.help-block {
+		
+		font-size: @form-help-block-text-font-size * @form-help-block-responsive-ratio-tablet;
+		line-height: @form-help-block-text-line-height * @form-help-block-responsive-ratio-tablet;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Inputs                                                                                               */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
@@ -2657,21 +3089,29 @@ textarea[class*="span"],
 	.uneditable-input,
 	textarea {
 		
-		margin-bottom: @inputMarginTablet;
+		height: @form-input-height * @form-input-responsive-ratio-tablet;
+		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-tablet, @form-input-text-line-height * @form-input-responsive-ratio-tablet);
+		padding-left: @form-input-padding-horizontal * @form-input-responsive-ratio-tablet;
+		padding-right: @form-input-padding-horizontal * @form-input-responsive-ratio-tablet;
+		font-size: @form-input-text-font-size * @form-input-responsive-ratio-tablet;
+		line-height: @form-input-text-line-height * @form-input-responsive-ratio-tablet;
+		margin-bottom: @form-input-margin-tablet;
 		
 		+ .help-block {
 			
-			margin-top: -@inputMarginTablet;
+			margin-top: -@form-input-margin-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+			margin-bottom: @form-input-margin-tablet;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallTablet;
+			margin-bottom: @form-input-margin-tall-tablet;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginTallTablet;
+				margin-top: -@form-input-margin-tall-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-tall-tablet;
 				
 			}
 			
@@ -2679,42 +3119,212 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortTablet;
+			margin-bottom: @form-input-margin-short-tablet;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginShortTablet;
+				margin-top: -@form-input-margin-short-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-short-tablet;
 				
 			}
 			
 		}
 		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-tablet;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-responsive-ratio-tablet;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-tablet, @form-input-large-text-line-height * @form-input-large-responsive-ratio-tablet);
+			padding-left: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-tablet;
+			padding-right: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-tablet;
+			font-size: @form-input-large-text-font-size * @form-input-large-responsive-ratio-tablet;
+			line-height: @form-input-large-text-line-height * @form-input-large-responsive-ratio-tablet;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-responsive-ratio-tablet;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-tablet, @form-input-small-text-line-height * @form-input-small-responsive-ratio-tablet);
+			padding-left: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-tablet;
+			padding-right: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-tablet;
+			font-size: @form-input-small-text-font-size * @form-input-small-responsive-ratio-tablet;
+			line-height: @form-input-small-text-line-height * @form-input-small-responsive-ratio-tablet;
+			
+		}
+		
 	}
+	
+	textarea {
+		
+		height: auto;
+		
+	}
+	
+	
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Radio Buttons & Checkboxes                                                */
+	/* Radio Buttons & Checkboxes                                                                           */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
 	.radio,
 	.checkbox {
 		
-		margin-bottom: @inputMarginTablet;
+		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-tablet));
+		min-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-tablet;
+		font-size: @form-input-toggles-text-font-size * @form-input-toggles-responsive-ratio-tablet;
+		line-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-tablet;
+		margin-bottom: @form-input-margin-tablet;
+		
+		input[type="radio"] {
+			
+			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-tablet));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-tablet) / 2) - (@form-input-radio-height / 2);
+			
+		}
+		
+		input[type="checkbox"] {
+			
+			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-tablet));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-tablet) / 2) - (@form-input-checkbox-height / 2);
+			
+		}
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+			margin-bottom: @form-input-margin-tablet;
+			
+		}
 		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallTablet;
+			margin-bottom: @form-input-margin-tall-tablet;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-tall-tablet;
+				
+			}
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortTablet;
+			margin-bottom: @form-input-margin-short-tablet;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-short-tablet;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-tablet;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		&.input-height {
+			
+			min-height: @form-input-height * @form-input-responsive-ratio-tablet;
+			line-height: @form-input-height * @form-input-responsive-ratio-tablet;
+			
+			input[type="radio"] {
+				
+				top: ((@form-input-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-radio-height / 2);
+				
+			}
+			
+			input[type="checkbox"] {
+				
+				top: ((@form-input-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-checkbox-height / 2);
+				
+			}
+			
+			&.input-large {
+				
+				min-height: @form-input-large-height * @form-input-responsive-ratio-tablet;
+				line-height: @form-input-large-height * @form-input-responsive-ratio-tablet;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-large-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-large-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+			&.input-small {
+				
+				min-height: @form-input-small-height * @form-input-responsive-ratio-tablet;
+				line-height: @form-input-small-height * @form-input-responsive-ratio-tablet;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-small-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-small-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+		}
+		
+		&.inline {
+			
+			+ .radio.inline,
+			+ .checkbox.inline {
+				
+				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-responsive-ratio-tablet;
+				
+			}
 			
 		}
 		
 	}
+	
+	
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -2739,7 +3349,8 @@ textarea[class*="span"],
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-tablet;
+			margin-top: -@form-input-margin-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+			margin-bottom: @form-input-margin-tablet;
 			
 		}
 		
@@ -2749,7 +3360,8 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-tablet;
+				margin-top: -@form-input-margin-tall-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-tall-tablet;
 				
 			}
 			
@@ -2761,10 +3373,21 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-tablet;
+				margin-top: -@form-input-margin-short-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-short-tablet;
 				
 			}
 			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-tablet;
+				margin-bottom: 0px;
+				
+			}
 			
 		}
 		
@@ -2898,16 +3521,18 @@ textarea[class*="span"],
 		}
 		
 	}
-
+	
+	
+	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Input Groups                                                              */
+	/* Input Groups                                                                                         */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
 	.input-group {
 		
-		margin-bottom: @inputMarginTablet;
+		margin-bottom: @form-input-margin-tablet;
 		
 		input,
 		select,
@@ -2917,13 +3542,21 @@ textarea[class*="span"],
 			
 		}
 		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+			margin-bottom: @form-input-margin-tablet;
+			
+		}
+		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallTablet;
+			margin-bottom: @form-input-margin-tall-tablet;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginTallTablet;
+				margin-top: -@form-input-margin-tall-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-tall-tablet;
 				
 			}
 			
@@ -2931,72 +3564,120 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortTablet;
+			margin-bottom: @form-input-margin-short-tablet;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginShortTablet;
+				margin-top: -@form-input-margin-short-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-short-tablet;
 				
 			}
 			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-tablet;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on {
+			
+			padding-left: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
+			padding-right: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
+			.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-tablet, @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-tablet);
+			font-size: @form-input-add-on-text-font-size * @form-input-add-on-responsive-ratio-tablet;
+			line-height: @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-tablet;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On Group                                                                             */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on-group {
+			
+			height:  @form-input-height * @form-input-responsive-ratio-tablet;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-large {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
+				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
+				.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-tablet, @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-tablet);
+				font-size: @form-input-add-on-large-text-font-size * @form-input-add-on-responsive-ratio-tablet;
+				line-height: @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-tablet;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-large-height * @form-input-responsive-ratio-tablet;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-small {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
+				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
+				.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-tablet, @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-tablet);
+				font-size: @form-input-add-on-small-text-font-size * @form-input-add-on-responsive-ratio-tablet;
+				line-height: @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-tablet;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-small-height * @form-input-responsive-ratio-tablet;
+				
+			}
 			
 		}
 		
 	}
 	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Help Text                                                                 */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	.help-block {
-		
-		display: block;
-		margin-bottom: @inputMarginTablet;
-		
-		&.tall {
-			
-			margin-bottom: @inputMarginTallTablet;
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @inputMarginShortTablet;
-			
-		}
-		
-	}
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Form Actions                                                              */
+	/* Form Actions                                                                                         */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
 	.form-actions {
 		
-		padding: @primary-margin-tablet;
-		margin-bottom: @primary-margin-tablet;
-		
-		&.tall {
-			
-			margin-bottom: @primary-margin-tall-tablet;
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @primary-margin-short-tablet;
-			
-		}
+		padding: @form-actions-padding-vertical-tablet @form-actions-padding-horizontal-tablet;
 		
 	}
 	
+	
+	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Grid Sizing for Inputs                                                    */
+	/* Grid Sizing for Inputs                                                                               */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
@@ -3008,7 +3689,7 @@ textarea[class*="span"],
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling up to portrait tablets (@viewport-tablet)   */
+/* Responsive changes to styling up to portrait tablets (@viewport-tablet)                              */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -3016,49 +3697,113 @@ textarea[class*="span"],
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* General Form Styling                                                      */
+	/* General Form Styling                                                                                 */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
 	form {
 		
 		margin-bottom: @primary-margin-mobile;
-			
-		&.spill {
-			
-			margin-top: @primary-margin-mobile;
-			
-		}
 		
 		&.tall {
 			
 			margin-bottom: @primary-margin-tall-mobile;
-				
-			&.spill {
-				
-				margin-top: @primary-margin-tall-mobile;
-				
-			}
 			
 		}
 		
 		&.short {
 			
 			margin-bottom: @primary-margin-short-mobile;
-				
-			&.spill {
-				
-				margin-top: @primary-margin-short-mobile;
-				
-			}
 			
 		}
 		
 	}
 	
+	
+	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Inputs                                                                    */
+	/* Legend                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	legend {
+		
+		font-size: @form-legend-font-size * @form-legend-responsive-ratio-mobile;
+		line-height: @form-legend-line-height * @form-legend-responsive-ratio-mobile;
+		margin: (@form-legend-margin-top * @form-legend-responsive-ratio-mobile) 0px (@form-legend-margin-bottom * @form-legend-responsive-ratio-mobile) 0px;
+		padding: 0px 0px ((@form-legend-margin-bottom * @form-legend-responsive-ratio-mobile) / 2) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall * @form-legend-responsive-ratio-mobile;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short * @form-legend-responsive-ratio-mobile;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Labels                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	label {
+		
+		font-size: @form-label-font-size * @form-label-responsive-ratio-mobile;
+		line-height: @form-label-line-height * @form-label-responsive-ratio-mobile;
+		margin: (@form-label-margin-top * @form-label-responsive-ratio-mobile) 0px (@form-label-margin-bottom * @form-label-responsive-ratio-mobile) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall * @form-label-responsive-ratio-mobile;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-responsive-ratio-mobile;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Help Block                                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.help-block {
+		
+		font-size: @form-help-block-text-font-size * @form-help-block-responsive-ratio-mobile;
+		line-height: @form-help-block-text-line-height * @form-help-block-responsive-ratio-mobile;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Inputs                                                                                               */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
@@ -3079,34 +3824,29 @@ textarea[class*="span"],
 	.uneditable-input,
 	textarea {
 		
-		margin-bottom: @inputMarginMobile;
-		.input-block-level();
-		
-		&.spill {
-			
-			margin-top: @inputMarginMobile;
-			
-		}
+		height: @form-input-height * @form-input-responsive-ratio-mobile;
+		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-mobile, @form-input-text-line-height * @form-input-responsive-ratio-mobile);
+		padding-left: @form-input-padding-horizontal * @form-input-responsive-ratio-mobile;
+		padding-right: @form-input-padding-horizontal * @form-input-responsive-ratio-mobile;
+		font-size: @form-input-text-font-size * @form-input-responsive-ratio-mobile;
+		line-height: @form-input-text-line-height * @form-input-responsive-ratio-mobile;
+		margin-bottom: @form-input-margin-mobile;
 		
 		+ .help-block {
 			
-			margin-top: -@inputMarginMobile;
+			margin-top: -@form-input-margin-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+			margin-bottom: @form-input-margin-mobile;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallMobile;
-		
-			&.spill {
-				
-				margin-top: @inputMarginTallMobile;
-				
-			}
+			margin-bottom: @form-input-margin-tall-mobile;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginTallMobile;
+				margin-top: -@form-input-margin-tall-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-tall-mobile;
 				
 			}
 			
@@ -3114,49 +3854,112 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortMobile;
-		
-			&.spill {
-				
-				margin-top: @inputMarginShortMobile;
-				
-			}
+			margin-bottom: @form-input-margin-short-mobile;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginShortMobile;
+				margin-top: -@form-input-margin-short-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-short-mobile;
 				
 			}
 			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-mobile;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-responsive-ratio-mobile;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-mobile, @form-input-large-text-line-height * @form-input-large-responsive-ratio-mobile);
+			padding-left: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-mobile;
+			padding-right: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-mobile;
+			font-size: @form-input-large-text-font-size * @form-input-large-responsive-ratio-mobile;
+			line-height: @form-input-large-text-line-height * @form-input-large-responsive-ratio-mobile;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-responsive-ratio-mobile;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-mobile, @form-input-small-text-line-height * @form-input-small-responsive-ratio-mobile);
+			padding-left: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-mobile;
+			padding-right: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-mobile;
+			font-size: @form-input-small-text-font-size * @form-input-small-responsive-ratio-mobile;
+			line-height: @form-input-small-text-line-height * @form-input-small-responsive-ratio-mobile;
 			
 		}
 		
 	}
 	
+	textarea {
+		
+		height: auto;
+		
+	}
+	
+	
+	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Radio Buttons & Checkboxes                                                */
+	/* Radio Buttons & Checkboxes                                                                           */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
 	.radio,
 	.checkbox {
 		
-		margin-bottom: @inputMarginMobile;
+		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-mobile));
+		min-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-mobile;
+		font-size: @form-input-toggles-text-font-size * @form-input-toggles-responsive-ratio-mobile;
+		line-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-mobile;
+		margin-bottom: @form-input-margin-mobile;
 		
-		&.spill {
+		input[type="radio"] {
 			
-			margin-top: @inputMarginMobile;
+			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-mobile));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-mobile) / 2) - (@form-input-radio-height / 2);
+			
+		}
+		
+		input[type="checkbox"] {
+			
+			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-mobile));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-mobile) / 2) - (@form-input-checkbox-height / 2);
+			
+		}
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+			margin-bottom: @form-input-margin-mobile;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallMobile;
+			margin-bottom: @form-input-margin-tall-mobile;
 			
-			&.spill {
+			+ .help-block {
 				
-				margin-top: @inputMarginTallMobile;
+				margin-top: -@form-input-margin-tall-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-tall-mobile;
 				
 			}
 			
@@ -3164,17 +3967,99 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortMobile;
+			margin-bottom: @form-input-margin-short-mobile;
 			
-			&.spill {
+			+ .help-block {
 				
-				margin-top: @inputMarginShortMobile;
+				margin-top: -@form-input-margin-short-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-short-mobile;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-mobile;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		&.input-height {
+			
+			min-height: @form-input-height * @form-input-responsive-ratio-mobile;
+			line-height: @form-input-height * @form-input-responsive-ratio-mobile;
+			
+			input[type="radio"] {
+				
+				top: ((@form-input-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-radio-height / 2);
+				
+			}
+			
+			input[type="checkbox"] {
+				
+				top: ((@form-input-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-checkbox-height / 2);
+				
+			}
+			
+			&.input-large {
+				
+				min-height: @form-input-large-height * @form-input-responsive-ratio-mobile;
+				line-height: @form-input-large-height * @form-input-responsive-ratio-mobile;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-large-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-large-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+			&.input-small {
+				
+				min-height: @form-input-small-height * @form-input-responsive-ratio-mobile;
+				line-height: @form-input-small-height * @form-input-responsive-ratio-mobile;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-small-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-small-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+		}
+		
+		&.inline {
+			
+			+ .radio.inline,
+			+ .checkbox.inline {
+				
+				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-responsive-ratio-mobile;
 				
 			}
 			
 		}
 		
 	}
+	
+	
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -3199,7 +4084,8 @@ textarea[class*="span"],
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-mobile;
+			margin-top: -@form-input-margin-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+			margin-bottom: @form-input-margin-mobile;
 			
 		}
 		
@@ -3209,7 +4095,8 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-mobile;
+				margin-top: -@form-input-margin-tall-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-tall-mobile;
 				
 			}
 			
@@ -3221,10 +4108,21 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-mobile;
+				margin-top: -@form-input-margin-short-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-short-mobile;
 				
 			}
 			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-mobile;
+				margin-bottom: 0px;
+				
+			}
 			
 		}
 		
@@ -3358,22 +4256,18 @@ textarea[class*="span"],
 		}
 		
 	}
-
+	
+	
+	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Input Groups                                                              */
+	/* Input Groups                                                                                         */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
 	.input-group {
 		
-		margin-bottom: @inputMarginMobile;
-			
-		&.spill {
-			
-			margin-top: @inputMarginMobile;
-			
-		}
+		margin-bottom: @form-input-margin-mobile;
 		
 		input,
 		select,
@@ -3383,19 +4277,21 @@ textarea[class*="span"],
 			
 		}
 		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+			margin-bottom: @form-input-margin-mobile;
+			
+		}
+		
 		&.tall {
 			
-			margin-bottom: @inputMarginTallMobile;
-			
-			&.spill {
-				
-				margin-top: @inputMarginTallMobile;
-				
-			}
+			margin-bottom: @form-input-margin-tall-mobile;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginTallMobile;
+				margin-top: -@form-input-margin-tall-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-tall-mobile;
 				
 			}
 			
@@ -3403,97 +4299,127 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @inputMarginShortMobile;
-			
-			&.spill {
-				
-				margin-top: @inputMarginShortMobile;
-				
-			}
+			margin-bottom: @form-input-margin-short-mobile;
 			
 			+ .help-block {
 				
-				margin-top: -@inputMarginShortMobile;
+				margin-top: -@form-input-margin-short-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-short-mobile;
 				
 			}
 			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-mobile;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on {
+			
+			padding-left: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
+			padding-right: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
+			.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-mobile, @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-mobile);
+			font-size: @form-input-add-on-text-font-size * @form-input-add-on-responsive-ratio-mobile;
+			line-height: @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-mobile;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On Group                                                                             */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on-group {
+			
+			height:  @form-input-height * @form-input-responsive-ratio-mobile;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-large {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
+				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
+				.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-mobile, @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-mobile);
+				font-size: @form-input-add-on-large-text-font-size * @form-input-add-on-responsive-ratio-mobile;
+				line-height: @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-mobile;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-large-height * @form-input-responsive-ratio-mobile;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-small {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
+				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
+				.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-mobile, @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-mobile);
+				font-size: @form-input-add-on-small-text-font-size * @form-input-add-on-responsive-ratio-mobile;
+				line-height: @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-mobile;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-small-height * @form-input-responsive-ratio-mobile;
+				
+			}
 			
 		}
 		
 	}
 	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Help Text                                                                 */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	.help-block {
-		
-		display: block;
-		margin-bottom: @inputMarginMobile;
-			
-		&.spill {
-			
-			margin-top: @inputMarginMobile;
-			
-		}
-		
-		&.tall {
-			
-			margin-bottom: @inputMarginTallMobile;
-			
-			&.spill {
-				
-				margin-top: @inputMarginTallMobile;
-				
-			}
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @inputMarginShortMobile;
-			
-			&.spill {
-				
-				margin-top: @inputMarginShortMobile;
-				
-			}
-			
-		}
-		
-	}
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Form Actions                                                              */
+	/* Form Actions                                                                                         */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
 	.form-actions {
 		
-		padding: @primary-margin-mobile;
-		margin-bottom: @primary-margin-mobile;
-		
-		&.tall {
-			
-			margin-bottom: @primary-margin-tall-mobile;
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @primary-margin-short-mobile;
-			
-		}
+		padding: @form-actions-padding-vertical-mobile @form-actions-padding-horizontal-mobile;
 		
 	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Grid Sizing for Inputs                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
 	
 	.controls [class*="span"],
 	.controls-row [class*="span"] {
 		
-		float: none; // Float to collapse white-space for proper grid alignment
+		float: none;
 		margin-left: 0px !important;
 		
 	}
@@ -3504,8 +4430,7 @@ textarea[class*="span"],
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling up to landscape phones                      */
-/* (@viewport-mobile-landscape)                                              */
+/* Responsive changes to styling up to landscape phones (@viewport-mobile-landscape)                    */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -3517,7 +4442,7 @@ textarea[class*="span"],
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling for Retina Displays                         */
+/* Responsive changes to styling for Retina Displays                                                    */
 /*                                                                                                      */
 /* ==================================================================================================== */
 

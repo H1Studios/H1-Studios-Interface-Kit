@@ -3644,9 +3644,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 					<form class="code-example flush-bottom">
 						
-						<input type="text">
+						<input type="text" class="flush-bottom">
 						
-						<span class="help-block flush-bottom">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+						<span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
 						
 					</form>
 					
@@ -3892,7 +3892,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 					<form class="code-example form-inline flush-bottom">
 						
-						<input type="email" class="flush-bottom" placeholder="test@example.com" required>
+						<input type="email" class="flush-bottom" placeholder="test@example.com" required invalid>
 						
 					</form>
 					
@@ -3940,49 +3940,45 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 					<form class="code-example flush-bottom">
 						
-						<div class="control-group success">
+						<div class="form-group form-group-success">
 							
-							<label class="control-label">Input with success</label>
+							<label>
+								
+								Input with success
+								
+							</label>
 							
-							<div class="controls">
-								
-								<input type="text">
-								
-								<span class="help-block">Woohoo!</span>
-								
-							</div>
+							<input type="text" placeholder=".form-group-warning">
+							
+							<span class="help-block">Woohoo!</span>
 							
 						</div>
 						
-						<div class="control-group warning">
+						<div class="form-group form-group-warning">
 							
-							<label class="control-label">
+							<label>
 								
 								Input with warning
 								
 							</label>
 							
-							<div class="controls">
-								
-								<input type="text">
-								
-								<span class="help-block">Something may have gone wrong</span>
-								
-							</div>
+							<input type="text" placeholder=".form-group-warning">
+							
+							<span class="help-block">Something may have gone wrong</span>
 							
 						</div>
 						
-						<div class="control-group error">
+						<div class="form-group form-group-error">
 							
-							<label class="control-label">Input with error</label>
+							<label>
+								
+								Input with error
+								
+							</label>
 							
-							<div class="controls">
-								
-								<input type="text">
-								
-								<span class="help-block flush-bottom">Please correct the error</span>
-								
-							</div>
+							<input type="text" class="flush-bottom" placeholder=".form-group-warning">
+							
+							<span class="help-block">Please correct the error</span>
 							
 						</div>
 						

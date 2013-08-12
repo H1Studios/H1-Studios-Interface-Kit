@@ -3674,9 +3674,9 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<input type=\"text\">
+\t\t\t\t\t\t<input type=\"text\" class=\"flush-bottom\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<span class=\"help-block flush-bottom\">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+\t\t\t\t\t\t<span class=\"help-block\">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
@@ -3922,7 +3922,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t\t<form class=\"code-example form-inline flush-bottom\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<input type=\"email\" class=\"flush-bottom\" placeholder=\"test@example.com\" required>
+\t\t\t\t\t\t<input type=\"email\" class=\"flush-bottom\" placeholder=\"test@example.com\" required invalid>
 \t\t\t\t\t\t
 \t\t\t\t\t</form>
 \t\t\t\t\t
@@ -3970,49 +3970,45 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t\t<form class=\"code-example flush-bottom\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"control-group success\">
+\t\t\t\t\t\t<div class=\"form-group form-group-success\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<label class=\"control-label\">Input with success</label>
+\t\t\t\t\t\t\t<label>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\tInput with success
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</label>
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"controls\">
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<input type=\"text\">
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<span class=\"help-block\">Woohoo!</span>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t<input type=\"text\" placeholder=\".form-group-warning\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"help-block\">Woohoo!</span>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"control-group warning\">
+\t\t\t\t\t\t<div class=\"form-group form-group-warning\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<label class=\"control-label\">
+\t\t\t\t\t\t\t<label>
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\tInput with warning
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</label>
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"controls\">
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<input type=\"text\">
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<span class=\"help-block\">Something may have gone wrong</span>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t<input type=\"text\" placeholder=\".form-group-warning\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"help-block\">Something may have gone wrong</span>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"control-group error\">
+\t\t\t\t\t\t<div class=\"form-group form-group-error\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<label class=\"control-label\">Input with error</label>
+\t\t\t\t\t\t\t<label>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\tInput with error
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</label>
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"controls\">
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<input type=\"text\">
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<span class=\"help-block flush-bottom\">Please correct the error</span>
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t<input type=\"text\" class=\"flush-bottom\" placeholder=\".form-group-warning\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"help-block\">Please correct the error</span>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
