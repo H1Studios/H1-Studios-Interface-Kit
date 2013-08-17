@@ -1,0 +1,623 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/dropdowns.less                                                                            */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* General Dropdown Styling                                                  */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.dropup,
+.dropdown {
+	
+	position: relative;
+	
+	&.anchor {
+		
+		margin: 0px;
+		display: block;
+		.clearfix();
+		
+		&:after {
+			
+			display: none;
+			
+		}
+		
+	}
+	
+}
+
+.dropdown-toggle {
+	
+	*margin-bottom: -3px;
+	
+}
+
+.dropdown-toggle:active,
+.dropdown-toggle:focus,
+.open .dropdown-toggle {
+	
+	outline: 0;
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Dropdown Arrow/Caret                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.caret {
+	
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: top;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 6px 5px 0;
+	border-top-color: @buttonTextColor;
+	
+}
+
+.dropdown-toggle {
+	
+	&.button {
+		
+		.caret {
+			
+			margin-top: (@buttonTextLineHeight / 2) - (6 / 2);
+			margin-left: (@buttonHorizontalPadding / 2);
+			
+			&.solo {
+				
+				margin-left: 0px;
+				
+			}
+			
+		}
+		
+		&.button-large {
+			
+			.caret {
+				
+				border-width: 8px 6px 0;
+				margin-top: (@buttonTextLineHeightLarge / 2) - (8 / 2);
+				margin-left: (@buttonHorizontalPaddingLarge / 2);
+				
+				&.solo {
+					
+					margin-left: 0px;
+					
+				}
+				
+			}
+			
+		}
+		
+		&.button-small {
+			
+			.caret {
+				
+				margin-top: (@buttonTextLineHeightSmall / 2) - (4 / 2);
+				margin-left: (@buttonHorizontalPaddingSmall / 2);
+				
+				&.solo {
+					
+					margin-left: 0px;
+					
+				}
+				
+			}
+			
+		}
+		
+		&.button-mini {
+			
+			.caret {
+				
+				border-width: 5px 4px 0;
+				margin-top: (@buttonTextLineHeightMini / 2) - (5 / 2);
+				margin-left: (@buttonHorizontalPaddingMini / 2);
+				
+				&.solo {
+					
+					margin-left: 0px;
+					
+				}
+				
+			}
+			
+		}
+		
+		&.button-primary,
+		&.button-success,
+		&.button-danger,
+		&.button-info,
+		&.button-warning,
+		&.button-inverse {
+			
+			.caret {
+				
+				border-top-color: @buttonPrimaryTextColor;
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* The dropdown menu                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.dropdown-menu {
+	
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: @z-index-dropdown;
+	display: none;
+	float: left;
+	min-width: @dropdownMinWidth;
+	padding: 0px;
+	margin: @dropdownTopMargin 0px 0px 0px;
+	list-style: none;
+	background-color: @dropdownBackground;
+	border: none;
+	.border-radius(@dropdownBorderRadius);
+	.box-shadow(@dropdownShadow);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	
+	&.pull-right {
+		
+		right: 0;
+		left: auto;
+		
+	}
+	
+	.divider {
+		
+		*width: 100%;
+		height: 1px;
+		margin: @dropdownDividerPadding 0px @dropdownDividerPadding 0px;
+		overflow: hidden;
+		background-color: @dropdownDividerBackground;
+		.box-shadow(@dropdownDividerShadow);
+		z-index: @z-index-dropdown + 2;
+		position: relative;
+		    
+	}
+	
+	> li {
+		
+		margin: 0px;
+		
+		> a {
+			
+			display: block;
+			padding: 0px @dropdownLinkHorizontalPadding 0px @dropdownLinkHorizontalPadding;
+			clear: both;
+			font-weight: normal;
+			line-height: @dropdownLinkHeight;
+			color: @dropdownLinkColor;
+			white-space: nowrap;
+			background: @dropdownLinkBackground;
+			.box-shadow(@dropdownLinkShadow);
+			
+		}
+		
+		&.danger {
+			
+			> a {
+				
+				color: @dropdownLinkDangerColor;
+				background: @dropdownLinkDangerBackground;
+				
+			}
+			
+		}
+		
+		&:first-child {
+			
+			> a {
+				
+				.border-radius(@dropdownBorderRadius @dropdownBorderRadius 0px 0px);
+				
+			}
+			
+		}
+		
+		&:last-child {
+			
+			> a {
+				
+				.border-radius(0px 0px @dropdownBorderRadius @dropdownBorderRadius);
+				
+			}
+			
+		}
+		
+	}
+	
+	&.anchor {
+		
+		margin: 0px;
+		display: block;
+		float: none;
+		width: 180px;
+		position: inherit;
+		.clearfix();
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Hover/Focus state                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+	
+	text-decoration: none;
+	color: @dropdownLinkColorHover;
+	background: @dropdownLinkBackgroundHover;
+	z-index: @z-index-dropdown + 1;
+	
+}
+
+.dropdown-menu > li.danger > a:hover,
+.dropdown-menu > li.danger > a:focus {
+	
+	color: @dropdownLinkDangerColorHover;
+	background: @dropdownLinkDangerBackgroundHover;
+	
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+	
+	color: @dropdownLinkColorActive;
+	text-decoration: none;
+	outline: 0;
+	background: @dropdownLinkBackgroundActive;
+	z-index: @z-index-dropdown + 1;
+	
+}
+
+.dropdown-menu > .danger.active > a,
+.dropdown-menu > .danger.active > a:hover,
+.dropdown-menu > .danger.active > a:focus {
+	
+	color: @dropdownLinkDangerColorActive;
+	background: @dropdownLinkDangerBackgroundActive;
+	
+}
+
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+	
+	text-decoration: none;
+	color: @dropdownLinkColorDisabled;
+	background: @dropdownLinkBackgroundDisabled;
+	z-index: @z-index-dropdown + 1;
+	
+}
+
+.dropdown-menu > .danger.disabled > a,
+.dropdown-menu > .danger.disabled > a:hover,
+.dropdown-menu > .danger.disabled > a:focus {
+	
+	text-decoration: none;
+	color: @dropdownLinkDangerColorDisabled;
+	background: @dropdownLinkDangerBackgroundDisabled;
+	
+}
+
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+	
+	text-decoration: none;
+	background: @dropdownLinkBackgroundDisabled;
+	.reset-filter();
+	cursor: default;
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Open state                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.open {
+	
+	*z-index: @z-index-dropdown;
+	
+	& > .dropdown-menu {
+		
+		display: block;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Right-aligned dropdowns                                                   */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.pull-right > .dropdown-menu {
+	
+	right: 0;
+	left: auto;
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Drop-ups                                                                  */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.dropup,
+.navbar-fixed-bottom .dropdown {
+	
+	.caret {
+		
+		width: 0;
+		height: 0;
+		border-color: transparent;
+		border-style: solid;
+		border-width: 0px 5px 6px 5px;
+		border-top-color: none;
+		border-bottom-color: @buttonTextColor;
+		margin-top: (@buttonTextLineHeight / 2) - (7 / 2);
+		
+	}
+	
+	.dropdown-menu {
+		
+		top: auto;
+		bottom: 100%;
+		margin-bottom: 1px;
+		
+	}
+	
+	.dropdown-toggle {
+		
+		&.button {
+			
+			.caret {
+				
+				margin-top: (@buttonTextLineHeight / 2) - (7 / 2);
+				
+			}
+			
+			&.button-large {
+				
+				.caret {
+					
+					border-width: 0px 6px 8px 6px;
+					margin-top: (@buttonTextLineHeightLarge / 2) - (9 / 2);
+					
+				}
+				
+			}
+			
+			&.button-small {
+				
+				.caret {
+					
+					margin-top: (@buttonTextLineHeightSmall / 2) - (5 / 2);
+					
+				}
+				
+			}
+			
+			&.button-mini {
+				
+				.caret {
+					
+					border-width: 0px 5px 4px 5px;
+					margin-top: (@buttonTextLineHeightMini / 2) - (5 / 2);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Submenus                                                                  */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.dropdown-submenu {
+	
+	position: relative;
+	
+}
+
+.dropdown-submenu > .dropdown-menu {
+	
+	top: 0px;
+	left: 100%;
+	margin-top: 0px;
+	margin-left: 1px;
+	.border-radius(@dropdownBorderRadius);
+	position: absolute;
+	z-index: @z-index-dropdown + 5;
+	
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+	
+	display: block;
+	
+}
+
+.dropup .dropdown-submenu > .dropdown-menu {
+	
+	top: auto;
+	bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	.border-radius(@dropdownBorderRadius);
+	
+}
+
+.dropdown-submenu > a:after {
+	
+	display: block;
+	content: " ";
+	float: right;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 7px;
+	border-left-color: darken(@dropdownBackground, 20%);
+	margin-top: (@dropdownLinkHeight / 2) - (12 / 2);
+	margin-right: 0px;
+	
+}
+
+.dropdown-submenu:hover > a:after {
+	
+	border-left-color: @dropdownLinkColorHover;
+	
+}
+
+.dropdown-submenu.pull-left {
+	
+	float: none;
+	
+	> .dropdown-menu {
+		
+		width: 100%;
+		left: -100%;
+		margin-left: -1px;
+		.border-radius(@dropdownBorderRadius);
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Typeahead                                                                 */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.typeahead {
+	
+	z-index: 1051;
+	margin-top: 2px; // give it some space to breathe
+	.border-radius(@dropdownBorderRadius);
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @viewport-widescreen) {
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @viewport-mobile-landscape-max) {
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @viewport-mobile-max) {
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Retina Displays                                                                   */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

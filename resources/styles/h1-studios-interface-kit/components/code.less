@@ -1,0 +1,579 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* /core/code.less                                                                                      */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Syntax Highlighting                                                                                  */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.com {
+	
+	color: #93a1a1;
+	
+}
+
+.lit {
+	
+	color: #195f91;
+	
+}
+
+.pun,
+.opn,
+.clo {
+	
+	color: #93a1a1;
+	
+}
+
+.fun {
+	
+	color: #dc322f;
+	
+}
+
+.str,
+.atv {
+	
+	color: #D14;
+	
+}
+
+.kwd,
+.prettyprint .tag {
+	
+	color: #1e347b;
+	
+}
+
+.typ,
+.atn,
+.dec,
+.var {
+	
+	color: teal;
+	
+}
+
+.pln {
+	
+	color: #48484c;
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Pretty Print                                                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+code {
+	
+	color: @code-pre-text-color;
+	font-family: @code-text-font-family;
+	font-size: @code-text-font-size;
+	font-weight: @code-text-font-weight;
+	line-height: @code-text-line-height;
+	padding: 0px @code-padding-horizontal 0px @code-padding-horizontal;
+	background-color: @code-background-color;
+	.box-shadow(@code-shadow);
+	.border-radius(@code-border-radius);
+	display: inline-block;
+	white-space: nowrap;
+	
+}
+
+pre {
+	
+	color: @code-text-color;
+	font-family: @code-text-font-family;
+	font-size: @code-text-font-size;
+	font-weight: @code-text-font-weight;
+	line-height: @code-text-line-height;
+	background-color: @code-background-color;
+	.box-shadow(@code-shadow);
+	.border-radius(@code-border-radius);
+	display: block;
+	margin: 0px 0px @primary-margin 0px;
+	padding: @primary-margin / 2;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	
+	&.prettyprint {
+		
+		/*
+		padding: 8px;
+		background-color: #f7f7f9;
+		border: 1px solid #e1e1e8;
+		display: block;
+		margin: 0px 0px @primary-margin 0px;
+		padding: @primary-margin / 2;
+		font-size: @code-text-font-size;
+		line-height: @code-text-line-height;
+		word-break: break-all;
+		word-wrap: break-word;
+		white-space: pre;
+		white-space: pre-wrap;
+		background-color: @H1_gray-lighten-90;
+		border: 1px solid #ccc; // fallback for IE7-8
+		border: 1px solid rgba(0,0,0,.15);
+		.border-radius(4px);
+		*/
+		
+		code {
+			
+			padding: 0;
+			color: inherit;
+			white-space: pre;
+			white-space: pre-wrap;
+			background-color: transparent;
+			border: 0;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: (@primary-margin * @text-margin-ratio-short);
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: (@primary-margin * @text-margin-ratio-tall);
+			
+		}
+		
+		&.linenums {
+			
+			padding-left: 0px;
+			position: relative;
+			
+			&:before {
+				
+				content: '';
+				background: @code-linenums-background-color;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: @primary-margin;
+				height: 100%;
+				.border-radius(0px 0px 0px @code-border-radius);
+				border-right: 1px solid @code-linenums-border-color;
+				
+			}
+			
+			ol {
+				
+				position: relative;
+				
+				&.linenums {
+					
+					margin: 0 0 0 @primary-margin;
+					list-style-position: outside;
+					
+					li {
+						
+						padding-left: (@primary-margin / 2);
+						font-size: @code-text-font-size;
+						font-weight: @code-text-font-weight;
+						line-height: @code-text-line-height;
+						margin: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	&.pre-scrollable {
+		
+		max-height: 340px;
+		overflow-y: scroll;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Code examples                                                                                        */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+// Base class
+
+.code-example,
+form.code-example {
+	
+	position: relative;
+	margin: 0px 0px @primary-margin 0px;
+	padding: (((2 * (@primary-margin / 6)) + @code-text-line-height) + (@primary-margin / 2)) (@primary-margin / 2) (@primary-margin / 2) (@primary-margin / 2);
+	*padding-top: @primary-margin;
+	.box-shadow(@code-shadow);
+	.border-radius(4px 4px 0px 0px);
+	
+	&:after {
+		
+		content: "Example" !important;
+		display: block !important;
+		position: absolute;
+		top: -1px;
+		left: -1px;
+		padding: (@primary-margin / 6) (@primary-margin / 4) (@primary-margin / 6) (@primary-margin / 4);
+		font-size: @code-text-font-size;
+		font-weight: bold;
+		background-color: @code-background-color;
+		border: 1px solid @border-color;
+		color: @code-text-color;
+		.border-radius(4px 0 4px 0);
+		line-height: @code-text-line-height !important;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: (@primary-margin * @text-margin-ratio-short);
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: (@primary-margin * @text-margin-ratio-tall);
+		
+	}
+	
+	// Remove spacing between an example and it's code
+	
+	+ .prettyprint {
+		
+		//margin-top: -@table-border-radius;
+		margin-top: 1px;
+		.border-radius(0px 0px 4px 4px);
+		z-index: 10000;
+		position: relative;
+		
+		&.short {
+			
+			margin-bottom: (@primary-margin * @text-margin-ratio-short) + 5px;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: (@primary-margin * @text-margin-ratio-tall) + 5px;
+			
+		}
+		
+		
+	}
+	
+	// Tweak examples
+	
+	> p:last-child {
+		
+		margin-bottom: 0;
+		
+	}
+	
+	.pagination {
+		
+		margin-top: 0;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and                              */
+/* above.                                                                                               */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @viewport-widescreen) {
+	
+	code {
+		
+		font-size: @code-text-font-size * @code-text-responsive-ratio-widescreen;
+		line-height: @code-text-line-height * @code-text-responsive-ratio-widescreen;
+		
+	}
+	
+	pre {
+		
+		font-size: @code-text-font-size * @code-text-responsive-ratio-widescreen;
+		line-height: @code-text-line-height * @code-text-responsive-ratio-widescreen;
+		padding: @primary-margin-widescreen / 2;
+		
+		&.prettyprint {
+			
+			&.linenums {
+				
+				&:before {
+					
+					width: @primary-margin-widescreen;
+					
+				}
+				
+				ol {
+					
+					&.linenums {
+						
+						margin: 0 0 0 @primary-margin-widescreen;
+						
+						li {
+							
+							font-size: @code-text-font-size * @code-text-responsive-ratio-widescreen;
+							line-height: @code-text-line-height * @code-text-responsive-ratio-widescreen;
+							padding-left: (@primary-margin-widescreen / 2);
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+						
+	}
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Code examples                                                                                        */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	// Base class
+	
+	.code-example,
+	form.code-example {
+		
+		margin: 0px 0px @primary-margin-widescreen 0px;
+		padding: (((2 * (@primary-margin-widescreen / 6)) + (@code-text-line-height * @code-text-responsive-ratio-widescreen)) + (@primary-margin-widescreen / 2)) (@primary-margin-widescreen / 2) (@primary-margin-widescreen / 2) (@primary-margin-widescreen / 2);
+		*padding-top: @primary-margin-widescreen;
+		
+		&:after {
+			
+			font-size: @code-text-font-size * @code-text-responsive-ratio-widescreen;
+			line-height: @code-text-line-height * @code-text-responsive-ratio-widescreen;
+			padding: (@primary-margin-widescreen / 6) (@primary-margin-widescreen / 4) (@primary-margin-widescreen / 6) (@primary-margin-widescreen / 4);
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive changes to styling for portrait tablet (@viewport-tablet)                                 */
+/* to default desktop (@viewport-standard).                                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
+	
+	code {
+		
+		font-size: @code-text-font-size * @code-text-responsive-ratio-tablet;
+		line-height: @code-text-line-height * @code-text-responsive-ratio-tablet;
+		
+	}
+	
+	pre {
+		
+		font-size: @code-text-font-size * @code-text-responsive-ratio-tablet;
+		line-height: @code-text-line-height * @code-text-responsive-ratio-tablet;
+		padding: @primary-margin-tablet / 2;
+		
+		&.prettyprint {
+			
+			&.linenums {
+				
+				&:before {
+					
+					width: @primary-margin-tablet;
+					
+				}
+				
+				ol {
+					
+					&.linenums {
+						
+						margin: 0 0 0 @primary-margin-tablet;
+						
+						li {
+							
+							font-size: @code-text-font-size * @code-text-responsive-ratio-tablet;
+							line-height: @code-text-line-height * @code-text-responsive-ratio-tablet;
+							padding-left: (@primary-margin-tablet / 2);
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+						
+	}
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Code examples                                                                                        */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	// Base class
+	
+	.code-example,
+	form.code-example {
+		
+		margin: 0px 0px @primary-margin-tablet 0px;
+		padding: (((2 * (@primary-margin-tablet / 6)) + (@code-text-line-height * @code-text-responsive-ratio-tablet)) + (@primary-margin-tablet / 2)) (@primary-margin-tablet / 2) (@primary-margin-tablet / 2) (@primary-margin-tablet / 2);
+		*padding-top: @primary-margin-tablet;
+		
+		&:after {
+			
+			font-size: @code-text-font-size * @code-text-responsive-ratio-tablet;
+			line-height: @code-text-line-height * @code-text-responsive-ratio-tablet;
+			padding: (@primary-margin-tablet / 6) (@primary-margin-tablet / 4) (@primary-margin-tablet / 6) (@primary-margin-tablet / 4);
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @viewport-mobile-landscape-max) {
+	
+	code {
+		
+		font-size: @code-text-font-size * @code-text-responsive-ratio-mobile;
+		line-height: @code-text-line-height * @code-text-responsive-ratio-mobile;
+		
+	}
+	
+	pre {
+		
+		font-size: @code-text-font-size * @code-text-responsive-ratio-mobile;
+		line-height: @code-text-line-height * @code-text-responsive-ratio-mobile;
+		padding: @primary-margin-mobile / 2;
+		
+		&.prettyprint {
+			
+			&.linenums {
+				
+				&:before {
+					
+					width: @primary-margin-mobile;
+					
+				}
+				
+				ol {
+					
+					&.linenums {
+						
+						margin: 0 0 0 @primary-margin-mobile;
+						
+						li {
+							
+							font-size: @code-text-font-size * @code-text-responsive-ratio-mobile;
+							line-height: @code-text-line-height * @code-text-responsive-ratio-mobile;
+							padding-left: (@primary-margin-mobile / 2);
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+						
+	}
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Code examples                                                                                        */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	// Base class
+	
+	.code-example,
+	form.code-example {
+		
+		margin: 0px 0px @primary-margin-mobile 0px;
+		padding: (((2 * (@primary-margin-mobile / 6)) + (@code-text-line-height * @code-text-responsive-ratio-mobile)) + (@primary-margin-mobile / 2)) (@primary-margin-mobile / 2) (@primary-margin-mobile / 2) (@primary-margin-mobile / 2);
+		*padding-top: @primary-margin-mobile;
+		
+		&:after {
+			
+			font-size: @code-text-font-size * @code-text-responsive-ratio-mobile;
+			line-height: @code-text-line-height * @code-text-responsive-ratio-mobile;
+			padding: (@primary-margin-mobile / 6) (@primary-margin-mobile / 4) (@primary-margin-mobile / 6) (@primary-margin-mobile / 4);
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive changes to styling up to landscape phones                                                 */
+/* (@viewport-mobile-landscape)                                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @viewport-mobile-max) {
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Retina Displays                                                                   */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

@@ -39,7 +39,7 @@ class __TwigTemplate_ef8ee29b944b82852209111fd2c9de90 extends Twig_Template
         echo "\t
     ";
         // line 5
-        $this->env->loadTemplate("common/head.php")->display($context);
+        $this->env->loadTemplate("head.php")->display($context);
         // line 6
         echo "    
 ";
@@ -57,7 +57,7 @@ class __TwigTemplate_ef8ee29b944b82852209111fd2c9de90 extends Twig_Template
         echo "\t\t\t
 \t    \t";
         // line 23
-        $this->env->loadTemplate("common/header/default.php")->display($context);
+        $this->env->loadTemplate("layout/header/default.php")->display($context);
         // line 24
         echo "\t    \t
 \t\t";
@@ -106,7 +106,7 @@ class __TwigTemplate_ef8ee29b944b82852209111fd2c9de90 extends Twig_Template
         echo "\t\t\t\t
 \t\t    \t";
         // line 61
-        $this->env->loadTemplate("common/footer/default.php")->display($context);
+        $this->env->loadTemplate("layout/footer/default.php")->display($context);
         // line 62
         echo "\t\t    \t
 \t\t\t";
@@ -194,7 +194,7 @@ class __TwigTemplate_ef8ee29b944b82852209111fd2c9de90 extends Twig_Template
         echo "\t
 \t";
         // line 73
-        $this->env->loadTemplate("common/foot.php")->display($context);
+        $this->env->loadTemplate("foot.php")->display($context);
         // line 74
         echo "\t
 ";

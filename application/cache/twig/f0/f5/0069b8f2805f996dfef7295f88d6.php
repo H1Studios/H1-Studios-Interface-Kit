@@ -20,7 +20,7 @@ class __TwigTemplate_f0f50069b8f2805f996dfef7295f88d6 extends Twig_Template
 <link rel=\"stylesheet\" type=\"text/css\" href=\"";
         // line 7
         echo twig_escape_filter($this->env, resource_url(), "html", null, true);
-        echo "styles/style.css\">
+        echo "styles/styles.css\">
 
 <!-- =================================================== -->
 <!-- ============ LOAD JAVASCRIPT LIBRARIES ============ -->

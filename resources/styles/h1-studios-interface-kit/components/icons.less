@@ -1,0 +1,1965 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/icons.less                                                                                */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Base Styles                                                               */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.icon,
+.icon-mini {
+
+	display: inline-block;
+	line-height: 16px;
+	vertical-align: middle;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	.ie7-restore-right-whitespace();
+	width: 16px;
+	height: 16px;
+	background-image: url(/resources/images/components/icons/icons-mini.png);
+
+	&.icon-small {
+
+		width: 24px;
+		height: 24px;
+		background-image: url(/resources/images/components/icons/icons-small.png);
+
+	}
+
+	&.icon-medium {
+
+		width: 32px;
+		height: 32px;
+		background-image: url(/resources/images/components/icons/icons-medium.png);
+
+	}
+
+	&.icon-large {
+
+		width: 48px;
+		height: 48px;
+		background-image: url(/resources/images/components/icons/icons-large.png);
+
+	}
+
+	&.icon-jumbo {
+
+		width: 64px;
+		height: 64px;
+		background-image: url(/resources/images/components/icons/icons-jumbo.png);
+
+	}
+
+	&.icon-muted {
+
+		.opacity(25);
+
+	}
+
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Icon Sprite Positioning - Mini (16x16)                                    */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.icon,
+.icon-mini {
+
+	background-position: 0px 0px;
+
+	&.icon-white {
+		
+		background-position: -16px 0px;
+		
+	}
+	
+	&.icon-black-shadowed {
+		
+		background-position: -32px 0px;
+		
+	}
+	
+	&.icon-white-shadowed {
+		
+		background-position: -48px 0px;
+		
+	}
+	
+	&.icon-color {
+		
+		background-position: -64px 0px;
+		
+	}
+	
+	&.icon-stylized {
+		
+		background-position: -80px 0px;
+		
+	}
+	
+	&.icon-stylized.active {
+		
+		background-position: -96px 0px;
+		
+	}
+	
+	// Plus
+	
+	&.icon-plus {
+		
+		background-position: 0px -16px;
+		
+		&.icon-white {
+			
+			background-position: -16px -16px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -16px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -16px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -16px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -16px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -16px;
+			
+		}
+		
+	}
+	
+	// Close
+	
+	&.icon-close {
+		
+		background-position: 0px -32px;
+		
+		&.icon-white {
+			
+			background-position: -16px -32px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -32px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -32px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -32px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -32px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -32px;
+			
+		}
+		
+	}
+	
+	// Caret Left
+	
+	&.icon-caret-left {
+		
+		background-position: 0px -48px;
+		
+		&.icon-white {
+			
+			background-position: -16px -48px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -48px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -48px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -48px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -48px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -48px;
+			
+		}
+		
+	}
+	
+	// Caret Right
+	
+	&.icon-caret-right {
+		
+		background-position: 0px -64px;
+		
+		&.icon-white {
+			
+			background-position: -16px -64px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -64px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -64px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -64px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -64px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -64px;
+			
+		}
+		
+	}
+	
+	// Caret Down
+	
+	&.icon-caret-down {
+		
+		background-position: 0px -80px;
+		
+		&.icon-white {
+			
+			background-position: -16px -80px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -80px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -80px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -80px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -80px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -80px;
+			
+		}
+		
+	}
+	
+	// Caret Up
+	
+	&.icon-caret-up {
+		
+		background-position: 0px -96px;
+		
+		&.icon-white {
+			
+			background-position: -16px -96px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -96px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -96px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -96px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -96px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -96px;
+			
+		}
+		
+	}
+	
+	// Triangle Left
+	
+	&.icon-triangle-left {
+		
+		background-position: 0px -112px;
+		
+		&.icon-white {
+			
+			background-position: -16px -112px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -112px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -112px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -112px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -112px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -112px;
+			
+		}
+		
+	}
+	
+	// Triangle Right
+	
+	&.icon-triangle-right {
+		
+		background-position: 0px -128px;
+		
+		&.icon-white {
+			
+			background-position: -16px -128px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -128px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -128px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -128px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -128px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -128px;
+			
+		}
+		
+	}
+	
+	// Triangle Down
+	
+	&.icon-triangle-down {
+		
+		background-position: 0px -144px;
+		
+		&.icon-white {
+			
+			background-position: -16px -144px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -144px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -144px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -144px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -144px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -144px;
+			
+		}
+		
+	}
+	
+	// Triangle Up
+	
+	&.icon-triangle-up {
+		
+		background-position: 0px -160px;
+		
+		&.icon-white {
+			
+			background-position: -16px -160px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -160px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -160px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -160px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -160px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -160px;
+			
+		}
+		
+	}
+	
+	// Check
+	
+	&.icon-check {
+		
+		background-position: 0px -176px;
+		
+		&.icon-white {
+			
+			background-position: -16px -176px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -176px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -176px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -176px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -176px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -176px;
+			
+		}
+		
+	}
+	
+	// Search
+	
+	&.icon-search {
+		
+		background-position: 0px -192px;
+		
+		&.icon-white {
+			
+			background-position: -16px -192px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -192px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -192px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -192px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -192px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -192px;
+			
+		}
+		
+	}
+	
+	// Mail
+	
+	&.icon-mail {
+		
+		background-position: 0px -208px;
+		
+		&.icon-white {
+			
+			background-position: -16px -208px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -208px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -208px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -208px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -208px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -208px;
+			
+		}
+		
+	}
+	
+	// Campaigns
+	
+	&.icon-campaigns {
+		
+		background-position: 0px -224px;
+		
+		&.icon-white {
+			
+			background-position: -16px -224px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -224px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -224px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -224px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -224px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -224px;
+			
+		}
+		
+	}
+	
+	// Keyword
+	
+	&.icon-keyword {
+		
+		background-position: 0px -240px;
+		
+		&.icon-white {
+			
+			background-position: -16px -240px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -240px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -240px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -240px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -240px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -240px;
+			
+		}
+		
+	}
+	
+	// Chart
+	
+	&.icon-chart {
+		
+		background-position: 0px -256px;
+		
+		&.icon-white {
+			
+			background-position: -16px -256px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -256px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -256px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -256px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -256px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -256px;
+			
+		}
+		
+	}
+	
+	// People
+	
+	&.icon-people {
+		
+		background-position: 0px -272px;
+		
+		&.icon-white {
+			
+			background-position: -16px -272px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -272px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -272px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -272px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -272px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -272px;
+			
+		}
+		
+	}
+	
+	// Picture
+	
+	&.icon-picture {
+		
+		background-position: 0px -288px;
+		
+		&.icon-white {
+			
+			background-position: -16px -288px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -288px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -288px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -288px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -288px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -288px;
+			
+		}
+		
+	}
+	
+	// Campaign Starred
+	
+	&.icon-campaign-starred {
+		
+		background-position: 0px -304px;
+		
+		&.icon-white {
+			
+			background-position: -16px -304px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -304px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -304px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -304px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -304px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -304px;
+			
+		}
+		
+	}
+	
+	// Draft
+	
+	&.icon-draft {
+		
+		background-position: 0px -320px;
+		
+		&.icon-white {
+			
+			background-position: -16px -320px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -320px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -320px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -320px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -320px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -320px;
+			
+		}
+		
+	}
+	
+	// Calendar
+	
+	&.icon-calendar {
+		
+		background-position: 0px -336px;
+		
+		&.icon-white {
+			
+			background-position: -16px -336px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -336px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -336px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -336px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -336px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -336px;
+			
+		}
+		
+	}
+	
+	// Tag
+	
+	&.icon-tag {
+		
+		background-position: 0px -352px;
+		
+		&.icon-white {
+			
+			background-position: -16px -352px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -352px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -352px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -352px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -352px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -352px;
+			
+		}
+		
+	}
+	
+	// Grid
+	
+	&.icon-grid {
+		
+		background-position: 0px -368px;
+		
+		&.icon-white {
+			
+			background-position: -16px -368px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -368px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -368px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -368px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -368px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -368px;
+			
+		}
+		
+	}
+	
+	// Link
+	
+	&.icon-link {
+		
+		background-position: 0px -384px;
+		
+		&.icon-white {
+			
+			background-position: -16px -384px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -384px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -384px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -384px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -384px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -384px;
+			
+		}
+		
+	}
+	
+	// Coupon
+	
+	&.icon-coupon {
+		
+		background-position: 0px -400px;
+		
+		&.icon-white {
+			
+			background-position: -16px -400px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -400px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -400px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -400px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -400px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -400px;
+			
+		}
+		
+	}
+	
+	// People List
+	
+	&.icon-people-list {
+		
+		background-position: 0px -416px;
+		
+		&.icon-white {
+			
+			background-position: -16px -416px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -416px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -416px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -416px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -416px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -416px;
+			
+		}
+		
+	}
+	
+	// Paintbrush
+	
+	&.icon-paintbrush {
+		
+		background-position: 0px -432px;
+		
+		&.icon-white {
+			
+			background-position: -16px -432px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -432px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -432px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -432px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -432px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -432px;
+			
+		}
+		
+	}
+	
+	// Hammer & Wrench
+	
+	&.icon-hammer-wrench {
+		
+		background-position: 0px -448px;
+		
+		&.icon-white {
+			
+			background-position: -16px -448px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -448px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -448px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -448px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -448px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -448px;
+			
+		}
+		
+	}
+	
+	// Web Page
+	
+	&.icon-webpage {
+		
+		background-position: 0px -464px;
+		
+		&.icon-white {
+			
+			background-position: -16px -464px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -464px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -464px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -464px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -464px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -464px;
+			
+		}
+		
+	}
+	
+	// Sliders
+	
+	&.icon-sliders {
+		
+		background-position: 0px -480px;
+		
+		&.icon-white {
+			
+			background-position: -16px -480px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -480px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -480px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -480px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -480px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -480px;
+			
+		}
+		
+	}
+	
+	// Timer
+	
+	&.icon-timer {
+		
+		background-position: 0px -496px;
+		
+		&.icon-white {
+			
+			background-position: -16px -496px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -496px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -496px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -496px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -496px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -496px;
+			
+		}
+		
+	}
+	
+	// Star
+	
+	&.icon-star {
+		
+		background-position: 0px -512px;
+		
+		&.icon-white {
+			
+			background-position: -16px -512px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -512px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -512px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -512px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -512px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -512px;
+			
+		}
+		
+	}
+	
+	// Person
+	
+	&.icon-person {
+		
+		background-position: 0px -528px;
+		
+		&.icon-white {
+			
+			background-position: -16px -528px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -528px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -528px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -528px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -528px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -528px;
+			
+		}
+		
+	}
+	
+	// Location
+	
+	&.icon-location {
+		
+		background-position: 0px -544px;
+		
+		&.icon-white {
+			
+			background-position: -16px -544px;
+			
+		}
+		
+		&.icon-black-shadowed {
+			
+			background-position: -32px -544px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -48px -544px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -64px -544px;
+			
+		}
+		
+		&.icon-stylized {
+			
+			background-position: -80px -544px;
+			
+		}
+		
+		&.icon-stylized.active {
+			
+			background-position: -96px -544px;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Icon Sprite Positioning - Small (24x24)                                   */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.icon-small {
+
+	background-position: 0px 0px;
+	
+	&.icon-white {
+		
+		background-position: -24px 0px;
+		
+	}
+	
+	&.icon-shadowed {
+		
+		background-position: -48px 0px;
+		
+	}
+	
+	&.icon-white-shadowed {
+		
+		background-position: -72px 0px;
+		
+	}
+	
+	&.icon-color {
+		
+		background-position: -96px 0px;
+		
+	}
+	
+	// Star
+	
+	&.icon-star {
+		
+		background-position: 0px -24px;
+		
+		&.icon-white {
+			
+			background-position: -24px -24px;
+			
+		}
+		
+		&.icon-shadowed {
+			
+			background-position: -48px -24px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -72px -24px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -96px -24px;
+			
+		}
+		
+	}
+
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Icon Sprite Positioning - Medium (32x32)                                  */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.icon-medium {
+
+	background-position: 0px 0px;
+	
+	&.icon-white {
+		
+		background-position: -32px 0px;
+		
+	}
+	
+	&.icon-shadowed {
+		
+		background-position: -64px 0px;
+		
+	}
+	
+	&.icon-white-shadowed {
+		
+		background-position: -96px 0px;
+		
+	}
+	
+	&.icon-color {
+		
+		background-position: -128px 0px;
+		
+	}
+	
+	// Star
+	
+	&.icon-star {
+		
+		background-position: 0px -32px;
+		
+		&.icon-white {
+			
+			background-position: -32px -32px;
+			
+		}
+		
+		&.icon-shadowed {
+			
+			background-position: -64px -32px;
+			
+		}
+		
+		&.icon-white-shadowed {
+			
+			background-position: -96px -32px;
+			
+		}
+		
+		&.icon-color {
+			
+			background-position: -128px -32px;
+			
+		}
+		
+	}
+
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Icon Sprite Positioning - Large (48x48)                                   */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.icon-large {
+
+	background-position: 0px 0px;
+
+	&.icon-white {
+
+		background-position: -48px 0px;
+
+	}
+
+	&.icon-color {
+
+		background-position: -96px 0px;
+
+	}
+
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Icon Sprite Positioning - Jumbo (64x64)                                   */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.icon-jumbo {
+
+	background-position: 0px 0px;
+	
+	// Campaign (Response)
+	
+	&.icon-campaign-response {
+		
+		background-position: 0px -0px;
+		
+	}
+	
+	// Campaign (Response)
+	
+	&.icon-campaign-broadcast {
+		
+		background-position: 0px -64px;
+		
+	}
+	
+	// Campaign (Response)
+	
+	&.icon-campaign-contest {
+		
+		background-position: 0px -128px;
+		
+	}
+	
+	// Campaign (Response)
+	
+	&.icon-campaign-poll {
+		
+		background-position: 0px -192px;
+		
+	}
+	
+	// Campaign (Response)
+	
+	&.icon-asset-picture {
+		
+		background-position: 0px -256px;
+		
+	}
+	
+	// Campaign (Response)
+	
+	&.icon-asset-link {
+		
+		background-position: 0px -320px;
+		
+	}
+	
+	// Campaign (Response)
+	
+	&.icon-asset-coupon {
+		
+		background-position: 0px -384px;
+		
+	}
+	
+	// Campaign (Response)
+	
+	&.icon-asset-page {
+		
+		background-position: 0px -448px;
+		
+	}
+
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @viewport-widescreen) {
+
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
+
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @viewport-mobile-landscape-max) {
+
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @viewport-mobile-max) {
+
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Retina Displays                                                                   */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+	.icon,
+	.icon-mini {
+
+		background-image: url(/resources/images/components/icons/icons-mini@2x.png);
+		-webkit-background-size: 112px 560px;
+		-moz-background-size: 112px 560px;
+		background-size: 112px 560px;
+
+		&.icon-small {
+
+			background-image: url(/resources/images/components/icons/icons-small@2x.png);
+			-webkit-background-size: 120px 48px;
+			-moz-background-size: 120px 48px;
+			background-size: 120px 48px;
+
+		}
+
+		&.icon-medium {
+
+			background-image: url(/resources/images/components/icons/icons-medium@2x.png);
+			-webkit-background-size: 160px 64px;
+			-moz-background-size: 160px 64px;
+			background-size: 160px 64px;
+
+		}
+
+		&.icon-large {
+
+			background-image: url(/resources/images/components/icons/icons-large@2x.png);
+			-webkit-background-size: 240px 48px;
+			-moz-background-size: 240px 48px;
+			background-size: 240px 48px;
+
+		}
+
+		&.icon-jumbo {
+
+			background-image: url(/resources/images/components/icons/icons-jumbo@2x.png);
+			-webkit-background-size: 64px 512px;
+			-moz-background-size: 64px 512px;
+			background-size: 64px 512px;
+
+		}
+
+	}
+
+}

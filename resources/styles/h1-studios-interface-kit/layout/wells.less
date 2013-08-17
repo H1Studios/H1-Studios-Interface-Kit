@@ -1,0 +1,238 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/wells.less                                                                                */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+.well {
+	
+	.border-radius(5px);
+	background: @white;
+	display: block;
+	margin: 0 0 0 0;
+	padding: @grid-gutter-width-standard;
+	overflow: hidden;
+	position: relative;
+	.clearfix();
+	margin-bottom: @primary-margin;
+	
+	@wellGridColumnWidth: ((@grid-row-width-standard - (4 * @grid-gutter-width-standard)) - (@grid-gutter-width-standard * (@grid-column-count - 1))) / @grid-column-count;
+	@wellGridGutterWidth: @grid-gutter-width-standard;
+	
+	#grid > .core(@wellGridColumnWidth , @wellGridGutterWidth);
+	
+	&.short {
+		
+		margin-bottom: @primary-margin-short;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @primary-margin-tall;
+		
+	}
+	
+	hr {
+		
+		margin-left: -@grid-gutter-width-standard !important;
+		margin-right: -@grid-gutter-width-standard !important;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @viewport-widescreen) {
+	
+	.well {
+		
+		padding: @grid-gutter-width-widescreen;
+		margin-bottom: @primary-margin-widescreen;
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-widescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-widescreen;
+			
+		}
+		
+		@wellGridColumnWidthWidescreen: ((@grid-row-width-widescreen - (4 * @grid-gutter-width-widescreen)) - (@grid-gutter-width-widescreen * (@grid-column-count - 1))) / @grid-column-count;
+		@wellGridGutterWidthWidescreen: @grid-gutter-width-widescreen;
+		
+		#grid > .core(@wellGridColumnWidthWidescreen , @wellGridGutterWidthWidescreen);
+	
+		hr {
+			
+			margin-left: -@grid-gutter-width-widescreen !important;
+			margin-right: -@grid-gutter-width-widescreen !important;
+			
+		}
+		
+	}
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
+	
+	.well {
+		
+		padding: @grid-gutter-width-tablet;
+		margin-bottom: @primary-margin-tablet;
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-tablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-tablet;
+			
+		}
+		
+		@wellGridColumnWidthTablet: ((@grid-row-width-tablet - (4 * @grid-gutter-width-tablet)) - (@grid-gutter-width-tablet * (@grid-column-count - 1))) / @grid-column-count;
+		@wellGridGutterWidthTablet: @grid-gutter-width-tablet;
+		
+		#grid > .core(@wellGridColumnWidthTablet , @wellGridGutterWidthTablet);
+	
+		hr {
+			
+			margin-left: -@wellGridGutterWidthTablet !important;
+			margin-right: -@wellGridGutterWidthTablet !important;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @viewport-mobile-landscape-max) {
+	
+	.well {
+		
+		margin-bottom: @primary-margin-tablet;
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-tablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-tablet;
+			
+		}
+	
+		/* ==================================================================================================== */
+		/*                                                                       */
+		/* Grid                                                                  */
+		/*                                                                       */
+		/* ==================================================================================================== */
+		
+		// Remove width from containers
+		
+		.container {
+			
+			width: auto;
+			padding-left: 15px;
+			padding-right: 15px;
+			
+		}
+		
+		.container-fluid {
+			
+			padding-left: 0px;
+			padding-right: 0px;
+			
+		}
+		
+		// Fluid rows
+		
+		.row-fluid {
+			
+			width: 100%;
+			
+		}
+		
+		// Undo negative margin on rows and thumbnails
+		
+		.row,
+		.thumbnails {
+			
+			margin-left: 0;
+			
+		}
+		
+		// Make all grid-sized elements block level again
+		
+		[class*="span"],
+		.row-fluid [class*="span"] {
+			
+			float: none;
+			display: block;
+			width: auto;
+			margin-left: 0;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @viewport-mobile-max) {
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Retina Displays                                                                   */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

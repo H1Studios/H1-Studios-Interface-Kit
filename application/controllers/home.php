@@ -7,9 +7,9 @@ class Home extends BASE_Controller {
     	
     	parent::__construct();
         
-        $this->data['page']['title'] = "Styleguide";
-        $this->data['page']['subtitle'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, turpis et condimentum sagittis, odio mi mollis purus, eget posuere ante nulla a neque.";
-        $this->data['page']['nav'] = 'styleguide';
+        $this->data['page']['title'] = "Home";
+        $this->data['page']['subtitle'] = "";
+        $this->data['page']['nav'] = 'home';
         
 	}
 	
@@ -19,7 +19,7 @@ class Home extends BASE_Controller {
     	/* Define View                                                 */
     	/* ----------------------------------------------------------- */
     	
-        $this->twig->display('pages/home/index.php', $this->data);
+        $this->twig->display('pages/styleguide/index.php', $this->data);
         
     }
 	

@@ -1,0 +1,347 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/media.less                                                                                */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Image                                                                     */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+img {
+	
+	margin-bottom: @primary-margin;
+		
+	&.responsive {
+		
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: @body-text-margin-bottom;
+		display: block;
+		width: 100% !important;
+		height: auto !important;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @primary-margin-short;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @primary-margin-tall;
+		
+	}
+	
+	&.img-rounded {
+		
+		.border-radius(6px);
+		
+	}
+	
+	&.img-circle {
+		
+		.border-radius(1000px);
+		
+	}
+	
+	&.img-polaroid {
+		
+		padding: 4px;
+		background-color: @white;
+		@shadow:
+			0px 0px 0px 1px rgba(0, 0, 0, 0.075),
+			0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+		.box-shadow(@shadow);
+		.border-radius(3px);
+		
+	}
+	
+}
+
+a:hover {
+	
+	img {
+		
+		&.img-polaroid {
+			
+			@shadow:
+				0px 0px 0px 1px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.75),
+				0px 1px 5px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.5);
+			.box-shadow(@shadow);
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Image Wrapper                                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.image-wrapper {
+	
+	display: block;
+	padding: 5px;
+	margin-bottom: @primary-margin;
+	.border-radius(5px);
+	line-height: 1;
+	position: relative;
+	background: @white;
+	vertical-align: top;
+	@shadow:
+		0px 0px 0px 1px rgba(0, 0, 0, 0.1),
+		0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+	.box-shadow(@shadow);
+	
+	img {
+		
+		padding: 0;
+		margin: 0;
+		position: relative;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @primary-margin-short;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @primary-margin-tall;
+		
+	}
+	
+	&.rounded {
+		
+		overflow: hidden;	
+		.border-radius(10px);
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @viewport-widescreen) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Image                                                                     */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	img {
+		
+		margin-bottom: @primary-margin-widescreen;
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-widescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-widescreen;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Image Wrapper                                                             */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.image-wrapper {
+		
+		margin-bottom: @primary-margin-widescreen;
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-widescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-widescreen;
+			
+		}
+		
+	}
+
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Image                                                                     */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	img {
+		
+		margin-bottom: @primary-margin-tablet;
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-tablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-tablet;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Image Wrapper                                                             */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.image-wrapper {
+		
+		margin-bottom: @primary-margin-tablet;
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-tablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-tablet;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @viewport-mobile-landscape-max) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Image                                                                     */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	img {
+		
+		margin-bottom: @primary-margin-mobile;
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-mobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-mobile;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Image Wrapper                                                             */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.image-wrapper {
+		
+		margin-bottom: @primary-margin-mobile;
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-mobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-mobile;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @viewport-mobile-max) {
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Retina Displays                                                                   */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

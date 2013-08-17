@@ -1,71 +1,32 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
-/* layout/stage.less                                                         */
+/* layout/stage.less                                                                                    */
 /*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
 
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Stage                                                                     */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
 #stage {
-	
-	position: relative;
 	
 	.stage-pod {
 		
-		position: relative;
-
-		&.stage-pod-divider {
-
-			border-top: 1px solid @border-color;
-
-		}
-		
-		&.stage-pod-light {
-			
-			background: @gray-lighten-90;
-			
-		}
-		
 		&.stage-pod-dark {
-			
-			background: @gray-darken-50;
-			
-		}
-		
-		&.stage-pod-midnight {
 			
 			background: @gray-darken-90;
 			
 		}
 		
-		&.stage-pod-color-blue {
-
-			background: @blue;
-
-		}
-		
-		&.stage-pod-color-red {
-
-			background: @red;
-
-		}
-		
 	}
-		
+	
 }
 
 
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling for widescreen (@viewport-widescreen) and   */
-/* above.                                                                    */
+/* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -77,8 +38,7 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling for portrait tablet (@viewport-tablet) to default desktop              */
-/* (@viewport-standard).                                                                                */
+/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -90,7 +50,7 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling up to portrait tablets (@viewport-tablet)                              */
+/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -102,7 +62,7 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling up to landscape phones (@viewport-mobile-landscape)                    */
+/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -114,56 +74,10 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling for Retina Displays                                                    */
+/* Responsive Styles: Retina Displays                                                                   */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-	
-		/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Stage                                                                     */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	#stage {
-		
-		.stage-pod {
-			
-			&.stage-pod-color {
-				
-				&.stage-pod-divider {
-					
-					&.patterned {
-						
-						&:before {
-							
-							background-image: url(/resources/images/layout/stage-pod-color-divider-patterned@2x.png);
-													
-						}
-						
-					}
-					
-				}
-				
-			}
-			
-			&.stage-pod-divider {
-				
-				&.patterned {
-					
-					&:before {
-						
-						background-image: url(/resources/images/layout/stage-pod-divider-patterned@2x.png);
-						
-					}
-					
-				}
-				
-			}
-			
-		}
-		
-	}
 	
 }

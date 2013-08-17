@@ -1,0 +1,4450 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* core/forms.less                                                                                      */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* General Form Styling                                                                                 */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+form {
+	
+	margin: 0px 0px @primary-margin 0px;
+	.clearfix();
+	
+	&.tall {
+		
+		margin-bottom: @primary-margin-tall;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @primary-margin-short;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Fieldset                                                                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+fieldset {
+	
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Legend                                                                                               */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+legend {
+	
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid @form-legend-border-color;
+	font-family: @form-legend-font-family;
+	font-size: @form-legend-font-size;
+	font-weight: @form-legend-font-weight;
+	line-height: @form-legend-line-height;
+	text-transform: @form-legend-transform;
+	font-style: @form-legend-style;
+	color: @form-legend-color;
+	margin: @form-legend-margin-top 0px @form-legend-margin-bottom 0px;
+	padding: 0px 0px (@form-legend-margin-bottom / 2) 0px;
+	
+	// Tall
+	
+	&.tall {
+		
+		margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall;
+		
+	}
+	
+	// Short
+		
+	&.short {
+		
+		margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short;
+		
+	}
+	
+	&.inverse {
+		
+		color: @form-legend-inverse-color;
+		border-bottom-color: @form-legend-inverse-border-color;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Labels                                                                                               */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+label {
+	
+	display: block;
+	font-family: @form-label-font-family;
+	font-size: @form-label-font-size;
+	font-weight: @form-label-font-weight;
+	line-height: @form-label-line-height;
+	text-transform: @form-label-transform;
+	font-style: @form-label-style;
+	color: @form-label-color;
+	margin: @form-label-margin-top 0px @form-label-margin-bottom 0px;
+	
+	// Tall
+	
+	&.tall {
+		
+		margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall;
+		
+	}
+	
+	// Short
+		
+	&.short {
+		
+		margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short;
+		
+	}
+	
+	&.inverse {
+		
+		color: @form-label-inverse-color;
+		border-bottom-color: @form-label-inverse-border-color;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Help Block                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.help-block {
+	
+	display: block;
+	margin-bottom: 0px;
+	font-family: @form-help-block-text-font-family;
+	font-size: @form-help-block-text-font-size;
+	font-weight: @form-help-block-text-font-weight;
+	line-height: @form-help-block-text-line-height;
+	text-transform: @form-help-block-text-transform;
+	font-style: @form-help-block-text-font-style;
+	color: @form-help-block-text-color;
+	
+	&.help-block-inline {
+		
+		display: inline-block;
+		.ie7-inline-block();
+		vertical-align: middle;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Inputs                                                                                               */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input,
+textarea {
+	
+	.input-block-level();
+	-webkit-appearance: none;
+	width: 100%;
+	height: @form-input-height;
+	.block-padding-vertical(@form-input-height, @form-input-text-line-height);
+	padding-left: @form-input-padding-horizontal;
+	padding-right: @form-input-padding-horizontal;
+	margin-bottom: @form-input-margin;
+	.transition(@form-input-transition);
+	font-family: @form-input-text-font-family;
+	font-size: @form-input-text-font-size;
+	font-weight: @form-input-text-font-weight;
+	font-style: @form-input-text-font-style;
+	line-height: @form-input-text-line-height;
+	text-transform: @form-input-text-transform;
+	border-width: @form-input-border-width;
+	*border: @form-input-border-width;
+	.border-radius(@form-input-border-radius);
+	.input-states (
+		
+		@form-input-default-border-color,
+		@form-input-default-text-color,
+		@form-input-default-text-shadow,
+		@form-input-default-background-color,
+		@form-input-default-background-gradient-top-color,
+		@form-input-default-background-gradient-bottom-color,
+		@form-input-default-shadow,
+		@form-input-default-placeholder-text-color
+		
+	);
+	
+	+ .help-block {
+		
+		margin-top: -@form-input-margin + @form-help-block-margin;
+		margin-bottom: @form-input-margin;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @form-input-margin-tall;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tall + @form-help-block-margin;
+			margin-bottom: @form-input-margin-tall;
+			
+		}
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @form-input-margin-short;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-short + @form-help-block-margin;
+			margin-bottom: @form-input-margin-short;
+			
+		}
+		
+		
+	}
+	
+	&.flush-bottom {
+		
+		+ .help-block {
+			
+			margin-top: @form-help-block-margin;
+			margin-bottom: 0px;
+			
+		}
+		
+	}
+	
+	&:focus,
+	&.focused {
+		
+		outline: 0;
+		outline: thin dotted \9;
+		.input-states (
+			
+			@form-input-default-focus-border-color,
+			@form-input-default-focus-text-color,
+			@form-input-default-focus-text-shadow,
+			@form-input-default-focus-background-color,
+			@form-input-default-focus-background-gradient-top-color,
+			@form-input-default-focus-background-gradient-bottom-color,
+			@form-input-default-focus-shadow,
+			@form-input-default-focus-placeholder-text-color
+			
+		);
+		
+	}
+	
+	&[disabled],
+	&[readonly] {
+		
+		cursor: not-allowed;
+		.opacity(@form-input-default-disabled-opacity);
+		.input-states (
+			
+			@form-input-default-disabled-border-color,
+			@form-input-default-disabled-text-color,
+			@form-input-default-disabled-text-shadow,
+			@form-input-default-disabled-background-color,
+			@form-input-default-disabled-background-gradient-top-color,
+			@form-input-default-disabled-background-gradient-bottom-color,
+			@form-input-default-disabled-shadow,
+			@form-input-default-disabled-placeholder-text-color
+			
+		);
+		
+	}
+		
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Inverse                                                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.inverse {
+		
+		.input-states (
+			
+			@form-input-default-inverse-border-color,
+			@form-input-default-inverse-text-color,
+			@form-input-default-inverse-text-shadow,
+			@form-input-default-inverse-background-color,
+			@form-input-default-inverse-background-gradient-top-color,
+			@form-input-default-inverse-background-gradient-bottom-color,
+			@form-input-default-inverse-shadow,
+			@form-input-default-inverse-placeholder-text-color
+			
+		);
+		
+		&:focus,
+		&.focused {
+			
+			.input-states (
+				
+				@form-input-default-inverse-focus-border-color,
+				@form-input-default-inverse-focus-text-color,
+				@form-input-default-inverse-focus-text-shadow,
+				@form-input-default-inverse-focus-background-color,
+				@form-input-default-inverse-focus-background-gradient-top-color,
+				@form-input-default-inverse-focus-background-gradient-bottom-color,
+				@form-input-default-inverse-focus-shadow,
+				@form-input-default-inverse-focus-placeholder-text-color
+				
+			);
+			
+		}
+		
+		&[disabled],
+		&[readonly] {
+			
+			.opacity(@form-input-default-inverse-disabled-opacity);
+			.input-states (
+				
+				@form-input-default-inverse-disabled-border-color,
+				@form-input-default-inverse-disabled-text-color,
+				@form-input-default-inverse-disabled-text-shadow,
+				@form-input-default-inverse-disabled-background-color,
+				@form-input-default-inverse-disabled-background-gradient-top-color,
+				@form-input-default-inverse-disabled-background-gradient-bottom-color,
+				@form-input-default-inverse-disabled-shadow,
+				@form-input-default-inverse-disabled-placeholder-text-color
+				
+			);
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Large Input                                                                                          */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-large {
+		
+		height: @form-input-large-height;
+		.block-padding-vertical(@form-input-large-height, @form-input-large-text-line-height);
+		padding-left: @form-input-large-padding-horizontal;
+		padding-right: @form-input-large-padding-horizontal;
+		font-size: @form-input-large-text-font-size;
+		font-weight: @form-input-large-text-font-weight;
+		font-style: @form-input-large-text-font-style;
+		line-height: @form-input-large-text-line-height;
+		text-transform: @form-input-large-text-transform;
+		border-width: @form-input-large-border-width;
+		*border: @form-input-large-border-width;
+		.border-radius(@form-input-large-border-radius);
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Small Input                                                                                          */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-small {
+		
+		height: @form-input-small-height;
+		.block-padding-vertical(@form-input-small-height, @form-input-small-text-line-height);
+		padding-left: @form-input-small-padding-horizontal;
+		padding-right: @form-input-small-padding-horizontal;
+		font-size: @form-input-small-text-font-size;
+		font-weight: @form-input-small-text-font-weight;
+		font-style: @form-input-small-text-font-style;
+		line-height: @form-input-small-text-line-height;
+		text-transform: @form-input-small-text-transform;
+		border-width: @form-input-small-border-width;
+		*border: @form-input-small-border-width;
+		.border-radius(@form-input-small-border-radius);
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Success                                                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-success {
+		
+		.input-states (
+			
+			@form-input-success-border-color,
+			@form-input-success-text-color,
+			@form-input-success-text-shadow,
+			@form-input-success-background-color,
+			@form-input-success-background-gradient-top-color,
+			@form-input-success-background-gradient-bottom-color,
+			@form-input-success-shadow,
+			@form-input-success-placeholder-text-color
+			
+		);
+		
+		&:focus,
+		&.focused {
+			
+			.input-states (
+				
+				@form-input-success-focus-border-color,
+				@form-input-success-focus-text-color,
+				@form-input-success-focus-text-shadow,
+				@form-input-success-focus-background-color,
+				@form-input-success-focus-background-gradient-top-color,
+				@form-input-success-focus-background-gradient-bottom-color,
+				@form-input-success-focus-shadow,
+				@form-input-success-focus-placeholder-text-color
+				
+			);
+			
+		}
+		
+		&[disabled],
+		&[readonly] {
+			
+			.opacity(@form-input-success-disabled-opacity);
+			.input-states (
+				
+				@form-input-success-disabled-border-color,
+				@form-input-success-disabled-text-color,
+				@form-input-success-disabled-text-shadow,
+				@form-input-success-disabled-background-color,
+				@form-input-success-disabled-background-gradient-top-color,
+				@form-input-success-disabled-background-gradient-bottom-color,
+				@form-input-success-disabled-shadow,
+				@form-input-success-disabled-placeholder-text-color
+				
+			);
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Inverse                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.inverse {
+			
+			.input-states (
+				
+				@form-input-success-inverse-border-color,
+				@form-input-success-inverse-text-color,
+				@form-input-success-inverse-text-shadow,
+				@form-input-success-inverse-background-color,
+				@form-input-success-inverse-background-gradient-top-color,
+				@form-input-success-inverse-background-gradient-bottom-color,
+				@form-input-success-inverse-shadow,
+				@form-input-success-inverse-placeholder-text-color
+				
+			);
+			
+			&:focus,
+			&.focused {
+				
+				.input-states (
+					
+					@form-input-success-inverse-focus-border-color,
+					@form-input-success-inverse-focus-text-color,
+					@form-input-success-inverse-focus-text-shadow,
+					@form-input-success-inverse-focus-background-color,
+					@form-input-success-inverse-focus-background-gradient-top-color,
+					@form-input-success-inverse-focus-background-gradient-bottom-color,
+					@form-input-success-inverse-focus-shadow,
+					@form-input-success-inverse-focus-placeholder-text-color
+					
+				);
+				
+			}
+			
+			&[disabled],
+			&[readonly] {
+				
+				.opacity(@form-input-success-inverse-disabled-opacity);
+				.input-states (
+					
+					@form-input-success-inverse-disabled-border-color,
+					@form-input-success-inverse-disabled-text-color,
+					@form-input-success-inverse-disabled-text-shadow,
+					@form-input-success-inverse-disabled-background-color,
+					@form-input-success-inverse-disabled-background-gradient-top-color,
+					@form-input-success-inverse-disabled-background-gradient-bottom-color,
+					@form-input-success-inverse-disabled-shadow,
+					@form-input-success-inverse-disabled-placeholder-text-color
+					
+				);
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Warning                                                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-warning {
+		
+		.input-states (
+			
+			@form-input-warning-border-color,
+			@form-input-warning-text-color,
+			@form-input-warning-text-shadow,
+			@form-input-warning-background-color,
+			@form-input-warning-background-gradient-top-color,
+			@form-input-warning-background-gradient-bottom-color,
+			@form-input-warning-shadow,
+			@form-input-warning-placeholder-text-color
+			
+		);
+		
+		&:focus,
+		&.focused {
+			
+			.input-states (
+				
+				@form-input-warning-focus-border-color,
+				@form-input-warning-focus-text-color,
+				@form-input-warning-focus-text-shadow,
+				@form-input-warning-focus-background-color,
+				@form-input-warning-focus-background-gradient-top-color,
+				@form-input-warning-focus-background-gradient-bottom-color,
+				@form-input-warning-focus-shadow,
+				@form-input-warning-focus-placeholder-text-color
+				
+			);
+			
+		}
+		
+		&[disabled],
+		&[readonly] {
+			
+			.opacity(@form-input-warning-disabled-opacity);
+			.input-states (
+				
+				@form-input-warning-disabled-border-color,
+				@form-input-warning-disabled-text-color,
+				@form-input-warning-disabled-text-shadow,
+				@form-input-warning-disabled-background-color,
+				@form-input-warning-disabled-background-gradient-top-color,
+				@form-input-warning-disabled-background-gradient-bottom-color,
+				@form-input-warning-disabled-shadow,
+				@form-input-warning-disabled-placeholder-text-color
+				
+			);
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Inverse                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.inverse {
+			
+			.input-states (
+				
+				@form-input-warning-inverse-border-color,
+				@form-input-warning-inverse-text-color,
+				@form-input-warning-inverse-text-shadow,
+				@form-input-warning-inverse-background-color,
+				@form-input-warning-inverse-background-gradient-top-color,
+				@form-input-warning-inverse-background-gradient-bottom-color,
+				@form-input-warning-inverse-shadow,
+				@form-input-warning-inverse-placeholder-text-color
+				
+			);
+			
+			&:focus,
+			&.focused {
+				
+				.input-states (
+					
+					@form-input-warning-inverse-focus-border-color,
+					@form-input-warning-inverse-focus-text-color,
+					@form-input-warning-inverse-focus-text-shadow,
+					@form-input-warning-inverse-focus-background-color,
+					@form-input-warning-inverse-focus-background-gradient-top-color,
+					@form-input-warning-inverse-focus-background-gradient-bottom-color,
+					@form-input-warning-inverse-focus-shadow,
+					@form-input-warning-inverse-focus-placeholder-text-color
+					
+				);
+				
+			}
+			
+			&[disabled],
+			&[readonly] {
+				
+				.opacity(@form-input-warning-inverse-disabled-opacity);
+				.input-states (
+					
+					@form-input-warning-inverse-disabled-border-color,
+					@form-input-warning-inverse-disabled-text-color,
+					@form-input-warning-inverse-disabled-text-shadow,
+					@form-input-warning-inverse-disabled-background-color,
+					@form-input-warning-inverse-disabled-background-gradient-top-color,
+					@form-input-warning-inverse-disabled-background-gradient-bottom-color,
+					@form-input-warning-inverse-disabled-shadow,
+					@form-input-warning-inverse-disabled-placeholder-text-color
+					
+				);
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Error                                                                                                */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-error,
+	&:required:invalid {
+		
+		.input-states (
+			
+			@form-input-error-border-color,
+			@form-input-error-text-color,
+			@form-input-error-text-shadow,
+			@form-input-error-background-color,
+			@form-input-error-background-gradient-top-color,
+			@form-input-error-background-gradient-bottom-color,
+			@form-input-error-shadow,
+			@form-input-error-placeholder-text-color
+			
+		);
+		
+		&:focus,
+		&.focused {
+			
+			.input-states (
+				
+				@form-input-error-focus-border-color,
+				@form-input-error-focus-text-color,
+				@form-input-error-focus-text-shadow,
+				@form-input-error-focus-background-color,
+				@form-input-error-focus-background-gradient-top-color,
+				@form-input-error-focus-background-gradient-bottom-color,
+				@form-input-error-focus-shadow,
+				@form-input-error-focus-placeholder-text-color
+				
+			);
+			
+		}
+		
+		&[disabled],
+		&[readonly] {
+			
+			.opacity(@form-input-error-disabled-opacity);
+			.input-states (
+				
+				@form-input-error-disabled-border-color,
+				@form-input-error-disabled-text-color,
+				@form-input-error-disabled-text-shadow,
+				@form-input-error-disabled-background-color,
+				@form-input-error-disabled-background-gradient-top-color,
+				@form-input-error-disabled-background-gradient-bottom-color,
+				@form-input-error-disabled-shadow,
+				@form-input-error-disabled-placeholder-text-color
+				
+			);
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Inverse                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.inverse {
+			
+			.input-states (
+				
+				@form-input-error-inverse-border-color,
+				@form-input-error-inverse-text-color,
+				@form-input-error-inverse-text-shadow,
+				@form-input-error-inverse-background-color,
+				@form-input-error-inverse-background-gradient-top-color,
+				@form-input-error-inverse-background-gradient-bottom-color,
+				@form-input-error-inverse-shadow,
+				@form-input-error-inverse-placeholder-text-color
+				
+			);
+			
+			&:focus,
+			&.focused {
+				
+				.input-states (
+					
+					@form-input-error-inverse-focus-border-color,
+					@form-input-error-inverse-focus-text-color,
+					@form-input-error-inverse-focus-text-shadow,
+					@form-input-error-inverse-focus-background-color,
+					@form-input-error-inverse-focus-background-gradient-top-color,
+					@form-input-error-inverse-focus-background-gradient-bottom-color,
+					@form-input-error-inverse-focus-shadow,
+					@form-input-error-inverse-focus-placeholder-text-color
+					
+				);
+				
+			}
+			
+			&[disabled],
+			&[readonly] {
+				
+				.opacity(@form-input-error-inverse-disabled-opacity);
+				.input-states (
+					
+					@form-input-error-inverse-disabled-border-color,
+					@form-input-error-inverse-disabled-text-color,
+					@form-input-error-inverse-disabled-text-shadow,
+					@form-input-error-inverse-disabled-background-color,
+					@form-input-error-inverse-disabled-background-gradient-top-color,
+					@form-input-error-inverse-disabled-background-gradient-bottom-color,
+					@form-input-error-inverse-disabled-shadow,
+					@form-input-error-inverse-disabled-placeholder-text-color
+					
+				);
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+textarea {
+	
+	height: auto;
+	
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	
+	margin: ((@body-text-line-height - 7) / 2) 0px ((@body-text-line-height - 7) / 2) 0px;
+	*margin-top: 0px; // IE7 Fix
+	line-height: normal;
+	cursor: pointer;
+	
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+	
+	width: auto;
+	
+}
+
+.uneditable-textarea {
+	
+	width: auto;
+	height: auto;
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Radio Buttons & Checkboxes                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.radio,
+.checkbox {
+	
+	position: relative;
+	padding: 0px 0px 0px (@form-input-radio-height + @form-input-toggles-inline-padding-horizontal);
+	min-height: @form-input-toggles-text-line-height;
+	margin-bottom: @form-input-margin;
+	font-family: @form-input-toggles-text-font-family;
+	font-size: @form-input-toggles-text-font-size;
+	font-weight: @form-input-toggles-text-font-weight;
+	line-height: @form-input-toggles-text-line-height;
+	text-transform: @form-input-toggles-text-transform;
+	font-style: @form-input-toggles-text-font-style;
+	
+	input[type="radio"] {
+		
+		position: absolute;
+		margin: 0px 0px 0px -(@form-input-radio-height + @form-input-toggles-inline-padding-horizontal);
+		top: (@body-text-line-height / 2) - (@form-input-radio-height / 2);
+		width: auto !important;
+		
+		&[disabled],
+		&[readonly] {
+			
+			background-color: transparent;
+			
+		}
+		
+	}
+	
+	input[type="checkbox"] {
+		
+		position: absolute;
+		margin: 0px 0px 0px -(@form-input-checkbox-height + @form-input-toggles-inline-padding-horizontal);
+		top: (@body-text-line-height / 2) - (@form-input-checkbox-height / 2);
+		width: auto !important;
+		
+		&[disabled],
+		&[readonly] {
+			
+			background-color: transparent;
+			
+		}
+		
+	}
+	
+	+ .help-block {
+		
+		margin-top: -@form-input-margin + @form-help-block-margin;
+		margin-bottom: @form-input-margin;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @form-input-margin-tall;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tall + @form-help-block-margin;
+			margin-bottom: @form-input-margin-tall;
+			
+		}
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @form-input-margin-short;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-short + @form-help-block-margin;
+			margin-bottom: @form-input-margin-short;
+			
+		}
+		
+	}
+	
+	&.flush-bottom {
+		
+		+ .help-block {
+			
+			margin-top: @form-help-block-margin;
+			margin-bottom: 0px;
+			
+		}
+		
+	}
+	
+	&.input-height {
+		
+		min-height: @form-input-height;
+		line-height: @form-input-height;
+		
+		input[type="radio"] {
+			
+			top: (@form-input-height / 2) - (@form-input-radio-height / 2);
+			
+		}
+		
+		input[type="checkbox"] {
+			
+			top: (@form-input-height / 2) - (@form-input-checkbox-height / 2);
+			
+		}
+		
+		&.input-large {
+			
+			min-height: @form-input-large-height;
+			line-height: @form-input-large-height;
+			
+			input[type="radio"] {
+				
+				top: (@form-input-large-height / 2) - (@form-input-radio-height / 2);
+				
+			}
+			
+			input[type="checkbox"] {
+				
+				top: (@form-input-large-height / 2) - (@form-input-checkbox-height / 2);
+				
+			}
+			
+		}
+		
+		&.input-small {
+			
+			min-height: @form-input-small-height;
+			line-height: @form-input-small-height;
+			
+			input[type="radio"] {
+				
+				top: (@form-input-small-height / 2) - (@form-input-radio-height / 2);
+				
+			}
+			
+			input[type="checkbox"] {
+				
+				top: (@form-input-small-height / 2) - (@form-input-checkbox-height / 2);
+				
+			}
+			
+		}
+		
+	}
+	
+	&.inline {
+		
+		display: inline-block;
+		vertical-align: middle;
+		
+		+ .radio.inline,
+		+ .checkbox.inline {
+			
+			margin-left: @form-input-toggles-inline-padding-horizontal;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Select Boxes                                                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Standard Select Box                                                                                  */
+/* ---------------------------------------------------------------------------------------------------- */
+
+select {
+	
+	display: inline-block;
+	.ie7-inline-block();
+	.ie7-restore-left-whitespace();
+	text-rendering: optimizelegibility;
+	text-align: left;
+	vertical-align: middle;
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+	height: @form-input-height;
+	.block-padding-vertical(@form-input-height, @button-text-line-height);
+	padding-left: @button-padding-horizontal;
+	padding-right: @button-padding-horizontal;
+	margin-bottom: @form-input-margin;
+	font-family: @button-text-font-family;
+	font-size: @button-text-font-size;
+	font-weight: @button-text-font-weight;
+	font-style: @button-text-font-style;
+	line-height: @button-text-line-height;
+	*line-height:  @button-text-line-height;
+	text-transform: @button-text-transform;
+	text-shadow: @button-default-text-shadow;
+	color: @button-default-text-color;
+	.box-shadow(none);
+	.clearfix();
+	border: 1px solid @gray;
+	background: @white;
+	
+	+ .help-block {
+		
+		margin-top: -@form-input-margin + @form-help-block-margin;
+		margin-bottom: @form-input-margin;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @form-input-margin-tall;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tall + @form-help-block-margin;
+			margin-bottom: @form-input-margin-tall;
+			
+		}
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @form-input-margin-short;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-short + @form-help-block-margin;
+			margin-bottom: @form-input-margin-short;
+			
+		}
+		
+	}
+	
+	&.flush-bottom {
+		
+		+ .help-block {
+			
+			margin-top: @form-help-block-margin;
+			margin-bottom: 0px;
+			
+		}
+		
+	}
+	
+	&[disabled],
+	&[readonly] {
+	
+	cursor: not-allowed;
+	
+	}
+		
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Large Input                                                                                          */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-large {
+		
+		height: @form-input-large-height;
+		.block-padding-vertical(@form-input-large-height, @button-large-text-line-height);
+		padding-left: @button-large-padding-horizontal;
+		padding-right: @button-large-padding-horizontal;
+		font-size: @button-large-text-font-size;
+		font-weight: @button-large-text-font-weight;
+		font-style: @button-large-text-font-style;
+		line-height: @button-large-text-line-height;
+		text-transform: @button-large-text-transform;
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Small Input                                                                                          */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-small {
+		
+		height: @form-input-small-height;
+		.block-padding-vertical(@form-input-small-height, @button-small-text-line-height);
+		padding-left: @button-small-padding-horizontal;
+		padding-right: @button-small-padding-horizontal;
+		font-size: @button-small-text-font-size;
+		font-weight: @button-small-text-font-weight;
+		font-style: @button-small-text-font-style;
+		line-height: @button-small-text-line-height;
+		text-transform: @button-small-text-transform;
+		
+	}
+	
+	&[multiple],
+	&[size] {
+		
+		height: auto;
+		
+	}
+	
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Stylized Select Box                                                                                  */
+/* ---------------------------------------------------------------------------------------------------- */
+
+.select-wrapper {
+	
+	display: block;
+	width: 100%;
+	position: relative;
+	.clearfix();
+	margin-bottom: @form-input-margin;
+	
+	.select-wrapper-inner {
+		
+		display: block;
+		width: 100%;
+		padding: 0px;
+		height: @form-input-height;
+		.ie7-inline-block();
+		.ie7-restore-left-whitespace();
+		text-rendering: optimizelegibility;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		border: @button-border-width;
+		*border: @button-border-width;
+		.border-radius(@button-border-radius);
+		.transition(@form-input-transition .1s linear);
+		.button-states (
+			
+			@button-default-border-color,
+			@button-default-text-color,
+			@button-default-text-shadow,
+			@button-default-background-color,
+			@button-default-background-gradient-top-color,
+			@button-default-background-gradient-bottom-color,
+			@button-default-shadow,
+			@button-default-offset-top,
+			@button-default-offset-bottom
+		
+		);
+		
+		&:after {
+			
+			content: '';
+			display: block;
+			position: absolute;
+			top: (@button-height / 2) - (6 / 2);
+			right: @button-padding-horizontal;
+			width: 0;
+			height: 0;
+			border-color: transparent;
+			border-style: solid;
+			border-width: 6px 5px 0;
+			border-top-color: @button-default-text-color;
+			
+		}
+		
+	}
+	
+	select {
+		
+		-webkit-appearance: none;
+		background: none ;
+		border: none;
+		*border: 0;
+		margin: 0px;
+		.box-shadow(none);
+		.clearfix();
+		
+		&:focus {
+			
+			outline: 0;
+			
+		}
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @form-input-margin-tall;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tall;
+			
+		}
+		
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @form-input-margin-short;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-short;
+			
+		}
+		
+		
+	}
+	
+	&:hover {
+		
+		.select-wrapper-inner {
+			
+			.button-states (
+				
+				@button-default-hover-border-color,
+				@button-default-hover-text-color,
+				@button-default-hover-text-shadow,
+				@button-default-hover-background-color,
+				@button-default-hover-background-gradient-top-color,
+				@button-default-hover-background-gradient-bottom-color,
+				@button-default-hover-shadow,
+				@button-default-hover-offset-top,
+				@button-default-hover-offset-bottom
+			
+			);
+			
+			&:after {
+				
+				border-top-color: @button-default-hover-text-color;
+				
+			}
+		
+		}
+		
+		select {
+			
+			cursor: pointer;
+			text-shadow: @button-default-hover-text-shadow;
+			color: @button-default-hover-text-color;
+			
+		}
+		
+	}
+	
+	&:active {
+		
+		.select-wrapper-inner {
+			
+			outline: 0;
+			.button-states (
+				
+				@button-default-active-border-color,
+				@button-default-active-text-color,
+				@button-default-active-text-shadow,
+				@button-default-active-background-color,
+				@button-default-active-background-gradient-top-color,
+				@button-default-active-background-gradient-bottom-color,
+				@button-default-active-shadow,
+				@button-default-active-offset-top,
+				@button-default-active-offset-bottom
+			
+			);
+			
+			&:after {
+				
+				border-top-color: @button-default-active-text-color;
+				
+			}
+		
+		}
+		
+		select {
+			
+			outline: 0;
+			text-shadow: @button-default-active-text-shadow;
+			color: @button-default-active-text-color;
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Large Select Wrapper                                                                                 */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.select-wrapper-large {
+		
+		.select-wrapper-inner {
+			
+			height: @form-input-large-height;
+			
+			&:after {
+				
+				top: (@form-input-large-height / 2) - (6 / 2);
+				right: @button-large-padding-horizontal;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Small Select Wrapper                                                                                 */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.select-wrapper-small {
+		
+		.select-wrapper-inner {
+			
+			height: @form-input-small-height;
+			
+			&:after {
+				
+				top: (@form-input-small-height / 2) - (6 / 2);
+				right: @button-small-padding-horizontal;
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Input Groups                                                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.input-group {
+	
+	position: relative;
+	margin-bottom: @form-input-margin;
+	.clearfix();
+	
+	input,
+	select,
+	.uneditable-input {
+		
+		position: relative;
+		margin-bottom: 0px;
+		
+	}
+	
+	+ .help-block {
+		
+		margin-top: -@form-input-margin + @form-help-block-margin;
+		margin-bottom: @form-input-margin;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @form-input-margin-tall;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tall + @form-help-block-margin;
+			margin-bottom: @form-input-margin-tall;
+			
+		}
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @form-input-margin-short;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-short + @form-help-block-margin;
+			margin-bottom: @form-input-margin-short;
+			
+		}
+		
+	}
+	
+	&.flush-bottom {
+		
+		+ .help-block {
+			
+			margin-top: @form-help-block-margin;
+			margin-bottom: 0px;
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Input Group Add-On                                                                                   */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.add-on {
+		
+		vertical-align: top;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		display: block;
+		width: auto;
+		min-width: 16px;
+		margin: 0px;
+		text-align: center;
+		padding-left: @form-input-add-on-padding-horizontal;
+		padding-right: @form-input-add-on-padding-horizontal;
+		.block-padding-vertical(@form-input-height, @form-input-add-on-text-line-height);
+		font-family: @form-input-add-on-text-font-family;
+		font-size: @form-input-add-on-text-font-size;
+		font-weight: @form-input-add-on-text-font-weight;
+		line-height: @form-input-add-on-text-line-height;
+		text-transform: @form-input-add-on-text-transform;
+		font-style: @form-input-add-on-text-font-style;
+		border-width: @form-input-border-width;
+		.border-radius(@form-input-border-radius 0px 0px @form-input-border-radius);
+		.input-add-on-states (
+			
+			@form-input-add-on-default-border-color,
+			@form-input-add-on-default-text-color,
+			@form-input-add-on-default-text-shadow,
+			@form-input-add-on-default-background-color,
+			@form-input-add-on-default-background-gradient-top-color,
+			@form-input-add-on-default-background-gradient-bottom-color,
+			@form-input-add-on-default-shadow
+		
+		);
+		
+		// Knock-Out Styling (Text-Only)
+		
+		&.knockout {
+			
+			background: none;
+			.box-shadow(none);
+			border: none;
+			
+			&:before {
+				
+				display: none;
+				
+			}
+			
+		}
+		
+		// Add-On Prepend
+		
+		&.add-on-prepend {
+			
+			top: 0px;
+			left: 0px;
+			right: auto;
+			
+		}
+		
+		// Add-On Append
+		
+		&.add-on-append {
+			
+			top: 0px;
+			left: auto;
+			right: 0px;
+			.border-radius(0px @form-input-border-radius @form-input-border-radius 0px);
+			.box-shadow(@form-input-add-on-append-default-shadow);
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Input Group Add-On Button                                                                            */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.button {
+		
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		.border-radius(@form-input-border-radius 0px 0px @form-input-border-radius);
+		
+		&.add-on-prepend {
+			
+			top: 0px;
+			left: 0px;
+			right: auto;
+			
+		}
+		
+		&.add-on-append {
+			
+			top: 0px;
+			left: auto;
+			right: 0px;
+			.border-radius(0px @form-input-border-radius @form-input-border-radius 0px);
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Input Group Add-On Group                                                                             */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.add-on-group {
+		
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		display: block;
+		width: auto;
+		height:  @form-input-height;
+		
+		.button,
+		.add-on {
+			
+			position: relative;
+			top: auto;
+			left: auto;
+			right: auto;
+			display: inline-block;
+			.border-radius(0px);
+			
+		}
+		
+		&.add-on-prepend {
+			
+			top: 0px;
+			left: 0px;
+			right: auto;
+			
+			.button,
+			.add-on {
+				
+				float: left;
+				
+				+ .button,
+				+ .add-on {
+					
+					margin-left: 1px;
+					
+				}
+				
+				&:first-child {
+					
+					.border-radius(@form-input-border-radius 0px 0px @form-input-border-radius);
+					
+				}
+				
+				&:last-of-type {
+					
+					.border-top-right-radius(0px);
+					.border-bottom-right-radius(0px);
+					
+					&:before {
+						
+						display: block;
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		&.add-on-append {
+			
+			top: 0px;
+			left: auto;
+			right: 0px;
+			
+			.button,
+			.add-on {
+				
+				float: left;
+				
+				+ .button,
+				+ .add-on {
+					
+					&:before {
+						
+						display: block;
+						
+					}
+					
+				}
+				
+				&:first-of-type {
+					
+					.border-top-left-radius(0px);
+					.border-bottom-left-radius(0px);
+					
+				}
+				
+				&:last-of-type {
+					
+					.border-radius(0px @form-input-border-radius @form-input-border-radius 0px);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Large Input Add-On                                                                                   */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-group-large {
+		
+		.add-on {
+			
+			padding-left: @form-input-add-on-large-padding-horizontal;
+			padding-right: @form-input-add-on-large-padding-horizontal;
+			.block-padding-vertical(@form-input-large-height, @form-input-add-on-large-text-line-height);
+			font-size: @form-input-add-on-large-text-font-size;
+			font-weight: @form-input-add-on-large-text-font-weight;
+			line-height: @form-input-add-on-large-text-line-height;
+			text-transform: @form-input-add-on-large-text-transform;
+			font-style: @form-input-add-on-large-text-font-style;
+			border-width: @form-input-large-border-width;
+			.border-radius(@form-input-large-border-radius 0px 0px @form-input-large-border-radius);
+			
+		}
+		
+		.add-on-group {
+			
+			height:  @form-input-large-height;
+			
+		}
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Small Input Add-On                                                                                   */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.input-group-small {
+		
+		.add-on {
+			
+			padding-left: @form-input-add-on-small-padding-horizontal;
+			padding-right: @form-input-add-on-small-padding-horizontal;
+			.block-padding-vertical(@form-input-small-height, @form-input-add-on-small-text-line-height);
+			font-size: @form-input-add-on-small-text-font-size;
+			font-weight: @form-input-add-on-small-text-font-weight;
+			line-height: @form-input-add-on-small-text-line-height;
+			text-transform: @form-input-add-on-small-text-transform;
+			font-style: @form-input-add-on-small-text-font-style;
+			border-width: @form-input-small-border-width;
+			.border-radius(@form-input-small-border-radius 0px 0px @form-input-small-border-radius);
+			
+		}
+		
+		.add-on-group {
+			
+			height:  @form-input-small-height;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Form Group                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.form-group {
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Success                                                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.form-group-success {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Label                                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		label {
+			
+			color: @form-label-success-text-color;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Help Block                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.help-block {
+			
+			color: @form-help-block-success-text-color;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input                                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		input[type="text"],
+		input[type="password"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="date"],
+		input[type="month"],
+		input[type="time"],
+		input[type="week"],
+		input[type="number"],
+		input[type="email"],
+		input[type="url"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="color"],
+		.uneditable-input,
+		textarea {
+			
+			.input-states (
+				
+				@form-input-success-border-color,
+				@form-input-success-text-color,
+				@form-input-success-text-shadow,
+				@form-input-success-background-color,
+				@form-input-success-background-gradient-top-color,
+				@form-input-success-background-gradient-bottom-color,
+				@form-input-success-shadow,
+				@form-input-success-placeholder-text-color
+				
+			);
+			
+			&:focus,
+			&.focused {
+				
+				.input-states (
+					
+					@form-input-success-focus-border-color,
+					@form-input-success-focus-text-color,
+					@form-input-success-focus-text-shadow,
+					@form-input-success-focus-background-color,
+					@form-input-success-focus-background-gradient-top-color,
+					@form-input-success-focus-background-gradient-bottom-color,
+					@form-input-success-focus-shadow,
+					@form-input-success-focus-placeholder-text-color
+					
+				);
+				
+			}
+			
+			&[disabled],
+			&[readonly] {
+				
+				.opacity(@form-input-success-disabled-opacity);
+				.input-states (
+					
+					@form-input-success-disabled-border-color,
+					@form-input-success-disabled-text-color,
+					@form-input-success-disabled-text-shadow,
+					@form-input-success-disabled-background-color,
+					@form-input-success-disabled-background-gradient-top-color,
+					@form-input-success-disabled-background-gradient-bottom-color,
+					@form-input-success-disabled-shadow,
+					@form-input-success-disabled-placeholder-text-color
+					
+				);
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Inverse                                                                                              */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.inverse {
+				
+				.input-states (
+					
+					@form-input-success-inverse-border-color,
+					@form-input-success-inverse-text-color,
+					@form-input-success-inverse-text-shadow,
+					@form-input-success-inverse-background-color,
+					@form-input-success-inverse-background-gradient-top-color,
+					@form-input-success-inverse-background-gradient-bottom-color,
+					@form-input-success-inverse-shadow,
+					@form-input-success-inverse-placeholder-text-color
+					
+				);
+				
+				&:focus,
+				&.focused {
+					
+					.input-states (
+						
+						@form-input-success-inverse-focus-border-color,
+						@form-input-success-inverse-focus-text-color,
+						@form-input-success-inverse-focus-text-shadow,
+						@form-input-success-inverse-focus-background-color,
+						@form-input-success-inverse-focus-background-gradient-top-color,
+						@form-input-success-inverse-focus-background-gradient-bottom-color,
+						@form-input-success-inverse-focus-shadow,
+						@form-input-success-inverse-focus-placeholder-text-color
+						
+					);
+					
+				}
+				
+				&[disabled],
+				&[readonly] {
+					
+					.opacity(@form-input-success-inverse-disabled-opacity);
+					.input-states (
+						
+						@form-input-success-inverse-disabled-border-color,
+						@form-input-success-inverse-disabled-text-color,
+						@form-input-success-inverse-disabled-text-shadow,
+						@form-input-success-inverse-disabled-background-color,
+						@form-input-success-inverse-disabled-background-gradient-top-color,
+						@form-input-success-inverse-disabled-background-gradient-bottom-color,
+						@form-input-success-inverse-disabled-shadow,
+						@form-input-success-inverse-disabled-placeholder-text-color
+						
+					);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Warning                                                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.form-group-warning {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Label                                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		label {
+			
+			color: @form-label-warning-text-color;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Help Block                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.help-block {
+			
+			color: @form-help-block-warning-text-color;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input                                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		input[type="text"],
+		input[type="password"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="date"],
+		input[type="month"],
+		input[type="time"],
+		input[type="week"],
+		input[type="number"],
+		input[type="email"],
+		input[type="url"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="color"],
+		.uneditable-input,
+		textarea {
+			
+			.input-states (
+				
+				@form-input-warning-border-color,
+				@form-input-warning-text-color,
+				@form-input-warning-text-shadow,
+				@form-input-warning-background-color,
+				@form-input-warning-background-gradient-top-color,
+				@form-input-warning-background-gradient-bottom-color,
+				@form-input-warning-shadow,
+				@form-input-warning-placeholder-text-color
+				
+			);
+			
+			&:focus,
+			&.focused {
+				
+				.input-states (
+					
+					@form-input-warning-focus-border-color,
+					@form-input-warning-focus-text-color,
+					@form-input-warning-focus-text-shadow,
+					@form-input-warning-focus-background-color,
+					@form-input-warning-focus-background-gradient-top-color,
+					@form-input-warning-focus-background-gradient-bottom-color,
+					@form-input-warning-focus-shadow,
+					@form-input-warning-focus-placeholder-text-color
+					
+				);
+				
+			}
+			
+			&[disabled],
+			&[readonly] {
+				
+				.opacity(@form-input-warning-disabled-opacity);
+				.input-states (
+					
+					@form-input-warning-disabled-border-color,
+					@form-input-warning-disabled-text-color,
+					@form-input-warning-disabled-text-shadow,
+					@form-input-warning-disabled-background-color,
+					@form-input-warning-disabled-background-gradient-top-color,
+					@form-input-warning-disabled-background-gradient-bottom-color,
+					@form-input-warning-disabled-shadow,
+					@form-input-warning-disabled-placeholder-text-color
+					
+				);
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Inverse                                                                                              */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.inverse {
+				
+				.input-states (
+					
+					@form-input-warning-inverse-border-color,
+					@form-input-warning-inverse-text-color,
+					@form-input-warning-inverse-text-shadow,
+					@form-input-warning-inverse-background-color,
+					@form-input-warning-inverse-background-gradient-top-color,
+					@form-input-warning-inverse-background-gradient-bottom-color,
+					@form-input-warning-inverse-shadow,
+					@form-input-warning-inverse-placeholder-text-color
+					
+				);
+				
+				&:focus,
+				&.focused {
+					
+					.input-states (
+						
+						@form-input-warning-inverse-focus-border-color,
+						@form-input-warning-inverse-focus-text-color,
+						@form-input-warning-inverse-focus-text-shadow,
+						@form-input-warning-inverse-focus-background-color,
+						@form-input-warning-inverse-focus-background-gradient-top-color,
+						@form-input-warning-inverse-focus-background-gradient-bottom-color,
+						@form-input-warning-inverse-focus-shadow,
+						@form-input-warning-inverse-focus-placeholder-text-color
+						
+					);
+					
+				}
+				
+				&[disabled],
+				&[readonly] {
+					
+					.opacity(@form-input-warning-inverse-disabled-opacity);
+					.input-states (
+						
+						@form-input-warning-inverse-disabled-border-color,
+						@form-input-warning-inverse-disabled-text-color,
+						@form-input-warning-inverse-disabled-text-shadow,
+						@form-input-warning-inverse-disabled-background-color,
+						@form-input-warning-inverse-disabled-background-gradient-top-color,
+						@form-input-warning-inverse-disabled-background-gradient-bottom-color,
+						@form-input-warning-inverse-disabled-shadow,
+						@form-input-warning-inverse-disabled-placeholder-text-color
+						
+					);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Error                                                                                                */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.form-group-error {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Label                                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		label {
+			
+			color: @form-label-error-text-color;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Help Block                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.help-block {
+			
+			color: @form-help-block-error-text-color;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input                                                                                                */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		input[type="text"],
+		input[type="password"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="date"],
+		input[type="month"],
+		input[type="time"],
+		input[type="week"],
+		input[type="number"],
+		input[type="email"],
+		input[type="url"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="color"],
+		.uneditable-input,
+		textarea {
+			
+			.input-states (
+				
+				@form-input-error-border-color,
+				@form-input-error-text-color,
+				@form-input-error-text-shadow,
+				@form-input-error-background-color,
+				@form-input-error-background-gradient-top-color,
+				@form-input-error-background-gradient-bottom-color,
+				@form-input-error-shadow,
+				@form-input-error-placeholder-text-color
+				
+			);
+			
+			&:focus,
+			&.focused {
+				
+				.input-states (
+					
+					@form-input-error-focus-border-color,
+					@form-input-error-focus-text-color,
+					@form-input-error-focus-text-shadow,
+					@form-input-error-focus-background-color,
+					@form-input-error-focus-background-gradient-top-color,
+					@form-input-error-focus-background-gradient-bottom-color,
+					@form-input-error-focus-shadow,
+					@form-input-error-focus-placeholder-text-color
+					
+				);
+				
+			}
+			
+			&[disabled],
+			&[readonly] {
+				
+				.opacity(@form-input-error-disabled-opacity);
+				.input-states (
+					
+					@form-input-error-disabled-border-color,
+					@form-input-error-disabled-text-color,
+					@form-input-error-disabled-text-shadow,
+					@form-input-error-disabled-background-color,
+					@form-input-error-disabled-background-gradient-top-color,
+					@form-input-error-disabled-background-gradient-bottom-color,
+					@form-input-error-disabled-shadow,
+					@form-input-error-disabled-placeholder-text-color
+					
+				);
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Inverse                                                                                              */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.inverse {
+				
+				.input-states (
+					
+					@form-input-error-inverse-border-color,
+					@form-input-error-inverse-text-color,
+					@form-input-error-inverse-text-shadow,
+					@form-input-error-inverse-background-color,
+					@form-input-error-inverse-background-gradient-top-color,
+					@form-input-error-inverse-background-gradient-bottom-color,
+					@form-input-error-inverse-shadow,
+					@form-input-error-inverse-placeholder-text-color
+					
+				);
+				
+				&:focus,
+				&.focused {
+					
+					.input-states (
+						
+						@form-input-error-inverse-focus-border-color,
+						@form-input-error-inverse-focus-text-color,
+						@form-input-error-inverse-focus-text-shadow,
+						@form-input-error-inverse-focus-background-color,
+						@form-input-error-inverse-focus-background-gradient-top-color,
+						@form-input-error-inverse-focus-background-gradient-bottom-color,
+						@form-input-error-inverse-focus-shadow,
+						@form-input-error-inverse-focus-placeholder-text-color
+						
+					);
+					
+				}
+				
+				&[disabled],
+				&[readonly] {
+					
+					.opacity(@form-input-error-inverse-disabled-opacity);
+					.input-states (
+						
+						@form-input-error-inverse-disabled-border-color,
+						@form-input-error-inverse-disabled-text-color,
+						@form-input-error-inverse-disabled-text-shadow,
+						@form-input-error-inverse-disabled-background-color,
+						@form-input-error-inverse-disabled-background-gradient-top-color,
+						@form-input-error-inverse-disabled-background-gradient-bottom-color,
+						@form-input-error-inverse-disabled-shadow,
+						@form-input-error-inverse-disabled-placeholder-text-color
+						
+					);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Form Actions                                                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.form-actions {
+	
+	.clearfix();
+	padding: @form-actions-padding-vertical @form-actions-padding-horizontal;
+	background-color: @form-actions-background-color;
+	.box-shadow(@form-actions-shadow);
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Grid Sizing for Inputs                                                                               */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+input[class*="span"],
+select[class*="span"],
+textarea[class*="span"],
+.uneditable-input[class*="span"],
+.row-fluid input[class*="span"],
+.row-fluid select[class*="span"],
+.row-fluid textarea[class*="span"],
+.row-fluid .uneditable-input[class*="span"] {
+	
+	float: none;
+	margin-left: 0;
+	display: block;
+	
+}
+
+#grid > .input(@grid-column-width-standard, @grid-gutter-width-standard);
+
+.controls {
+	
+	.clearfix();
+	
+}
+
+.controls-row [class*="span"] {
+	
+	float: left;
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive changes to styling for widescreen (@viewport-widescreen) and                              */
+/* above.                                                                                               */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @viewport-widescreen) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* General Form Styling                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	form {
+		
+		margin-bottom: @primary-margin-widescreen;
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-widescreen;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-widescreen;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Legend                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	legend {
+		
+		font-size: @form-legend-font-size * @form-legend-responsive-ratio-widescreen;
+		line-height: @form-legend-line-height * @form-legend-responsive-ratio-widescreen;
+		margin: (@form-legend-margin-top * @form-legend-responsive-ratio-widescreen) 0px (@form-legend-margin-bottom * @form-legend-responsive-ratio-widescreen) 0px;
+		padding: 0px 0px ((@form-legend-margin-bottom * @form-legend-responsive-ratio-widescreen) / 2) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall * @form-legend-responsive-ratio-widescreen;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short * @form-legend-responsive-ratio-widescreen;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Labels                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	label {
+		
+		font-size: @form-label-font-size * @form-label-responsive-ratio-widescreen;
+		line-height: @form-label-line-height * @form-label-responsive-ratio-widescreen;
+		margin: (@form-label-margin-top * @form-label-responsive-ratio-widescreen) 0px (@form-label-margin-bottom * @form-label-responsive-ratio-widescreen) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall * @form-label-responsive-ratio-widescreen;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-responsive-ratio-widescreen;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Help Block                                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.help-block {
+		
+		font-size: @form-help-block-text-font-size * @form-help-block-responsive-ratio-widescreen;
+		line-height: @form-help-block-text-line-height * @form-help-block-responsive-ratio-widescreen;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Inputs                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	.uneditable-input,
+	textarea {
+		
+		height: @form-input-height * @form-input-responsive-ratio-widescreen;
+		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-widescreen, @form-input-text-line-height * @form-input-responsive-ratio-widescreen);
+		padding-left: @form-input-padding-horizontal * @form-input-responsive-ratio-widescreen;
+		padding-right: @form-input-padding-horizontal * @form-input-responsive-ratio-widescreen;
+		font-size: @form-input-text-font-size * @form-input-responsive-ratio-widescreen;
+		line-height: @form-input-text-line-height * @form-input-responsive-ratio-widescreen;
+		margin-bottom: @form-input-margin-widescreen;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+			margin-bottom: @form-input-margin-widescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-tall-widescreen;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-short-widescreen;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-widescreen;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-responsive-ratio-widescreen;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-widescreen, @form-input-large-text-line-height * @form-input-large-responsive-ratio-widescreen);
+			padding-left: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-widescreen;
+			padding-right: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-widescreen;
+			font-size: @form-input-large-text-font-size * @form-input-large-responsive-ratio-widescreen;
+			line-height: @form-input-large-text-line-height * @form-input-large-responsive-ratio-widescreen;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-responsive-ratio-widescreen;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-widescreen, @form-input-small-text-line-height * @form-input-small-responsive-ratio-widescreen);
+			padding-left: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-widescreen;
+			padding-right: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-widescreen;
+			font-size: @form-input-small-text-font-size * @form-input-small-responsive-ratio-widescreen;
+			line-height: @form-input-small-text-line-height * @form-input-small-responsive-ratio-widescreen;
+			
+		}
+		
+	}
+	
+	textarea {
+		
+		height: auto;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Radio Buttons & Checkboxes                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.radio,
+	.checkbox {
+		
+		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-widescreen));
+		min-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-widescreen;
+		font-size: @form-input-toggles-text-font-size * @form-input-toggles-responsive-ratio-widescreen;
+		line-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-widescreen;
+		margin-bottom: @form-input-margin-widescreen;
+		
+		input[type="radio"] {
+			
+			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-widescreen));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-widescreen) / 2) - (@form-input-radio-height / 2);
+			
+		}
+		
+		input[type="checkbox"] {
+			
+			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-widescreen));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-widescreen) / 2) - (@form-input-checkbox-height / 2);
+			
+		}
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+			margin-bottom: @form-input-margin-widescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-tall-widescreen;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-short-widescreen;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-widescreen;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		&.input-height {
+			
+			min-height: @form-input-height * @form-input-responsive-ratio-widescreen;
+			line-height: @form-input-height * @form-input-responsive-ratio-widescreen;
+			
+			input[type="radio"] {
+				
+				top: ((@form-input-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-radio-height / 2);
+				
+			}
+			
+			input[type="checkbox"] {
+				
+				top: ((@form-input-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-checkbox-height / 2);
+				
+			}
+			
+			&.input-large {
+				
+				min-height: @form-input-large-height * @form-input-responsive-ratio-widescreen;
+				line-height: @form-input-large-height * @form-input-responsive-ratio-widescreen;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-large-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-large-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+			&.input-small {
+				
+				min-height: @form-input-small-height * @form-input-responsive-ratio-widescreen;
+				line-height: @form-input-small-height * @form-input-responsive-ratio-widescreen;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-small-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-small-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+		}
+		
+		&.inline {
+			
+			+ .radio.inline,
+			+ .checkbox.inline {
+				
+				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-responsive-ratio-widescreen;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Select Boxes                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Standard Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	select {
+		
+		height: @form-input-height * @form-input-responsive-ratio-widescreen;
+		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-widescreen, @button-text-line-height * @button-responsive-ratio-widescreen);
+		padding-left: @button-padding-horizontal * @button-responsive-ratio-widescreen;
+		padding-right: @button-padding-horizontal * @button-responsive-ratio-widescreen;
+		margin-bottom: @form-input-margin-widescreen;
+		font-size: @button-text-font-size * @button-responsive-ratio-widescreen;
+		line-height: @button-text-line-height * @button-responsive-ratio-widescreen;
+		*line-height:  @button-text-line-height * @button-responsive-ratio-widescreen;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+			margin-bottom: @form-input-margin-widescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-tall-widescreen;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-short-widescreen;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-widescreen;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-responsive-ratio-widescreen;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-widescreen, @button-large-text-line-height * @button-large-responsive-ratio-widescreen);
+			padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-widescreen;
+			padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-widescreen;
+			font-size: @button-large-text-font-size * @button-large-responsive-ratio-widescreen;
+			line-height: @button-large-text-line-height * @button-large-responsive-ratio-widescreen;
+			*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-widescreen;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-responsive-ratio-widescreen;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-widescreen, @button-small-text-line-height * @button-small-responsive-ratio-widescreen);
+			padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-widescreen;
+			padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-widescreen;
+			font-size: @button-small-text-font-size * @button-small-responsive-ratio-widescreen;
+			line-height: @button-small-text-line-height * @button-small-responsive-ratio-widescreen;
+			*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-widescreen;
+			
+		}
+		
+		&[multiple],
+		&[size] {
+			
+			height: auto;
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Stylized Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.select-wrapper {
+		
+		margin-bottom: @form-input-margin-widescreen;
+			
+		.select-wrapper-inner {
+			
+			height: @form-input-height * @form-input-responsive-ratio-widescreen;
+			
+			&:after {
+				
+				top: ((@button-height * @button-responsive-ratio-widescreen) / 2) - (6 / 2);
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-widescreen;
+				
+			}
+			
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-widescreen;
+				
+			}
+			
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-large {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-large-height * @form-input-large-responsive-ratio-widescreen;
+				
+				&:after {
+					
+					top: ((@form-input-large-height * @form-input-large-responsive-ratio-widescreen) / 2) - (6 / 2);
+					right: @button-large-padding-horizontal;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-small {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-small-height * @form-input-small-responsive-ratio-widescreen;
+				
+				&:after {
+					
+					top: ((@form-input-small-height * @form-input-small-responsive-ratio-widescreen) / 2) - (6 / 2);
+					right: @button-small-padding-horizontal;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Input Groups                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.input-group {
+		
+		margin-bottom: @form-input-margin-widescreen;
+		
+		input,
+		select,
+		.uneditable-input {
+			
+			margin-bottom: 0px;
+			
+		}
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+			margin-bottom: @form-input-margin-widescreen;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-tall-widescreen;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-widescreen;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
+				margin-bottom: @form-input-margin-short-widescreen;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-widescreen;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on {
+			
+			padding-left: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
+			padding-right: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
+			.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-widescreen, @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-widescreen);
+			font-size: @form-input-add-on-text-font-size * @form-input-add-on-responsive-ratio-widescreen;
+			line-height: @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-widescreen;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On Group                                                                             */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on-group {
+			
+			height:  @form-input-height * @form-input-responsive-ratio-widescreen;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-large {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
+				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
+				.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-widescreen, @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-widescreen);
+				font-size: @form-input-add-on-large-text-font-size * @form-input-add-on-responsive-ratio-widescreen;
+				line-height: @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-widescreen;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-large-height * @form-input-responsive-ratio-widescreen;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-small {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
+				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
+				.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-widescreen, @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-widescreen);
+				font-size: @form-input-add-on-small-text-font-size * @form-input-add-on-responsive-ratio-widescreen;
+				line-height: @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-widescreen;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-small-height * @form-input-responsive-ratio-widescreen;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Form Actions                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.form-actions {
+		
+		padding: @form-actions-padding-vertical-widescreen @form-actions-padding-horizontal-widescreen;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Grid Sizing for Inputs                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	#grid > .input(@grid-column-width-widescreen, @grid-gutter-width-widescreen);
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* General Form Styling                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	form {
+		
+		margin-bottom: @primary-margin-tablet;
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-tablet;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-tablet;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Legend                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	legend {
+		
+		font-size: @form-legend-font-size * @form-legend-responsive-ratio-tablet;
+		line-height: @form-legend-line-height * @form-legend-responsive-ratio-tablet;
+		margin: (@form-legend-margin-top * @form-legend-responsive-ratio-tablet) 0px (@form-legend-margin-bottom * @form-legend-responsive-ratio-tablet) 0px;
+		padding: 0px 0px ((@form-legend-margin-bottom * @form-legend-responsive-ratio-tablet) / 2) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall * @form-legend-responsive-ratio-tablet;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short * @form-legend-responsive-ratio-tablet;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Labels                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	label {
+		
+		font-size: @form-label-font-size * @form-label-responsive-ratio-tablet;
+		line-height: @form-label-line-height * @form-label-responsive-ratio-tablet;
+		margin: (@form-label-margin-top * @form-label-responsive-ratio-tablet) 0px (@form-label-margin-bottom * @form-label-responsive-ratio-tablet) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall * @form-label-responsive-ratio-tablet;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-responsive-ratio-tablet;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Help Block                                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.help-block {
+		
+		font-size: @form-help-block-text-font-size * @form-help-block-responsive-ratio-tablet;
+		line-height: @form-help-block-text-line-height * @form-help-block-responsive-ratio-tablet;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Inputs                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	.uneditable-input,
+	textarea {
+		
+		height: @form-input-height * @form-input-responsive-ratio-tablet;
+		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-tablet, @form-input-text-line-height * @form-input-responsive-ratio-tablet);
+		padding-left: @form-input-padding-horizontal * @form-input-responsive-ratio-tablet;
+		padding-right: @form-input-padding-horizontal * @form-input-responsive-ratio-tablet;
+		font-size: @form-input-text-font-size * @form-input-responsive-ratio-tablet;
+		line-height: @form-input-text-line-height * @form-input-responsive-ratio-tablet;
+		margin-bottom: @form-input-margin-tablet;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+			margin-bottom: @form-input-margin-tablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-tablet;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-tall-tablet;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-tablet;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-short-tablet;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-tablet;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-responsive-ratio-tablet;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-tablet, @form-input-large-text-line-height * @form-input-large-responsive-ratio-tablet);
+			padding-left: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-tablet;
+			padding-right: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-tablet;
+			font-size: @form-input-large-text-font-size * @form-input-large-responsive-ratio-tablet;
+			line-height: @form-input-large-text-line-height * @form-input-large-responsive-ratio-tablet;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-responsive-ratio-tablet;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-tablet, @form-input-small-text-line-height * @form-input-small-responsive-ratio-tablet);
+			padding-left: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-tablet;
+			padding-right: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-tablet;
+			font-size: @form-input-small-text-font-size * @form-input-small-responsive-ratio-tablet;
+			line-height: @form-input-small-text-line-height * @form-input-small-responsive-ratio-tablet;
+			
+		}
+		
+	}
+	
+	textarea {
+		
+		height: auto;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Radio Buttons & Checkboxes                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.radio,
+	.checkbox {
+		
+		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-tablet));
+		min-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-tablet;
+		font-size: @form-input-toggles-text-font-size * @form-input-toggles-responsive-ratio-tablet;
+		line-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-tablet;
+		margin-bottom: @form-input-margin-tablet;
+		
+		input[type="radio"] {
+			
+			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-tablet));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-tablet) / 2) - (@form-input-radio-height / 2);
+			
+		}
+		
+		input[type="checkbox"] {
+			
+			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-tablet));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-tablet) / 2) - (@form-input-checkbox-height / 2);
+			
+		}
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+			margin-bottom: @form-input-margin-tablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-tablet;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-tall-tablet;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-tablet;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-short-tablet;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-tablet;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		&.input-height {
+			
+			min-height: @form-input-height * @form-input-responsive-ratio-tablet;
+			line-height: @form-input-height * @form-input-responsive-ratio-tablet;
+			
+			input[type="radio"] {
+				
+				top: ((@form-input-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-radio-height / 2);
+				
+			}
+			
+			input[type="checkbox"] {
+				
+				top: ((@form-input-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-checkbox-height / 2);
+				
+			}
+			
+			&.input-large {
+				
+				min-height: @form-input-large-height * @form-input-responsive-ratio-tablet;
+				line-height: @form-input-large-height * @form-input-responsive-ratio-tablet;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-large-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-large-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+			&.input-small {
+				
+				min-height: @form-input-small-height * @form-input-responsive-ratio-tablet;
+				line-height: @form-input-small-height * @form-input-responsive-ratio-tablet;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-small-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-small-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+		}
+		
+		&.inline {
+			
+			+ .radio.inline,
+			+ .checkbox.inline {
+				
+				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-responsive-ratio-tablet;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Select Boxes                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Standard Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	select {
+		
+		height: @form-input-height * @form-input-responsive-ratio-tablet;
+		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-tablet, @button-text-line-height * @button-responsive-ratio-tablet);
+		padding-left: @button-padding-horizontal * @button-responsive-ratio-tablet;
+		padding-right: @button-padding-horizontal * @button-responsive-ratio-tablet;
+		margin-bottom: @form-input-margin-tablet;
+		font-size: @button-text-font-size * @button-responsive-ratio-tablet;
+		line-height: @button-text-line-height * @button-responsive-ratio-tablet;
+		*line-height:  @button-text-line-height * @button-responsive-ratio-tablet;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+			margin-bottom: @form-input-margin-tablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-tablet;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-tall-tablet;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-tablet;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-short-tablet;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-tablet;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-responsive-ratio-tablet;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-tablet, @button-large-text-line-height * @button-large-responsive-ratio-tablet);
+			padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-tablet;
+			padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-tablet;
+			font-size: @button-large-text-font-size * @button-large-responsive-ratio-tablet;
+			line-height: @button-large-text-line-height * @button-large-responsive-ratio-tablet;
+			*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-tablet;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-responsive-ratio-tablet;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-tablet, @button-small-text-line-height * @button-small-responsive-ratio-tablet);
+			padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-tablet;
+			padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-tablet;
+			font-size: @button-small-text-font-size * @button-small-responsive-ratio-tablet;
+			line-height: @button-small-text-line-height * @button-small-responsive-ratio-tablet;
+			*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-tablet;
+			
+		}
+		
+		&[multiple],
+		&[size] {
+			
+			height: auto;
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Stylized Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.select-wrapper {
+		
+		margin-bottom: @form-input-margin-tablet;
+			
+		.select-wrapper-inner {
+			
+			height: @form-input-height * @form-input-responsive-ratio-tablet;
+			
+			&:after {
+				
+				top: ((@button-height * @button-responsive-ratio-tablet) / 2) - (6 / 2);
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-tablet;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-tablet;
+				
+			}
+			
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-tablet;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-tablet;
+				
+			}
+			
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-large {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-large-height * @form-input-large-responsive-ratio-tablet;
+				
+				&:after {
+					
+					top: ((@form-input-large-height * @form-input-large-responsive-ratio-tablet) / 2) - (6 / 2);
+					right: @button-large-padding-horizontal;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-small {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-small-height * @form-input-small-responsive-ratio-tablet;
+				
+				&:after {
+					
+					top: ((@form-input-small-height * @form-input-small-responsive-ratio-tablet) / 2) - (6 / 2);
+					right: @button-small-padding-horizontal;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Input Groups                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.input-group {
+		
+		margin-bottom: @form-input-margin-tablet;
+		
+		input,
+		select,
+		.uneditable-input {
+			
+			margin-bottom: 0px;
+			
+		}
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+			margin-bottom: @form-input-margin-tablet;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-tablet;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-tall-tablet;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-tablet;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
+				margin-bottom: @form-input-margin-short-tablet;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-tablet;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on {
+			
+			padding-left: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
+			padding-right: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
+			.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-tablet, @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-tablet);
+			font-size: @form-input-add-on-text-font-size * @form-input-add-on-responsive-ratio-tablet;
+			line-height: @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-tablet;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On Group                                                                             */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on-group {
+			
+			height:  @form-input-height * @form-input-responsive-ratio-tablet;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-large {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
+				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
+				.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-tablet, @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-tablet);
+				font-size: @form-input-add-on-large-text-font-size * @form-input-add-on-responsive-ratio-tablet;
+				line-height: @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-tablet;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-large-height * @form-input-responsive-ratio-tablet;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-small {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
+				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
+				.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-tablet, @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-tablet);
+				font-size: @form-input-add-on-small-text-font-size * @form-input-add-on-responsive-ratio-tablet;
+				line-height: @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-tablet;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-small-height * @form-input-responsive-ratio-tablet;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Form Actions                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.form-actions {
+		
+		padding: @form-actions-padding-vertical-tablet @form-actions-padding-horizontal-tablet;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Grid Sizing for Inputs                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	#grid > .input(@grid-column-width-tablet, @grid-gutter-width-tablet);
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @viewport-mobile-landscape-max) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* General Form Styling                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	form {
+		
+		margin-bottom: @primary-margin-mobile;
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-mobile;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-mobile;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Legend                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	legend {
+		
+		font-size: @form-legend-font-size * @form-legend-responsive-ratio-mobile;
+		line-height: @form-legend-line-height * @form-legend-responsive-ratio-mobile;
+		margin: (@form-legend-margin-top * @form-legend-responsive-ratio-mobile) 0px (@form-legend-margin-bottom * @form-legend-responsive-ratio-mobile) 0px;
+		padding: 0px 0px ((@form-legend-margin-bottom * @form-legend-responsive-ratio-mobile) / 2) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall * @form-legend-responsive-ratio-mobile;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short * @form-legend-responsive-ratio-mobile;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Labels                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	label {
+		
+		font-size: @form-label-font-size * @form-label-responsive-ratio-mobile;
+		line-height: @form-label-line-height * @form-label-responsive-ratio-mobile;
+		margin: (@form-label-margin-top * @form-label-responsive-ratio-mobile) 0px (@form-label-margin-bottom * @form-label-responsive-ratio-mobile) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall * @form-label-responsive-ratio-mobile;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-responsive-ratio-mobile;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Help Block                                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.help-block {
+		
+		font-size: @form-help-block-text-font-size * @form-help-block-responsive-ratio-mobile;
+		line-height: @form-help-block-text-line-height * @form-help-block-responsive-ratio-mobile;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Inputs                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	.uneditable-input,
+	textarea {
+		
+		height: @form-input-height * @form-input-responsive-ratio-mobile;
+		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-mobile, @form-input-text-line-height * @form-input-responsive-ratio-mobile);
+		padding-left: @form-input-padding-horizontal * @form-input-responsive-ratio-mobile;
+		padding-right: @form-input-padding-horizontal * @form-input-responsive-ratio-mobile;
+		font-size: @form-input-text-font-size * @form-input-responsive-ratio-mobile;
+		line-height: @form-input-text-line-height * @form-input-responsive-ratio-mobile;
+		margin-bottom: @form-input-margin-mobile;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+			margin-bottom: @form-input-margin-mobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-mobile;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-tall-mobile;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-mobile;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-short-mobile;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-mobile;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-responsive-ratio-mobile;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-mobile, @form-input-large-text-line-height * @form-input-large-responsive-ratio-mobile);
+			padding-left: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-mobile;
+			padding-right: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-mobile;
+			font-size: @form-input-large-text-font-size * @form-input-large-responsive-ratio-mobile;
+			line-height: @form-input-large-text-line-height * @form-input-large-responsive-ratio-mobile;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-responsive-ratio-mobile;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-mobile, @form-input-small-text-line-height * @form-input-small-responsive-ratio-mobile);
+			padding-left: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-mobile;
+			padding-right: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-mobile;
+			font-size: @form-input-small-text-font-size * @form-input-small-responsive-ratio-mobile;
+			line-height: @form-input-small-text-line-height * @form-input-small-responsive-ratio-mobile;
+			
+		}
+		
+	}
+	
+	textarea {
+		
+		height: auto;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Radio Buttons & Checkboxes                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.radio,
+	.checkbox {
+		
+		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-mobile));
+		min-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-mobile;
+		font-size: @form-input-toggles-text-font-size * @form-input-toggles-responsive-ratio-mobile;
+		line-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-mobile;
+		margin-bottom: @form-input-margin-mobile;
+		
+		input[type="radio"] {
+			
+			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-mobile));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-mobile) / 2) - (@form-input-radio-height / 2);
+			
+		}
+		
+		input[type="checkbox"] {
+			
+			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-mobile));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-mobile) / 2) - (@form-input-checkbox-height / 2);
+			
+		}
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+			margin-bottom: @form-input-margin-mobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-mobile;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-tall-mobile;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-mobile;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-short-mobile;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-mobile;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		&.input-height {
+			
+			min-height: @form-input-height * @form-input-responsive-ratio-mobile;
+			line-height: @form-input-height * @form-input-responsive-ratio-mobile;
+			
+			input[type="radio"] {
+				
+				top: ((@form-input-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-radio-height / 2);
+				
+			}
+			
+			input[type="checkbox"] {
+				
+				top: ((@form-input-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-checkbox-height / 2);
+				
+			}
+			
+			&.input-large {
+				
+				min-height: @form-input-large-height * @form-input-responsive-ratio-mobile;
+				line-height: @form-input-large-height * @form-input-responsive-ratio-mobile;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-large-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-large-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+			&.input-small {
+				
+				min-height: @form-input-small-height * @form-input-responsive-ratio-mobile;
+				line-height: @form-input-small-height * @form-input-responsive-ratio-mobile;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-small-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-small-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+		}
+		
+		&.inline {
+			
+			+ .radio.inline,
+			+ .checkbox.inline {
+				
+				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-responsive-ratio-mobile;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Select Boxes                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Standard Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	select {
+		
+		height: @form-input-height * @form-input-responsive-ratio-mobile;
+		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-mobile, @button-text-line-height * @button-responsive-ratio-mobile);
+		padding-left: @button-padding-horizontal * @button-responsive-ratio-mobile;
+		padding-right: @button-padding-horizontal * @button-responsive-ratio-mobile;
+		margin-bottom: @form-input-margin-mobile;
+		font-size: @button-text-font-size * @button-responsive-ratio-mobile;
+		line-height: @button-text-line-height * @button-responsive-ratio-mobile;
+		*line-height:  @button-text-line-height * @button-responsive-ratio-mobile;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+			margin-bottom: @form-input-margin-mobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-mobile;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-tall-mobile;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-mobile;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-short-mobile;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-mobile;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-responsive-ratio-mobile;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-mobile, @button-large-text-line-height * @button-large-responsive-ratio-mobile);
+			padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-mobile;
+			padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-mobile;
+			font-size: @button-large-text-font-size * @button-large-responsive-ratio-mobile;
+			line-height: @button-large-text-line-height * @button-large-responsive-ratio-mobile;
+			*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-mobile;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-responsive-ratio-mobile;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-mobile, @button-small-text-line-height * @button-small-responsive-ratio-mobile);
+			padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-mobile;
+			padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-mobile;
+			font-size: @button-small-text-font-size * @button-small-responsive-ratio-mobile;
+			line-height: @button-small-text-line-height * @button-small-responsive-ratio-mobile;
+			*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-mobile;
+			
+		}
+		
+		&[multiple],
+		&[size] {
+			
+			height: auto;
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Stylized Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.select-wrapper {
+		
+		margin-bottom: @form-input-margin-mobile;
+			
+		.select-wrapper-inner {
+			
+			height: @form-input-height * @form-input-responsive-ratio-mobile;
+			
+			&:after {
+				
+				top: ((@button-height * @button-responsive-ratio-mobile) / 2) - (6 / 2);
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-mobile;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-mobile;
+				
+			}
+			
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-mobile;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-mobile;
+				
+			}
+			
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-large {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-large-height * @form-input-large-responsive-ratio-mobile;
+				
+				&:after {
+					
+					top: ((@form-input-large-height * @form-input-large-responsive-ratio-mobile) / 2) - (6 / 2);
+					right: @button-large-padding-horizontal;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-small {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-small-height * @form-input-small-responsive-ratio-mobile;
+				
+				&:after {
+					
+					top: ((@form-input-small-height * @form-input-small-responsive-ratio-mobile) / 2) - (6 / 2);
+					right: @button-small-padding-horizontal;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Input Groups                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.input-group {
+		
+		margin-bottom: @form-input-margin-mobile;
+		
+		input,
+		select,
+		.uneditable-input {
+			
+			margin-bottom: 0px;
+			
+		}
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+			margin-bottom: @form-input-margin-mobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-mobile;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-tall-mobile;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-mobile;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
+				margin-bottom: @form-input-margin-short-mobile;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-mobile;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on {
+			
+			padding-left: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
+			padding-right: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
+			.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-mobile, @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-mobile);
+			font-size: @form-input-add-on-text-font-size * @form-input-add-on-responsive-ratio-mobile;
+			line-height: @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-mobile;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On Group                                                                             */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on-group {
+			
+			height:  @form-input-height * @form-input-responsive-ratio-mobile;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-large {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
+				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
+				.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-mobile, @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-mobile);
+				font-size: @form-input-add-on-large-text-font-size * @form-input-add-on-responsive-ratio-mobile;
+				line-height: @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-mobile;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-large-height * @form-input-responsive-ratio-mobile;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-small {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
+				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
+				.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-mobile, @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-mobile);
+				font-size: @form-input-add-on-small-text-font-size * @form-input-add-on-responsive-ratio-mobile;
+				line-height: @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-mobile;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-small-height * @form-input-responsive-ratio-mobile;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Form Actions                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.form-actions {
+		
+		padding: @form-actions-padding-vertical-mobile @form-actions-padding-horizontal-mobile;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Grid Sizing for Inputs                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.controls [class*="span"],
+	.controls-row [class*="span"] {
+		
+		float: none;
+		margin-left: 0px !important;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @viewport-mobile-max) {
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Retina Displays                                                                   */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
