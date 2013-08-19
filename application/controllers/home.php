@@ -15,11 +15,7 @@ class Home extends BASE_Controller {
 	
     public function index() {
 	    
-	    /* ----------------------------------------------------------- */
-    	/* Define View                                                 */
-    	/* ----------------------------------------------------------- */
-    	
-        $this->twig->display('pages/styleguide/index.php', $this->data);
+        redirect('/styleguide');
         
     }
 	

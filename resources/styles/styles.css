@@ -148,7 +148,10 @@
 /* Mini Button                                                                                          */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Button Groups                                                                                        */
+/* Button Group                                                                                         */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Button Toolbar                                                                                       */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
 /* Default Button                                                                                       */
@@ -6465,7 +6468,7 @@ input[type="button"].button-block {
 /* ---------------------------------------------------------------------------------------------------- */
 /* Primary Button                                                                                       */
 /* ---------------------------------------------------------------------------------------------------- */
-.button-primary {
+.button.button-primary {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6487,7 +6490,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-primary:hover {
+.button.button-primary:hover {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6509,8 +6512,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-primary.active,
-.button-primary:active {
+.button.button-primary.active,
+.button.button-primary:active {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6532,8 +6535,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-primary.disabled,
-.button-primary[disabled] {
+.button.button-primary.disabled,
+.button.button-primary[disabled] {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: transparent;
@@ -6557,7 +6560,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-primary.btn-link {
+.button.button-primary.btn-link {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6572,7 +6575,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-primary.btn-link:hover {
+.button.button-primary.btn-link:hover {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6587,8 +6590,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-primary.btn-link.active,
-.button-primary.btn-link:active {
+.button.button-primary.btn-link.active,
+.button.button-primary.btn-link:active {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6603,8 +6606,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-primary.btn-link.disabled,
-.button-primary.btn-link[disabled] {
+.button.button-primary.btn-link.disabled,
+.button.button-primary.btn-link[disabled] {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: transparent;
@@ -6621,7 +6624,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-primary.inverse {
+.button.button-primary.inverse {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6643,7 +6646,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-primary.inverse:hover {
+.button.button-primary.inverse:hover {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6665,8 +6668,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-primary.inverse.active,
-.button-primary.inverse:active {
+.button.button-primary.inverse.active,
+.button.button-primary.inverse:active {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6688,8 +6691,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-primary.inverse.disabled,
-.button-primary.inverse[disabled] {
+.button.button-primary.inverse.disabled,
+.button.button-primary.inverse[disabled] {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: transparent;
@@ -6716,7 +6719,7 @@ input[type="button"].button-block {
 /* ---------------------------------------------------------------------------------------------------- */
 /* Success Button                                                                                       */
 /* ---------------------------------------------------------------------------------------------------- */
-.button-success {
+.button.button-success {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6738,7 +6741,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-success:hover {
+.button.button-success:hover {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6760,8 +6763,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-success.active,
-.button-success:active {
+.button.button-success.active,
+.button.button-success:active {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6783,8 +6786,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-success.disabled,
-.button-success[disabled] {
+.button.button-success.disabled,
+.button.button-success[disabled] {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: transparent;
@@ -6808,7 +6811,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-success.btn-link {
+.button.button-success.btn-link {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6823,7 +6826,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-success.btn-link:hover {
+.button.button-success.btn-link:hover {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6838,8 +6841,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-success.btn-link.active,
-.button-success.btn-link:active {
+.button.button-success.btn-link.active,
+.button.button-success.btn-link:active {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6854,8 +6857,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-success.btn-link.disabled,
-.button-success.btn-link[disabled] {
+.button.button-success.btn-link.disabled,
+.button.button-success.btn-link[disabled] {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: transparent;
@@ -6872,7 +6875,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-success.inverse {
+.button.button-success.inverse {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6894,7 +6897,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-success.inverse:hover {
+.button.button-success.inverse:hover {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6916,8 +6919,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-success.inverse.active,
-.button-success.inverse:active {
+.button.button-success.inverse.active,
+.button.button-success.inverse:active {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6939,8 +6942,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-success.inverse.disabled,
-.button-success.inverse[disabled] {
+.button.button-success.inverse.disabled,
+.button.button-success.inverse[disabled] {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: transparent;
@@ -6967,7 +6970,7 @@ input[type="button"].button-block {
 /* ---------------------------------------------------------------------------------------------------- */
 /* Warning Button                                                                                       */
 /* ---------------------------------------------------------------------------------------------------- */
-.button-warning {
+.button.button-warning {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -6989,7 +6992,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-warning:hover {
+.button.button-warning:hover {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7011,8 +7014,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-warning.active,
-.button-warning:active {
+.button.button-warning.active,
+.button.button-warning:active {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7034,8 +7037,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-warning.disabled,
-.button-warning[disabled] {
+.button.button-warning.disabled,
+.button.button-warning[disabled] {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: transparent;
@@ -7059,7 +7062,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-warning.btn-link {
+.button.button-warning.btn-link {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7074,7 +7077,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-warning.btn-link:hover {
+.button.button-warning.btn-link:hover {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7089,8 +7092,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-warning.btn-link.active,
-.button-warning.btn-link:active {
+.button.button-warning.btn-link.active,
+.button.button-warning.btn-link:active {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7105,8 +7108,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-warning.btn-link.disabled,
-.button-warning.btn-link[disabled] {
+.button.button-warning.btn-link.disabled,
+.button.button-warning.btn-link[disabled] {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: transparent;
@@ -7123,7 +7126,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-warning.inverse {
+.button.button-warning.inverse {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7145,7 +7148,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-warning.inverse:hover {
+.button.button-warning.inverse:hover {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7167,8 +7170,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-warning.inverse.active,
-.button-warning.inverse:active {
+.button.button-warning.inverse.active,
+.button.button-warning.inverse:active {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7190,8 +7193,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-warning.inverse.disabled,
-.button-warning.inverse[disabled] {
+.button.button-warning.inverse.disabled,
+.button.button-warning.inverse[disabled] {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: transparent;
@@ -7218,7 +7221,7 @@ input[type="button"].button-block {
 /* ---------------------------------------------------------------------------------------------------- */
 /* Danger Button                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
-.button-danger {
+.button.button-danger {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7240,7 +7243,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-danger:hover {
+.button.button-danger:hover {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7262,8 +7265,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-danger.active,
-.button-danger:active {
+.button.button-danger.active,
+.button.button-danger:active {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7285,8 +7288,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-danger.disabled,
-.button-danger[disabled] {
+.button.button-danger.disabled,
+.button.button-danger[disabled] {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: transparent;
@@ -7310,7 +7313,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-danger.btn-link {
+.button.button-danger.btn-link {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7325,7 +7328,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-danger.btn-link:hover {
+.button.button-danger.btn-link:hover {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7340,8 +7343,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-danger.btn-link.active,
-.button-danger.btn-link:active {
+.button.button-danger.btn-link.active,
+.button.button-danger.btn-link:active {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7356,8 +7359,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-danger.btn-link.disabled,
-.button-danger.btn-link[disabled] {
+.button.button-danger.btn-link.disabled,
+.button.button-danger.btn-link[disabled] {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: transparent;
@@ -7374,7 +7377,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-danger.inverse {
+.button.button-danger.inverse {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7396,7 +7399,7 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-danger.inverse:hover {
+.button.button-danger.inverse:hover {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7418,8 +7421,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-danger.inverse.active,
-.button-danger.inverse:active {
+.button.button-danger.inverse.active,
+.button.button-danger.inverse:active {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7441,8 +7444,8 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-danger.inverse.disabled,
-.button-danger.inverse[disabled] {
+.button.button-danger.inverse.disabled,
+.button.button-danger.inverse[disabled] {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-color: transparent;
@@ -7466,45 +7469,6 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-/*
-.button-link {
-	
-	color: @link-text-color;
-	text-shadow: none;
-	background: none;
-	.box-shadow(none);
-	
-	&:hover {
-	
-		color: @link-hover-text-color;
-		text-shadow: none;
-		background: none;
-		.box-shadow(none);
-		
-	}
-	
-	&:active {
-	
-		color: @link-text-color;
-		text-shadow: none;
-		background: none;
-		.box-shadow(none);
-		
-	}
-	
-	&.disabled,
-	&[disabled] {
-		
-		color: @gray;
-		text-shadow: none;
-		background: none;
-		.box-shadow(none);
-		.opacity(@buttonDisabledOpacity);
-		
-	}
-	
-}
-*/
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Cross-Browser Compatability                                                                          */
@@ -7725,7 +7689,7 @@ input[type="submit"].button.button-mini {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* General Button Group Styling                                              */
+/* Button Group                                                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 .button-group {
@@ -7739,33 +7703,500 @@ input[type="submit"].button.button-mini {
   vertical-align: middle;
   white-space: nowrap;
   *margin-left: .3em;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Dropdown                                                                                             */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
 }
 .button-group:first-child {
   *margin-left: 0;
 }
 .button-group + .button-group {
-  margin-left: 6px;
+  margin-left: 10px;
+}
+.button-group > .button {
+  position: relative;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Large Button                                                                                         */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Small Button                                                                                         */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Mini Button                                                                                          */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.button-group > .button .caret {
+  margin-top: 8px;
+  margin-left: 0;
+}
+.button-group > .button:hover,
+.button-group > .button:focus,
+.button-group > .button:active,
+.button-group > .button.active {
+  z-index: 2;
+}
+.button-group > .button:first-child {
+  margin-left: 0px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-left-radius: 4px;
+}
+.button-group > .button:last-child,
+.button-group > .button:last-of-type {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+}
+.button-group > .button.button-large .caret {
+  margin-top: 6px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+}
+.button-group > .button.button-large:first-child {
+  margin-left: 0px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-left-radius: 4px;
+}
+.button-group > .button.button-large:last-child,
+.button-group > .button.button-large:last-of-type {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+}
+.button-group > .button.button-small .caret {
+  margin-top: 8px;
+}
+.button-group > .button.button-small:first-child {
+  margin-left: 0px;
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-left-radius: 3px;
+}
+.button-group > .button.button-small:last-child,
+.button-group > .button.button-small:last-of-type {
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-bottom-right-radius: 3px;
+}
+.button-group > .button.button-mini .caret {
+  margin-top: 8px;
+}
+.button-group > .button.button-mini:first-child {
+  margin-left: 0px;
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-left-radius: 3px;
+}
+.button-group > .button.button-mini:last-child,
+.button-group > .button.button-mini:last-of-type {
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-bottom-right-radius: 3px;
+}
+.button-group > .button + .button {
+  margin-left: 1px;
+}
+.button-group > .dropdown-toggle {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+}
+.button-group > .dropdown-toggle:active {
+  outline: 0;
+}
+.button-group.open .dropdown-toggle {
+  outline: 0;
+}
+.button-group.open .button.dropdown-toggle {
+  outline: 0;
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #a8a8a8;
+  text-shadow: none;
+  background-color: #ebebeb;
+  background-image: -moz-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: -o-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: linear-gradient(to bottom, #e4e4e4, #f9f9f9);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe4e4e4', endColorstr='#fff9f9f9', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Primary Button                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Success Button                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Warning Button                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Danger Button                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.button-group.open .button.dropdown-toggle.btn-link {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #2f2f2f;
+  text-shadow: none;
+  background-color: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.inverse {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #e4e4e4;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
+  background-color: #262626;
+  background-image: -moz-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1d1d1d), to(#4b4b4b));
+  background-image: -webkit-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: -o-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: linear-gradient(to bottom, #1d1d1d, #4b4b4b);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1d1d1d', endColorstr='#ff4b4b4b', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.button-primary {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #e0f0ff;
+  text-shadow: none;
+  background-color: #0052a3;
+  background-image: -moz-linear-gradient(top, #0052a3, #0066cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0052a3), to(#0066cc));
+  background-image: -webkit-linear-gradient(top, #0052a3, #0066cc);
+  background-image: -o-linear-gradient(top, #0052a3, #0066cc);
+  background-image: linear-gradient(to bottom, #0052a3, #0066cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0052a3', endColorstr='#ff0066cc', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 41, 82, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 41, 82, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 41, 82, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.button-primary.btn-link {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #001429;
+  text-shadow: none;
+  background-color: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.button-primary.inverse {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #e4e4e4;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
+  background-color: #262626;
+  background-image: -moz-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1d1d1d), to(#4b4b4b));
+  background-image: -webkit-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: -o-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: linear-gradient(to bottom, #1d1d1d, #4b4b4b);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1d1d1d', endColorstr='#ff4b4b4b', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.button-success {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #f0f8e7;
+  text-shadow: none;
+  background-color: #598c25;
+  background-image: -moz-linear-gradient(top, #598c25, #70af2f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#598c25), to(#70af2f));
+  background-image: -webkit-linear-gradient(top, #598c25, #70af2f);
+  background-image: -o-linear-gradient(top, #598c25, #70af2f);
+  background-image: linear-gradient(to bottom, #598c25, #70af2f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff598c25', endColorstr='#ff70af2f', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.button-success.btn-link {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #375717;
+  text-shadow: none;
+  background-color: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.button-success.inverse {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #e4e4e4;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
+  background-color: #262626;
+  background-image: -moz-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1d1d1d), to(#4b4b4b));
+  background-image: -webkit-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: -o-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: linear-gradient(to bottom, #1d1d1d, #4b4b4b);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1d1d1d', endColorstr='#ff4b4b4b', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.button-warning {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #fef2ea;
+  text-shadow: none;
+  background-color: #e2620e;
+  background-image: -moz-linear-gradient(top, #e2620e, #f1711d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e2620e), to(#f1711d));
+  background-image: -webkit-linear-gradient(top, #e2620e, #f1711d);
+  background-image: -o-linear-gradient(top, #e2620e, #f1711d);
+  background-image: linear-gradient(to bottom, #e2620e, #f1711d);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe2620e', endColorstr='#fff1711d', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.button-warning.btn-link {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #8d3d09;
+  text-shadow: none;
+  background-color: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.button-warning.inverse {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #e4e4e4;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
+  background-color: #262626;
+  background-image: -moz-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1d1d1d), to(#4b4b4b));
+  background-image: -webkit-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: -o-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: linear-gradient(to bottom, #1d1d1d, #4b4b4b);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1d1d1d', endColorstr='#ff4b4b4b', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.button-danger {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffecea;
+  text-shadow: none;
+  background-color: #eb1502;
+  background-image: -moz-linear-gradient(top, #eb1502, #fd210e);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eb1502), to(#fd210e));
+  background-image: -webkit-linear-gradient(top, #eb1502, #fd210e);
+  background-image: -o-linear-gradient(top, #eb1502, #fd210e);
+  background-image: linear-gradient(to bottom, #eb1502, #fd210e);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeb1502', endColorstr='#fffd210e', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.button-danger.btn-link {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #930d01;
+  text-shadow: none;
+  background-color: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.open .button.dropdown-toggle.button-danger.inverse {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #e4e4e4;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
+  background-color: #262626;
+  background-image: -moz-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1d1d1d), to(#4b4b4b));
+  background-image: -webkit-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: -o-linear-gradient(top, #1d1d1d, #4b4b4b);
+  background-image: linear-gradient(to bottom, #1d1d1d, #4b4b4b);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1d1d1d', endColorstr='#ff4b4b4b', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.dropup .button-large .caret {
+  border-bottom-width: 5px;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Button Toolbar                                                            */
+/* Button Toolbar                                                                                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
 .button-toolbar {
-  margin-top: -6px;
-  margin-left: -6px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-bottom: 30px;
   display: block;
   *zoom: 1;
-  /*
-	> .button + .button,
-	> .button-group + .button,
-	> .button + .button-group {
-		
-		margin-top: @buttonGroupHorizontalPadding;
-		margin-left: @buttonGroupHorizontalPadding;
-		
-	}
-	*/
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button                                                                                               */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Group                                                                                         */
+
+  /* ---------------------------------------------------------------------------------------------------- */
 
 }
 .button-toolbar:before,
@@ -7777,157 +8208,384 @@ input[type="submit"].button.button-mini {
 .button-toolbar:after {
   clear: both;
 }
-.button-toolbar.pull-right {
-  float: right;
+.button-toolbar.tall {
+  margin-bottom: 40px;
+}
+.button-toolbar.short {
+  margin-bottom: 15px;
+}
+.button-toolbar.button-toolbar-centered {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -10px;
+  margin-left: -10px;
 }
 .button-toolbar .button {
-  margin-top: 6px;
-  margin-left: 6px;
+  margin-top: 10px;
+  margin-left: 10px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Link                                                                                                 */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Inverse                                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Primary Button                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Warning Button                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Success Button                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Danger Button                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
 }
 .button-toolbar .button:hover {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.active,
 .button-toolbar .button:active {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.disabled,
 .button-toolbar .button[disabled] {
-  margin-top: 6px;
+  margin-top: 10px;
+}
+.button-toolbar .button.btn-link {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.button-toolbar .button.btn-link:hover {
+  margin-top: 10px;
+}
+.button-toolbar .button.btn-link.active,
+.button-toolbar .button.btn-link:active {
+  margin-top: 10px;
+}
+.button-toolbar .button.btn-link.disabled,
+.button-toolbar .button.btn-link[disabled] {
+  margin-top: 10px;
 }
 .button-toolbar .button.inverse {
-  margin-top: 6px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 .button-toolbar .button.inverse:hover {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.inverse.active,
 .button-toolbar .button.inverse:active {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.inverse.disabled,
 .button-toolbar .button.inverse[disabled] {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-primary {
-  margin-top: 6px;
+  margin-top: 10px;
+  margin-left: 10px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Link                                                                                                 */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Inverse                                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
 }
 .button-toolbar .button.button-primary:hover {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-primary.active,
 .button-toolbar .button.button-primary:active {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-primary.disabled,
 .button-toolbar .button.button-primary[disabled] {
-  margin-top: 6px;
+  margin-top: 10px;
+}
+.button-toolbar .button.button-primary.btn-link {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.button-toolbar .button.button-primary.btn-link:hover {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-primary.btn-link.active,
+.button-toolbar .button.button-primary.btn-link:active {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-primary.btn-link.disabled,
+.button-toolbar .button.button-primary.btn-link[disabled] {
+  margin-top: 10px;
 }
 .button-toolbar .button.button-primary.inverse {
-  margin-top: 6px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 .button-toolbar .button.button-primary.inverse:hover {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-primary.inverse.active,
 .button-toolbar .button.button-primary.inverse:active {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-primary.inverse.disabled,
 .button-toolbar .button.button-primary.inverse[disabled] {
-  margin-top: 6px;
-}
-.button-toolbar .button.button-success {
-  margin-top: 6px;
-}
-.button-toolbar .button.button-success:hover {
-  margin-top: 6px;
-}
-.button-toolbar .button.button-success.active,
-.button-toolbar .button.button-success:active {
-  margin-top: 6px;
-}
-.button-toolbar .button.button-success.disabled,
-.button-toolbar .button.button-success[disabled] {
-  margin-top: 6px;
-}
-.button-toolbar .button.button-success.inverse {
-  margin-top: 6px;
-}
-.button-toolbar .button.button-success.inverse:hover {
-  margin-top: 6px;
-}
-.button-toolbar .button.button-success.inverse.active,
-.button-toolbar .button.button-success.inverse:active {
-  margin-top: 6px;
-}
-.button-toolbar .button.button-success.inverse.disabled,
-.button-toolbar .button.button-success.inverse[disabled] {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-warning {
-  margin-top: 6px;
+  margin-top: 10px;
+  margin-left: 10px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Link                                                                                                 */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Inverse                                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
 }
 .button-toolbar .button.button-warning:hover {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-warning.active,
 .button-toolbar .button.button-warning:active {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-warning.disabled,
 .button-toolbar .button.button-warning[disabled] {
-  margin-top: 6px;
+  margin-top: 10px;
+}
+.button-toolbar .button.button-warning.btn-link {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.button-toolbar .button.button-warning.btn-link:hover {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-warning.btn-link.active,
+.button-toolbar .button.button-warning.btn-link:active {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-warning.btn-link.disabled,
+.button-toolbar .button.button-warning.btn-link[disabled] {
+  margin-top: 10px;
 }
 .button-toolbar .button.button-warning.inverse {
-  margin-top: 6px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 .button-toolbar .button.button-warning.inverse:hover {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-warning.inverse.active,
 .button-toolbar .button.button-warning.inverse:active {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-warning.inverse.disabled,
 .button-toolbar .button.button-warning.inverse[disabled] {
-  margin-top: 6px;
+  margin-top: 10px;
+}
+.button-toolbar .button.button-success {
+  margin-top: 10px;
+  margin-left: 10px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Link                                                                                                 */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Inverse                                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.button-toolbar .button.button-success:hover {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-success.active,
+.button-toolbar .button.button-success:active {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-success.disabled,
+.button-toolbar .button.button-success[disabled] {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-success.btn-link {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.button-toolbar .button.button-success.btn-link:hover {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-success.btn-link.active,
+.button-toolbar .button.button-success.btn-link:active {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-success.btn-link.disabled,
+.button-toolbar .button.button-success.btn-link[disabled] {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-success.inverse {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.button-toolbar .button.button-success.inverse:hover {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-success.inverse.active,
+.button-toolbar .button.button-success.inverse:active {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-success.inverse.disabled,
+.button-toolbar .button.button-success.inverse[disabled] {
+  margin-top: 10px;
 }
 .button-toolbar .button.button-danger {
-  margin-top: 6px;
+  margin-top: 10px;
+  margin-left: 10px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Link                                                                                                 */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Inverse                                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
 }
 .button-toolbar .button.button-danger:hover {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-danger.active,
 .button-toolbar .button.button-danger:active {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-danger.disabled,
 .button-toolbar .button.button-danger[disabled] {
-  margin-top: 6px;
+  margin-top: 10px;
+}
+.button-toolbar .button.button-danger.btn-link {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.button-toolbar .button.button-danger.btn-link:hover {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-danger.btn-link.active,
+.button-toolbar .button.button-danger.btn-link:active {
+  margin-top: 10px;
+}
+.button-toolbar .button.button-danger.btn-link.disabled,
+.button-toolbar .button.button-danger.btn-link[disabled] {
+  margin-top: 10px;
 }
 .button-toolbar .button.button-danger.inverse {
-  margin-top: 6px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 .button-toolbar .button.button-danger.inverse:hover {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-danger.inverse.active,
 .button-toolbar .button.button-danger.inverse:active {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button.button-danger.inverse.disabled,
 .button-toolbar .button.button-danger.inverse[disabled] {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .button-toolbar .button-group {
-  margin-top: 6px;
-  margin-left: 6px;
+  margin-top: 10px;
+  margin-left: 10px;
   float: left;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Default Button                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Primary Button                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Success Button                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Warning Button                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Danger Button                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
 }
 .button-toolbar .button-group .button {
   margin-top: 0px;
+  margin-left: 1px;
+}
+.button-toolbar .button-group .button:first-child {
+  margin-left: 0px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-left-radius: 4px;
+}
+.button-toolbar .button-group .button:last-child,
+.button-toolbar .button-group .button:last-of-type {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
 }
 .button-toolbar .button-group .button:hover {
   margin-top: 0px;
@@ -7938,6 +8596,20 @@ input[type="submit"].button.button-mini {
 }
 .button-toolbar .button-group .button.disabled,
 .button-toolbar .button-group .button[disabled] {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-link {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-link:hover {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-link.active,
+.button-toolbar .button-group .button.button-link:active {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-link.disabled,
+.button-toolbar .button-group .button.button-link[disabled] {
   margin-top: 0px;
 }
 .button-toolbar .button-group .button.inverse {
@@ -7968,6 +8640,20 @@ input[type="submit"].button.button-mini {
 .button-toolbar .button-group .button.button-primary[disabled] {
   margin-top: 0px;
 }
+.button-toolbar .button-group .button.button-primary.button-link {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-primary.button-link:hover {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-primary.button-link.active,
+.button-toolbar .button-group .button.button-primary.button-link:active {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-primary.button-link.disabled,
+.button-toolbar .button-group .button.button-primary.button-link[disabled] {
+  margin-top: 0px;
+}
 .button-toolbar .button-group .button.button-primary.inverse {
   margin-top: 0px;
 }
@@ -7994,6 +8680,20 @@ input[type="submit"].button.button-mini {
 }
 .button-toolbar .button-group .button.button-success.disabled,
 .button-toolbar .button-group .button.button-success[disabled] {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-success.button-link {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-success.button-link:hover {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-success.button-link.active,
+.button-toolbar .button-group .button.button-success.button-link:active {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-success.button-link.disabled,
+.button-toolbar .button-group .button.button-success.button-link[disabled] {
   margin-top: 0px;
 }
 .button-toolbar .button-group .button.button-success.inverse {
@@ -8024,6 +8724,20 @@ input[type="submit"].button.button-mini {
 .button-toolbar .button-group .button.button-warning[disabled] {
   margin-top: 0px;
 }
+.button-toolbar .button-group .button.button-warning.button-link {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-warning.button-link:hover {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-warning.button-link.active,
+.button-toolbar .button-group .button.button-warning.button-link:active {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-warning.button-link.disabled,
+.button-toolbar .button-group .button.button-warning.button-link[disabled] {
+  margin-top: 0px;
+}
 .button-toolbar .button-group .button.button-warning.inverse {
   margin-top: 0px;
 }
@@ -8052,6 +8766,20 @@ input[type="submit"].button.button-mini {
 .button-toolbar .button-group .button.button-danger[disabled] {
   margin-top: 0px;
 }
+.button-toolbar .button-group .button.button-danger.button-link {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-danger.button-link:hover {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-danger.button-link.active,
+.button-toolbar .button-group .button.button-danger.button-link:active {
+  margin-top: 0px;
+}
+.button-toolbar .button-group .button.button-danger.button-link.disabled,
+.button-toolbar .button-group .button.button-danger.button-link[disabled] {
+  margin-top: 0px;
+}
 .button-toolbar .button-group .button.button-danger.inverse {
   margin-top: 0px;
 }
@@ -8066,273 +8794,68 @@ input[type="submit"].button.button-mini {
 .button-toolbar .button-group .button.button-danger.inverse[disabled] {
   margin-top: 0px;
 }
-.button-toolbar.button-toolbar-centered {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: -6px;
-  margin-left: -6px;
-}
-.button-toolbar.tall {
-  margin-bottom: 80px;
-}
-.button-toolbar.medium {
-  margin-bottom: 60px;
-}
-.button-toolbar.short {
-  margin-bottom: 30px;
-}
-.button-group > .button {
-  position: relative;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-.button-group > .button + .button {
-  margin-left: 1px;
-}
-.button-group > .button,
-.button-group > .dropdown-menu,
-.button-group > .popover {
-  font-size: 16px;
-}
-.button-group > .button-mini {
-  font-size: 11px;
-}
-.button-group > .button-small {
-  font-size: 12px;
-}
-.button-group > .button-large {
-  font-size: 22px;
-}
-.button-group > .button:first-child {
-  margin-left: 0;
-  -webkit-border-top-left-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  border-top-left-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  border-bottom-left-radius: 4px;
-}
-.button-group > .button:last-child,
-.button-group > .button:last-of-type,
-.button-group > .dropdown-toggle {
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  border-bottom-right-radius: 4px;
-}
-.button-group > .button.large:first-child {
-  margin-left: 0;
-  -webkit-border-top-left-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  border-top-left-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  border-bottom-left-radius: 4px;
-}
-.button-group > .button.large:last-child,
-.button-group > .large.dropdown-toggle {
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  border-bottom-right-radius: 4px;
-}
-.button-group > .button:hover,
-.button-group > .button:focus,
-.button-group > .button:active,
-.button-group > .button.active {
-  z-index: 2;
-}
-.button-group .dropdown-toggle:active,
-.button-group.open .dropdown-toggle {
-  outline: 0;
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Split Button Dropdowns                                                    */
+/* Vertical Button Groups                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
-.button-group > .button + .dropdown-toggle {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.button-group > .button + .dropdown-toggle .caret {
-  margin-left: 0;
-}
-.button-group > .button-mini + .dropdown-toggle {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.button-group > .button-small + .dropdown-toggle {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.button-group > .button-large + .dropdown-toggle {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.button-group.open .button.dropdown-toggle {
-  outline: 0;
-  color: #a8a8a8;
-  text-shadow: none;
-  background-color: #ebebeb;
-  background-image: -moz-linear-gradient(top, #e4e4e4, #f9f9f9);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#f9f9f9));
-  background-image: -webkit-linear-gradient(top, #e4e4e4, #f9f9f9);
-  background-image: -o-linear-gradient(top, #e4e4e4, #f9f9f9);
-  background-image: linear-gradient(to bottom, #e4e4e4, #f9f9f9);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe4e4e4', endColorstr='#fff9f9f9', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  margin-top: 0px;
-  margin-bttom: 0px;
-}
-.button-group.open .button-primary.dropdown-toggle {
-  color: #e0f0ff;
-  text-shadow: none;
-  background-color: #0052a3;
-  background-image: -moz-linear-gradient(top, #0052a3, #0066cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0052a3), to(#0066cc));
-  background-image: -webkit-linear-gradient(top, #0052a3, #0066cc);
-  background-image: -o-linear-gradient(top, #0052a3, #0066cc);
-  background-image: linear-gradient(to bottom, #0052a3, #0066cc);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0052a3', endColorstr='#ff0066cc', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 41, 82, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 41, 82, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 41, 82, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  margin-top: 0px;
-  margin-bttom: 0px;
-}
-.button-group.open .button-success.dropdown-toggle {
-  color: #f0f8e7;
-  text-shadow: none;
-  background-color: #598c25;
-  background-image: -moz-linear-gradient(top, #598c25, #70af2f);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#598c25), to(#70af2f));
-  background-image: -webkit-linear-gradient(top, #598c25, #70af2f);
-  background-image: -o-linear-gradient(top, #598c25, #70af2f);
-  background-image: linear-gradient(to bottom, #598c25, #70af2f);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff598c25', endColorstr='#ff70af2f', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  margin-top: 0px;
-  margin-bttom: 0px;
-}
-.button-group.open .button-warning.dropdown-toggle {
-  color: #fef2ea;
-  text-shadow: none;
-  background-color: #e2620e;
-  background-image: -moz-linear-gradient(top, #e2620e, #f1711d);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e2620e), to(#f1711d));
-  background-image: -webkit-linear-gradient(top, #e2620e, #f1711d);
-  background-image: -o-linear-gradient(top, #e2620e, #f1711d);
-  background-image: linear-gradient(to bottom, #e2620e, #f1711d);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe2620e', endColorstr='#fff1711d', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  margin-top: 0px;
-  margin-bttom: 0px;
-}
-.button-group.open .button-danger.dropdown-toggle {
-  color: #ffecea;
-  text-shadow: none;
-  background-color: #eb1502;
-  background-image: -moz-linear-gradient(top, #eb1502, #fd210e);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eb1502), to(#fd210e));
-  background-image: -webkit-linear-gradient(top, #eb1502, #fd210e);
-  background-image: -o-linear-gradient(top, #eb1502, #fd210e);
-  background-image: linear-gradient(to bottom, #eb1502, #fd210e);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeb1502', endColorstr='#fffd210e', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  margin-top: 0px;
-  margin-bttom: 0px;
-}
-.button .caret {
-  margin-top: 8px;
-  margin-left: 0;
-}
-.button-large .caret {
-  margin-top: 6px;
-}
-.button-large .caret {
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-top-width: 5px;
-}
-.button-mini .caret,
-.button-small .caret {
-  margin-top: 8px;
-}
-.dropup .button-large .caret {
-  border-bottom-width: 5px;
-}
-.button-primary .caret,
-.button-warning .caret,
-.button-danger .caret,
-.button-info .caret,
-.button-success .caret,
-.button-inverse .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
-}
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Vertical Button Groups                                                    */
-/*                                                                                                      */
-/* ==================================================================================================== */
-.button-group-vertical {
+.button-group.button-group-vertical {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
   *zoom: 1;
 }
-.button-group-vertical > .button {
+.button-group.button-group-vertical > .button {
   display: block;
   float: none;
   max-width: 100%;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-.button-group-vertical > .button + .button {
-  margin-left: 0;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  margin-left: 0px;
   margin-top: 1px;
 }
-.button-group-vertical > .button:first-child {
-  -webkit-border-radius: 4px 4px 0 0;
-  -moz-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
+.button-group.button-group-vertical > .button:first-child {
+  -webkit-border-radius: 4px 4px 0px 0px;
+  -moz-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
+  margin-top: 0px;
 }
-.button-group-vertical > .button:last-child {
-  -webkit-border-radius: 0 0 4px 4px;
-  -moz-border-radius: 0 0 4px 4px;
-  border-radius: 0 0 4px 4px;
+.button-group.button-group-vertical > .button:last-child {
+  -webkit-border-radius: 0px 0px 4px 4px;
+  -moz-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
 }
-.button-group-vertical > .button-large:first-child {
-  -webkit-border-radius: 4px 4px 0 0;
-  -moz-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
+.button-group.button-group-vertical > .button.button-large:first-child {
+  -webkit-border-radius: 4px 4px 0px 0px;
+  -moz-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
 }
-.button-group-vertical > .button-large:last-child {
-  -webkit-border-radius: 0 0 4px 4px;
-  -moz-border-radius: 0 0 4px 4px;
-  border-radius: 0 0 4px 4px;
+.button-group.button-group-vertical > .button.button-large:last-child {
+  -webkit-border-radius: 0px 0px 4px 4px;
+  -moz-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+}
+.button-group.button-group-vertical > .button.button-small:first-child {
+  -webkit-border-radius: 3px 3px 0px 0px;
+  -moz-border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
+}
+.button-group.button-group-vertical > .button.button-small:last-child {
+  -webkit-border-radius: 0px 0px 3px 3px;
+  -moz-border-radius: 0px 0px 3px 3px;
+  border-radius: 0px 0px 3px 3px;
+}
+.button-group.button-group-vertical > .button.button-mini:first-child {
+  -webkit-border-radius: 3px 3px 0px 0px;
+  -moz-border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
+}
+.button-group.button-group-vertical > .button.button-mini:last-child {
+  -webkit-border-radius: 0px 0px 3px 3px;
+  -moz-border-radius: 0px 0px 3px 3px;
+  border-radius: 0px 0px 3px 3px;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -8340,15 +8863,7 @@ input[type="submit"].button.button-mini {
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media (min-width: 1240px) {
-  .button-toolbar.tall {
-    margin-bottom: 100px;
-  }
-  .button-toolbar.medium {
-    margin-bottom: 80px;
-  }
-  .button-toolbar.short {
-    margin-bottom: 35px;
-  }
+  
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -8356,15 +8871,7 @@ input[type="submit"].button.button-mini {
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media (min-width: 768px) and (max-width: 989px) {
-  .button-toolbar.tall {
-    margin-bottom: 88px;
-  }
-  .button-toolbar.medium {
-    margin-bottom: 44px;
-  }
-  .button-toolbar.short {
-    margin-bottom: 22px;
-  }
+  
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -8372,15 +8879,7 @@ input[type="submit"].button.button-mini {
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media (max-width: 767px) {
-  .button-toolbar.tall {
-    margin-bottom: 88px;
-  }
-  .button-toolbar.medium {
-    margin-bottom: 44px;
-  }
-  .button-toolbar.short {
-    margin-bottom: 22px;
-  }
+  
 }
 /* ==================================================================================================== */
 /*                                                                                                      */

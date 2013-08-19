@@ -317,27 +317,27 @@
 		
 		<p>
 			
-			Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.
+			Wrap a series of buttons with <code>.button</code> in <code>.button-group</code>.
 			
 		</p>
 		
 		<div class="code-example flush-bottom">
 			
-			<div class="btn-group">
+			<div class="button-group">
 				
-				<button class="btn">Left</button>
-				<button class="btn">Middle</button>
-				<button class="btn">Right</button>
+				<button class="button">Left</button>
+				<button class="button">Middle</button>
+				<button class="button">Right</button>
 				
 			</div>
 			
 		</div>
 		
 <pre class="prettyprint linenums tall">
-&lt;div class="btn-group"&gt;
-  &lt;button class="btn"&gt;Left&lt;/button&gt;
-  &lt;button class="btn"&gt;Middle&lt;/button&gt;
-  &lt;button class="btn"&gt;Right&lt;/button&gt;
+&lt;div class="button-group"&gt;
+  &lt;button class="button"&gt;Left&lt;/button&gt;
+  &lt;button class="button"&gt;Middle&lt;/button&gt;
+  &lt;button class="button"&gt;Right&lt;/button&gt;
 &lt;/div&gt;
 </pre>
 		
@@ -349,34 +349,34 @@
 		
 		<p>
 			
-			Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.
+			Combine sets of <code>&lt;div class="button-group"&gt;</code> into a <code>&lt;div class="button-toolbar"&gt;</code> for more complex components.
 			
 		</p>
 		
 		<div class="code-example flush-bottom">
 			
-			<div class="btn-toolbar">
+			<div class="button-toolbar">
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn">1</button>
-					<button class="btn">2</button>
-					<button class="btn">3</button>
-					<button class="btn">4</button>
+					<button class="button">1</button>
+					<button class="button">2</button>
+					<button class="button">3</button>
+					<button class="button">4</button>
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn">5</button>
-					<button class="btn">6</button>
-					<button class="btn">7</button>
+					<button class="button">5</button>
+					<button class="button">6</button>
+					<button class="button">7</button>
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn">8</button>
+					<button class="button">8</button>
 					
 				</div>
 				
@@ -385,8 +385,8 @@
 		</div>
 		
 <pre class="prettyprint linenums tall">
-&lt;div class="btn-toolbar"&gt;
-  &lt;div class="btn-group"&gt;
+&lt;div class="button-toolbar"&gt;
+  &lt;div class="button-group"&gt;
     ...
   &lt;/div&gt;
 &lt;/div&gt;
@@ -406,19 +406,19 @@
 		
 		<div class="code-example flush-bottom">
 			
-			<div class="btn-group btn-group-vertical">
+			<div class="button-group button-group-vertical">
 				
-				<button type="button" class="btn"><i class="icon-16 icon-shadowed icon-caret-up"></i></button>
-				<button type="button" class="btn"><i class="icon-16 icon-shadowed icon-caret-left"></i></button>
-				<button type="button" class="btn"><i class="icon-16 icon-shadowed icon-caret-right"></i></button>
-				<button type="button" class="btn"><i class="icon-16 icon-shadowed icon-caret-down"></i></button>
+				<button type="button" class="button"><i class="icon-16 icon-shadowed icon-caret-up"></i></button>
+				<button type="button" class="button"><i class="icon-16 icon-shadowed icon-caret-left"></i></button>
+				<button type="button" class="button"><i class="icon-16 icon-shadowed icon-caret-right"></i></button>
+				<button type="button" class="button"><i class="icon-16 icon-shadowed icon-caret-down"></i></button>
 				
 			</div>
 			
 		</div>
 		
 <pre class="prettyprint linenums">
-&lt;div class="btn-group btn-group-vertical"&gt;
+&lt;div class="button-group button-group-vertical"&gt;
   ...
 &lt;/div&gt;
 </pre>
@@ -445,7 +445,7 @@
 		
 		<p class="flush-bottom">
 			
-			<span class="label label-info">Heads up!</span> Buttons with dropdowns must be individually wrapped in their own <code>.btn-group</code> within a <code>.btn-toolbar</code> for proper rendering.
+			<span class="label label-info">Heads up!</span> Buttons with dropdowns must be individually wrapped in their own <code>.button-group</code> within a <code>.button-toolbar</code> for proper rendering.
 			
 		</p>
 		
@@ -475,17 +475,17 @@
 		
 		<p>
 			
-			Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.
+			Use any button to trigger a dropdown menu by placing it within a <code>.button-group</code> and providing the proper menu markup.
 			
 		</p>
 		
 		<div class="code-example flush-bottom">
 			
-			<div class="btn-toolbar" style="margin: 0;">
+			<div class="button-toolbar">
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+					<button class="button dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -499,25 +499,9 @@
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-					
-					<ul class="dropdown-menu">
-						
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-						
-					</ul>
-					
-				</div>
-				
-				<div class="btn-group">
-					
-					<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
+					<button class="button button-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -531,25 +515,9 @@
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
-					
-					<ul class="dropdown-menu">
-						
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-						
-					</ul>
-					
-				</div>
-				
-				<div class="btn-group">
-					
-					<button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
+					<button class="button button-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -563,9 +531,9 @@
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
+					<button class="button button-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -579,9 +547,9 @@
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">Inverse <span class="caret"></span></button>
+					<button class="button button-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -600,8 +568,8 @@
 		</div>
 		
 <pre class="prettyprint linenums">
-&lt;div class="btn-group"&gt;
-  &lt;a class="btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+&lt;div class="button-group"&gt;
+  &lt;a class="button dropdown-toggle" data-toggle="dropdown" href="#"&gt;
     Action
     &lt;span class="caret"&gt;&lt;/span&gt;
   &lt;/a&gt;
@@ -621,17 +589,17 @@
 		
 		<p>
 			
-			Button dropdowns work at any size:  <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code>.
+			Button dropdowns work at any size:  <code>.button-large</code>, <code>.button-small</code>, or <code>.button-mini</code>.
 			
 		</p>
 		
 		<div class="code-example">
 			
-			<div class="btn-toolbar" style="margin: 0;">
+			<div class="button-toolbar">
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn btn-large dropdown-toggle" data-toggle="dropdown">Large button <span class="caret"></span></button>
+					<button class="button button-large dropdown-toggle" data-toggle="dropdown">Large button <span class="caret"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -645,25 +613,9 @@
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn dropdown-toggle" data-toggle="dropdown">Default button <span class="caret"></span></button>
-					
-					<ul class="dropdown-menu">
-						
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-						
-					</ul>
-					
-				</div>
-				
-				<div class="btn-group">
-					
-					<button class="btn btn-small dropdown-toggle" data-toggle="dropdown">Small button <span class="caret"></span></button>
+					<button class="button dropdown-toggle" data-toggle="dropdown">Default button <span class="caret"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -677,9 +629,25 @@
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">Mini button <span class="caret"></span></button>
+					<button class="button button-small dropdown-toggle" data-toggle="dropdown">Small button <span class="caret"></span></button>
+					
+					<ul class="dropdown-menu">
+						
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+						
+					</ul>
+					
+				</div>
+				
+				<div class="button-group">
+					
+					<button class="button button-mini dropdown-toggle" data-toggle="dropdown">Mini button <span class="caret"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -735,13 +703,13 @@
 		
 		<div class="code-example flush-bottom">
 			
-			<div class="btn-toolbar" style="margin: 0;">
+			<div class="button-toolbar">
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn">Action</button>
+					<button class="button">Action</button>
 					
-					<button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
+					<button class="button dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -755,29 +723,11 @@
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn btn-primary">Action</button>
+					<button class="button button-primary">Action</button>
 					
-					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
-					
-					<ul class="dropdown-menu">
-						
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-						
-					</ul>
-					
-				</div>
-				
-				<div class="btn-group">
-					
-					<button class="btn btn-danger">Danger</button>
-					
-					<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
+					<button class="button button-primary dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -791,29 +741,11 @@
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn btn-warning">Warning</button>
+					<button class="button button-success">Success</button>
 					
-					<button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
-					
-					<ul class="dropdown-menu">
-						
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-						
-					</ul>
-					
-				</div>
-				
-				<div class="btn-group">
-					
-					<button class="btn btn-success">Success</button>
-					
-					<button class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
+					<button class="button button-success dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -827,11 +759,11 @@
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn btn-info">Info</button>
+					<button class="button button-warning">Warning</button>
 					
-					<button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
+					<button class="button button-warning dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -845,11 +777,11 @@
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn btn-inverse">Inverse</button>
+					<button class="button button-danger">Danger</button>
 					
-					<button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
+					<button class="button button-danger dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -868,9 +800,9 @@
 		</div>
 		
 <pre class="prettyprint linenums">
-&lt;div class="btn-group"&gt;
-  &lt;button class="btn"&gt;Action&lt;/button&gt;
-  &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+&lt;div class="button-group"&gt;
+  &lt;button class="button"&gt;Action&lt;/button&gt;
+  &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
     &lt;span class="caret"&gt;&lt;/span&gt;
   &lt;/button&gt;
   &lt;ul class="dropdown-menu"&gt;
@@ -887,19 +819,19 @@
 		
 		<p>
 			
-			Utilize the extra button classes <code>.btn-mini</code>, <code>.btn-small</code>, or <code>.btn-large</code> for sizing.
+			Utilize the extra button classes <code>.button-mini</code>, <code>.button-small</code>, or <code>.button-large</code> for sizing.
 			
 		</p>
 		
 		<div class="code-example flush-bottom">
 			
-			<div class="btn-toolbar">
+			<div class="button-toolbar">
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn btn-large">Large action</button>
+					<button class="button button-large">Large action</button>
 					
-					<button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
+					<button class="button button-large dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -913,29 +845,11 @@
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn">Default action</button>
+					<button class="button">Default action</button>
 					
-					<button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
-					
-					<ul class="dropdown-menu">
-						
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-						
-					</ul>
-					
-				</div>
-				
-				<div class="btn-group">
-					
-					<button class="btn btn-small">Small action</button>
-					
-					<button class="btn btn-small dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
+					<button class="button dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -949,11 +863,29 @@
 					
 				</div>
 				
-				<div class="btn-group">
+				<div class="button-group">
 					
-					<button class="btn btn-mini">Mini action</button>
+					<button class="button button-small">Small action</button>
 					
-					<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
+					<button class="button button-small dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
+					
+					<ul class="dropdown-menu">
+						
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+						
+					</ul>
+					
+				</div>
+				
+				<div class="button-group">
+					
+					<button class="button button-mini">Mini action</button>
+					
+					<button class="button button-mini dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -971,9 +903,9 @@
 			
 		</div>
 <pre class="prettyprint linenums">
-&lt;div class="btn-group"&gt;
-  &lt;button class="btn btn-mini"&gt;Action&lt;/button&gt;
-  &lt;button class="btn btn-mini dropdown-toggle" data-toggle="dropdown"&gt;
+&lt;div class="button-group"&gt;
+  &lt;button class="button button-mini"&gt;Action&lt;/button&gt;
+  &lt;button class="button button-mini dropdown-toggle" data-toggle="dropdown"&gt;
     &lt;span class="caret"&gt;&lt;/span&gt;
   &lt;/button&gt;
   &lt;ul class="dropdown-menu"&gt;
@@ -996,13 +928,13 @@
 		
 		<div class="code-example flush-bottom">
 			
-			<div class="btn-toolbar" style="margin: 0;">
+			<div class="button-toolbar">
 				
-				<div class="btn-group dropup">
+				<div class="button-group dropup">
 					
-					<button class="btn">Dropup</button>
+					<button class="button">Dropup</button>
 					
-					<button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
+					<button class="button dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
 					
 					<ul class="dropdown-menu">
 						
@@ -1016,11 +948,11 @@
 					
 				</div>
 				
-				<div class="btn-group dropup">
+				<div class="button-group dropup">
 					
-					<button class="btn btn-primary">Right dropup</button>
+					<button class="button button-primary">Right dropup</button>
 					
-					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
+					<button class="button button-primary dropdown-toggle" data-toggle="dropdown"><span class="caret solo"></span></button>
 					
 					<ul class="dropdown-menu pull-right">
 						
@@ -1039,9 +971,9 @@
 		</div>
 		
 <pre class="prettyprint linenums flush-bottom">
-&lt;div class="btn-group dropup"&gt;
-  &lt;button class="btn"&gt;Dropup&lt;/button&gt;
-  &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+&lt;div class="button-group dropup"&gt;
+  &lt;button class="button"&gt;Dropup&lt;/button&gt;
+  &lt;button class="button dropdown-toggle" data-toggle="dropdown"&gt;
     &lt;span class="caret"&gt;&lt;/span&gt;
   &lt;/button&gt;
   &lt;ul class="dropdown-menu"&gt;

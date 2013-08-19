@@ -10,7 +10,7 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* General Button Group Styling                                              */
+/* Button Group                                                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -24,563 +24,522 @@
 	white-space: nowrap;
 	.ie7-restore-left-whitespace();
 	
+	+ .button-group {
+		
+		margin-left: @button-toolbar-padding-horizontal;
+		
+	}
+	
+	> .button {
+		
+		position: relative;
+		.border-radius(0);
+		
+		.caret {
+			
+			margin-top: 8px;
+			margin-left: 0;
+			
+		}
+		
+		&:hover,
+		&:focus,
+		&:active,
+		&.active {
+			
+			z-index: 2;
+			
+		}
+		
+		&:first-child {
+			
+			margin-left: 0px;
+			.border-top-left-radius(@button-border-radius);
+			.border-bottom-left-radius(@button-border-radius);
+			
+		}
+		
+		&:last-child,
+		&:last-of-type {
+			
+			.border-top-right-radius(@button-border-radius);
+			.border-bottom-right-radius(@button-border-radius);
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Button                                                                                         */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-large {
+			
+			.caret {
+				
+				margin-top: 6px;
+				border-left-width:  5px;
+				border-right-width: 5px;
+				border-top-width:   5px;
+				
+			}
+			
+			&:first-child {
+				
+				margin-left: 0px;
+				.border-top-left-radius(@button-large-border-radius);
+				.border-bottom-left-radius(@button-large-border-radius);
+				
+			}
+			
+			&:last-child,
+			&:last-of-type {
+				
+				.border-top-right-radius(@button-large-border-radius);
+				.border-bottom-right-radius(@button-large-border-radius);
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Button                                                                                         */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-small {
+			
+			.caret {
+				
+				margin-top: 8px;
+				
+			}
+			
+			&:first-child {
+				
+				margin-left: 0px;
+				.border-top-left-radius(@button-small-border-radius);
+				.border-bottom-left-radius(@button-small-border-radius);
+				
+			}
+			
+			&:last-child,
+			&:last-of-type {
+				
+				.border-top-right-radius(@button-small-border-radius);
+				.border-bottom-right-radius(@button-small-border-radius);
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Mini Button                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-mini {
+			
+			.caret {
+				
+				margin-top: 8px;
+				
+			}
+			
+			&:first-child {
+				
+				margin-left: 0px;
+				.border-top-left-radius(@button-mini-border-radius);
+				.border-bottom-left-radius(@button-mini-border-radius);
+				
+			}
+			
+			&:last-child,
+			&:last-of-type {
+				
+				.border-top-right-radius(@button-mini-border-radius);
+				.border-bottom-right-radius(@button-mini-border-radius);
+				
+			}
+			
+		}
+		
+		+ .button {
+			
+			margin-left: @button-group-padding-horizontal;
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Dropdown                                                                                             */
+	/* ---------------------------------------------------------------------------------------------------- */
+		
+	> .dropdown-toggle {
+		
+		.border-top-right-radius(@button-border-radius);
+		.border-bottom-right-radius(@button-border-radius);
+		
+		&:active {
+			
+			outline: 0;
+			
+		}
+		
+	}
+	
+	&.open {
+		
+		.dropdown-toggle {
+			
+			outline: 0;
+			
+		}
+		
+		.button.dropdown-toggle {
+			
+			outline: 0;
+			text-decoration: none;
+			.button-states (
+				
+				@button-default-active-border-color,
+				@button-default-active-text-color,
+				@button-default-active-text-shadow,
+				@button-default-active-background-color,
+				@button-default-active-background-gradient-top-color,
+				@button-default-active-background-gradient-bottom-color,
+				@button-default-active-shadow,
+				@button-default-active-offset-top,
+				@button-default-active-offset-bottom
+			
+			);
+			
+			// Link
+			
+			&.btn-link {
+				
+				.button-states (
+					
+					@button-default-link-active-border-color,
+					@button-default-link-active-text-color,
+					@button-default-link-active-text-shadow,
+					@button-default-link-active-background-color,
+					@button-default-link-active-background-gradient-top-color,
+					@button-default-link-active-background-gradient-bottom-color,
+					@button-default-link-active-shadow,
+					@button-default-link-active-offset-top,
+					@button-default-link-active-offset-bottom
+				
+				);
+				
+			}
+			
+			// Inverse
+			
+			&.inverse {
+				
+				.button-states (
+					
+					@button-default-inverse-active-border-color,
+					@button-default-inverse-active-text-color,
+					@button-default-inverse-active-text-shadow,
+					@button-default-inverse-active-background-color,
+					@button-default-inverse-active-background-gradient-top-color,
+					@button-default-inverse-active-background-gradient-bottom-color,
+					@button-default-inverse-active-shadow,
+					@button-default-inverse-active-offset-top,
+					@button-default-inverse-active-offset-bottom
+				
+				);
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Primary Button                                                                                       */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-primary {
+				
+				.button-states (
+					
+					@button-primary-active-border-color,
+					@button-primary-active-text-color,
+					@button-primary-active-text-shadow,
+					@button-primary-active-background-color,
+					@button-primary-active-background-gradient-top-color,
+					@button-primary-active-background-gradient-bottom-color,
+					@button-primary-active-shadow,
+					@button-primary-active-offset-top,
+					@button-primary-active-offset-bottom
+				
+				);
+				
+				// Link
+				
+				&.btn-link {
+					
+					.button-states (
+						
+						@button-primary-link-active-border-color,
+						@button-primary-link-active-text-color,
+						@button-primary-link-active-text-shadow,
+						@button-primary-link-active-background-color,
+						@button-primary-link-active-background-gradient-top-color,
+						@button-primary-link-active-background-gradient-bottom-color,
+						@button-primary-link-active-shadow,
+						@button-primary-link-active-offset-top,
+						@button-primary-link-active-offset-bottom
+					
+					);
+					
+				}
+				
+				// Inverse
+				
+				&.inverse {
+					
+					.button-states (
+						
+						@button-primary-inverse-active-border-color,
+						@button-primary-inverse-active-text-color,
+						@button-primary-inverse-active-text-shadow,
+						@button-primary-inverse-active-background-color,
+						@button-primary-inverse-active-background-gradient-top-color,
+						@button-primary-inverse-active-background-gradient-bottom-color,
+						@button-primary-inverse-active-shadow,
+						@button-primary-inverse-active-offset-top,
+						@button-primary-inverse-active-offset-bottom
+					
+					);
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Success Button                                                                                       */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-success {
+				
+				.button-states (
+					
+					@button-success-active-border-color,
+					@button-success-active-text-color,
+					@button-success-active-text-shadow,
+					@button-success-active-background-color,
+					@button-success-active-background-gradient-top-color,
+					@button-success-active-background-gradient-bottom-color,
+					@button-success-active-shadow,
+					@button-success-active-offset-top,
+					@button-success-active-offset-bottom
+				
+				);
+				
+				// Link
+				
+				&.btn-link {
+					
+					.button-states (
+						
+						@button-success-link-active-border-color,
+						@button-success-link-active-text-color,
+						@button-success-link-active-text-shadow,
+						@button-success-link-active-background-color,
+						@button-success-link-active-background-gradient-top-color,
+						@button-success-link-active-background-gradient-bottom-color,
+						@button-success-link-active-shadow,
+						@button-success-link-active-offset-top,
+						@button-success-link-active-offset-bottom
+					
+					);
+					
+				}
+				
+				// Inverse
+				
+				&.inverse {
+					
+					.button-states (
+						
+						@button-success-inverse-active-border-color,
+						@button-success-inverse-active-text-color,
+						@button-success-inverse-active-text-shadow,
+						@button-success-inverse-active-background-color,
+						@button-success-inverse-active-background-gradient-top-color,
+						@button-success-inverse-active-background-gradient-bottom-color,
+						@button-success-inverse-active-shadow,
+						@button-success-inverse-active-offset-top,
+						@button-success-inverse-active-offset-bottom
+					
+					);
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Warning Button                                                                                       */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-warning {
+				
+				.button-states (
+					
+					@button-warning-active-border-color,
+					@button-warning-active-text-color,
+					@button-warning-active-text-shadow,
+					@button-warning-active-background-color,
+					@button-warning-active-background-gradient-top-color,
+					@button-warning-active-background-gradient-bottom-color,
+					@button-warning-active-shadow,
+					@button-warning-active-offset-top,
+					@button-warning-active-offset-bottom
+				
+				);
+				
+				// Link
+				
+				&.btn-link {
+					
+					.button-states (
+						
+						@button-warning-link-active-border-color,
+						@button-warning-link-active-text-color,
+						@button-warning-link-active-text-shadow,
+						@button-warning-link-active-background-color,
+						@button-warning-link-active-background-gradient-top-color,
+						@button-warning-link-active-background-gradient-bottom-color,
+						@button-warning-link-active-shadow,
+						@button-warning-link-active-offset-top,
+						@button-warning-link-active-offset-bottom
+					
+					);
+					
+				}
+				
+				// Inverse
+				
+				&.inverse {
+					
+					.button-states (
+						
+						@button-warning-inverse-active-border-color,
+						@button-warning-inverse-active-text-color,
+						@button-warning-inverse-active-text-shadow,
+						@button-warning-inverse-active-background-color,
+						@button-warning-inverse-active-background-gradient-top-color,
+						@button-warning-inverse-active-background-gradient-bottom-color,
+						@button-warning-inverse-active-shadow,
+						@button-warning-inverse-active-offset-top,
+						@button-warning-inverse-active-offset-bottom
+					
+					);
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Danger Button                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-danger {
+				
+				.button-states (
+					
+					@button-danger-active-border-color,
+					@button-danger-active-text-color,
+					@button-danger-active-text-shadow,
+					@button-danger-active-background-color,
+					@button-danger-active-background-gradient-top-color,
+					@button-danger-active-background-gradient-bottom-color,
+					@button-danger-active-shadow,
+					@button-danger-active-offset-top,
+					@button-danger-active-offset-bottom
+				
+				);
+				
+				// Link
+				
+				&.btn-link {
+					
+					.button-states (
+						
+						@button-danger-link-active-border-color,
+						@button-danger-link-active-text-color,
+						@button-danger-link-active-text-shadow,
+						@button-danger-link-active-background-color,
+						@button-danger-link-active-background-gradient-top-color,
+						@button-danger-link-active-background-gradient-bottom-color,
+						@button-danger-link-active-shadow,
+						@button-danger-link-active-offset-top,
+						@button-danger-link-active-offset-bottom
+					
+					);
+					
+				}
+				
+				// Inverse
+				
+				&.inverse {
+					
+					.button-states (
+						
+						@button-danger-inverse-active-border-color,
+						@button-danger-inverse-active-text-color,
+						@button-danger-inverse-active-text-shadow,
+						@button-danger-inverse-active-background-color,
+						@button-danger-inverse-active-background-gradient-top-color,
+						@button-danger-inverse-active-background-gradient-bottom-color,
+						@button-danger-inverse-active-shadow,
+						@button-danger-inverse-active-offset-top,
+						@button-danger-inverse-active-offset-bottom
+					
+					);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	&.dropup {
+		
+		.button-large .caret {
+			
+			border-bottom-width: 5px;
+			
+		}
+		
+	}
+	
 }
 
-.button-group + .button-group {
-	
-	margin-left: @buttonGroupHorizontalPadding;
-	
-}
+
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Button Toolbar                                                            */
+/* Button Toolbar                                                                                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
 .button-toolbar {
 	
-	margin-top: -1 * @buttonGroupHorizontalPadding;
-	margin-left: -1 * @buttonGroupHorizontalPadding;
+	margin-top: -1 * @button-toolbar-padding-horizontal;
+	margin-left: -1 * @button-toolbar-padding-horizontal;
+	margin-bottom: @button-toolbar-margin;
 	display: block;
 	.clearfix();
 	
-	&.pull-right {
+	&.tall {
 		
-		float: right;
-		
-	}
-	
-	// Buttons
-	
-	.button {
-		
-		margin-top: @buttonGroupHorizontalPadding + @buttonMarginTop;
-		margin-left: @buttonGroupHorizontalPadding;
-		
-		&:hover {
-			
-			margin-top: @buttonGroupHorizontalPadding + @buttonHoverMarginTop;
-			
-		}
-	
-		&.active,
-		&:active {
-			
-			margin-top: @buttonGroupHorizontalPadding + @buttonActiveMarginTop;
-			
-		}
-		
-		&.disabled,
-		&[disabled] {
-			
-			margin-top: @buttonGroupHorizontalPadding + @buttonDisabledMarginTop;
-			
-		}
-		
-		&.inverse {
-			
-			margin-top: @buttonGroupHorizontalPadding + @buttonInverseMarginTop;
-			
-			&:hover {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonInverseHoverMarginTop;
-				
-			}
-			
-			&.active,
-			&:active {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonInverseActiveMarginTop;
-				
-			}
-			
-			&.disabled,
-			&[disabled] {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonInverseDisabledMarginTop;
-				
-			}
-			
-		}
-		
-		&.button-primary {
-			
-			margin-top: @buttonGroupHorizontalPadding + @buttonPrimaryMarginTop;
-			
-			&:hover {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonPrimaryHoverMarginTop;
-				
-			}
-			
-			&.active,
-			&:active {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonPrimaryActiveMarginTop;
-				
-			}
-			
-			&.disabled,
-			&[disabled] {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonPrimaryDisabledMarginTop;
-				
-			}
-			
-			&.inverse {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonPrimaryInverseMarginTop;
-				
-				&:hover {
-					
-					margin-top: @buttonGroupHorizontalPadding + @buttonPrimaryInverseHoverMarginTop;
-					
-				}
-				
-				&.active,
-				&:active {
-					
-					margin-top: @buttonGroupHorizontalPadding + @buttonPrimaryInverseActiveMarginTop;
-					
-				}
-				
-				&.disabled,
-				&[disabled] {
-					
-					margin-top: @buttonGroupHorizontalPadding + @buttonPrimaryInverseDisabledMarginTop;
-					
-				}
-				
-			}
-			
-		}
-		
-		&.button-success {
-			
-			margin-top: @buttonGroupHorizontalPadding + @buttonSuccessMarginTop;
-			
-			&:hover {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonSuccessHoverMarginTop;
-				
-			}
-			
-			&.active,
-			&:active {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonSuccessActiveMarginTop;
-				
-			}
-			
-			&.disabled,
-			&[disabled] {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonSuccessDisabledMarginTop;
-				
-			}
-			
-			&.inverse {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonSuccessInverseMarginTop;
-				
-				&:hover {
-					
-					margin-top: @buttonGroupHorizontalPadding + @buttonSuccessInverseHoverMarginTop;
-					
-				}
-				
-				&.active,
-				&:active {
-					
-					margin-top: @buttonGroupHorizontalPadding + @buttonSuccessInverseActiveMarginTop;
-					
-				}
-				
-				&.disabled,
-				&[disabled] {
-					
-					margin-top: @buttonGroupHorizontalPadding + @buttonSuccessInverseDisabledMarginTop;
-					
-				}
-				
-			}
-			
-		}
-		
-		&.button-warning {
-			
-			margin-top: @buttonGroupHorizontalPadding + @buttonWarningMarginTop;
-			
-			&:hover {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonWarningHoverMarginTop;
-				
-			}
-			
-			&.active,
-			&:active {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonWarningActiveMarginTop;
-				
-			}
-			
-			&.disabled,
-			&[disabled] {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonWarningDisabledMarginTop;
-				
-			}
-				
-			&.inverse {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonWarningInverseMarginTop;
-				
-				&:hover {
-					
-					margin-top: @buttonGroupHorizontalPadding + @buttonWarningInverseHoverMarginTop;
-					
-				}
-				
-				&.active,
-				&:active {
-					
-					margin-top: @buttonGroupHorizontalPadding + @buttonWarningInverseActiveMarginTop;
-					
-				}
-				
-				&.disabled,
-				&[disabled] {
-					
-					margin-top: @buttonGroupHorizontalPadding + @buttonWarningInverseDisabledMarginTop;
-					
-				}
-				
-			}
-			
-		}
-		
-		&.button-danger {
-				
-			margin-top: @buttonGroupHorizontalPadding + @buttonDangerMarginTop;
-			
-			&:hover {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonDangerHoverMarginTop;
-				
-			}
-			
-			&.active,
-			&:active {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonDangerActiveMarginTop;
-				
-			}
-			
-			&.disabled,
-			&[disabled] {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonDangerDisabledMarginTop;
-				
-			}
-			
-			&.inverse {
-				
-				margin-top: @buttonGroupHorizontalPadding + @buttonDangerInverseMarginTop;
-				
-				&:hover {
-					
-					margin-top: @buttonGroupHorizontalPadding + @buttonDangerInverseHoverMarginTop;
-					
-				}
-				
-				&.active,
-				&:active {
-					
-					margin-top: @buttonGroupHorizontalPadding + @buttonDangerInverseActiveMarginTop;
-					
-				}
-				
-				&.disabled,
-				&[disabled] {
-					
-					margin-top: @buttonGroupHorizontalPadding + @buttonDangerInverseDisabledMarginTop;
-					
-				}
-				
-			}
-			
-		}
+		margin-bottom: @button-toolbar-margin-tall;
 		
 	}
 	
-	// Button Groups
-	
-	.button-group {
+	&.short {
 		
-		margin-top: @buttonGroupHorizontalPadding;
-		margin-left: @buttonGroupHorizontalPadding;
-		float: left;
-		
-		.button {
-			
-			margin-top: @buttonMarginTop;
-			
-			&:hover {
-				
-				margin-top: @buttonHoverMarginTop;
-				
-			}
-		
-			&.active,
-			&:active {
-				
-				margin-top: @buttonActiveMarginTop;
-				
-			}
-			
-			&.disabled,
-			&[disabled] {
-				
-				margin-top: @buttonDisabledMarginTop;
-				
-			}
-			
-			&.inverse {
-				
-				margin-top: @buttonInverseMarginTop;
-				
-				&:hover {
-					
-					margin-top: @buttonInverseHoverMarginTop;
-					
-				}
-				
-				&.active,
-				&:active {
-					
-					margin-top: @buttonInverseActiveMarginTop;
-					
-				}
-				
-				&.disabled,
-				&[disabled] {
-					
-					margin-top: @buttonInverseDisabledMarginTop;
-					
-				}
-				
-			}
-			
-			&.button-primary {
-				
-				margin-top: @buttonPrimaryMarginTop;
-				
-				&:hover {
-					
-					margin-top: @buttonPrimaryHoverMarginTop;
-					
-				}
-				
-				&.active,
-				&:active {
-					
-					margin-top: @buttonPrimaryActiveMarginTop;
-					
-				}
-				
-				&.disabled,
-				&[disabled] {
-					
-					margin-top: @buttonPrimaryDisabledMarginTop;
-					
-				}
-				
-				&.inverse {
-					
-					margin-top: @buttonPrimaryInverseMarginTop;
-					
-					&:hover {
-						
-						margin-top: @buttonPrimaryInverseHoverMarginTop;
-						
-					}
-					
-					&.active,
-					&:active {
-						
-						margin-top: @buttonPrimaryInverseActiveMarginTop;
-						
-					}
-					
-					&.disabled,
-					&[disabled] {
-						
-						margin-top: @buttonPrimaryInverseDisabledMarginTop;
-						
-					}
-					
-				}
-				
-			}
-			
-			&.button-success {
-				
-				margin-top: @buttonSuccessMarginTop;
-				
-				&:hover {
-					
-					margin-top: @buttonSuccessHoverMarginTop;
-					
-				}
-				
-				&.active,
-				&:active {
-					
-					margin-top: @buttonSuccessActiveMarginTop;
-					
-				}
-				
-				&.disabled,
-				&[disabled] {
-					
-					margin-top: @buttonSuccessDisabledMarginTop;
-					
-				}
-				
-				&.inverse {
-					
-					margin-top: @buttonSuccessInverseMarginTop;
-					
-					&:hover {
-						
-						margin-top: @buttonSuccessInverseHoverMarginTop;
-						
-					}
-					
-					&.active,
-					&:active {
-						
-						margin-top: @buttonSuccessInverseActiveMarginTop;
-						
-					}
-					
-					&.disabled,
-					&[disabled] {
-						
-						margin-top: @buttonSuccessInverseDisabledMarginTop;
-						
-					}
-					
-				}
-				
-			}
-			
-			&.button-warning {
-				
-				margin-top: @buttonWarningMarginTop;
-				
-				&:hover {
-					
-					margin-top: @buttonWarningHoverMarginTop;
-					
-				}
-				
-				&.active,
-				&:active {
-					
-					margin-top: @buttonWarningActiveMarginTop;
-					
-				}
-				
-				&.disabled,
-				&[disabled] {
-					
-					margin-top: @buttonWarningDisabledMarginTop;
-					
-				}
-				
-				&.inverse {
-					
-					margin-top: @buttonWarningInverseMarginTop;
-					
-					&:hover {
-						
-						margin-top: @buttonWarningInverseHoverMarginTop;
-						
-					}
-					
-					&.active,
-					&:active {
-						
-						margin-top: @buttonWarningInverseActiveMarginTop;
-						
-					}
-					
-					&.disabled,
-					&[disabled] {
-						
-						margin-top: @buttonWarningInverseDisabledMarginTop;
-						
-					}
-					
-				}
-				
-			}
-			
-			&.button-danger {
-				
-				margin-top: @buttonDangerMarginTop;
-				
-				&:hover {
-					
-					margin-top: @buttonDangerHoverMarginTop;
-					
-				}
-				
-				&.active,
-				&:active {
-					
-					margin-top: @buttonDangerActiveMarginTop;
-					
-				}
-				
-				&.disabled,
-				&[disabled] {
-					
-					margin-top: @buttonDangerDisabledMarginTop;
-					
-				}
-				
-				&.inverse {
-					
-					margin-top: @buttonDangerInverseMarginTop;
-					
-					&:hover {
-						
-						margin-top: @buttonDangerInverseHoverMarginTop;
-						
-					}
-					
-					&.active,
-					&:active {
-						
-						margin-top: @buttonDangerInverseActiveMarginTop;
-						
-					}
-					
-					&.disabled,
-					&[disabled] {
-						
-						margin-top: @buttonDangerInverseDisabledMarginTop;
-						
-					}
-					
-				}
-				
-			}
-			
-		}
+		margin-bottom: @button-toolbar-margin-short;
 		
 	}
 	
@@ -589,127 +548,914 @@
 		display: block;
 		text-align: center;
 		margin: 0 auto;
-		margin-top: -1 * @buttonGroupHorizontalPadding;
-		margin-left: -1 * @buttonGroupHorizontalPadding;
+		margin-top: -1 * @button-toolbar-padding-horizontal;
+		margin-left: -1 * @button-toolbar-padding-horizontal;
 		
 	}
 	
-	&.tall {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Button                                                                                               */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.button {
 		
-		margin-bottom: @primary-margin-tall;
+		margin-top: @button-toolbar-padding-horizontal + @button-default-offset-top;
+		margin-left: @button-toolbar-padding-horizontal;
+		
+		&:hover {
+			
+			margin-top: @button-toolbar-padding-horizontal + @button-default-hover-offset-top;
+			
+		}
+	
+		&.active,
+		&:active {
+			
+			margin-top: @button-toolbar-padding-horizontal + @button-default-active-offset-top;
+			
+		}
+		
+		&.disabled,
+		&[disabled] {
+			
+			margin-top: @button-toolbar-padding-horizontal + @button-default-disabled-offset-top;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Link                                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.btn-link {
+			
+			margin-top: @button-toolbar-padding-horizontal + @button-default-link-offset-top;
+			margin-left: @button-toolbar-padding-horizontal;
+			
+			&:hover {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-default-link-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-default-link-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-default-link-disabled-offset-top;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Inverse                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.inverse {
+			
+			margin-top: @button-toolbar-padding-horizontal + @button-default-inverse-offset-top;
+			margin-left: @button-toolbar-padding-horizontal;
+			
+			&:hover {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-default-inverse-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-default-inverse-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-default-inverse-disabled-offset-top;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Primary Button                                                                                       */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-primary {
+			
+			margin-top: @button-toolbar-padding-horizontal + @button-primary-offset-top;
+			margin-left: @button-toolbar-padding-horizontal;
+			
+			&:hover {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-primary-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-primary-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-primary-disabled-offset-top;
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Link                                                                                                 */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.btn-link {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-primary-link-offset-top;
+				margin-left: @button-toolbar-padding-horizontal;
+				
+				&:hover {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-primary-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-primary-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-primary-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Inverse                                                                                              */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.inverse {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-primary-inverse-offset-top;
+				margin-left: @button-toolbar-padding-horizontal;
+				
+				&:hover {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-primary-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-primary-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-primary-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Warning Button                                                                                       */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-warning {
+			
+			margin-top: @button-toolbar-padding-horizontal + @button-warning-offset-top;
+			margin-left: @button-toolbar-padding-horizontal;
+			
+			&:hover {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-warning-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-warning-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-warning-disabled-offset-top;
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Link                                                                                                 */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.btn-link {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-warning-link-offset-top;
+				margin-left: @button-toolbar-padding-horizontal;
+				
+				&:hover {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-warning-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-warning-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-warning-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Inverse                                                                                              */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.inverse {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-warning-inverse-offset-top;
+				margin-left: @button-toolbar-padding-horizontal;
+				
+				&:hover {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-warning-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-warning-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-warning-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Success Button                                                                                       */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-success {
+			
+			margin-top: @button-toolbar-padding-horizontal + @button-success-offset-top;
+			margin-left: @button-toolbar-padding-horizontal;
+			
+			&:hover {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-success-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-success-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-success-disabled-offset-top;
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Link                                                                                                 */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.btn-link {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-success-link-offset-top;
+				margin-left: @button-toolbar-padding-horizontal;
+				
+				&:hover {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-success-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-success-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-success-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Inverse                                                                                              */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.inverse {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-success-inverse-offset-top;
+				margin-left: @button-toolbar-padding-horizontal;
+				
+				&:hover {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-success-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-success-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-success-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}	
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Danger Button                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-danger {
+			
+			margin-top: @button-toolbar-padding-horizontal + @button-danger-offset-top;
+			margin-left: @button-toolbar-padding-horizontal;
+			
+			&:hover {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-danger-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-danger-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-danger-disabled-offset-top;
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Link                                                                                                 */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.btn-link {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-danger-link-offset-top;
+				margin-left: @button-toolbar-padding-horizontal;
+				
+				&:hover {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-danger-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-danger-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-danger-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Inverse                                                                                              */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.inverse {
+				
+				margin-top: @button-toolbar-padding-horizontal + @button-danger-inverse-offset-top;
+				margin-left: @button-toolbar-padding-horizontal;
+				
+				&:hover {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-danger-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-danger-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-toolbar-padding-horizontal + @button-danger-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
 		
 	}
 	
-	&.medium {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Button Group                                                                                         */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.button-group {
 		
-		margin-bottom: @primary-margin;
+		margin-top: @button-toolbar-padding-horizontal;
+		margin-left: @button-toolbar-padding-horizontal;
+		float: left;
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Default Button                                                                                       */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.button {
+			
+			margin-top: @button-default-offset-top;
+			margin-left: @button-group-padding-horizontal;
+			
+			&:first-child {
+				
+				margin-left: 0px;
+				.border-top-left-radius(@button-border-radius);
+				.border-bottom-left-radius(@button-border-radius);
+				
+			}
+			
+			&:last-child,
+			&:last-of-type {
+				
+				.border-top-right-radius(@button-border-radius);
+				.border-bottom-right-radius(@button-border-radius);
+				
+			}
+			
+			&:hover {
+				
+				margin-top: @button-default-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-default-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-default-disabled-offset-top;
+				
+			}
+			
+			&.button-link {
+				
+				margin-top: @button-default-link-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-default-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-default-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-default-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			&.inverse {
+				
+				margin-top: @button-default-inverse-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-default-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-default-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-default-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Primary Button                                                                                       */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.button.button-primary {
+			
+			margin-top: @button-primary-offset-top;
+			
+			&:hover {
+				
+				margin-top: @button-primary-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-primary-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-primary-disabled-offset-top;
+				
+			}
+			
+			&.button-link {
+				
+				margin-top: @button-primary-link-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-primary-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-primary-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-primary-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			&.inverse {
+				
+				margin-top: @button-primary-inverse-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-primary-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-primary-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-primary-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Success Button                                                                                       */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.button.button-success {
+			
+			margin-top: @button-success-offset-top;
+			
+			&:hover {
+				
+				margin-top: @button-success-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-success-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-success-disabled-offset-top;
+				
+			}
+			
+			&.button-link {
+				
+				margin-top: @button-success-link-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-success-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-success-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-success-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			&.inverse {
+				
+				margin-top: @button-success-inverse-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-success-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-success-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-success-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Warning Button                                                                                       */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.button.button-warning {
+			
+			margin-top: @button-warning-offset-top;
+			
+			&:hover {
+				
+				margin-top: @button-warning-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-warning-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-warning-disabled-offset-top;
+				
+			}
+			
+			&.button-link {
+				
+				margin-top: @button-warning-link-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-warning-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-warning-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-warning-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			&.inverse {
+				
+				margin-top: @button-warning-inverse-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-warning-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-warning-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-warning-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Danger Button                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.button.button-danger {
+			
+			margin-top: @button-danger-offset-top;
+			
+			&:hover {
+				
+				margin-top: @button-danger-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-danger-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-danger-disabled-offset-top;
+				
+			}
+			
+			&.button-link {
+				
+				margin-top: @button-danger-link-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-danger-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-danger-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-danger-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			&.inverse {
+				
+				margin-top: @button-danger-inverse-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-danger-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-danger-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-danger-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
 		
 	}
-	
-	&.short {
-		
-		margin-bottom: @primary-margin-short;
-		
-	}
-	
-	/*
-	> .button + .button,
-	> .button-group + .button,
-	> .button + .button-group {
-		
-		margin-top: @buttonGroupHorizontalPadding;
-		margin-left: @buttonGroupHorizontalPadding;
-		
-	}
-	*/
-	
-}
-
-.button-group > .button {
-	
-	position: relative;
-	.border-radius(0);
-	
-}
-
-.button-group > .button + .button {
-	
-	margin-left: 1px;
-	
-}
-
-.button-group > .button,
-.button-group > .dropdown-menu,
-.button-group > .popover {
-	
-	font-size: @buttonTextFontSize;
-	
-}
-
-.button-group > .button-mini {
-	
-	font-size: @buttonTextFontSizeMini;
-	
-}
-
-.button-group > .button-small {
-	
-	font-size: @buttonTextFontSizeSmall;
-	
-}
-
-.button-group > .button-large {
-	
-	font-size: @buttonTextFontSizeLarge;
-	
-}
-
-.button-group > .button:first-child {
-	
-	margin-left: 0;
-	.border-top-left-radius(@buttonBorderRadius);
-	.border-bottom-left-radius(@buttonBorderRadius);
-	
-}
-
-.button-group > .button:last-child,
-.button-group > .button:last-of-type,
-.button-group > .dropdown-toggle {
-	
-	.border-top-right-radius(@buttonBorderRadius);
-	.border-bottom-right-radius(@buttonBorderRadius);
-	
-}
-
-.button-group > .button.large:first-child {
-	
-	margin-left: 0;
-	.border-top-left-radius(@buttonBorderRadius);
-	.border-bottom-left-radius(@buttonBorderRadius);
-	
-}
-
-.button-group > .button.large:last-child,
-.button-group > .large.dropdown-toggle {
-	
-	.border-top-right-radius(@buttonBorderRadius);
-	.border-bottom-right-radius(@buttonBorderRadius);
-	
-}
-
-.button-group > .button:hover,
-.button-group > .button:focus,
-.button-group > .button:active,
-.button-group > .button.active {
-	
-	z-index: 2;
-	
-}
-
-.button-group .dropdown-toggle:active,
-.button-group.open .dropdown-toggle {
-	
-	outline: 0;
 	
 }
 
@@ -717,214 +1463,85 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Split Button Dropdowns                                                    */
+/* Vertical Button Groups                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-.button-group > .button + .dropdown-toggle {
+.button-group.button-group-vertical {
 	
-	padding-left: @buttonHorizontalPadding / 1.5;
-	padding-right: @buttonHorizontalPadding / 1.5;
-	
-	.caret {
-		
-		margin-left: 0;
-		
-	}
-	
-}
-
-.button-group > .button-mini + .dropdown-toggle {
-	
-	padding-left: @buttonHorizontalPaddingMini / 1.5;
-	padding-right: @buttonHorizontalPaddingMini / 1.5;
-	
-}
-
-.button-group > .button-small + .dropdown-toggle {
-	
-	padding-left: @buttonHorizontalPaddingSmall / 1.5;
-	padding-right: @buttonHorizontalPaddingSmall / 1.5;
-	
-}
-
-.button-group > .button-large + .dropdown-toggle {
-	
-	padding-left: @buttonHorizontalPaddingLarge / 1.5;
-	padding-right: @buttonHorizontalPaddingLarge / 1.5;
-	
-}
-
-.button-group.open {
-		
-	.dropdown-toggle {
-		
-	}
-	
-	.button.dropdown-toggle {
-		
-		outline: 0;
-		color: @buttonActiveTextColor;
-		text-shadow: @buttonActiveTextShadow;
-		background-color: @buttonActiveBackgroundColor;
-		#gradient > .vertical(@buttonActiveBackgroundGradientColorTop, @buttonActiveBackgroundGradientColorBottom);
-		.box-shadow(@buttonActiveShadow);
-		margin-top: @buttonActiveMarginTop;
-		margin-bttom: @buttonActiveMarginBottom;
-		
-	}
-	
-	.button-primary.dropdown-toggle {
-		
-		color: @buttonPrimaryActiveTextColor;
-		text-shadow: @buttonPrimaryActiveTextShadow;
-		background-color: @buttonPrimaryActiveBackgroundColor;
-		#gradient > .vertical(@buttonPrimaryActiveBackgroundGradientColorTop, @buttonPrimaryActiveBackgroundGradientColorBottom);
-		.box-shadow(@buttonPrimaryActiveShadow);
-		margin-top: @buttonPrimaryActiveMarginTop;
-		margin-bttom: @buttonPrimaryActiveMarginBottom;
-		
-	}
-	
-	.button-success.dropdown-toggle {
-		
-		color: @buttonSuccessActiveTextColor;
-		text-shadow: @buttonSuccessActiveTextShadow;
-		background-color: @buttonSuccessActiveBackgroundColor;
-		#gradient > .vertical(@buttonSuccessActiveBackgroundGradientColorTop, @buttonSuccessActiveBackgroundGradientColorBottom);
-		.box-shadow(@buttonSuccessActiveShadow);
-		margin-top: @buttonSuccessActiveMarginTop;
-		margin-bttom: @buttonSuccessActiveMarginBottom;
-		
-	}
-	
-	.button-warning.dropdown-toggle {
-		
-		color: @buttonWarningActiveTextColor;
-		text-shadow: @buttonWarningActiveTextShadow;
-		background-color: @buttonWarningActiveBackgroundColor;
-		#gradient > .vertical(@buttonWarningActiveBackgroundGradientColorTop, @buttonWarningActiveBackgroundGradientColorBottom);
-		.box-shadow(@buttonWarningActiveShadow);
-		margin-top: @buttonWarningActiveMarginTop;
-		margin-bttom: @buttonWarningActiveMarginBottom;
-		
-	}
-	
-	.button-danger.dropdown-toggle {
-		
-		color: @buttonDangerActiveTextColor;
-		text-shadow: @buttonDangerActiveTextShadow;
-		background-color: @buttonDangerActiveBackgroundColor;
-		#gradient > .vertical(@buttonDangerActiveBackgroundGradientColorTop, @buttonDangerActiveBackgroundGradientColorBottom);
-		.box-shadow(@buttonDangerActiveShadow);
-		margin-top: @buttonDangerActiveMarginTop;
-		margin-bttom: @buttonDangerActiveMarginBottom;
-		
-	}
-	
-}
-
-.button .caret {
-	
-	margin-top: 8px;
-	margin-left: 0;
-	
-}
-
-.button-large .caret {
-	
-	margin-top: 6px;
-	
-}
-
-.button-large .caret {
-	
-	border-left-width:  5px;
-	border-right-width: 5px;
-	border-top-width:   5px;
-	
-}
-
-.button-mini .caret,
-.button-small .caret {
-	
-	margin-top: 8px;
-	
-}
-
-.dropup .button-large .caret {
-	
-	border-bottom-width: 5px;
-	
-}
-
-.button-primary,
-.button-warning,
-.button-danger,
-.button-info,
-.button-success,
-.button-inverse {
-	.caret {
-		
-		border-top-color: @white;
-		border-bottom-color: @white;
-		
-	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Vertical Button Groups                                                    */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-.button-group-vertical {
-	
-	display: inline-block; // makes buttons only take up the width they need
+	display: inline-block;
 	.ie7-inline-block();
 	
-}
-
-.button-group-vertical > .button {
-	
-	display: block;
-	float: none;
-	max-width: 100%;
-	.border-radius(0);
-	
-}
-
-.button-group-vertical > .button + .button {
-	
-	margin-left: 0;
-	margin-top: 1px;
-	
-}
-
-.button-group-vertical > .button:first-child {
-	
-	.border-radius(@buttonBorderRadius @buttonBorderRadius 0 0);
-	
-}
-
-.button-group-vertical > .button:last-child {
-	
-	.border-radius(0 0 @buttonBorderRadius @buttonBorderRadius);
-	
-}
-
-.button-group-vertical > .button-large:first-child {
-	
-	.border-radius(@buttonBorderRadius @buttonBorderRadius 0 0);
-	
-}
-
-.button-group-vertical > .button-large:last-child {
-	
-	.border-radius(0 0 @buttonBorderRadius @buttonBorderRadius);
+	> .button {
+		
+		display: block;
+		float: none;
+		max-width: 100%;
+		.border-radius(0px);		
+		margin-left: 0px;
+		margin-top: @button-group-padding-horizontal;
+		
+		&:first-child {
+			
+			.border-radius(@button-border-radius @button-border-radius 0px 0px);
+			margin-top: 0px;
+		}
+		
+		&:last-child {
+			
+			.border-radius(0px 0px @button-border-radius @button-border-radius);
+			
+		}
+		
+		&.button-large {
+			
+			&:first-child {
+				
+				.border-radius(@button-large-border-radius @button-large-border-radius 0px 0px);
+				
+			}
+			
+			&:last-child {
+				
+				.border-radius(0px 0px @button-large-border-radius @button-large-border-radius);
+				
+			}
+			
+		}
+		
+		&.button-small {
+			
+			&:first-child {
+				
+				.border-radius(@button-small-border-radius @button-small-border-radius 0px 0px);
+				
+			}
+			
+			&:last-child {
+				
+				.border-radius(0px 0px @button-small-border-radius @button-small-border-radius);
+				
+			}
+			
+		}
+		
+		&.button-mini {
+			
+			&:first-child {
+				
+				.border-radius(@button-mini-border-radius @button-mini-border-radius 0px 0px);
+				
+			}
+			
+			&:last-child {
+				
+				.border-radius(0px 0px @button-mini-border-radius @button-mini-border-radius);
+				
+			}
+			
+		}
+		
+	}
 	
 }
 
@@ -938,28 +1555,6 @@
 
 @media (min-width: @viewport-widescreen) {
 	
-	.button-toolbar {
-		
-		&.tall {
-			
-			margin-bottom: @primary-margin-tall-widescreen;
-			
-		}
-		
-		&.medium {
-			
-			margin-bottom: @primary-margin-tall;
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @primary-margin-short-widescreen;
-			
-		}
-		
-	}
-	
 }
 
 
@@ -972,28 +1567,6 @@
 
 @media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
 	
-	.button-toolbar {
-		
-		&.tall {
-			
-			margin-bottom: @primary-margin-tall-tablet;
-			
-		}
-		
-		&.medium {
-			
-			margin-bottom: @primary-margin-tablet;
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @primary-margin-short-tablet;
-			
-		}
-		
-	}
-	
 }
 
 
@@ -1005,28 +1578,6 @@
 /* ==================================================================================================== */
 
 @media (max-width: @viewport-mobile-landscape-max) {
-	
-	.button-toolbar {
-		
-		&.tall {
-			
-			margin-bottom: @primary-margin-tall-tablet;
-			
-		}
-		
-		&.medium {
-			
-			margin-bottom: @primary-margin-tablet;
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @primary-margin-short-tablet;
-			
-		}
-		
-	}
 	
 }
 
