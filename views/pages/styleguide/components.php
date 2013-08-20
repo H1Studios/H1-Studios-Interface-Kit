@@ -177,7 +177,7 @@
 			
 		</p>
 		
-		<div class="code-example code-example-submenus flush-bottom">
+		<div class="code-example flush-bottom">
 			
 			<div class="pull-left">
 				

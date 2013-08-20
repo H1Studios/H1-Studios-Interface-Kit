@@ -207,7 +207,7 @@ class __TwigTemplate_94a491e83de690a6df31b3845a2dde90 extends Twig_Template
 \t\t\t
 \t\t</p>
 \t\t
-\t\t<div class=\"code-example code-example-submenus flush-bottom\">
+\t\t<div class=\"code-example flush-bottom\">
 \t\t\t
 \t\t\t<div class=\"pull-left\">
 \t\t\t\t

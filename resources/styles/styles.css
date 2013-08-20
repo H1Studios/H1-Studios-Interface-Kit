@@ -7837,14 +7837,6 @@ input[type="submit"].button.button-mini {
 .button-group > .button + .button {
   margin-left: 1px;
 }
-.button-group > .dropdown-toggle {
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  border-bottom-right-radius: 4px;
-}
 .button-group > .dropdown-toggle:active {
   outline: 0;
 }
@@ -8171,9 +8163,6 @@ input[type="submit"].button.button-mini {
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
   margin-top: 0px;
   margin-bottom: 0px;
-}
-.button-group.dropup .button-large .caret {
-  border-bottom-width: 5px;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -8904,11 +8893,6 @@ input[type="submit"].button.button-mini {
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* General Dropdown Styling                                                  */
-/*                                                                                                      */
-/* ==================================================================================================== */
 .dropup,
 .dropdown {
   position: relative;
@@ -8935,17 +8919,15 @@ input[type="submit"].button.button-mini {
 .dropdown.anchor:after {
   display: none;
 }
-.dropdown-toggle {
-  *margin-bottom: -3px;
-}
-.dropdown-toggle:active,
-.dropdown-toggle:focus,
-.open .dropdown-toggle {
-  outline: 0;
+/* ---------------------------------------------------------------------------------------------------- */
+/* Drop-Up                                                                                              */
+/* ---------------------------------------------------------------------------------------------------- */
+.dropup .button-large .caret {
+  border-bottom-width: 5px;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Dropdown Arrow/Caret                                                      */
+/* Dropdown Arrow/Caret                                                                                 */
 /*                                                                                                      */
 /* ==================================================================================================== */
 .caret {
@@ -8999,7 +8981,7 @@ input[type="submit"].button.button-mini {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* The dropdown menu                                                         */
+/* The dropdown menu                                                                                    */
 /*                                                                                                      */
 /* ==================================================================================================== */
 .dropdown-menu {
@@ -20678,9 +20660,23 @@ form.code-example {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px;
+  *zoom: 1;
+  display: block;
+}
+.code-example:before,
+form.code-example:before,
+.code-example:after,
+form.code-example:after {
+  display: table;
+  content: "";
+  line-height: 0;
 }
 .code-example:after,
 form.code-example:after {
+  clear: both;
+}
+.code-example:before,
+form.code-example:before {
   content: "Example" !important;
   display: block !important;
   position: absolute;
@@ -22073,6 +22069,57 @@ header .header-content {
 }
 #stage.styleguide .colorscale.red .color.darken-95 {
   background: #0f0100;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 1240px) {
+  
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 768px) and (max-width: 989px) {
+  
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (max-width: 767px) {
+  
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (max-width: 479px) {
+  
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Responsive Styles: Retina Displays                                                                   */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* views/styleguide/components.less                                                                     */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#stage.components .dropdown.anchor,
+#stage.components .dropup.anchor {
+  margin-right: 20px;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
