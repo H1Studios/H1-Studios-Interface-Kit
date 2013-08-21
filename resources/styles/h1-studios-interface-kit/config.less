@@ -1368,7 +1368,7 @@
 
 // Responsive Sizing
 
-@button-responsive-ratio-widescreen:									1.0;
+@button-responsive-ratio-widescreen:									1.1;
 @button-responsive-ratio-tablet:										0.9;
 @button-responsive-ratio-mobile:										0.85;
 
@@ -1388,7 +1388,7 @@
 
 // Responsive Sizing
 
-@button-large-responsive-ratio-widescreen:								1.0;
+@button-large-responsive-ratio-widescreen:								1.1;
 @button-large-responsive-ratio-tablet:									0.9;
 @button-large-responsive-ratio-mobile:									0.8;
 
@@ -1408,7 +1408,7 @@
 
 // Responsive Sizing
 
-@button-small-responsive-ratio-widescreen:								1.0;
+@button-small-responsive-ratio-widescreen:								1.1;
 @button-small-responsive-ratio-tablet:									0.9;
 @button-small-responsive-ratio-mobile:									0.9;
 
@@ -1428,7 +1428,7 @@
 
 // Responsive Sizing
 
-@button-mini-responsive-ratio-widescreen:								1.0;
+@button-mini-responsive-ratio-widescreen:								1.1;
 @button-mini-responsive-ratio-tablet:									0.9;
 @button-mini-responsive-ratio-mobile:									0.9;
 
@@ -1443,6 +1443,9 @@
 /* ---------------------------------------------------------------------------------------------------- */
 
 @button-toolbar-padding-horizontal:										10px;
+@button-toolbar-padding-horizontal-widescreen:							15px;
+@button-toolbar-padding-horizontal-tablet:								5px;
+@button-toolbar-padding-horizontal-mobile:								5px;
 
 // Button Toolbar Margins
 
@@ -2225,45 +2228,92 @@
 /* ==================================================================================================== */
 
 /* ---------------------------------------------------------------------------------------------------- */
-/* Dropdown Toggle                                                                                      */
+/* Dropdown Toggle Caret                                                                                */
 /* ---------------------------------------------------------------------------------------------------- */
 
-@dropdown-toggle-caret-width:											5px;
+@dropdown-toggle-caret-width:											10px;
 @dropdown-toggle-caret-height:											6px;
-@dropdown-toggle-caret-offset-top:										1px;
+@dropdown-toggle-caret-offset-horizontal:								0px;
+@dropdown-toggle-caret-offset-vertical:									1px;
 
-// Large Button Dropdown Toggle
+// Responsive Sizing
 
-@dropdown-toggle-large-caret-width:										7px;
+@dropdown-toggle-caret-responsive-ratio-widescreen:						@button-responsive-ratio-widescreen;
+@dropdown-toggle-caret-responsive-ratio-tablet:							@button-responsive-ratio-tablet;
+@dropdown-toggle-caret-responsive-ratio-mobile:							@button-responsive-ratio-mobile;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Large Dropdown Toggle Caret                                                                          */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@dropdown-toggle-large-caret-width:										14px;
 @dropdown-toggle-large-caret-height:									8px;
-@dropdown-toggle-large-caret-offset-top:								1px;
+@dropdown-toggle-large-caret-offset-horizontal:							0px;
+@dropdown-toggle-large-caret-offset-vertical:							1px;
 
-// Small Button Dropdown Toggle
+// Responsive Sizing
 
-@dropdown-toggle-small-caret-width:										4px;
+@dropdown-toggle-large-caret-responsive-ratio-widescreen:				@button-large-responsive-ratio-widescreen;
+@dropdown-toggle-large-caret-responsive-ratio-tablet:					@button-large-responsive-ratio-tablet;
+@dropdown-toggle-large-caret-responsive-ratio-mobile:					@button-large-responsive-ratio-mobile;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Small Dropdown Toggle Caret                                                                          */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@dropdown-toggle-small-caret-width:										8px;
 @dropdown-toggle-small-caret-height:									5px;
-@dropdown-toggle-small-caret-offset-top:								0px;
+@dropdown-toggle-small-caret-offset-horizontal:							0px;
+@dropdown-toggle-small-caret-offset-vertical:							0px;
 
-// Mini Button Dropdown Toggle
+// Responsive Sizing
 
-@dropdown-toggle-mini-caret-width:										3px;
+@dropdown-toggle-small-caret-responsive-ratio-widescreen:				@button-small-responsive-ratio-widescreen;
+@dropdown-toggle-small-caret-responsive-ratio-tablet:					@button-small-responsive-ratio-tablet;
+@dropdown-toggle-small-caret-responsive-ratio-mobile:					@button-small-responsive-ratio-mobile;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Mini Dropdown Toggle Caret                                                                           */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@dropdown-toggle-mini-caret-width:										6px;
 @dropdown-toggle-mini-caret-height:										4px;
-@dropdown-toggle-mini-caret-offset-top:									1px;
+@dropdown-toggle-mini-caret-offset-horizontal:							0px;
+@dropdown-toggle-mini-caret-offset-vertical:							0px;
+
+// Responsive Sizing
+
+@dropdown-toggle-mini-caret-responsive-ratio-widescreen:				@button-mini-responsive-ratio-widescreen;
+@dropdown-toggle-mini-caret-responsive-ratio-tablet:					@button-mini-responsive-ratio-tablet;
+@dropdown-toggle-mini-caret-responsive-ratio-mobile:					@button-mini-responsive-ratio-mobile;
 
 /* ---------------------------------------------------------------------------------------------------- */
-/* Dropdown                                                                                             */
+/* Dropdown Menu                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
 
-@dropdown-minimum-width:												120px;
-@dropdown-offset-top:													4px;
-@dropdown-padding-vertical:												5px;
-@dropdown-padding-horizontal:											0px;
-@dropdown-background-color:												@white;
-@dropdown-border-width:													0px;
-@dropdown-border-radius:												@button-border-radius;
-@dropdown-border-color:													none;
-@dropdown-shadow:														0px 0px 0px 1px rgba(0, 0, 0, 0.1),
+@dropdown-menu-minimum-width:											120px;
+@dropdown-menu-offset-vertical:											4px;
+@dropdown-menu-padding-vertical:										5px;
+@dropdown-menu-padding-horizontal:										0px;
+@dropdown-menu-background-color:										@white;
+@dropdown-menu-border-width:											0px;
+@dropdown-menu-border-radius:											@button-border-radius;
+@dropdown-menu-border-color:											none;
+@dropdown-menu-shadow:													0px 0px 0px 1px rgba(0, 0, 0, 0.1),
 																		0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+
+// Responsive Sizing
+
+@dropdown-menu-responsive-ratio-widescreen:								@button-responsive-ratio-widescreen;
+@dropdown-menu-responsive-ratio-tablet:									@button-responsive-ratio-tablet;
+@dropdown-menu-responsive-ratio-mobile:									@button-responsive-ratio-mobile;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Dropdown Sub Menu                                                                                    */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@dropdown-submenu-offset-vertical:										-@dropdown-menu-padding-vertical;
+@dropdown-submenu-offset-horizontal:									1px;
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* Dropdown Divider                                                                                     */
@@ -2301,9 +2351,9 @@
 
 // Responsive Sizing
 
-@dropdown-header-responsive-ratio-widescreen:							1.0;
-@dropdown-header-responsive-ratio-tablet:								0.9;
-@dropdown-header-responsive-ratio-mobile:								0.85;
+@dropdown-header-responsive-ratio-widescreen:							@dropdown-menu-responsive-ratio-widescreen;
+@dropdown-header-responsive-ratio-tablet:								@dropdown-menu-responsive-ratio-tablet;
+@dropdown-header-responsive-ratio-mobile:								@dropdown-menu-responsive-ratio-mobile;
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* Dropdown Rows                                                                                        */
@@ -2319,12 +2369,15 @@
 @dropdown-row-text-font-weight:											normal;
 @dropdown-row-text-line-height:											@body-text-line-height;
 @dropdown-row-text-transform:											@body-text-transform;
+@dropdown-row-caret-width:												5px;
+@dropdown-row-caret-height:												10px;
+@dropdown-row-caret-offset-horizontal:									0px;
 
 // Responsive Sizing
 
-@dropdown-row-responsive-ratio-widescreen:								1.0;
-@dropdown-row-responsive-ratio-tablet:									0.9;
-@dropdown-row-responsive-ratio-mobile:									0.85;
+@dropdown-row-responsive-ratio-widescreen:								@dropdown-menu-responsive-ratio-widescreen;
+@dropdown-row-responsive-ratio-tablet:									@dropdown-menu-responsive-ratio-tablet;
+@dropdown-row-responsive-ratio-mobile:									@dropdown-menu-responsive-ratio-mobile;
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* Default Dropdown Rows                                                                                */
@@ -2364,6 +2417,19 @@
 @dropdown-row-default-active-border-color:								none;
 @dropdown-row-default-active-shadow:									none;
 
+// Disabled
+
+@dropdown-row-default-disabled-opacity:									50;
+@dropdown-row-default-disabled-text-color:								@dropdown-row-default-text-color;
+@dropdown-row-default-disabled-text-shadow:								@dropdown-row-default-text-shadow;
+@dropdown-row-default-disabled-offset-top:								@dropdown-row-default-offset-top;
+@dropdown-row-default-disabled-offset-bottom:							@dropdown-row-default-offset-bottom;
+@dropdown-row-default-disabled-background-color:						@dropdown-row-default-background-color;
+@dropdown-row-default-disabled-background-gradient-top-color:			@dropdown-row-default-background-gradient-top-color;
+@dropdown-row-default-disabled-background-gradient-bottom-color:		@dropdown-row-default-background-gradient-bottom-color;
+@dropdown-row-default-disabled-border-color:							@dropdown-row-default-border-color;
+@dropdown-row-default-disabled-shadow:									@dropdown-row-default-shadow;
+
 /* ---------------------------------------------------------------------------------------------------- */
 /* Danger Dropdown Rows                                                                                 */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -2402,40 +2468,18 @@
 @dropdown-row-danger-active-border-color:								none;
 @dropdown-row-danger-active-shadow:										none;
 
+// Disabled
 
-
-
-
-@dropdownBackground:											@white;
-@dropdownBorderRadius:											5px;
-@dropdownShadow:												0px 3px 6px 0px rgba(0, 0, 0, 0.3);
-@dropdownTopMargin:												4px;
-@dropdownMinWidth:												160px;
-@dropdownDividerPadding:										0px;
-@dropdownDividerBackground:										@gray;
-@dropdownDividerShadow:											none;
-@dropdownLinkHorizontalPadding:									@buttonHorizontalPadding;
-@dropdownLinkHeight:											@body-text-line-height + 14;
-@dropdownLinkShadow:											0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-@dropdownLinkColor:												@gray;
-@dropdownLinkBackground:										@white;
-@dropdownLinkColorHover:										@gray-darken-50;
-@dropdownLinkBackgroundHover:									@gray-lighten-90;
-@dropdownLinkColorActive:										@blue;
-@dropdownLinkBackgroundActive:									@white;
-@dropdownLinkColorDisabled:										@gray;
-@dropdownLinkBackgroundDisabled:								@white;
-
-@dropdownLinkDangerColor:										@red;
-@dropdownLinkDangerBackground:									@white;
-@dropdownLinkDangerColorHover:									@red;
-@dropdownLinkDangerBackgroundHover:								lighten(@red, 47%);
-@dropdownLinkDangerColorActive:									@red;
-@dropdownLinkDangerBackgroundActive:							lighten(@red, 47%);
-@dropdownLinkDangerColorDisabled:								lighten(@red, 30%);
-@dropdownLinkDangerBackgroundDisabled:							@white;
-
-@inputErrorBackground:											lighten(@red, 60%);
+@dropdown-row-danger-disabled-opacity:									50;
+@dropdown-row-danger-disabled-text-color:								@dropdown-row-danger-text-color;
+@dropdown-row-danger-disabled-text-shadow:								@dropdown-row-danger-text-shadow;
+@dropdown-row-danger-disabled-offset-top:								@dropdown-row-danger-offset-top;
+@dropdown-row-danger-disabled-offset-bottom:							@dropdown-row-danger-offset-bottom;
+@dropdown-row-danger-disabled-background-color:							@dropdown-row-danger-background-color;
+@dropdown-row-danger-disabled-background-gradient-top-color:			@dropdown-row-danger-background-gradient-top-color;
+@dropdown-row-danger-disabled-background-gradient-bottom-color:			@dropdown-row-danger-background-gradient-bottom-color;
+@dropdown-row-danger-disabled-border-color:								@dropdown-row-danger-border-color;
+@dropdown-row-danger-disabled-shadow:									@dropdown-row-danger-shadow;
 
 
 

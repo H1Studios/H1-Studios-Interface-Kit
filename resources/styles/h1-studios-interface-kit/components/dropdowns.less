@@ -50,10 +50,10 @@
 			vertical-align: top;
 			border-color: transparent;
 			border-style: solid;
-			border-width: @dropdown-toggle-caret-height @dropdown-toggle-caret-width 0px @dropdown-toggle-caret-width;
+			border-width: @dropdown-toggle-caret-height (@dropdown-toggle-caret-width / 2) 0px (@dropdown-toggle-caret-width / 2);
 			border-top-color: @button-default-text-color;
-			margin-top: (@button-text-line-height / 2) - (@dropdown-toggle-caret-height / 2) + @dropdown-toggle-caret-offset-top;
-			//margin-left: (@button-padding-horizontal / 2);
+			margin-top: (@button-text-line-height / 2) - (@dropdown-toggle-caret-height / 2) + @dropdown-toggle-caret-offset-vertical;
+			margin-left: @dropdown-toggle-caret-offset-horizontal;
 			
 			&.caret-solo {
 				
@@ -155,9 +155,9 @@
 			
 			.caret {
 				
-				border-width: @dropdown-toggle-large-caret-height @dropdown-toggle-large-caret-width 0px @dropdown-toggle-large-caret-width;
-				margin-top: (@button-large-text-line-height / 2) - (@dropdown-toggle-large-caret-height / 2) + @dropdown-toggle-large-caret-offset-top;
-				//margin-left: (@button-large-padding-horizontal / 2);
+				border-width: @dropdown-toggle-large-caret-height (@dropdown-toggle-large-caret-width / 2) 0px (@dropdown-toggle-large-caret-width / 2);
+				margin-top: (@button-large-text-line-height / 2) - (@dropdown-toggle-large-caret-height / 2) + @dropdown-toggle-large-caret-offset-vertical;
+				margin-left: @dropdown-toggle-large-caret-offset-horizontal;
 				
 				&.caret-solo {
 					
@@ -177,9 +177,9 @@
 			
 			.caret {
 				
-				border-width: @dropdown-toggle-small-caret-height @dropdown-toggle-small-caret-width 0px @dropdown-toggle-small-caret-width;
-				margin-top: (@button-small-text-line-height / 2) - (@dropdown-toggle-small-caret-height / 2) + @dropdown-toggle-small-caret-offset-top;
-				//margin-left: (@button-small-padding-horizontal / 2);
+				border-width: @dropdown-toggle-small-caret-height (@dropdown-toggle-small-caret-width / 2) 0px (@dropdown-toggle-small-caret-width / 2);
+				margin-top: (@button-small-text-line-height / 2) - (@dropdown-toggle-small-caret-height / 2) + @dropdown-toggle-small-caret-offset-vertical;
+				margin-left: @dropdown-toggle-small-caret-offset-horizontal;
 				
 				&.caret-solo {
 					
@@ -199,9 +199,9 @@
 			
 			.caret {
 				
-				border-width: @dropdown-toggle-mini-caret-height @dropdown-toggle-mini-caret-width 0px @dropdown-toggle-mini-caret-width;
-				margin-top: (@button-mini-text-line-height / 2) - (@dropdown-toggle-mini-caret-height / 2) + @dropdown-toggle-mini-caret-offset-top;
-				//margin-left: (@button-mini-padding-horizontal / 2);
+				border-width: @dropdown-toggle-mini-caret-height (@dropdown-toggle-mini-caret-width / 2) 0px (@dropdown-toggle-mini-caret-width / 2);
+				margin-top: (@button-mini-text-line-height / 2) - (@dropdown-toggle-mini-caret-height / 2) + @dropdown-toggle-mini-caret-offset-vertical;
+				margin-left: @dropdown-toggle-mini-caret-offset-horizontal;
 				
 				&.caret-solo {
 					
@@ -609,6 +609,8 @@
 	
 }
 
+
+
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Button Group Arrow/Caret Sizing                                                                      */
@@ -627,13 +629,29 @@
 			
 			.caret {
 				
-				border-width: @dropdown-toggle-large-caret-height @dropdown-toggle-large-caret-width 0px @dropdown-toggle-large-caret-width;
-				margin-top: (@button-large-text-line-height / 2) - (@dropdown-toggle-large-caret-height / 2) + @dropdown-toggle-large-caret-offset-top;
-				//margin-left: (@button-large-padding-horizontal / 2);
+				border-width: @dropdown-toggle-large-caret-height (@dropdown-toggle-large-caret-width / 2) 0px (@dropdown-toggle-large-caret-width / 2);
+				margin-top: (@button-large-text-line-height / 2) - (@dropdown-toggle-large-caret-height / 2) + @dropdown-toggle-large-caret-offset-vertical;
+				margin-left: @dropdown-toggle-large-caret-offset-horizontal;
 				
 				&.caret-solo {
 					
 					margin-left: 0px;
+					
+				}
+				
+			}
+			
+		}
+		
+		&.dropup,
+		.dropup {
+			
+			.button {
+				
+				.caret {
+					
+					border-width: 0px (@dropdown-toggle-large-caret-width / 2) @dropdown-toggle-large-caret-height (@dropdown-toggle-large-caret-width / 2);
+					margin-top: (@button-large-text-line-height / 2) - (@dropdown-toggle-large-caret-height / 2) - @dropdown-toggle-large-caret-offset-vertical;
 					
 				}
 				
@@ -653,13 +671,29 @@
 			
 			.caret {
 				
-				border-width: @dropdown-toggle-small-caret-height @dropdown-toggle-small-caret-width 0px @dropdown-toggle-small-caret-width;
-				margin-top: (@button-small-text-line-height / 2) - (@dropdown-toggle-small-caret-height / 2) + @dropdown-toggle-small-caret-offset-top;
-				//margin-left: (@button-small-padding-horizontal / 2);
+				border-width: @dropdown-toggle-small-caret-height (@dropdown-toggle-small-caret-width / 2) 0px (@dropdown-toggle-small-caret-width / 2);
+				margin-top: (@button-small-text-line-height / 2) - (@dropdown-toggle-small-caret-height / 2) + @dropdown-toggle-small-caret-offset-vertical;
+				margin-left: @dropdown-toggle-small-caret-offset-horizontal;
 				
 				&.caret-solo {
 					
 					margin-left: 0px;
+					
+				}
+				
+			}
+			
+		}
+		
+		&.dropup,
+		.dropup {
+			
+			.button {
+				
+				.caret {
+					
+					border-width: 0px (@dropdown-toggle-small-caret-width / 2) @dropdown-toggle-small-caret-height (@dropdown-toggle-small-caret-width / 2);
+					margin-top: (@button-small-text-line-height / 2) - (@dropdown-toggle-small-caret-height / 2) - @dropdown-toggle-small-caret-offset-vertical;
 					
 				}
 				
@@ -679,13 +713,231 @@
 			
 			.caret {
 				
-				border-width: @dropdown-toggle-mini-caret-height @dropdown-toggle-mini-caret-width 0px @dropdown-toggle-mini-caret-width;
-				margin-top: (@button-mini-text-line-height / 2) - (@dropdown-toggle-mini-caret-height / 2) + @dropdown-toggle-mini-caret-offset-top;
-				//margin-left: (@button-mini-padding-horizontal / 2);
+				border-width: @dropdown-toggle-mini-caret-height (@dropdown-toggle-mini-caret-width / 2) 0px (@dropdown-toggle-mini-caret-width / 2);
+				margin-top: (@button-mini-text-line-height / 2) - (@dropdown-toggle-mini-caret-height / 2) + @dropdown-toggle-mini-caret-offset-vertical;
+				margin-left: @dropdown-toggle-mini-caret-offset-horizontal;
 				
 				&.caret-solo {
 					
 					margin-left: 0px;
+					
+				}
+				
+			}
+			
+		}
+		
+		&.dropup,
+		.dropup {
+			
+			.button {
+				
+				.caret {
+					
+					border-width: 0px (@dropdown-toggle-mini-caret-width / 2) @dropdown-toggle-mini-caret-height (@dropdown-toggle-mini-caret-width / 2);
+					margin-top: (@button-mini-text-line-height / 2) - (@dropdown-toggle-mini-caret-height / 2) - @dropdown-toggle-mini-caret-offset-vertical;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Dropdown Open                                                                                        */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.open {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Dropdown Toggle                                                                                      */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.dropdown-toggle {
+			
+			&.button {
+				
+				.caret {
+					
+					border-top-color: @button-default-active-text-color;
+					
+				}
+				
+				// Link
+				
+				&.button-link {
+					
+					.caret {
+						
+						border-top-color: @button-default-link-active-text-color;
+						
+					}
+					
+				}
+				
+				// Inverse
+				
+				&.inverse {
+					
+					.caret {
+						
+						border-top-color: @button-default-inverse-active-text-color;
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Primary                                                                                       */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-primary {
+					
+					.caret {
+						
+						border-top-color: @button-primary-active-text-color;
+						
+					}
+					
+					// Link
+					
+					&.button-link {
+						
+						.caret {
+							
+							border-top-color: @button-primary-link-active-text-color;
+							
+						}
+						
+					}
+					
+					// Inverse
+					
+					&.inverse {
+						
+						.caret {
+							
+							border-top-color: @button-primary-inverse-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Success                                                                                       */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-success {
+					
+					.caret {
+						
+						border-top-color: @button-success-active-text-color;
+						
+					}
+					
+					// Link
+					
+					&.button-link {
+						
+						.caret {
+							
+							border-top-color: @button-success-link-active-text-color;
+							
+						}
+						
+					}
+					
+					// Inverse
+					
+					&.inverse {
+						
+						.caret {
+							
+							border-top-color: @button-success-inverse-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Warning                                                                                       */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-warning {
+					
+					.caret {
+						
+						border-top-color: @button-warning-active-text-color;
+						
+					}
+					
+					// Link
+					
+					&.button-link {
+						
+						.caret {
+							
+							border-top-color: @button-warning-link-active-text-color;
+							
+						}
+						
+					}
+					
+					// Inverse
+					
+					&.inverse {
+						
+						.caret {
+							
+							border-top-color: @button-warning-inverse-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Danger                                                                                        */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-danger {
+					
+					.caret {
+						
+						border-top-color: @button-danger-active-text-color;
+						
+					}
+					
+					// Link
+					
+					&.button-link {
+						
+						.caret {
+							
+							border-top-color: @button-danger-link-active-text-color;
+							
+						}
+						
+					}
+					
+					// Inverse
+					
+					&.inverse {
+						
+						.caret {
+							
+							border-top-color: @button-danger-inverse-active-text-color;
+							
+						}
+						
+					}
 					
 				}
 				
@@ -712,17 +964,17 @@
 	top: 100%;
 	left: 0px;
 	float: left;
-	z-index: @z-index-dropdown * 2;
-	min-width: @dropdown-minimum-width;
-	margin: @dropdown-offset-top 0px 0px 0px;
-	padding: @dropdown-padding-vertical @dropdown-padding-horizontal @dropdown-padding-vertical @dropdown-padding-horizontal;
+	z-index: @z-index-dropdown + 1;
+	min-width: @dropdown-menu-minimum-width;
+	margin: @dropdown-menu-offset-vertical 0px 0px 0px;
+	padding: @dropdown-menu-padding-vertical @dropdown-menu-padding-horizontal @dropdown-menu-padding-vertical @dropdown-menu-padding-horizontal;
 	list-style: none;
 	.background-clip(padding-box);
-	background-color: @dropdown-background-color;
-	border-width: @dropdown-border-width;
-	.border-radius(@dropdown-border-radius);
-	border-color: @dropdown-border-color;
-	.box-shadow(@dropdown-shadow);
+	background-color: @dropdown-menu-background-color;
+	border-width: @dropdown-menu-border-width;
+	.border-radius(@dropdown-menu-border-radius);
+	border-color: @dropdown-menu-border-color;
+	.box-shadow(@dropdown-menu-shadow);
 	
 	&.pull-right {
 		
@@ -735,8 +987,7 @@
 		
 		margin: 0px;
 		display: block;
-		float: none;
-		width: 180px;
+		float: left;
 		position: inherit;
 		.clearfix();
 		
@@ -816,7 +1067,7 @@
 			&:focus {
 				
 				text-decoration: none;
-				z-index: @z-index-dropdown + 1;
+				z-index: @z-index-dropdown + 2;
 				.dropdown-row-states (
 					
 					@dropdown-row-default-hover-border-color,
@@ -848,11 +1099,15 @@
 				
 			}
 			
-			/* ---------------------------------------------------------------------------------------------------- */
-			/* Danger                                                                                               */
-			/* ---------------------------------------------------------------------------------------------------- */
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Danger                                                                                               */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.danger {
 			
-			&.danger {
+			> a {
 				
 				.dropdown-row-states (
 					
@@ -870,7 +1125,7 @@
 				&:focus {
 					
 					text-decoration: none;
-					z-index: @z-index-dropdown + 1;
+					z-index: @z-index-dropdown + 2;
 					.dropdown-row-states (
 						
 						@dropdown-row-danger-hover-border-color,
@@ -906,6 +1161,61 @@
 			
 		}
 		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Disabled                                                                                             */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.disabled {
+			
+			> a {
+				
+				.opacity(@dropdown-row-default-disabled-opacity);
+				cursor: default;
+				.dropdown-row-states (
+					
+					@dropdown-row-default-disabled-border-color,
+					@dropdown-row-default-disabled-text-color,
+					@dropdown-row-default-disabled-text-shadow,
+					@dropdown-row-default-disabled-background-color,
+					@dropdown-row-default-disabled-background-gradient-top-color,
+					@dropdown-row-default-disabled-background-gradient-bottom-color,
+					@dropdown-row-default-disabled-shadow
+				
+				);
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Danger                                                                                               */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.danger {
+				
+				> a {
+					
+					.opacity(@dropdown-row-danger-disabled-opacity);
+					.dropdown-row-states (
+						
+						@dropdown-row-danger-disabled-border-color,
+						@dropdown-row-danger-disabled-text-color,
+						@dropdown-row-danger-disabled-text-shadow,
+						@dropdown-row-danger-disabled-background-color,
+						@dropdown-row-danger-disabled-background-gradient-top-color,
+						@dropdown-row-danger-disabled-background-gradient-bottom-color,
+						@dropdown-row-danger-disabled-shadow
+					
+					);
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Rounded Corners for First/Last Rows                                                                  */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
 		&:first-child {
 			
 			> a {
@@ -934,19 +1244,183 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
+/* Dropdown Submenus                                                                                    */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.dropdown-submenu {
+	
+	position: relative;
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Submenu                                                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	> .dropdown-menu {
+		
+		top: 0px;
+		left: 100%;
+		margin-top: @dropdown-submenu-offset-vertical;
+		margin-left: @dropdown-submenu-offset-horizontal;
+		position: absolute;
+		z-index: @z-index-dropdown + 3;
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Submenu Caret                                                                                        */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	> a {
+		
+		&:after {
+			
+			content: "";
+			float: right;
+			display: block;
+			width: 0px;
+			height: 0px;
+			vertical-align: top;
+			border-color: transparent;
+			border-style: solid;
+			border-width: (@dropdown-row-caret-height / 2) 0px (@dropdown-row-caret-height / 2) @dropdown-row-caret-width;
+			border-left-color: @dropdown-row-default-text-color;
+			margin-top: (@dropdown-row-text-line-height / 2) - (@dropdown-row-caret-height / 2);
+			margin-right: @dropdown-row-caret-offset-horizontal;
+			
+		}
+		
+		&:hover {
+			
+			&:after {
+				
+				border-left-color: @dropdown-row-default-hover-text-color;
+				
+			}
+			
+		}
+		
+		&:active,
+		&:focus {
+			
+			&:after {
+				
+				border-left-color: @dropdown-row-default-active-text-color;
+				
+			}
+			
+		}
+	
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Danger                                                                                               */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.danger {
+		
+		> a {
+			
+			&:after {
+				
+				border-left-color: @dropdown-row-danger-text-color;
+				
+			}
+			
+			&:hover {
+				
+				&:after {
+					
+					border-left-color: @dropdown-row-danger-hover-text-color;
+					
+				}
+				
+			}
+			
+			&:active,
+			&:focus {
+				
+				&:after {
+					
+					border-left-color: @dropdown-row-danger-active-text-color;
+					
+				}
+				
+			}
+		
+		}
+		
+	}
+	
+	&:hover {
+		
+		> .dropdown-menu {
+			
+			display: block;
+			
+		}
+		
+	}
+	
+	&.pull-left {
+		
+		float: none;
+		
+		> .dropdown-menu {
+			
+			width: 100%;
+			left: -100%;
+			margin-left: -@dropdown-submenu-offset-horizontal;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Drop-ups                                                                                             */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
 .dropup {
 	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Dropdown Menu                                                                                        */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
 	.dropdown-menu {
 		
 		top: auto;
 		bottom: 100%;
-		margin: 0px 0px @dropdown-offset-top 0px;
+		margin-top: 0px;
+		margin-bottom: @dropdown-menu-offset-vertical;
 		
 	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Dropup Submenu                                                                                       */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.dropdown-submenu {
+		
+		> .dropdown-menu {
+			
+			top: auto;
+			bottom: 0px;
+			margin-top: 0px;
+			margin-bottom: @dropdown-submenu-offset-vertical;
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Dropdown Toggle                                                                                      */
+	/* ---------------------------------------------------------------------------------------------------- */
 	
 	.dropdown-toggle {
 		
@@ -954,9 +1428,9 @@
 			
 			.caret {
 				
-				border-width: 0px @dropdown-toggle-caret-width @dropdown-toggle-caret-height @dropdown-toggle-caret-width;
+				border-width: 0px (@dropdown-toggle-caret-width / 2) @dropdown-toggle-caret-height (@dropdown-toggle-caret-width / 2);
 				border-bottom-color: @button-default-text-color;
-				margin-top: (@button-text-line-height / 2) - (@dropdown-toggle-caret-height / 2) - @dropdown-toggle-caret-offset-top;
+				margin-top: (@button-text-line-height / 2) - (@dropdown-toggle-caret-height / 2) - @dropdown-toggle-caret-offset-vertical;
 				
 			}
 				
@@ -975,6 +1449,51 @@
 				.caret {
 					
 					border-bottom-color: @button-default-active-text-color;
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Large                                                                                         */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-large {
+				
+				.caret {
+					
+					border-width: 0px (@dropdown-toggle-large-caret-width / 2) @dropdown-toggle-large-caret-height (@dropdown-toggle-large-caret-width / 2);
+					margin-top: (@button-large-text-line-height / 2) - (@dropdown-toggle-large-caret-height / 2) - @dropdown-toggle-large-caret-offset-vertical;
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Small                                                                                         */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-small {
+				
+				.caret {
+					
+					border-width: 0px (@dropdown-toggle-small-caret-width / 2) @dropdown-toggle-small-caret-height (@dropdown-toggle-small-caret-width / 2);
+					margin-top: (@button-small-text-line-height / 2) - (@dropdown-toggle-small-caret-height / 2) - @dropdown-toggle-small-caret-offset-vertical;
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Mini                                                                                          */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-mini {
+				
+				.caret {
+					
+					border-width: 0px (@dropdown-toggle-mini-caret-width / 2) @dropdown-toggle-mini-caret-height (@dropdown-toggle-mini-caret-width / 2);
+					margin-top: (@button-mini-text-line-height / 2) - (@dropdown-toggle-mini-caret-height / 2) - @dropdown-toggle-mini-caret-offset-vertical;
 					
 				}
 				
@@ -1039,54 +1558,6 @@
 						border-bottom-color: @button-default-inverse-active-text-color;
 						
 					}
-					
-				}
-				
-			}
-			
-			/* ---------------------------------------------------------------------------------------------------- */
-			/* Button Large                                                                                         */
-			/* ---------------------------------------------------------------------------------------------------- */
-			
-			&.button-large {
-				
-				.caret {
-					
-					border-width: 0px @dropdown-toggle-large-caret-width @dropdown-toggle-large-caret-height @dropdown-toggle-large-caret-width;
-					margin-top: (@button-large-text-line-height / 2) - (@dropdown-toggle-large-caret-height / 2) - @dropdown-toggle-large-caret-offset-top;
-					
-					
-				}
-				
-			}
-			
-			/* ---------------------------------------------------------------------------------------------------- */
-			/* Button Small                                                                                         */
-			/* ---------------------------------------------------------------------------------------------------- */
-			
-			&.button-small {
-				
-				.caret {
-					
-					border-width: 0px @dropdown-toggle-small-caret-width @dropdown-toggle-small-caret-height @dropdown-toggle-small-caret-width;
-					margin-top: (@button-small-text-line-height / 2) - (@dropdown-toggle-small-caret-height / 2) - @dropdown-toggle-small-caret-offset-top;
-					
-					
-				}
-				
-			}
-			
-			/* ---------------------------------------------------------------------------------------------------- */
-			/* Button Mini                                                                                          */
-			/* ---------------------------------------------------------------------------------------------------- */
-			
-			&.button-mini {
-				
-				.caret {
-					
-					border-width: 0px @dropdown-toggle-mini-caret-width @dropdown-toggle-mini-caret-height @dropdown-toggle-mini-caret-width;
-					margin-top: (@button-mini-text-line-height / 2) - (@dropdown-toggle-mini-caret-height / 2) - @dropdown-toggle-mini-caret-offset-top;
-					
 					
 				}
 				
@@ -1488,6 +1959,208 @@
 		
 	}
 	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Dropup Open                                                                                          */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.open {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Dropdown Toggle                                                                                      */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.dropdown-toggle {
+			
+			&.button {
+				
+				.caret {
+					
+					border-bottom-color: @button-default-active-text-color;
+					
+				}
+				
+				// Link
+				
+				&.button-link {
+					
+					.caret {
+						
+						border-bottom-color: @button-default-link-active-text-color;
+						
+					}
+					
+				}
+				
+				// Inverse
+				
+				&.inverse {
+					
+					.caret {
+						
+						border-bottom-color: @button-default-inverse-active-text-color;
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Primary                                                                                       */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-primary {
+					
+					.caret {
+						
+						border-bottom-color: @button-primary-active-text-color;
+						
+					}
+					
+					// Link
+					
+					&.button-link {
+						
+						.caret {
+							
+							border-bottom-color: @button-primary-link-active-text-color;
+							
+						}
+						
+					}
+					
+					// Inverse
+					
+					&.inverse {
+						
+						.caret {
+							
+							border-bottom-color: @button-primary-inverse-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Success                                                                                       */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-success {
+					
+					.caret {
+						
+						border-bottom-color: @button-success-active-text-color;
+						
+					}
+					
+					// Link
+					
+					&.button-link {
+						
+						.caret {
+							
+							border-bottom-color: @button-success-link-active-text-color;
+							
+						}
+						
+					}
+					
+					// Inverse
+					
+					&.inverse {
+						
+						.caret {
+							
+							border-bottom-color: @button-success-inverse-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Warning                                                                                       */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-warning {
+					
+					.caret {
+						
+						border-bottom-color: @button-warning-active-text-color;
+						
+					}
+					
+					// Link
+					
+					&.button-link {
+						
+						.caret {
+							
+							border-bottom-color: @button-warning-link-active-text-color;
+							
+						}
+						
+					}
+					
+					// Inverse
+					
+					&.inverse {
+						
+						.caret {
+							
+							border-bottom-color: @button-warning-inverse-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Danger                                                                                        */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-danger {
+					
+					.caret {
+						
+						border-bottom-color: @button-danger-active-text-color;
+						
+					}
+					
+					// Link
+					
+					&.button-link {
+						
+						.caret {
+							
+							border-bottom-color: @button-danger-link-active-text-color;
+							
+						}
+						
+					}
+					
+					// Inverse
+					
+					&.inverse {
+						
+						.caret {
+							
+							border-bottom-color: @button-danger-inverse-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
 }
 
 
@@ -1527,174 +2200,6 @@
 
 
 
-
-
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Hover/Focus state                                                         */
-/*                                                                                                      */
-/* ==================================================================================================== */
-/*
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus,
-.dropdown-submenu:hover > a,
-.dropdown-submenu:focus > a {
-	
-	text-decoration: none;
-	color: @dropdownLinkColorHover;
-	background: @dropdownLinkBackgroundHover;
-	z-index: @z-index-dropdown + 1;
-	
-}
-
-.dropdown-menu > li.danger > a:hover,
-.dropdown-menu > li.danger > a:focus {
-	
-	color: @dropdownLinkDangerColorHover;
-	background: @dropdownLinkDangerBackgroundHover;
-	
-}
-
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
-	
-	color: @dropdownLinkColorActive;
-	text-decoration: none;
-	outline: 0;
-	background: @dropdownLinkBackgroundActive;
-	z-index: @z-index-dropdown + 1;
-	
-}
-
-.dropdown-menu > .danger.active > a,
-.dropdown-menu > .danger.active > a:hover,
-.dropdown-menu > .danger.active > a:focus {
-	
-	color: @dropdownLinkDangerColorActive;
-	background: @dropdownLinkDangerBackgroundActive;
-	
-}
-
-.dropdown-menu > .disabled > a,
-.dropdown-menu > .disabled > a:hover,
-.dropdown-menu > .disabled > a:focus {
-	
-	text-decoration: none;
-	color: @dropdownLinkColorDisabled;
-	background: @dropdownLinkBackgroundDisabled;
-	z-index: @z-index-dropdown + 1;
-	
-}
-
-.dropdown-menu > .danger.disabled > a,
-.dropdown-menu > .danger.disabled > a:hover,
-.dropdown-menu > .danger.disabled > a:focus {
-	
-	text-decoration: none;
-	color: @dropdownLinkDangerColorDisabled;
-	background: @dropdownLinkDangerBackgroundDisabled;
-	
-}
-
-.dropdown-menu > .disabled > a:hover,
-.dropdown-menu > .disabled > a:focus {
-	
-	text-decoration: none;
-	background: @dropdownLinkBackgroundDisabled;
-	.reset-filter();
-	cursor: default;
-	
-}
-*/
-
-
-
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Submenus                                                                                             */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-.dropdown-submenu {
-	
-	position: relative;
-	
-}
-
-.dropdown-submenu > .dropdown-menu {
-	
-	top: 0px;
-	left: 100%;
-	margin-top: 0px;
-	margin-left: 1px;
-	.border-radius(@dropdownBorderRadius);
-	position: absolute;
-	z-index: @z-index-dropdown + 5;
-	
-}
-
-.dropdown-submenu:hover > .dropdown-menu {
-	
-	display: block;
-	
-}
-
-.dropup .dropdown-submenu > .dropdown-menu {
-	
-	top: auto;
-	bottom: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	.border-radius(@dropdownBorderRadius);
-	
-}
-
-.dropdown-submenu > a:after {
-	
-	display: block;
-	content: " ";
-	float: right;
-	width: 0;
-	height: 0;
-	border-color: transparent;
-	border-style: solid;
-	border-width: 5px 0 5px 7px;
-	border-left-color: darken(@dropdownBackground, 20%);
-	margin-top: (@dropdownLinkHeight / 2) - (12 / 2);
-	margin-right: 0px;
-	
-}
-
-.dropdown-submenu:hover > a:after {
-	
-	border-left-color: @dropdownLinkColorHover;
-	
-}
-
-.dropdown-submenu.pull-left {
-	
-	float: none;
-	
-	> .dropdown-menu {
-		
-		width: 100%;
-		left: -100%;
-		margin-left: -1px;
-		.border-radius(@dropdownBorderRadius);
-		
-	}
-	
-}
-
-
-
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
@@ -1702,6 +2207,438 @@
 /* ==================================================================================================== */
 
 @media (min-width: @viewport-widescreen) {
+		
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Dropdown Arrow/Caret Sizing/Styling                                                                  */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.dropdown-toggle {
+		
+		&.button {
+			
+			.caret {
+				
+				border-width: (@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-widescreen) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-widescreen) / 2);
+				margin-top: ((@button-text-line-height * @button-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+				margin-left: (@dropdown-toggle-caret-offset-horizontal * @dropdown-toggle-caret-responsive-ratio-widescreen);
+				
+				&.caret-solo {
+					
+					margin-left: 0px;
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Large                                                                                         */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-large {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2);
+					margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-responsive-ratio-widescreen);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Small                                                                                         */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-small {
+				
+				.caret {
+				
+					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2);
+					margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-responsive-ratio-widescreen);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Mini                                                                                          */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-mini {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2);
+					margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-responsive-ratio-widescreen);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Button Group Arrow/Caret Sizing                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.button-group {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Button Large                                                                                         */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-group-large {
+			
+			.button {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2);
+					margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-responsive-ratio-widescreen);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			&.dropup,
+			.dropup {
+				
+				.button {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2);
+						margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Button Small                                                                                         */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-group-small {
+			
+			.button {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2);
+					margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-responsive-ratio-widescreen);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			&.dropup,
+			.dropup {
+				
+				.button {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2);
+						margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Button Mini                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-group-mini {
+			
+			.button {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2);
+					margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-responsive-ratio-widescreen);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			&.dropup,
+			.dropup {
+				
+				.button {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2);
+						margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Dropdown Menu                                                                                        */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.dropdown-menu {
+		
+		min-width: @dropdown-menu-minimum-width * @dropdown-menu-responsive-ratio-widescreen;
+		padding: (@dropdown-menu-padding-vertical * @dropdown-menu-responsive-ratio-widescreen) (@dropdown-menu-padding-horizontal * @dropdown-menu-responsive-ratio-widescreen);
+		
+		.divider {
+			
+			margin: (@dropdown-divider-margin-vertical * @dropdown-menu-responsive-ratio-widescreen) (@dropdown-divider-margin-horizontal * @dropdown-menu-responsive-ratio-widescreen);
+			    
+		}
+		
+		> li {
+			
+			&.dropdown-header {
+				
+				.block-padding-vertical(@dropdown-header-height * @dropdown-header-responsive-ratio-widescreen, @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-widescreen);
+				padding-left: @dropdown-header-padding-horizontal * @dropdown-header-responsive-ratio-widescreen;
+				padding-right: @dropdown-header-padding-horizontal * @dropdown-header-responsive-ratio-widescreen;
+				font-size: @dropdown-header-text-font-size * @dropdown-header-responsive-ratio-widescreen;
+				line-height: @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-widescreen;
+				*line-height:  @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-widescreen;
+				
+			}
+			
+			> a {
+				
+				.block-padding-vertical(@dropdown-row-height * @dropdown-row-responsive-ratio-widescreen, @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-widescreen);
+				padding-left: @dropdown-row-padding-horizontal * @dropdown-row-responsive-ratio-widescreen;
+				padding-right: @dropdown-row-padding-horizontal * @dropdown-row-responsive-ratio-widescreen;
+				font-size: @dropdown-row-text-font-size * @dropdown-row-responsive-ratio-widescreen;
+				line-height: @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-widescreen;
+				*line-height:  @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-widescreen;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Dropdown Submenus                                                                                    */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.dropdown-submenu {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Submenu                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		> .dropdown-menu {
+			
+			margin-top: @dropdown-submenu-offset-vertical * @dropdown-menu-responsive-ratio-widescreen;
+			margin-left: @dropdown-submenu-offset-horizontal * @dropdown-menu-responsive-ratio-widescreen;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Submenu Caret                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		> a {
+			
+			&:after {
+				
+				border-width: ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-widescreen)/ 2) 0px ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-widescreen) / 2) (@dropdown-row-caret-width * @dropdown-row-responsive-ratio-widescreen);
+				margin-top: ((@dropdown-row-text-line-height * @dropdown-row-responsive-ratio-widescreen) / 2) - ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-widescreen) / 2);
+				margin-right: (@dropdown-row-caret-offset-horizontal * @dropdown-row-responsive-ratio-widescreen);
+				
+			}
+			
+		}
+		
+		&.pull-left {
+			
+			float: none;
+			
+			> .dropdown-menu {
+				
+				margin-left: -@dropdown-submenu-offset-horizontal * @dropdown-menu-responsive-ratio-widescreen;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Drop-ups                                                                                             */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.dropup {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Dropdown Menu                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.dropdown-menu {
+			
+			margin-top: 0px;
+			margin-bottom: @dropdown-menu-offset-vertical * @dropdown-menu-responsive-ratio-widescreen;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Dropup Submenu                                                                                       */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.dropdown-submenu {
+			
+			> .dropdown-menu {
+				
+				margin-top: 0px;
+				margin-bottom: @dropdown-submenu-offset-vertical * @dropdown-menu-responsive-ratio-widescreen;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Dropdown Toggle                                                                                      */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.dropdown-toggle {
+			
+			&.button {
+				
+				.caret {
+					
+					border-width: 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-widescreen) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-widescreen) / 2);
+					margin-top: ((@button-text-line-height * @button-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Large                                                                                         */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-large {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2);
+						margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Small                                                                                         */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-small {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2);
+						margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Mini                                                                                          */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-mini {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2);
+						margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
 	
 }
 
@@ -1714,6 +2651,438 @@
 /* ==================================================================================================== */
 
 @media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
+		
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Dropdown Arrow/Caret Sizing/Styling                                                                  */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.dropdown-toggle {
+		
+		&.button {
+			
+			.caret {
+				
+				border-width: (@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-tablet) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-tablet) / 2);
+				margin-top: ((@button-text-line-height * @button-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+				margin-left: (@dropdown-toggle-caret-offset-horizontal * @dropdown-toggle-caret-responsive-ratio-tablet);
+				
+				&.caret-solo {
+					
+					margin-left: 0px;
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Large                                                                                         */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-large {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2);
+					margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-responsive-ratio-tablet);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Small                                                                                         */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-small {
+				
+				.caret {
+				
+					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2);
+					margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-responsive-ratio-tablet);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Mini                                                                                          */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-mini {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2);
+					margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-responsive-ratio-tablet);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Button Group Arrow/Caret Sizing                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.button-group {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Button Large                                                                                         */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-group-large {
+			
+			.button {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2);
+					margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-responsive-ratio-tablet);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			&.dropup,
+			.dropup {
+				
+				.button {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2);
+						margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Button Small                                                                                         */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-group-small {
+			
+			.button {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2);
+					margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-responsive-ratio-tablet);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			&.dropup,
+			.dropup {
+				
+				.button {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2);
+						margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Button Mini                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-group-mini {
+			
+			.button {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2);
+					margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-responsive-ratio-tablet);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			&.dropup,
+			.dropup {
+				
+				.button {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2);
+						margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Dropdown Menu                                                                                        */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.dropdown-menu {
+		
+		min-width: @dropdown-menu-minimum-width * @dropdown-menu-responsive-ratio-tablet;
+		padding: (@dropdown-menu-padding-vertical * @dropdown-menu-responsive-ratio-tablet) (@dropdown-menu-padding-horizontal * @dropdown-menu-responsive-ratio-tablet);
+		
+		.divider {
+			
+			margin: (@dropdown-divider-margin-vertical * @dropdown-menu-responsive-ratio-tablet) (@dropdown-divider-margin-horizontal * @dropdown-menu-responsive-ratio-tablet);
+			    
+		}
+		
+		> li {
+			
+			&.dropdown-header {
+				
+				.block-padding-vertical(@dropdown-header-height * @dropdown-header-responsive-ratio-tablet, @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-tablet);
+				padding-left: @dropdown-header-padding-horizontal * @dropdown-header-responsive-ratio-tablet;
+				padding-right: @dropdown-header-padding-horizontal * @dropdown-header-responsive-ratio-tablet;
+				font-size: @dropdown-header-text-font-size * @dropdown-header-responsive-ratio-tablet;
+				line-height: @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-tablet;
+				*line-height:  @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-tablet;
+				
+			}
+			
+			> a {
+				
+				.block-padding-vertical(@dropdown-row-height * @dropdown-row-responsive-ratio-tablet, @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-tablet);
+				padding-left: @dropdown-row-padding-horizontal * @dropdown-row-responsive-ratio-tablet;
+				padding-right: @dropdown-row-padding-horizontal * @dropdown-row-responsive-ratio-tablet;
+				font-size: @dropdown-row-text-font-size * @dropdown-row-responsive-ratio-tablet;
+				line-height: @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-tablet;
+				*line-height:  @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-tablet;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Dropdown Submenus                                                                                    */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.dropdown-submenu {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Submenu                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		> .dropdown-menu {
+			
+			margin-top: @dropdown-submenu-offset-vertical * @dropdown-menu-responsive-ratio-tablet;
+			margin-left: @dropdown-submenu-offset-horizontal * @dropdown-menu-responsive-ratio-tablet;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Submenu Caret                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		> a {
+			
+			&:after {
+				
+				border-width: ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-tablet)/ 2) 0px ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-tablet) / 2) (@dropdown-row-caret-width * @dropdown-row-responsive-ratio-tablet);
+				margin-top: ((@dropdown-row-text-line-height * @dropdown-row-responsive-ratio-tablet) / 2) - ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-tablet) / 2);
+				margin-right: (@dropdown-row-caret-offset-horizontal * @dropdown-row-responsive-ratio-tablet);
+				
+			}
+			
+		}
+		
+		&.pull-left {
+			
+			float: none;
+			
+			> .dropdown-menu {
+				
+				margin-left: -@dropdown-submenu-offset-horizontal * @dropdown-menu-responsive-ratio-tablet;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Drop-ups                                                                                             */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.dropup {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Dropdown Menu                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.dropdown-menu {
+			
+			margin-top: 0px;
+			margin-bottom: @dropdown-menu-offset-vertical * @dropdown-menu-responsive-ratio-tablet;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Dropup Submenu                                                                                       */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.dropdown-submenu {
+			
+			> .dropdown-menu {
+				
+				margin-top: 0px;
+				margin-bottom: @dropdown-submenu-offset-vertical * @dropdown-menu-responsive-ratio-tablet;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Dropdown Toggle                                                                                      */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.dropdown-toggle {
+			
+			&.button {
+				
+				.caret {
+					
+					border-width: 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-tablet) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-tablet) / 2);
+					margin-top: ((@button-text-line-height * @button-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Large                                                                                         */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-large {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2);
+						margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Small                                                                                         */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-small {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2);
+						margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Mini                                                                                          */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-mini {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2);
+						margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
 	
 }
 
@@ -1726,6 +3095,438 @@
 /* ==================================================================================================== */
 
 @media (max-width: @viewport-mobile-landscape-max) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Dropdown Arrow/Caret Sizing/Styling                                                                  */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.dropdown-toggle {
+		
+		&.button {
+			
+			.caret {
+				
+				border-width: (@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-mobile) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-mobile) / 2);
+				margin-top: ((@button-text-line-height * @button-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+				margin-left: (@dropdown-toggle-caret-offset-horizontal * @dropdown-toggle-caret-responsive-ratio-mobile);
+				
+				&.caret-solo {
+					
+					margin-left: 0px;
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Large                                                                                         */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-large {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2);
+					margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-responsive-ratio-mobile);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Small                                                                                         */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-small {
+				
+				.caret {
+				
+					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2);
+					margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-responsive-ratio-mobile);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Mini                                                                                          */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-mini {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2);
+					margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-responsive-ratio-mobile);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Button Group Arrow/Caret Sizing                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.button-group {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Button Large                                                                                         */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-group-large {
+			
+			.button {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2);
+					margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-responsive-ratio-mobile);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			&.dropup,
+			.dropup {
+				
+				.button {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2);
+						margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Button Small                                                                                         */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-group-small {
+			
+			.button {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2);
+					margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-responsive-ratio-mobile);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			&.dropup,
+			.dropup {
+				
+				.button {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2);
+						margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Button Mini                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.button-group-mini {
+			
+			.button {
+				
+				.caret {
+					
+					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2);
+					margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-responsive-ratio-mobile);
+					
+					&.caret-solo {
+						
+						margin-left: 0px;
+						
+					}
+					
+				}
+				
+			}
+			
+			&.dropup,
+			.dropup {
+				
+				.button {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2);
+						margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Dropdown Menu                                                                                        */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.dropdown-menu {
+		
+		min-width: @dropdown-menu-minimum-width * @dropdown-menu-responsive-ratio-mobile;
+		padding: (@dropdown-menu-padding-vertical * @dropdown-menu-responsive-ratio-mobile) (@dropdown-menu-padding-horizontal * @dropdown-menu-responsive-ratio-mobile);
+		
+		.divider {
+			
+			margin: (@dropdown-divider-margin-vertical * @dropdown-menu-responsive-ratio-mobile) (@dropdown-divider-margin-horizontal * @dropdown-menu-responsive-ratio-mobile);
+			    
+		}
+		
+		> li {
+			
+			&.dropdown-header {
+				
+				.block-padding-vertical(@dropdown-header-height * @dropdown-header-responsive-ratio-mobile, @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-mobile);
+				padding-left: @dropdown-header-padding-horizontal * @dropdown-header-responsive-ratio-mobile;
+				padding-right: @dropdown-header-padding-horizontal * @dropdown-header-responsive-ratio-mobile;
+				font-size: @dropdown-header-text-font-size * @dropdown-header-responsive-ratio-mobile;
+				line-height: @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-mobile;
+				*line-height:  @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-mobile;
+				
+			}
+			
+			> a {
+				
+				.block-padding-vertical(@dropdown-row-height * @dropdown-row-responsive-ratio-mobile, @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-mobile);
+				padding-left: @dropdown-row-padding-horizontal * @dropdown-row-responsive-ratio-mobile;
+				padding-right: @dropdown-row-padding-horizontal * @dropdown-row-responsive-ratio-mobile;
+				font-size: @dropdown-row-text-font-size * @dropdown-row-responsive-ratio-mobile;
+				line-height: @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-mobile;
+				*line-height:  @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-mobile;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Dropdown Submenus                                                                                    */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.dropdown-submenu {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Submenu                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		> .dropdown-menu {
+			
+			margin-top: @dropdown-submenu-offset-vertical * @dropdown-menu-responsive-ratio-mobile;
+			margin-left: @dropdown-submenu-offset-horizontal * @dropdown-menu-responsive-ratio-mobile;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Submenu Caret                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		> a {
+			
+			&:after {
+				
+				border-width: ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-mobile)/ 2) 0px ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-mobile) / 2) (@dropdown-row-caret-width * @dropdown-row-responsive-ratio-mobile);
+				margin-top: ((@dropdown-row-text-line-height * @dropdown-row-responsive-ratio-mobile) / 2) - ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-mobile) / 2);
+				margin-right: (@dropdown-row-caret-offset-horizontal * @dropdown-row-responsive-ratio-mobile);
+				
+			}
+			
+		}
+		
+		&.pull-left {
+			
+			float: none;
+			
+			> .dropdown-menu {
+				
+				margin-left: -@dropdown-submenu-offset-horizontal * @dropdown-menu-responsive-ratio-mobile;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Drop-ups                                                                                             */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.dropup {
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Dropdown Menu                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.dropdown-menu {
+			
+			margin-top: 0px;
+			margin-bottom: @dropdown-menu-offset-vertical * @dropdown-menu-responsive-ratio-mobile;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Dropup Submenu                                                                                       */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.dropdown-submenu {
+			
+			> .dropdown-menu {
+				
+				margin-top: 0px;
+				margin-bottom: @dropdown-submenu-offset-vertical * @dropdown-menu-responsive-ratio-mobile;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Dropdown Toggle                                                                                      */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.dropdown-toggle {
+			
+			&.button {
+				
+				.caret {
+					
+					border-width: 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-mobile) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-mobile) / 2);
+					margin-top: ((@button-text-line-height * @button-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Large                                                                                         */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-large {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2);
+						margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Small                                                                                         */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-small {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2);
+						margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+						
+					}
+					
+				}
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Button Mini                                                                                          */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.button-mini {
+					
+					.caret {
+						
+						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2);
+						margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
 	
 }
 

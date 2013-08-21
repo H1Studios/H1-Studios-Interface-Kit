@@ -42,19 +42,23 @@
 			
 			<div class="code-example flush-bottom">
 				
-				<div class="dropdown anchor">
+				<div class="clearfix">
 					
-					<a id="dropdownMenu1" href="#" role="button" class="dropdown-toggle hide" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-					
-					<ul class="dropdown-menu anchor" role="menu" aria-labelledby="dropdownMenu1">
+					<div class="dropdown anchor">
 						
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-						<li role="presentation" class="divider"></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+						<a id="dropdownMenu1" href="#" role="button" class="dropdown-toggle hide" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 						
-					</ul>
+						<ul class="dropdown-menu anchor" role="menu" aria-labelledby="dropdownMenu1">
+							
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+							
+						</ul>
+						
+					</div>
 					
 				</div>
 				
@@ -113,21 +117,25 @@
 			
 			<div class="code-example flush-bottom">
 				
-				<div class="dropdown anchor">
+				<div class="clearfix">
 					
-					<a id="dropdownMenu2" href="#" role="button" class="dropdown-toggle hide" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-					
-					<ul class="dropdown-menu anchor" role="menu" aria-labelledby="dropdownMenu2">
+					<div class="dropdown anchor">
 						
-						<li role="presentation" class="dropdown-header">Dropdown header</li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-						<li role="presentation" class="divider"></li>
-						<li role="presentation" class="dropdown-header">Dropdown header</li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+						<a id="dropdownMenu2" href="#" role="button" class="dropdown-toggle hide" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 						
-					</ul>
+						<ul class="dropdown-menu anchor" role="menu" aria-labelledby="dropdownMenu2">
+							
+							<li role="presentation" class="dropdown-header">Dropdown header</li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation" class="dropdown-header">Dropdown header</li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+							
+						</ul>
+						
+					</div>
 					
 				</div>
 				
@@ -161,29 +169,244 @@
 			
 			<div class="code-example flush-bottom">
 				
-				<div class="dropdown anchor">
+				<div class="clearfix">
 					
-					<a id="dropdownMenu3" href="#" role="button" class="dropdown-toggle hide" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-					
-					<ul class="dropdown-menu anchor" role="menu" aria-labelledby="dropdownMenu3">
+					<div class="dropdown anchor">
 						
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Regular link</a></li>
-						<li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another link</a></li>
+						<a id="dropdownMenu3" href="#" role="button" class="dropdown-toggle hide" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 						
-					</ul>
+						<ul class="dropdown-menu anchor" role="menu" aria-labelledby="dropdownMenu3">
+							
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Regular link</a></li>
+							<li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another link</a></li>
+							
+						</ul>
+						
+					</div>
 					
 				</div>
 				
 			</div>
 			
-<pre class="prettyprint linenums flush-bottom">
+<pre class="prettyprint linenums">
 &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3"&gt;
   &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Regular link&lt;/a&gt;&lt;/li&gt;
   &lt;li role="presentation" class="disabled"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
   &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Another link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
+			
+			<!-- ================================================== -->
+			<!-- ==================== SUB MENUS =================== -->
+			<!-- ================================================== -->
+			
+			<h3>
+				
+				Sub Menus on Dropdowns
+				
+			</h3>
+			
+			<p>
+				
+				Add an extra level of dropdown menus, appearing on hover like those of OS X, with some simple markup additions. Add <code>.dropdown-submenu</code> to any <code>li</code> in an existing dropdown menu for automatic styling.
+				
+			</p>
+			
+			<div class="code-example flush-bottom">
+				
+				<div class="clearfix">
+					
+					<div class="dropdown anchor pull-left">
+						
+						<a id="dropdownMenu3" href="#" role="button" class="dropdown-toggle hide" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+						
+						<ul class="dropdown-menu anchor" role="menu" aria-labelledby="dLabel">
+							
+							<li role="presentation">
+								
+								<a role="menuitem" tabindex="-1" href="#">Regular link</a>
+								
+							</li>
+							
+							<li role="presentation">
+								
+								<a role="menuitem" tabindex="-1" href="#">Another link</a>
+								
+							</li>
+							
+							<li role="presentation">
+								
+								<a role="menuitem" tabindex="-1" href="#">Something Else Here</a>
+								
+							</li>
+							
+							<li role="presentation" class="divider"></li>
+							
+							<li class="dropdown-submenu">
+								
+								<a role="menuitem" tabindex="-1" href="#">More options</a>
+								
+								<ul class="dropdown-menu">
+									
+									<li role="presentation">
+										
+										<a role="menuitem" tabindex="-1" href="#">Regular link</a>
+										
+									</li>
+									
+									<li role="presentation">
+										
+										<a role="menuitem" tabindex="-1" href="#">Another link</a>
+										
+									</li>
+									
+									<li role="presentation">
+										
+										<a role="menuitem" tabindex="-1" href="#">Something Else Here</a>
+										
+									</li>
+									
+								</ul>
+								
+							</li>
+							
+						</ul>
+						
+					</div>
+					
+					<div class="dropup anchor pull-left">
+						
+						<a id="dropdownMenu3" href="#" role="button" class="dropdown-toggle hide" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+						
+						<ul class="dropdown-menu anchor" role="menu" aria-labelledby="dLabel">
+							
+							<li role="presentation">
+								
+								<a role="menuitem" tabindex="-1" href="#">Regular link</a>
+								
+							</li>
+							
+							<li role="presentation">
+								
+								<a role="menuitem" tabindex="-1" href="#">Another link</a>
+								
+							</li>
+							
+							<li role="presentation">
+								
+								<a role="menuitem" tabindex="-1" href="#">Something Else Here</a>
+								
+							</li>
+							
+							<li role="presentation" class="divider"></li>
+							
+							<li class="dropdown-submenu">
+								
+								<a role="menuitem" tabindex="-1" href="#">More options</a>
+								
+								<ul class="dropdown-menu">
+									
+									<li role="presentation">
+										
+										<a role="menuitem" tabindex="-1" href="#">Regular link</a>
+										
+									</li>
+									
+									<li role="presentation">
+										
+										<a role="menuitem" tabindex="-1" href="#">Another link</a>
+										
+									</li>
+									
+									<li role="presentation">
+										
+										<a role="menuitem" tabindex="-1" href="#">Something Else Here</a>
+										
+									</li>
+									
+								</ul>
+								
+							</li>
+							
+						</ul>
+						
+					</div>
+					
+					<div class="dropdown anchor pull-left">
+						
+						<a id="dropdownMenu3" href="#" role="button" class="dropdown-toggle hide" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+						
+						<ul class="dropdown-menu anchor" role="menu" aria-labelledby="dLabel">
+							
+							<li role="presentation">
+								
+								<a role="menuitem" tabindex="-1" href="#">Regular link</a>
+								
+							</li>
+							
+							<li role="presentation">
+								
+								<a role="menuitem" tabindex="-1" href="#">Another link</a>
+								
+							</li>
+							
+							<li role="presentation">
+								
+								<a role="menuitem" tabindex="-1" href="#">Something Else Here</a>
+								
+							</li>
+							
+							<li role="presentation" class="divider"></li>
+							
+							<li class="dropdown-submenu pull-left">
+								
+								<a role="menuitem" tabindex="-1" href="#">More options</a>
+								
+								<ul class="dropdown-menu">
+									
+									<li role="presentation">
+										
+										<a role="menuitem" tabindex="-1" href="#">Regular link</a>
+										
+									</li>
+									
+									<li role="presentation">
+										
+										<a role="menuitem" tabindex="-1" href="#">Another link</a>
+										
+									</li>
+									
+									<li role="presentation">
+										
+										<a role="menuitem" tabindex="-1" href="#">Something Else Here</a>
+										
+									</li>
+									
+								</ul>
+								
+							</li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+<pre class="prettyprint linenums flush-bottom">
+&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"&gt;
+  ...
+  &lt;li class="dropdown-submenu"&gt;
+    &lt;a tabindex="-1" href="#"&gt;More options&lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
 		</section>
 		
 		<hr class="tall">
@@ -766,83 +989,87 @@
 			
 			<div class="code-example flush-bottom">
 				
-				<div class="button-group">
+				<div class="button-toolbar flush-bottom">
 					
-					<button type="button" class="button button-default dropdown-toggle" data-toggle="dropdown">Default <span class="caret"></span></button>
-					
-					<ul class="dropdown-menu" role="menu">
+					<div class="button-group">
 						
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
+						<button type="button" class="button button-default dropdown-toggle" data-toggle="dropdown">Default <span class="caret"></span></button>
 						
-					</ul>
-					
-				</div>
-				
-				<div class="button-group">
-					
-					<button type="button" class="button button-primary dropdown-toggle" data-toggle="dropdown">Primary <span class="caret"></span></button>
+						<ul class="dropdown-menu" role="menu">
+							
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							
+						</ul>
 						
-					<ul class="dropdown-menu" role="menu">
+					</div>
+					
+					<div class="button-group">
 						
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
+						<button type="button" class="button button-primary dropdown-toggle" data-toggle="dropdown">Primary <span class="caret"></span></button>
+							
+						<ul class="dropdown-menu" role="menu">
+							
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							
+						</ul>
 						
-					</ul>
+					</div>
 					
-				</div>
-				
-				<div class="button-group">
-					
-					<button type="button" class="button button-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
-					
-					<ul class="dropdown-menu" role="menu">
+					<div class="button-group">
 						
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
+						<button type="button" class="button button-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
 						
-					</ul>
-					
-				</div>
-				
-				<div class="button-group">
-					
-					<button type="button" class="button button-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
-					
-					<ul class="dropdown-menu" role="menu">
+						<ul class="dropdown-menu" role="menu">
+							
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							
+						</ul>
 						
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-						
-					</ul>
+					</div>
 					
-				</div>
-				
-				<div class="button-group">
-					
-					<button type="button" class="button button-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
-					
-					<ul class="dropdown-menu" role="menu">
+					<div class="button-group">
 						
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
+						<button type="button" class="button button-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
 						
-					</ul>
+						<ul class="dropdown-menu" role="menu">
+							
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							
+						</ul>
+						
+					</div>
+					
+					<div class="button-group">
+						
+						<button type="button" class="button button-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
+						
+						<ul class="dropdown-menu" role="menu">
+							
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							
+						</ul>
+						
+					</div>
 					
 				</div>
 				

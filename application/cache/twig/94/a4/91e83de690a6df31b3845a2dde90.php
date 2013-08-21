@@ -72,19 +72,23 @@ class __TwigTemplate_94a491e83de690a6df31b3845a2dde90 extends Twig_Template
 \t\t\t
 \t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<div class=\"dropdown anchor\">
+\t\t\t\t<div class=\"clearfix\">
 \t\t\t\t\t
-\t\t\t\t\t<a id=\"dropdownMenu1\" href=\"#\" role=\"button\" class=\"dropdown-toggle hide\" data-toggle=\"dropdown\">Dropdown <b class=\"caret\"></b></a>
-\t\t\t\t\t
-\t\t\t\t\t<ul class=\"dropdown-menu anchor\" role=\"menu\" aria-labelledby=\"dropdownMenu1\">
+\t\t\t\t\t<div class=\"dropdown anchor\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Action</a></li>
-\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another action</a></li>
-\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Something else here</a></li>
-\t\t\t\t\t\t<li role=\"presentation\" class=\"divider\"></li>
-\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t<a id=\"dropdownMenu1\" href=\"#\" role=\"button\" class=\"dropdown-toggle hide\" data-toggle=\"dropdown\">Dropdown <b class=\"caret\"></b></a>
 \t\t\t\t\t\t
-\t\t\t\t\t</ul>
+\t\t\t\t\t\t<ul class=\"dropdown-menu anchor\" role=\"menu\" aria-labelledby=\"dropdownMenu1\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Action</a></li>
+\t\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another action</a></li>
+\t\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Something else here</a></li>
+\t\t\t\t\t\t\t<li role=\"presentation\" class=\"divider\"></li>
+\t\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
 \t\t\t\t\t
 \t\t\t\t</div>
 \t\t\t\t
@@ -143,21 +147,25 @@ class __TwigTemplate_94a491e83de690a6df31b3845a2dde90 extends Twig_Template
 \t\t\t
 \t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<div class=\"dropdown anchor\">
+\t\t\t\t<div class=\"clearfix\">
 \t\t\t\t\t
-\t\t\t\t\t<a id=\"dropdownMenu2\" href=\"#\" role=\"button\" class=\"dropdown-toggle hide\" data-toggle=\"dropdown\">Dropdown <b class=\"caret\"></b></a>
-\t\t\t\t\t
-\t\t\t\t\t<ul class=\"dropdown-menu anchor\" role=\"menu\" aria-labelledby=\"dropdownMenu2\">
+\t\t\t\t\t<div class=\"dropdown anchor\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<li role=\"presentation\" class=\"dropdown-header\">Dropdown header</li>
-\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Action</a></li>
-\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another action</a></li>
-\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Something else here</a></li>
-\t\t\t\t\t\t<li role=\"presentation\" class=\"divider\"></li>
-\t\t\t\t\t\t<li role=\"presentation\" class=\"dropdown-header\">Dropdown header</li>
-\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t<a id=\"dropdownMenu2\" href=\"#\" role=\"button\" class=\"dropdown-toggle hide\" data-toggle=\"dropdown\">Dropdown <b class=\"caret\"></b></a>
 \t\t\t\t\t\t
-\t\t\t\t\t</ul>
+\t\t\t\t\t\t<ul class=\"dropdown-menu anchor\" role=\"menu\" aria-labelledby=\"dropdownMenu2\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\" class=\"dropdown-header\">Dropdown header</li>
+\t\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Action</a></li>
+\t\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another action</a></li>
+\t\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Something else here</a></li>
+\t\t\t\t\t\t\t<li role=\"presentation\" class=\"divider\"></li>
+\t\t\t\t\t\t\t<li role=\"presentation\" class=\"dropdown-header\">Dropdown header</li>
+\t\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
 \t\t\t\t\t
 \t\t\t\t</div>
 \t\t\t\t
@@ -191,29 +199,244 @@ class __TwigTemplate_94a491e83de690a6df31b3845a2dde90 extends Twig_Template
 \t\t\t
 \t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<div class=\"dropdown anchor\">
+\t\t\t\t<div class=\"clearfix\">
 \t\t\t\t\t
-\t\t\t\t\t<a id=\"dropdownMenu3\" href=\"#\" role=\"button\" class=\"dropdown-toggle hide\" data-toggle=\"dropdown\">Dropdown <b class=\"caret\"></b></a>
-\t\t\t\t\t
-\t\t\t\t\t<ul class=\"dropdown-menu anchor\" role=\"menu\" aria-labelledby=\"dropdownMenu3\">
+\t\t\t\t\t<div class=\"dropdown anchor\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Regular link</a></li>
-\t\t\t\t\t\t<li role=\"presentation\" class=\"disabled\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Disabled link</a></li>
-\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another link</a></li>
+\t\t\t\t\t\t<a id=\"dropdownMenu3\" href=\"#\" role=\"button\" class=\"dropdown-toggle hide\" data-toggle=\"dropdown\">Dropdown <b class=\"caret\"></b></a>
 \t\t\t\t\t\t
-\t\t\t\t\t</ul>
+\t\t\t\t\t\t<ul class=\"dropdown-menu anchor\" role=\"menu\" aria-labelledby=\"dropdownMenu3\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Regular link</a></li>
+\t\t\t\t\t\t\t<li role=\"presentation\" class=\"disabled\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Disabled link</a></li>
+\t\t\t\t\t\t\t<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another link</a></li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
 \t\t\t\t\t
 \t\t\t\t</div>
 \t\t\t\t
 \t\t\t</div>
 \t\t\t
-<pre class=\"prettyprint linenums flush-bottom\">
+<pre class=\"prettyprint linenums\">
 &lt;ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"dropdownMenu3\"&gt;
   &lt;li role=\"presentation\"&gt;&lt;a role=\"menuitem\" tabindex=\"-1\" href=\"#\"&gt;Regular link&lt;/a&gt;&lt;/li&gt;
   &lt;li role=\"presentation\" class=\"disabled\"&gt;&lt;a role=\"menuitem\" tabindex=\"-1\" href=\"#\"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
   &lt;li role=\"presentation\"&gt;&lt;a role=\"menuitem\" tabindex=\"-1\" href=\"#\"&gt;Another link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
+\t\t\t
+\t\t\t<!-- ================================================== -->
+\t\t\t<!-- ==================== SUB MENUS =================== -->
+\t\t\t<!-- ================================================== -->
+\t\t\t
+\t\t\t<h3>
+\t\t\t\t
+\t\t\t\tSub Menus on Dropdowns
+\t\t\t\t
+\t\t\t</h3>
+\t\t\t
+\t\t\t<p>
+\t\t\t\t
+\t\t\t\tAdd an extra level of dropdown menus, appearing on hover like those of OS X, with some simple markup additions. Add <code>.dropdown-submenu</code> to any <code>li</code> in an existing dropdown menu for automatic styling.
+\t\t\t\t
+\t\t\t</p>
+\t\t\t
+\t\t\t<div class=\"code-example flush-bottom\">
+\t\t\t\t
+\t\t\t\t<div class=\"clearfix\">
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"dropdown anchor pull-left\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<a id=\"dropdownMenu3\" href=\"#\" role=\"button\" class=\"dropdown-toggle hide\" data-toggle=\"dropdown\">Dropdown <b class=\"caret\"></b></a>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<ul class=\"dropdown-menu anchor\" role=\"menu\" aria-labelledby=\"dLabel\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Regular link</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another link</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Something Else Here</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\" class=\"divider\"></li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li class=\"dropdown-submenu\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">More options</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Regular link</a>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another link</a>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Something Else Here</a>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"dropup anchor pull-left\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<a id=\"dropdownMenu3\" href=\"#\" role=\"button\" class=\"dropdown-toggle hide\" data-toggle=\"dropdown\">Dropdown <b class=\"caret\"></b></a>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<ul class=\"dropdown-menu anchor\" role=\"menu\" aria-labelledby=\"dLabel\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Regular link</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another link</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Something Else Here</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\" class=\"divider\"></li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li class=\"dropdown-submenu\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">More options</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Regular link</a>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another link</a>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Something Else Here</a>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"dropdown anchor pull-left\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<a id=\"dropdownMenu3\" href=\"#\" role=\"button\" class=\"dropdown-toggle hide\" data-toggle=\"dropdown\">Dropdown <b class=\"caret\"></b></a>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<ul class=\"dropdown-menu anchor\" role=\"menu\" aria-labelledby=\"dLabel\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Regular link</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another link</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Something Else Here</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li role=\"presentation\" class=\"divider\"></li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li class=\"dropdown-submenu pull-left\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">More options</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Regular link</a>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another link</a>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<li role=\"presentation\">
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Something Else Here</a>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t</div>
+\t\t\t\t
+\t\t\t</div>
+\t\t\t
+<pre class=\"prettyprint linenums flush-bottom\">
+&lt;ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"dLabel\"&gt;
+  ...
+  &lt;li class=\"dropdown-submenu\"&gt;
+    &lt;a tabindex=\"-1\" href=\"#\"&gt;More options&lt;/a&gt;
+    &lt;ul class=\"dropdown-menu\"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
 \t\t</section>
 \t\t
 \t\t<hr class=\"tall\">
@@ -796,83 +1019,87 @@ class __TwigTemplate_94a491e83de690a6df31b3845a2dde90 extends Twig_Template
 \t\t\t
 \t\t\t<div class=\"code-example flush-bottom\">
 \t\t\t\t
-\t\t\t\t<div class=\"button-group\">
+\t\t\t\t<div class=\"button-toolbar flush-bottom\">
 \t\t\t\t\t
-\t\t\t\t\t<button type=\"button\" class=\"button button-default dropdown-toggle\" data-toggle=\"dropdown\">Default <span class=\"caret\"></span></button>
-\t\t\t\t\t
-\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">
+\t\t\t\t\t<div class=\"button-group\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<li><a href=\"#\">Action</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>
-\t\t\t\t\t\t<li class=\"divider\"></li>
-\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t<button type=\"button\" class=\"button button-default dropdown-toggle\" data-toggle=\"dropdown\">Default <span class=\"caret\"></span></button>
 \t\t\t\t\t\t
-\t\t\t\t\t</ul>
-\t\t\t\t\t
-\t\t\t\t</div>
-\t\t\t\t
-\t\t\t\t<div class=\"button-group\">
-\t\t\t\t\t
-\t\t\t\t\t<button type=\"button\" class=\"button button-primary dropdown-toggle\" data-toggle=\"dropdown\">Primary <span class=\"caret\"></span></button>
+\t\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li><a href=\"#\">Action</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>
+\t\t\t\t\t\t\t<li class=\"divider\"></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t
-\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">
+\t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"button-group\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<li><a href=\"#\">Action</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>
-\t\t\t\t\t\t<li class=\"divider\"></li>
-\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t<button type=\"button\" class=\"button button-primary dropdown-toggle\" data-toggle=\"dropdown\">Primary <span class=\"caret\"></span></button>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li><a href=\"#\">Action</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>
+\t\t\t\t\t\t\t<li class=\"divider\"></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t
-\t\t\t\t\t</ul>
+\t\t\t\t\t</div>
 \t\t\t\t\t
-\t\t\t\t</div>
-\t\t\t\t
-\t\t\t\t<div class=\"button-group\">
-\t\t\t\t\t
-\t\t\t\t\t<button type=\"button\" class=\"button button-success dropdown-toggle\" data-toggle=\"dropdown\">Success <span class=\"caret\"></span></button>
-\t\t\t\t\t
-\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">
+\t\t\t\t\t<div class=\"button-group\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<li><a href=\"#\">Action</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>
-\t\t\t\t\t\t<li class=\"divider\"></li>
-\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t<button type=\"button\" class=\"button button-success dropdown-toggle\" data-toggle=\"dropdown\">Success <span class=\"caret\"></span></button>
 \t\t\t\t\t\t
-\t\t\t\t\t</ul>
-\t\t\t\t\t
-\t\t\t\t</div>
-\t\t\t\t
-\t\t\t\t<div class=\"button-group\">
-\t\t\t\t\t
-\t\t\t\t\t<button type=\"button\" class=\"button button-warning dropdown-toggle\" data-toggle=\"dropdown\">Warning <span class=\"caret\"></span></button>
-\t\t\t\t\t
-\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">
+\t\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li><a href=\"#\">Action</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>
+\t\t\t\t\t\t\t<li class=\"divider\"></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<li><a href=\"#\">Action</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>
-\t\t\t\t\t\t<li class=\"divider\"></li>
-\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>
-\t\t\t\t\t\t
-\t\t\t\t\t</ul>
+\t\t\t\t\t</div>
 \t\t\t\t\t
-\t\t\t\t</div>
-\t\t\t\t
-\t\t\t\t<div class=\"button-group\">
-\t\t\t\t\t
-\t\t\t\t\t<button type=\"button\" class=\"button button-danger dropdown-toggle\" data-toggle=\"dropdown\">Danger <span class=\"caret\"></span></button>
-\t\t\t\t\t
-\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">
+\t\t\t\t\t<div class=\"button-group\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<li><a href=\"#\">Action</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>
-\t\t\t\t\t\t<li class=\"divider\"></li>
-\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t<button type=\"button\" class=\"button button-warning dropdown-toggle\" data-toggle=\"dropdown\">Warning <span class=\"caret\"></span></button>
 \t\t\t\t\t\t
-\t\t\t\t\t</ul>
+\t\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li><a href=\"#\">Action</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>
+\t\t\t\t\t\t\t<li class=\"divider\"></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"button-group\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<button type=\"button\" class=\"button button-danger dropdown-toggle\" data-toggle=\"dropdown\">Danger <span class=\"caret\"></span></button>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<ul class=\"dropdown-menu\" role=\"menu\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li><a href=\"#\">Action</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>
+\t\t\t\t\t\t\t<li class=\"divider\"></li>
+\t\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
 \t\t\t\t\t
 \t\t\t\t</div>
 \t\t\t\t
