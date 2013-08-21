@@ -20,7 +20,7 @@
 	display: inline-block;
 	.ie7-inline-block();
 	font-size: 0;
-	vertical-align: middle;
+	vertical-align: top;
 	white-space: nowrap;
 	.ie7-restore-left-whitespace();
 	
@@ -30,15 +30,347 @@
 		
 	}
 	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Button Group Large                                                                                   */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.button-group-large {
+		
+		.button {
+			
+			.block-padding-vertical(@button-large-height, @button-large-text-line-height);
+			padding-left: @button-large-padding-horizontal;
+			padding-right: @button-large-padding-horizontal;
+			.border-radius(@button-large-border-radius);
+			border: @button-large-border-width;
+			font-size: @button-large-text-font-size;
+			font-weight: @button-large-text-font-weight;
+			font-style: @button-large-text-font-style;
+			line-height: @button-large-text-line-height;
+			text-transform: @button-large-text-transform;
+			
+			[class^="icon-"] {
+						
+				&.icon-mini {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+						
+				&.icon-small {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+						
+				&.icon-medium {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+						
+				&.icon-large {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+						
+				&.icon-jumbo {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+					
+			}
+			
+			&:not(:first-child) {
+				
+				&:not(:last-child) {
+					
+					&:not(.dropdown-toggle) {
+						
+						.border-radius(0px);
+						
+					}
+					
+				}
+				
+			}
+			
+			&:first-child {
+				
+				margin-left: 0px;
+				
+				&:not(:last-child) {
+					
+					&:not(.dropdown-toggle) {
+						
+						.border-top-right-radius(0px);
+						.border-bottom-right-radius(0px);
+						
+					}
+					
+				}
+				
+			}
+			
+			&:last-child {
+				
+				&:not(:first-child) {
+					
+					&:not(.dropdown-toggle) {
+						
+						.border-top-left-radius(0px);
+						.border-bottom-left-radius(0px);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Button Group Small                                                                                   */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.button-group-small {
+		
+		.button {
+			
+			.block-padding-vertical(@button-small-height, @button-small-text-line-height);
+			padding-left: @button-small-padding-horizontal;
+			padding-right: @button-small-padding-horizontal;
+			.border-radius(@button-small-border-radius);
+			border: @button-small-border-width;
+			font-size: @button-small-text-font-size;
+			font-weight: @button-small-text-font-weight;
+			font-style: @button-small-text-font-style;
+			line-height: @button-small-text-line-height;
+			text-transform: @button-small-text-transform;
+			
+			[class^="icon-"] {
+						
+				&.icon-mini {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+						
+				&.icon-small {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+						
+				&.icon-medium {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+						
+				&.icon-small {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+						
+				&.icon-jumbo {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+					
+			}
+			
+			&:not(:first-child) {
+				
+				&:not(:last-child) {
+					
+					&:not(.dropdown-toggle) {
+						
+						.border-radius(0px);
+						
+					}
+					
+				}
+				
+			}
+			
+			&:first-child {
+				
+				margin-left: 0px;
+				
+				&:not(:last-child) {
+					
+					&:not(.dropdown-toggle) {
+						
+						.border-top-right-radius(0px);
+						.border-bottom-right-radius(0px);
+						
+					}
+					
+				}
+				
+			}
+			
+			&:last-child {
+				
+				&:not(:first-child) {
+					
+					&:not(.dropdown-toggle) {
+						
+						.border-top-left-radius(0px);
+						.border-bottom-left-radius(0px);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Button Group Mini                                                                                    */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.button-group-mini {
+		
+		.button {
+			
+			.block-padding-vertical(@button-mini-height, @button-mini-text-line-height);
+			padding-left: @button-mini-padding-horizontal;
+			padding-right: @button-mini-padding-horizontal;
+			.border-radius(@button-mini-border-radius);
+			border: @button-mini-border-width;
+			font-size: @button-mini-text-font-size;
+			font-weight: @button-mini-text-font-weight;
+			font-style: @button-mini-text-font-style;
+			line-height: @button-mini-text-line-height;
+			text-transform: @button-mini-text-transform;
+			
+			[class^="icon-"] {
+						
+				&.icon-mini {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+						
+				&.icon-small {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+						
+				&.icon-medium {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+						
+				&.icon-mini {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+						
+				&.icon-jumbo {
+					
+					margin-top: 0px;
+					margin-bottom: 0px;
+					
+				}
+					
+			}
+			
+			&:not(:first-child) {
+				
+				&:not(:last-child) {
+					
+					&:not(.dropdown-toggle) {
+						
+						.border-radius(0px);
+						
+					}
+					
+				}
+				
+			}
+			
+			&:first-child {
+				
+				margin-left: 0px;
+				
+				&:not(:last-child) {
+					
+					&:not(.dropdown-toggle) {
+						
+						.border-top-right-radius(0px);
+						.border-bottom-right-radius(0px);
+						
+					}
+					
+				}
+				
+			}
+			
+			&:last-child {
+				
+				&:not(:first-child) {
+					
+					&:not(.dropdown-toggle) {
+						
+						.border-top-left-radius(0px);
+						.border-bottom-left-radius(0px);
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Button                                                                                               */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
 	> .button {
 		
 		position: relative;
-		.border-radius(0);
 		
-		.caret {
+		+ .button {
 			
-			margin-top: 8px;
-			margin-left: 0;
+			margin-left: @button-group-padding-horizontal;
+			
+		}
+		
+		+ .button-group {
+			
+			margin-left: @button-group-padding-horizontal;
 			
 		}
 		
@@ -51,19 +383,49 @@
 			
 		}
 		
-		&:first-child {
+		&:not(:first-child) {
 			
-			margin-left: 0px;
-			.border-top-left-radius(@button-border-radius);
-			.border-bottom-left-radius(@button-border-radius);
+			&:not(:last-child) {
+				
+				&:not(.dropdown-toggle) {
+					
+					.border-radius(0px);
+					
+				}
+				
+			}
 			
 		}
 		
-		&:last-child,
-		&:last-of-type {
+		&:first-child {
 			
-			.border-top-right-radius(@button-border-radius);
-			.border-bottom-right-radius(@button-border-radius);
+			margin-left: 0px;
+			
+			&:not(:last-child) {
+				
+				&:not(.dropdown-toggle) {
+					
+					.border-top-right-radius(0px);
+					.border-bottom-right-radius(0px);
+					
+				}
+				
+			}
+			
+		}
+		
+		&:last-child {
+			
+			&:not(:first-child) {
+				
+				&:not(.dropdown-toggle) {
+					
+					.border-top-left-radius(0px);
+					.border-bottom-left-radius(0px);
+					
+				}
+				
+			}
 			
 		}
 		
@@ -71,6 +433,7 @@
 		/* Large Button                                                                                         */
 		/* ---------------------------------------------------------------------------------------------------- */
 		
+		/*
 		&.button-large {
 			
 			.caret {
@@ -84,14 +447,12 @@
 			
 			&:first-child {
 				
-				margin-left: 0px;
 				.border-top-left-radius(@button-large-border-radius);
 				.border-bottom-left-radius(@button-large-border-radius);
 				
 			}
 			
-			&:last-child,
-			&:last-of-type {
+			&:last-child {
 				
 				.border-top-right-radius(@button-large-border-radius);
 				.border-bottom-right-radius(@button-large-border-radius);
@@ -99,11 +460,13 @@
 			}
 			
 		}
+		*/
 		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Small Button                                                                                         */
 		/* ---------------------------------------------------------------------------------------------------- */
 		
+		/*
 		&.button-small {
 			
 			.caret {
@@ -114,14 +477,12 @@
 			
 			&:first-child {
 				
-				margin-left: 0px;
 				.border-top-left-radius(@button-small-border-radius);
 				.border-bottom-left-radius(@button-small-border-radius);
 				
 			}
 			
-			&:last-child,
-			&:last-of-type {
+			&:last-child {
 				
 				.border-top-right-radius(@button-small-border-radius);
 				.border-bottom-right-radius(@button-small-border-radius);
@@ -129,11 +490,13 @@
 			}
 			
 		}
+		*/
 		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Mini Button                                                                                          */
 		/* ---------------------------------------------------------------------------------------------------- */
 		
+		/*
 		&.button-mini {
 			
 			.caret {
@@ -144,14 +507,12 @@
 			
 			&:first-child {
 				
-				margin-left: 0px;
 				.border-top-left-radius(@button-mini-border-radius);
 				.border-bottom-left-radius(@button-mini-border-radius);
 				
 			}
 			
-			&:last-child,
-			&:last-of-type {
+			&:last-child {
 				
 				.border-top-right-radius(@button-mini-border-radius);
 				.border-bottom-right-radius(@button-mini-border-radius);
@@ -159,14 +520,49 @@
 			}
 			
 		}
+		*/
 		
-		+ .button {
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Button Group                                                                                         */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	> .button-group {
+		
+		&:first-child {
 			
-			margin-left: @button-group-padding-horizontal;
+			> .button {
+				
+				
+			}
+			
+		}
+		
+		&:last-child {
+			
+			> .button {
+				
+				&:first-child {
+					
+					.border-top-left-radius(0px);
+					.border-bottom-left-radius(0px);
+					
+				}
+				
+			}
 			
 		}
 		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* Dropdown                                                                                             */
@@ -174,7 +570,8 @@
 		
 	> .dropdown-toggle {
 		
-		&:active {
+		&:active,
+		&:focus {
 			
 			outline: 0;
 			
@@ -544,7 +941,7 @@
 	/* Button                                                                                               */
 	/* ---------------------------------------------------------------------------------------------------- */
 	
-	.button {
+	> .button {
 		
 		margin-top: @button-toolbar-padding-horizontal + @button-default-offset-top;
 		margin-left: @button-toolbar-padding-horizontal;
@@ -576,7 +973,6 @@
 		&.btn-link {
 			
 			margin-top: @button-toolbar-padding-horizontal + @button-default-link-offset-top;
-			margin-left: @button-toolbar-padding-horizontal;
 			
 			&:hover {
 				
@@ -607,7 +1003,6 @@
 		&.inverse {
 			
 			margin-top: @button-toolbar-padding-horizontal + @button-default-inverse-offset-top;
-			margin-left: @button-toolbar-padding-horizontal;
 			
 			&:hover {
 				
@@ -638,7 +1033,6 @@
 		&.button-primary {
 			
 			margin-top: @button-toolbar-padding-horizontal + @button-primary-offset-top;
-			margin-left: @button-toolbar-padding-horizontal;
 			
 			&:hover {
 				
@@ -667,7 +1061,6 @@
 			&.btn-link {
 				
 				margin-top: @button-toolbar-padding-horizontal + @button-primary-link-offset-top;
-				margin-left: @button-toolbar-padding-horizontal;
 				
 				&:hover {
 					
@@ -698,7 +1091,6 @@
 			&.inverse {
 				
 				margin-top: @button-toolbar-padding-horizontal + @button-primary-inverse-offset-top;
-				margin-left: @button-toolbar-padding-horizontal;
 				
 				&:hover {
 					
@@ -731,7 +1123,6 @@
 		&.button-warning {
 			
 			margin-top: @button-toolbar-padding-horizontal + @button-warning-offset-top;
-			margin-left: @button-toolbar-padding-horizontal;
 			
 			&:hover {
 				
@@ -760,7 +1151,6 @@
 			&.btn-link {
 				
 				margin-top: @button-toolbar-padding-horizontal + @button-warning-link-offset-top;
-				margin-left: @button-toolbar-padding-horizontal;
 				
 				&:hover {
 					
@@ -791,7 +1181,6 @@
 			&.inverse {
 				
 				margin-top: @button-toolbar-padding-horizontal + @button-warning-inverse-offset-top;
-				margin-left: @button-toolbar-padding-horizontal;
 				
 				&:hover {
 					
@@ -824,7 +1213,6 @@
 		&.button-success {
 			
 			margin-top: @button-toolbar-padding-horizontal + @button-success-offset-top;
-			margin-left: @button-toolbar-padding-horizontal;
 			
 			&:hover {
 				
@@ -853,7 +1241,6 @@
 			&.btn-link {
 				
 				margin-top: @button-toolbar-padding-horizontal + @button-success-link-offset-top;
-				margin-left: @button-toolbar-padding-horizontal;
 				
 				&:hover {
 					
@@ -884,7 +1271,6 @@
 			&.inverse {
 				
 				margin-top: @button-toolbar-padding-horizontal + @button-success-inverse-offset-top;
-				margin-left: @button-toolbar-padding-horizontal;
 				
 				&:hover {
 					
@@ -917,7 +1303,6 @@
 		&.button-danger {
 			
 			margin-top: @button-toolbar-padding-horizontal + @button-danger-offset-top;
-			margin-left: @button-toolbar-padding-horizontal;
 			
 			&:hover {
 				
@@ -946,7 +1331,6 @@
 			&.btn-link {
 				
 				margin-top: @button-toolbar-padding-horizontal + @button-danger-link-offset-top;
-				margin-left: @button-toolbar-padding-horizontal;
 				
 				&:hover {
 					
@@ -977,7 +1361,6 @@
 			&.inverse {
 				
 				margin-top: @button-toolbar-padding-horizontal + @button-danger-inverse-offset-top;
-				margin-left: @button-toolbar-padding-horizontal;
 				
 				&:hover {
 					
@@ -1009,36 +1392,19 @@
 	/* Button Group                                                                                         */
 	/* ---------------------------------------------------------------------------------------------------- */
 	
-	.button-group {
+	> .button-group {
 		
 		margin-top: @button-toolbar-padding-horizontal;
 		margin-left: @button-toolbar-padding-horizontal;
-		float: left;
 		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Default Button                                                                                       */
 		/* ---------------------------------------------------------------------------------------------------- */
 		
+		/*
 		.button {
 			
 			margin-top: @button-default-offset-top;
-			margin-left: @button-group-padding-horizontal;
-			
-			&:first-child {
-				
-				margin-left: 0px;
-				.border-top-left-radius(@button-border-radius);
-				.border-bottom-left-radius(@button-border-radius);
-				
-			}
-			
-			&:last-child,
-			&:last-of-type {
-				
-				.border-top-right-radius(@button-border-radius);
-				.border-bottom-right-radius(@button-border-radius);
-				
-			}
 			
 			&:hover {
 				
@@ -1113,11 +1479,13 @@
 			}
 			
 		}
+		*/
 		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Primary Button                                                                                       */
 		/* ---------------------------------------------------------------------------------------------------- */
 		
+		/*
 		.button.button-primary {
 			
 			margin-top: @button-primary-offset-top;
@@ -1195,11 +1563,13 @@
 			}
 			
 		}
+		*/
 		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Success Button                                                                                       */
 		/* ---------------------------------------------------------------------------------------------------- */
 		
+		/*
 		.button.button-success {
 			
 			margin-top: @button-success-offset-top;
@@ -1277,11 +1647,13 @@
 			}
 			
 		}
+		*/
 		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Warning Button                                                                                       */
 		/* ---------------------------------------------------------------------------------------------------- */
 		
+		/*
 		.button.button-warning {
 			
 			margin-top: @button-warning-offset-top;
@@ -1359,11 +1731,13 @@
 			}
 			
 		}
+		*/
 		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Danger Button                                                                                        */
 		/* ---------------------------------------------------------------------------------------------------- */
 		
+		/*
 		.button.button-danger {
 			
 			margin-top: @button-danger-offset-top;
@@ -1441,6 +1815,7 @@
 			}
 			
 		}
+		*/
 		
 	}
 	

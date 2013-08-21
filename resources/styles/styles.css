@@ -170,6 +170,11 @@
 /* ---------------------------------------------------------------------------------------------------- */
 /* ==================================================================================================== */
 /*                                                                                                      */
+/* Dropdowns                                                                                            */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Forms                                                                                                */
 /*                                                                                                      */
 /* ==================================================================================================== */
@@ -241,11 +246,6 @@
 /* ---------------------------------------------------------------------------------------------------- */
 /* Danger Button                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Dropdowns                                                                                            */
-/*                                                                                                      */
-/* ==================================================================================================== */
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Labels & Badges                                                                                      */
@@ -6332,9 +6332,9 @@ table th[class*="span"],
   padding-bottom: 14px;
   padding-left: 30px;
   padding-right: 30px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
   border: 0px;
   font-size: 22px;
   font-weight: 400;
@@ -7700,9 +7700,39 @@ input[type="submit"].button.button-mini {
 
   *zoom: 1;
   font-size: 0;
-  vertical-align: middle;
+  vertical-align: top;
   white-space: nowrap;
   *margin-left: .3em;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Group Large                                                                                   */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Group Small                                                                                   */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Group Mini                                                                                    */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button                                                                                               */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Group                                                                                         */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Dropdown                                                                                             */
@@ -7716,16 +7746,219 @@ input[type="submit"].button.button-mini {
 .button-group + .button-group {
   margin-left: 10px;
 }
+.button-group.button-group-large .button {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 0px;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  text-transform: normal;
+}
+.button-group.button-group-large .button [class^="icon-"].icon-mini {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-large .button [class^="icon-"].icon-small {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-large .button [class^="icon-"].icon-medium {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-large .button [class^="icon-"].icon-large {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-large .button [class^="icon-"].icon-jumbo {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-large .button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.button-group.button-group-large .button:first-child {
+  margin-left: 0px;
+}
+.button-group.button-group-large .button:first-child:not(:last-child):not(.dropdown-toggle) {
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+}
+.button-group.button-group-large .button:last-child:not(:first-child):not(.dropdown-toggle) {
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+}
+.button-group.button-group-small .button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 16px;
+  text-transform: normal;
+}
+.button-group.button-group-small .button [class^="icon-"].icon-mini {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-small .button [class^="icon-"].icon-small {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-small .button [class^="icon-"].icon-medium {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-small .button [class^="icon-"].icon-small {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-small .button [class^="icon-"].icon-jumbo {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-small .button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.button-group.button-group-small .button:first-child {
+  margin-left: 0px;
+}
+.button-group.button-group-small .button:first-child:not(:last-child):not(.dropdown-toggle) {
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+}
+.button-group.button-group-small .button:last-child:not(:first-child):not(.dropdown-toggle) {
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+}
+.button-group.button-group-mini .button {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 0px;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 16px;
+  text-transform: normal;
+}
+.button-group.button-group-mini .button [class^="icon-"].icon-mini {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-mini .button [class^="icon-"].icon-small {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-mini .button [class^="icon-"].icon-medium {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-mini .button [class^="icon-"].icon-mini {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-mini .button [class^="icon-"].icon-jumbo {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button-group.button-group-mini .button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.button-group.button-group-mini .button:first-child {
+  margin-left: 0px;
+}
+.button-group.button-group-mini .button:first-child:not(:last-child):not(.dropdown-toggle) {
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+}
+.button-group.button-group-mini .button:last-child:not(:first-child):not(.dropdown-toggle) {
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+}
 .button-group > .button {
   position: relative;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Large Button                                                                                         */
 
   /* ---------------------------------------------------------------------------------------------------- */
+
+  /*
+		&.button-large {
+			
+			.caret {
+				
+				margin-top: 6px;
+				border-left-width:  5px;
+				border-right-width: 5px;
+				border-top-width:   5px;
+				
+			}
+			
+			&:first-child {
+				
+				.border-top-left-radius(@button-large-border-radius);
+				.border-bottom-left-radius(@button-large-border-radius);
+				
+			}
+			
+			&:last-child {
+				
+				.border-top-right-radius(@button-large-border-radius);
+				.border-bottom-right-radius(@button-large-border-radius);
+				
+			}
+			
+		}
+		*/
 
   /* ---------------------------------------------------------------------------------------------------- */
 
@@ -7733,16 +7966,70 @@ input[type="submit"].button.button-mini {
 
   /* ---------------------------------------------------------------------------------------------------- */
 
+  /*
+		&.button-small {
+			
+			.caret {
+				
+				margin-top: 8px;
+				
+			}
+			
+			&:first-child {
+				
+				.border-top-left-radius(@button-small-border-radius);
+				.border-bottom-left-radius(@button-small-border-radius);
+				
+			}
+			
+			&:last-child {
+				
+				.border-top-right-radius(@button-small-border-radius);
+				.border-bottom-right-radius(@button-small-border-radius);
+				
+			}
+			
+		}
+		*/
+
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Mini Button                                                                                          */
 
   /* ---------------------------------------------------------------------------------------------------- */
 
+  /*
+		&.button-mini {
+			
+			.caret {
+				
+				margin-top: 8px;
+				
+			}
+			
+			&:first-child {
+				
+				.border-top-left-radius(@button-mini-border-radius);
+				.border-bottom-left-radius(@button-mini-border-radius);
+				
+			}
+			
+			&:last-child {
+				
+				.border-top-right-radius(@button-mini-border-radius);
+				.border-bottom-right-radius(@button-mini-border-radius);
+				
+			}
+			
+		}
+		*/
+
 }
-.button-group > .button .caret {
-  margin-top: 8px;
-  margin-left: 0;
+.button-group > .button + .button {
+  margin-left: 1px;
+}
+.button-group > .button + .button-group {
+  margin-left: 1px;
 }
 .button-group > .button:hover,
 .button-group > .button:focus,
@@ -7750,94 +8037,40 @@ input[type="submit"].button.button-mini {
 .button-group > .button.active {
   z-index: 2;
 }
+.button-group > .button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
 .button-group > .button:first-child {
   margin-left: 0px;
-  -webkit-border-top-left-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  border-top-left-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  border-bottom-left-radius: 4px;
 }
-.button-group > .button:last-child,
-.button-group > .button:last-of-type {
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  border-bottom-right-radius: 4px;
+.button-group > .button:first-child:not(:last-child):not(.dropdown-toggle) {
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
 }
-.button-group > .button.button-large .caret {
-  margin-top: 6px;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-top-width: 5px;
+.button-group > .button:last-child:not(:first-child):not(.dropdown-toggle) {
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
 }
-.button-group > .button.button-large:first-child {
-  margin-left: 0px;
-  -webkit-border-top-left-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  border-top-left-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  border-bottom-left-radius: 4px;
+.button-group > .button-group:last-child > .button:first-child {
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
 }
-.button-group > .button.button-large:last-child,
-.button-group > .button.button-large:last-of-type {
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  border-bottom-right-radius: 4px;
-}
-.button-group > .button.button-small .caret {
-  margin-top: 8px;
-}
-.button-group > .button.button-small:first-child {
-  margin-left: 0px;
-  -webkit-border-top-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-bottom-left-radius: 3px;
-}
-.button-group > .button.button-small:last-child,
-.button-group > .button.button-small:last-of-type {
-  -webkit-border-top-right-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  -moz-border-radius-bottomright: 3px;
-  border-bottom-right-radius: 3px;
-}
-.button-group > .button.button-mini .caret {
-  margin-top: 8px;
-}
-.button-group > .button.button-mini:first-child {
-  margin-left: 0px;
-  -webkit-border-top-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-bottom-left-radius: 3px;
-}
-.button-group > .button.button-mini:last-child,
-.button-group > .button.button-mini:last-of-type {
-  -webkit-border-top-right-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  -moz-border-radius-bottomright: 3px;
-  border-bottom-right-radius: 3px;
-}
-.button-group > .button + .button {
-  margin-left: 1px;
-}
-.button-group > .dropdown-toggle:active {
+.button-group > .dropdown-toggle:active,
+.button-group > .dropdown-toggle:focus {
   outline: 0;
 }
 .button-group.open .dropdown-toggle {
@@ -8210,7 +8443,7 @@ input[type="submit"].button.button-mini {
   margin-top: -10px;
   margin-left: -10px;
 }
-.button-toolbar .button {
+.button-toolbar > .button {
   margin-top: 10px;
   margin-left: 10px;
   /* ---------------------------------------------------------------------------------------------------- */
@@ -8250,50 +8483,47 @@ input[type="submit"].button.button-mini {
   /* ---------------------------------------------------------------------------------------------------- */
 
 }
-.button-toolbar .button:hover {
+.button-toolbar > .button:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.active,
-.button-toolbar .button:active {
+.button-toolbar > .button.active,
+.button-toolbar > .button:active {
   margin-top: 10px;
 }
-.button-toolbar .button.disabled,
-.button-toolbar .button[disabled] {
+.button-toolbar > .button.disabled,
+.button-toolbar > .button[disabled] {
   margin-top: 10px;
 }
-.button-toolbar .button.btn-link {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.button-toolbar .button.btn-link:hover {
+.button-toolbar > .button.btn-link {
   margin-top: 10px;
 }
-.button-toolbar .button.btn-link.active,
-.button-toolbar .button.btn-link:active {
+.button-toolbar > .button.btn-link:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.btn-link.disabled,
-.button-toolbar .button.btn-link[disabled] {
+.button-toolbar > .button.btn-link.active,
+.button-toolbar > .button.btn-link:active {
   margin-top: 10px;
 }
-.button-toolbar .button.inverse {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.button-toolbar .button.inverse:hover {
+.button-toolbar > .button.btn-link.disabled,
+.button-toolbar > .button.btn-link[disabled] {
   margin-top: 10px;
 }
-.button-toolbar .button.inverse.active,
-.button-toolbar .button.inverse:active {
+.button-toolbar > .button.inverse {
   margin-top: 10px;
 }
-.button-toolbar .button.inverse.disabled,
-.button-toolbar .button.inverse[disabled] {
+.button-toolbar > .button.inverse:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.button-primary {
+.button-toolbar > .button.inverse.active,
+.button-toolbar > .button.inverse:active {
   margin-top: 10px;
-  margin-left: 10px;
+}
+.button-toolbar > .button.inverse.disabled,
+.button-toolbar > .button.inverse[disabled] {
+  margin-top: 10px;
+}
+.button-toolbar > .button.button-primary {
+  margin-top: 10px;
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Link                                                                                                 */
@@ -8307,50 +8537,47 @@ input[type="submit"].button.button-mini {
   /* ---------------------------------------------------------------------------------------------------- */
 
 }
-.button-toolbar .button.button-primary:hover {
+.button-toolbar > .button.button-primary:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.button-primary.active,
-.button-toolbar .button.button-primary:active {
+.button-toolbar > .button.button-primary.active,
+.button-toolbar > .button.button-primary:active {
   margin-top: 10px;
 }
-.button-toolbar .button.button-primary.disabled,
-.button-toolbar .button.button-primary[disabled] {
+.button-toolbar > .button.button-primary.disabled,
+.button-toolbar > .button.button-primary[disabled] {
   margin-top: 10px;
 }
-.button-toolbar .button.button-primary.btn-link {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.button-toolbar .button.button-primary.btn-link:hover {
+.button-toolbar > .button.button-primary.btn-link {
   margin-top: 10px;
 }
-.button-toolbar .button.button-primary.btn-link.active,
-.button-toolbar .button.button-primary.btn-link:active {
+.button-toolbar > .button.button-primary.btn-link:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.button-primary.btn-link.disabled,
-.button-toolbar .button.button-primary.btn-link[disabled] {
+.button-toolbar > .button.button-primary.btn-link.active,
+.button-toolbar > .button.button-primary.btn-link:active {
   margin-top: 10px;
 }
-.button-toolbar .button.button-primary.inverse {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.button-toolbar .button.button-primary.inverse:hover {
+.button-toolbar > .button.button-primary.btn-link.disabled,
+.button-toolbar > .button.button-primary.btn-link[disabled] {
   margin-top: 10px;
 }
-.button-toolbar .button.button-primary.inverse.active,
-.button-toolbar .button.button-primary.inverse:active {
+.button-toolbar > .button.button-primary.inverse {
   margin-top: 10px;
 }
-.button-toolbar .button.button-primary.inverse.disabled,
-.button-toolbar .button.button-primary.inverse[disabled] {
+.button-toolbar > .button.button-primary.inverse:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.button-warning {
+.button-toolbar > .button.button-primary.inverse.active,
+.button-toolbar > .button.button-primary.inverse:active {
   margin-top: 10px;
-  margin-left: 10px;
+}
+.button-toolbar > .button.button-primary.inverse.disabled,
+.button-toolbar > .button.button-primary.inverse[disabled] {
+  margin-top: 10px;
+}
+.button-toolbar > .button.button-warning {
+  margin-top: 10px;
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Link                                                                                                 */
@@ -8364,50 +8591,47 @@ input[type="submit"].button.button-mini {
   /* ---------------------------------------------------------------------------------------------------- */
 
 }
-.button-toolbar .button.button-warning:hover {
+.button-toolbar > .button.button-warning:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.button-warning.active,
-.button-toolbar .button.button-warning:active {
+.button-toolbar > .button.button-warning.active,
+.button-toolbar > .button.button-warning:active {
   margin-top: 10px;
 }
-.button-toolbar .button.button-warning.disabled,
-.button-toolbar .button.button-warning[disabled] {
+.button-toolbar > .button.button-warning.disabled,
+.button-toolbar > .button.button-warning[disabled] {
   margin-top: 10px;
 }
-.button-toolbar .button.button-warning.btn-link {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.button-toolbar .button.button-warning.btn-link:hover {
+.button-toolbar > .button.button-warning.btn-link {
   margin-top: 10px;
 }
-.button-toolbar .button.button-warning.btn-link.active,
-.button-toolbar .button.button-warning.btn-link:active {
+.button-toolbar > .button.button-warning.btn-link:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.button-warning.btn-link.disabled,
-.button-toolbar .button.button-warning.btn-link[disabled] {
+.button-toolbar > .button.button-warning.btn-link.active,
+.button-toolbar > .button.button-warning.btn-link:active {
   margin-top: 10px;
 }
-.button-toolbar .button.button-warning.inverse {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.button-toolbar .button.button-warning.inverse:hover {
+.button-toolbar > .button.button-warning.btn-link.disabled,
+.button-toolbar > .button.button-warning.btn-link[disabled] {
   margin-top: 10px;
 }
-.button-toolbar .button.button-warning.inverse.active,
-.button-toolbar .button.button-warning.inverse:active {
+.button-toolbar > .button.button-warning.inverse {
   margin-top: 10px;
 }
-.button-toolbar .button.button-warning.inverse.disabled,
-.button-toolbar .button.button-warning.inverse[disabled] {
+.button-toolbar > .button.button-warning.inverse:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.button-success {
+.button-toolbar > .button.button-warning.inverse.active,
+.button-toolbar > .button.button-warning.inverse:active {
   margin-top: 10px;
-  margin-left: 10px;
+}
+.button-toolbar > .button.button-warning.inverse.disabled,
+.button-toolbar > .button.button-warning.inverse[disabled] {
+  margin-top: 10px;
+}
+.button-toolbar > .button.button-success {
+  margin-top: 10px;
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Link                                                                                                 */
@@ -8421,50 +8645,47 @@ input[type="submit"].button.button-mini {
   /* ---------------------------------------------------------------------------------------------------- */
 
 }
-.button-toolbar .button.button-success:hover {
+.button-toolbar > .button.button-success:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.button-success.active,
-.button-toolbar .button.button-success:active {
+.button-toolbar > .button.button-success.active,
+.button-toolbar > .button.button-success:active {
   margin-top: 10px;
 }
-.button-toolbar .button.button-success.disabled,
-.button-toolbar .button.button-success[disabled] {
+.button-toolbar > .button.button-success.disabled,
+.button-toolbar > .button.button-success[disabled] {
   margin-top: 10px;
 }
-.button-toolbar .button.button-success.btn-link {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.button-toolbar .button.button-success.btn-link:hover {
+.button-toolbar > .button.button-success.btn-link {
   margin-top: 10px;
 }
-.button-toolbar .button.button-success.btn-link.active,
-.button-toolbar .button.button-success.btn-link:active {
+.button-toolbar > .button.button-success.btn-link:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.button-success.btn-link.disabled,
-.button-toolbar .button.button-success.btn-link[disabled] {
+.button-toolbar > .button.button-success.btn-link.active,
+.button-toolbar > .button.button-success.btn-link:active {
   margin-top: 10px;
 }
-.button-toolbar .button.button-success.inverse {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.button-toolbar .button.button-success.inverse:hover {
+.button-toolbar > .button.button-success.btn-link.disabled,
+.button-toolbar > .button.button-success.btn-link[disabled] {
   margin-top: 10px;
 }
-.button-toolbar .button.button-success.inverse.active,
-.button-toolbar .button.button-success.inverse:active {
+.button-toolbar > .button.button-success.inverse {
   margin-top: 10px;
 }
-.button-toolbar .button.button-success.inverse.disabled,
-.button-toolbar .button.button-success.inverse[disabled] {
+.button-toolbar > .button.button-success.inverse:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.button-danger {
+.button-toolbar > .button.button-success.inverse.active,
+.button-toolbar > .button.button-success.inverse:active {
   margin-top: 10px;
-  margin-left: 10px;
+}
+.button-toolbar > .button.button-success.inverse.disabled,
+.button-toolbar > .button.button-success.inverse[disabled] {
+  margin-top: 10px;
+}
+.button-toolbar > .button.button-danger {
+  margin-top: 10px;
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Link                                                                                                 */
@@ -8478,62 +8699,219 @@ input[type="submit"].button.button-mini {
   /* ---------------------------------------------------------------------------------------------------- */
 
 }
-.button-toolbar .button.button-danger:hover {
+.button-toolbar > .button.button-danger:hover {
   margin-top: 10px;
 }
-.button-toolbar .button.button-danger.active,
-.button-toolbar .button.button-danger:active {
+.button-toolbar > .button.button-danger.active,
+.button-toolbar > .button.button-danger:active {
   margin-top: 10px;
 }
-.button-toolbar .button.button-danger.disabled,
-.button-toolbar .button.button-danger[disabled] {
+.button-toolbar > .button.button-danger.disabled,
+.button-toolbar > .button.button-danger[disabled] {
   margin-top: 10px;
 }
-.button-toolbar .button.button-danger.btn-link {
+.button-toolbar > .button.button-danger.btn-link {
+  margin-top: 10px;
+}
+.button-toolbar > .button.button-danger.btn-link:hover {
+  margin-top: 10px;
+}
+.button-toolbar > .button.button-danger.btn-link.active,
+.button-toolbar > .button.button-danger.btn-link:active {
+  margin-top: 10px;
+}
+.button-toolbar > .button.button-danger.btn-link.disabled,
+.button-toolbar > .button.button-danger.btn-link[disabled] {
+  margin-top: 10px;
+}
+.button-toolbar > .button.button-danger.inverse {
+  margin-top: 10px;
+}
+.button-toolbar > .button.button-danger.inverse:hover {
+  margin-top: 10px;
+}
+.button-toolbar > .button.button-danger.inverse.active,
+.button-toolbar > .button.button-danger.inverse:active {
+  margin-top: 10px;
+}
+.button-toolbar > .button.button-danger.inverse.disabled,
+.button-toolbar > .button.button-danger.inverse[disabled] {
+  margin-top: 10px;
+}
+.button-toolbar > .button-group {
   margin-top: 10px;
   margin-left: 10px;
-}
-.button-toolbar .button.button-danger.btn-link:hover {
-  margin-top: 10px;
-}
-.button-toolbar .button.button-danger.btn-link.active,
-.button-toolbar .button.button-danger.btn-link:active {
-  margin-top: 10px;
-}
-.button-toolbar .button.button-danger.btn-link.disabled,
-.button-toolbar .button.button-danger.btn-link[disabled] {
-  margin-top: 10px;
-}
-.button-toolbar .button.button-danger.inverse {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.button-toolbar .button.button-danger.inverse:hover {
-  margin-top: 10px;
-}
-.button-toolbar .button.button-danger.inverse.active,
-.button-toolbar .button.button-danger.inverse:active {
-  margin-top: 10px;
-}
-.button-toolbar .button.button-danger.inverse.disabled,
-.button-toolbar .button.button-danger.inverse[disabled] {
-  margin-top: 10px;
-}
-.button-toolbar .button-group {
-  margin-top: 10px;
-  margin-left: 10px;
-  float: left;
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Default Button                                                                                       */
 
   /* ---------------------------------------------------------------------------------------------------- */
 
+  /*
+		.button {
+			
+			margin-top: @button-default-offset-top;
+			
+			&:hover {
+				
+				margin-top: @button-default-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-default-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-default-disabled-offset-top;
+				
+			}
+			
+			&.button-link {
+				
+				margin-top: @button-default-link-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-default-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-default-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-default-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			&.inverse {
+				
+				margin-top: @button-default-inverse-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-default-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-default-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-default-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
+		*/
+
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Primary Button                                                                                       */
 
   /* ---------------------------------------------------------------------------------------------------- */
+
+  /*
+		.button.button-primary {
+			
+			margin-top: @button-primary-offset-top;
+			
+			&:hover {
+				
+				margin-top: @button-primary-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-primary-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-primary-disabled-offset-top;
+				
+			}
+			
+			&.button-link {
+				
+				margin-top: @button-primary-link-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-primary-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-primary-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-primary-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			&.inverse {
+				
+				margin-top: @button-primary-inverse-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-primary-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-primary-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-primary-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
+		*/
 
   /* ---------------------------------------------------------------------------------------------------- */
 
@@ -8541,11 +8919,171 @@ input[type="submit"].button.button-mini {
 
   /* ---------------------------------------------------------------------------------------------------- */
 
+  /*
+		.button.button-success {
+			
+			margin-top: @button-success-offset-top;
+			
+			&:hover {
+				
+				margin-top: @button-success-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-success-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-success-disabled-offset-top;
+				
+			}
+			
+			&.button-link {
+				
+				margin-top: @button-success-link-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-success-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-success-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-success-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			&.inverse {
+				
+				margin-top: @button-success-inverse-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-success-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-success-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-success-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
+		*/
+
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Warning Button                                                                                       */
 
   /* ---------------------------------------------------------------------------------------------------- */
+
+  /*
+		.button.button-warning {
+			
+			margin-top: @button-warning-offset-top;
+			
+			&:hover {
+				
+				margin-top: @button-warning-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-warning-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-warning-disabled-offset-top;
+				
+			}
+			
+			&.button-link {
+				
+				margin-top: @button-warning-link-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-warning-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-warning-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-warning-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			&.inverse {
+				
+				margin-top: @button-warning-inverse-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-warning-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-warning-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-warning-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
+		*/
 
   /* ---------------------------------------------------------------------------------------------------- */
 
@@ -8553,235 +9091,86 @@ input[type="submit"].button.button-mini {
 
   /* ---------------------------------------------------------------------------------------------------- */
 
-}
-.button-toolbar .button-group .button {
-  margin-top: 0px;
-  margin-left: 1px;
-}
-.button-toolbar .button-group .button:first-child {
-  margin-left: 0px;
-  -webkit-border-top-left-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  border-top-left-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  border-bottom-left-radius: 4px;
-}
-.button-toolbar .button-group .button:last-child,
-.button-toolbar .button-group .button:last-of-type {
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  border-bottom-right-radius: 4px;
-}
-.button-toolbar .button-group .button:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.active,
-.button-toolbar .button-group .button:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.disabled,
-.button-toolbar .button-group .button[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-link {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-link:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-link.active,
-.button-toolbar .button-group .button.button-link:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-link.disabled,
-.button-toolbar .button-group .button.button-link[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.inverse {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.inverse:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.inverse.active,
-.button-toolbar .button-group .button.inverse:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.inverse.disabled,
-.button-toolbar .button-group .button.inverse[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-primary {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-primary:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-primary.active,
-.button-toolbar .button-group .button.button-primary:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-primary.disabled,
-.button-toolbar .button-group .button.button-primary[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-primary.button-link {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-primary.button-link:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-primary.button-link.active,
-.button-toolbar .button-group .button.button-primary.button-link:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-primary.button-link.disabled,
-.button-toolbar .button-group .button.button-primary.button-link[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-primary.inverse {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-primary.inverse:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-primary.inverse.active,
-.button-toolbar .button-group .button.button-primary.inverse:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-primary.inverse.disabled,
-.button-toolbar .button-group .button.button-primary.inverse[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-success {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-success:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-success.active,
-.button-toolbar .button-group .button.button-success:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-success.disabled,
-.button-toolbar .button-group .button.button-success[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-success.button-link {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-success.button-link:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-success.button-link.active,
-.button-toolbar .button-group .button.button-success.button-link:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-success.button-link.disabled,
-.button-toolbar .button-group .button.button-success.button-link[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-success.inverse {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-success.inverse:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-success.inverse.active,
-.button-toolbar .button-group .button.button-success.inverse:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-success.inverse.disabled,
-.button-toolbar .button-group .button.button-success.inverse[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-warning {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-warning:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-warning.active,
-.button-toolbar .button-group .button.button-warning:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-warning.disabled,
-.button-toolbar .button-group .button.button-warning[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-warning.button-link {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-warning.button-link:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-warning.button-link.active,
-.button-toolbar .button-group .button.button-warning.button-link:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-warning.button-link.disabled,
-.button-toolbar .button-group .button.button-warning.button-link[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-warning.inverse {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-warning.inverse:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-warning.inverse.active,
-.button-toolbar .button-group .button.button-warning.inverse:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-warning.inverse.disabled,
-.button-toolbar .button-group .button.button-warning.inverse[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-danger {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-danger:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-danger.active,
-.button-toolbar .button-group .button.button-danger:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-danger.disabled,
-.button-toolbar .button-group .button.button-danger[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-danger.button-link {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-danger.button-link:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-danger.button-link.active,
-.button-toolbar .button-group .button.button-danger.button-link:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-danger.button-link.disabled,
-.button-toolbar .button-group .button.button-danger.button-link[disabled] {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-danger.inverse {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-danger.inverse:hover {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-danger.inverse.active,
-.button-toolbar .button-group .button.button-danger.inverse:active {
-  margin-top: 0px;
-}
-.button-toolbar .button-group .button.button-danger.inverse.disabled,
-.button-toolbar .button-group .button.button-danger.inverse[disabled] {
-  margin-top: 0px;
+  /*
+		.button.button-danger {
+			
+			margin-top: @button-danger-offset-top;
+			
+			&:hover {
+				
+				margin-top: @button-danger-hover-offset-top;
+				
+			}
+		
+			&.active,
+			&:active {
+				
+				margin-top: @button-danger-active-offset-top;
+				
+			}
+			
+			&.disabled,
+			&[disabled] {
+				
+				margin-top: @button-danger-disabled-offset-top;
+				
+			}
+			
+			&.button-link {
+				
+				margin-top: @button-danger-link-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-danger-link-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-danger-link-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-danger-link-disabled-offset-top;
+					
+				}
+				
+			}
+			
+			&.inverse {
+				
+				margin-top: @button-danger-inverse-offset-top;
+				
+				&:hover {
+					
+					margin-top: @button-danger-inverse-hover-offset-top;
+					
+				}
+			
+				&.active,
+				&:active {
+					
+					margin-top: @button-danger-inverse-active-offset-top;
+					
+				}
+				
+				&.disabled,
+				&[disabled] {
+					
+					margin-top: @button-danger-inverse-disabled-offset-top;
+					
+				}
+				
+			}
+			
+		}
+		*/
+
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -8817,14 +9206,14 @@ input[type="submit"].button.button-mini {
   border-radius: 0px 0px 4px 4px;
 }
 .button-group.button-group-vertical > .button.button-large:first-child {
-  -webkit-border-radius: 4px 4px 0px 0px;
-  -moz-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px;
+  -webkit-border-radius: 6px 6px 0px 0px;
+  -moz-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
 }
 .button-group.button-group-vertical > .button.button-large:last-child {
-  -webkit-border-radius: 0px 0px 4px 4px;
-  -moz-border-radius: 0px 0px 4px 4px;
-  border-radius: 0px 0px 4px 4px;
+  -webkit-border-radius: 0px 0px 6px 6px;
+  -moz-border-radius: 0px 0px 6px 6px;
+  border-radius: 0px 0px 6px 6px;
 }
 .button-group.button-group-vertical > .button.button-small:first-child {
   -webkit-border-radius: 3px 3px 0px 0px;
@@ -8896,6 +9285,7 @@ input[type="submit"].button.button-mini {
 .dropup,
 .dropdown {
   position: relative;
+  z-index: 1003;
 }
 .dropup.anchor,
 .dropdown.anchor {
@@ -8922,62 +9312,225 @@ input[type="submit"].button.button-mini {
 /* ---------------------------------------------------------------------------------------------------- */
 /* Drop-Up                                                                                              */
 /* ---------------------------------------------------------------------------------------------------- */
-.dropup .button-large .caret {
-  border-bottom-width: 5px;
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Dropdown Arrow/Caret                                                                                 */
 /*                                                                                                      */
 /* ==================================================================================================== */
-.caret {
-  content: "";
+.dropdown-toggle.button {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Large                                                                                         */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Small                                                                                         */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Mini                                                                                          */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Primary                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Success                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Warning                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Danger                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.dropdown-toggle.button .caret {
   display: inline-block;
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
   vertical-align: top;
   border-color: transparent;
   border-style: solid;
-  border-width: 6px 5px 0;
+  border-width: 6px 5px 0px 5px;
   border-top-color: #838383;
-}
-.dropdown-toggle.button .caret {
-  margin-top: 9px;
+  margin-top: 10px;
   margin-left: 7.5px;
 }
-.dropdown-toggle.button .caret.solo {
+.dropdown-toggle.button .caret.caret-solo {
   margin-left: 0px;
 }
+.dropdown-toggle.button:hover .caret {
+  border-top-color: #838383;
+}
+.dropdown-toggle.button:active .caret {
+  border-top-color: #a8a8a8;
+}
+.dropdown-toggle.button.button-link .caret {
+  border-top-color: #8c8c8c;
+}
+.dropdown-toggle.button.button-link:hover .caret {
+  border-top-color: #5e5e5e;
+}
+.dropdown-toggle.button.button-link:active .caret {
+  border-top-color: #2f2f2f;
+}
+.dropdown-toggle.button.inverse .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.inverse:hover .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.inverse:active .caret {
+  border-top-color: #e4e4e4;
+}
 .dropdown-toggle.button.button-large .caret {
-  border-width: 8px 6px 0;
-  margin-top: 8px;
+  border-width: 8px 7px 0px 7px;
+  margin-top: 9px;
   margin-left: 15px;
 }
-.dropdown-toggle.button.button-large .caret.solo {
+.dropdown-toggle.button.button-large .caret.caret-solo {
   margin-left: 0px;
 }
 .dropdown-toggle.button.button-small .caret {
-  margin-top: 6.5px;
+  border-width: 6px 5px 0px 5px;
+  margin-top: 6px;
   margin-left: 7.5px;
 }
-.dropdown-toggle.button.button-small .caret.solo {
+.dropdown-toggle.button.button-small .caret.caret-solo {
   margin-left: 0px;
 }
 .dropdown-toggle.button.button-mini .caret {
-  border-width: 5px 4px 0;
-  margin-top: 5px;
+  border-width: 4px 3px 0px 3px;
+  margin-top: 7px;
   margin-left: 3.75px;
 }
-.dropdown-toggle.button.button-mini .caret.solo {
+.dropdown-toggle.button.button-mini .caret.caret-solo {
   margin-left: 0px;
 }
-.dropdown-toggle.button.button-primary .caret,
-.dropdown-toggle.button.button-success .caret,
-.dropdown-toggle.button.button-danger .caret,
-.dropdown-toggle.button.button-info .caret,
-.dropdown-toggle.button.button-warning .caret,
-.dropdown-toggle.button.button-inverse .caret {
+.dropdown-toggle.button.button-primary .caret {
   border-top-color: #ffffff;
+}
+.dropdown-toggle.button.button-primary:hover .caret {
+  border-top-color: #ffffff;
+}
+.dropdown-toggle.button.button-primary:active .caret {
+  border-top-color: #e0f0ff;
+}
+.dropdown-toggle.button.button-primary.button-link .caret {
+  border-top-color: #0066cc;
+}
+.dropdown-toggle.button.button-primary.button-link:hover .caret {
+  border-top-color: #003d7a;
+}
+.dropdown-toggle.button.button-primary.button-link:active .caret {
+  border-top-color: #001429;
+}
+.dropdown-toggle.button.button-primary.inverse .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.button-primary.inverse:hover .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.button-primary.inverse:active .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.button-success .caret {
+  border-top-color: #ffffff;
+}
+.dropdown-toggle.button.button-success:hover .caret {
+  border-top-color: #ffffff;
+}
+.dropdown-toggle.button.button-success:active .caret {
+  border-top-color: #f0f8e7;
+}
+.dropdown-toggle.button.button-success.button-link .caret {
+  border-top-color: #70af2f;
+}
+.dropdown-toggle.button.button-success.button-link:hover .caret {
+  border-top-color: #548323;
+}
+.dropdown-toggle.button.button-success.button-link:active .caret {
+  border-top-color: #375717;
+}
+.dropdown-toggle.button.button-success.inverse .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.button-success.inverse:hover .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.button-success.inverse:active .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.button-warning .caret {
+  border-top-color: #ffffff;
+}
+.dropdown-toggle.button.button-warning:hover .caret {
+  border-top-color: #ffffff;
+}
+.dropdown-toggle.button.button-warning:active .caret {
+  border-top-color: #fef2ea;
+}
+.dropdown-toggle.button.button-warning.button-link .caret {
+  border-top-color: #f38339;
+}
+.dropdown-toggle.button.button-warning.button-link:hover .caret {
+  border-top-color: #d45c0d;
+}
+.dropdown-toggle.button.button-warning.button-link:active .caret {
+  border-top-color: #8d3d09;
+}
+.dropdown-toggle.button.button-warning.inverse .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.button-warning.inverse:hover .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.button-warning.inverse:active .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.button-danger .caret {
+  border-top-color: #ffffff;
+}
+.dropdown-toggle.button.button-danger:hover .caret {
+  border-top-color: #ffffff;
+}
+.dropdown-toggle.button.button-danger:active .caret {
+  border-top-color: #ffecea;
+}
+.dropdown-toggle.button.button-danger.button-link .caret {
+  border-top-color: #fd3c2b;
+}
+.dropdown-toggle.button.button-danger.button-link:hover .caret {
+  border-top-color: #dc1402;
+}
+.dropdown-toggle.button.button-danger.button-link:active .caret {
+  border-top-color: #930d01;
+}
+.dropdown-toggle.button.button-danger.inverse .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.button-danger.inverse:hover .caret {
+  border-top-color: #e4e4e4;
+}
+.dropdown-toggle.button.button-danger.inverse:active .caret {
+  border-top-color: #e4e4e4;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -10378,9 +10931,9 @@ textarea.input-large {
   text-transform: normal;
   border-width: 0px;
   *border: 0px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 input[type="text"].input-small,
 input[type="password"].input-small,
@@ -14049,9 +14602,9 @@ select[size] {
   text-transform: normal;
   font-style: normal;
   border-width: 0px;
-  -webkit-border-radius: 4px 0px 0px 4px;
-  -moz-border-radius: 4px 0px 0px 4px;
-  border-radius: 4px 0px 0px 4px;
+  -webkit-border-radius: 6px 0px 0px 6px;
+  -moz-border-radius: 6px 0px 0px 6px;
+  border-radius: 6px 0px 0px 6px;
 }
 .input-group.input-group-large .add-on-group {
   height: 52px;
@@ -20660,20 +21213,7 @@ form.code-example {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px;
-  *zoom: 1;
   display: block;
-}
-.code-example:before,
-form.code-example:before,
-.code-example:after,
-form.code-example:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.code-example:after,
-form.code-example:after {
-  clear: both;
 }
 .code-example:before,
 form.code-example:before {

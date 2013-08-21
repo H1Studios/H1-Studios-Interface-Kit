@@ -1376,7 +1376,7 @@
 /* ---------------------------------------------------------------------------------------------------- */
 
 @button-large-height:													52px;
-@button-large-border-radius:											4px;
+@button-large-border-radius:											6px;
 @button-large-border-width:												0px;
 @button-large-padding-horizontal:										@button-padding-horizontal * 2.0;
 @button-large-text-font-size:											22px;
@@ -2214,6 +2214,71 @@
 @button-danger-inverse-disabled-border-width:							@button-danger-inverse-border-width;
 @button-danger-inverse-disabled-border-color:							@button-danger-inverse-border-color;
 @button-danger-inverse-disabled-shadow:									@button-danger-inverse-shadow;
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Dropdowns                                                                                            */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@dropdown-toggle-caret-width:											5px;
+@dropdown-toggle-caret-height:											6px;
+@dropdown-toggle-caret-offset-top:										1px;
+
+// Large Button Dropdown Toggle
+
+@dropdown-toggle-large-caret-width:										7px;
+@dropdown-toggle-large-caret-height:									8px;
+@dropdown-toggle-large-caret-offset-top:								1px;
+
+// Small Button Dropdown Toggle
+
+@dropdown-toggle-small-caret-width:										5px;
+@dropdown-toggle-small-caret-height:									6px;
+@dropdown-toggle-small-caret-offset-top:								1px;
+
+// Mini Button Dropdown Toggle
+
+@dropdown-toggle-mini-caret-width:										3px;
+@dropdown-toggle-mini-caret-height:										4px;
+@dropdown-toggle-mini-caret-offset-top:									1px;
+
+
+
+
+
+@dropdownBackground:											@white;
+@dropdownBorderRadius:											5px;
+@dropdownShadow:												0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+@dropdownTopMargin:												4px;
+@dropdownMinWidth:												160px;
+@dropdownDividerPadding:										0px;
+@dropdownDividerBackground:										@gray;
+@dropdownDividerShadow:											none;
+@dropdownLinkHorizontalPadding:									@buttonHorizontalPadding;
+@dropdownLinkHeight:											@body-text-line-height + 14;
+@dropdownLinkShadow:											0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+@dropdownLinkColor:												@gray;
+@dropdownLinkBackground:										@white;
+@dropdownLinkColorHover:										@gray-darken-50;
+@dropdownLinkBackgroundHover:									@gray-lighten-90;
+@dropdownLinkColorActive:										@blue;
+@dropdownLinkBackgroundActive:									@white;
+@dropdownLinkColorDisabled:										@gray;
+@dropdownLinkBackgroundDisabled:								@white;
+
+@dropdownLinkDangerColor:										@red;
+@dropdownLinkDangerBackground:									@white;
+@dropdownLinkDangerColorHover:									@red;
+@dropdownLinkDangerBackgroundHover:								lighten(@red, 47%);
+@dropdownLinkDangerColorActive:									@red;
+@dropdownLinkDangerBackgroundActive:							lighten(@red, 47%);
+@dropdownLinkDangerColorDisabled:								lighten(@red, 30%);
+@dropdownLinkDangerBackgroundDisabled:							@white;
+
+@inputErrorBackground:											lighten(@red, 60%);
 
 
 
@@ -3292,45 +3357,6 @@
 
 
 
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Dropdowns                                                                                            */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@dropdownBackground:											@white;
-@dropdownBorderRadius:											5px;
-@dropdownShadow:												0px 3px 6px 0px rgba(0, 0, 0, 0.3);
-@dropdownTopMargin:												4px;
-@dropdownMinWidth:												160px;
-@dropdownDividerPadding:										0px;
-@dropdownDividerBackground:										@gray;
-@dropdownDividerShadow:											none;
-@dropdownLinkHorizontalPadding:									@buttonHorizontalPadding;
-@dropdownLinkHeight:											@body-text-line-height + 14;
-@dropdownLinkShadow:											0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-@dropdownLinkColor:												@gray;
-@dropdownLinkBackground:										@white;
-@dropdownLinkColorHover:										@gray-darken-50;
-@dropdownLinkBackgroundHover:									@gray-lighten-90;
-@dropdownLinkColorActive:										@blue;
-@dropdownLinkBackgroundActive:									@white;
-@dropdownLinkColorDisabled:										@gray;
-@dropdownLinkBackgroundDisabled:								@white;
-
-@dropdownLinkDangerColor:										@red;
-@dropdownLinkDangerBackground:									@white;
-@dropdownLinkDangerColorHover:									@red;
-@dropdownLinkDangerBackgroundHover:								lighten(@red, 47%);
-@dropdownLinkDangerColorActive:									@red;
-@dropdownLinkDangerBackgroundActive:							lighten(@red, 47%);
-@dropdownLinkDangerColorDisabled:								lighten(@red, 30%);
-@dropdownLinkDangerBackgroundDisabled:							@white;
-
-@inputErrorBackground:											lighten(@red, 60%);
 
 
 
