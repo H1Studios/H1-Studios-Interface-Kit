@@ -1,4 +1,4 @@
-<header id="header" class="stage-pod stage-pod-light">
+<header id="header" class="stage-pod stage-pod-dark">
 	
 	<div class="header-toolbar container-fluid container-pod container-pod-short {% if page.title != '' %}has-content{% endif %}">
 		
@@ -38,7 +38,7 @@
 
 	<div class="header-content container container-pod">
 		
-		<h1 class="header-title centered {% if page.subtitle != '' %}short{% else %}flush-bottom{% endif %}">
+		<h1 class="inverse header-title centered {% if page.subtitle != '' %}short{% else %}flush-bottom{% endif %}">
 
 			{{ page.title|raw }}
 
@@ -46,7 +46,7 @@
 
 		{% if page.subtitle != '' %}
 				
-			<p class="header-subtitle lead centered flush-bottom">
+			<p class="inverse header-subtitle lead centered flush-bottom">
 
 				{{ page.subtitle|raw }}
 

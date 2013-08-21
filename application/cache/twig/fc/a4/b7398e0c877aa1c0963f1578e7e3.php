@@ -43,31 +43,22 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t<ul class=\"nav\">
 \t\t\t\t\t
 \t\t\t\t\t<li>
-\t\t\t\t\t<a href=\"#overview\">Overview</a>
-\t\t\t\t\t<ul class=\"nav\">
-\t\t\t\t\t<li><a href=\"#overview-doctype\">HTML5 doctype</a></li>
-\t\t\t\t\t<li><a href=\"#overview-mobile\">Mobile first</a></li>
-\t\t\t\t\t<li><a href=\"#overview-responsive-images\">Responsive images</a></li>
-\t\t\t\t\t<li><a href=\"#overview-type-links\">Type and links</a></li>
-\t\t\t\t\t<li><a href=\"#overview-normalize\">Normalize</a></li>
-\t\t\t\t\t<li><a href=\"#overview-container\">Container</a></li>
-\t\t\t\t\t</ul>
-\t\t\t\t\t</li>
-\t\t\t\t\t<li>
-\t\t\t\t\t<a href=\"#glyphicons\">Glyphicons</a>
-\t\t\t\t\t</li>
-\t\t\t\t\t<li>
-\t\t\t\t\t<a href=\"#grid\">Grid system</a>
-\t\t\t\t\t<ul class=\"nav\">
-\t\t\t\t\t<li><a href=\"#grid-options\">Available options</a></li>
-\t\t\t\t\t<li><a href=\"#grid-example-basic\">Ex: Stacked-to-horizonal</a></li>
-\t\t\t\t\t<li><a href=\"#grid-example-mixed\">Ex: Mobile-desktop</a></li>
-\t\t\t\t\t<li><a href=\"#grid-example-mixed-complete\">Ex: Mobile, tablet, desktop</a></li>
-\t\t\t\t\t<li><a href=\"#grid-offsetting\">Offset columns</a></li>
-\t\t\t\t\t<li><a href=\"#grid-nesting\">Nested columns</a></li>
-\t\t\t\t\t<li><a href=\"#grid-column-ordering\">Column ordering</a></li>
-\t\t\t\t\t<li><a href=\"#grid-less\">LESS mixins and variables</a></li>
-\t\t\t\t\t</ul>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<a href=\"#grid\">Grid system</a>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<ul class=\"nav\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li><a href=\"#grid-options\">Available options</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#grid-example-basic\">Ex: Stacked-to-horizonal</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#grid-example-mixed\">Ex: Mobile-desktop</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#grid-example-mixed-complete\">Ex: Mobile, tablet, desktop</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#grid-offsetting\">Offset columns</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#grid-nesting\">Nested columns</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#grid-column-ordering\">Column ordering</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#grid-less\">LESS mixins and variables</a></li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t
 \t\t\t\t\t</li>
 \t\t\t\t\t
 \t\t\t\t\t<li>
@@ -156,6 +147,730 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t</div>
 \t\t\t
 \t\t\t<div class=\"span9\">
+\t\t\t\t
+\t\t\t\t<!-- ================================================== -->
+\t\t\t\t<!-- =================== GRID SYSTEM ================== -->
+\t\t\t\t<!-- ================================================== -->
+\t\t\t\t
+\t\t\t\t<section id=\"#grid\">
+\t\t\t\t
+\t\t\t\t\t<h2>
+\t\t\t\t\t\t
+\t\t\t\t\t\tGrid system
+\t\t\t\t\t\t
+\t\t\t\t\t</h2>
+\t\t\t\t\t
+\t\t\t\t\t<p class=\"lead\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tBootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes <a href=\"#grid-example-basic\">predefined classes</a> for easy layout options, as well as powerful <a href=\"#grid-less\">mixins for generating more semantic layouts</a>.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"grid-media-queries\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tMedia queries
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tWe use the following media queries to create the key breakpoints in our grid system.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg) { ... }
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tWe occasionally expand on these media queries to include a <code>max-width</code> to limit CSS to a narrower set of devices.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+@media (max-width: @screen-phone-max) { ... }
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg) { ... }
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"grid-options\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tGrid options
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tSee how aspects of the Bootstrap grid system work across multiple devices with a handy table.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"table-responsive\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<table class=\"table table-bordered table-striped\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<thead>
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<th></th>
+\t\t\t\t\t\t\t<th>
+\t\t\t\t\t\t\tExtra small devices
+\t\t\t\t\t\t\t<small>Phones (&lt;768px)</small>
+\t\t\t\t\t\t\t</th>
+\t\t\t\t\t\t\t<th>
+\t\t\t\t\t\t\tSmall devices
+\t\t\t\t\t\t\t<small>Tablets (&ge;768px)</small>
+\t\t\t\t\t\t\t</th>
+\t\t\t\t\t\t\t<th>
+\t\t\t\t\t\t\tMedium devices
+\t\t\t\t\t\t\t<small>Desktops (&ge;992px)</small>
+\t\t\t\t\t\t\t</th>
+\t\t\t\t\t\t\t<th>
+\t\t\t\t\t\t\tLarge devices
+\t\t\t\t\t\t\t<small>Desktops (&ge;1200px)</small>
+\t\t\t\t\t\t\t</th>
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t</thead>
+\t\t\t\t\t\t\t<tbody>
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<th>Grid behavior</th>
+\t\t\t\t\t\t\t<td>Horizontal at all times</td>
+\t\t\t\t\t\t\t<td colspan=\"3\">Collapsed to start, horizontal above breakpoints</td>
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<th>Max container width</th>
+\t\t\t\t\t\t\t<td>None (auto)</td>
+\t\t\t\t\t\t\t<td>750px</td>
+\t\t\t\t\t\t\t<td>970px</td>
+\t\t\t\t\t\t\t<td>1170px</td>
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<th>Class prefix</th>
+\t\t\t\t\t\t\t<td><code>.col-xs-</code></td>
+\t\t\t\t\t\t\t<td><code>.col-sm-</code></td>
+\t\t\t\t\t\t\t<td><code>.col-md-</code></td>
+\t\t\t\t\t\t\t<td><code>.col-lg-</code></td>
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<th># of columns</th>
+\t\t\t\t\t\t\t<td colspan=\"4\">12</td>
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<th>Max column width</th>
+\t\t\t\t\t\t\t<td class=\"text-muted\">Auto</td>
+\t\t\t\t\t\t\t<td>60px</td>
+\t\t\t\t\t\t\t<td>78px</td>
+\t\t\t\t\t\t\t<td>95px</td>
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<th>Gutter width</th>
+\t\t\t\t\t\t\t<td colspan=\"4\">30px (15px on each side of a column)</td>
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<th>Nestable</th>
+\t\t\t\t\t\t\t<td colspan=\"4\">Yes</td>
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<th>Offsets</th>
+\t\t\t\t\t\t\t<td colspan=\"1\" class=\"text-muted\">N/A</td>
+\t\t\t\t\t\t\t<td colspan=\"3\">Yes</td>
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<th>Column ordering</th>
+\t\t\t\t\t\t\t<td class=\"text-muted\">N/A</td>
+\t\t\t\t\t\t\t<td colspan=\"3\">Yes</td>
+\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t</tbody>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</table>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"grid-example-basic\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tExample: Stacked-to-horizontal
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tUsing a single set of <code>.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"bs-docs-grid\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"col-md-8\">.col-md-8</div>
+\t\t\t\t\t\t\t<div class=\"col-md-4\">.col-md-4</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"col-md-4\">.col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-md-4\">.col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-md-4\">.col-md-4</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"col-md-6\">.col-md-6</div>
+\t\t\t\t\t\t\t<div class=\"col-md-6\">.col-md-6</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-md-8\"&gt;.col-md-8&lt;/div&gt;
+  &lt;div class=\"col-md-4\"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-md-4\"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class=\"col-md-4\"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class=\"col-md-4\"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-md-6\"&gt;.col-md-6&lt;/div&gt;
+  &lt;div class=\"col-md-6\"&gt;.col-md-6&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"grid-example-mixed\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tExample: Mobile and desktop
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tDon't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code>.col-xs-*</code> <code>.col-md-*</code> to your columns. See the example below for a better idea of how it all works.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"bs-docs-grid\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"col-xs-12 col-md-8\">.col-xs-12 col-md-8</div>
+\t\t\t\t\t\t\t<div class=\"col-xs-6 col-md-4\">.col-xs-6 .col-md-4</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"col-xs-6 col-md-4\">.col-xs-6 .col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-xs-6 col-md-4\">.col-xs-6 .col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-xs-6 col-md-4\">.col-xs-6 .col-md-4</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"col-xs-6\">.col-xs-6</div>
+\t\t\t\t\t\t\t<div class=\"col-xs-6\">.col-xs-6</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-xs-12 col-md-8\"&gt;.col-xs-12 col-md-8&lt;/div&gt;
+  &lt;div class=\"col-xs-6 col-md-4\"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop --&gt;
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-xs-6 col-md-4\"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+  &lt;div class=\"col-xs-6 col-md-4\"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+  &lt;div class=\"col-xs-6 col-md-4\"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Columns are always 50% wide, on mobile and desktop --&gt;
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-xs-6\"&gt;.col-xs-6&lt;/div&gt;
+  &lt;div class=\"col-xs-6\"&gt;.col-xs-6&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"grid-example-mixed-complete\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tExample: Mobile, tablet, desktops
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tBuild on the previous example by creating even more dynamic and powerful layouts with tablet <code>.col-sm-*</code> classes.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"bs-docs-grid\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"col-xs-12 col-sm-6 col-md-8\">.col-xs-12 .col-sm-6 .col-md-8</div>
+\t\t\t\t\t\t\t<div class=\"col-xs-6 col-sm-6 col-md-4\">.col-xs-6 .col-sm-6 .col-md-4</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"col-xs-6 col-sm-4 col-md-4\">.col-xs-6 .col-sm-4 .col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-xs-6 col-sm-4 col-md-4\">.col-xs-6 .col-sm-4 .col-md-4</div>
+\t\t\t\t\t\t\t<!-- Optional: clear the XS cols if their content doesn't match in height -->
+\t\t\t\t\t\t\t<div class=\"clearfix visible-xs\"></div>
+\t\t\t\t\t\t\t<div class=\"col-xs-6 col-sm-4 col-md-4\">.col-xs-6 .col-sm-4 .col-md-4</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-xs-12 col-sm-6 col-md-8\"&gt;.col-xs-12 .col-sm-6 .col-md-8&lt;/div&gt;
+  &lt;div class=\"col-xs-6 col-sm-6 col-md-4\"&gt;.col-xs-6 .col-sm-6 .col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-xs-6 col-sm-4 col-md-4\"&gt;.col-xs-6 .col-sm-4 .col-md-4&lt;/div&gt;
+  &lt;div class=\"col-xs-6 col-sm-4 col-md-4\"&gt;.col-xs-6 .col-sm-4 .col-md-4&lt;/div&gt;
+  &lt;!-- Optional: clear the XS cols if their content doesn't match in height --&gt;
+  &lt;div class=\"clearfix visible-xs\"&gt;&lt;/div&gt;
+  &lt;div class=\"col-xs-6 col-sm-4 col-md-4\"&gt;.col-xs-6 .col-sm-4 .col-md-4&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"grid-responsive-resets\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tResponsive column resets
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tWith the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a <code>.clearfix</code> and our <a href=\"../css#responsive-utilities\">responsive utility classes</a>.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-xs-6 col-sm-3\"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+  &lt;div class=\"col-xs-6 col-sm-3\"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+
+  &lt;!-- Add the extra clearfix for only the required viewport --&gt;
+  &lt;div class=\"clearfix visible-xs\"&gt;&lt;/div&gt;
+
+  &lt;div class=\"col-xs-6 col-sm-3\"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+  &lt;div class=\"col-xs-6 col-sm-3\"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tIn addition to column clearing at responsive breakpoints, you may need to <strong>reset offsets, pushes, or pulls</strong>. Those resets are available for medium and large grid tiers only, since they start only at the (second) small grid tier.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-sm-5 col-md-6\"&gt;.col-sm-5 .col-md-6&lt;/div&gt;
+  &lt;div class=\"col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0\"&gt;.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-sm-6 col-md-5 col-lg-6\"&gt;.col-sm-6 .col-md-5 .col-lg-6&lt;/div&gt;
+  &lt;div class=\"col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0\"&gt;.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"grid-offsetting\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tOffsetting columns
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tMove columns to the right using <code>.col-md-offset-*</code> classes. These classes increase the left margin of a column by <code>*</code> columns. For example, <code>.col-md-offset-4</code> moves <code>.col-md-4</code> over four columns.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"bs-docs-grid\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"col-md-4\">.col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-md-4 col-md-offset-4\">.col-md-4 .col-md-offset-4</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"col-md-3 col-md-offset-3\">.col-md-3 .col-md-offset-3</div>
+\t\t\t\t\t\t\t<div class=\"col-md-3 col-md-offset-3\">.col-md-3 .col-md-offset-3</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"col-md-6 col-md-offset-3\">.col-md-6 .col-md-offset-3</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-md-4\"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class=\"col-md-4 col-md-offset-4\"&gt;.col-md-4 .col-md-offset-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-md-3 col-md-offset-3\"&gt;.col-md-3 .col-md-offset-3&lt;/div&gt;
+  &lt;div class=\"col-md-3 col-md-offset-3\"&gt;.col-md-3 .col-md-offset-3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-md-6 col-md-offset-3\"&gt;.col-md-6 .col-md-offset-3&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"grid-nesting\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tNesting columns
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tTo nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-md-*</code> columns within an existing <code>.col-md-*</code> column. Nested rows should include a set of columns that add up to 12.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-md-9\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\tLevel 1: .col-md-9
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<div class=\"col-md-6\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tLevel 2: .col-md-6
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<div class=\"col-md-6\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tLevel 2: .col-md-6
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-md-9\"&gt;
+    Level 1: .col-md-9
+    &lt;div class=\"row\"&gt;
+      &lt;div class=\"col-md-6\"&gt;
+        Level 2: .col-md-6
+      &lt;/div&gt;
+      &lt;div class=\"col-md-6\"&gt;
+        Level 2: .col-md-6
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"grid-column-ordering\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tColumn ordering
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tEasily change the order of our built-in grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> modifier classes.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"row show-grid\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-md-9 col-md-push-3\">.col-md-9 .col-md-push-3</div>
+\t\t\t\t\t\t<div class=\"col-md-3 col-md-pull-9\">.col-md-3 .col-md-pull-9</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"row\"&gt;
+  &lt;div class=\"col-md-9 col-md-push-3\"&gt;.col-md-9 .col-md-push-3&lt;/div&gt;
+  &lt;div class=\"col-md-3 col-md-pull-9\"&gt;.col-md-3 .col-md-pull-9&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"grid-less\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tLESS mixins and variables
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tIn addition to <a href=\"#grid-example-basic\">prebuilt grid classes</a> for fast layouts, Bootstrap includes LESS variables and mixins for quickly generating your own simple, semantic layouts.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<h5>
+\t\t\t\t\t\t
+\t\t\t\t\t\tVariables
+\t\t\t\t\t\t
+\t\t\t\t\t</h5>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tVariables determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+@grid-columns:              12;
+@grid-gutter-width:         30px;
+@grid-float-breakpoint:     768px;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<h4>
+\t\t\t\t\t\t
+\t\t\t\t\t\tMixins
+\t\t\t\t\t\t
+\t\t\t\t\t</h4>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tMixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+// Creates a wrapper for a series of columns
+.make-row(@gutter: @grid-gutter-width) {
+  // Then clear the floated columns
+  .clearfix();
+
+  @media (min-width: @screen-small) {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+  }
+
+  // Negative margin nested rows out to align the content of columns
+  .row {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+  }
+}
+
+// Generate the extra small columns
+.make-xs-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @grid-float-breakpoint) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the small columns
+.make-sm-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-small) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the small column offsets
+.make-sm-column-offset(@columns) {
+  @media (min-width: @screen-small) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-sm-column-push(@columns) {
+  @media (min-width: @screen-small) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-sm-column-pull(@columns) {
+  @media (min-width: @screen-small) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the medium columns
+.make-md-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-medium) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the large column offsets
+.make-md-column-offset(@columns) {
+  @media (min-width: @screen-medium) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-md-column-push(@columns) {
+  @media (min-width: @screen-medium) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-md-column-pull(@columns) {
+  @media (min-width: @screen-medium) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the large columns
+.make-lg-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-large) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the large column offsets
+.make-lg-column-offset(@columns) {
+  @media (min-width: @screen-large) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-lg-column-push(@columns) {
+  @media (min-width: @screen-large) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-lg-column-pull(@columns) {
+  @media (min-width: @screen-large) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<h4>
+\t\t\t\t\t\t
+\t\t\t\t\t\tExample usage
+\t\t\t\t\t\t
+\t\t\t\t\t</h4>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tYou can modify the variables to your own custom values, or just use the mixins with their default values. Here's an example of using the default settings to create a two-column layout with a gap between.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+.wrapper {
+  .make-row();
+}
+.content-main {
+  .make-lg-column(8);
+}
+.content-secondary {
+  .make-lg-column(3);
+  .make-lg-column-offset(1);
+}
+</pre>
+
+<pre class=\"prettyprint linenums flush-bottom\">
+&lt;div class=\"wrapper\"&gt;
+  &lt;div class=\"content-main\"&gt;...&lt;/div&gt;
+  &lt;div class=\"content-secondary\"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t</section>
+\t\t\t\t
+\t\t\t\t<hr class=\"tall\">
 \t\t\t\t
 \t\t\t\t<!-- ================================================== -->
 \t\t\t\t<!-- ====================== COLORS ==================== -->

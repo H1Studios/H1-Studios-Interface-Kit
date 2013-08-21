@@ -300,7 +300,77 @@
 /* config.less                                                                                          */
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *//* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Colors                                                                                               */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
+/* H1 Green                                                                                             */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* H1 Blue                                                                                              */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Foundation                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Body                                                                                                 */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Borders                                                                                              */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Stage                                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Page                                                                                                 */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Typography                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Links                                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Fonts                                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Text Margin Ratios                                                                                   */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Body Text                                                                                            */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Lead Text                                                                                            */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Small Text                                                                                           */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Heading h1 Text                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Heading h2 Text                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Heading h3 Text                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Heading h4 Text                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Heading h5 Text                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Heading h6 Text                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
 /* h1-studios-interface-kit/styles.less                                                                 */
@@ -730,23 +800,23 @@ body {
 /*                                                                                                      */
 /* ==================================================================================================== */
 a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 ::selection {
-  background: #0066cc;
+  background: #35c5af;
   color: #ffffff;
 }
 ::-moz-selection {
-  background: #0066cc;
+  background: #35c5af;
   color: #ffffff;
 }
 /* ==================================================================================================== */
@@ -2085,15 +2155,15 @@ p.short {
   margin-bottom: 7.5px;
 }
 p a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 p a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 p a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 p.emphasis,
@@ -2106,19 +2176,19 @@ p strong {
 p.emphasis a,
 p .emphasis a,
 p strong a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 p.emphasis a:hover,
 p .emphasis a:hover,
 p strong a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 p.emphasis a:active,
 p .emphasis a:active,
 p strong a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 p.muted {
@@ -2127,28 +2197,28 @@ p.muted {
   font-style: normal;
 }
 p.muted a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 p.muted a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 p.muted a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 p.inverse {
   color: #bbbbbb;
 }
 p.inverse a {
-  color: #0066cc;
+  color: #35c5af;
 }
 p.inverse a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 p.inverse a:active {
-  color: #001429;
+  color: #0b2723;
 }
 p.inverse.emphasis,
 p.inverse .emphasis,
@@ -2158,29 +2228,29 @@ p.inverse strong {
 p.inverse.emphasis a,
 p.inverse .emphasis a,
 p.inverse strong a {
-  color: #0066cc;
+  color: #35c5af;
 }
 p.inverse.emphasis a:hover,
 p.inverse .emphasis a:hover,
 p.inverse strong a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 p.inverse.emphasis a:active,
 p.inverse .emphasis a:active,
 p.inverse strong a:active {
-  color: #001429;
+  color: #0b2723;
 }
 p.inverse.muted {
   color: #bbbbbb;
 }
 p.inverse.muted a {
-  color: #0066cc;
+  color: #35c5af;
 }
 p.inverse.muted a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 p.inverse.muted a:active {
-  color: #001429;
+  color: #0b2723;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -2218,19 +2288,19 @@ p .lead.short {
 p.lead a,
 p lead a,
 p .lead a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 p.lead a:hover,
 p lead a:hover,
 p .lead a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 p.lead a:active,
 p lead a:active,
 p .lead a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 p.lead.emphasis,
@@ -2255,7 +2325,7 @@ p .lead .emphasis a,
 p.lead strong a,
 p lead strong a,
 p .lead strong a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 p.lead.emphasis a:hover,
@@ -2267,8 +2337,8 @@ p .lead .emphasis a:hover,
 p.lead strong a:hover,
 p lead strong a:hover,
 p .lead strong a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 p.lead.emphasis a:active,
 p lead.emphasis a:active,
@@ -2279,7 +2349,7 @@ p .lead .emphasis a:active,
 p.lead strong a:active,
 p lead strong a:active,
 p .lead strong a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 p.lead.muted,
@@ -2292,40 +2362,40 @@ p .lead.muted {
 p.lead.muted a,
 p lead.muted a,
 p .lead.muted a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 p.lead.muted a:hover,
 p lead.muted a:hover,
 p .lead.muted a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 p.lead.muted a:active,
 p lead.muted a:active,
 p .lead.muted a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 p.lead.inverse,
 p lead.inverse,
 p .lead.inverse {
-  color: #9f9f9f;
+  color: #8c8c8c;
 }
 p.lead.inverse a,
 p lead.inverse a,
 p .lead.inverse a {
-  color: #0066cc;
+  color: #35c5af;
 }
 p.lead.inverse a:hover,
 p lead.inverse a:hover,
 p .lead.inverse a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 p.lead.inverse a:active,
 p lead.inverse a:active,
 p .lead.inverse a:active {
-  color: #001429;
+  color: #0b2723;
 }
 p.lead.inverse.emphasis,
 p lead.inverse.emphasis,
@@ -2347,7 +2417,7 @@ p .lead.inverse .emphasis a,
 p.lead.inverse strong a,
 p lead.inverse strong a,
 p .lead.inverse strong a {
-  color: #0066cc;
+  color: #35c5af;
 }
 p.lead.inverse.emphasis a:hover,
 p lead.inverse.emphasis a:hover,
@@ -2358,7 +2428,7 @@ p .lead.inverse .emphasis a:hover,
 p.lead.inverse strong a:hover,
 p lead.inverse strong a:hover,
 p .lead.inverse strong a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 p.lead.inverse.emphasis a:active,
 p lead.inverse.emphasis a:active,
@@ -2369,7 +2439,7 @@ p .lead.inverse .emphasis a:active,
 p.lead.inverse strong a:active,
 p lead.inverse strong a:active,
 p .lead.inverse strong a:active {
-  color: #001429;
+  color: #0b2723;
 }
 p.lead.inverse.muted,
 p lead.inverse.muted,
@@ -2379,17 +2449,17 @@ p .lead.inverse.muted {
 p.lead.inverse.muted a,
 p lead.inverse.muted a,
 p .lead.inverse.muted a {
-  color: #0066cc;
+  color: #35c5af;
 }
 p.lead.inverse.muted a:hover,
 p lead.inverse.muted a:hover,
 p .lead.inverse.muted a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 p.lead.inverse.muted a:active,
 p lead.inverse.muted a:active,
 p .lead.inverse.muted a:active {
-  color: #001429;
+  color: #0b2723;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -2427,19 +2497,19 @@ p .small.short {
 p.small a,
 p small a,
 p .small a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 p.small a:hover,
 p small a:hover,
 p .small a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 p.small a:active,
 p small a:active,
 p .small a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 p.small.emphasis,
@@ -2464,7 +2534,7 @@ p .small .emphasis a,
 p.small strong a,
 p small strong a,
 p .small strong a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 p.small.emphasis a:hover,
@@ -2476,8 +2546,8 @@ p .small .emphasis a:hover,
 p.small strong a:hover,
 p small strong a:hover,
 p .small strong a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 p.small.emphasis a:active,
 p small.emphasis a:active,
@@ -2488,7 +2558,7 @@ p .small .emphasis a:active,
 p.small strong a:active,
 p small strong a:active,
 p .small strong a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 p.small.muted,
@@ -2501,19 +2571,19 @@ p .small.muted {
 p.small.muted a,
 p small.muted a,
 p .small.muted a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 p.small.muted a:hover,
 p small.muted a:hover,
 p .small.muted a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 p.small.muted a:active,
 p small.muted a:active,
 p .small.muted a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 p.small.inverse,
@@ -2524,17 +2594,17 @@ p .small.inverse {
 p.small.inverse a,
 p small.inverse a,
 p .small.inverse a {
-  color: #0066cc;
+  color: #35c5af;
 }
 p.small.inverse a:hover,
 p small.inverse a:hover,
 p .small.inverse a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 p.small.inverse a:active,
 p small.inverse a:active,
 p .small.inverse a:active {
-  color: #001429;
+  color: #0b2723;
 }
 p.small.inverse.emphasis,
 p small.inverse.emphasis,
@@ -2556,7 +2626,7 @@ p .small.inverse .emphasis a,
 p.small.inverse strong a,
 p small.inverse strong a,
 p .small.inverse strong a {
-  color: #0066cc;
+  color: #35c5af;
 }
 p.small.inverse.emphasis a:hover,
 p small.inverse.emphasis a:hover,
@@ -2567,7 +2637,7 @@ p .small.inverse .emphasis a:hover,
 p.small.inverse strong a:hover,
 p small.inverse strong a:hover,
 p .small.inverse strong a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 p.small.inverse.emphasis a:active,
 p small.inverse.emphasis a:active,
@@ -2578,7 +2648,7 @@ p .small.inverse .emphasis a:active,
 p.small.inverse strong a:active,
 p small.inverse strong a:active,
 p .small.inverse strong a:active {
-  color: #001429;
+  color: #0b2723;
 }
 p.small.inverse.muted,
 p small.inverse.muted,
@@ -2588,17 +2658,17 @@ p .small.inverse.muted {
 p.small.inverse.muted a,
 p small.inverse.muted a,
 p .small.inverse.muted a {
-  color: #0066cc;
+  color: #35c5af;
 }
 p.small.inverse.muted a:hover,
 p small.inverse.muted a:hover,
 p .small.inverse.muted a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 p.small.inverse.muted a:active,
 p small.inverse.muted a:active,
 p .small.inverse.muted a:active {
-  color: #001429;
+  color: #0b2723;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -2689,17 +2759,17 @@ h1.short,
 }
 h1 a,
 .h1-clone a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h1 a:hover,
 .h1-clone a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h1 a:active,
 .h1-clone a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h1.emphasis,
@@ -2718,7 +2788,7 @@ h1 .emphasis a,
 .h1-clone .emphasis a,
 h1 strong a,
 .h1-clone strong a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h1.emphasis a:hover,
@@ -2727,8 +2797,8 @@ h1 .emphasis a:hover,
 .h1-clone .emphasis a:hover,
 h1 strong a:hover,
 .h1-clone strong a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h1.emphasis a:active,
 .h1-clone.emphasis a:active,
@@ -2736,7 +2806,7 @@ h1 .emphasis a:active,
 .h1-clone .emphasis a:active,
 h1 strong a:active,
 .h1-clone strong a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h1.muted,
@@ -2747,34 +2817,34 @@ h1.muted,
 }
 h1.muted a,
 .h1-clone.muted a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h1.muted a:hover,
 .h1-clone.muted a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h1.muted a:active,
 .h1-clone.muted a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h1.inverse,
 .h1-clone.inverse {
-  color: #262626;
+  color: #ffffff;
 }
 h1.inverse a,
 .h1-clone.inverse a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h1.inverse a:hover,
 .h1-clone.inverse a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h1.inverse a:active,
 .h1-clone.inverse a:active {
-  color: #001429;
+  color: #0b2723;
 }
 h1.inverse.emphasis,
 .h1-clone.inverse.emphasis,
@@ -2790,7 +2860,7 @@ h1.inverse .emphasis a,
 .h1-clone.inverse .emphasis a,
 h1.inverse strong a,
 .h1-clone.inverse strong a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h1.inverse.emphasis a:hover,
 .h1-clone.inverse.emphasis a:hover,
@@ -2798,7 +2868,7 @@ h1.inverse .emphasis a:hover,
 .h1-clone.inverse .emphasis a:hover,
 h1.inverse strong a:hover,
 .h1-clone.inverse strong a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h1.inverse.emphasis a:active,
 .h1-clone.inverse.emphasis a:active,
@@ -2806,7 +2876,7 @@ h1.inverse .emphasis a:active,
 .h1-clone.inverse .emphasis a:active,
 h1.inverse strong a:active,
 .h1-clone.inverse strong a:active {
-  color: #001429;
+  color: #0b2723;
 }
 h1.inverse.muted,
 .h1-clone.inverse.muted {
@@ -2814,15 +2884,15 @@ h1.inverse.muted,
 }
 h1.inverse.muted a,
 .h1-clone.inverse.muted a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h1.inverse.muted a:hover,
 .h1-clone.inverse.muted a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h1.inverse.muted a:active,
 .h1-clone.inverse.muted a:active {
-  color: #001429;
+  color: #0b2723;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -2856,17 +2926,17 @@ h2.short,
 }
 h2 a,
 .h2-clone a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h2 a:hover,
 .h2-clone a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h2 a:active,
 .h2-clone a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h2.emphasis,
@@ -2885,7 +2955,7 @@ h2 .emphasis a,
 .h2-clone .emphasis a,
 h2 strong a,
 .h2-clone strong a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h2.emphasis a:hover,
@@ -2894,8 +2964,8 @@ h2 .emphasis a:hover,
 .h2-clone .emphasis a:hover,
 h2 strong a:hover,
 .h2-clone strong a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h2.emphasis a:active,
 .h2-clone.emphasis a:active,
@@ -2903,7 +2973,7 @@ h2 .emphasis a:active,
 .h2-clone .emphasis a:active,
 h2 strong a:active,
 .h2-clone strong a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h2.muted,
@@ -2914,34 +2984,34 @@ h2.muted,
 }
 h2.muted a,
 .h2-clone.muted a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h2.muted a:hover,
 .h2-clone.muted a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h2.muted a:active,
 .h2-clone.muted a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h2.inverse,
 .h2-clone.inverse {
-  color: #262626;
+  color: #ffffff;
 }
 h2.inverse a,
 .h2-clone.inverse a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h2.inverse a:hover,
 .h2-clone.inverse a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h2.inverse a:active,
 .h2-clone.inverse a:active {
-  color: #001429;
+  color: #0b2723;
 }
 h2.inverse.emphasis,
 .h2-clone.inverse.emphasis,
@@ -2957,7 +3027,7 @@ h2.inverse .emphasis a,
 .h2-clone.inverse .emphasis a,
 h2.inverse strong a,
 .h2-clone.inverse strong a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h2.inverse.emphasis a:hover,
 .h2-clone.inverse.emphasis a:hover,
@@ -2965,7 +3035,7 @@ h2.inverse .emphasis a:hover,
 .h2-clone.inverse .emphasis a:hover,
 h2.inverse strong a:hover,
 .h2-clone.inverse strong a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h2.inverse.emphasis a:active,
 .h2-clone.inverse.emphasis a:active,
@@ -2973,7 +3043,7 @@ h2.inverse .emphasis a:active,
 .h2-clone.inverse .emphasis a:active,
 h2.inverse strong a:active,
 .h2-clone.inverse strong a:active {
-  color: #001429;
+  color: #0b2723;
 }
 h2.inverse.muted,
 .h2-clone.inverse.muted {
@@ -2981,15 +3051,15 @@ h2.inverse.muted,
 }
 h2.inverse.muted a,
 .h2-clone.inverse.muted a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h2.inverse.muted a:hover,
 .h2-clone.inverse.muted a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h2.inverse.muted a:active,
 .h2-clone.inverse.muted a:active {
-  color: #001429;
+  color: #0b2723;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -3023,17 +3093,17 @@ h3.short,
 }
 h3 a,
 .h3-clone a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h3 a:hover,
 .h3-clone a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h3 a:active,
 .h3-clone a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h3.emphasis,
@@ -3052,7 +3122,7 @@ h3 .emphasis a,
 .h3-clone .emphasis a,
 h3 strong a,
 .h3-clone strong a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h3.emphasis a:hover,
@@ -3061,8 +3131,8 @@ h3 .emphasis a:hover,
 .h3-clone .emphasis a:hover,
 h3 strong a:hover,
 .h3-clone strong a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h3.emphasis a:active,
 .h3-clone.emphasis a:active,
@@ -3070,7 +3140,7 @@ h3 .emphasis a:active,
 .h3-clone .emphasis a:active,
 h3 strong a:active,
 .h3-clone strong a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h3.muted,
@@ -3081,34 +3151,34 @@ h3.muted,
 }
 h3.muted a,
 .h3-clone.muted a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h3.muted a:hover,
 .h3-clone.muted a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h3.muted a:active,
 .h3-clone.muted a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h3.inverse,
 .h3-clone.inverse {
-  color: #5e5e5e;
+  color: #ffffff;
 }
 h3.inverse a,
 .h3-clone.inverse a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h3.inverse a:hover,
 .h3-clone.inverse a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h3.inverse a:active,
 .h3-clone.inverse a:active {
-  color: #001429;
+  color: #0b2723;
 }
 h3.inverse.emphasis,
 .h3-clone.inverse.emphasis,
@@ -3124,7 +3194,7 @@ h3.inverse .emphasis a,
 .h3-clone.inverse .emphasis a,
 h3.inverse strong a,
 .h3-clone.inverse strong a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h3.inverse.emphasis a:hover,
 .h3-clone.inverse.emphasis a:hover,
@@ -3132,7 +3202,7 @@ h3.inverse .emphasis a:hover,
 .h3-clone.inverse .emphasis a:hover,
 h3.inverse strong a:hover,
 .h3-clone.inverse strong a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h3.inverse.emphasis a:active,
 .h3-clone.inverse.emphasis a:active,
@@ -3140,7 +3210,7 @@ h3.inverse .emphasis a:active,
 .h3-clone.inverse .emphasis a:active,
 h3.inverse strong a:active,
 .h3-clone.inverse strong a:active {
-  color: #001429;
+  color: #0b2723;
 }
 h3.inverse.muted,
 .h3-clone.inverse.muted {
@@ -3148,15 +3218,15 @@ h3.inverse.muted,
 }
 h3.inverse.muted a,
 .h3-clone.inverse.muted a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h3.inverse.muted a:hover,
 .h3-clone.inverse.muted a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h3.inverse.muted a:active,
 .h3-clone.inverse.muted a:active {
-  color: #001429;
+  color: #0b2723;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -3190,17 +3260,17 @@ h4.short,
 }
 h4 a,
 .h4-clone a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h4 a:hover,
 .h4-clone a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h4 a:active,
 .h4-clone a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h4.emphasis,
@@ -3219,7 +3289,7 @@ h4 .emphasis a,
 .h4-clone .emphasis a,
 h4 strong a,
 .h4-clone strong a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h4.emphasis a:hover,
@@ -3228,8 +3298,8 @@ h4 .emphasis a:hover,
 .h4-clone .emphasis a:hover,
 h4 strong a:hover,
 .h4-clone strong a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h4.emphasis a:active,
 .h4-clone.emphasis a:active,
@@ -3237,7 +3307,7 @@ h4 .emphasis a:active,
 .h4-clone .emphasis a:active,
 h4 strong a:active,
 .h4-clone strong a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h4.muted,
@@ -3248,34 +3318,34 @@ h4.muted,
 }
 h4.muted a,
 .h4-clone.muted a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h4.muted a:hover,
 .h4-clone.muted a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h4.muted a:active,
 .h4-clone.muted a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h4.inverse,
 .h4-clone.inverse {
-  color: #f38339;
+  color: #ffffff;
 }
 h4.inverse a,
 .h4-clone.inverse a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h4.inverse a:hover,
 .h4-clone.inverse a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h4.inverse a:active,
 .h4-clone.inverse a:active {
-  color: #001429;
+  color: #0b2723;
 }
 h4.inverse.emphasis,
 .h4-clone.inverse.emphasis,
@@ -3291,7 +3361,7 @@ h4.inverse .emphasis a,
 .h4-clone.inverse .emphasis a,
 h4.inverse strong a,
 .h4-clone.inverse strong a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h4.inverse.emphasis a:hover,
 .h4-clone.inverse.emphasis a:hover,
@@ -3299,7 +3369,7 @@ h4.inverse .emphasis a:hover,
 .h4-clone.inverse .emphasis a:hover,
 h4.inverse strong a:hover,
 .h4-clone.inverse strong a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h4.inverse.emphasis a:active,
 .h4-clone.inverse.emphasis a:active,
@@ -3307,7 +3377,7 @@ h4.inverse .emphasis a:active,
 .h4-clone.inverse .emphasis a:active,
 h4.inverse strong a:active,
 .h4-clone.inverse strong a:active {
-  color: #001429;
+  color: #0b2723;
 }
 h4.inverse.muted,
 .h4-clone.inverse.muted {
@@ -3315,15 +3385,15 @@ h4.inverse.muted,
 }
 h4.inverse.muted a,
 .h4-clone.inverse.muted a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h4.inverse.muted a:hover,
 .h4-clone.inverse.muted a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h4.inverse.muted a:active,
 .h4-clone.inverse.muted a:active {
-  color: #001429;
+  color: #0b2723;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -3357,17 +3427,17 @@ h5.short,
 }
 h5 a,
 .h5-clone a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h5 a:hover,
 .h5-clone a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h5 a:active,
 .h5-clone a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h5.emphasis,
@@ -3386,7 +3456,7 @@ h5 .emphasis a,
 .h5-clone .emphasis a,
 h5 strong a,
 .h5-clone strong a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h5.emphasis a:hover,
@@ -3395,8 +3465,8 @@ h5 .emphasis a:hover,
 .h5-clone .emphasis a:hover,
 h5 strong a:hover,
 .h5-clone strong a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h5.emphasis a:active,
 .h5-clone.emphasis a:active,
@@ -3404,7 +3474,7 @@ h5 .emphasis a:active,
 .h5-clone .emphasis a:active,
 h5 strong a:active,
 .h5-clone strong a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h5.muted,
@@ -3415,34 +3485,34 @@ h5.muted,
 }
 h5.muted a,
 .h5-clone.muted a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h5.muted a:hover,
 .h5-clone.muted a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h5.muted a:active,
 .h5-clone.muted a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h5.inverse,
 .h5-clone.inverse {
-  color: #262626;
+  color: #ffffff;
 }
 h5.inverse a,
 .h5-clone.inverse a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h5.inverse a:hover,
 .h5-clone.inverse a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h5.inverse a:active,
 .h5-clone.inverse a:active {
-  color: #001429;
+  color: #0b2723;
 }
 h5.inverse.emphasis,
 .h5-clone.inverse.emphasis,
@@ -3458,7 +3528,7 @@ h5.inverse .emphasis a,
 .h5-clone.inverse .emphasis a,
 h5.inverse strong a,
 .h5-clone.inverse strong a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h5.inverse.emphasis a:hover,
 .h5-clone.inverse.emphasis a:hover,
@@ -3466,7 +3536,7 @@ h5.inverse .emphasis a:hover,
 .h5-clone.inverse .emphasis a:hover,
 h5.inverse strong a:hover,
 .h5-clone.inverse strong a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h5.inverse.emphasis a:active,
 .h5-clone.inverse.emphasis a:active,
@@ -3474,7 +3544,7 @@ h5.inverse .emphasis a:active,
 .h5-clone.inverse .emphasis a:active,
 h5.inverse strong a:active,
 .h5-clone.inverse strong a:active {
-  color: #001429;
+  color: #0b2723;
 }
 h5.inverse.muted,
 .h5-clone.inverse.muted {
@@ -3482,15 +3552,15 @@ h5.inverse.muted,
 }
 h5.inverse.muted a,
 .h5-clone.inverse.muted a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h5.inverse.muted a:hover,
 .h5-clone.inverse.muted a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h5.inverse.muted a:active,
 .h5-clone.inverse.muted a:active {
-  color: #001429;
+  color: #0b2723;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -3524,17 +3594,17 @@ h6.short,
 }
 h6 a,
 .h6-clone a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h6 a:hover,
 .h6-clone a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h6 a:active,
 .h6-clone a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h6.emphasis,
@@ -3553,7 +3623,7 @@ h6 .emphasis a,
 .h6-clone .emphasis a,
 h6 strong a,
 .h6-clone strong a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h6.emphasis a:hover,
@@ -3562,8 +3632,8 @@ h6 .emphasis a:hover,
 .h6-clone .emphasis a:hover,
 h6 strong a:hover,
 .h6-clone strong a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h6.emphasis a:active,
 .h6-clone.emphasis a:active,
@@ -3571,7 +3641,7 @@ h6 .emphasis a:active,
 .h6-clone .emphasis a:active,
 h6 strong a:active,
 .h6-clone strong a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h6.muted,
@@ -3582,34 +3652,34 @@ h6.muted,
 }
 h6.muted a,
 .h6-clone.muted a {
-  color: #0066cc;
+  color: #35c5af;
   text-decoration: none;
 }
 h6.muted a:hover,
 .h6-clone.muted a:hover {
-  color: #003d7a;
-  text-decoration: underline;
+  color: #207669;
+  text-decoration: none;
 }
 h6.muted a:active,
 .h6-clone.muted a:active {
-  color: #001429;
+  color: #0b2723;
   text-decoration: none;
 }
 h6.inverse,
 .h6-clone.inverse {
-  color: #bbbbbb;
+  color: #ffffff;
 }
 h6.inverse a,
 .h6-clone.inverse a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h6.inverse a:hover,
 .h6-clone.inverse a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h6.inverse a:active,
 .h6-clone.inverse a:active {
-  color: #001429;
+  color: #0b2723;
 }
 h6.inverse.emphasis,
 .h6-clone.inverse.emphasis,
@@ -3625,7 +3695,7 @@ h6.inverse .emphasis a,
 .h6-clone.inverse .emphasis a,
 h6.inverse strong a,
 .h6-clone.inverse strong a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h6.inverse.emphasis a:hover,
 .h6-clone.inverse.emphasis a:hover,
@@ -3633,7 +3703,7 @@ h6.inverse .emphasis a:hover,
 .h6-clone.inverse .emphasis a:hover,
 h6.inverse strong a:hover,
 .h6-clone.inverse strong a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h6.inverse.emphasis a:active,
 .h6-clone.inverse.emphasis a:active,
@@ -3641,7 +3711,7 @@ h6.inverse .emphasis a:active,
 .h6-clone.inverse .emphasis a:active,
 h6.inverse strong a:active,
 .h6-clone.inverse strong a:active {
-  color: #001429;
+  color: #0b2723;
 }
 h6.inverse.muted,
 .h6-clone.inverse.muted {
@@ -3649,15 +3719,15 @@ h6.inverse.muted,
 }
 h6.inverse.muted a,
 .h6-clone.inverse.muted a {
-  color: #0066cc;
+  color: #35c5af;
 }
 h6.inverse.muted a:hover,
 .h6-clone.inverse.muted a:hover {
-  color: #003d7a;
+  color: #207669;
 }
 h6.inverse.muted a:active,
 .h6-clone.inverse.muted a:active {
-  color: #001429;
+  color: #0b2723;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -4835,7 +4905,7 @@ blockquote:after {
   background: #f9f9f9;
 }
 #stage .stage-pod.stage-pod-dark {
-  background: #131313;
+  background: #00161e;
 }
 #stage .stage-pod.stage-pod-divider {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -6599,7 +6669,7 @@ input[type="button"].button-block {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #0066cc;
+  color: #35c5af;
   text-shadow: none;
   background-color: none;
   -webkit-box-shadow: none;
@@ -6614,7 +6684,7 @@ input[type="button"].button-block {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #003d7a;
+  color: #207669;
   text-shadow: none;
   background-color: none;
   -webkit-box-shadow: none;
@@ -6630,7 +6700,7 @@ input[type="button"].button-block {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #001429;
+  color: #0b2723;
   text-shadow: none;
   background-color: none;
   -webkit-box-shadow: none;
@@ -6648,7 +6718,7 @@ input[type="button"].button-block {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #0066cc;
+  color: #35c5af;
   text-shadow: none;
   background-color: none;
   -webkit-box-shadow: none;
@@ -8146,7 +8216,7 @@ input[type="submit"].button.button-mini {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #001429;
+  color: #0b2723;
   text-shadow: none;
   background-color: none;
   -webkit-box-shadow: none;
@@ -10140,13 +10210,13 @@ input[type="submit"].button.button-mini {
   border-top-color: #e0f0ff;
 }
 .dropdown-toggle.button.button-primary.button-link .caret {
-  border-top-color: #0066cc;
+  border-top-color: #35c5af;
 }
 .dropdown-toggle.button.button-primary.button-link:hover .caret {
-  border-top-color: #003d7a;
+  border-top-color: #207669;
 }
 .dropdown-toggle.button.button-primary.button-link:active .caret {
-  border-top-color: #001429;
+  border-top-color: #0b2723;
 }
 .dropdown-toggle.button.button-primary.inverse .caret {
   border-top-color: #e4e4e4;
@@ -10355,7 +10425,7 @@ input[type="submit"].button.button-mini {
   border-top-color: #e0f0ff;
 }
 .button-group.open .dropdown-toggle.button.button-primary.button-link .caret {
-  border-top-color: #001429;
+  border-top-color: #0b2723;
 }
 .button-group.open .dropdown-toggle.button.button-primary.inverse .caret {
   border-top-color: #e4e4e4;
@@ -10856,13 +10926,13 @@ input[type="submit"].button.button-mini {
   border-bottom-color: #e0f0ff;
 }
 .dropup .dropdown-toggle.button.button-primary.button-link .caret {
-  border-bottom-color: #0066cc;
+  border-bottom-color: #35c5af;
 }
 .dropup .dropdown-toggle.button.button-primary.button-link:hover .caret {
-  border-bottom-color: #003d7a;
+  border-bottom-color: #207669;
 }
 .dropup .dropdown-toggle.button.button-primary.button-link:active .caret {
-  border-bottom-color: #001429;
+  border-bottom-color: #0b2723;
 }
 .dropup .dropdown-toggle.button.button-primary.inverse .caret {
   border-bottom-color: #e4e4e4;
@@ -11001,7 +11071,7 @@ input[type="submit"].button.button-mini {
   border-bottom-color: #e0f0ff;
 }
 .dropup.open .dropdown-toggle.button.button-primary.button-link .caret {
-  border-bottom-color: #001429;
+  border-bottom-color: #0b2723;
 }
 .dropup.open .dropdown-toggle.button.button-primary.inverse .caret {
   border-bottom-color: #e4e4e4;
@@ -11918,7 +11988,7 @@ legend.short {
   margin-bottom: 15px;
 }
 legend.inverse {
-  color: #f38339;
+  color: #ffffff;
   border-bottom-color: #424242;
 }
 /* ==================================================================================================== */
@@ -11944,7 +12014,7 @@ label.short {
   margin-bottom: 3.75px;
 }
 label.inverse {
-  color: #f38339;
+  color: #ffffff;
   border-bottom-color: #424242;
 }
 /* ==================================================================================================== */
@@ -22706,8 +22776,8 @@ a.badge:focus {
 }
 .pagination ul > li > a:hover,
 .pagination ul > li > a:focus {
-  color: #0066cc;
-  background-color: #d6ebff;
+  color: #35c5af;
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 0px 1px #bbbbbb;
   -moz-box-shadow: 0px 0px 0px 1px #bbbbbb;
   box-shadow: 0px 0px 0px 1px #bbbbbb;
@@ -22715,11 +22785,11 @@ a.badge:focus {
 .pagination ul > li.active > a,
 .pagination ul > li.active > span {
   color: #ffffff;
-  background-color: #0066cc;
+  background-color: #35c5af;
   cursor: default;
-  -webkit-box-shadow: 0px 0px 0px 1px #0066cc;
-  -moz-box-shadow: 0px 0px 0px 1px #0066cc;
-  box-shadow: 0px 0px 0px 1px #0066cc;
+  -webkit-box-shadow: 0px 0px 0px 1px #35c5af;
+  -moz-box-shadow: 0px 0px 0px 1px #35c5af;
+  box-shadow: 0px 0px 0px 1px #35c5af;
   z-index: 10000;
 }
 .pagination ul > li.disabled > span,
@@ -23477,9 +23547,6 @@ form.code-example .pagination {
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-#stage .stage-pod.stage-pod-dark {
-  background: #131313;
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
@@ -23591,8 +23658,8 @@ header .header-toolbar .header-logo {
   padding: 0px;
   float: left;
   display: block;
-  width: 178px;
-  height: 40px;
+  width: 116px;
+  height: 50px;
   background: url(/resources/images/layout/header/header-logo.png) top left no-repeat;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -23636,7 +23703,7 @@ header .header-toolbar #nav ul li,
 header .header-toolbar nav ul li {
   display: inline-block;
   list-style: none;
-  line-height: 40px;
+  line-height: 50px;
   margin: 0px 60px 0px 0px;
   padding: 0px 10px 0px 10px;
   font-size: 16px;
@@ -23657,6 +23724,14 @@ header .header-toolbar nav ul li:last-child {
 #header .header-content,
 header .header-content {
   position: relative;
+}
+#header .header-content .header-title,
+header .header-content .header-title {
+  color: #35c5af;
+}
+#header .header-content .header-subtitle,
+header .header-content .header-subtitle {
+  color: #ffffff;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */

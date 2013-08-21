@@ -11,7 +11,7 @@ class __TwigTemplate_04331461d1f6d0c6706885f1777edeb6 extends Twig_Template
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<header id=\"header\" class=\"stage-pod stage-pod-light\">
+        echo "<header id=\"header\" class=\"stage-pod stage-pod-dark\">
 \t
 \t<div class=\"header-toolbar container-fluid container-pod container-pod-short ";
         // line 3
@@ -64,7 +64,7 @@ class __TwigTemplate_04331461d1f6d0c6706885f1777edeb6 extends Twig_Template
             echo "
 \t<div class=\"header-content container container-pod\">
 \t\t
-\t\t<h1 class=\"header-title centered ";
+\t\t<h1 class=\"inverse header-title centered ";
             // line 41
             if (isset($context["page"])) { $_page_ = $context["page"]; } else { $_page_ = null; }
             if (($this->getAttribute($_page_, "subtitle") != "")) {
@@ -88,7 +88,7 @@ class __TwigTemplate_04331461d1f6d0c6706885f1777edeb6 extends Twig_Template
             if (($this->getAttribute($_page_, "subtitle") != "")) {
                 // line 48
                 echo "\t\t\t\t
-\t\t\t<p class=\"header-subtitle lead centered flush-bottom\">
+\t\t\t<p class=\"inverse header-subtitle lead centered flush-bottom\">
 
 \t\t\t\t";
                 // line 51
