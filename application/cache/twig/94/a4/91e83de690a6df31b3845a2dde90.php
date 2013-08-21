@@ -1059,7 +1059,7 @@ class __TwigTemplate_94a491e83de690a6df31b3845a2dde90 extends Twig_Template
 \t\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>
 \t\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>
 \t\t\t\t\t\t\t<li class=\"divider\"></li>
-\t\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>
+\t\t\t\t\t\t\t<li><a href=\"#\" class=\"danger\">Separated link</a></li>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</ul>
 \t\t\t\t\t\t

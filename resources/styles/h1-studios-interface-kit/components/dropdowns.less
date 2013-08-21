@@ -31,20 +31,10 @@
 }
 
 
-	
-/* ---------------------------------------------------------------------------------------------------- */
-/* Drop-Up                                                                                              */
-/* ---------------------------------------------------------------------------------------------------- */
-
-.dropup {
-	
-}
-
-
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Dropdown Arrow/Caret                                                                                 */
+/* Dropdown Arrow/Caret Sizing/Styling                                                                  */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -63,7 +53,7 @@
 			border-width: @dropdown-toggle-caret-height @dropdown-toggle-caret-width 0px @dropdown-toggle-caret-width;
 			border-top-color: @button-default-text-color;
 			margin-top: (@button-text-line-height / 2) - (@dropdown-toggle-caret-height / 2) + @dropdown-toggle-caret-offset-top;
-			margin-left: (@button-padding-horizontal / 2);
+			//margin-left: (@button-padding-horizontal / 2);
 			
 			&.caret-solo {
 				
@@ -167,7 +157,7 @@
 				
 				border-width: @dropdown-toggle-large-caret-height @dropdown-toggle-large-caret-width 0px @dropdown-toggle-large-caret-width;
 				margin-top: (@button-large-text-line-height / 2) - (@dropdown-toggle-large-caret-height / 2) + @dropdown-toggle-large-caret-offset-top;
-				margin-left: (@button-large-padding-horizontal / 2);
+				//margin-left: (@button-large-padding-horizontal / 2);
 				
 				&.caret-solo {
 					
@@ -189,7 +179,7 @@
 				
 				border-width: @dropdown-toggle-small-caret-height @dropdown-toggle-small-caret-width 0px @dropdown-toggle-small-caret-width;
 				margin-top: (@button-small-text-line-height / 2) - (@dropdown-toggle-small-caret-height / 2) + @dropdown-toggle-small-caret-offset-top;
-				margin-left: (@button-small-padding-horizontal / 2);
+				//margin-left: (@button-small-padding-horizontal / 2);
 				
 				&.caret-solo {
 					
@@ -211,7 +201,7 @@
 				
 				border-width: @dropdown-toggle-mini-caret-height @dropdown-toggle-mini-caret-width 0px @dropdown-toggle-mini-caret-width;
 				margin-top: (@button-mini-text-line-height / 2) - (@dropdown-toggle-mini-caret-height / 2) + @dropdown-toggle-mini-caret-offset-top;
-				margin-left: (@button-mini-padding-horizontal / 2);
+				//margin-left: (@button-mini-padding-horizontal / 2);
 				
 				&.caret-solo {
 					
@@ -619,102 +609,125 @@
 	
 }
 
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Button Group Arrow/Caret Sizing                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.button-group {
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Button Large                                                                                         */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.button-group-large {
+		
+		.button {
+			
+			.caret {
+				
+				border-width: @dropdown-toggle-large-caret-height @dropdown-toggle-large-caret-width 0px @dropdown-toggle-large-caret-width;
+				margin-top: (@button-large-text-line-height / 2) - (@dropdown-toggle-large-caret-height / 2) + @dropdown-toggle-large-caret-offset-top;
+				//margin-left: (@button-large-padding-horizontal / 2);
+				
+				&.caret-solo {
+					
+					margin-left: 0px;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Button Small                                                                                         */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.button-group-small {
+		
+		.button {
+			
+			.caret {
+				
+				border-width: @dropdown-toggle-small-caret-height @dropdown-toggle-small-caret-width 0px @dropdown-toggle-small-caret-width;
+				margin-top: (@button-small-text-line-height / 2) - (@dropdown-toggle-small-caret-height / 2) + @dropdown-toggle-small-caret-offset-top;
+				//margin-left: (@button-small-padding-horizontal / 2);
+				
+				&.caret-solo {
+					
+					margin-left: 0px;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Button Mini                                                                                          */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.button-group-mini {
+		
+		.button {
+			
+			.caret {
+				
+				border-width: @dropdown-toggle-mini-caret-height @dropdown-toggle-mini-caret-width 0px @dropdown-toggle-mini-caret-width;
+				margin-top: (@button-mini-text-line-height / 2) - (@dropdown-toggle-mini-caret-height / 2) + @dropdown-toggle-mini-caret-offset-top;
+				//margin-left: (@button-mini-padding-horizontal / 2);
+				
+				&.caret-solo {
+					
+					margin-left: 0px;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
 
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* The dropdown menu                                                                                    */
+/* Dropdown Menu                                                                                        */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
 .dropdown-menu {
 	
+	display: none;
 	position: absolute;
 	top: 100%;
-	left: 0;
-	z-index: @z-index-dropdown;
-	display: none;
+	left: 0px;
 	float: left;
-	min-width: @dropdownMinWidth;
-	padding: 0px;
-	margin: @dropdownTopMargin 0px 0px 0px;
+	z-index: @z-index-dropdown * 2;
+	min-width: @dropdown-minimum-width;
+	margin: @dropdown-offset-top 0px 0px 0px;
+	padding: @dropdown-padding-vertical @dropdown-padding-horizontal @dropdown-padding-vertical @dropdown-padding-horizontal;
 	list-style: none;
-	background-color: @dropdownBackground;
-	border: none;
-	.border-radius(@dropdownBorderRadius);
-	.box-shadow(@dropdownShadow);
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding;
-	background-clip: padding-box;
+	.background-clip(padding-box);
+	background-color: @dropdown-background-color;
+	border-width: @dropdown-border-width;
+	.border-radius(@dropdown-border-radius);
+	border-color: @dropdown-border-color;
+	.box-shadow(@dropdown-shadow);
 	
 	&.pull-right {
 		
 		right: 0;
 		left: auto;
-		
-	}
-	
-	.divider {
-		
-		*width: 100%;
-		height: 1px;
-		margin: @dropdownDividerPadding 0px @dropdownDividerPadding 0px;
-		overflow: hidden;
-		background-color: @dropdownDividerBackground;
-		.box-shadow(@dropdownDividerShadow);
-		z-index: @z-index-dropdown + 2;
-		position: relative;
-		    
-	}
-	
-	> li {
-		
-		margin: 0px;
-		
-		> a {
-			
-			display: block;
-			padding: 0px @dropdownLinkHorizontalPadding 0px @dropdownLinkHorizontalPadding;
-			clear: both;
-			font-weight: normal;
-			line-height: @dropdownLinkHeight;
-			color: @dropdownLinkColor;
-			white-space: nowrap;
-			background: @dropdownLinkBackground;
-			.box-shadow(@dropdownLinkShadow);
-			
-		}
-		
-		&.danger {
-			
-			> a {
-				
-				color: @dropdownLinkDangerColor;
-				background: @dropdownLinkDangerBackground;
-				
-			}
-			
-		}
-		
-		&:first-child {
-			
-			> a {
-				
-				.border-radius(@dropdownBorderRadius @dropdownBorderRadius 0px 0px);
-				
-			}
-			
-		}
-		
-		&:last-child {
-			
-			> a {
-				
-				.border-radius(0px 0px @dropdownBorderRadius @dropdownBorderRadius);
-				
-			}
-			
-		}
 		
 	}
 	
@@ -729,7 +742,793 @@
 		
 	}
 	
+	.divider {
+		
+		width: 100%;
+		*width: 100%;
+		height: @dropdown-divider-height;
+		margin: @dropdown-divider-margin-vertical @dropdown-divider-margin-horizontal @dropdown-divider-margin-vertical @dropdown-divider-margin-horizontal;
+		overflow: hidden;
+		background-color: @dropdown-divider-background-color;
+		.box-shadow(@dropdown-divider-shadow);
+		z-index: @z-index-dropdown + 2;
+		position: relative;
+		    
+	}
+	
+	> li {
+		
+		margin: 0px;
+		
+		&.dropdown-header {
+			
+			display: block;
+			padding: 0px @dropdown-header-padding-horizontal 0px @dropdown-header-padding-horizontal;
+			clear: both;
+			white-space: nowrap;
+			.block-padding-vertical(@dropdown-header-height, @dropdown-header-text-line-height);
+			font-family: @dropdown-header-text-font-family;
+			font-size: @dropdown-header-text-font-size;
+			font-style: @dropdown-header-text-font-style;
+			font-weight: @dropdown-header-text-font-weight;
+			line-height: @dropdown-header-text-line-height;
+			text-transform: @dropdown-header-text-transform;
+			.dropdown-row-states (
+				
+				@dropdown-header-default-border-color,
+				@dropdown-header-default-text-color,
+				@dropdown-header-default-text-shadow,
+				@dropdown-header-default-background-color,
+				@dropdown-header-default-background-gradient-top-color,
+				@dropdown-header-default-background-gradient-bottom-color,
+				@dropdown-header-default-shadow
+			
+			);
+			
+		}
+		
+		> a {
+			
+			display: block;
+			padding: 0px @dropdown-row-padding-horizontal 0px @dropdown-row-padding-horizontal;
+			clear: both;
+			white-space: nowrap;
+			.block-padding-vertical(@dropdown-row-height, @dropdown-row-text-line-height);
+			font-family: @dropdown-row-text-font-family;
+			font-size: @dropdown-row-text-font-size;
+			font-style: @dropdown-row-text-font-style;
+			font-weight: @dropdown-row-text-font-weight;
+			line-height: @dropdown-row-text-line-height;
+			text-transform: @dropdown-row-text-transform;
+			.dropdown-row-states (
+				
+				@dropdown-row-default-border-color,
+				@dropdown-row-default-text-color,
+				@dropdown-row-default-text-shadow,
+				@dropdown-row-default-background-color,
+				@dropdown-row-default-background-gradient-top-color,
+				@dropdown-row-default-background-gradient-bottom-color,
+				@dropdown-row-default-shadow
+			
+			);
+			
+			&:hover,
+			&:focus {
+				
+				text-decoration: none;
+				z-index: @z-index-dropdown + 1;
+				.dropdown-row-states (
+					
+					@dropdown-row-default-hover-border-color,
+					@dropdown-row-default-hover-text-color,
+					@dropdown-row-default-hover-text-shadow,
+					@dropdown-row-default-hover-background-color,
+					@dropdown-row-default-hover-background-gradient-top-color,
+					@dropdown-row-default-hover-background-gradient-bottom-color,
+					@dropdown-row-default-hover-shadow
+				
+				);
+				
+			}
+			
+			&:active,
+			&.active {
+				
+				.dropdown-row-states (
+					
+					@dropdown-row-default-active-border-color,
+					@dropdown-row-default-active-text-color,
+					@dropdown-row-default-active-text-shadow,
+					@dropdown-row-default-active-background-color,
+					@dropdown-row-default-active-background-gradient-top-color,
+					@dropdown-row-default-active-background-gradient-bottom-color,
+					@dropdown-row-default-active-shadow
+				
+				);
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Danger                                                                                               */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.danger {
+				
+				.dropdown-row-states (
+					
+					@dropdown-row-danger-border-color,
+					@dropdown-row-danger-text-color,
+					@dropdown-row-danger-text-shadow,
+					@dropdown-row-danger-background-color,
+					@dropdown-row-danger-background-gradient-top-color,
+					@dropdown-row-danger-background-gradient-bottom-color,
+					@dropdown-row-danger-shadow
+				
+				);
+				
+				&:hover,
+				&:focus {
+					
+					text-decoration: none;
+					z-index: @z-index-dropdown + 1;
+					.dropdown-row-states (
+						
+						@dropdown-row-danger-hover-border-color,
+						@dropdown-row-danger-hover-text-color,
+						@dropdown-row-danger-hover-text-shadow,
+						@dropdown-row-danger-hover-background-color,
+						@dropdown-row-danger-hover-background-gradient-top-color,
+						@dropdown-row-danger-hover-background-gradient-bottom-color,
+						@dropdown-row-danger-hover-shadow
+					
+					);
+					
+				}
+				
+				&:active,
+				&.active {
+					
+					.dropdown-row-states (
+						
+						@dropdown-row-danger-active-border-color,
+						@dropdown-row-danger-active-text-color,
+						@dropdown-row-danger-active-text-shadow,
+						@dropdown-row-danger-active-background-color,
+						@dropdown-row-danger-active-background-gradient-top-color,
+						@dropdown-row-danger-active-background-gradient-bottom-color,
+						@dropdown-row-danger-active-shadow
+					
+					);
+					
+				}
+				
+			}
+			
+		}
+		
+		&:first-child {
+			
+			> a {
+				
+				.border-radius(@dropdown-row-first-border-radius @dropdown-row-first-border-radius 0px 0px);
+				
+			}
+			
+		}
+		
+		&:last-child {
+			
+			> a {
+				
+				.border-radius(0px 0px @dropdown-row-last-border-radius @dropdown-row-last-border-radius);
+				
+			}
+			
+		}
+		
+	}
+	
 }
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Drop-ups                                                                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.dropup {
+	
+	.dropdown-menu {
+		
+		top: auto;
+		bottom: 100%;
+		margin: 0px 0px @dropdown-offset-top 0px;
+		
+	}
+	
+	.dropdown-toggle {
+		
+		&.button {
+			
+			.caret {
+				
+				border-width: 0px @dropdown-toggle-caret-width @dropdown-toggle-caret-height @dropdown-toggle-caret-width;
+				border-bottom-color: @button-default-text-color;
+				margin-top: (@button-text-line-height / 2) - (@dropdown-toggle-caret-height / 2) - @dropdown-toggle-caret-offset-top;
+				
+			}
+				
+			&:hover {
+				
+				.caret {
+					
+					border-bottom-color: @button-default-hover-text-color;
+					
+				}
+				
+			}
+			
+			&:active {
+				
+				.caret {
+					
+					border-bottom-color: @button-default-active-text-color;
+					
+				}
+				
+			}
+			
+			// Link
+			
+			&.button-link {
+				
+				.caret {
+					
+					border-bottom-color: @button-default-link-text-color;
+					
+				}
+				
+				&:hover {
+					
+					.caret {
+						
+						border-bottom-color: @button-default-link-hover-text-color;
+						
+					}
+					
+				}
+				
+				&:active {
+					
+					.caret {
+						
+						border-bottom-color: @button-default-link-active-text-color;
+						
+					}
+					
+				}
+				
+			}
+			
+			// Inverse
+			
+			&.inverse {
+				
+				.caret {
+					
+					border-bottom-color: @button-default-inverse-text-color;
+					
+				}
+				
+				&:hover {
+					
+					.caret {
+						
+						border-bottom-color: @button-default-inverse-hover-text-color;
+						
+					}
+					
+				}
+				
+				&:active {
+					
+					.caret {
+						
+						border-bottom-color: @button-default-inverse-active-text-color;
+						
+					}
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Large                                                                                         */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-large {
+				
+				.caret {
+					
+					border-width: 0px @dropdown-toggle-large-caret-width @dropdown-toggle-large-caret-height @dropdown-toggle-large-caret-width;
+					margin-top: (@button-large-text-line-height / 2) - (@dropdown-toggle-large-caret-height / 2) - @dropdown-toggle-large-caret-offset-top;
+					
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Small                                                                                         */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-small {
+				
+				.caret {
+					
+					border-width: 0px @dropdown-toggle-small-caret-width @dropdown-toggle-small-caret-height @dropdown-toggle-small-caret-width;
+					margin-top: (@button-small-text-line-height / 2) - (@dropdown-toggle-small-caret-height / 2) - @dropdown-toggle-small-caret-offset-top;
+					
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Mini                                                                                          */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-mini {
+				
+				.caret {
+					
+					border-width: 0px @dropdown-toggle-mini-caret-width @dropdown-toggle-mini-caret-height @dropdown-toggle-mini-caret-width;
+					margin-top: (@button-mini-text-line-height / 2) - (@dropdown-toggle-mini-caret-height / 2) - @dropdown-toggle-mini-caret-offset-top;
+					
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Primary                                                                                       */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-primary {
+				
+				.caret {
+					
+					border-bottom-color: @button-primary-hover-text-color;
+					
+				}
+				
+				&:hover {
+					
+					.caret {
+						
+						border-bottom-color: @button-primary-hover-text-color;
+						
+					}
+					
+				}
+				
+				&:active {
+					
+					.caret {
+						
+						border-bottom-color: @button-primary-active-text-color;
+						
+					}
+					
+				}
+				
+				// Link
+				
+				&.button-link {
+					
+					.caret {
+						
+						border-bottom-color: @button-primary-link-text-color;
+						
+					}
+					
+					&:hover {
+						
+						.caret {
+							
+							border-bottom-color: @button-primary-link-hover-text-color;
+							
+						}
+						
+					}
+					
+					&:active {
+						
+						.caret {
+							
+							border-bottom-color: @button-primary-link-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+				// Inverse
+				
+				&.inverse {
+					
+					.caret {
+						
+						border-bottom-color: @button-primary-inverse-text-color;
+						
+					}
+					
+					&:hover {
+						
+						.caret {
+							
+							border-bottom-color: @button-primary-inverse-hover-text-color;
+							
+						}
+						
+					}
+					
+					&:active {
+						
+						.caret {
+							
+							border-bottom-color: @button-primary-inverse-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Success                                                                                       */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-success {
+				
+				.caret {
+					
+					border-bottom-color: @button-success-hover-text-color;
+					
+				}
+				
+				&:hover {
+					
+					.caret {
+						
+						border-bottom-color: @button-success-hover-text-color;
+						
+					}
+					
+				}
+				
+				&:active {
+					
+					.caret {
+						
+						border-bottom-color: @button-success-active-text-color;
+						
+					}
+					
+				}
+				
+				// Link
+				
+				&.button-link {
+					
+					.caret {
+						
+						border-bottom-color: @button-success-link-text-color;
+						
+					}
+					
+					&:hover {
+						
+						.caret {
+							
+							border-bottom-color: @button-success-link-hover-text-color;
+							
+						}
+						
+					}
+					
+					&:active {
+						
+						.caret {
+							
+							border-bottom-color: @button-success-link-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+				// Inverse
+				
+				&.inverse {
+					
+					.caret {
+						
+						border-bottom-color: @button-success-inverse-text-color;
+						
+					}
+					
+					&:hover {
+						
+						.caret {
+							
+							border-bottom-color: @button-success-inverse-hover-text-color;
+							
+						}
+						
+					}
+					
+					&:active {
+						
+						.caret {
+							
+							border-bottom-color: @button-success-inverse-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Warning                                                                                       */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-warning {
+				
+				.caret {
+					
+					border-bottom-color: @button-warning-hover-text-color;
+					
+				}
+				
+				&:hover {
+					
+					.caret {
+						
+						border-bottom-color: @button-warning-hover-text-color;
+						
+					}
+					
+				}
+				
+				&:active {
+					
+					.caret {
+						
+						border-bottom-color: @button-warning-active-text-color;
+						
+					}
+					
+				}
+				
+				// Link
+				
+				&.button-link {
+					
+					.caret {
+						
+						border-bottom-color: @button-warning-link-text-color;
+						
+					}
+					
+					&:hover {
+						
+						.caret {
+							
+							border-bottom-color: @button-warning-link-hover-text-color;
+							
+						}
+						
+					}
+					
+					&:active {
+						
+						.caret {
+							
+							border-bottom-color: @button-warning-link-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+				// Inverse
+				
+				&.inverse {
+					
+					.caret {
+						
+						border-bottom-color: @button-warning-inverse-text-color;
+						
+					}
+					
+					&:hover {
+						
+						.caret {
+							
+							border-bottom-color: @button-warning-inverse-hover-text-color;
+							
+						}
+						
+					}
+					
+					&:active {
+						
+						.caret {
+							
+							border-bottom-color: @button-warning-inverse-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Button Danger                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.button-danger {
+				
+				.caret {
+					
+					border-bottom-color: @button-danger-hover-text-color;
+					
+				}
+				
+				&:hover {
+					
+					.caret {
+						
+						border-bottom-color: @button-danger-hover-text-color;
+						
+					}
+					
+				}
+				
+				&:active {
+					
+					.caret {
+						
+						border-bottom-color: @button-danger-active-text-color;
+						
+					}
+					
+				}
+				
+				// Link
+				
+				&.button-link {
+					
+					.caret {
+						
+						border-bottom-color: @button-danger-link-text-color;
+						
+					}
+					
+					&:hover {
+						
+						.caret {
+							
+							border-bottom-color: @button-danger-link-hover-text-color;
+							
+						}
+						
+					}
+					
+					&:active {
+						
+						.caret {
+							
+							border-bottom-color: @button-danger-link-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+				// Inverse
+				
+				&.inverse {
+					
+					.caret {
+						
+						border-bottom-color: @button-danger-inverse-text-color;
+						
+					}
+					
+					&:hover {
+						
+						.caret {
+							
+							border-bottom-color: @button-danger-inverse-hover-text-color;
+							
+						}
+						
+					}
+					
+					&:active {
+						
+						.caret {
+							
+							border-bottom-color: @button-danger-inverse-active-text-color;
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Open State                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.open {
+	
+	*z-index: @z-index-dropdown;
+	
+	& > .dropdown-menu {
+		
+		display: block;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Right-aligned Dropdowns                                                                              */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.pull-right > .dropdown-menu {
+	
+	right: 0;
+	left: auto;
+	
+}
+
+
+
+
+
 
 
 
@@ -738,7 +1537,7 @@
 /* Hover/Focus state                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
-
+/*
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
@@ -810,127 +1609,16 @@
 	cursor: default;
 	
 }
+*/
+
+
+
 
 
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Open state                                                                */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-.open {
-	
-	*z-index: @z-index-dropdown;
-	
-	& > .dropdown-menu {
-		
-		display: block;
-		
-	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Right-aligned dropdowns                                                   */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-.pull-right > .dropdown-menu {
-	
-	right: 0;
-	left: auto;
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Drop-ups                                                                  */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-.dropup,
-.navbar-fixed-bottom .dropdown {
-	
-	.caret {
-		
-		width: 0;
-		height: 0;
-		border-color: transparent;
-		border-style: solid;
-		border-width: 0px 5px 6px 5px;
-		border-top-color: none;
-		border-bottom-color: @buttonTextColor;
-		margin-top: (@buttonTextLineHeight / 2) - (7 / 2);
-		
-	}
-	
-	.dropdown-menu {
-		
-		top: auto;
-		bottom: 100%;
-		margin-bottom: 1px;
-		
-	}
-	
-	.dropdown-toggle {
-		
-		&.button {
-			
-			.caret {
-				
-				margin-top: (@buttonTextLineHeight / 2) - (7 / 2);
-				
-			}
-			
-			&.button-large {
-				
-				.caret {
-					
-					border-width: 0px 6px 8px 6px;
-					margin-top: (@buttonTextLineHeightLarge / 2) - (9 / 2);
-					
-				}
-				
-			}
-			
-			&.button-small {
-				
-				.caret {
-					
-					margin-top: (@buttonTextLineHeightSmall / 2) - (5 / 2);
-					
-				}
-				
-			}
-			
-			&.button-mini {
-				
-				.caret {
-					
-					border-width: 0px 5px 4px 5px;
-					margin-top: (@buttonTextLineHeightMini / 2) - (5 / 2);
-					
-				}
-				
-			}
-			
-		}
-		
-	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Submenus                                                                  */
+/* Submenus                                                                                             */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
@@ -1002,22 +1690,6 @@
 		.border-radius(@dropdownBorderRadius);
 		
 	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Typeahead                                                                 */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-.typeahead {
-	
-	z-index: 1051;
-	margin-top: 2px; // give it some space to breathe
-	.border-radius(@dropdownBorderRadius);
 	
 }
 

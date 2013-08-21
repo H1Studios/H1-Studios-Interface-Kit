@@ -334,9 +334,10 @@
 @z-index-header:														1000;
 @z-index-header-navigation:												1001;
 @z-index-header-logo:													1002;
-@z-index-dropdown:														1003;
-@z-index-popover:														1004;
-@z-index-tooltip:														1005;
+@z-index-code:															1003;
+@z-index-dropdown:														1004;
+@z-index-popover:														1005;
+@z-index-tooltip:														1006;
 @z-index-modal-backdrop:												2000;
 @z-index-modal:															2001;
 
@@ -1372,7 +1373,7 @@
 @button-responsive-ratio-mobile:										0.85;
 
 /* ---------------------------------------------------------------------------------------------------- */
-/* Large  Button                                                                                        */
+/* Large Button                                                                                         */
 /* ---------------------------------------------------------------------------------------------------- */
 
 @button-large-height:													52px;
@@ -2223,6 +2224,10 @@
 /*                                                                                                      */
 /* ==================================================================================================== */
 
+/* ---------------------------------------------------------------------------------------------------- */
+/* Dropdown Toggle                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+
 @dropdown-toggle-caret-width:											5px;
 @dropdown-toggle-caret-height:											6px;
 @dropdown-toggle-caret-offset-top:										1px;
@@ -2235,15 +2240,167 @@
 
 // Small Button Dropdown Toggle
 
-@dropdown-toggle-small-caret-width:										5px;
-@dropdown-toggle-small-caret-height:									6px;
-@dropdown-toggle-small-caret-offset-top:								1px;
+@dropdown-toggle-small-caret-width:										4px;
+@dropdown-toggle-small-caret-height:									5px;
+@dropdown-toggle-small-caret-offset-top:								0px;
 
 // Mini Button Dropdown Toggle
 
 @dropdown-toggle-mini-caret-width:										3px;
 @dropdown-toggle-mini-caret-height:										4px;
 @dropdown-toggle-mini-caret-offset-top:									1px;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Dropdown                                                                                             */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@dropdown-minimum-width:												120px;
+@dropdown-offset-top:													4px;
+@dropdown-padding-vertical:												5px;
+@dropdown-padding-horizontal:											0px;
+@dropdown-background-color:												@white;
+@dropdown-border-width:													0px;
+@dropdown-border-radius:												@button-border-radius;
+@dropdown-border-color:													none;
+@dropdown-shadow:														0px 0px 0px 1px rgba(0, 0, 0, 0.1),
+																		0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Dropdown Divider                                                                                     */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@dropdown-divider-height:												1px;
+@dropdown-divider-margin-vertical:										5px;
+@dropdown-divider-margin-horizontal:									0px;
+@dropdown-divider-background-color:										@gray-lighten-50;
+@dropdown-divider-shadow:												none;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Dropdown Header                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@dropdown-header-height:												@button-height;
+@dropdown-header-padding-horizontal:									15px;
+@dropdown-header-first-border-radius:									0px;
+@dropdown-header-last-border-radius:									0px;
+@dropdown-header-text-font-family:										@body-text-font-family;
+@dropdown-header-text-font-size:										@body-text-font-size - 2;
+@dropdown-header-text-font-style:										@body-text-font-style;
+@dropdown-header-text-font-weight:										normal;
+@dropdown-header-text-line-height:										@body-text-line-height - 2;
+@dropdown-header-text-transform:										uppercase;
+@dropdown-header-default-text-color:									@gray-lighten-50;
+@dropdown-header-default-text-shadow:									none;
+@dropdown-header-default-offset-top:									0px;
+@dropdown-header-default-offset-bottom:									0px;
+@dropdown-header-default-background-color:								@white;
+@dropdown-header-default-background-gradient-top-color:					none;
+@dropdown-header-default-background-gradient-bottom-color:				none;
+@dropdown-header-default-border-color:									none;
+@dropdown-header-default-shadow:										none;
+
+// Responsive Sizing
+
+@dropdown-header-responsive-ratio-widescreen:							1.0;
+@dropdown-header-responsive-ratio-tablet:								0.9;
+@dropdown-header-responsive-ratio-mobile:								0.85;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Dropdown Rows                                                                                        */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@dropdown-row-height:													@button-height;
+@dropdown-row-padding-horizontal:										15px;
+@dropdown-row-first-border-radius:										0px;
+@dropdown-row-last-border-radius:										0px;
+@dropdown-row-text-font-family:											@body-text-font-family;
+@dropdown-row-text-font-size:											@body-text-font-size;
+@dropdown-row-text-font-style:											@body-text-font-style;
+@dropdown-row-text-font-weight:											normal;
+@dropdown-row-text-line-height:											@body-text-line-height;
+@dropdown-row-text-transform:											@body-text-transform;
+
+// Responsive Sizing
+
+@dropdown-row-responsive-ratio-widescreen:								1.0;
+@dropdown-row-responsive-ratio-tablet:									0.9;
+@dropdown-row-responsive-ratio-mobile:									0.85;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Default Dropdown Rows                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@dropdown-row-default-text-color:										@gray;
+@dropdown-row-default-text-shadow:										none;
+@dropdown-row-default-offset-top:										0px;
+@dropdown-row-default-offset-bottom:									0px;
+@dropdown-row-default-background-color:									@white;
+@dropdown-row-default-background-gradient-top-color:					none;
+@dropdown-row-default-background-gradient-bottom-color:					none;
+@dropdown-row-default-border-color:										none;
+@dropdown-row-default-shadow:											none;
+
+// Hover
+
+@dropdown-row-default-hover-text-color:									@gray-darken-30;
+@dropdown-row-default-hover-text-shadow:								none;
+@dropdown-row-default-hover-offset-top:									0px;
+@dropdown-row-default-hover-offset-bottom:								0px;
+@dropdown-row-default-hover-background-color:							@gray-lighten-80;
+@dropdown-row-default-hover-background-gradient-top-color:				none;
+@dropdown-row-default-hover-background-gradient-bottom-color:			none;
+@dropdown-row-default-hover-border-color:								none;
+@dropdown-row-default-hover-shadow:										none;
+
+// Active
+
+@dropdown-row-default-active-text-color:								@white;
+@dropdown-row-default-active-text-shadow:								none;
+@dropdown-row-default-active-offset-top:								0px;
+@dropdown-row-default-active-offset-bottom:								0px;
+@dropdown-row-default-active-background-color:							@blue;
+@dropdown-row-default-active-background-gradient-top-color:				none;
+@dropdown-row-default-active-background-gradient-bottom-color:			none;
+@dropdown-row-default-active-border-color:								none;
+@dropdown-row-default-active-shadow:									none;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Danger Dropdown Rows                                                                                 */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@dropdown-row-danger-text-color:										@red;
+@dropdown-row-danger-text-shadow:										none;
+@dropdown-row-danger-offset-top:										0px;
+@dropdown-row-danger-offset-bottom:										0px;
+@dropdown-row-danger-background-color:									@white;
+@dropdown-row-danger-background-gradient-top-color:						none;
+@dropdown-row-danger-background-gradient-bottom-color:					none;
+@dropdown-row-danger-border-color:										none;
+@dropdown-row-danger-shadow:											none;
+
+// Hover
+
+@dropdown-row-danger-hover-text-color:									@red-darken-30;
+@dropdown-row-danger-hover-text-shadow:									none;
+@dropdown-row-danger-hover-offset-top:									0px;
+@dropdown-row-danger-hover-offset-bottom:								0px;
+@dropdown-row-danger-hover-background-color:							@red-lighten-80;
+@dropdown-row-danger-hover-background-gradient-top-color:				none;
+@dropdown-row-danger-hover-background-gradient-bottom-color:			none;
+@dropdown-row-danger-hover-border-color:								none;
+@dropdown-row-danger-hover-shadow:										none;
+
+// Active
+
+@dropdown-row-danger-active-text-color:									@white;
+@dropdown-row-danger-active-text-shadow:								none;
+@dropdown-row-danger-active-offset-top:									0px;
+@dropdown-row-danger-active-offset-bottom:								0px;
+@dropdown-row-danger-active-background-color:							@red;
+@dropdown-row-danger-active-background-gradient-top-color:				none;
+@dropdown-row-danger-active-background-gradient-bottom-color:			none;
+@dropdown-row-danger-active-border-color:								none;
+@dropdown-row-danger-active-shadow:										none;
 
 
 

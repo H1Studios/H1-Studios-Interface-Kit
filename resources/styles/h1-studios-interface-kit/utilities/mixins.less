@@ -406,6 +406,28 @@
 	
 }
 
+.dropdown-row-states (
+	
+	@dropdown-row-border-color,
+	@dropdown-row-text-color,
+	@dropdown-row-text-shadow,
+	@dropdown-row-background-color,
+	@dropdown-row-background-gradient-top-color,
+	@dropdown-row-background-gradient-bottom-color,
+	@dropdown-row-shadow
+
+) {
+	
+	.override_gradient_vertical();
+	border-color: @dropdown-row-border-color;
+	color: @dropdown-row-text-color;
+	text-shadow: @dropdown-row-text-shadow;
+	background-color: @dropdown-row-background-color;
+	#gradient > .vertical(@dropdown-row-background-gradient-top-color, @dropdown-row-background-gradient-bottom-color);
+	.box-shadow(@dropdown-row-shadow)
+	
+}
+
 // Mixin for form field states
 
 .formFieldState(@textColor: #555, @border-color: #ccc, @backgroundColor: #f5f5f5) {

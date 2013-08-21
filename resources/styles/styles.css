@@ -139,7 +139,7 @@
 /*                                                                                                      */
 /* ==================================================================================================== */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Large  Button                                                                                        */
+/* Large Button                                                                                         */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
 /* Small Button                                                                                         */
@@ -173,6 +173,27 @@
 /* Dropdowns                                                                                            */
 /*                                                                                                      */
 /* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Dropdown Toggle                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Dropdown                                                                                             */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Dropdown Divider                                                                                     */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Dropdown Header                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Dropdown Rows                                                                                        */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Default Dropdown Rows                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Danger Dropdown Rows                                                                                 */
+/* ---------------------------------------------------------------------------------------------------- */
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Forms                                                                                                */
@@ -7729,6 +7750,12 @@ input[type="submit"].button.button-mini {
 
   /* ---------------------------------------------------------------------------------------------------- */
 
+  /* Dropdown Toggle                                                                                      */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
   /* Button Group                                                                                         */
 
   /* ---------------------------------------------------------------------------------------------------- */
@@ -7925,105 +7952,6 @@ input[type="submit"].button.button-mini {
 }
 .button-group > .button {
   position: relative;
-  /* ---------------------------------------------------------------------------------------------------- */
-
-  /* Large Button                                                                                         */
-
-  /* ---------------------------------------------------------------------------------------------------- */
-
-  /*
-		&.button-large {
-			
-			.caret {
-				
-				margin-top: 6px;
-				border-left-width:  5px;
-				border-right-width: 5px;
-				border-top-width:   5px;
-				
-			}
-			
-			&:first-child {
-				
-				.border-top-left-radius(@button-large-border-radius);
-				.border-bottom-left-radius(@button-large-border-radius);
-				
-			}
-			
-			&:last-child {
-				
-				.border-top-right-radius(@button-large-border-radius);
-				.border-bottom-right-radius(@button-large-border-radius);
-				
-			}
-			
-		}
-		*/
-
-  /* ---------------------------------------------------------------------------------------------------- */
-
-  /* Small Button                                                                                         */
-
-  /* ---------------------------------------------------------------------------------------------------- */
-
-  /*
-		&.button-small {
-			
-			.caret {
-				
-				margin-top: 8px;
-				
-			}
-			
-			&:first-child {
-				
-				.border-top-left-radius(@button-small-border-radius);
-				.border-bottom-left-radius(@button-small-border-radius);
-				
-			}
-			
-			&:last-child {
-				
-				.border-top-right-radius(@button-small-border-radius);
-				.border-bottom-right-radius(@button-small-border-radius);
-				
-			}
-			
-		}
-		*/
-
-  /* ---------------------------------------------------------------------------------------------------- */
-
-  /* Mini Button                                                                                          */
-
-  /* ---------------------------------------------------------------------------------------------------- */
-
-  /*
-		&.button-mini {
-			
-			.caret {
-				
-				margin-top: 8px;
-				
-			}
-			
-			&:first-child {
-				
-				.border-top-left-radius(@button-mini-border-radius);
-				.border-bottom-left-radius(@button-mini-border-radius);
-				
-			}
-			
-			&:last-child {
-				
-				.border-top-right-radius(@button-mini-border-radius);
-				.border-bottom-right-radius(@button-mini-border-radius);
-				
-			}
-			
-		}
-		*/
-
 }
 .button-group > .button + .button {
   margin-left: 1px;
@@ -8054,6 +7982,14 @@ input[type="submit"].button.button-mini {
   border-bottom-right-radius: 0px;
 }
 .button-group > .button:last-child:not(:first-child):not(.dropdown-toggle) {
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+}
+.button-group > .dropdown-toggle:not(:first-child) {
   -webkit-border-top-left-radius: 0px;
   -moz-border-radius-topleft: 0px;
   border-top-left-radius: 0px;
@@ -9285,7 +9221,7 @@ input[type="submit"].button.button-mini {
 .dropup,
 .dropdown {
   position: relative;
-  z-index: 1003;
+  z-index: 1004;
 }
 .dropup.anchor,
 .dropdown.anchor {
@@ -9309,12 +9245,9 @@ input[type="submit"].button.button-mini {
 .dropdown.anchor:after {
   display: none;
 }
-/* ---------------------------------------------------------------------------------------------------- */
-/* Drop-Up                                                                                              */
-/* ---------------------------------------------------------------------------------------------------- */
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Dropdown Arrow/Caret                                                                                 */
+/* Dropdown Arrow/Caret Sizing/Styling                                                                  */
 /*                                                                                                      */
 /* ==================================================================================================== */
 .dropdown-toggle.button {
@@ -9371,7 +9304,6 @@ input[type="submit"].button.button-mini {
   border-width: 6px 5px 0px 5px;
   border-top-color: #838383;
   margin-top: 10px;
-  margin-left: 7.5px;
 }
 .dropdown-toggle.button .caret.caret-solo {
   margin-left: 0px;
@@ -9403,15 +9335,13 @@ input[type="submit"].button.button-mini {
 .dropdown-toggle.button.button-large .caret {
   border-width: 8px 7px 0px 7px;
   margin-top: 9px;
-  margin-left: 15px;
 }
 .dropdown-toggle.button.button-large .caret.caret-solo {
   margin-left: 0px;
 }
 .dropdown-toggle.button.button-small .caret {
-  border-width: 6px 5px 0px 5px;
-  margin-top: 6px;
-  margin-left: 7.5px;
+  border-width: 5px 4px 0px 4px;
+  margin-top: 5.5px;
 }
 .dropdown-toggle.button.button-small .caret.caret-solo {
   margin-left: 0px;
@@ -9419,7 +9349,6 @@ input[type="submit"].button.button-mini {
 .dropdown-toggle.button.button-mini .caret {
   border-width: 4px 3px 0px 3px;
   margin-top: 7px;
-  margin-left: 3.75px;
 }
 .dropdown-toggle.button.button-mini .caret.caret-solo {
   margin-left: 0px;
@@ -9534,77 +9463,82 @@ input[type="submit"].button.button-mini {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* The dropdown menu                                                                                    */
+/* Button Group Arrow/Caret Sizing                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+.button-group {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Large                                                                                         */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Small                                                                                         */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Mini                                                                                          */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.button-group.button-group-large .button .caret {
+  border-width: 8px 7px 0px 7px;
+  margin-top: 9px;
+}
+.button-group.button-group-large .button .caret.caret-solo {
+  margin-left: 0px;
+}
+.button-group.button-group-small .button .caret {
+  border-width: 5px 4px 0px 4px;
+  margin-top: 5.5px;
+}
+.button-group.button-group-small .button .caret.caret-solo {
+  margin-left: 0px;
+}
+.button-group.button-group-mini .button .caret {
+  border-width: 4px 3px 0px 3px;
+  margin-top: 7px;
+}
+.button-group.button-group-mini .button .caret.caret-solo {
+  margin-left: 0px;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Dropdown Menu                                                                                        */
 /*                                                                                                      */
 /* ==================================================================================================== */
 .dropdown-menu {
+  display: none;
   position: absolute;
   top: 100%;
-  left: 0;
-  z-index: 1003;
-  display: none;
+  left: 0px;
   float: left;
-  min-width: 160px;
-  padding: 0px;
+  z-index: 2008;
+  min-width: 120px;
   margin: 4px 0px 0px 0px;
+  padding: 5px 0px 5px 0px;
   list-style: none;
-  background-color: #ffffff;
-  border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
   -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
+  -moz-background-clip: padding-box;
   background-clip: padding-box;
+  background-color: #ffffff;
+  border-width: 0px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-color: none;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
 }
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;
-}
-.dropdown-menu .divider {
-  *width: 100%;
-  height: 1px;
-  margin: 0px 0px 0px 0px;
-  overflow: hidden;
-  background-color: #bbbbbb;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  z-index: 1005;
-  position: relative;
-}
-.dropdown-menu > li {
-  margin: 0px;
-}
-.dropdown-menu > li > a {
-  display: block;
-  padding: 0px 15px 0px 15px;
-  clear: both;
-  font-weight: normal;
-  line-height: 38px;
-  color: #bbbbbb;
-  white-space: nowrap;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-}
-.dropdown-menu > li.danger > a {
-  color: #fd3c2b;
-  background: #ffffff;
-}
-.dropdown-menu > li:first-child > a {
-  -webkit-border-radius: 5px 5px 0px 0px;
-  -moz-border-radius: 5px 5px 0px 0px;
-  border-radius: 5px 5px 0px 0px;
-}
-.dropdown-menu > li:last-child > a {
-  -webkit-border-radius: 0px 0px 5px 5px;
-  -moz-border-radius: 0px 0px 5px 5px;
-  border-radius: 0px 0px 5px 5px;
 }
 .dropdown-menu.anchor {
   margin: 0px;
@@ -9623,76 +9557,378 @@ input[type="submit"].button.button-mini {
 .dropdown-menu.anchor:after {
   clear: both;
 }
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Hover/Focus state                                                         */
-/*                                                                                                      */
-/* ==================================================================================================== */
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus,
-.dropdown-submenu:hover > a,
-.dropdown-submenu:focus > a {
-  text-decoration: none;
-  color: #5e5e5e;
-  background: #f9f9f9;
-  z-index: 1004;
+.dropdown-menu .divider {
+  width: 100%;
+  *width: 100%;
+  height: 1px;
+  margin: 5px 0px 5px 0px;
+  overflow: hidden;
+  background-color: #dddddd;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  z-index: 1006;
+  position: relative;
 }
-.dropdown-menu > li.danger > a:hover,
-.dropdown-menu > li.danger > a:focus {
-  color: #fd3c2b;
-  background: #ffffff;
+.dropdown-menu > li {
+  margin: 0px;
 }
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
-  color: #0066cc;
-  text-decoration: none;
-  outline: 0;
-  background: #ffffff;
-  z-index: 1004;
+.dropdown-menu > li.dropdown-header {
+  display: block;
+  padding: 0px 15px 0px 15px;
+  clear: both;
+  white-space: nowrap;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #dddddd;
+  text-shadow: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
-.dropdown-menu > .danger.active > a,
-.dropdown-menu > .danger.active > a:hover,
-.dropdown-menu > .danger.active > a:focus {
-  color: #fd3c2b;
-  background: #ffffff;
-}
-.dropdown-menu > .disabled > a,
-.dropdown-menu > .disabled > a:hover,
-.dropdown-menu > .disabled > a:focus {
-  text-decoration: none;
+.dropdown-menu > li > a {
+  display: block;
+  padding: 0px 15px 0px 15px;
+  clear: both;
+  white-space: nowrap;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  text-transform: normal;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
   color: #bbbbbb;
-  background: #ffffff;
-  z-index: 1004;
+  text-shadow: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Danger                                                                                               */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
 }
-.dropdown-menu > .danger.disabled > a,
-.dropdown-menu > .danger.disabled > a:hover,
-.dropdown-menu > .danger.disabled > a:focus {
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #fec7c3;
-  background: #ffffff;
+  z-index: 1005;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #838383;
+  text-shadow: none;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
-.dropdown-menu > .disabled > a:hover,
-.dropdown-menu > .disabled > a:focus {
+.dropdown-menu > li > a:active,
+.dropdown-menu > li > a.active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #0066cc;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.dropdown-menu > li > a.danger {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #fd3c2b;
+  text-shadow: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.dropdown-menu > li > a.danger:hover,
+.dropdown-menu > li > a.danger:focus {
   text-decoration: none;
-  background: #ffffff;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  cursor: default;
+  z-index: 1005;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #cd1202;
+  text-shadow: none;
+  background-color: #ffd8d5;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.dropdown-menu > li > a.danger:active,
+.dropdown-menu > li > a.danger.active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #fd3c2b;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.dropdown-menu > li:first-child > a {
+  -webkit-border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+}
+.dropdown-menu > li:last-child > a {
+  -webkit-border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Open state                                                                */
+/* Drop-ups                                                                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+.dropup .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin: 0px 0px 4px 0px;
+}
+.dropup .dropdown-toggle.button {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Large                                                                                         */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Small                                                                                         */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Mini                                                                                          */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Primary                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Success                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Warning                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Button Danger                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.dropup .dropdown-toggle.button .caret {
+  border-width: 0px 5px 6px 5px;
+  border-bottom-color: #838383;
+  margin-top: 8px;
+}
+.dropup .dropdown-toggle.button:hover .caret {
+  border-bottom-color: #838383;
+}
+.dropup .dropdown-toggle.button:active .caret {
+  border-bottom-color: #a8a8a8;
+}
+.dropup .dropdown-toggle.button.button-link .caret {
+  border-bottom-color: #8c8c8c;
+}
+.dropup .dropdown-toggle.button.button-link:hover .caret {
+  border-bottom-color: #5e5e5e;
+}
+.dropup .dropdown-toggle.button.button-link:active .caret {
+  border-bottom-color: #2f2f2f;
+}
+.dropup .dropdown-toggle.button.inverse .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.inverse:hover .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.inverse:active .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.button-large .caret {
+  border-width: 0px 7px 8px 7px;
+  margin-top: 7px;
+}
+.dropup .dropdown-toggle.button.button-small .caret {
+  border-width: 0px 4px 5px 4px;
+  margin-top: 5.5px;
+}
+.dropup .dropdown-toggle.button.button-mini .caret {
+  border-width: 0px 3px 4px 3px;
+  margin-top: 5px;
+}
+.dropup .dropdown-toggle.button.button-primary .caret {
+  border-bottom-color: #ffffff;
+}
+.dropup .dropdown-toggle.button.button-primary:hover .caret {
+  border-bottom-color: #ffffff;
+}
+.dropup .dropdown-toggle.button.button-primary:active .caret {
+  border-bottom-color: #e0f0ff;
+}
+.dropup .dropdown-toggle.button.button-primary.button-link .caret {
+  border-bottom-color: #0066cc;
+}
+.dropup .dropdown-toggle.button.button-primary.button-link:hover .caret {
+  border-bottom-color: #003d7a;
+}
+.dropup .dropdown-toggle.button.button-primary.button-link:active .caret {
+  border-bottom-color: #001429;
+}
+.dropup .dropdown-toggle.button.button-primary.inverse .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.button-primary.inverse:hover .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.button-primary.inverse:active .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.button-success .caret {
+  border-bottom-color: #ffffff;
+}
+.dropup .dropdown-toggle.button.button-success:hover .caret {
+  border-bottom-color: #ffffff;
+}
+.dropup .dropdown-toggle.button.button-success:active .caret {
+  border-bottom-color: #f0f8e7;
+}
+.dropup .dropdown-toggle.button.button-success.button-link .caret {
+  border-bottom-color: #70af2f;
+}
+.dropup .dropdown-toggle.button.button-success.button-link:hover .caret {
+  border-bottom-color: #548323;
+}
+.dropup .dropdown-toggle.button.button-success.button-link:active .caret {
+  border-bottom-color: #375717;
+}
+.dropup .dropdown-toggle.button.button-success.inverse .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.button-success.inverse:hover .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.button-success.inverse:active .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.button-warning .caret {
+  border-bottom-color: #ffffff;
+}
+.dropup .dropdown-toggle.button.button-warning:hover .caret {
+  border-bottom-color: #ffffff;
+}
+.dropup .dropdown-toggle.button.button-warning:active .caret {
+  border-bottom-color: #fef2ea;
+}
+.dropup .dropdown-toggle.button.button-warning.button-link .caret {
+  border-bottom-color: #f38339;
+}
+.dropup .dropdown-toggle.button.button-warning.button-link:hover .caret {
+  border-bottom-color: #d45c0d;
+}
+.dropup .dropdown-toggle.button.button-warning.button-link:active .caret {
+  border-bottom-color: #8d3d09;
+}
+.dropup .dropdown-toggle.button.button-warning.inverse .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.button-warning.inverse:hover .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.button-warning.inverse:active .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.button-danger .caret {
+  border-bottom-color: #ffffff;
+}
+.dropup .dropdown-toggle.button.button-danger:hover .caret {
+  border-bottom-color: #ffffff;
+}
+.dropup .dropdown-toggle.button.button-danger:active .caret {
+  border-bottom-color: #ffecea;
+}
+.dropup .dropdown-toggle.button.button-danger.button-link .caret {
+  border-bottom-color: #fd3c2b;
+}
+.dropup .dropdown-toggle.button.button-danger.button-link:hover .caret {
+  border-bottom-color: #dc1402;
+}
+.dropup .dropdown-toggle.button.button-danger.button-link:active .caret {
+  border-bottom-color: #930d01;
+}
+.dropup .dropdown-toggle.button.button-danger.inverse .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.button-danger.inverse:hover .caret {
+  border-bottom-color: #e4e4e4;
+}
+.dropup .dropdown-toggle.button.button-danger.inverse:active .caret {
+  border-bottom-color: #e4e4e4;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Open State                                                                                           */
 /*                                                                                                      */
 /* ==================================================================================================== */
 .open {
-  *z-index: 1003;
+  *z-index: 1004;
 }
 .open > .dropdown-menu {
   display: block;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Right-aligned dropdowns                                                   */
+/* Right-aligned Dropdowns                                                                              */
 /*                                                                                                      */
 /* ==================================================================================================== */
 .pull-right > .dropdown-menu {
@@ -9701,47 +9937,85 @@ input[type="submit"].button.button-mini {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Drop-ups                                                                  */
+/* Hover/Focus state                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
-.dropup .caret,
-.navbar-fixed-bottom .dropdown .caret {
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 0px 5px 6px 5px;
-  border-top-color: none;
-  border-bottom-color: #838383;
-  margin-top: 8.5px;
+/*
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+	
+	text-decoration: none;
+	color: @dropdownLinkColorHover;
+	background: @dropdownLinkBackgroundHover;
+	z-index: @z-index-dropdown + 1;
+	
 }
-.dropup .dropdown-menu,
-.navbar-fixed-bottom .dropdown .dropdown-menu {
-  top: auto;
-  bottom: 100%;
-  margin-bottom: 1px;
+
+.dropdown-menu > li.danger > a:hover,
+.dropdown-menu > li.danger > a:focus {
+	
+	color: @dropdownLinkDangerColorHover;
+	background: @dropdownLinkDangerBackgroundHover;
+	
 }
-.dropup .dropdown-toggle.button .caret,
-.navbar-fixed-bottom .dropdown .dropdown-toggle.button .caret {
-  margin-top: 8.5px;
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+	
+	color: @dropdownLinkColorActive;
+	text-decoration: none;
+	outline: 0;
+	background: @dropdownLinkBackgroundActive;
+	z-index: @z-index-dropdown + 1;
+	
 }
-.dropup .dropdown-toggle.button.button-large .caret,
-.navbar-fixed-bottom .dropdown .dropdown-toggle.button.button-large .caret {
-  border-width: 0px 6px 8px 6px;
-  margin-top: 7.5px;
+
+.dropdown-menu > .danger.active > a,
+.dropdown-menu > .danger.active > a:hover,
+.dropdown-menu > .danger.active > a:focus {
+	
+	color: @dropdownLinkDangerColorActive;
+	background: @dropdownLinkDangerBackgroundActive;
+	
 }
-.dropup .dropdown-toggle.button.button-small .caret,
-.navbar-fixed-bottom .dropdown .dropdown-toggle.button.button-small .caret {
-  margin-top: 6px;
+
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+	
+	text-decoration: none;
+	color: @dropdownLinkColorDisabled;
+	background: @dropdownLinkBackgroundDisabled;
+	z-index: @z-index-dropdown + 1;
+	
 }
-.dropup .dropdown-toggle.button.button-mini .caret,
-.navbar-fixed-bottom .dropdown .dropdown-toggle.button.button-mini .caret {
-  border-width: 0px 5px 4px 5px;
-  margin-top: 5px;
+
+.dropdown-menu > .danger.disabled > a,
+.dropdown-menu > .danger.disabled > a:hover,
+.dropdown-menu > .danger.disabled > a:focus {
+	
+	text-decoration: none;
+	color: @dropdownLinkDangerColorDisabled;
+	background: @dropdownLinkDangerBackgroundDisabled;
+	
 }
+
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+	
+	text-decoration: none;
+	background: @dropdownLinkBackgroundDisabled;
+	.reset-filter();
+	cursor: default;
+	
+}
+*/
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Submenus                                                                  */
+/* Submenus                                                                                             */
 /*                                                                                                      */
 /* ==================================================================================================== */
 .dropdown-submenu {
@@ -9756,7 +10030,7 @@ input[type="submit"].button.button-mini {
   -moz-border-radius: 5px;
   border-radius: 5px;
   position: absolute;
-  z-index: 1008;
+  z-index: 1009;
 }
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
@@ -9793,18 +10067,6 @@ input[type="submit"].button.button-mini {
   width: 100%;
   left: -100%;
   margin-left: -1px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Typeahead                                                                 */
-/*                                                                                                      */
-/* ==================================================================================================== */
-.typeahead {
-  z-index: 1051;
-  margin-top: 2px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -21247,7 +21509,7 @@ form.code-example + .prettyprint {
   -webkit-border-radius: 0px 0px 4px 4px;
   -moz-border-radius: 0px 0px 4px 4px;
   border-radius: 0px 0px 4px 4px;
-  z-index: 10000;
+  z-index: 1003;
   position: relative;
 }
 .code-example + .prettyprint.short,
