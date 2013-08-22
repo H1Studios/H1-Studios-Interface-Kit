@@ -39,4 +39,17 @@ class Styleguide extends BASE_Controller {
         
     }
 	
+    public function grid() {
+        
+        $this->data['page']['title'] = "Grid";
+        $this->data['page']['subtitle'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, turpis et condimentum sagittis, odio mi mollis purus, eget posuere ante nulla a neque.";
+        
+	    /* ----------------------------------------------------------- */
+    	/* Define View                                                 */
+    	/* ----------------------------------------------------------- */
+    	
+        $this->twig->display('pages/styleguide/grid.php', $this->data);
+        
+    }
+	
 }

@@ -13,8 +13,8 @@ class BASE_Controller extends CI_Controller {
     	/* Define global page attributes                               */
     	/* ----------------------------------------------------------- */
     	
-        $this->data['title'] = "Socialist";
-        $this->data['subtitle'] = "- Organizing The Things You Love";
+        $this->data['title'] = "H1 Studios Interface Kit";
+        $this->data['subtitle'] = "";
         $this->data['description'] = "";
         
         $this->data['page'] = array();

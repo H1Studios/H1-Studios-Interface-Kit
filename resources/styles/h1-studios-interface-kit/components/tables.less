@@ -670,6 +670,7 @@ table th[class*="span"],
 .table td,
 .table th {
 	
+	/*
 	&.span1		{ .tableColumns(1); }
 	&.span2     { .tableColumns(2); }
 	&.span3     { .tableColumns(3); }
@@ -682,6 +683,7 @@ table th[class*="span"],
 	&.span10    { .tableColumns(10); }
 	&.span11    { .tableColumns(11); }
 	&.span12    { .tableColumns(12); }
+	*/
 	
 }
 
@@ -689,11 +691,11 @@ table th[class*="span"],
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-widescreen) {
+@media (min-width: @screen-small) {
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -703,38 +705,38 @@ table th[class*="span"],
 	
 	.table {
 		
-		margin-bottom: @primary-margin-widescreen;
+		margin-bottom: @primary-margin-screen-small;
 		
 		th,
 		td {
 			
-			padding: (@table-cell-padding-vertical * @table-responsive-ratio-widescreen) (@table-cell-padding-horizontal * @table-responsive-ratio-widescreen);
+			padding: (@table-cell-padding-vertical * @table-ratio-screen-small) (@table-cell-padding-horizontal * @table-ratio-screen-small);
 						
 		}
 		
 		th {
 			
-			font-size: @table-header-text-font-size * @table-responsive-ratio-widescreen;
-			line-height: @table-header-text-line-height * @table-responsive-ratio-widescreen;
+			font-size: @table-header-text-font-size * @table-ratio-screen-small;
+			line-height: @table-header-text-line-height * @table-ratio-screen-small;
 			
 		}
 		
 		td {
 			
-			font-size: @table-body-row-text-font-size * @table-responsive-ratio-widescreen;
-			line-height: @table-body-row-text-line-height * @body-text-responsive-ratio-widescreen;
+			font-size: @table-body-row-text-font-size * @table-ratio-screen-small;
+			line-height: @table-body-row-text-line-height * @body-text-ratio-screen-small;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @primary-margin-short-widescreen;
+			margin-bottom: @primary-margin-short-screen-small;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primary-margin-tall-widescreen;
+			margin-bottom: @primary-margin-tall-screen-small;
 			
 		}
 		
@@ -746,11 +748,11 @@ table th[class*="span"],
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
+@media (min-width: @screen-medium) {
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -760,38 +762,38 @@ table th[class*="span"],
 	
 	.table {
 		
-		margin-bottom: @primary-margin-tablet;
+		margin-bottom: @primary-margin-screen-medium;
 		
 		th,
 		td {
 			
-			padding: (@table-cell-padding-vertical * @table-responsive-ratio-tablet) (@table-cell-padding-horizontal * @table-responsive-ratio-tablet);
+			padding: (@table-cell-padding-vertical * @table-ratio-screen-medium) (@table-cell-padding-horizontal * @table-ratio-screen-medium);
 						
 		}
 		
 		th {
 			
-			font-size: @table-header-text-font-size * @table-responsive-ratio-tablet;
-			line-height: @table-header-text-line-height * @table-responsive-ratio-tablet;
+			font-size: @table-header-text-font-size * @table-ratio-screen-medium;
+			line-height: @table-header-text-line-height * @table-ratio-screen-medium;
 			
 		}
 		
 		td {
 			
-			font-size: @table-body-row-text-font-size * @table-responsive-ratio-tablet;
-			line-height: @table-body-row-text-line-height * @body-text-responsive-ratio-tablet;
+			font-size: @table-body-row-text-font-size * @table-ratio-screen-medium;
+			line-height: @table-body-row-text-line-height * @body-text-ratio-screen-medium;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @primary-margin-short-tablet;
+			margin-bottom: @primary-margin-short-screen-medium;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primary-margin-tall-tablet;
+			margin-bottom: @primary-margin-tall-screen-medium;
 			
 		}
 		
@@ -803,11 +805,11 @@ table th[class*="span"],
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
+/* Screen Size: Large (@screen-large) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (max-width: @viewport-mobile-landscape-max) {
+@media (min-width: @screen-large) {
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -817,54 +819,42 @@ table th[class*="span"],
 	
 	.table {
 		
-		margin-bottom: @primary-margin-mobile;
+		margin-bottom: @primary-margin-screen-large;
 		
 		th,
 		td {
 			
-			padding: (@table-cell-padding-vertical * @table-responsive-ratio-mobile) (@table-cell-padding-horizontal * @table-responsive-ratio-mobile);
+			padding: (@table-cell-padding-vertical * @table-ratio-screen-large) (@table-cell-padding-horizontal * @table-ratio-screen-large);
 						
 		}
 		
 		th {
 			
-			font-size: @table-header-text-font-size * @table-responsive-ratio-mobile;
-			line-height: @table-header-text-line-height * @table-responsive-ratio-mobile;
+			font-size: @table-header-text-font-size * @table-ratio-screen-large;
+			line-height: @table-header-text-line-height * @table-ratio-screen-large;
 			
 		}
 		
 		td {
 			
-			font-size: @table-body-row-text-font-size * @table-responsive-ratio-mobile;
-			line-height: @table-body-row-text-line-height * @body-text-responsive-ratio-mobile;
+			font-size: @table-body-row-text-font-size * @table-ratio-screen-large;
+			line-height: @table-body-row-text-line-height * @body-text-ratio-screen-large;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @primary-margin-short-mobile;
+			margin-bottom: @primary-margin-short-screen-large;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primary-margin-tall-mobile;
+			margin-bottom: @primary-margin-tall-screen-large;
 			
 		}
 		
 	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (max-width: @viewport-mobile-max) {
 	
 }
 

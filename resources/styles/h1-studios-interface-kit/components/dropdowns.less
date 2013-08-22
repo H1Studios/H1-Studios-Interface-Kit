@@ -2202,11 +2202,11 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-widescreen) {
+@media (min-width: @screen-small) {
 		
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -2220,9 +2220,9 @@
 			
 			.caret {
 				
-				border-width: (@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-widescreen) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-widescreen) / 2);
-				margin-top: ((@button-text-line-height * @button-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
-				margin-left: (@dropdown-toggle-caret-offset-horizontal * @dropdown-toggle-caret-responsive-ratio-widescreen);
+				border-width: (@dropdown-toggle-caret-height * @dropdown-toggle-caret-ratio-screen-small) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-ratio-screen-small) / 2) 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-ratio-screen-small) / 2);
+				margin-top: ((@button-text-line-height * @button-ratio-screen-small) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-ratio-screen-small) / 2) + (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
+				margin-left: (@dropdown-toggle-caret-offset-horizontal * @dropdown-toggle-caret-ratio-screen-small);
 				
 				&.caret-solo {
 					
@@ -2240,9 +2240,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2);
-					margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
-					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-responsive-ratio-widescreen);
+					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-small) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-small) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-small) / 2);
+					margin-top: ((@button-large-text-line-height * @button-large-ratio-screen-small) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-small) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
+					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-ratio-screen-small);
 					
 					&.caret-solo {
 						
@@ -2262,9 +2262,9 @@
 				
 				.caret {
 				
-					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2);
-					margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
-					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-responsive-ratio-widescreen);
+					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-small) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-small) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-small) / 2);
+					margin-top: ((@button-small-text-line-height * @button-small-ratio-screen-small) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-small) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
+					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-ratio-screen-small);
 					
 					&.caret-solo {
 						
@@ -2284,9 +2284,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2);
-					margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
-					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-responsive-ratio-widescreen);
+					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-small) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-small) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-small) / 2);
+					margin-top: ((@button-mini-text-line-height * @button-mini-ratio-screen-small) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-small) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
+					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-ratio-screen-small);
 					
 					&.caret-solo {
 						
@@ -2322,9 +2322,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2);
-					margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
-					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-responsive-ratio-widescreen);
+					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-small) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-small) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-small) / 2);
+					margin-top: ((@button-large-text-line-height * @button-large-ratio-screen-small) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-small) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
+					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-ratio-screen-small);
 					
 					&.caret-solo {
 						
@@ -2343,8 +2343,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2);
-						margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-small) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-small) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-small) / 2);
+						margin-top: ((@button-large-text-line-height * @button-large-ratio-screen-small) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-small) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
 						
 					}
 					
@@ -2364,9 +2364,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2);
-					margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
-					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-responsive-ratio-widescreen);
+					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-small) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-small) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-small) / 2);
+					margin-top: ((@button-small-text-line-height * @button-small-ratio-screen-small) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-small) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
+					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-ratio-screen-small);
 					
 					&.caret-solo {
 						
@@ -2385,8 +2385,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2);
-						margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-small) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-small) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-small) / 2);
+						margin-top: ((@button-small-text-line-height * @button-small-ratio-screen-small) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-small) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
 						
 					}
 					
@@ -2406,9 +2406,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2);
-					margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
-					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-responsive-ratio-widescreen);
+					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-small) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-small) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-small) / 2);
+					margin-top: ((@button-mini-text-line-height * @button-mini-ratio-screen-small) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-small) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
+					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-ratio-screen-small);
 					
 					&.caret-solo {
 						
@@ -2427,8 +2427,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2);
-						margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-small) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-small) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-small) / 2);
+						margin-top: ((@button-mini-text-line-height * @button-mini-ratio-screen-small) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-small) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
 						
 					}
 					
@@ -2450,12 +2450,12 @@
 	
 	.dropdown-menu {
 		
-		min-width: @dropdown-menu-minimum-width * @dropdown-menu-responsive-ratio-widescreen;
-		padding: (@dropdown-menu-padding-vertical * @dropdown-menu-responsive-ratio-widescreen) (@dropdown-menu-padding-horizontal * @dropdown-menu-responsive-ratio-widescreen);
+		min-width: @dropdown-menu-minimum-width * @dropdown-menu-ratio-screen-small;
+		padding: (@dropdown-menu-padding-vertical * @dropdown-menu-ratio-screen-small) (@dropdown-menu-padding-horizontal * @dropdown-menu-ratio-screen-small);
 		
 		.divider {
 			
-			margin: (@dropdown-divider-margin-vertical * @dropdown-menu-responsive-ratio-widescreen) (@dropdown-divider-margin-horizontal * @dropdown-menu-responsive-ratio-widescreen);
+			margin: (@dropdown-divider-margin-vertical * @dropdown-menu-ratio-screen-small) (@dropdown-divider-margin-horizontal * @dropdown-menu-ratio-screen-small);
 			    
 		}
 		
@@ -2463,23 +2463,23 @@
 			
 			&.dropdown-header {
 				
-				.block-padding-vertical(@dropdown-header-height * @dropdown-header-responsive-ratio-widescreen, @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-widescreen);
-				padding-left: @dropdown-header-padding-horizontal * @dropdown-header-responsive-ratio-widescreen;
-				padding-right: @dropdown-header-padding-horizontal * @dropdown-header-responsive-ratio-widescreen;
-				font-size: @dropdown-header-text-font-size * @dropdown-header-responsive-ratio-widescreen;
-				line-height: @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-widescreen;
-				*line-height:  @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-widescreen;
+				.block-padding-vertical(@dropdown-header-height * @dropdown-header-ratio-screen-small, @dropdown-header-text-line-height * @dropdown-header-ratio-screen-small);
+				padding-left: @dropdown-header-padding-horizontal * @dropdown-header-ratio-screen-small;
+				padding-right: @dropdown-header-padding-horizontal * @dropdown-header-ratio-screen-small;
+				font-size: @dropdown-header-text-font-size * @dropdown-header-ratio-screen-small;
+				line-height: @dropdown-header-text-line-height * @dropdown-header-ratio-screen-small;
+				*line-height:  @dropdown-header-text-line-height * @dropdown-header-ratio-screen-small;
 				
 			}
 			
 			> a {
 				
-				.block-padding-vertical(@dropdown-row-height * @dropdown-row-responsive-ratio-widescreen, @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-widescreen);
-				padding-left: @dropdown-row-padding-horizontal * @dropdown-row-responsive-ratio-widescreen;
-				padding-right: @dropdown-row-padding-horizontal * @dropdown-row-responsive-ratio-widescreen;
-				font-size: @dropdown-row-text-font-size * @dropdown-row-responsive-ratio-widescreen;
-				line-height: @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-widescreen;
-				*line-height:  @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-widescreen;
+				.block-padding-vertical(@dropdown-row-height * @dropdown-row-ratio-screen-small, @dropdown-row-text-line-height * @dropdown-row-ratio-screen-small);
+				padding-left: @dropdown-row-padding-horizontal * @dropdown-row-ratio-screen-small;
+				padding-right: @dropdown-row-padding-horizontal * @dropdown-row-ratio-screen-small;
+				font-size: @dropdown-row-text-font-size * @dropdown-row-ratio-screen-small;
+				line-height: @dropdown-row-text-line-height * @dropdown-row-ratio-screen-small;
+				*line-height:  @dropdown-row-text-line-height * @dropdown-row-ratio-screen-small;
 				
 			}
 			
@@ -2503,8 +2503,8 @@
 		
 		> .dropdown-menu {
 			
-			margin-top: @dropdown-submenu-offset-vertical * @dropdown-menu-responsive-ratio-widescreen;
-			margin-left: @dropdown-submenu-offset-horizontal * @dropdown-menu-responsive-ratio-widescreen;
+			margin-top: @dropdown-submenu-offset-vertical * @dropdown-menu-ratio-screen-small;
+			margin-left: @dropdown-submenu-offset-horizontal * @dropdown-menu-ratio-screen-small;
 			
 		}
 		
@@ -2516,9 +2516,9 @@
 			
 			&:after {
 				
-				border-width: ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-widescreen)/ 2) 0px ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-widescreen) / 2) (@dropdown-row-caret-width * @dropdown-row-responsive-ratio-widescreen);
-				margin-top: ((@dropdown-row-text-line-height * @dropdown-row-responsive-ratio-widescreen) / 2) - ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-widescreen) / 2);
-				margin-right: (@dropdown-row-caret-offset-horizontal * @dropdown-row-responsive-ratio-widescreen);
+				border-width: ((@dropdown-row-caret-height * @dropdown-row-ratio-screen-small)/ 2) 0px ((@dropdown-row-caret-height * @dropdown-row-ratio-screen-small) / 2) (@dropdown-row-caret-width * @dropdown-row-ratio-screen-small);
+				margin-top: ((@dropdown-row-text-line-height * @dropdown-row-ratio-screen-small) / 2) - ((@dropdown-row-caret-height * @dropdown-row-ratio-screen-small) / 2);
+				margin-right: (@dropdown-row-caret-offset-horizontal * @dropdown-row-ratio-screen-small);
 				
 			}
 			
@@ -2530,7 +2530,7 @@
 			
 			> .dropdown-menu {
 				
-				margin-left: -@dropdown-submenu-offset-horizontal * @dropdown-menu-responsive-ratio-widescreen;
+				margin-left: -@dropdown-submenu-offset-horizontal * @dropdown-menu-ratio-screen-small;
 				
 			}
 			
@@ -2555,7 +2555,7 @@
 		.dropdown-menu {
 			
 			margin-top: 0px;
-			margin-bottom: @dropdown-menu-offset-vertical * @dropdown-menu-responsive-ratio-widescreen;
+			margin-bottom: @dropdown-menu-offset-vertical * @dropdown-menu-ratio-screen-small;
 			
 		}
 		
@@ -2568,7 +2568,7 @@
 			> .dropdown-menu {
 				
 				margin-top: 0px;
-				margin-bottom: @dropdown-submenu-offset-vertical * @dropdown-menu-responsive-ratio-widescreen;
+				margin-bottom: @dropdown-submenu-offset-vertical * @dropdown-menu-ratio-screen-small;
 				
 			}
 			
@@ -2584,8 +2584,8 @@
 				
 				.caret {
 					
-					border-width: 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-widescreen) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-widescreen) / 2);
-					margin-top: ((@button-text-line-height * @button-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+					border-width: 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-ratio-screen-small) / 2) (@dropdown-toggle-caret-height * @dropdown-toggle-caret-ratio-screen-small) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-ratio-screen-small) / 2);
+					margin-top: ((@button-text-line-height * @button-ratio-screen-small) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-ratio-screen-small) / 2) - (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
 					
 				}
 				
@@ -2597,8 +2597,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2);
-						margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-small) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-small) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-small) / 2);
+						margin-top: ((@button-large-text-line-height * @button-large-ratio-screen-small) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-small) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
 						
 					}
 					
@@ -2612,8 +2612,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2);
-						margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-small) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-small) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-small) / 2);
+						margin-top: ((@button-small-text-line-height * @button-small-ratio-screen-small) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-small) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
 						
 					}
 					
@@ -2627,8 +2627,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2);
-						margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-widescreen) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-widescreen) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-widescreen);
+						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-small) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-small) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-small) / 2);
+						margin-top: ((@button-mini-text-line-height * @button-mini-ratio-screen-small) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-small) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-small);
 						
 					}
 					
@@ -2646,12 +2646,12 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
-		
+@media (min-width: @screen-medium) {
+	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
 	/* Dropdown Arrow/Caret Sizing/Styling                                                                  */
@@ -2664,9 +2664,9 @@
 			
 			.caret {
 				
-				border-width: (@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-tablet) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-tablet) / 2);
-				margin-top: ((@button-text-line-height * @button-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
-				margin-left: (@dropdown-toggle-caret-offset-horizontal * @dropdown-toggle-caret-responsive-ratio-tablet);
+				border-width: (@dropdown-toggle-caret-height * @dropdown-toggle-caret-ratio-screen-medium) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-ratio-screen-medium) / 2) 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-ratio-screen-medium) / 2);
+				margin-top: ((@button-text-line-height * @button-ratio-screen-medium) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-ratio-screen-medium) / 2) + (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
+				margin-left: (@dropdown-toggle-caret-offset-horizontal * @dropdown-toggle-caret-ratio-screen-medium);
 				
 				&.caret-solo {
 					
@@ -2684,9 +2684,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2);
-					margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
-					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-responsive-ratio-tablet);
+					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-medium) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-medium) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-medium) / 2);
+					margin-top: ((@button-large-text-line-height * @button-large-ratio-screen-medium) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-medium) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
+					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-ratio-screen-medium);
 					
 					&.caret-solo {
 						
@@ -2706,9 +2706,9 @@
 				
 				.caret {
 				
-					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2);
-					margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
-					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-responsive-ratio-tablet);
+					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-medium) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-medium) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-medium) / 2);
+					margin-top: ((@button-small-text-line-height * @button-small-ratio-screen-medium) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-medium) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
+					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-ratio-screen-medium);
 					
 					&.caret-solo {
 						
@@ -2728,9 +2728,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2);
-					margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
-					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-responsive-ratio-tablet);
+					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-medium) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-medium) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-medium) / 2);
+					margin-top: ((@button-mini-text-line-height * @button-mini-ratio-screen-medium) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-medium) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
+					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-ratio-screen-medium);
 					
 					&.caret-solo {
 						
@@ -2766,9 +2766,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2);
-					margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
-					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-responsive-ratio-tablet);
+					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-medium) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-medium) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-medium) / 2);
+					margin-top: ((@button-large-text-line-height * @button-large-ratio-screen-medium) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-medium) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
+					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-ratio-screen-medium);
 					
 					&.caret-solo {
 						
@@ -2787,8 +2787,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2);
-						margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-medium) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-medium) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-medium) / 2);
+						margin-top: ((@button-large-text-line-height * @button-large-ratio-screen-medium) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-medium) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
 						
 					}
 					
@@ -2808,9 +2808,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2);
-					margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
-					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-responsive-ratio-tablet);
+					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-medium) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-medium) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-medium) / 2);
+					margin-top: ((@button-small-text-line-height * @button-small-ratio-screen-medium) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-medium) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
+					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-ratio-screen-medium);
 					
 					&.caret-solo {
 						
@@ -2829,8 +2829,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2);
-						margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-medium) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-medium) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-medium) / 2);
+						margin-top: ((@button-small-text-line-height * @button-small-ratio-screen-medium) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-medium) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
 						
 					}
 					
@@ -2850,9 +2850,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2);
-					margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
-					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-responsive-ratio-tablet);
+					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-medium) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-medium) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-medium) / 2);
+					margin-top: ((@button-mini-text-line-height * @button-mini-ratio-screen-medium) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-medium) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
+					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-ratio-screen-medium);
 					
 					&.caret-solo {
 						
@@ -2871,8 +2871,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2);
-						margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-medium) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-medium) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-medium) / 2);
+						margin-top: ((@button-mini-text-line-height * @button-mini-ratio-screen-medium) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-medium) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
 						
 					}
 					
@@ -2894,12 +2894,12 @@
 	
 	.dropdown-menu {
 		
-		min-width: @dropdown-menu-minimum-width * @dropdown-menu-responsive-ratio-tablet;
-		padding: (@dropdown-menu-padding-vertical * @dropdown-menu-responsive-ratio-tablet) (@dropdown-menu-padding-horizontal * @dropdown-menu-responsive-ratio-tablet);
+		min-width: @dropdown-menu-minimum-width * @dropdown-menu-ratio-screen-medium;
+		padding: (@dropdown-menu-padding-vertical * @dropdown-menu-ratio-screen-medium) (@dropdown-menu-padding-horizontal * @dropdown-menu-ratio-screen-medium);
 		
 		.divider {
 			
-			margin: (@dropdown-divider-margin-vertical * @dropdown-menu-responsive-ratio-tablet) (@dropdown-divider-margin-horizontal * @dropdown-menu-responsive-ratio-tablet);
+			margin: (@dropdown-divider-margin-vertical * @dropdown-menu-ratio-screen-medium) (@dropdown-divider-margin-horizontal * @dropdown-menu-ratio-screen-medium);
 			    
 		}
 		
@@ -2907,23 +2907,23 @@
 			
 			&.dropdown-header {
 				
-				.block-padding-vertical(@dropdown-header-height * @dropdown-header-responsive-ratio-tablet, @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-tablet);
-				padding-left: @dropdown-header-padding-horizontal * @dropdown-header-responsive-ratio-tablet;
-				padding-right: @dropdown-header-padding-horizontal * @dropdown-header-responsive-ratio-tablet;
-				font-size: @dropdown-header-text-font-size * @dropdown-header-responsive-ratio-tablet;
-				line-height: @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-tablet;
-				*line-height:  @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-tablet;
+				.block-padding-vertical(@dropdown-header-height * @dropdown-header-ratio-screen-medium, @dropdown-header-text-line-height * @dropdown-header-ratio-screen-medium);
+				padding-left: @dropdown-header-padding-horizontal * @dropdown-header-ratio-screen-medium;
+				padding-right: @dropdown-header-padding-horizontal * @dropdown-header-ratio-screen-medium;
+				font-size: @dropdown-header-text-font-size * @dropdown-header-ratio-screen-medium;
+				line-height: @dropdown-header-text-line-height * @dropdown-header-ratio-screen-medium;
+				*line-height:  @dropdown-header-text-line-height * @dropdown-header-ratio-screen-medium;
 				
 			}
 			
 			> a {
 				
-				.block-padding-vertical(@dropdown-row-height * @dropdown-row-responsive-ratio-tablet, @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-tablet);
-				padding-left: @dropdown-row-padding-horizontal * @dropdown-row-responsive-ratio-tablet;
-				padding-right: @dropdown-row-padding-horizontal * @dropdown-row-responsive-ratio-tablet;
-				font-size: @dropdown-row-text-font-size * @dropdown-row-responsive-ratio-tablet;
-				line-height: @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-tablet;
-				*line-height:  @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-tablet;
+				.block-padding-vertical(@dropdown-row-height * @dropdown-row-ratio-screen-medium, @dropdown-row-text-line-height * @dropdown-row-ratio-screen-medium);
+				padding-left: @dropdown-row-padding-horizontal * @dropdown-row-ratio-screen-medium;
+				padding-right: @dropdown-row-padding-horizontal * @dropdown-row-ratio-screen-medium;
+				font-size: @dropdown-row-text-font-size * @dropdown-row-ratio-screen-medium;
+				line-height: @dropdown-row-text-line-height * @dropdown-row-ratio-screen-medium;
+				*line-height:  @dropdown-row-text-line-height * @dropdown-row-ratio-screen-medium;
 				
 			}
 			
@@ -2947,8 +2947,8 @@
 		
 		> .dropdown-menu {
 			
-			margin-top: @dropdown-submenu-offset-vertical * @dropdown-menu-responsive-ratio-tablet;
-			margin-left: @dropdown-submenu-offset-horizontal * @dropdown-menu-responsive-ratio-tablet;
+			margin-top: @dropdown-submenu-offset-vertical * @dropdown-menu-ratio-screen-medium;
+			margin-left: @dropdown-submenu-offset-horizontal * @dropdown-menu-ratio-screen-medium;
 			
 		}
 		
@@ -2960,9 +2960,9 @@
 			
 			&:after {
 				
-				border-width: ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-tablet)/ 2) 0px ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-tablet) / 2) (@dropdown-row-caret-width * @dropdown-row-responsive-ratio-tablet);
-				margin-top: ((@dropdown-row-text-line-height * @dropdown-row-responsive-ratio-tablet) / 2) - ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-tablet) / 2);
-				margin-right: (@dropdown-row-caret-offset-horizontal * @dropdown-row-responsive-ratio-tablet);
+				border-width: ((@dropdown-row-caret-height * @dropdown-row-ratio-screen-medium)/ 2) 0px ((@dropdown-row-caret-height * @dropdown-row-ratio-screen-medium) / 2) (@dropdown-row-caret-width * @dropdown-row-ratio-screen-medium);
+				margin-top: ((@dropdown-row-text-line-height * @dropdown-row-ratio-screen-medium) / 2) - ((@dropdown-row-caret-height * @dropdown-row-ratio-screen-medium) / 2);
+				margin-right: (@dropdown-row-caret-offset-horizontal * @dropdown-row-ratio-screen-medium);
 				
 			}
 			
@@ -2974,7 +2974,7 @@
 			
 			> .dropdown-menu {
 				
-				margin-left: -@dropdown-submenu-offset-horizontal * @dropdown-menu-responsive-ratio-tablet;
+				margin-left: -@dropdown-submenu-offset-horizontal * @dropdown-menu-ratio-screen-medium;
 				
 			}
 			
@@ -2999,7 +2999,7 @@
 		.dropdown-menu {
 			
 			margin-top: 0px;
-			margin-bottom: @dropdown-menu-offset-vertical * @dropdown-menu-responsive-ratio-tablet;
+			margin-bottom: @dropdown-menu-offset-vertical * @dropdown-menu-ratio-screen-medium;
 			
 		}
 		
@@ -3012,7 +3012,7 @@
 			> .dropdown-menu {
 				
 				margin-top: 0px;
-				margin-bottom: @dropdown-submenu-offset-vertical * @dropdown-menu-responsive-ratio-tablet;
+				margin-bottom: @dropdown-submenu-offset-vertical * @dropdown-menu-ratio-screen-medium;
 				
 			}
 			
@@ -3028,8 +3028,8 @@
 				
 				.caret {
 					
-					border-width: 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-tablet) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-tablet) / 2);
-					margin-top: ((@button-text-line-height * @button-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+					border-width: 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-ratio-screen-medium) / 2) (@dropdown-toggle-caret-height * @dropdown-toggle-caret-ratio-screen-medium) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-ratio-screen-medium) / 2);
+					margin-top: ((@button-text-line-height * @button-ratio-screen-medium) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-ratio-screen-medium) / 2) - (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
 					
 				}
 				
@@ -3041,8 +3041,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2);
-						margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-medium) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-medium) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-medium) / 2);
+						margin-top: ((@button-large-text-line-height * @button-large-ratio-screen-medium) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-medium) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
 						
 					}
 					
@@ -3056,8 +3056,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2);
-						margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-medium) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-medium) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-medium) / 2);
+						margin-top: ((@button-small-text-line-height * @button-small-ratio-screen-medium) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-medium) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
 						
 					}
 					
@@ -3071,8 +3071,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2);
-						margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-tablet) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-tablet) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-tablet);
+						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-medium) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-medium) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-medium) / 2);
+						margin-top: ((@button-mini-text-line-height * @button-mini-ratio-screen-medium) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-medium) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-medium);
 						
 					}
 					
@@ -3090,12 +3090,12 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
+/* Screen Size: Large (@screen-large) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (max-width: @viewport-mobile-landscape-max) {
-	
+@media (min-width: @screen-large) {
+		
 	/* ==================================================================================================== */
 	/*                                                                                                      */
 	/* Dropdown Arrow/Caret Sizing/Styling                                                                  */
@@ -3108,9 +3108,9 @@
 			
 			.caret {
 				
-				border-width: (@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-mobile) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-mobile) / 2);
-				margin-top: ((@button-text-line-height * @button-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
-				margin-left: (@dropdown-toggle-caret-offset-horizontal * @dropdown-toggle-caret-responsive-ratio-mobile);
+				border-width: (@dropdown-toggle-caret-height * @dropdown-toggle-caret-ratio-screen-large) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-ratio-screen-large) / 2) 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-ratio-screen-large) / 2);
+				margin-top: ((@button-text-line-height * @button-ratio-screen-large) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-ratio-screen-large) / 2) + (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
+				margin-left: (@dropdown-toggle-caret-offset-horizontal * @dropdown-toggle-caret-ratio-screen-large);
 				
 				&.caret-solo {
 					
@@ -3128,9 +3128,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2);
-					margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
-					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-responsive-ratio-mobile);
+					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-large) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-large) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-large) / 2);
+					margin-top: ((@button-large-text-line-height * @button-large-ratio-screen-large) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-large) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
+					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-ratio-screen-large);
 					
 					&.caret-solo {
 						
@@ -3150,9 +3150,9 @@
 				
 				.caret {
 				
-					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2);
-					margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
-					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-responsive-ratio-mobile);
+					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-large) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-large) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-large) / 2);
+					margin-top: ((@button-small-text-line-height * @button-small-ratio-screen-large) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-large) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
+					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-ratio-screen-large);
 					
 					&.caret-solo {
 						
@@ -3172,9 +3172,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2);
-					margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
-					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-responsive-ratio-mobile);
+					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-large) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-large) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-large) / 2);
+					margin-top: ((@button-mini-text-line-height * @button-mini-ratio-screen-large) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-large) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
+					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-ratio-screen-large);
 					
 					&.caret-solo {
 						
@@ -3210,9 +3210,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2);
-					margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
-					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-responsive-ratio-mobile);
+					border-width: (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-large) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-large) / 2) 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-large) / 2);
+					margin-top: ((@button-large-text-line-height * @button-large-ratio-screen-large) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-large) / 2) + (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
+					margin-left: (@dropdown-toggle-large-caret-offset-horizontal * @dropdown-toggle-large-caret-ratio-screen-large);
 					
 					&.caret-solo {
 						
@@ -3231,8 +3231,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2);
-						margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-large) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-large) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-large) / 2);
+						margin-top: ((@button-large-text-line-height * @button-large-ratio-screen-large) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-large) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
 						
 					}
 					
@@ -3252,9 +3252,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2);
-					margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
-					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-responsive-ratio-mobile);
+					border-width: (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-large) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-large) / 2) 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-large) / 2);
+					margin-top: ((@button-small-text-line-height * @button-small-ratio-screen-large) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-large) / 2) + (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
+					margin-left: (@dropdown-toggle-small-caret-offset-horizontal * @dropdown-toggle-small-caret-ratio-screen-large);
 					
 					&.caret-solo {
 						
@@ -3273,8 +3273,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2);
-						margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-large) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-large) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-large) / 2);
+						margin-top: ((@button-small-text-line-height * @button-small-ratio-screen-large) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-large) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
 						
 					}
 					
@@ -3294,9 +3294,9 @@
 				
 				.caret {
 					
-					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2);
-					margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
-					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-responsive-ratio-mobile);
+					border-width: (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-large) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-large) / 2) 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-large) / 2);
+					margin-top: ((@button-mini-text-line-height * @button-mini-ratio-screen-large) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-large) / 2) + (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
+					margin-left: (@dropdown-toggle-mini-caret-offset-horizontal * @dropdown-toggle-mini-caret-ratio-screen-large);
 					
 					&.caret-solo {
 						
@@ -3315,8 +3315,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2);
-						margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-large) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-large) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-large) / 2);
+						margin-top: ((@button-mini-text-line-height * @button-mini-ratio-screen-large) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-large) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
 						
 					}
 					
@@ -3338,12 +3338,12 @@
 	
 	.dropdown-menu {
 		
-		min-width: @dropdown-menu-minimum-width * @dropdown-menu-responsive-ratio-mobile;
-		padding: (@dropdown-menu-padding-vertical * @dropdown-menu-responsive-ratio-mobile) (@dropdown-menu-padding-horizontal * @dropdown-menu-responsive-ratio-mobile);
+		min-width: @dropdown-menu-minimum-width * @dropdown-menu-ratio-screen-large;
+		padding: (@dropdown-menu-padding-vertical * @dropdown-menu-ratio-screen-large) (@dropdown-menu-padding-horizontal * @dropdown-menu-ratio-screen-large);
 		
 		.divider {
 			
-			margin: (@dropdown-divider-margin-vertical * @dropdown-menu-responsive-ratio-mobile) (@dropdown-divider-margin-horizontal * @dropdown-menu-responsive-ratio-mobile);
+			margin: (@dropdown-divider-margin-vertical * @dropdown-menu-ratio-screen-large) (@dropdown-divider-margin-horizontal * @dropdown-menu-ratio-screen-large);
 			    
 		}
 		
@@ -3351,23 +3351,23 @@
 			
 			&.dropdown-header {
 				
-				.block-padding-vertical(@dropdown-header-height * @dropdown-header-responsive-ratio-mobile, @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-mobile);
-				padding-left: @dropdown-header-padding-horizontal * @dropdown-header-responsive-ratio-mobile;
-				padding-right: @dropdown-header-padding-horizontal * @dropdown-header-responsive-ratio-mobile;
-				font-size: @dropdown-header-text-font-size * @dropdown-header-responsive-ratio-mobile;
-				line-height: @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-mobile;
-				*line-height:  @dropdown-header-text-line-height * @dropdown-header-responsive-ratio-mobile;
+				.block-padding-vertical(@dropdown-header-height * @dropdown-header-ratio-screen-large, @dropdown-header-text-line-height * @dropdown-header-ratio-screen-large);
+				padding-left: @dropdown-header-padding-horizontal * @dropdown-header-ratio-screen-large;
+				padding-right: @dropdown-header-padding-horizontal * @dropdown-header-ratio-screen-large;
+				font-size: @dropdown-header-text-font-size * @dropdown-header-ratio-screen-large;
+				line-height: @dropdown-header-text-line-height * @dropdown-header-ratio-screen-large;
+				*line-height:  @dropdown-header-text-line-height * @dropdown-header-ratio-screen-large;
 				
 			}
 			
 			> a {
 				
-				.block-padding-vertical(@dropdown-row-height * @dropdown-row-responsive-ratio-mobile, @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-mobile);
-				padding-left: @dropdown-row-padding-horizontal * @dropdown-row-responsive-ratio-mobile;
-				padding-right: @dropdown-row-padding-horizontal * @dropdown-row-responsive-ratio-mobile;
-				font-size: @dropdown-row-text-font-size * @dropdown-row-responsive-ratio-mobile;
-				line-height: @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-mobile;
-				*line-height:  @dropdown-row-text-line-height * @dropdown-row-responsive-ratio-mobile;
+				.block-padding-vertical(@dropdown-row-height * @dropdown-row-ratio-screen-large, @dropdown-row-text-line-height * @dropdown-row-ratio-screen-large);
+				padding-left: @dropdown-row-padding-horizontal * @dropdown-row-ratio-screen-large;
+				padding-right: @dropdown-row-padding-horizontal * @dropdown-row-ratio-screen-large;
+				font-size: @dropdown-row-text-font-size * @dropdown-row-ratio-screen-large;
+				line-height: @dropdown-row-text-line-height * @dropdown-row-ratio-screen-large;
+				*line-height:  @dropdown-row-text-line-height * @dropdown-row-ratio-screen-large;
 				
 			}
 			
@@ -3391,8 +3391,8 @@
 		
 		> .dropdown-menu {
 			
-			margin-top: @dropdown-submenu-offset-vertical * @dropdown-menu-responsive-ratio-mobile;
-			margin-left: @dropdown-submenu-offset-horizontal * @dropdown-menu-responsive-ratio-mobile;
+			margin-top: @dropdown-submenu-offset-vertical * @dropdown-menu-ratio-screen-large;
+			margin-left: @dropdown-submenu-offset-horizontal * @dropdown-menu-ratio-screen-large;
 			
 		}
 		
@@ -3404,9 +3404,9 @@
 			
 			&:after {
 				
-				border-width: ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-mobile)/ 2) 0px ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-mobile) / 2) (@dropdown-row-caret-width * @dropdown-row-responsive-ratio-mobile);
-				margin-top: ((@dropdown-row-text-line-height * @dropdown-row-responsive-ratio-mobile) / 2) - ((@dropdown-row-caret-height * @dropdown-row-responsive-ratio-mobile) / 2);
-				margin-right: (@dropdown-row-caret-offset-horizontal * @dropdown-row-responsive-ratio-mobile);
+				border-width: ((@dropdown-row-caret-height * @dropdown-row-ratio-screen-large)/ 2) 0px ((@dropdown-row-caret-height * @dropdown-row-ratio-screen-large) / 2) (@dropdown-row-caret-width * @dropdown-row-ratio-screen-large);
+				margin-top: ((@dropdown-row-text-line-height * @dropdown-row-ratio-screen-large) / 2) - ((@dropdown-row-caret-height * @dropdown-row-ratio-screen-large) / 2);
+				margin-right: (@dropdown-row-caret-offset-horizontal * @dropdown-row-ratio-screen-large);
 				
 			}
 			
@@ -3418,7 +3418,7 @@
 			
 			> .dropdown-menu {
 				
-				margin-left: -@dropdown-submenu-offset-horizontal * @dropdown-menu-responsive-ratio-mobile;
+				margin-left: -@dropdown-submenu-offset-horizontal * @dropdown-menu-ratio-screen-large;
 				
 			}
 			
@@ -3443,7 +3443,7 @@
 		.dropdown-menu {
 			
 			margin-top: 0px;
-			margin-bottom: @dropdown-menu-offset-vertical * @dropdown-menu-responsive-ratio-mobile;
+			margin-bottom: @dropdown-menu-offset-vertical * @dropdown-menu-ratio-screen-large;
 			
 		}
 		
@@ -3456,7 +3456,7 @@
 			> .dropdown-menu {
 				
 				margin-top: 0px;
-				margin-bottom: @dropdown-submenu-offset-vertical * @dropdown-menu-responsive-ratio-mobile;
+				margin-bottom: @dropdown-submenu-offset-vertical * @dropdown-menu-ratio-screen-large;
 				
 			}
 			
@@ -3472,8 +3472,8 @@
 				
 				.caret {
 					
-					border-width: 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-mobile) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-responsive-ratio-mobile) / 2);
-					margin-top: ((@button-text-line-height * @button-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+					border-width: 0px ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-ratio-screen-large) / 2) (@dropdown-toggle-caret-height * @dropdown-toggle-caret-ratio-screen-large) ((@dropdown-toggle-caret-width * @dropdown-toggle-caret-ratio-screen-large) / 2);
+					margin-top: ((@button-text-line-height * @button-ratio-screen-large) / 2) - ((@dropdown-toggle-caret-height * @dropdown-toggle-caret-ratio-screen-large) / 2) - (@dropdown-toggle-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
 					
 				}
 				
@@ -3485,8 +3485,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2);
-						margin-top: ((@button-large-text-line-height * @button-large-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+						border-width: 0px ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-large) / 2) (@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-large) ((@dropdown-toggle-large-caret-width * @dropdown-toggle-large-caret-ratio-screen-large) / 2);
+						margin-top: ((@button-large-text-line-height * @button-large-ratio-screen-large) / 2) - ((@dropdown-toggle-large-caret-height * @dropdown-toggle-large-caret-ratio-screen-large) / 2) - (@dropdown-toggle-large-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
 						
 					}
 					
@@ -3500,8 +3500,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2);
-						margin-top: ((@button-small-text-line-height * @button-small-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+						border-width: 0px ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-large) / 2) (@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-large) ((@dropdown-toggle-small-caret-width * @dropdown-toggle-small-caret-ratio-screen-large) / 2);
+						margin-top: ((@button-small-text-line-height * @button-small-ratio-screen-large) / 2) - ((@dropdown-toggle-small-caret-height * @dropdown-toggle-small-caret-ratio-screen-large) / 2) - (@dropdown-toggle-small-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
 						
 					}
 					
@@ -3515,8 +3515,8 @@
 					
 					.caret {
 						
-						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2);
-						margin-top: ((@button-mini-text-line-height * @button-mini-responsive-ratio-mobile) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-responsive-ratio-mobile) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-responsive-ratio-mobile);
+						border-width: 0px ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-large) / 2) (@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-large) ((@dropdown-toggle-mini-caret-width * @dropdown-toggle-mini-caret-ratio-screen-large) / 2);
+						margin-top: ((@button-mini-text-line-height * @button-mini-ratio-screen-large) / 2) - ((@dropdown-toggle-mini-caret-height * @dropdown-toggle-mini-caret-ratio-screen-large) / 2) - (@dropdown-toggle-mini-caret-offset-vertical * @dropdown-toggle-caret-ratio-screen-large);
 						
 					}
 					
@@ -3527,18 +3527,6 @@
 		}
 		
 	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (max-width: @viewport-mobile-max) {
 	
 }
 

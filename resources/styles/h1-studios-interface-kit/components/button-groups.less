@@ -1411,11 +1411,11 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-widescreen) {
+@media (min-width: @screen-small) {
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -1427,7 +1427,7 @@
 		
 		+ .button-group {
 			
-			margin-left: @button-toolbar-padding-horizontal-widescreen;
+			margin-left: @button-toolbar-padding-horizontal-screen-small;
 			
 		}
 		
@@ -1437,16 +1437,16 @@
 		
 		&.button-group-large {
 			
-			height: @button-large-height * @button-large-responsive-ratio-widescreen;
+			height: @button-large-height * @button-large-ratio-screen-small;
 			
 			.button {
 				
-				.block-padding-vertical(@button-large-height * @button-large-responsive-ratio-widescreen, @button-large-text-line-height * @button-large-responsive-ratio-widescreen);
-				padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-widescreen;
-				padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-widescreen;
-				font-size: @button-large-text-font-size * @button-large-responsive-ratio-widescreen;
-				line-height: @button-large-text-line-height * @button-large-responsive-ratio-widescreen;
-				*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-widescreen;
+				.block-padding-vertical(@button-large-height * @button-large-ratio-screen-small, @button-large-text-line-height * @button-large-ratio-screen-small);
+				padding-left: @button-large-padding-horizontal * @button-large-ratio-screen-small;
+				padding-right: @button-large-padding-horizontal * @button-large-ratio-screen-small;
+				font-size: @button-large-text-font-size * @button-large-ratio-screen-small;
+				line-height: @button-large-text-line-height * @button-large-ratio-screen-small;
+				*line-height:  @button-large-text-line-height * @button-large-ratio-screen-small;
 				
 			}
 			
@@ -1458,16 +1458,16 @@
 		
 		&.button-group-small {
 			
-			height: @button-small-height * @button-small-responsive-ratio-widescreen;
+			height: @button-small-height * @button-small-ratio-screen-small;
 			
 			.button {
 				
-				.block-padding-vertical(@button-small-height * @button-small-responsive-ratio-widescreen, @button-small-text-line-height * @button-small-responsive-ratio-widescreen);
-				padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-widescreen;
-				padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-widescreen;
-				font-size: @button-small-text-font-size * @button-small-responsive-ratio-widescreen;
-				line-height: @button-small-text-line-height * @button-small-responsive-ratio-widescreen;
-				*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-widescreen;
+				.block-padding-vertical(@button-small-height * @button-small-ratio-screen-small, @button-small-text-line-height * @button-small-ratio-screen-small);
+				padding-left: @button-small-padding-horizontal * @button-small-ratio-screen-small;
+				padding-right: @button-small-padding-horizontal * @button-small-ratio-screen-small;
+				font-size: @button-small-text-font-size * @button-small-ratio-screen-small;
+				line-height: @button-small-text-line-height * @button-small-ratio-screen-small;
+				*line-height:  @button-small-text-line-height * @button-small-ratio-screen-small;
 				
 			}
 			
@@ -1479,16 +1479,16 @@
 		
 		&.button-group-mini {
 			
-			height: @button-mini-height * @button-mini-responsive-ratio-widescreen;
+			height: @button-mini-height * @button-mini-ratio-screen-small;
 			
 			.button {
 				
-				.block-padding-vertical(@button-mini-height * @button-mini-responsive-ratio-widescreen, @button-mini-text-line-height * @button-mini-responsive-ratio-widescreen);
-				padding-left: @button-mini-padding-horizontal * @button-mini-responsive-ratio-widescreen;
-				padding-right: @button-mini-padding-horizontal * @button-mini-responsive-ratio-widescreen;
-				font-size: @button-mini-text-font-size * @button-mini-responsive-ratio-widescreen;
-				line-height: @button-mini-text-line-height * @button-mini-responsive-ratio-widescreen;
-				*line-height:  @button-mini-text-line-height * @button-mini-responsive-ratio-widescreen;
+				.block-padding-vertical(@button-mini-height * @button-mini-ratio-screen-small, @button-mini-text-line-height * @button-mini-ratio-screen-small);
+				padding-left: @button-mini-padding-horizontal * @button-mini-ratio-screen-small;
+				padding-right: @button-mini-padding-horizontal * @button-mini-ratio-screen-small;
+				font-size: @button-mini-text-font-size * @button-mini-ratio-screen-small;
+				line-height: @button-mini-text-line-height * @button-mini-ratio-screen-small;
+				*line-height:  @button-mini-text-line-height * @button-mini-ratio-screen-small;
 				
 			}
 			
@@ -1506,26 +1506,26 @@
 	
 	.button-toolbar {
 		
-		margin-top: -1 * @button-toolbar-padding-horizontal-widescreen;
-		margin-left: -1 * @button-toolbar-padding-horizontal-widescreen;
-		margin-bottom: @button-toolbar-margin-widescreen;
+		margin-top: -1 * @button-toolbar-padding-horizontal-screen-small;
+		margin-left: -1 * @button-toolbar-padding-horizontal-screen-small;
+		margin-bottom: @button-toolbar-margin-screen-small;
 		
 		&.tall {
 			
-			margin-bottom: @button-toolbar-margin-tall-widescreen;
+			margin-bottom: @button-toolbar-margin-tall-screen-small;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @button-toolbar-margin-short-widescreen;
+			margin-bottom: @button-toolbar-margin-short-screen-small;
 			
 		}
 		
 		&.button-toolbar-centered {
 			
-			margin-top: -1 * @button-toolbar-padding-horizontal-widescreen;
-			margin-left: -1 * @button-toolbar-padding-horizontal-widescreen;
+			margin-top: -1 * @button-toolbar-padding-horizontal-screen-small;
+			margin-left: -1 * @button-toolbar-padding-horizontal-screen-small;
 			
 		}
 		
@@ -1535,26 +1535,26 @@
 		
 		> .button {
 			
-			margin-top: @button-toolbar-padding-horizontal-widescreen + @button-default-offset-top;
-			margin-left: @button-toolbar-padding-horizontal-widescreen;
+			margin-top: @button-toolbar-padding-horizontal-screen-small + @button-default-offset-top;
+			margin-left: @button-toolbar-padding-horizontal-screen-small;
 			
 			&:hover {
 				
-				margin-top: @button-toolbar-padding-horizontal-widescreen + @button-default-hover-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-small + @button-default-hover-offset-top;
 				
 			}
 		
 			&.active,
 			&:active {
 				
-				margin-top: @button-toolbar-padding-horizontal-widescreen + @button-default-active-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-small + @button-default-active-offset-top;
 				
 			}
 			
 			&.disabled,
 			&[disabled] {
 				
-				margin-top: @button-toolbar-padding-horizontal-widescreen + @button-default-disabled-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-small + @button-default-disabled-offset-top;
 				
 			}
 			
@@ -1564,25 +1564,25 @@
 			
 			&.btn-link {
 				
-				margin-top: @button-toolbar-padding-horizontal-widescreen + @button-default-link-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-small + @button-default-link-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-default-link-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-default-link-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-default-link-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-default-link-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-default-link-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-default-link-disabled-offset-top;
 					
 				}
 				
@@ -1594,25 +1594,25 @@
 			
 			&.inverse {
 				
-				margin-top: @button-toolbar-padding-horizontal-widescreen + @button-default-inverse-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-small + @button-default-inverse-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-default-inverse-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-default-inverse-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-default-inverse-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-default-inverse-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-default-inverse-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-default-inverse-disabled-offset-top;
 					
 				}
 				
@@ -1624,25 +1624,25 @@
 			
 			&.button-primary {
 				
-				margin-top: @button-toolbar-padding-horizontal-widescreen + @button-primary-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-small + @button-primary-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-primary-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-primary-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-primary-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-primary-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-primary-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-primary-disabled-offset-top;
 					
 				}
 				
@@ -1652,25 +1652,25 @@
 				
 				&.btn-link {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-primary-link-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-primary-link-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-primary-link-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-primary-link-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-primary-link-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-primary-link-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-primary-link-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-primary-link-disabled-offset-top;
 						
 					}
 					
@@ -1682,25 +1682,25 @@
 				
 				&.inverse {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-primary-inverse-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-primary-inverse-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-primary-inverse-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-primary-inverse-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-primary-inverse-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-primary-inverse-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-primary-inverse-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-primary-inverse-disabled-offset-top;
 						
 					}
 					
@@ -1714,25 +1714,25 @@
 			
 			&.button-warning {
 				
-				margin-top: @button-toolbar-padding-horizontal-widescreen + @button-warning-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-small + @button-warning-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-warning-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-warning-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-warning-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-warning-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-warning-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-warning-disabled-offset-top;
 					
 				}
 				
@@ -1742,25 +1742,25 @@
 				
 				&.btn-link {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-warning-link-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-warning-link-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-warning-link-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-warning-link-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-warning-link-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-warning-link-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-warning-link-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-warning-link-disabled-offset-top;
 						
 					}
 					
@@ -1772,25 +1772,25 @@
 				
 				&.inverse {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-warning-inverse-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-warning-inverse-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-warning-inverse-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-warning-inverse-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-warning-inverse-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-warning-inverse-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-warning-inverse-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-warning-inverse-disabled-offset-top;
 						
 					}
 					
@@ -1804,25 +1804,25 @@
 			
 			&.button-success {
 				
-				margin-top: @button-toolbar-padding-horizontal-widescreen + @button-success-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-small + @button-success-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-success-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-success-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-success-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-success-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-success-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-success-disabled-offset-top;
 					
 				}
 				
@@ -1832,25 +1832,25 @@
 				
 				&.btn-link {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-success-link-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-success-link-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-success-link-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-success-link-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-success-link-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-success-link-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-success-link-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-success-link-disabled-offset-top;
 						
 					}
 					
@@ -1862,25 +1862,25 @@
 				
 				&.inverse {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-success-inverse-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-success-inverse-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-success-inverse-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-success-inverse-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-success-inverse-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-success-inverse-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-success-inverse-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-success-inverse-disabled-offset-top;
 						
 					}
 					
@@ -1894,25 +1894,25 @@
 			
 			&.button-danger {
 				
-				margin-top: @button-toolbar-padding-horizontal-widescreen + @button-danger-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-small + @button-danger-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-danger-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-danger-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-danger-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-danger-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-danger-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-danger-disabled-offset-top;
 					
 				}
 				
@@ -1922,25 +1922,25 @@
 				
 				&.btn-link {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-danger-link-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-danger-link-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-danger-link-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-danger-link-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-danger-link-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-danger-link-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-danger-link-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-danger-link-disabled-offset-top;
 						
 					}
 					
@@ -1952,25 +1952,25 @@
 				
 				&.inverse {
 					
-					margin-top: @button-toolbar-padding-horizontal-widescreen + @button-danger-inverse-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-small + @button-danger-inverse-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-danger-inverse-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-danger-inverse-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-danger-inverse-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-danger-inverse-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-widescreen + @button-danger-inverse-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-small + @button-danger-inverse-disabled-offset-top;
 						
 					}
 					
@@ -1986,12 +1986,13 @@
 		
 		> .button-group {
 			
-			margin-top: @button-toolbar-padding-horizontal-widescreen;
-			margin-left: @button-toolbar-padding-horizontal-widescreen;
+			margin-top: @button-toolbar-padding-horizontal-screen-small;
+			margin-left: @button-toolbar-padding-horizontal-screen-small;
 			
 		}
 		
 	}
+	
 	
 }
 
@@ -1999,11 +2000,11 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
+@media (min-width: @screen-medium) {
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -2015,7 +2016,7 @@
 		
 		+ .button-group {
 			
-			margin-left: @button-toolbar-padding-horizontal-tablet;
+			margin-left: @button-toolbar-padding-horizontal-screen-medium;
 			
 		}
 		
@@ -2025,16 +2026,16 @@
 		
 		&.button-group-large {
 			
-			height: @button-large-height * @button-large-responsive-ratio-tablet;
+			height: @button-large-height * @button-large-ratio-screen-medium;
 			
 			.button {
 				
-				.block-padding-vertical(@button-large-height * @button-large-responsive-ratio-tablet, @button-large-text-line-height * @button-large-responsive-ratio-tablet);
-				padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-tablet;
-				padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-tablet;
-				font-size: @button-large-text-font-size * @button-large-responsive-ratio-tablet;
-				line-height: @button-large-text-line-height * @button-large-responsive-ratio-tablet;
-				*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-tablet;
+				.block-padding-vertical(@button-large-height * @button-large-ratio-screen-medium, @button-large-text-line-height * @button-large-ratio-screen-medium);
+				padding-left: @button-large-padding-horizontal * @button-large-ratio-screen-medium;
+				padding-right: @button-large-padding-horizontal * @button-large-ratio-screen-medium;
+				font-size: @button-large-text-font-size * @button-large-ratio-screen-medium;
+				line-height: @button-large-text-line-height * @button-large-ratio-screen-medium;
+				*line-height:  @button-large-text-line-height * @button-large-ratio-screen-medium;
 				
 			}
 			
@@ -2046,16 +2047,16 @@
 		
 		&.button-group-small {
 			
-			height: @button-small-height * @button-small-responsive-ratio-tablet;
+			height: @button-small-height * @button-small-ratio-screen-medium;
 			
 			.button {
 				
-				.block-padding-vertical(@button-small-height * @button-small-responsive-ratio-tablet, @button-small-text-line-height * @button-small-responsive-ratio-tablet);
-				padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-tablet;
-				padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-tablet;
-				font-size: @button-small-text-font-size * @button-small-responsive-ratio-tablet;
-				line-height: @button-small-text-line-height * @button-small-responsive-ratio-tablet;
-				*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-tablet;
+				.block-padding-vertical(@button-small-height * @button-small-ratio-screen-medium, @button-small-text-line-height * @button-small-ratio-screen-medium);
+				padding-left: @button-small-padding-horizontal * @button-small-ratio-screen-medium;
+				padding-right: @button-small-padding-horizontal * @button-small-ratio-screen-medium;
+				font-size: @button-small-text-font-size * @button-small-ratio-screen-medium;
+				line-height: @button-small-text-line-height * @button-small-ratio-screen-medium;
+				*line-height:  @button-small-text-line-height * @button-small-ratio-screen-medium;
 				
 			}
 			
@@ -2067,16 +2068,16 @@
 		
 		&.button-group-mini {
 			
-			height: @button-mini-height * @button-mini-responsive-ratio-tablet;
+			height: @button-mini-height * @button-mini-ratio-screen-medium;
 			
 			.button {
 				
-				.block-padding-vertical(@button-mini-height * @button-mini-responsive-ratio-tablet, @button-mini-text-line-height * @button-mini-responsive-ratio-tablet);
-				padding-left: @button-mini-padding-horizontal * @button-mini-responsive-ratio-tablet;
-				padding-right: @button-mini-padding-horizontal * @button-mini-responsive-ratio-tablet;
-				font-size: @button-mini-text-font-size * @button-mini-responsive-ratio-tablet;
-				line-height: @button-mini-text-line-height * @button-mini-responsive-ratio-tablet;
-				*line-height:  @button-mini-text-line-height * @button-mini-responsive-ratio-tablet;
+				.block-padding-vertical(@button-mini-height * @button-mini-ratio-screen-medium, @button-mini-text-line-height * @button-mini-ratio-screen-medium);
+				padding-left: @button-mini-padding-horizontal * @button-mini-ratio-screen-medium;
+				padding-right: @button-mini-padding-horizontal * @button-mini-ratio-screen-medium;
+				font-size: @button-mini-text-font-size * @button-mini-ratio-screen-medium;
+				line-height: @button-mini-text-line-height * @button-mini-ratio-screen-medium;
+				*line-height:  @button-mini-text-line-height * @button-mini-ratio-screen-medium;
 				
 			}
 			
@@ -2094,26 +2095,26 @@
 	
 	.button-toolbar {
 		
-		margin-top: -1 * @button-toolbar-padding-horizontal-tablet;
-		margin-left: -1 * @button-toolbar-padding-horizontal-tablet;
-		margin-bottom: @button-toolbar-margin-tablet;
+		margin-top: -1 * @button-toolbar-padding-horizontal-screen-medium;
+		margin-left: -1 * @button-toolbar-padding-horizontal-screen-medium;
+		margin-bottom: @button-toolbar-margin-screen-medium;
 		
 		&.tall {
 			
-			margin-bottom: @button-toolbar-margin-tall-tablet;
+			margin-bottom: @button-toolbar-margin-tall-screen-medium;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @button-toolbar-margin-short-tablet;
+			margin-bottom: @button-toolbar-margin-short-screen-medium;
 			
 		}
 		
 		&.button-toolbar-centered {
 			
-			margin-top: -1 * @button-toolbar-padding-horizontal-tablet;
-			margin-left: -1 * @button-toolbar-padding-horizontal-tablet;
+			margin-top: -1 * @button-toolbar-padding-horizontal-screen-medium;
+			margin-left: -1 * @button-toolbar-padding-horizontal-screen-medium;
 			
 		}
 		
@@ -2123,26 +2124,26 @@
 		
 		> .button {
 			
-			margin-top: @button-toolbar-padding-horizontal-tablet + @button-default-offset-top;
-			margin-left: @button-toolbar-padding-horizontal-tablet;
+			margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-default-offset-top;
+			margin-left: @button-toolbar-padding-horizontal-screen-medium;
 			
 			&:hover {
 				
-				margin-top: @button-toolbar-padding-horizontal-tablet + @button-default-hover-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-default-hover-offset-top;
 				
 			}
 		
 			&.active,
 			&:active {
 				
-				margin-top: @button-toolbar-padding-horizontal-tablet + @button-default-active-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-default-active-offset-top;
 				
 			}
 			
 			&.disabled,
 			&[disabled] {
 				
-				margin-top: @button-toolbar-padding-horizontal-tablet + @button-default-disabled-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-default-disabled-offset-top;
 				
 			}
 			
@@ -2152,25 +2153,25 @@
 			
 			&.btn-link {
 				
-				margin-top: @button-toolbar-padding-horizontal-tablet + @button-default-link-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-default-link-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-default-link-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-default-link-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-default-link-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-default-link-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-default-link-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-default-link-disabled-offset-top;
 					
 				}
 				
@@ -2182,25 +2183,25 @@
 			
 			&.inverse {
 				
-				margin-top: @button-toolbar-padding-horizontal-tablet + @button-default-inverse-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-default-inverse-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-default-inverse-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-default-inverse-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-default-inverse-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-default-inverse-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-default-inverse-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-default-inverse-disabled-offset-top;
 					
 				}
 				
@@ -2212,25 +2213,25 @@
 			
 			&.button-primary {
 				
-				margin-top: @button-toolbar-padding-horizontal-tablet + @button-primary-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-primary-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-primary-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-primary-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-primary-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-primary-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-primary-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-primary-disabled-offset-top;
 					
 				}
 				
@@ -2240,25 +2241,25 @@
 				
 				&.btn-link {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-primary-link-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-primary-link-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-primary-link-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-primary-link-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-primary-link-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-primary-link-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-primary-link-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-primary-link-disabled-offset-top;
 						
 					}
 					
@@ -2270,25 +2271,25 @@
 				
 				&.inverse {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-primary-inverse-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-primary-inverse-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-primary-inverse-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-primary-inverse-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-primary-inverse-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-primary-inverse-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-primary-inverse-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-primary-inverse-disabled-offset-top;
 						
 					}
 					
@@ -2302,25 +2303,25 @@
 			
 			&.button-warning {
 				
-				margin-top: @button-toolbar-padding-horizontal-tablet + @button-warning-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-warning-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-warning-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-warning-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-warning-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-warning-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-warning-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-warning-disabled-offset-top;
 					
 				}
 				
@@ -2330,25 +2331,25 @@
 				
 				&.btn-link {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-warning-link-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-warning-link-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-warning-link-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-warning-link-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-warning-link-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-warning-link-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-warning-link-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-warning-link-disabled-offset-top;
 						
 					}
 					
@@ -2360,25 +2361,25 @@
 				
 				&.inverse {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-warning-inverse-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-warning-inverse-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-warning-inverse-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-warning-inverse-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-warning-inverse-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-warning-inverse-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-warning-inverse-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-warning-inverse-disabled-offset-top;
 						
 					}
 					
@@ -2392,25 +2393,25 @@
 			
 			&.button-success {
 				
-				margin-top: @button-toolbar-padding-horizontal-tablet + @button-success-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-success-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-success-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-success-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-success-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-success-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-success-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-success-disabled-offset-top;
 					
 				}
 				
@@ -2420,25 +2421,25 @@
 				
 				&.btn-link {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-success-link-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-success-link-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-success-link-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-success-link-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-success-link-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-success-link-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-success-link-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-success-link-disabled-offset-top;
 						
 					}
 					
@@ -2450,25 +2451,25 @@
 				
 				&.inverse {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-success-inverse-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-success-inverse-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-success-inverse-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-success-inverse-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-success-inverse-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-success-inverse-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-success-inverse-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-success-inverse-disabled-offset-top;
 						
 					}
 					
@@ -2482,25 +2483,25 @@
 			
 			&.button-danger {
 				
-				margin-top: @button-toolbar-padding-horizontal-tablet + @button-danger-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-danger-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-danger-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-danger-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-danger-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-danger-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-danger-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-danger-disabled-offset-top;
 					
 				}
 				
@@ -2510,25 +2511,25 @@
 				
 				&.btn-link {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-danger-link-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-danger-link-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-danger-link-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-danger-link-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-danger-link-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-danger-link-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-danger-link-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-danger-link-disabled-offset-top;
 						
 					}
 					
@@ -2540,25 +2541,25 @@
 				
 				&.inverse {
 					
-					margin-top: @button-toolbar-padding-horizontal-tablet + @button-danger-inverse-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-danger-inverse-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-danger-inverse-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-danger-inverse-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-danger-inverse-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-danger-inverse-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-tablet + @button-danger-inverse-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-medium + @button-danger-inverse-disabled-offset-top;
 						
 					}
 					
@@ -2574,13 +2575,12 @@
 		
 		> .button-group {
 			
-			margin-top: @button-toolbar-padding-horizontal-tablet;
-			margin-left: @button-toolbar-padding-horizontal-tablet;
+			margin-top: @button-toolbar-padding-horizontal-screen-medium;
+			margin-left: @button-toolbar-padding-horizontal-screen-medium;
 			
 		}
 		
 	}
-	
 	
 }
 
@@ -2588,11 +2588,11 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
+/* Screen Size: Large (@screen-large) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (max-width: @viewport-mobile-landscape-max) {
+@media (min-width: @screen-large) {
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -2604,7 +2604,7 @@
 		
 		+ .button-group {
 			
-			margin-left: @button-toolbar-padding-horizontal-mobile;
+			margin-left: @button-toolbar-padding-horizontal-screen-large;
 			
 		}
 		
@@ -2614,16 +2614,16 @@
 		
 		&.button-group-large {
 			
-			height: @button-large-height * @button-large-responsive-ratio-mobile;
+			height: @button-large-height * @button-large-ratio-screen-large;
 			
 			.button {
 				
-				.block-padding-vertical(@button-large-height * @button-large-responsive-ratio-mobile, @button-large-text-line-height * @button-large-responsive-ratio-mobile);
-				padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-mobile;
-				padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-mobile;
-				font-size: @button-large-text-font-size * @button-large-responsive-ratio-mobile;
-				line-height: @button-large-text-line-height * @button-large-responsive-ratio-mobile;
-				*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-mobile;
+				.block-padding-vertical(@button-large-height * @button-large-ratio-screen-large, @button-large-text-line-height * @button-large-ratio-screen-large);
+				padding-left: @button-large-padding-horizontal * @button-large-ratio-screen-large;
+				padding-right: @button-large-padding-horizontal * @button-large-ratio-screen-large;
+				font-size: @button-large-text-font-size * @button-large-ratio-screen-large;
+				line-height: @button-large-text-line-height * @button-large-ratio-screen-large;
+				*line-height:  @button-large-text-line-height * @button-large-ratio-screen-large;
 				
 			}
 			
@@ -2635,16 +2635,16 @@
 		
 		&.button-group-small {
 			
-			height: @button-small-height * @button-small-responsive-ratio-mobile;
+			height: @button-small-height * @button-small-ratio-screen-large;
 			
 			.button {
 				
-				.block-padding-vertical(@button-small-height * @button-small-responsive-ratio-mobile, @button-small-text-line-height * @button-small-responsive-ratio-mobile);
-				padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-mobile;
-				padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-mobile;
-				font-size: @button-small-text-font-size * @button-small-responsive-ratio-mobile;
-				line-height: @button-small-text-line-height * @button-small-responsive-ratio-mobile;
-				*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-mobile;
+				.block-padding-vertical(@button-small-height * @button-small-ratio-screen-large, @button-small-text-line-height * @button-small-ratio-screen-large);
+				padding-left: @button-small-padding-horizontal * @button-small-ratio-screen-large;
+				padding-right: @button-small-padding-horizontal * @button-small-ratio-screen-large;
+				font-size: @button-small-text-font-size * @button-small-ratio-screen-large;
+				line-height: @button-small-text-line-height * @button-small-ratio-screen-large;
+				*line-height:  @button-small-text-line-height * @button-small-ratio-screen-large;
 				
 			}
 			
@@ -2656,16 +2656,16 @@
 		
 		&.button-group-mini {
 			
-			height: @button-mini-height * @button-mini-responsive-ratio-mobile;
+			height: @button-mini-height * @button-mini-ratio-screen-large;
 			
 			.button {
 				
-				.block-padding-vertical(@button-mini-height * @button-mini-responsive-ratio-mobile, @button-mini-text-line-height * @button-mini-responsive-ratio-mobile);
-				padding-left: @button-mini-padding-horizontal * @button-mini-responsive-ratio-mobile;
-				padding-right: @button-mini-padding-horizontal * @button-mini-responsive-ratio-mobile;
-				font-size: @button-mini-text-font-size * @button-mini-responsive-ratio-mobile;
-				line-height: @button-mini-text-line-height * @button-mini-responsive-ratio-mobile;
-				*line-height:  @button-mini-text-line-height * @button-mini-responsive-ratio-mobile;
+				.block-padding-vertical(@button-mini-height * @button-mini-ratio-screen-large, @button-mini-text-line-height * @button-mini-ratio-screen-large);
+				padding-left: @button-mini-padding-horizontal * @button-mini-ratio-screen-large;
+				padding-right: @button-mini-padding-horizontal * @button-mini-ratio-screen-large;
+				font-size: @button-mini-text-font-size * @button-mini-ratio-screen-large;
+				line-height: @button-mini-text-line-height * @button-mini-ratio-screen-large;
+				*line-height:  @button-mini-text-line-height * @button-mini-ratio-screen-large;
 				
 			}
 			
@@ -2683,26 +2683,26 @@
 	
 	.button-toolbar {
 		
-		margin-top: -1 * @button-toolbar-padding-horizontal-mobile;
-		margin-left: -1 * @button-toolbar-padding-horizontal-mobile;
-		margin-bottom: @button-toolbar-margin-mobile;
+		margin-top: -1 * @button-toolbar-padding-horizontal-screen-large;
+		margin-left: -1 * @button-toolbar-padding-horizontal-screen-large;
+		margin-bottom: @button-toolbar-margin-screen-large;
 		
 		&.tall {
 			
-			margin-bottom: @button-toolbar-margin-tall-mobile;
+			margin-bottom: @button-toolbar-margin-tall-screen-large;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @button-toolbar-margin-short-mobile;
+			margin-bottom: @button-toolbar-margin-short-screen-large;
 			
 		}
 		
 		&.button-toolbar-centered {
 			
-			margin-top: -1 * @button-toolbar-padding-horizontal-mobile;
-			margin-left: -1 * @button-toolbar-padding-horizontal-mobile;
+			margin-top: -1 * @button-toolbar-padding-horizontal-screen-large;
+			margin-left: -1 * @button-toolbar-padding-horizontal-screen-large;
 			
 		}
 		
@@ -2712,26 +2712,26 @@
 		
 		> .button {
 			
-			margin-top: @button-toolbar-padding-horizontal-mobile + @button-default-offset-top;
-			margin-left: @button-toolbar-padding-horizontal-mobile;
+			margin-top: @button-toolbar-padding-horizontal-screen-large + @button-default-offset-top;
+			margin-left: @button-toolbar-padding-horizontal-screen-large;
 			
 			&:hover {
 				
-				margin-top: @button-toolbar-padding-horizontal-mobile + @button-default-hover-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-large + @button-default-hover-offset-top;
 				
 			}
 		
 			&.active,
 			&:active {
 				
-				margin-top: @button-toolbar-padding-horizontal-mobile + @button-default-active-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-large + @button-default-active-offset-top;
 				
 			}
 			
 			&.disabled,
 			&[disabled] {
 				
-				margin-top: @button-toolbar-padding-horizontal-mobile + @button-default-disabled-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-large + @button-default-disabled-offset-top;
 				
 			}
 			
@@ -2741,25 +2741,25 @@
 			
 			&.btn-link {
 				
-				margin-top: @button-toolbar-padding-horizontal-mobile + @button-default-link-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-large + @button-default-link-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-default-link-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-default-link-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-default-link-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-default-link-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-default-link-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-default-link-disabled-offset-top;
 					
 				}
 				
@@ -2771,25 +2771,25 @@
 			
 			&.inverse {
 				
-				margin-top: @button-toolbar-padding-horizontal-mobile + @button-default-inverse-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-large + @button-default-inverse-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-default-inverse-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-default-inverse-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-default-inverse-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-default-inverse-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-default-inverse-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-default-inverse-disabled-offset-top;
 					
 				}
 				
@@ -2801,25 +2801,25 @@
 			
 			&.button-primary {
 				
-				margin-top: @button-toolbar-padding-horizontal-mobile + @button-primary-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-large + @button-primary-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-primary-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-primary-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-primary-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-primary-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-primary-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-primary-disabled-offset-top;
 					
 				}
 				
@@ -2829,25 +2829,25 @@
 				
 				&.btn-link {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-primary-link-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-primary-link-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-primary-link-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-primary-link-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-primary-link-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-primary-link-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-primary-link-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-primary-link-disabled-offset-top;
 						
 					}
 					
@@ -2859,25 +2859,25 @@
 				
 				&.inverse {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-primary-inverse-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-primary-inverse-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-primary-inverse-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-primary-inverse-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-primary-inverse-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-primary-inverse-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-primary-inverse-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-primary-inverse-disabled-offset-top;
 						
 					}
 					
@@ -2891,25 +2891,25 @@
 			
 			&.button-warning {
 				
-				margin-top: @button-toolbar-padding-horizontal-mobile + @button-warning-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-large + @button-warning-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-warning-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-warning-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-warning-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-warning-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-warning-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-warning-disabled-offset-top;
 					
 				}
 				
@@ -2919,25 +2919,25 @@
 				
 				&.btn-link {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-warning-link-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-warning-link-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-warning-link-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-warning-link-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-warning-link-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-warning-link-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-warning-link-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-warning-link-disabled-offset-top;
 						
 					}
 					
@@ -2949,25 +2949,25 @@
 				
 				&.inverse {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-warning-inverse-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-warning-inverse-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-warning-inverse-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-warning-inverse-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-warning-inverse-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-warning-inverse-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-warning-inverse-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-warning-inverse-disabled-offset-top;
 						
 					}
 					
@@ -2981,25 +2981,25 @@
 			
 			&.button-success {
 				
-				margin-top: @button-toolbar-padding-horizontal-mobile + @button-success-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-large + @button-success-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-success-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-success-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-success-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-success-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-success-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-success-disabled-offset-top;
 					
 				}
 				
@@ -3009,25 +3009,25 @@
 				
 				&.btn-link {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-success-link-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-success-link-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-success-link-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-success-link-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-success-link-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-success-link-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-success-link-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-success-link-disabled-offset-top;
 						
 					}
 					
@@ -3039,25 +3039,25 @@
 				
 				&.inverse {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-success-inverse-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-success-inverse-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-success-inverse-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-success-inverse-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-success-inverse-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-success-inverse-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-success-inverse-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-success-inverse-disabled-offset-top;
 						
 					}
 					
@@ -3071,25 +3071,25 @@
 			
 			&.button-danger {
 				
-				margin-top: @button-toolbar-padding-horizontal-mobile + @button-danger-offset-top;
+				margin-top: @button-toolbar-padding-horizontal-screen-large + @button-danger-offset-top;
 				
 				&:hover {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-danger-hover-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-danger-hover-offset-top;
 					
 				}
 			
 				&.active,
 				&:active {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-danger-active-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-danger-active-offset-top;
 					
 				}
 				
 				&.disabled,
 				&[disabled] {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-danger-disabled-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-danger-disabled-offset-top;
 					
 				}
 				
@@ -3099,25 +3099,25 @@
 				
 				&.btn-link {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-danger-link-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-danger-link-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-danger-link-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-danger-link-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-danger-link-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-danger-link-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-danger-link-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-danger-link-disabled-offset-top;
 						
 					}
 					
@@ -3129,25 +3129,25 @@
 				
 				&.inverse {
 					
-					margin-top: @button-toolbar-padding-horizontal-mobile + @button-danger-inverse-offset-top;
+					margin-top: @button-toolbar-padding-horizontal-screen-large + @button-danger-inverse-offset-top;
 					
 					&:hover {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-danger-inverse-hover-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-danger-inverse-hover-offset-top;
 						
 					}
 				
 					&.active,
 					&:active {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-danger-inverse-active-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-danger-inverse-active-offset-top;
 						
 					}
 					
 					&.disabled,
 					&[disabled] {
 						
-						margin-top: @button-toolbar-padding-horizontal-mobile + @button-danger-inverse-disabled-offset-top;
+						margin-top: @button-toolbar-padding-horizontal-screen-large + @button-danger-inverse-disabled-offset-top;
 						
 					}
 					
@@ -3163,24 +3163,12 @@
 		
 		> .button-group {
 			
-			margin-top: @button-toolbar-padding-horizontal-mobile;
-			margin-left: @button-toolbar-padding-horizontal-mobile;
+			margin-top: @button-toolbar-padding-horizontal-screen-large;
+			margin-left: @button-toolbar-padding-horizontal-screen-large;
 			
 		}
 		
 	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (max-width: @viewport-mobile-max) {
 	
 }
 

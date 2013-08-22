@@ -38,7 +38,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t
 \t\t<div class=\"row\">
 \t\t\t
-\t\t\t<div class=\"span3\">
+\t\t\t<div class=\"col-sm-3\">
 \t\t\t\t
 \t\t\t\t<ul class=\"nav\">
 \t\t\t\t\t
@@ -146,7 +146,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t
 \t\t\t</div>
 \t\t\t
-\t\t\t<div class=\"span9\">
+\t\t\t<div class=\"col-sm-9\">
 \t\t\t\t
 \t\t\t\t<!-- ================================================== -->
 \t\t\t\t<!-- =================== GRID SYSTEM ================== -->

@@ -10,6 +10,22 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
+/* Reset Box Sizing                                                                                     */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+*,
+*:before,
+*:after {
+	
+	.box-sizing(border-box);
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Body                                                                                                 */
 /*                                                                                                      */
 /* ==================================================================================================== */
@@ -69,41 +85,6 @@ a {
     color: @white;
     
 }
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Fixed Grid                                                                                           */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-#grid > .core(@grid-column-width-standard, @grid-gutter-width-standard);
-
-.container {
-	
-	position: relative;
-	.container-fixed();
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Fluid Grid                                                                                           */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-#grid > .fluid(@fluid-grid-column-width-standard, @fluid-grid-gutter-width-standard);
-
-.container-fluid {
-	
-	position: relative;
-	.clearfix();
-	
-}
-
 
 
 /* ==================================================================================================== */
@@ -258,11 +239,11 @@ hr {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-widescreen) {
+@media (min-width: @screen-small) {
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -272,30 +253,10 @@ hr {
 	
 	body {
 	
-		font-size: @body-text-font-size * @body-text-responsive-ratio-widescreen;
-		line-height: @body-text-line-height * @body-text-responsive-ratio-widescreen;
+		font-size: @body-text-font-size * @body-text-ratio-screen-small;
+		line-height: @body-text-line-height * @body-text-ratio-screen-small;
 		
 	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Fixed Grid                                                                                           */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	#grid > .core(@grid-column-width-widescreen, @grid-gutter-width-widescreen);
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Fluid Grid                                                                                           */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	#grid > .fluid(@fluid-grid-column-width-widescreen, @fluid-grid-gutter-width-widescreen);
 	
 	
 	
@@ -307,20 +268,276 @@ hr {
 		
 	.container-pod {
 		
-		padding-top: @primary-margin-widescreen;
-		padding-bottom: @primary-margin-widescreen;
+		padding-top: @primary-margin-screen-small;
+		padding-bottom: @primary-margin-screen-small;
 		
 		&.container-pod-short {
 			
-			padding-top: @primary-margin-short-widescreen;
-			padding-bottom: @primary-margin-short-widescreen;
+			padding-top: @primary-margin-short-screen-small;
+			padding-bottom: @primary-margin-short-screen-small;
 			
 		}
 		
 		&.container-pod-tall {
 			
-			padding-top: @primary-margin-tall-widescreen;
-			padding-bottom: @primary-margin-tall-widescreen;
+			padding-top: @primary-margin-tall-screen-small;
+			padding-bottom: @primary-margin-tall-screen-small;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Row Pod                                                                                              */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.row-pod {
+		
+		padding-bottom: @primary-margin-screen-small;
+		
+		&.short {
+			
+			padding-bottom: @primary-margin-short-screen-small;
+			
+		}
+		
+		&.tall {
+			
+			padding-bottom: @primary-margin-tall-screen-small;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Horizontal Rule                                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	hr {
+		
+		margin: @primary-margin-screen-small 0px @primary-margin-screen-small 0px;
+			
+		&.short {
+			
+			margin: @primary-margin-short-screen-small 0px @primary-margin-short-screen-small 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin: @primary-margin-tall-screen-small 0px @primary-margin-tall-screen-small 0px;
+			
+		}
+	
+		&.narrow {
+			
+			margin: 0 auto;
+			margin-top: @primary-margin-screen-small;
+			margin-bottom: @primary-margin-screen-small;
+			
+			&.short {
+				
+				margin-top: @primary-margin-short-screen-small;
+				margin-bottom: @primary-margin-short-screen-small;
+				
+			}
+			
+			&.tall {
+				
+				margin-top: @primary-margin-tall-screen-small;
+				margin-bottom: @primary-margin-tall-screen-small;
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-medium) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Body                                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	body {
+	
+		font-size: @body-text-font-size * @body-text-ratio-screen-medium;
+		line-height: @body-text-line-height * @body-text-ratio-screen-medium;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Container Pod                                                                                        */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+		
+	.container-pod {
+		
+		padding-top: @primary-margin-screen-medium;
+		padding-bottom: @primary-margin-screen-medium;
+		
+		&.container-pod-short {
+			
+			padding-top: @primary-margin-short-screen-medium;
+			padding-bottom: @primary-margin-short-screen-medium;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primary-margin-tall-screen-medium;
+			padding-bottom: @primary-margin-tall-screen-medium;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Row Pod                                                                                              */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.row-pod {
+		
+		padding-bottom: @primary-margin-screen-medium;
+		
+		&.short {
+			
+			padding-bottom: @primary-margin-short-screen-medium;
+			
+		}
+		
+		&.tall {
+			
+			padding-bottom: @primary-margin-tall-screen-medium;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Horizontal Rule                                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	hr {
+		
+		margin: @primary-margin-screen-medium 0px @primary-margin-screen-medium 0px;
+			
+		&.short {
+			
+			margin: @primary-margin-short-screen-medium 0px @primary-margin-short-screen-medium 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin: @primary-margin-tall-screen-medium 0px @primary-margin-tall-screen-medium 0px;
+			
+		}
+	
+		&.narrow {
+			
+			margin: 0 auto;
+			margin-top: @primary-margin-screen-medium;
+			margin-bottom: @primary-margin-screen-medium;
+			
+			&.short {
+				
+				margin-top: @primary-margin-short-screen-medium;
+				margin-bottom: @primary-margin-short-screen-medium;
+				
+			}
+			
+			&.tall {
+				
+				margin-top: @primary-margin-tall-screen-medium;
+				margin-bottom: @primary-margin-tall-screen-medium;
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-large) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Body                                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	body {
+	
+		font-size: @body-text-font-size * @body-text-ratio-screen-large;
+		line-height: @body-text-line-height * @body-text-ratio-screen-large;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Container Pod                                                                                        */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+		
+	.container-pod {
+		
+		padding-top: @primary-margin-screen-large;
+		padding-bottom: @primary-margin-screen-large;
+		
+		&.container-pod-short {
+			
+			padding-top: @primary-margin-short-screen-large;
+			padding-bottom: @primary-margin-short-screen-large;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primary-margin-tall-screen-large;
+			padding-bottom: @primary-margin-tall-screen-large;
 			
 		}
 		
@@ -336,17 +553,17 @@ hr {
 		
 	.row-pod {
 		
-		padding-bottom: @primary-margin-widescreen;
+		padding-bottom: @primary-margin-screen-large;
 		
 		&.short {
 			
-			padding-bottom: @primary-margin-short-widescreen;
+			padding-bottom: @primary-margin-short-screen-large;
 			
 		}
 		
 		&.tall {
 			
-			padding-bottom: @primary-margin-tall-widescreen;
+			padding-bottom: @primary-margin-tall-screen-large;
 			
 		}
 		
@@ -362,479 +579,39 @@ hr {
 	
 	hr {
 		
-		margin: @primary-margin-widescreen 0px @primary-margin-widescreen 0px;
+		margin: @primary-margin-screen-large 0px @primary-margin-screen-large 0px;
 			
 		&.short {
 			
-			margin: @primary-margin-short-widescreen 0px @primary-margin-short-widescreen 0px;
+			margin: @primary-margin-short-screen-large 0px @primary-margin-short-screen-large 0px;
 			
 		}
 		
 		&.tall {
 			
-			margin: @primary-margin-tall-widescreen 0px @primary-margin-tall-widescreen 0px;
+			margin: @primary-margin-tall-screen-large 0px @primary-margin-tall-screen-large 0px;
 			
 		}
 	
 		&.narrow {
 			
 			margin: 0 auto;
-			margin-top: @primary-margin-widescreen;
-			margin-bottom: @primary-margin-widescreen;
+			margin-top: @primary-margin-screen-large;
+			margin-bottom: @primary-margin-screen-large;
 			
 			&.short {
 				
-				margin-top: @primary-margin-short-widescreen;
-				margin-bottom: @primary-margin-short-widescreen;
+				margin-top: @primary-margin-short-screen-large;
+				margin-bottom: @primary-margin-short-screen-large;
 				
 			}
 			
 			&.tall {
 				
-				margin-top: @primary-margin-tall-widescreen;
-				margin-bottom: @primary-margin-tall-widescreen;
+				margin-top: @primary-margin-tall-screen-large;
+				margin-bottom: @primary-margin-tall-screen-large;
 				
 			}
-			
-		}
-		
-	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Body                                                                                                 */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	body {
-	
-		font-size: @body-text-font-size * @body-text-responsive-ratio-tablet;
-		line-height: @body-text-line-height * @body-text-responsive-ratio-tablet;
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Fixed Grid                                                                                           */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	#grid > .core(@grid-column-width-tablet, @grid-gutter-width-tablet);
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Fluid Grid                                                                                           */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	#grid > .fluid(@fluid-grid-column-width-tablet, @fluid-grid-gutter-width-tablet);
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Container Pod                                                                                        */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-		
-	.container-pod {
-		
-		padding-top: @primary-margin-tablet;
-		padding-bottom: @primary-margin-tablet;
-		
-		&.container-pod-short {
-			
-			padding-top: @primary-margin-short-tablet;
-			padding-bottom: @primary-margin-short-tablet;
-			
-		}
-		
-		&.container-pod-tall {
-			
-			padding-top: @primary-margin-tall-tablet;
-			padding-bottom: @primary-margin-tall-tablet;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Row Pod                                                                                              */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	.row-pod {
-		
-		padding-bottom: @primary-margin-tablet;
-		
-		&.short {
-			
-			padding-bottom: @primary-margin-short-tablet;
-			
-		}
-		
-		&.tall {
-			
-			padding-bottom: @primary-margin-tall-tablet;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Horizontal Rule                                                                                      */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	hr {
-		
-		margin: @primary-margin-tablet 0px @primary-margin-tablet 0px;
-			
-		&.short {
-			
-			margin: @primary-margin-short-tablet 0px @primary-margin-short-tablet 0px;
-			
-		}
-		
-		&.tall {
-			
-			margin: @primary-margin-tall-tablet 0px @primary-margin-tall-tablet 0px;
-			
-		}
-	
-		&.narrow {
-			
-			margin: 0 auto;
-			margin-top: @primary-margin-tablet;
-			margin-bottom: @primary-margin-tablet;
-			
-			&.short {
-				
-				margin-top: @primary-margin-short-tablet;
-				margin-bottom: @primary-margin-short-tablet;
-				
-			}
-			
-			&.tall {
-				
-				margin-top: @primary-margin-tall-tablet;
-				margin-bottom: @primary-margin-tall-tablet;
-				
-			}
-			
-		}
-		
-	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (max-width: @viewport-mobile-landscape-max) {
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Body                                                                                                 */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	body {
-	
-		font-size: @body-text-font-size * @body-text-responsive-ratio-mobile;
-		line-height: @body-text-line-height * @body-text-responsive-ratio-mobile;
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Fixed Grid                                                                                           */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	.container {
-		
-		width: auto;
-		padding-left: @grid-gutter-width-mobile;
-		padding-right: @grid-gutter-width-mobile;
-		
-	}
-	
-	.row {
-		
-		margin-left: 0;
-		
-	}
-	
-	[class*="span"] {
-		
-		float: none !important;
-		display: block !important;
-		width: auto !important;
-		margin-left: 0 !important;
-		
-		&.spill {
-			
-			margin-top: @primary-margin-tablet;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Fluid Grid                                                                                           */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	.container-fluid {
-		
-		padding-left: @grid-gutter-width-mobile;
-		padding-right: @grid-gutter-width-mobile;
-		
-	}
-	
-	.row-fluid {
-		
-		width: 100%;
-		
-		[class*="span"] {
-			
-			float: none !important;
-			display: block !important;
-			width: auto !important;
-			margin-left: 0 !important;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Container Pod                                                                                        */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-		
-	.container-pod {
-		
-		padding-top: @primary-margin-tablet;
-		padding-bottom: @primary-margin-tablet;
-		
-		&.container-pod-short {
-			
-			padding-top: @primary-margin-short-tablet;
-			padding-bottom: @primary-margin-short-tablet;
-			
-		}
-		
-		&.container-pod-tall {
-			
-			padding-top: @primary-margin-tall-tablet;
-			padding-bottom: @primary-margin-tall-tablet;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Row Pod                                                                                              */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-
-	.row-pod {
-		
-		padding-bottom: @primary-margin-tablet;
-		
-		&.short {
-			
-			padding-bottom: @primary-margin-short-tablet;
-			
-		}
-		
-		&.tall {
-			
-			padding-bottom: @primary-margin-tall-tablet;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Horizontal Rule                                                                                      */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	hr {
-		
-		margin: @primary-margin-tablet 0px @primary-margin-tablet 0px;
-			
-		&.short {
-			
-			margin: @primary-margin-short-tablet 0px @primary-margin-short-tablet 0px;
-			
-		}
-		
-		&.tall {
-			
-			margin: @primary-margin-tall-tablet 0px @primary-margin-tall-tablet 0px;
-			
-		}
-	
-		&.narrow {
-			
-			margin: 0 auto;
-			margin-top: @primary-margin-tablet;
-			margin-bottom: @primary-margin-tablet;
-			
-			&.short {
-				
-				margin-top: @primary-margin-short-tablet;
-				margin-bottom: @primary-margin-short-tablet;
-				
-			}
-			
-			&.tall {
-				
-				margin-top: @primary-margin-tall-tablet;
-				margin-bottom: @primary-margin-tall-tablet;
-				
-			}
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Thumbnails                                                                                           */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	.thumbnails {
-		
-		margin-left: 0;
-		
-	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (max-width: @viewport-mobile-max) {
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Container Pod                                                                                        */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-		
-	.container-pod {
-		
-		padding-top: @primary-margin-mobile;
-		padding-bottom: @primary-margin-mobile;
-		
-		&.container-pod-short {
-			
-			padding-top: @primary-margin-short-mobile;
-			padding-bottom: @primary-margin-short-mobile;
-			
-		}
-		
-		&.container-pod-tall {
-			
-			padding-top: @primary-margin-tall-mobile;
-			padding-bottom: @primary-margin-tall-mobile;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Row Pod                                                                                              */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-
-	.row-pod {
-		
-		padding-bottom: @primary-margin-mobile;
-		
-		&.short {
-			
-			padding-bottom: @primary-margin-short-mobile;
-			
-		}
-		
-		&.tall {
-			
-			padding-bottom: @primary-margin-tall-mobile;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Fixed Grid                                                                                           */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	[class*="span"] {
-		
-		&.spill {
-			
-			margin-top: @primary-margin-mobile;
 			
 		}
 		

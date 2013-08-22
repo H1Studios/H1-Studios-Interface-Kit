@@ -8,7 +8,7 @@
 		
 		<div class="row">
 			
-			<div class="span3">
+			<div class="col-sm-3">
 				
 				<ul class="nav">
 					
@@ -116,7 +116,7 @@
 				
 			</div>
 			
-			<div class="span9">
+			<div class="col-sm-9">
 				
 				<!-- ================================================== -->
 				<!-- =================== GRID SYSTEM ================== -->

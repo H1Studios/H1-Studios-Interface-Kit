@@ -16,7 +16,8 @@ header {
 	
 	.header-toolbar {
 		
-		padding: @primary-margin;
+		padding: @grid-gutter-width / 2;
+		.clearfix();
 		
 		.header-logo {
 			
@@ -24,12 +25,12 @@ header {
 			padding: 0px;
 			float: left;
 			display: block;
-			width: 116px;
-			height: 50px;
-			background: url(/resources/images/layout/header/header-logo.png) top left no-repeat;
-			-webkit-background-size: 100% 100%;
-			-moz-background-size: 100% 100%;
-			background-size: 100% 100%;
+			width: 116px / 2;
+			height: 50px / 2;
+			background-image: url(/resources/images/layout/header/header-logo.png);
+			background-position: 0px 0px;
+			background-repeat: no-repeat;
+			.background-size(100% 100%);
 			
 			a {
 				
@@ -56,7 +57,7 @@ header {
 		.header-actions {
 			
 			float: right;
-			margin-left: @primary-margin;
+			display: none;
 			
 		}
 			
@@ -64,6 +65,7 @@ header {
 		nav {
 			
 			float: right;
+			.clearfix();
 			
 			ul {
 				
@@ -72,24 +74,26 @@ header {
 				
 				li {
 					
-					display: inline-block;
+					display: block;
+					float: left;
 					list-style: none;
-					line-height: 50px;
-					margin: 0px @primary-margin 0px 0px;
-					padding: 0px 10px 0px 10px;
-					font-size: @buttonTextFontSize;
-					font-weight: @buttonTextFontWeight;
-					
+					margin: 0px;
+					padding: 0px;
+					font-size: @button-text-font-size;
+					font-weight: @button-text-font-weight;
+					line-height: 25px;
+					margin-left: @primary-margin-short;
+						
 					a {
 						
 						display: block;
-						//color: @white;
+						padding: 0px;
 						
 					}
 					
-					&:last-child {
+					&:first-child {
 						
-						margin-right: 0px;
+						margin-left: 0px;
 						
 					}
 					
@@ -125,123 +129,44 @@ header {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-widescreen) {
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
+@media (min-width: @screen-small) {
 	
 	#header,
 	header {
 		
 		.header-toolbar {
 			
-			.header-actions {
-				
-				margin-left: @primary-margin-short;
-				
-			}
-			
-			#nav,
-			nav {
-				
-				ul {
-					
-					li {
-						
-						margin: 0px @primary-margin-short 0px 0px;
-						
-					}
-					
-				}
-				
-			}
-			
-		}
-		
-	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (max-width: @viewport-mobile-landscape-max) {
-	
-	#header,
-	header {
-		
-		.header-toolbar {
-			
-			padding: @primary-margin-mobile;
-			margin-bottom: 0px;
+			padding: @grid-gutter-width-small;
 			
 			.header-logo {
 				
-				//width: 56px;
-				//height: 24px;
-				//background: url(/resources/images/layout/header/header-logo-small.png) top left no-repeat;
-				-webkit-background-size: 100% 100%;
-				-moz-background-size: 100% 100%;
-				background-size: 100% 100%;
+				width: 116px;
+				height: 50px;
 				
 			}
 			
-			.header-toolbar-nav-toggle {
-				
-				display: inline-block;
-				
-			}
-			
-			.header-actions {
-				
-				margin-left: @primary-margin-mobile;
-				
-			}
-				
 			#nav,
 			nav {
 				
-				float: none;
-				clear:both;
-				.clearfix();
-				height: 0px;
-				margin: (40px + @primary-margin-mobile) -@primary-margin-mobile -@primary-margin-mobile -@primary-margin-mobile;
-				overflow: hidden;
-				.transition(all 0.1s linear);
-				background: @white;
-				
 				ul {
+					
+					list-style: none;
+					margin: 0px;
 					
 					li {
 						
-						display: block;
-						list-style: none;
 						line-height: 50px;
-						margin: 0px;
-						padding: 0px;
+						font-size: @button-text-font-size * @button-ratio-screen-small;
+						font-weight: @button-text-font-weight * @button-ratio-screen-small;
+						margin-left: @primary-margin-short-screen-medium;
 						
-						a {
+						&:first-child {
 							
-							display: block;
-							padding: 0px @primary-margin-mobile 0px @primary-margin-mobile;
+							margin-left: 0px;
 							
 						}
 						
@@ -249,9 +174,52 @@ header {
 					
 				}
 				
-				&.open {
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-medium) {
+	
+	#header,
+	header {
+		
+		.header-toolbar {
+			
+			padding: @grid-gutter-width-medium;
+			
+			#nav,
+			nav {
+				
+				ul {
 					
-					height: 100px;
+					list-style: none;
+					margin: 0px;
+					
+					li {
+						
+						font-size: @button-text-font-size * @button-ratio-screen-medium;
+						font-weight: @button-text-font-weight * @button-ratio-screen-medium;
+						margin-left: @primary-margin-short-screen-medium;
+						
+						&:first-child {
+							
+							margin-left: 0px;
+							
+						}
+						
+					}
 					
 				}
 				
@@ -267,11 +235,48 @@ header {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
+/* Screen Size: Large (@screen-large) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (max-width: @viewport-mobile-max) {
+@media (min-width: @screen-large) {
+	
+	#header,
+	header {
+		
+		.header-toolbar {
+			
+			padding: @grid-gutter-width-large;
+			
+			#nav,
+			nav {
+				
+				ul {
+					
+					list-style: none;
+					margin: 0px;
+					
+					li {
+						
+						font-size: @button-text-font-size * @button-ratio-screen-large;
+						font-weight: @button-text-font-weight * @button-ratio-screen-large;
+						margin-left: @primary-margin-short-screen-large;
+						
+						&:first-child {
+							
+							margin-left: 0px;
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
 	
 }
 
@@ -284,5 +289,20 @@ header {
 /* ==================================================================================================== */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+	#header,
+	header {
+		
+		.header-toolbar {
+			
+			.header-logo {
+				
+				background-image: url(/resources/images/layout/header/header-logo@2x.png);
+				
+			}
+			
+		}
+		
+	}
 	
 }

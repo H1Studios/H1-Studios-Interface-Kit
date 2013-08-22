@@ -2456,12 +2456,11 @@ blockquote:after {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling for widescreen (@viewport-widescreen) and                              */
-/* above.                                                                                               */
+/* Screen Size: Small (@screen-small) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-widescreen) {
+@media (min-width: @screen-small) {
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -2471,15 +2470,15 @@ blockquote:after {
 	
 	p {
 		
-		font-size: @body-text-font-size * @body-text-responsive-ratio-widescreen;
-		line-height: @body-text-line-height * @body-text-responsive-ratio-widescreen;
-		margin: (@body-text-margin-top * @body-text-responsive-ratio-widescreen) 0px (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) 0px;
+		font-size: @body-text-font-size * @body-text-ratio-screen-small;
+		line-height: @body-text-line-height * @body-text-ratio-screen-small;
+		margin: (@body-text-margin-top * @body-text-ratio-screen-small) 0px (@body-text-margin-bottom * @body-text-ratio-screen-small) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+			margin-bottom: @body-text-margin-bottom * @body-text-ratio-screen-small * @text-margin-ratio-tall;
 			
 		}
 		
@@ -2487,7 +2486,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+			margin-bottom: @body-text-margin-bottom * @body-text-ratio-screen-small * @text-margin-ratio-short;
 			
 		}
 		
@@ -2505,15 +2504,15 @@ blockquote:after {
 	p lead,
 	p .lead {
 		
-		font-size: @lead-text-font-size * @lead-text-responsive-ratio-widescreen;
-		line-height: @lead-text-line-height * @lead-text-responsive-ratio-widescreen;
-		margin: (@lead-text-margin-top * @lead-text-responsive-ratio-widescreen) 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen) 0px;
+		font-size: @lead-text-font-size * @lead-text-ratio-screen-small;
+		line-height: @lead-text-line-height * @lead-text-ratio-screen-small;
+		margin: (@lead-text-margin-top * @lead-text-ratio-screen-small) 0px (@lead-text-margin-bottom * @lead-text-ratio-screen-small) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+			margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-small * @text-margin-ratio-tall;
 			
 		}
 		
@@ -2521,7 +2520,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+			margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-small * @text-margin-ratio-short;
 			
 		}
 		
@@ -2539,15 +2538,15 @@ blockquote:after {
 	p small,
 	p .small {
 		
-		font-size: @small-text-font-size * @small-text-responsive-ratio-widescreen;
-		line-height: @small-text-line-height * @small-text-responsive-ratio-widescreen;
-		margin: (@small-text-margin-top * @small-text-responsive-ratio-widescreen) 0px (@small-text-margin-bottom * @small-text-responsive-ratio-widescreen) 0px;
+		font-size: @small-text-font-size * @small-text-ratio-screen-small;
+		line-height: @small-text-line-height * @small-text-ratio-screen-small;
+		margin: (@small-text-margin-top * @small-text-ratio-screen-small) 0px (@small-text-margin-bottom * @small-text-ratio-screen-small) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @small-text-margin-bottom * @small-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+			margin-bottom: @small-text-margin-bottom * @small-text-ratio-screen-small * @text-margin-ratio-tall;
 			
 		}
 		
@@ -2555,7 +2554,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @small-text-margin-bottom * @small-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+			margin-bottom: @small-text-margin-bottom * @small-text-ratio-screen-small * @text-margin-ratio-short;
 			
 		}
 		
@@ -2572,15 +2571,15 @@ blockquote:after {
 	h1,
 	.h1-clone {
 		
-		font-size: @heading-h1-text-font-size * @heading-h1-text-responsive-ratio-widescreen;
-		line-height: @heading-h1-text-line-height * @heading-h1-text-responsive-ratio-widescreen;
-		margin: (@heading-h1-text-margin-top * @heading-h1-text-responsive-ratio-widescreen) 0px (@heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-widescreen) 0px;
+		font-size: @heading-h1-text-font-size * @heading-h1-text-ratio-screen-small;
+		line-height: @heading-h1-text-line-height * @heading-h1-text-ratio-screen-small;
+		margin: (@heading-h1-text-margin-top * @heading-h1-text-ratio-screen-small) 0px (@heading-h1-text-margin-bottom * @heading-h1-text-ratio-screen-small) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-ratio-screen-small * @text-margin-ratio-tall;
 			
 		}
 		
@@ -2588,7 +2587,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-ratio-screen-small * @text-margin-ratio-short;
 			
 		}
 		
@@ -2605,15 +2604,15 @@ blockquote:after {
 	h2,
 	.h2-clone {
 		
-		font-size: @heading-h2-text-font-size * @heading-h2-text-responsive-ratio-widescreen;
-		line-height: @heading-h2-text-line-height * @heading-h2-text-responsive-ratio-widescreen;
-		margin: (@heading-h2-text-margin-top * @heading-h2-text-responsive-ratio-widescreen) 0px (@heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-widescreen) 0px;
+		font-size: @heading-h2-text-font-size * @heading-h2-text-ratio-screen-small;
+		line-height: @heading-h2-text-line-height * @heading-h2-text-ratio-screen-small;
+		margin: (@heading-h2-text-margin-top * @heading-h2-text-ratio-screen-small) 0px (@heading-h2-text-margin-bottom * @heading-h2-text-ratio-screen-small) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-ratio-screen-small * @text-margin-ratio-tall;
 			
 		}
 		
@@ -2621,7 +2620,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-ratio-screen-small * @text-margin-ratio-short;
 			
 		}
 		
@@ -2638,15 +2637,15 @@ blockquote:after {
 	h3,
 	.h3-clone {
 		
-		font-size: @heading-h3-text-font-size * @heading-h3-text-responsive-ratio-widescreen;
-		line-height: @heading-h3-text-line-height * @heading-h3-text-responsive-ratio-widescreen;
-		margin: (@heading-h3-text-margin-top * @heading-h3-text-responsive-ratio-widescreen) 0px (@heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-widescreen) 0px;
+		font-size: @heading-h3-text-font-size * @heading-h3-text-ratio-screen-small;
+		line-height: @heading-h3-text-line-height * @heading-h3-text-ratio-screen-small;
+		margin: (@heading-h3-text-margin-top * @heading-h3-text-ratio-screen-small) 0px (@heading-h3-text-margin-bottom * @heading-h3-text-ratio-screen-small) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-ratio-screen-small * @text-margin-ratio-tall;
 			
 		}
 		
@@ -2654,7 +2653,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-ratio-screen-small * @text-margin-ratio-short;
 			
 		}
 		
@@ -2671,15 +2670,15 @@ blockquote:after {
 	h4,
 	.h4-clone {
 		
-		font-size: @heading-h4-text-font-size * @heading-h4-text-responsive-ratio-widescreen;
-		line-height: @heading-h4-text-line-height * @heading-h4-text-responsive-ratio-widescreen;
-		margin: (@heading-h4-text-margin-top * @heading-h4-text-responsive-ratio-widescreen) 0px (@heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-widescreen) 0px;
+		font-size: @heading-h4-text-font-size * @heading-h4-text-ratio-screen-small;
+		line-height: @heading-h4-text-line-height * @heading-h4-text-ratio-screen-small;
+		margin: (@heading-h4-text-margin-top * @heading-h4-text-ratio-screen-small) 0px (@heading-h4-text-margin-bottom * @heading-h4-text-ratio-screen-small) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-ratio-screen-small * @text-margin-ratio-tall;
 			
 		}
 		
@@ -2687,7 +2686,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-ratio-screen-small * @text-margin-ratio-short;
 			
 		}
 		
@@ -2704,15 +2703,15 @@ blockquote:after {
 	h5,
 	.h5-clone {
 		
-		font-size: @heading-h5-text-font-size * @heading-h5-text-responsive-ratio-widescreen;
-		line-height: @heading-h5-text-line-height * @heading-h5-text-responsive-ratio-widescreen;
-		margin: (@heading-h5-text-margin-top * @heading-h5-text-responsive-ratio-widescreen) 0px (@heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-widescreen) 0px;
+		font-size: @heading-h5-text-font-size * @heading-h5-text-ratio-screen-small;
+		line-height: @heading-h5-text-line-height * @heading-h5-text-ratio-screen-small;
+		margin: (@heading-h5-text-margin-top * @heading-h5-text-ratio-screen-small) 0px (@heading-h5-text-margin-bottom * @heading-h5-text-ratio-screen-small) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-ratio-screen-small * @text-margin-ratio-tall;
 			
 		}
 		
@@ -2720,7 +2719,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-ratio-screen-small * @text-margin-ratio-short;
 			
 		}
 		
@@ -2737,15 +2736,15 @@ blockquote:after {
 	h6,
 	.h6-clone {
 		
-		font-size: @heading-h6-text-font-size * @heading-h6-text-responsive-ratio-widescreen;
-		line-height: @heading-h6-text-line-height * @heading-h6-text-responsive-ratio-widescreen;
-		margin: (@heading-h6-text-margin-top * @heading-h6-text-responsive-ratio-widescreen) 0px (@heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-widescreen) 0px;
+		font-size: @heading-h6-text-font-size * @heading-h6-text-ratio-screen-small;
+		line-height: @heading-h6-text-line-height * @heading-h6-text-ratio-screen-small;
+		margin: (@heading-h6-text-margin-top * @heading-h6-text-ratio-screen-small) 0px (@heading-h6-text-margin-bottom * @heading-h6-text-ratio-screen-small) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
+			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-ratio-screen-small * @text-margin-ratio-tall;
 			
 		}
 		
@@ -2753,7 +2752,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-widescreen * @text-margin-ratio-short;
+			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-ratio-screen-small * @text-margin-ratio-short;
 			
 		}
 		
@@ -2774,13 +2773,13 @@ blockquote:after {
 	ul,
 	ol {
 		
-		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) 0px;
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-ratio-screen-small) 0px;
 		
 		li {
 			
-			font-size: @body-text-font-size * @body-text-responsive-ratio-widescreen;
-			line-height: @body-text-line-height * @body-text-responsive-ratio-widescreen;
-			margin-bottom: (@body-text-margin-bottom / 2) * @body-text-responsive-ratio-widescreen;
+			font-size: @body-text-font-size * @body-text-ratio-screen-small;
+			line-height: @body-text-line-height * @body-text-ratio-screen-small;
+			margin-bottom: (@body-text-margin-bottom / 2) * @body-text-ratio-screen-small;
 			
 			&:last-child {
 				
@@ -2794,7 +2793,7 @@ blockquote:after {
 		
 		&.tall {
 			
-			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-responsive-ratio-widescreen;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-ratio-screen-small;
 			
 		}
 		
@@ -2802,7 +2801,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-responsive-ratio-widescreen;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-ratio-screen-small;
 			
 		}
 		
@@ -2813,7 +2812,7 @@ blockquote:after {
 	ol ol,
 	ol ul {
 		
-		margin: ((@body-text-margin-bottom / 2) * @body-text-responsive-ratio-widescreen) 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen);
+		margin: ((@body-text-margin-bottom / 2) * @body-text-ratio-screen-small) 0px 0px (@body-text-margin-bottom * @body-text-ratio-screen-small);
 		
 	}
 	
@@ -2823,14 +2822,14 @@ blockquote:after {
 	
 	dl {
 		
-		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) 0px;
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-ratio-screen-small) 0px;
 		
 		dt,
 		dd {
 			
-			font-size: @body-text-font-size * @body-text-responsive-ratio-widescreen;
-			line-height: @body-text-line-height * @body-text-responsive-ratio-widescreen;
-			margin-bottom: ((@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) / 2);
+			font-size: @body-text-font-size * @body-text-ratio-screen-small;
+			line-height: @body-text-line-height * @body-text-ratio-screen-small;
+			margin-bottom: ((@body-text-margin-bottom * @body-text-ratio-screen-small) / 2);
 			
 			&:last-child {
 				
@@ -2842,11 +2841,11 @@ blockquote:after {
 		
 		dd {
 			
-			margin-bottom: ((@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) / 2);
+			margin-bottom: ((@body-text-margin-bottom * @body-text-ratio-screen-small) / 2);
 			
 			+ dt {
 				
-				margin-top: (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen);
+				margin-top: (@body-text-margin-bottom * @body-text-ratio-screen-small);
 				
 			}
 			
@@ -2858,551 +2857,7 @@ blockquote:after {
 			
 			dt {
 				
-				width: 250px - (@primary-margin-widescreen / 2);
-				
-			}
-			
-			dd {
-				
-				margin-left: 250px;
-				
-				+ dt {
-					
-					margin-top: (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen);
-					
-					+ dd {
-						
-						margin-top: (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) + (0.5 * (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen));	
-						
-					}
-					
-				}
-				
-			}
-			
-		}
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-widescreen * @text-margin-ratio-short;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Address                                                                                              */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	address {
-		
-		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-widescreen) 0px;
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-responsive-ratio-widescreen;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-responsive-ratio-widescreen;
-			
-		}
-		
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Blockquote                                                                                           */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	blockquote {
-		
-		margin: 0px 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen) 0px;
-		padding: 0px 0px 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen);
-		
-		p {
-			
-			font-size: @lead-text-font-size * @lead-text-responsive-ratio-widescreen;
-			line-height: @lead-text-line-height * @lead-text-responsive-ratio-widescreen;
-			margin: (@lead-text-margin-top * @lead-text-responsive-ratio-widescreen) 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen) 0px;
-			
-			// Tall
-			
-			&.tall {
-				
-				margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
-				
-			}
-			
-			// Short
-				
-			&.short {
-				
-				margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen * @text-margin-ratio-short;
-				
-			}
-			
-		}
-		
-		small {
-			
-			font-size: @small-text-font-size * @small-text-responsive-ratio-widescreen;
-			line-height: @small-text-line-height * @small-text-responsive-ratio-widescreen;
-			margin: (@small-text-margin-top * @small-text-responsive-ratio-widescreen) 0px (@small-text-margin-bottom * @small-text-responsive-ratio-widescreen) 0px;
-			
-		}
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen * @text-margin-ratio-tall;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-widescreen * @text-margin-ratio-short;
-			
-		}
-		
-	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive changes to styling for portrait tablet (@viewport-tablet)                                 */
-/* to default desktop (@viewport-standard).                                                             */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Body Text                                                                                            */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	p {
-		
-		font-size: @body-text-font-size * @body-text-responsive-ratio-tablet;
-		line-height: @body-text-line-height * @body-text-responsive-ratio-tablet;
-		margin: (@body-text-margin-top * @body-text-responsive-ratio-tablet) 0px (@body-text-margin-bottom * @body-text-responsive-ratio-tablet) 0px;
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet * @text-margin-ratio-tall;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet * @text-margin-ratio-short;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Lead Text                                                                                            */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	p.lead,
-	p lead,
-	p .lead {
-		
-		font-size: @lead-text-font-size * @lead-text-responsive-ratio-tablet;
-		line-height: @lead-text-line-height * @lead-text-responsive-ratio-tablet;
-		margin: (@lead-text-margin-top * @lead-text-responsive-ratio-tablet) 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-tablet) 0px;
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-tablet * @text-margin-ratio-tall;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-tablet * @text-margin-ratio-short;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Small Text                                                                                           */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	p.small,
-	p small,
-	p .small {
-		
-		font-size: @small-text-font-size * @small-text-responsive-ratio-tablet;
-		line-height: @small-text-line-height * @small-text-responsive-ratio-tablet;
-		margin: (@small-text-margin-top * @small-text-responsive-ratio-tablet) 0px (@small-text-margin-bottom * @small-text-responsive-ratio-tablet) 0px;
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @small-text-margin-bottom * @small-text-responsive-ratio-tablet * @text-margin-ratio-tall;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @small-text-margin-bottom * @small-text-responsive-ratio-tablet * @text-margin-ratio-short;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Heading h1 Text                                                                                      */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	h1,
-	.h1-clone {
-		
-		font-size: @heading-h1-text-font-size * @heading-h1-text-responsive-ratio-tablet;
-		line-height: @heading-h1-text-line-height * @heading-h1-text-responsive-ratio-tablet;
-		margin: (@heading-h1-text-margin-top * @heading-h1-text-responsive-ratio-tablet) 0px (@heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-tablet) 0px;
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-tablet * @text-margin-ratio-tall;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-tablet * @text-margin-ratio-short;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Heading h2 Text                                                                                      */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	h2,
-	.h2-clone {
-		
-		font-size: @heading-h2-text-font-size * @heading-h2-text-responsive-ratio-tablet;
-		line-height: @heading-h2-text-line-height * @heading-h2-text-responsive-ratio-tablet;
-		margin: (@heading-h2-text-margin-top * @heading-h2-text-responsive-ratio-tablet) 0px (@heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-tablet) 0px;
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-tablet * @text-margin-ratio-tall;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-tablet * @text-margin-ratio-short;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Heading h3 Text                                                                                      */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	h3,
-	.h3-clone {
-		
-		font-size: @heading-h3-text-font-size * @heading-h3-text-responsive-ratio-tablet;
-		line-height: @heading-h3-text-line-height * @heading-h3-text-responsive-ratio-tablet;
-		margin: (@heading-h3-text-margin-top * @heading-h3-text-responsive-ratio-tablet) 0px (@heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-tablet) 0px;
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-tablet * @text-margin-ratio-tall;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-tablet * @text-margin-ratio-short;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Heading h4 Text                                                                                      */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	h4,
-	.h4-clone {
-		
-		font-size: @heading-h4-text-font-size * @heading-h4-text-responsive-ratio-tablet;
-		line-height: @heading-h4-text-line-height * @heading-h4-text-responsive-ratio-tablet;
-		margin: (@heading-h4-text-margin-top * @heading-h4-text-responsive-ratio-tablet) 0px (@heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-tablet) 0px;
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-tablet * @text-margin-ratio-tall;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-tablet * @text-margin-ratio-short;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Heading h5 Text                                                                                      */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	h5,
-	.h5-clone {
-		
-		font-size: @heading-h5-text-font-size * @heading-h5-text-responsive-ratio-tablet;
-		line-height: @heading-h5-text-line-height * @heading-h5-text-responsive-ratio-tablet;
-		margin: (@heading-h5-text-margin-top * @heading-h5-text-responsive-ratio-tablet) 0px (@heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-tablet) 0px;
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-tablet * @text-margin-ratio-tall;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-tablet * @text-margin-ratio-short;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Heading h6 Text                                                                                      */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	h6,
-	.h6-clone {
-		
-		font-size: @heading-h6-text-font-size * @heading-h6-text-responsive-ratio-tablet;
-		line-height: @heading-h6-text-line-height * @heading-h6-text-responsive-ratio-tablet;
-		margin: (@heading-h6-text-margin-top * @heading-h6-text-responsive-ratio-tablet) 0px (@heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-tablet) 0px;
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-tablet * @text-margin-ratio-tall;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-tablet * @text-margin-ratio-short;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Lists                                                                                                */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	/* ---------------------------------------------------------------------------------------------------- */
-	/* Universal List Styles                                                                                */
-	/* ---------------------------------------------------------------------------------------------------- */
-	
-	ul,
-	ol {
-		
-		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-tablet) 0px;
-		
-		li {
-			
-			font-size: @body-text-font-size * @body-text-responsive-ratio-tablet;
-			line-height: @body-text-line-height * @body-text-responsive-ratio-tablet;
-			margin-bottom: (@body-text-margin-bottom / 2) * @body-text-responsive-ratio-tablet;
-			
-			&:last-child {
-				
-				margin-bottom: 0px;
-				
-			}
-			
-		}
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-responsive-ratio-tablet;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-responsive-ratio-tablet;
-			
-		}
-		
-	}
-	
-	ul ul,
-	ul ol,
-	ol ol,
-	ol ul {
-		
-		margin: ((@body-text-margin-bottom / 2) * @body-text-responsive-ratio-tablet) 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-tablet);
-		
-	}
-	
-	/* ---------------------------------------------------------------------------------------------------- */
-	/* Description List                                                                                     */
-	/* ---------------------------------------------------------------------------------------------------- */
-	
-	dl {
-		
-		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-tablet) 0px;
-		
-		dt,
-		dd {
-			
-			font-size: @body-text-font-size * @body-text-responsive-ratio-tablet;
-			line-height: @body-text-line-height * @body-text-responsive-ratio-tablet;
-			margin-bottom: ((@body-text-margin-bottom * @body-text-responsive-ratio-tablet) / 2);
-			
-			&:last-child {
-				
-				margin-bottom: 0px;
-				
-			}
-			
-		}
-		
-		dd {
-			
-			margin-bottom: ((@body-text-margin-bottom * @body-text-responsive-ratio-tablet) / 2);
-			
-			+ dt {
-				
-				margin-top: (@body-text-margin-bottom * @body-text-responsive-ratio-tablet);
-				
-			}
-			
-		}
-		
-		// Horizontal Description List
-		
-		&.dl-horizontal {
-			
-			dt {
-				
-				width: 200px - (@primary-margin-tablet / 2);
+				width: 200px - (@primary-margin-screen-small / 2);
 				
 			}
 			
@@ -3412,11 +2867,11 @@ blockquote:after {
 				
 				+ dt {
 					
-					margin-top: (@body-text-margin-bottom * @body-text-responsive-ratio-tablet);
+					margin-top: (@body-text-margin-bottom * @body-text-ratio-screen-small);
 					
 					+ dd {
 						
-						margin-top: (@body-text-margin-bottom * @body-text-responsive-ratio-tablet) + (0.5 * (@body-text-margin-bottom * @body-text-responsive-ratio-tablet));	
+						margin-top: (@body-text-margin-bottom * @body-text-ratio-screen-small) + (0.5 * (@body-text-margin-bottom * @body-text-ratio-screen-small));	
 						
 					}
 					
@@ -3430,7 +2885,7 @@ blockquote:after {
 		
 		&.tall {
 			
-			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet * @text-margin-ratio-tall;
+			margin-bottom: @body-text-margin-bottom * @body-text-ratio-screen-small * @text-margin-ratio-tall;
 			
 		}
 		
@@ -3438,7 +2893,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-tablet * @text-margin-ratio-short;
+			margin-bottom: @body-text-margin-bottom * @body-text-ratio-screen-small * @text-margin-ratio-short;
 			
 		}
 		
@@ -3454,13 +2909,13 @@ blockquote:after {
 	
 	address {
 		
-		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-tablet) 0px;
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-ratio-screen-small) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-responsive-ratio-tablet;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-ratio-screen-small;
 			
 		}
 		
@@ -3468,7 +2923,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-responsive-ratio-tablet;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-ratio-screen-small;
 			
 		}
 		
@@ -3485,20 +2940,20 @@ blockquote:after {
 	
 	blockquote {
 		
-		margin: 0px 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-tablet) 0px;
-		padding: 0px 0px 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-tablet);
+		margin: 0px 0px (@lead-text-margin-bottom * @lead-text-ratio-screen-small) 0px;
+		padding: 0px 0px 0px (@lead-text-margin-bottom * @lead-text-ratio-screen-small);
 		
 		p {
 			
-			font-size: @lead-text-font-size * @lead-text-responsive-ratio-tablet;
-			line-height: @lead-text-line-height * @lead-text-responsive-ratio-tablet;
-			margin: (@lead-text-margin-top * @lead-text-responsive-ratio-tablet) 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-tablet) 0px;
+			font-size: @lead-text-font-size * @lead-text-ratio-screen-small;
+			line-height: @lead-text-line-height * @lead-text-ratio-screen-small;
+			margin: (@lead-text-margin-top * @lead-text-ratio-screen-small) 0px (@lead-text-margin-bottom * @lead-text-ratio-screen-small) 0px;
 			
 			// Tall
 			
 			&.tall {
 				
-				margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-tablet * @text-margin-ratio-tall;
+				margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-small * @text-margin-ratio-tall;
 				
 			}
 			
@@ -3506,7 +2961,7 @@ blockquote:after {
 				
 			&.short {
 				
-				margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-tablet * @text-margin-ratio-short;
+				margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-small * @text-margin-ratio-short;
 				
 			}
 			
@@ -3514,9 +2969,9 @@ blockquote:after {
 		
 		small {
 			
-			font-size: @small-text-font-size * @small-text-responsive-ratio-tablet;
-			line-height: @small-text-line-height * @small-text-responsive-ratio-tablet;
-			margin: (@small-text-margin-top * @small-text-responsive-ratio-tablet) 0px (@small-text-margin-bottom * @small-text-responsive-ratio-tablet) 0px;
+			font-size: @small-text-font-size * @small-text-ratio-screen-small;
+			line-height: @small-text-line-height * @small-text-ratio-screen-small;
+			margin: (@small-text-margin-top * @small-text-ratio-screen-small) 0px (@small-text-margin-bottom * @small-text-ratio-screen-small) 0px;
 			
 		}
 		
@@ -3524,7 +2979,7 @@ blockquote:after {
 		
 		&.tall {
 			
-			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-tablet * @text-margin-ratio-tall;
+			margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-small * @text-margin-ratio-tall;
 			
 		}
 		
@@ -3532,7 +2987,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-tablet * @text-margin-ratio-short;
+			margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-small * @text-margin-ratio-short;
 			
 		}
 		
@@ -3544,11 +2999,11 @@ blockquote:after {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (max-width: @viewport-mobile-landscape-max) {
+@media (min-width: @screen-medium) {
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -3558,15 +3013,15 @@ blockquote:after {
 	
 	p {
 		
-		font-size: @body-text-font-size * @body-text-responsive-ratio-mobile;
-		line-height: @body-text-line-height * @body-text-responsive-ratio-mobile;
-		margin: (@body-text-margin-top * @body-text-responsive-ratio-mobile) 0px (@body-text-margin-bottom * @body-text-responsive-ratio-mobile) 0px;
+		font-size: @body-text-font-size * @body-text-ratio-screen-medium;
+		line-height: @body-text-line-height * @body-text-ratio-screen-medium;
+		margin: (@body-text-margin-top * @body-text-ratio-screen-medium) 0px (@body-text-margin-bottom * @body-text-ratio-screen-medium) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			margin-bottom: @body-text-margin-bottom * @body-text-ratio-screen-medium * @text-margin-ratio-tall;
 			
 		}
 		
@@ -3574,7 +3029,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			margin-bottom: @body-text-margin-bottom * @body-text-ratio-screen-medium * @text-margin-ratio-short;
 			
 		}
 		
@@ -3592,15 +3047,15 @@ blockquote:after {
 	p lead,
 	p .lead {
 		
-		font-size: @lead-text-font-size * @lead-text-responsive-ratio-mobile;
-		line-height: @lead-text-line-height * @lead-text-responsive-ratio-mobile;
-		margin: (@lead-text-margin-top * @lead-text-responsive-ratio-mobile) 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-mobile) 0px;
+		font-size: @lead-text-font-size * @lead-text-ratio-screen-medium;
+		line-height: @lead-text-line-height * @lead-text-ratio-screen-medium;
+		margin: (@lead-text-margin-top * @lead-text-ratio-screen-medium) 0px (@lead-text-margin-bottom * @lead-text-ratio-screen-medium) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-medium * @text-margin-ratio-tall;
 			
 		}
 		
@@ -3608,7 +3063,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-medium * @text-margin-ratio-short;
 			
 		}
 		
@@ -3626,15 +3081,15 @@ blockquote:after {
 	p small,
 	p .small {
 		
-		font-size: @small-text-font-size * @small-text-responsive-ratio-mobile;
-		line-height: @small-text-line-height * @small-text-responsive-ratio-mobile;
-		margin: (@small-text-margin-top * @small-text-responsive-ratio-mobile) 0px (@small-text-margin-bottom * @small-text-responsive-ratio-mobile) 0px;
+		font-size: @small-text-font-size * @small-text-ratio-screen-medium;
+		line-height: @small-text-line-height * @small-text-ratio-screen-medium;
+		margin: (@small-text-margin-top * @small-text-ratio-screen-medium) 0px (@small-text-margin-bottom * @small-text-ratio-screen-medium) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @small-text-margin-bottom * @small-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			margin-bottom: @small-text-margin-bottom * @small-text-ratio-screen-medium * @text-margin-ratio-tall;
 			
 		}
 		
@@ -3642,7 +3097,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @small-text-margin-bottom * @small-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			margin-bottom: @small-text-margin-bottom * @small-text-ratio-screen-medium * @text-margin-ratio-short;
 			
 		}
 		
@@ -3659,15 +3114,15 @@ blockquote:after {
 	h1,
 	.h1-clone {
 		
-		font-size: @heading-h1-text-font-size * @heading-h1-text-responsive-ratio-mobile;
-		line-height: @heading-h1-text-line-height * @heading-h1-text-responsive-ratio-mobile;
-		margin: (@heading-h1-text-margin-top * @heading-h1-text-responsive-ratio-mobile) 0px (@heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-mobile) 0px;
+		font-size: @heading-h1-text-font-size * @heading-h1-text-ratio-screen-medium;
+		line-height: @heading-h1-text-line-height * @heading-h1-text-ratio-screen-medium;
+		margin: (@heading-h1-text-margin-top * @heading-h1-text-ratio-screen-medium) 0px (@heading-h1-text-margin-bottom * @heading-h1-text-ratio-screen-medium) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-ratio-screen-medium * @text-margin-ratio-tall;
 			
 		}
 		
@@ -3675,7 +3130,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-ratio-screen-medium * @text-margin-ratio-short;
 			
 		}
 		
@@ -3692,15 +3147,15 @@ blockquote:after {
 	h2,
 	.h2-clone {
 		
-		font-size: @heading-h2-text-font-size * @heading-h2-text-responsive-ratio-mobile;
-		line-height: @heading-h2-text-line-height * @heading-h2-text-responsive-ratio-mobile;
-		margin: (@heading-h2-text-margin-top * @heading-h2-text-responsive-ratio-mobile) 0px (@heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-mobile) 0px;
+		font-size: @heading-h2-text-font-size * @heading-h2-text-ratio-screen-medium;
+		line-height: @heading-h2-text-line-height * @heading-h2-text-ratio-screen-medium;
+		margin: (@heading-h2-text-margin-top * @heading-h2-text-ratio-screen-medium) 0px (@heading-h2-text-margin-bottom * @heading-h2-text-ratio-screen-medium) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-ratio-screen-medium * @text-margin-ratio-tall;
 			
 		}
 		
@@ -3708,7 +3163,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-ratio-screen-medium * @text-margin-ratio-short;
 			
 		}
 		
@@ -3725,15 +3180,15 @@ blockquote:after {
 	h3,
 	.h3-clone {
 		
-		font-size: @heading-h3-text-font-size * @heading-h3-text-responsive-ratio-mobile;
-		line-height: @heading-h3-text-line-height * @heading-h3-text-responsive-ratio-mobile;
-		margin: (@heading-h3-text-margin-top * @heading-h3-text-responsive-ratio-mobile) 0px (@heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-mobile) 0px;
+		font-size: @heading-h3-text-font-size * @heading-h3-text-ratio-screen-medium;
+		line-height: @heading-h3-text-line-height * @heading-h3-text-ratio-screen-medium;
+		margin: (@heading-h3-text-margin-top * @heading-h3-text-ratio-screen-medium) 0px (@heading-h3-text-margin-bottom * @heading-h3-text-ratio-screen-medium) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-ratio-screen-medium * @text-margin-ratio-tall;
 			
 		}
 		
@@ -3741,7 +3196,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-ratio-screen-medium * @text-margin-ratio-short;
 			
 		}
 		
@@ -3758,15 +3213,15 @@ blockquote:after {
 	h4,
 	.h4-clone {
 		
-		font-size: @heading-h4-text-font-size * @heading-h4-text-responsive-ratio-mobile;
-		line-height: @heading-h4-text-line-height * @heading-h4-text-responsive-ratio-mobile;
-		margin: (@heading-h4-text-margin-top * @heading-h4-text-responsive-ratio-mobile) 0px (@heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-mobile) 0px;
+		font-size: @heading-h4-text-font-size * @heading-h4-text-ratio-screen-medium;
+		line-height: @heading-h4-text-line-height * @heading-h4-text-ratio-screen-medium;
+		margin: (@heading-h4-text-margin-top * @heading-h4-text-ratio-screen-medium) 0px (@heading-h4-text-margin-bottom * @heading-h4-text-ratio-screen-medium) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-ratio-screen-medium * @text-margin-ratio-tall;
 			
 		}
 		
@@ -3774,7 +3229,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-ratio-screen-medium * @text-margin-ratio-short;
 			
 		}
 		
@@ -3791,15 +3246,15 @@ blockquote:after {
 	h5,
 	.h5-clone {
 		
-		font-size: @heading-h5-text-font-size * @heading-h5-text-responsive-ratio-mobile;
-		line-height: @heading-h5-text-line-height * @heading-h5-text-responsive-ratio-mobile;
-		margin: (@heading-h5-text-margin-top * @heading-h5-text-responsive-ratio-mobile) 0px (@heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-mobile) 0px;
+		font-size: @heading-h5-text-font-size * @heading-h5-text-ratio-screen-medium;
+		line-height: @heading-h5-text-line-height * @heading-h5-text-ratio-screen-medium;
+		margin: (@heading-h5-text-margin-top * @heading-h5-text-ratio-screen-medium) 0px (@heading-h5-text-margin-bottom * @heading-h5-text-ratio-screen-medium) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-ratio-screen-medium * @text-margin-ratio-tall;
 			
 		}
 		
@@ -3807,7 +3262,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-ratio-screen-medium * @text-margin-ratio-short;
 			
 		}
 		
@@ -3824,15 +3279,15 @@ blockquote:after {
 	h6,
 	.h6-clone {
 		
-		font-size: @heading-h6-text-font-size * @heading-h6-text-responsive-ratio-mobile;
-		line-height: @heading-h6-text-line-height * @heading-h6-text-responsive-ratio-mobile;
-		margin: (@heading-h6-text-margin-top * @heading-h6-text-responsive-ratio-mobile) 0px (@heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-mobile) 0px;
+		font-size: @heading-h6-text-font-size * @heading-h6-text-ratio-screen-medium;
+		line-height: @heading-h6-text-line-height * @heading-h6-text-ratio-screen-medium;
+		margin: (@heading-h6-text-margin-top * @heading-h6-text-ratio-screen-medium) 0px (@heading-h6-text-margin-bottom * @heading-h6-text-ratio-screen-medium) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-ratio-screen-medium * @text-margin-ratio-tall;
 			
 		}
 		
@@ -3840,7 +3295,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-ratio-screen-medium * @text-margin-ratio-short;
 			
 		}
 		
@@ -3861,13 +3316,13 @@ blockquote:after {
 	ul,
 	ol {
 		
-		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-mobile) 0px;
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-ratio-screen-medium) 0px;
 		
 		li {
 			
-			font-size: @body-text-font-size * @body-text-responsive-ratio-mobile;
-			line-height: @body-text-line-height * @body-text-responsive-ratio-mobile;
-			margin-bottom: (@body-text-margin-bottom / 2) * @body-text-responsive-ratio-mobile;
+			font-size: @body-text-font-size * @body-text-ratio-screen-medium;
+			line-height: @body-text-line-height * @body-text-ratio-screen-medium;
+			margin-bottom: (@body-text-margin-bottom / 2) * @body-text-ratio-screen-medium;
 			
 			&:last-child {
 				
@@ -3881,7 +3336,7 @@ blockquote:after {
 		
 		&.tall {
 			
-			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-responsive-ratio-mobile;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-ratio-screen-medium;
 			
 		}
 		
@@ -3889,7 +3344,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-responsive-ratio-mobile;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-ratio-screen-medium;
 			
 		}
 		
@@ -3900,7 +3355,7 @@ blockquote:after {
 	ol ol,
 	ol ul {
 		
-		margin: ((@body-text-margin-bottom / 2) * @body-text-responsive-ratio-mobile) 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-mobile);
+		margin: ((@body-text-margin-bottom / 2) * @body-text-ratio-screen-medium) 0px 0px (@body-text-margin-bottom * @body-text-ratio-screen-medium);
 		
 	}
 	
@@ -3910,14 +3365,14 @@ blockquote:after {
 	
 	dl {
 		
-		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-mobile) 0px;
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-ratio-screen-medium) 0px;
 		
 		dt,
 		dd {
 			
-			font-size: @body-text-font-size * @body-text-responsive-ratio-mobile;
-			line-height: @body-text-line-height * @body-text-responsive-ratio-mobile;
-			margin-bottom: ((@body-text-margin-bottom * @body-text-responsive-ratio-mobile) / 2);
+			font-size: @body-text-font-size * @body-text-ratio-screen-medium;
+			line-height: @body-text-line-height * @body-text-ratio-screen-medium;
+			margin-bottom: ((@body-text-margin-bottom * @body-text-ratio-screen-medium) / 2);
 			
 			&:last-child {
 				
@@ -3929,11 +3384,11 @@ blockquote:after {
 		
 		dd {
 			
-			margin-bottom: ((@body-text-margin-bottom * @body-text-responsive-ratio-mobile) / 2);
+			margin-bottom: ((@body-text-margin-bottom * @body-text-ratio-screen-medium) / 2);
 			
 			+ dt {
 				
-				margin-top: (@body-text-margin-bottom * @body-text-responsive-ratio-mobile);
+				margin-top: (@body-text-margin-bottom * @body-text-ratio-screen-medium);
 				
 			}
 			
@@ -3945,7 +3400,7 @@ blockquote:after {
 			
 			dt {
 				
-				width: 120px - (@primary-margin-mobile / 2);
+				width: 120px - (@primary-margin-screen-medium / 2);
 				
 			}
 			
@@ -3955,11 +3410,11 @@ blockquote:after {
 				
 				+ dt {
 					
-					margin-top: (@body-text-margin-bottom * @body-text-responsive-ratio-mobile);
+					margin-top: (@body-text-margin-bottom * @body-text-ratio-screen-medium);
 					
 					+ dd {
 						
-						margin-top: (@body-text-margin-bottom * @body-text-responsive-ratio-mobile) + (0.5 * (@body-text-margin-bottom * @body-text-responsive-ratio-mobile));	
+						margin-top: (@body-text-margin-bottom * @body-text-ratio-screen-medium) + (0.5 * (@body-text-margin-bottom * @body-text-ratio-screen-medium));	
 						
 					}
 					
@@ -3973,7 +3428,7 @@ blockquote:after {
 		
 		&.tall {
 			
-			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			margin-bottom: @body-text-margin-bottom * @body-text-ratio-screen-medium * @text-margin-ratio-tall;
 			
 		}
 		
@@ -3981,7 +3436,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @body-text-margin-bottom * @body-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			margin-bottom: @body-text-margin-bottom * @body-text-ratio-screen-medium * @text-margin-ratio-short;
 			
 		}
 		
@@ -3997,13 +3452,13 @@ blockquote:after {
 	
 	address {
 		
-		margin: 0px 0px (@body-text-margin-bottom * @body-text-responsive-ratio-mobile) 0px;
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-ratio-screen-medium) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-responsive-ratio-mobile;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-ratio-screen-medium;
 			
 		}
 		
@@ -4011,7 +3466,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-responsive-ratio-mobile;
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-ratio-screen-medium;
 			
 		}
 		
@@ -4028,20 +3483,20 @@ blockquote:after {
 	
 	blockquote {
 		
-		margin: 0px 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-mobile) 0px;
-		padding: 0px 0px 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-mobile);
+		margin: 0px 0px (@lead-text-margin-bottom * @lead-text-ratio-screen-medium) 0px;
+		padding: 0px 0px 0px (@lead-text-margin-bottom * @lead-text-ratio-screen-medium);
 		
 		p {
 			
-			font-size: @lead-text-font-size * @lead-text-responsive-ratio-mobile;
-			line-height: @lead-text-line-height * @lead-text-responsive-ratio-mobile;
-			margin: (@lead-text-margin-top * @lead-text-responsive-ratio-mobile) 0px (@lead-text-margin-bottom * @lead-text-responsive-ratio-mobile) 0px;
+			font-size: @lead-text-font-size * @lead-text-ratio-screen-medium;
+			line-height: @lead-text-line-height * @lead-text-ratio-screen-medium;
+			margin: (@lead-text-margin-top * @lead-text-ratio-screen-medium) 0px (@lead-text-margin-bottom * @lead-text-ratio-screen-medium) 0px;
 			
 			// Tall
 			
 			&.tall {
 				
-				margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+				margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-medium * @text-margin-ratio-tall;
 				
 			}
 			
@@ -4049,7 +3504,7 @@ blockquote:after {
 				
 			&.short {
 				
-				margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-mobile * @text-margin-ratio-short;
+				margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-medium * @text-margin-ratio-short;
 				
 			}
 			
@@ -4057,9 +3512,9 @@ blockquote:after {
 		
 		small {
 			
-			font-size: @small-text-font-size * @small-text-responsive-ratio-mobile;
-			line-height: @small-text-line-height * @small-text-responsive-ratio-mobile;
-			margin: (@small-text-margin-top * @small-text-responsive-ratio-mobile) 0px (@small-text-margin-bottom * @small-text-responsive-ratio-mobile) 0px;
+			font-size: @small-text-font-size * @small-text-ratio-screen-medium;
+			line-height: @small-text-line-height * @small-text-ratio-screen-medium;
+			margin: (@small-text-margin-top * @small-text-ratio-screen-medium) 0px (@small-text-margin-bottom * @small-text-ratio-screen-medium) 0px;
 			
 		}
 		
@@ -4067,7 +3522,7 @@ blockquote:after {
 		
 		&.tall {
 			
-			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-mobile * @text-margin-ratio-tall;
+			margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-medium * @text-margin-ratio-tall;
 			
 		}
 		
@@ -4075,7 +3530,7 @@ blockquote:after {
 			
 		&.short {
 			
-			margin-bottom: @lead-text-margin-bottom * @lead-text-responsive-ratio-mobile * @text-margin-ratio-short;
+			margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-medium * @text-margin-ratio-short;
 			
 		}
 		
@@ -4087,11 +3542,542 @@ blockquote:after {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
+/* Screen Size: Large (@screen-large) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (max-width: @viewport-mobile-max) {
+@media (min-width: @screen-large) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Body Text                                                                                            */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	p {
+		
+		font-size: @body-text-font-size * @body-text-ratio-screen-large;
+		line-height: @body-text-line-height * @body-text-ratio-screen-large;
+		margin: (@body-text-margin-top * @body-text-ratio-screen-large) 0px (@body-text-margin-bottom * @body-text-ratio-screen-large) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @body-text-margin-bottom * @body-text-ratio-screen-large * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @body-text-margin-bottom * @body-text-ratio-screen-large * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Lead Text                                                                                            */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	p.lead,
+	p lead,
+	p .lead {
+		
+		font-size: @lead-text-font-size * @lead-text-ratio-screen-large;
+		line-height: @lead-text-line-height * @lead-text-ratio-screen-large;
+		margin: (@lead-text-margin-top * @lead-text-ratio-screen-large) 0px (@lead-text-margin-bottom * @lead-text-ratio-screen-large) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-large * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-large * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Small Text                                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	p.small,
+	p small,
+	p .small {
+		
+		font-size: @small-text-font-size * @small-text-ratio-screen-large;
+		line-height: @small-text-line-height * @small-text-ratio-screen-large;
+		margin: (@small-text-margin-top * @small-text-ratio-screen-large) 0px (@small-text-margin-bottom * @small-text-ratio-screen-large) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @small-text-margin-bottom * @small-text-ratio-screen-large * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @small-text-margin-bottom * @small-text-ratio-screen-large * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Heading h1 Text                                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	h1,
+	.h1-clone {
+		
+		font-size: @heading-h1-text-font-size * @heading-h1-text-ratio-screen-large;
+		line-height: @heading-h1-text-line-height * @heading-h1-text-ratio-screen-large;
+		margin: (@heading-h1-text-margin-top * @heading-h1-text-ratio-screen-large) 0px (@heading-h1-text-margin-bottom * @heading-h1-text-ratio-screen-large) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-ratio-screen-large * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @heading-h1-text-margin-bottom * @heading-h1-text-ratio-screen-large * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Heading h2 Text                                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	h2,
+	.h2-clone {
+		
+		font-size: @heading-h2-text-font-size * @heading-h2-text-ratio-screen-large;
+		line-height: @heading-h2-text-line-height * @heading-h2-text-ratio-screen-large;
+		margin: (@heading-h2-text-margin-top * @heading-h2-text-ratio-screen-large) 0px (@heading-h2-text-margin-bottom * @heading-h2-text-ratio-screen-large) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-ratio-screen-large * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @heading-h2-text-margin-bottom * @heading-h2-text-ratio-screen-large * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Heading h3 Text                                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	h3,
+	.h3-clone {
+		
+		font-size: @heading-h3-text-font-size * @heading-h3-text-ratio-screen-large;
+		line-height: @heading-h3-text-line-height * @heading-h3-text-ratio-screen-large;
+		margin: (@heading-h3-text-margin-top * @heading-h3-text-ratio-screen-large) 0px (@heading-h3-text-margin-bottom * @heading-h3-text-ratio-screen-large) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-ratio-screen-large * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @heading-h3-text-margin-bottom * @heading-h3-text-ratio-screen-large * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Heading h4 Text                                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	h4,
+	.h4-clone {
+		
+		font-size: @heading-h4-text-font-size * @heading-h4-text-ratio-screen-large;
+		line-height: @heading-h4-text-line-height * @heading-h4-text-ratio-screen-large;
+		margin: (@heading-h4-text-margin-top * @heading-h4-text-ratio-screen-large) 0px (@heading-h4-text-margin-bottom * @heading-h4-text-ratio-screen-large) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-ratio-screen-large * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @heading-h4-text-margin-bottom * @heading-h4-text-ratio-screen-large * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Heading h5 Text                                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	h5,
+	.h5-clone {
+		
+		font-size: @heading-h5-text-font-size * @heading-h5-text-ratio-screen-large;
+		line-height: @heading-h5-text-line-height * @heading-h5-text-ratio-screen-large;
+		margin: (@heading-h5-text-margin-top * @heading-h5-text-ratio-screen-large) 0px (@heading-h5-text-margin-bottom * @heading-h5-text-ratio-screen-large) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-ratio-screen-large * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @heading-h5-text-margin-bottom * @heading-h5-text-ratio-screen-large * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Heading h6 Text                                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	h6,
+	.h6-clone {
+		
+		font-size: @heading-h6-text-font-size * @heading-h6-text-ratio-screen-large;
+		line-height: @heading-h6-text-line-height * @heading-h6-text-ratio-screen-large;
+		margin: (@heading-h6-text-margin-top * @heading-h6-text-ratio-screen-large) 0px (@heading-h6-text-margin-bottom * @heading-h6-text-ratio-screen-large) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-ratio-screen-large * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @heading-h6-text-margin-bottom * @heading-h6-text-ratio-screen-large * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Lists                                                                                                */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Universal List Styles                                                                                */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	ul,
+	ol {
+		
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-ratio-screen-large) 0px;
+		
+		li {
+			
+			font-size: @body-text-font-size * @body-text-ratio-screen-large;
+			line-height: @body-text-line-height * @body-text-ratio-screen-large;
+			margin-bottom: (@body-text-margin-bottom / 2) * @body-text-ratio-screen-large;
+			
+			&:last-child {
+				
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-ratio-screen-large;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-ratio-screen-large;
+			
+		}
+		
+	}
+	
+	ul ul,
+	ul ol,
+	ol ol,
+	ol ul {
+		
+		margin: ((@body-text-margin-bottom / 2) * @body-text-ratio-screen-large) 0px 0px (@body-text-margin-bottom * @body-text-ratio-screen-large);
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Description List                                                                                     */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	dl {
+		
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-ratio-screen-large) 0px;
+		
+		dt,
+		dd {
+			
+			font-size: @body-text-font-size * @body-text-ratio-screen-large;
+			line-height: @body-text-line-height * @body-text-ratio-screen-large;
+			margin-bottom: ((@body-text-margin-bottom * @body-text-ratio-screen-large) / 2);
+			
+			&:last-child {
+				
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		dd {
+			
+			margin-bottom: ((@body-text-margin-bottom * @body-text-ratio-screen-large) / 2);
+			
+			+ dt {
+				
+				margin-top: (@body-text-margin-bottom * @body-text-ratio-screen-large);
+				
+			}
+			
+		}
+		
+		// Horizontal Description List
+		
+		&.dl-horizontal {
+			
+			dt {
+				
+				width: 250px - (@primary-margin-screen-large / 2);
+				
+			}
+			
+			dd {
+				
+				margin-left: 250px;
+				
+				+ dt {
+					
+					margin-top: (@body-text-margin-bottom * @body-text-ratio-screen-large);
+					
+					+ dd {
+						
+						margin-top: (@body-text-margin-bottom * @body-text-ratio-screen-large) + (0.5 * (@body-text-margin-bottom * @body-text-ratio-screen-large));	
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @body-text-margin-bottom * @body-text-ratio-screen-large * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @body-text-margin-bottom * @body-text-ratio-screen-large * @text-margin-ratio-short;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Address                                                                                              */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	address {
+		
+		margin: 0px 0px (@body-text-margin-bottom * @body-text-ratio-screen-large) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-tall * @body-text-ratio-screen-large;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-ratio-screen-large;
+			
+		}
+		
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Blockquote                                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	blockquote {
+		
+		margin: 0px 0px (@lead-text-margin-bottom * @lead-text-ratio-screen-large) 0px;
+		padding: 0px 0px 0px (@lead-text-margin-bottom * @lead-text-ratio-screen-large);
+		
+		p {
+			
+			font-size: @lead-text-font-size * @lead-text-ratio-screen-large;
+			line-height: @lead-text-line-height * @lead-text-ratio-screen-large;
+			margin: (@lead-text-margin-top * @lead-text-ratio-screen-large) 0px (@lead-text-margin-bottom * @lead-text-ratio-screen-large) 0px;
+			
+			// Tall
+			
+			&.tall {
+				
+				margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-large * @text-margin-ratio-tall;
+				
+			}
+			
+			// Short
+				
+			&.short {
+				
+				margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-large * @text-margin-ratio-short;
+				
+			}
+			
+		}
+		
+		small {
+			
+			font-size: @small-text-font-size * @small-text-ratio-screen-large;
+			line-height: @small-text-line-height * @small-text-ratio-screen-large;
+			margin: (@small-text-margin-top * @small-text-ratio-screen-large) 0px (@small-text-margin-bottom * @small-text-ratio-screen-large) 0px;
+			
+		}
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-large * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @lead-text-margin-bottom * @lead-text-ratio-screen-large * @text-margin-ratio-short;
+			
+		}
+		
+	}
 	
 }
 

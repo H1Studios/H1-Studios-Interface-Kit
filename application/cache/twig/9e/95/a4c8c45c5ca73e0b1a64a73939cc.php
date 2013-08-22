@@ -46,7 +46,7 @@ class __TwigTemplate_9e95a4c8c45c5ca73e0b1a64a73939cc extends Twig_Template
 \t\t\t\t\t<a href=\"#overview\">Overview</a>
 \t\t\t\t\t<ul class=\"nav\">
 \t\t\t\t\t<li><a href=\"#overview-doctype\">HTML5 doctype</a></li>
-\t\t\t\t\t<li><a href=\"#overview-mobile\">Mobile first</a></li>
+\t\t\t\t\t<li><a href=\"#overview-screen-medium\">Mobile first</a></li>
 \t\t\t\t\t<li><a href=\"#overview-responsive-images\">Responsive images</a></li>
 \t\t\t\t\t<li><a href=\"#overview-type-links\">Type and links</a></li>
 \t\t\t\t\t<li><a href=\"#overview-normalize\">Normalize</a></li>

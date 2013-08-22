@@ -1523,11 +1523,11 @@ input[type="submit"].button {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Widescreen (@viewport-widescreen) and larger                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-widescreen) {
+@media (min-width: @screen-small) {
 	
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* Default Button                                                                                       */
@@ -1535,12 +1535,12 @@ input[type="submit"].button {
 	
 	.button {
 		
-		.block-padding-vertical(@button-height * @button-responsive-ratio-widescreen, @button-text-line-height * @button-responsive-ratio-widescreen);
-		padding-left: @button-padding-horizontal * @button-responsive-ratio-widescreen;
-		padding-right: @button-padding-horizontal * @button-responsive-ratio-widescreen;
-		font-size: @button-text-font-size * @button-responsive-ratio-widescreen;
-		line-height: @button-text-line-height * @button-responsive-ratio-widescreen;
-		*line-height:  @button-text-line-height * @button-responsive-ratio-widescreen;
+		.block-padding-vertical(@button-height * @button-ratio-screen-small, @button-text-line-height * @button-ratio-screen-small);
+		padding-left: @button-padding-horizontal * @button-ratio-screen-small;
+		padding-right: @button-padding-horizontal * @button-ratio-screen-small;
+		font-size: @button-text-font-size * @button-ratio-screen-small;
+		line-height: @button-text-line-height * @button-ratio-screen-small;
+		*line-height:  @button-text-line-height * @button-ratio-screen-small;
 		
 	}
 	
@@ -1550,12 +1550,12 @@ input[type="submit"].button {
 	
 	.button.button-large {
 		
-		.block-padding-vertical(@button-large-height * @button-large-responsive-ratio-widescreen, @button-large-text-line-height * @button-large-responsive-ratio-widescreen);
-		padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-widescreen;
-		padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-widescreen;
-		font-size: @button-large-text-font-size * @button-large-responsive-ratio-widescreen;
-		line-height: @button-large-text-line-height * @button-large-responsive-ratio-widescreen;
-		*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-widescreen;
+		.block-padding-vertical(@button-large-height * @button-large-ratio-screen-small, @button-large-text-line-height * @button-large-ratio-screen-small);
+		padding-left: @button-large-padding-horizontal * @button-large-ratio-screen-small;
+		padding-right: @button-large-padding-horizontal * @button-large-ratio-screen-small;
+		font-size: @button-large-text-font-size * @button-large-ratio-screen-small;
+		line-height: @button-large-text-line-height * @button-large-ratio-screen-small;
+		*line-height:  @button-large-text-line-height * @button-large-ratio-screen-small;
 		
 	}
 	
@@ -1565,12 +1565,12 @@ input[type="submit"].button {
 	
 	.button.button-small {
 		
-		.block-padding-vertical(@button-small-height * @button-small-responsive-ratio-widescreen, @button-small-text-line-height * @button-small-responsive-ratio-widescreen);
-		padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-widescreen;
-		padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-widescreen;
-		font-size: @button-small-text-font-size * @button-small-responsive-ratio-widescreen;
-		line-height: @button-small-text-line-height * @button-small-responsive-ratio-widescreen;
-		*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-widescreen;
+		.block-padding-vertical(@button-small-height * @button-small-ratio-screen-small, @button-small-text-line-height * @button-small-ratio-screen-small);
+		padding-left: @button-small-padding-horizontal * @button-small-ratio-screen-small;
+		padding-right: @button-small-padding-horizontal * @button-small-ratio-screen-small;
+		font-size: @button-small-text-font-size * @button-small-ratio-screen-small;
+		line-height: @button-small-text-line-height * @button-small-ratio-screen-small;
+		*line-height:  @button-small-text-line-height * @button-small-ratio-screen-small;
 		
 	}
 	
@@ -1580,12 +1580,12 @@ input[type="submit"].button {
 	
 	.button.button-mini {
 		
-		.block-padding-vertical(@button-mini-height * @button-mini-responsive-ratio-widescreen, @button-mini-text-line-height * @button-mini-responsive-ratio-widescreen);
-		padding-left: @button-mini-padding-horizontal * @button-mini-responsive-ratio-widescreen;
-		padding-right: @button-mini-padding-horizontal * @button-mini-responsive-ratio-widescreen;
-		font-size: @button-mini-text-font-size * @button-mini-responsive-ratio-widescreen;
-		line-height: @button-mini-text-line-height * @button-mini-responsive-ratio-widescreen;
-		*line-height:  @button-mini-text-line-height * @button-mini-responsive-ratio-widescreen;
+		.block-padding-vertical(@button-mini-height * @button-mini-ratio-screen-small, @button-mini-text-line-height * @button-mini-ratio-screen-small);
+		padding-left: @button-mini-padding-horizontal * @button-mini-ratio-screen-small;
+		padding-right: @button-mini-padding-horizontal * @button-mini-ratio-screen-small;
+		font-size: @button-mini-text-font-size * @button-mini-ratio-screen-small;
+		line-height: @button-mini-text-line-height * @button-mini-ratio-screen-small;
+		*line-height:  @button-mini-text-line-height * @button-mini-ratio-screen-small;
 		
 	}
 	
@@ -1595,11 +1595,11 @@ input[type="submit"].button {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
+@media (min-width: @screen-medium) {
 	
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* Default Button                                                                                       */
@@ -1607,12 +1607,12 @@ input[type="submit"].button {
 	
 	.button {
 		
-		.block-padding-vertical(@button-height * @button-responsive-ratio-tablet, @button-text-line-height * @button-responsive-ratio-tablet);
-		padding-left: @button-padding-horizontal * @button-responsive-ratio-tablet;
-		padding-right: @button-padding-horizontal * @button-responsive-ratio-tablet;
-		font-size: @button-text-font-size * @button-responsive-ratio-tablet;
-		line-height: @button-text-line-height * @button-responsive-ratio-tablet;
-		*line-height:  @button-text-line-height * @button-responsive-ratio-tablet;
+		.block-padding-vertical(@button-height * @button-ratio-screen-medium, @button-text-line-height * @button-ratio-screen-medium);
+		padding-left: @button-padding-horizontal * @button-ratio-screen-medium;
+		padding-right: @button-padding-horizontal * @button-ratio-screen-medium;
+		font-size: @button-text-font-size * @button-ratio-screen-medium;
+		line-height: @button-text-line-height * @button-ratio-screen-medium;
+		*line-height:  @button-text-line-height * @button-ratio-screen-medium;
 		
 	}
 	
@@ -1622,12 +1622,12 @@ input[type="submit"].button {
 	
 	.button.button-large {
 		
-		.block-padding-vertical(@button-large-height * @button-large-responsive-ratio-tablet, @button-large-text-line-height * @button-large-responsive-ratio-tablet);
-		padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-tablet;
-		padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-tablet;
-		font-size: @button-large-text-font-size * @button-large-responsive-ratio-tablet;
-		line-height: @button-large-text-line-height * @button-large-responsive-ratio-tablet;
-		*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-tablet;
+		.block-padding-vertical(@button-large-height * @button-large-ratio-screen-medium, @button-large-text-line-height * @button-large-ratio-screen-medium);
+		padding-left: @button-large-padding-horizontal * @button-large-ratio-screen-medium;
+		padding-right: @button-large-padding-horizontal * @button-large-ratio-screen-medium;
+		font-size: @button-large-text-font-size * @button-large-ratio-screen-medium;
+		line-height: @button-large-text-line-height * @button-large-ratio-screen-medium;
+		*line-height:  @button-large-text-line-height * @button-large-ratio-screen-medium;
 		
 	}
 	
@@ -1637,12 +1637,12 @@ input[type="submit"].button {
 	
 	.button.button-small {
 		
-		.block-padding-vertical(@button-small-height * @button-small-responsive-ratio-tablet, @button-small-text-line-height * @button-small-responsive-ratio-tablet);
-		padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-tablet;
-		padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-tablet;
-		font-size: @button-small-text-font-size * @button-small-responsive-ratio-tablet;
-		line-height: @button-small-text-line-height * @button-small-responsive-ratio-tablet;
-		*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-tablet;
+		.block-padding-vertical(@button-small-height * @button-small-ratio-screen-medium, @button-small-text-line-height * @button-small-ratio-screen-medium);
+		padding-left: @button-small-padding-horizontal * @button-small-ratio-screen-medium;
+		padding-right: @button-small-padding-horizontal * @button-small-ratio-screen-medium;
+		font-size: @button-small-text-font-size * @button-small-ratio-screen-medium;
+		line-height: @button-small-text-line-height * @button-small-ratio-screen-medium;
+		*line-height:  @button-small-text-line-height * @button-small-ratio-screen-medium;
 		
 	}
 	
@@ -1652,12 +1652,12 @@ input[type="submit"].button {
 	
 	.button.button-mini {
 		
-		.block-padding-vertical(@button-mini-height * @button-mini-responsive-ratio-tablet, @button-mini-text-line-height * @button-mini-responsive-ratio-tablet);
-		padding-left: @button-mini-padding-horizontal * @button-mini-responsive-ratio-tablet;
-		padding-right: @button-mini-padding-horizontal * @button-mini-responsive-ratio-tablet;
-		font-size: @button-mini-text-font-size * @button-mini-responsive-ratio-tablet;
-		line-height: @button-mini-text-line-height * @button-mini-responsive-ratio-tablet;
-		*line-height:  @button-mini-text-line-height * @button-mini-responsive-ratio-tablet;
+		.block-padding-vertical(@button-mini-height * @button-mini-ratio-screen-medium, @button-mini-text-line-height * @button-mini-ratio-screen-medium);
+		padding-left: @button-mini-padding-horizontal * @button-mini-ratio-screen-medium;
+		padding-right: @button-mini-padding-horizontal * @button-mini-ratio-screen-medium;
+		font-size: @button-mini-text-font-size * @button-mini-ratio-screen-medium;
+		line-height: @button-mini-text-line-height * @button-mini-ratio-screen-medium;
+		*line-height:  @button-mini-text-line-height * @button-mini-ratio-screen-medium;
 		
 	}
 	
@@ -1667,11 +1667,11 @@ input[type="submit"].button {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
+/* Screen Size: Large (@screen-large) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (max-width: @viewport-mobile-landscape-max) {
+@media (min-width: @screen-large) {
 	
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* Default Button                                                                                       */
@@ -1679,12 +1679,12 @@ input[type="submit"].button {
 	
 	.button {
 		
-		.block-padding-vertical(@button-height * @button-responsive-ratio-mobile, @button-text-line-height * @button-responsive-ratio-mobile);
-		padding-left: @button-padding-horizontal * @button-responsive-ratio-mobile;
-		padding-right: @button-padding-horizontal * @button-responsive-ratio-mobile;
-		font-size: @button-text-font-size * @button-responsive-ratio-mobile;
-		line-height: @button-text-line-height * @button-responsive-ratio-mobile;
-		*line-height:  @button-text-line-height * @button-responsive-ratio-mobile;
+		.block-padding-vertical(@button-height * @button-ratio-screen-large, @button-text-line-height * @button-ratio-screen-large);
+		padding-left: @button-padding-horizontal * @button-ratio-screen-large;
+		padding-right: @button-padding-horizontal * @button-ratio-screen-large;
+		font-size: @button-text-font-size * @button-ratio-screen-large;
+		line-height: @button-text-line-height * @button-ratio-screen-large;
+		*line-height:  @button-text-line-height * @button-ratio-screen-large;
 		
 	}
 	
@@ -1694,12 +1694,12 @@ input[type="submit"].button {
 	
 	.button.button-large {
 		
-		.block-padding-vertical(@button-large-height * @button-large-responsive-ratio-mobile, @button-large-text-line-height * @button-large-responsive-ratio-mobile);
-		padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-mobile;
-		padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-mobile;
-		font-size: @button-large-text-font-size * @button-large-responsive-ratio-mobile;
-		line-height: @button-large-text-line-height * @button-large-responsive-ratio-mobile;
-		*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-mobile;
+		.block-padding-vertical(@button-large-height * @button-large-ratio-screen-large, @button-large-text-line-height * @button-large-ratio-screen-large);
+		padding-left: @button-large-padding-horizontal * @button-large-ratio-screen-large;
+		padding-right: @button-large-padding-horizontal * @button-large-ratio-screen-large;
+		font-size: @button-large-text-font-size * @button-large-ratio-screen-large;
+		line-height: @button-large-text-line-height * @button-large-ratio-screen-large;
+		*line-height:  @button-large-text-line-height * @button-large-ratio-screen-large;
 		
 	}
 	
@@ -1709,12 +1709,12 @@ input[type="submit"].button {
 	
 	.button.button-small {
 		
-		.block-padding-vertical(@button-small-height * @button-small-responsive-ratio-mobile, @button-small-text-line-height * @button-small-responsive-ratio-mobile);
-		padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-mobile;
-		padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-mobile;
-		font-size: @button-small-text-font-size * @button-small-responsive-ratio-mobile;
-		line-height: @button-small-text-line-height * @button-small-responsive-ratio-mobile;
-		*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-mobile;
+		.block-padding-vertical(@button-small-height * @button-small-ratio-screen-large, @button-small-text-line-height * @button-small-ratio-screen-large);
+		padding-left: @button-small-padding-horizontal * @button-small-ratio-screen-large;
+		padding-right: @button-small-padding-horizontal * @button-small-ratio-screen-large;
+		font-size: @button-small-text-font-size * @button-small-ratio-screen-large;
+		line-height: @button-small-text-line-height * @button-small-ratio-screen-large;
+		*line-height:  @button-small-text-line-height * @button-small-ratio-screen-large;
 		
 	}
 	
@@ -1724,26 +1724,14 @@ input[type="submit"].button {
 	
 	.button.button-mini {
 		
-		.block-padding-vertical(@button-mini-height * @button-mini-responsive-ratio-mobile, @button-mini-text-line-height * @button-mini-responsive-ratio-mobile);
-		padding-left: @button-mini-padding-horizontal * @button-mini-responsive-ratio-mobile;
-		padding-right: @button-mini-padding-horizontal * @button-mini-responsive-ratio-mobile;
-		font-size: @button-mini-text-font-size * @button-mini-responsive-ratio-mobile;
-		line-height: @button-mini-text-line-height * @button-mini-responsive-ratio-mobile;
-		*line-height:  @button-mini-text-line-height * @button-mini-responsive-ratio-mobile;
+		.block-padding-vertical(@button-mini-height * @button-mini-ratio-screen-large, @button-mini-text-line-height * @button-mini-ratio-screen-large);
+		padding-left: @button-mini-padding-horizontal * @button-mini-ratio-screen-large;
+		padding-right: @button-mini-padding-horizontal * @button-mini-ratio-screen-large;
+		font-size: @button-mini-text-font-size * @button-mini-ratio-screen-large;
+		line-height: @button-mini-text-line-height * @button-mini-ratio-screen-large;
+		*line-height:  @button-mini-text-line-height * @button-mini-ratio-screen-large;
 		
 	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (max-width: @viewport-mobile-max) {
 	
 }
 

@@ -2199,7 +2199,7 @@ textarea[class*="span"],
 	
 }
 
-#grid > .input(@grid-column-width-standard, @grid-gutter-width-standard);
+//#grid > .input(@grid-column-width-standard, @grid-gutter-width-standard);
 
 .controls {
 	
@@ -2215,14 +2215,15 @@ textarea[class*="span"],
 
 
 
+
+
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling for widescreen (@viewport-widescreen) and                              */
-/* above.                                                                                               */
+/* Screen Size: Small (@screen-small) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-widescreen) {
+@media (min-width: @screen-small) {
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -2232,17 +2233,17 @@ textarea[class*="span"],
 	
 	form {
 		
-		margin-bottom: @primary-margin-widescreen;
+		margin-bottom: @primary-margin-screen-small;
 		
 		&.tall {
 			
-			margin-bottom: @primary-margin-tall-widescreen;
+			margin-bottom: @primary-margin-tall-screen-small;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @primary-margin-short-widescreen;
+			margin-bottom: @primary-margin-short-screen-small;
 			
 		}
 		
@@ -2258,16 +2259,16 @@ textarea[class*="span"],
 	
 	legend {
 		
-		font-size: @form-legend-font-size * @form-legend-responsive-ratio-widescreen;
-		line-height: @form-legend-line-height * @form-legend-responsive-ratio-widescreen;
-		margin: (@form-legend-margin-top * @form-legend-responsive-ratio-widescreen) 0px (@form-legend-margin-bottom * @form-legend-responsive-ratio-widescreen) 0px;
-		padding: 0px 0px ((@form-legend-margin-bottom * @form-legend-responsive-ratio-widescreen) / 2) 0px;
+		font-size: @form-legend-font-size * @form-legend-ratio-screen-small;
+		line-height: @form-legend-line-height * @form-legend-ratio-screen-small;
+		margin: (@form-legend-margin-top * @form-legend-ratio-screen-small) 0px (@form-legend-margin-bottom * @form-legend-ratio-screen-small) 0px;
+		padding: 0px 0px ((@form-legend-margin-bottom * @form-legend-ratio-screen-small) / 2) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall * @form-legend-responsive-ratio-widescreen;
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall * @form-legend-ratio-screen-small;
 			
 		}
 		
@@ -2275,7 +2276,7 @@ textarea[class*="span"],
 			
 		&.short {
 			
-			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short * @form-legend-responsive-ratio-widescreen;
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short * @form-legend-ratio-screen-small;
 			
 		}
 		
@@ -2291,15 +2292,15 @@ textarea[class*="span"],
 	
 	label {
 		
-		font-size: @form-label-font-size * @form-label-responsive-ratio-widescreen;
-		line-height: @form-label-line-height * @form-label-responsive-ratio-widescreen;
-		margin: (@form-label-margin-top * @form-label-responsive-ratio-widescreen) 0px (@form-label-margin-bottom * @form-label-responsive-ratio-widescreen) 0px;
+		font-size: @form-label-font-size * @form-label-ratio-screen-small;
+		line-height: @form-label-line-height * @form-label-ratio-screen-small;
+		margin: (@form-label-margin-top * @form-label-ratio-screen-small) 0px (@form-label-margin-bottom * @form-label-ratio-screen-small) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall * @form-label-responsive-ratio-widescreen;
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall * @form-label-ratio-screen-small;
 			
 		}
 		
@@ -2307,7 +2308,7 @@ textarea[class*="span"],
 			
 		&.short {
 			
-			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-responsive-ratio-widescreen;
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-ratio-screen-small;
 			
 		}
 		
@@ -2323,8 +2324,8 @@ textarea[class*="span"],
 	
 	.help-block {
 		
-		font-size: @form-help-block-text-font-size * @form-help-block-responsive-ratio-widescreen;
-		line-height: @form-help-block-text-line-height * @form-help-block-responsive-ratio-widescreen;
+		font-size: @form-help-block-text-font-size * @form-help-block-ratio-screen-small;
+		line-height: @form-help-block-text-line-height * @form-help-block-ratio-screen-small;
 		
 	}
 	
@@ -2353,29 +2354,29 @@ textarea[class*="span"],
 	.uneditable-input,
 	textarea {
 		
-		height: @form-input-height * @form-input-responsive-ratio-widescreen;
-		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-widescreen, @form-input-text-line-height * @form-input-responsive-ratio-widescreen);
-		padding-left: @form-input-padding-horizontal * @form-input-responsive-ratio-widescreen;
-		padding-right: @form-input-padding-horizontal * @form-input-responsive-ratio-widescreen;
-		font-size: @form-input-text-font-size * @form-input-responsive-ratio-widescreen;
-		line-height: @form-input-text-line-height * @form-input-responsive-ratio-widescreen;
-		margin-bottom: @form-input-margin-widescreen;
+		height: @form-input-height * @form-input-ratio-screen-small;
+		.block-padding-vertical(@form-input-height * @form-input-ratio-screen-small, @form-input-text-line-height * @form-input-ratio-screen-small);
+		padding-left: @form-input-padding-horizontal * @form-input-ratio-screen-small;
+		padding-right: @form-input-padding-horizontal * @form-input-ratio-screen-small;
+		font-size: @form-input-text-font-size * @form-input-ratio-screen-small;
+		line-height: @form-input-text-line-height * @form-input-ratio-screen-small;
+		margin-bottom: @form-input-margin-screen-small;
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
-			margin-bottom: @form-input-margin-widescreen;
+			margin-top: -@form-input-margin-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+			margin-bottom: @form-input-margin-screen-small;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-widescreen;
+			margin-bottom: @form-input-margin-tall-screen-small;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
-				margin-bottom: @form-input-margin-tall-widescreen;
+				margin-top: -@form-input-margin-tall-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+				margin-bottom: @form-input-margin-tall-screen-small;
 				
 			}
 			
@@ -2383,12 +2384,12 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-widescreen;
+			margin-bottom: @form-input-margin-short-screen-small;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
-				margin-bottom: @form-input-margin-short-widescreen;
+				margin-top: -@form-input-margin-short-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+				margin-bottom: @form-input-margin-short-screen-small;
 				
 			}
 			
@@ -2398,7 +2399,7 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-widescreen;
+				margin-top: @form-help-block-margin * @form-help-block-ratio-screen-small;
 				margin-bottom: 0px;
 				
 			}
@@ -2411,12 +2412,12 @@ textarea[class*="span"],
 		
 		&.input-large {
 			
-			height: @form-input-large-height * @form-input-large-responsive-ratio-widescreen;
-			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-widescreen, @form-input-large-text-line-height * @form-input-large-responsive-ratio-widescreen);
-			padding-left: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-widescreen;
-			padding-right: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-widescreen;
-			font-size: @form-input-large-text-font-size * @form-input-large-responsive-ratio-widescreen;
-			line-height: @form-input-large-text-line-height * @form-input-large-responsive-ratio-widescreen;
+			height: @form-input-large-height * @form-input-large-ratio-screen-small;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-ratio-screen-small, @form-input-large-text-line-height * @form-input-large-ratio-screen-small);
+			padding-left: @form-input-large-padding-horizontal * @form-input-large-ratio-screen-small;
+			padding-right: @form-input-large-padding-horizontal * @form-input-large-ratio-screen-small;
+			font-size: @form-input-large-text-font-size * @form-input-large-ratio-screen-small;
+			line-height: @form-input-large-text-line-height * @form-input-large-ratio-screen-small;
 			
 		}
 		
@@ -2426,12 +2427,12 @@ textarea[class*="span"],
 		
 		&.input-small {
 			
-			height: @form-input-small-height * @form-input-small-responsive-ratio-widescreen;
-			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-widescreen, @form-input-small-text-line-height * @form-input-small-responsive-ratio-widescreen);
-			padding-left: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-widescreen;
-			padding-right: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-widescreen;
-			font-size: @form-input-small-text-font-size * @form-input-small-responsive-ratio-widescreen;
-			line-height: @form-input-small-text-line-height * @form-input-small-responsive-ratio-widescreen;
+			height: @form-input-small-height * @form-input-small-ratio-screen-small;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-ratio-screen-small, @form-input-small-text-line-height * @form-input-small-ratio-screen-small);
+			padding-left: @form-input-small-padding-horizontal * @form-input-small-ratio-screen-small;
+			padding-right: @form-input-small-padding-horizontal * @form-input-small-ratio-screen-small;
+			font-size: @form-input-small-text-font-size * @form-input-small-ratio-screen-small;
+			line-height: @form-input-small-text-line-height * @form-input-small-ratio-screen-small;
 			
 		}
 		
@@ -2454,41 +2455,41 @@ textarea[class*="span"],
 	.radio,
 	.checkbox {
 		
-		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-widescreen));
-		min-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-widescreen;
-		font-size: @form-input-toggles-text-font-size * @form-input-toggles-responsive-ratio-widescreen;
-		line-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-widescreen;
-		margin-bottom: @form-input-margin-widescreen;
+		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-small));
+		min-height: @form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-small;
+		font-size: @form-input-toggles-text-font-size * @form-input-toggles-ratio-screen-small;
+		line-height: @form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-small;
+		margin-bottom: @form-input-margin-screen-small;
 		
 		input[type="radio"] {
 			
-			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-widescreen));
-			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-widescreen) / 2) - (@form-input-radio-height / 2);
+			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-small));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-small) / 2) - (@form-input-radio-height / 2);
 			
 		}
 		
 		input[type="checkbox"] {
 			
-			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-widescreen));
-			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-widescreen) / 2) - (@form-input-checkbox-height / 2);
+			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-small));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-small) / 2) - (@form-input-checkbox-height / 2);
 			
 		}
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
-			margin-bottom: @form-input-margin-widescreen;
+			margin-top: -@form-input-margin-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+			margin-bottom: @form-input-margin-screen-small;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-widescreen;
+			margin-bottom: @form-input-margin-tall-screen-small;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
-				margin-bottom: @form-input-margin-tall-widescreen;
+				margin-top: -@form-input-margin-tall-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+				margin-bottom: @form-input-margin-tall-screen-small;
 				
 			}
 			
@@ -2496,12 +2497,12 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-widescreen;
+			margin-bottom: @form-input-margin-short-screen-small;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
-				margin-bottom: @form-input-margin-short-widescreen;
+				margin-top: -@form-input-margin-short-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+				margin-bottom: @form-input-margin-short-screen-small;
 				
 			}
 			
@@ -2511,7 +2512,7 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-widescreen;
+				margin-top: @form-help-block-margin * @form-help-block-ratio-screen-small;
 				margin-bottom: 0px;
 				
 			}
@@ -2520,35 +2521,35 @@ textarea[class*="span"],
 		
 		&.input-height {
 			
-			min-height: @form-input-height * @form-input-responsive-ratio-widescreen;
-			line-height: @form-input-height * @form-input-responsive-ratio-widescreen;
+			min-height: @form-input-height * @form-input-ratio-screen-small;
+			line-height: @form-input-height * @form-input-ratio-screen-small;
 			
 			input[type="radio"] {
 				
-				top: ((@form-input-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-radio-height / 2);
+				top: ((@form-input-height * @form-input-ratio-screen-small) / 2) - (@form-input-radio-height / 2);
 				
 			}
 			
 			input[type="checkbox"] {
 				
-				top: ((@form-input-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-checkbox-height / 2);
+				top: ((@form-input-height * @form-input-ratio-screen-small) / 2) - (@form-input-checkbox-height / 2);
 				
 			}
 			
 			&.input-large {
 				
-				min-height: @form-input-large-height * @form-input-responsive-ratio-widescreen;
-				line-height: @form-input-large-height * @form-input-responsive-ratio-widescreen;
+				min-height: @form-input-large-height * @form-input-ratio-screen-small;
+				line-height: @form-input-large-height * @form-input-ratio-screen-small;
 				
 				input[type="radio"] {
 					
-					top: ((@form-input-large-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-radio-height / 2);
+					top: ((@form-input-large-height * @form-input-ratio-screen-small) / 2) - (@form-input-radio-height / 2);
 					
 				}
 				
 				input[type="checkbox"] {
 					
-					top: ((@form-input-large-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-checkbox-height / 2);
+					top: ((@form-input-large-height * @form-input-ratio-screen-small) / 2) - (@form-input-checkbox-height / 2);
 					
 				}
 				
@@ -2556,18 +2557,18 @@ textarea[class*="span"],
 			
 			&.input-small {
 				
-				min-height: @form-input-small-height * @form-input-responsive-ratio-widescreen;
-				line-height: @form-input-small-height * @form-input-responsive-ratio-widescreen;
+				min-height: @form-input-small-height * @form-input-ratio-screen-small;
+				line-height: @form-input-small-height * @form-input-ratio-screen-small;
 				
 				input[type="radio"] {
 					
-					top: ((@form-input-small-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-radio-height / 2);
+					top: ((@form-input-small-height * @form-input-ratio-screen-small) / 2) - (@form-input-radio-height / 2);
 					
 				}
 				
 				input[type="checkbox"] {
 					
-					top: ((@form-input-small-height * @form-input-responsive-ratio-widescreen) / 2) - (@form-input-checkbox-height / 2);
+					top: ((@form-input-small-height * @form-input-ratio-screen-small) / 2) - (@form-input-checkbox-height / 2);
 					
 				}
 				
@@ -2580,7 +2581,7 @@ textarea[class*="span"],
 			+ .radio.inline,
 			+ .checkbox.inline {
 				
-				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-responsive-ratio-widescreen;
+				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-ratio-screen-small;
 				
 			}
 			
@@ -2602,30 +2603,30 @@ textarea[class*="span"],
 	
 	select {
 		
-		height: @form-input-height * @form-input-responsive-ratio-widescreen;
-		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-widescreen, @button-text-line-height * @button-responsive-ratio-widescreen);
-		padding-left: @button-padding-horizontal * @button-responsive-ratio-widescreen;
-		padding-right: @button-padding-horizontal * @button-responsive-ratio-widescreen;
-		margin-bottom: @form-input-margin-widescreen;
-		font-size: @button-text-font-size * @button-responsive-ratio-widescreen;
-		line-height: @button-text-line-height * @button-responsive-ratio-widescreen;
-		*line-height:  @button-text-line-height * @button-responsive-ratio-widescreen;
+		height: @form-input-height * @form-input-ratio-screen-small;
+		.block-padding-vertical(@form-input-height * @form-input-ratio-screen-small, @button-text-line-height * @button-ratio-screen-small);
+		padding-left: @button-padding-horizontal * @button-ratio-screen-small;
+		padding-right: @button-padding-horizontal * @button-ratio-screen-small;
+		margin-bottom: @form-input-margin-screen-small;
+		font-size: @button-text-font-size * @button-ratio-screen-small;
+		line-height: @button-text-line-height * @button-ratio-screen-small;
+		*line-height:  @button-text-line-height * @button-ratio-screen-small;
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
-			margin-bottom: @form-input-margin-widescreen;
+			margin-top: -@form-input-margin-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+			margin-bottom: @form-input-margin-screen-small;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-widescreen;
+			margin-bottom: @form-input-margin-tall-screen-small;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
-				margin-bottom: @form-input-margin-tall-widescreen;
+				margin-top: -@form-input-margin-tall-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+				margin-bottom: @form-input-margin-tall-screen-small;
 				
 			}
 			
@@ -2633,12 +2634,12 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-widescreen;
+			margin-bottom: @form-input-margin-short-screen-small;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
-				margin-bottom: @form-input-margin-short-widescreen;
+				margin-top: -@form-input-margin-short-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+				margin-bottom: @form-input-margin-short-screen-small;
 				
 			}
 			
@@ -2648,7 +2649,7 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-widescreen;
+				margin-top: @form-help-block-margin * @form-help-block-ratio-screen-small;
 				margin-bottom: 0px;
 				
 			}
@@ -2661,13 +2662,13 @@ textarea[class*="span"],
 		
 		&.input-large {
 			
-			height: @form-input-large-height * @form-input-large-responsive-ratio-widescreen;
-			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-widescreen, @button-large-text-line-height * @button-large-responsive-ratio-widescreen);
-			padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-widescreen;
-			padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-widescreen;
-			font-size: @button-large-text-font-size * @button-large-responsive-ratio-widescreen;
-			line-height: @button-large-text-line-height * @button-large-responsive-ratio-widescreen;
-			*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-widescreen;
+			height: @form-input-large-height * @form-input-large-ratio-screen-small;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-ratio-screen-small, @button-large-text-line-height * @button-large-ratio-screen-small);
+			padding-left: @button-large-padding-horizontal * @button-large-ratio-screen-small;
+			padding-right: @button-large-padding-horizontal * @button-large-ratio-screen-small;
+			font-size: @button-large-text-font-size * @button-large-ratio-screen-small;
+			line-height: @button-large-text-line-height * @button-large-ratio-screen-small;
+			*line-height:  @button-large-text-line-height * @button-large-ratio-screen-small;
 			
 		}
 		
@@ -2677,13 +2678,13 @@ textarea[class*="span"],
 		
 		&.input-small {
 			
-			height: @form-input-small-height * @form-input-small-responsive-ratio-widescreen;
-			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-widescreen, @button-small-text-line-height * @button-small-responsive-ratio-widescreen);
-			padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-widescreen;
-			padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-widescreen;
-			font-size: @button-small-text-font-size * @button-small-responsive-ratio-widescreen;
-			line-height: @button-small-text-line-height * @button-small-responsive-ratio-widescreen;
-			*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-widescreen;
+			height: @form-input-small-height * @form-input-small-ratio-screen-small;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-ratio-screen-small, @button-small-text-line-height * @button-small-ratio-screen-small);
+			padding-left: @button-small-padding-horizontal * @button-small-ratio-screen-small;
+			padding-right: @button-small-padding-horizontal * @button-small-ratio-screen-small;
+			font-size: @button-small-text-font-size * @button-small-ratio-screen-small;
+			line-height: @button-small-text-line-height * @button-small-ratio-screen-small;
+			*line-height:  @button-small-text-line-height * @button-small-ratio-screen-small;
 			
 		}
 		
@@ -2702,15 +2703,15 @@ textarea[class*="span"],
 	
 	.select-wrapper {
 		
-		margin-bottom: @form-input-margin-widescreen;
+		margin-bottom: @form-input-margin-screen-small;
 			
 		.select-wrapper-inner {
 			
-			height: @form-input-height * @form-input-responsive-ratio-widescreen;
+			height: @form-input-height * @form-input-ratio-screen-small;
 			
 			&:after {
 				
-				top: ((@button-height * @button-responsive-ratio-widescreen) / 2) - (6 / 2);
+				top: ((@button-height * @button-ratio-screen-small) / 2) - (6 / 2);
 				
 			}
 			
@@ -2718,11 +2719,11 @@ textarea[class*="span"],
 		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-widescreen;
+			margin-bottom: @form-input-margin-tall-screen-small;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-widescreen;
+				margin-top: -@form-input-margin-tall-screen-small;
 				
 			}
 			
@@ -2731,11 +2732,11 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-widescreen;
+			margin-bottom: @form-input-margin-short-screen-small;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-widescreen;
+				margin-top: -@form-input-margin-short-screen-small;
 				
 			}
 			
@@ -2750,11 +2751,11 @@ textarea[class*="span"],
 			
 			.select-wrapper-inner {
 				
-				height: @form-input-large-height * @form-input-large-responsive-ratio-widescreen;
+				height: @form-input-large-height * @form-input-large-ratio-screen-small;
 				
 				&:after {
 					
-					top: ((@form-input-large-height * @form-input-large-responsive-ratio-widescreen) / 2) - (6 / 2);
+					top: ((@form-input-large-height * @form-input-large-ratio-screen-small) / 2) - (6 / 2);
 					right: @button-large-padding-horizontal;
 					
 				}
@@ -2771,11 +2772,11 @@ textarea[class*="span"],
 			
 			.select-wrapper-inner {
 				
-				height: @form-input-small-height * @form-input-small-responsive-ratio-widescreen;
+				height: @form-input-small-height * @form-input-small-ratio-screen-small;
 				
 				&:after {
 					
-					top: ((@form-input-small-height * @form-input-small-responsive-ratio-widescreen) / 2) - (6 / 2);
+					top: ((@form-input-small-height * @form-input-small-ratio-screen-small) / 2) - (6 / 2);
 					right: @button-small-padding-horizontal;
 					
 				}
@@ -2796,7 +2797,7 @@ textarea[class*="span"],
 	
 	.input-group {
 		
-		margin-bottom: @form-input-margin-widescreen;
+		margin-bottom: @form-input-margin-screen-small;
 		
 		input,
 		select,
@@ -2808,19 +2809,19 @@ textarea[class*="span"],
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
-			margin-bottom: @form-input-margin-widescreen;
+			margin-top: -@form-input-margin-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+			margin-bottom: @form-input-margin-screen-small;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-widescreen;
+			margin-bottom: @form-input-margin-tall-screen-small;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
-				margin-bottom: @form-input-margin-tall-widescreen;
+				margin-top: -@form-input-margin-tall-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+				margin-bottom: @form-input-margin-tall-screen-small;
 				
 			}
 			
@@ -2828,12 +2829,12 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-widescreen;
+			margin-bottom: @form-input-margin-short-screen-small;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-widescreen + (@form-help-block-margin * @form-help-block-responsive-ratio-widescreen);
-				margin-bottom: @form-input-margin-short-widescreen;
+				margin-top: -@form-input-margin-short-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+				margin-bottom: @form-input-margin-short-screen-small;
 				
 			}
 			
@@ -2843,7 +2844,7 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-widescreen;
+				margin-top: @form-help-block-margin * @form-help-block-ratio-screen-small;
 				margin-bottom: 0px;
 				
 			}
@@ -2856,11 +2857,11 @@ textarea[class*="span"],
 		
 		.add-on {
 			
-			padding-left: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
-			padding-right: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
-			.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-widescreen, @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-widescreen);
-			font-size: @form-input-add-on-text-font-size * @form-input-add-on-responsive-ratio-widescreen;
-			line-height: @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-widescreen;
+			padding-left: @form-input-add-on-padding-horizontal * @form-input-add-on-ratio-screen-small;
+			padding-right: @form-input-add-on-padding-horizontal * @form-input-add-on-ratio-screen-small;
+			.block-padding-vertical(@form-input-height * @form-input-ratio-screen-small, @form-input-add-on-text-line-height * @form-input-add-on-ratio-screen-small);
+			font-size: @form-input-add-on-text-font-size * @form-input-add-on-ratio-screen-small;
+			line-height: @form-input-add-on-text-line-height * @form-input-add-on-ratio-screen-small;
 			
 		}
 		
@@ -2870,7 +2871,7 @@ textarea[class*="span"],
 		
 		.add-on-group {
 			
-			height:  @form-input-height * @form-input-responsive-ratio-widescreen;
+			height:  @form-input-height * @form-input-ratio-screen-small;
 			
 		}
 		
@@ -2882,17 +2883,17 @@ textarea[class*="span"],
 			
 			.add-on {
 				
-				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
-				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
-				.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-widescreen, @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-widescreen);
-				font-size: @form-input-add-on-large-text-font-size * @form-input-add-on-responsive-ratio-widescreen;
-				line-height: @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-widescreen;
+				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-add-on-ratio-screen-small;
+				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-add-on-ratio-screen-small;
+				.block-padding-vertical(@form-input-large-height * @form-input-large-ratio-screen-small, @form-input-add-on-large-text-line-height * @form-input-add-on-ratio-screen-small);
+				font-size: @form-input-add-on-large-text-font-size * @form-input-add-on-ratio-screen-small;
+				line-height: @form-input-add-on-large-text-line-height * @form-input-add-on-ratio-screen-small;
 				
 			}
 			
 			.add-on-group {
 				
-				height:  @form-input-large-height * @form-input-responsive-ratio-widescreen;
+				height:  @form-input-large-height * @form-input-ratio-screen-small;
 				
 			}
 			
@@ -2906,17 +2907,17 @@ textarea[class*="span"],
 			
 			.add-on {
 				
-				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
-				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-widescreen;
-				.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-widescreen, @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-widescreen);
-				font-size: @form-input-add-on-small-text-font-size * @form-input-add-on-responsive-ratio-widescreen;
-				line-height: @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-widescreen;
+				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-add-on-ratio-screen-small;
+				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-add-on-ratio-screen-small;
+				.block-padding-vertical(@form-input-small-height * @form-input-small-ratio-screen-small, @form-input-add-on-small-text-line-height * @form-input-add-on-ratio-screen-small);
+				font-size: @form-input-add-on-small-text-font-size * @form-input-add-on-ratio-screen-small;
+				line-height: @form-input-add-on-small-text-line-height * @form-input-add-on-ratio-screen-small;
 				
 			}
 			
 			.add-on-group {
 				
-				height:  @form-input-small-height * @form-input-responsive-ratio-widescreen;
+				height:  @form-input-small-height * @form-input-ratio-screen-small;
 				
 			}
 			
@@ -2933,7 +2934,7 @@ textarea[class*="span"],
 	
 	.form-actions {
 		
-		padding: @form-actions-padding-vertical-widescreen @form-actions-padding-horizontal-widescreen;
+		padding: @form-actions-padding-vertical-screen-small @form-actions-padding-horizontal-screen-small;
 		
 	}
 	
@@ -2945,7 +2946,7 @@ textarea[class*="span"],
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
-	#grid > .input(@grid-column-width-widescreen, @grid-gutter-width-widescreen);
+	//#grid > .input(@grid-column-width-screen-small, @grid-gutter-width-screen-small);
 	
 }
 
@@ -2953,11 +2954,11 @@ textarea[class*="span"],
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) to Default Desktop (@viewport-standard)                 */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @viewport-tablet) and (max-width: @viewport-tablet-max) {
+@media (min-width: @screen-medium) {
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
@@ -2967,17 +2968,17 @@ textarea[class*="span"],
 	
 	form {
 		
-		margin-bottom: @primary-margin-tablet;
+		margin-bottom: @primary-margin-screen-medium;
 		
 		&.tall {
 			
-			margin-bottom: @primary-margin-tall-tablet;
+			margin-bottom: @primary-margin-tall-screen-medium;
 			
 		}
 		
 		&.short {
 			
-			margin-bottom: @primary-margin-short-tablet;
+			margin-bottom: @primary-margin-short-screen-medium;
 			
 		}
 		
@@ -2993,16 +2994,16 @@ textarea[class*="span"],
 	
 	legend {
 		
-		font-size: @form-legend-font-size * @form-legend-responsive-ratio-tablet;
-		line-height: @form-legend-line-height * @form-legend-responsive-ratio-tablet;
-		margin: (@form-legend-margin-top * @form-legend-responsive-ratio-tablet) 0px (@form-legend-margin-bottom * @form-legend-responsive-ratio-tablet) 0px;
-		padding: 0px 0px ((@form-legend-margin-bottom * @form-legend-responsive-ratio-tablet) / 2) 0px;
+		font-size: @form-legend-font-size * @form-legend-ratio-screen-medium;
+		line-height: @form-legend-line-height * @form-legend-ratio-screen-medium;
+		margin: (@form-legend-margin-top * @form-legend-ratio-screen-medium) 0px (@form-legend-margin-bottom * @form-legend-ratio-screen-medium) 0px;
+		padding: 0px 0px ((@form-legend-margin-bottom * @form-legend-ratio-screen-medium) / 2) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall * @form-legend-responsive-ratio-tablet;
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall * @form-legend-ratio-screen-medium;
 			
 		}
 		
@@ -3010,7 +3011,7 @@ textarea[class*="span"],
 			
 		&.short {
 			
-			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short * @form-legend-responsive-ratio-tablet;
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short * @form-legend-ratio-screen-medium;
 			
 		}
 		
@@ -3026,15 +3027,15 @@ textarea[class*="span"],
 	
 	label {
 		
-		font-size: @form-label-font-size * @form-label-responsive-ratio-tablet;
-		line-height: @form-label-line-height * @form-label-responsive-ratio-tablet;
-		margin: (@form-label-margin-top * @form-label-responsive-ratio-tablet) 0px (@form-label-margin-bottom * @form-label-responsive-ratio-tablet) 0px;
+		font-size: @form-label-font-size * @form-label-ratio-screen-medium;
+		line-height: @form-label-line-height * @form-label-ratio-screen-medium;
+		margin: (@form-label-margin-top * @form-label-ratio-screen-medium) 0px (@form-label-margin-bottom * @form-label-ratio-screen-medium) 0px;
 		
 		// Tall
 		
 		&.tall {
 			
-			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall * @form-label-responsive-ratio-tablet;
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall * @form-label-ratio-screen-medium;
 			
 		}
 		
@@ -3042,7 +3043,7 @@ textarea[class*="span"],
 			
 		&.short {
 			
-			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-responsive-ratio-tablet;
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-ratio-screen-medium;
 			
 		}
 		
@@ -3058,8 +3059,8 @@ textarea[class*="span"],
 	
 	.help-block {
 		
-		font-size: @form-help-block-text-font-size * @form-help-block-responsive-ratio-tablet;
-		line-height: @form-help-block-text-line-height * @form-help-block-responsive-ratio-tablet;
+		font-size: @form-help-block-text-font-size * @form-help-block-ratio-screen-medium;
+		line-height: @form-help-block-text-line-height * @form-help-block-ratio-screen-medium;
 		
 	}
 	
@@ -3088,29 +3089,29 @@ textarea[class*="span"],
 	.uneditable-input,
 	textarea {
 		
-		height: @form-input-height * @form-input-responsive-ratio-tablet;
-		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-tablet, @form-input-text-line-height * @form-input-responsive-ratio-tablet);
-		padding-left: @form-input-padding-horizontal * @form-input-responsive-ratio-tablet;
-		padding-right: @form-input-padding-horizontal * @form-input-responsive-ratio-tablet;
-		font-size: @form-input-text-font-size * @form-input-responsive-ratio-tablet;
-		line-height: @form-input-text-line-height * @form-input-responsive-ratio-tablet;
-		margin-bottom: @form-input-margin-tablet;
+		height: @form-input-height * @form-input-ratio-screen-medium;
+		.block-padding-vertical(@form-input-height * @form-input-ratio-screen-medium, @form-input-text-line-height * @form-input-ratio-screen-medium);
+		padding-left: @form-input-padding-horizontal * @form-input-ratio-screen-medium;
+		padding-right: @form-input-padding-horizontal * @form-input-ratio-screen-medium;
+		font-size: @form-input-text-font-size * @form-input-ratio-screen-medium;
+		line-height: @form-input-text-line-height * @form-input-ratio-screen-medium;
+		margin-bottom: @form-input-margin-screen-medium;
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
-			margin-bottom: @form-input-margin-tablet;
+			margin-top: -@form-input-margin-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+			margin-bottom: @form-input-margin-screen-medium;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-tablet;
+			margin-bottom: @form-input-margin-tall-screen-medium;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
-				margin-bottom: @form-input-margin-tall-tablet;
+				margin-top: -@form-input-margin-tall-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+				margin-bottom: @form-input-margin-tall-screen-medium;
 				
 			}
 			
@@ -3118,12 +3119,12 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-tablet;
+			margin-bottom: @form-input-margin-short-screen-medium;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
-				margin-bottom: @form-input-margin-short-tablet;
+				margin-top: -@form-input-margin-short-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+				margin-bottom: @form-input-margin-short-screen-medium;
 				
 			}
 			
@@ -3133,7 +3134,7 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-tablet;
+				margin-top: @form-help-block-margin * @form-help-block-ratio-screen-medium;
 				margin-bottom: 0px;
 				
 			}
@@ -3146,12 +3147,12 @@ textarea[class*="span"],
 		
 		&.input-large {
 			
-			height: @form-input-large-height * @form-input-large-responsive-ratio-tablet;
-			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-tablet, @form-input-large-text-line-height * @form-input-large-responsive-ratio-tablet);
-			padding-left: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-tablet;
-			padding-right: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-tablet;
-			font-size: @form-input-large-text-font-size * @form-input-large-responsive-ratio-tablet;
-			line-height: @form-input-large-text-line-height * @form-input-large-responsive-ratio-tablet;
+			height: @form-input-large-height * @form-input-large-ratio-screen-medium;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-ratio-screen-medium, @form-input-large-text-line-height * @form-input-large-ratio-screen-medium);
+			padding-left: @form-input-large-padding-horizontal * @form-input-large-ratio-screen-medium;
+			padding-right: @form-input-large-padding-horizontal * @form-input-large-ratio-screen-medium;
+			font-size: @form-input-large-text-font-size * @form-input-large-ratio-screen-medium;
+			line-height: @form-input-large-text-line-height * @form-input-large-ratio-screen-medium;
 			
 		}
 		
@@ -3161,12 +3162,12 @@ textarea[class*="span"],
 		
 		&.input-small {
 			
-			height: @form-input-small-height * @form-input-small-responsive-ratio-tablet;
-			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-tablet, @form-input-small-text-line-height * @form-input-small-responsive-ratio-tablet);
-			padding-left: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-tablet;
-			padding-right: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-tablet;
-			font-size: @form-input-small-text-font-size * @form-input-small-responsive-ratio-tablet;
-			line-height: @form-input-small-text-line-height * @form-input-small-responsive-ratio-tablet;
+			height: @form-input-small-height * @form-input-small-ratio-screen-medium;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-ratio-screen-medium, @form-input-small-text-line-height * @form-input-small-ratio-screen-medium);
+			padding-left: @form-input-small-padding-horizontal * @form-input-small-ratio-screen-medium;
+			padding-right: @form-input-small-padding-horizontal * @form-input-small-ratio-screen-medium;
+			font-size: @form-input-small-text-font-size * @form-input-small-ratio-screen-medium;
+			line-height: @form-input-small-text-line-height * @form-input-small-ratio-screen-medium;
 			
 		}
 		
@@ -3189,41 +3190,41 @@ textarea[class*="span"],
 	.radio,
 	.checkbox {
 		
-		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-tablet));
-		min-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-tablet;
-		font-size: @form-input-toggles-text-font-size * @form-input-toggles-responsive-ratio-tablet;
-		line-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-tablet;
-		margin-bottom: @form-input-margin-tablet;
+		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-medium));
+		min-height: @form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-medium;
+		font-size: @form-input-toggles-text-font-size * @form-input-toggles-ratio-screen-medium;
+		line-height: @form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-medium;
+		margin-bottom: @form-input-margin-screen-medium;
 		
 		input[type="radio"] {
 			
-			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-tablet));
-			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-tablet) / 2) - (@form-input-radio-height / 2);
+			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-medium));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-medium) / 2) - (@form-input-radio-height / 2);
 			
 		}
 		
 		input[type="checkbox"] {
 			
-			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-tablet));
-			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-tablet) / 2) - (@form-input-checkbox-height / 2);
+			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-medium));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-medium) / 2) - (@form-input-checkbox-height / 2);
 			
 		}
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
-			margin-bottom: @form-input-margin-tablet;
+			margin-top: -@form-input-margin-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+			margin-bottom: @form-input-margin-screen-medium;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-tablet;
+			margin-bottom: @form-input-margin-tall-screen-medium;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
-				margin-bottom: @form-input-margin-tall-tablet;
+				margin-top: -@form-input-margin-tall-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+				margin-bottom: @form-input-margin-tall-screen-medium;
 				
 			}
 			
@@ -3231,12 +3232,12 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-tablet;
+			margin-bottom: @form-input-margin-short-screen-medium;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
-				margin-bottom: @form-input-margin-short-tablet;
+				margin-top: -@form-input-margin-short-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+				margin-bottom: @form-input-margin-short-screen-medium;
 				
 			}
 			
@@ -3246,7 +3247,7 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-tablet;
+				margin-top: @form-help-block-margin * @form-help-block-ratio-screen-medium;
 				margin-bottom: 0px;
 				
 			}
@@ -3255,35 +3256,35 @@ textarea[class*="span"],
 		
 		&.input-height {
 			
-			min-height: @form-input-height * @form-input-responsive-ratio-tablet;
-			line-height: @form-input-height * @form-input-responsive-ratio-tablet;
+			min-height: @form-input-height * @form-input-ratio-screen-medium;
+			line-height: @form-input-height * @form-input-ratio-screen-medium;
 			
 			input[type="radio"] {
 				
-				top: ((@form-input-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-radio-height / 2);
+				top: ((@form-input-height * @form-input-ratio-screen-medium) / 2) - (@form-input-radio-height / 2);
 				
 			}
 			
 			input[type="checkbox"] {
 				
-				top: ((@form-input-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-checkbox-height / 2);
+				top: ((@form-input-height * @form-input-ratio-screen-medium) / 2) - (@form-input-checkbox-height / 2);
 				
 			}
 			
 			&.input-large {
 				
-				min-height: @form-input-large-height * @form-input-responsive-ratio-tablet;
-				line-height: @form-input-large-height * @form-input-responsive-ratio-tablet;
+				min-height: @form-input-large-height * @form-input-ratio-screen-medium;
+				line-height: @form-input-large-height * @form-input-ratio-screen-medium;
 				
 				input[type="radio"] {
 					
-					top: ((@form-input-large-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-radio-height / 2);
+					top: ((@form-input-large-height * @form-input-ratio-screen-medium) / 2) - (@form-input-radio-height / 2);
 					
 				}
 				
 				input[type="checkbox"] {
 					
-					top: ((@form-input-large-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-checkbox-height / 2);
+					top: ((@form-input-large-height * @form-input-ratio-screen-medium) / 2) - (@form-input-checkbox-height / 2);
 					
 				}
 				
@@ -3291,18 +3292,18 @@ textarea[class*="span"],
 			
 			&.input-small {
 				
-				min-height: @form-input-small-height * @form-input-responsive-ratio-tablet;
-				line-height: @form-input-small-height * @form-input-responsive-ratio-tablet;
+				min-height: @form-input-small-height * @form-input-ratio-screen-medium;
+				line-height: @form-input-small-height * @form-input-ratio-screen-medium;
 				
 				input[type="radio"] {
 					
-					top: ((@form-input-small-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-radio-height / 2);
+					top: ((@form-input-small-height * @form-input-ratio-screen-medium) / 2) - (@form-input-radio-height / 2);
 					
 				}
 				
 				input[type="checkbox"] {
 					
-					top: ((@form-input-small-height * @form-input-responsive-ratio-tablet) / 2) - (@form-input-checkbox-height / 2);
+					top: ((@form-input-small-height * @form-input-ratio-screen-medium) / 2) - (@form-input-checkbox-height / 2);
 					
 				}
 				
@@ -3315,7 +3316,7 @@ textarea[class*="span"],
 			+ .radio.inline,
 			+ .checkbox.inline {
 				
-				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-responsive-ratio-tablet;
+				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-ratio-screen-medium;
 				
 			}
 			
@@ -3337,30 +3338,30 @@ textarea[class*="span"],
 	
 	select {
 		
-		height: @form-input-height * @form-input-responsive-ratio-tablet;
-		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-tablet, @button-text-line-height * @button-responsive-ratio-tablet);
-		padding-left: @button-padding-horizontal * @button-responsive-ratio-tablet;
-		padding-right: @button-padding-horizontal * @button-responsive-ratio-tablet;
-		margin-bottom: @form-input-margin-tablet;
-		font-size: @button-text-font-size * @button-responsive-ratio-tablet;
-		line-height: @button-text-line-height * @button-responsive-ratio-tablet;
-		*line-height:  @button-text-line-height * @button-responsive-ratio-tablet;
+		height: @form-input-height * @form-input-ratio-screen-medium;
+		.block-padding-vertical(@form-input-height * @form-input-ratio-screen-medium, @button-text-line-height * @button-ratio-screen-medium);
+		padding-left: @button-padding-horizontal * @button-ratio-screen-medium;
+		padding-right: @button-padding-horizontal * @button-ratio-screen-medium;
+		margin-bottom: @form-input-margin-screen-medium;
+		font-size: @button-text-font-size * @button-ratio-screen-medium;
+		line-height: @button-text-line-height * @button-ratio-screen-medium;
+		*line-height:  @button-text-line-height * @button-ratio-screen-medium;
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
-			margin-bottom: @form-input-margin-tablet;
+			margin-top: -@form-input-margin-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+			margin-bottom: @form-input-margin-screen-medium;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-tablet;
+			margin-bottom: @form-input-margin-tall-screen-medium;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
-				margin-bottom: @form-input-margin-tall-tablet;
+				margin-top: -@form-input-margin-tall-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+				margin-bottom: @form-input-margin-tall-screen-medium;
 				
 			}
 			
@@ -3368,12 +3369,12 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-tablet;
+			margin-bottom: @form-input-margin-short-screen-medium;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
-				margin-bottom: @form-input-margin-short-tablet;
+				margin-top: -@form-input-margin-short-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+				margin-bottom: @form-input-margin-short-screen-medium;
 				
 			}
 			
@@ -3383,7 +3384,7 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-tablet;
+				margin-top: @form-help-block-margin * @form-help-block-ratio-screen-medium;
 				margin-bottom: 0px;
 				
 			}
@@ -3396,13 +3397,13 @@ textarea[class*="span"],
 		
 		&.input-large {
 			
-			height: @form-input-large-height * @form-input-large-responsive-ratio-tablet;
-			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-tablet, @button-large-text-line-height * @button-large-responsive-ratio-tablet);
-			padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-tablet;
-			padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-tablet;
-			font-size: @button-large-text-font-size * @button-large-responsive-ratio-tablet;
-			line-height: @button-large-text-line-height * @button-large-responsive-ratio-tablet;
-			*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-tablet;
+			height: @form-input-large-height * @form-input-large-ratio-screen-medium;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-ratio-screen-medium, @button-large-text-line-height * @button-large-ratio-screen-medium);
+			padding-left: @button-large-padding-horizontal * @button-large-ratio-screen-medium;
+			padding-right: @button-large-padding-horizontal * @button-large-ratio-screen-medium;
+			font-size: @button-large-text-font-size * @button-large-ratio-screen-medium;
+			line-height: @button-large-text-line-height * @button-large-ratio-screen-medium;
+			*line-height:  @button-large-text-line-height * @button-large-ratio-screen-medium;
 			
 		}
 		
@@ -3412,13 +3413,13 @@ textarea[class*="span"],
 		
 		&.input-small {
 			
-			height: @form-input-small-height * @form-input-small-responsive-ratio-tablet;
-			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-tablet, @button-small-text-line-height * @button-small-responsive-ratio-tablet);
-			padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-tablet;
-			padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-tablet;
-			font-size: @button-small-text-font-size * @button-small-responsive-ratio-tablet;
-			line-height: @button-small-text-line-height * @button-small-responsive-ratio-tablet;
-			*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-tablet;
+			height: @form-input-small-height * @form-input-small-ratio-screen-medium;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-ratio-screen-medium, @button-small-text-line-height * @button-small-ratio-screen-medium);
+			padding-left: @button-small-padding-horizontal * @button-small-ratio-screen-medium;
+			padding-right: @button-small-padding-horizontal * @button-small-ratio-screen-medium;
+			font-size: @button-small-text-font-size * @button-small-ratio-screen-medium;
+			line-height: @button-small-text-line-height * @button-small-ratio-screen-medium;
+			*line-height:  @button-small-text-line-height * @button-small-ratio-screen-medium;
 			
 		}
 		
@@ -3437,15 +3438,15 @@ textarea[class*="span"],
 	
 	.select-wrapper {
 		
-		margin-bottom: @form-input-margin-tablet;
+		margin-bottom: @form-input-margin-screen-medium;
 			
 		.select-wrapper-inner {
 			
-			height: @form-input-height * @form-input-responsive-ratio-tablet;
+			height: @form-input-height * @form-input-ratio-screen-medium;
 			
 			&:after {
 				
-				top: ((@button-height * @button-responsive-ratio-tablet) / 2) - (6 / 2);
+				top: ((@button-height * @button-ratio-screen-medium) / 2) - (6 / 2);
 				
 			}
 			
@@ -3453,11 +3454,11 @@ textarea[class*="span"],
 		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-tablet;
+			margin-bottom: @form-input-margin-tall-screen-medium;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-tablet;
+				margin-top: -@form-input-margin-tall-screen-medium;
 				
 			}
 			
@@ -3466,11 +3467,11 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-tablet;
+			margin-bottom: @form-input-margin-short-screen-medium;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-tablet;
+				margin-top: -@form-input-margin-short-screen-medium;
 				
 			}
 			
@@ -3485,11 +3486,11 @@ textarea[class*="span"],
 			
 			.select-wrapper-inner {
 				
-				height: @form-input-large-height * @form-input-large-responsive-ratio-tablet;
+				height: @form-input-large-height * @form-input-large-ratio-screen-medium;
 				
 				&:after {
 					
-					top: ((@form-input-large-height * @form-input-large-responsive-ratio-tablet) / 2) - (6 / 2);
+					top: ((@form-input-large-height * @form-input-large-ratio-screen-medium) / 2) - (6 / 2);
 					right: @button-large-padding-horizontal;
 					
 				}
@@ -3506,11 +3507,11 @@ textarea[class*="span"],
 			
 			.select-wrapper-inner {
 				
-				height: @form-input-small-height * @form-input-small-responsive-ratio-tablet;
+				height: @form-input-small-height * @form-input-small-ratio-screen-medium;
 				
 				&:after {
 					
-					top: ((@form-input-small-height * @form-input-small-responsive-ratio-tablet) / 2) - (6 / 2);
+					top: ((@form-input-small-height * @form-input-small-ratio-screen-medium) / 2) - (6 / 2);
 					right: @button-small-padding-horizontal;
 					
 				}
@@ -3531,7 +3532,7 @@ textarea[class*="span"],
 	
 	.input-group {
 		
-		margin-bottom: @form-input-margin-tablet;
+		margin-bottom: @form-input-margin-screen-medium;
 		
 		input,
 		select,
@@ -3543,19 +3544,19 @@ textarea[class*="span"],
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
-			margin-bottom: @form-input-margin-tablet;
+			margin-top: -@form-input-margin-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+			margin-bottom: @form-input-margin-screen-medium;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-tablet;
+			margin-bottom: @form-input-margin-tall-screen-medium;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
-				margin-bottom: @form-input-margin-tall-tablet;
+				margin-top: -@form-input-margin-tall-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+				margin-bottom: @form-input-margin-tall-screen-medium;
 				
 			}
 			
@@ -3563,12 +3564,12 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-tablet;
+			margin-bottom: @form-input-margin-short-screen-medium;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-tablet + (@form-help-block-margin * @form-help-block-responsive-ratio-tablet);
-				margin-bottom: @form-input-margin-short-tablet;
+				margin-top: -@form-input-margin-short-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+				margin-bottom: @form-input-margin-short-screen-medium;
 				
 			}
 			
@@ -3578,7 +3579,7 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-tablet;
+				margin-top: @form-help-block-margin * @form-help-block-ratio-screen-medium;
 				margin-bottom: 0px;
 				
 			}
@@ -3591,11 +3592,11 @@ textarea[class*="span"],
 		
 		.add-on {
 			
-			padding-left: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
-			padding-right: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
-			.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-tablet, @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-tablet);
-			font-size: @form-input-add-on-text-font-size * @form-input-add-on-responsive-ratio-tablet;
-			line-height: @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-tablet;
+			padding-left: @form-input-add-on-padding-horizontal * @form-input-add-on-ratio-screen-medium;
+			padding-right: @form-input-add-on-padding-horizontal * @form-input-add-on-ratio-screen-medium;
+			.block-padding-vertical(@form-input-height * @form-input-ratio-screen-medium, @form-input-add-on-text-line-height * @form-input-add-on-ratio-screen-medium);
+			font-size: @form-input-add-on-text-font-size * @form-input-add-on-ratio-screen-medium;
+			line-height: @form-input-add-on-text-line-height * @form-input-add-on-ratio-screen-medium;
 			
 		}
 		
@@ -3605,7 +3606,7 @@ textarea[class*="span"],
 		
 		.add-on-group {
 			
-			height:  @form-input-height * @form-input-responsive-ratio-tablet;
+			height:  @form-input-height * @form-input-ratio-screen-medium;
 			
 		}
 		
@@ -3617,17 +3618,17 @@ textarea[class*="span"],
 			
 			.add-on {
 				
-				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
-				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
-				.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-tablet, @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-tablet);
-				font-size: @form-input-add-on-large-text-font-size * @form-input-add-on-responsive-ratio-tablet;
-				line-height: @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-tablet;
+				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-add-on-ratio-screen-medium;
+				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-add-on-ratio-screen-medium;
+				.block-padding-vertical(@form-input-large-height * @form-input-large-ratio-screen-medium, @form-input-add-on-large-text-line-height * @form-input-add-on-ratio-screen-medium);
+				font-size: @form-input-add-on-large-text-font-size * @form-input-add-on-ratio-screen-medium;
+				line-height: @form-input-add-on-large-text-line-height * @form-input-add-on-ratio-screen-medium;
 				
 			}
 			
 			.add-on-group {
 				
-				height:  @form-input-large-height * @form-input-responsive-ratio-tablet;
+				height:  @form-input-large-height * @form-input-ratio-screen-medium;
 				
 			}
 			
@@ -3641,17 +3642,17 @@ textarea[class*="span"],
 			
 			.add-on {
 				
-				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
-				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-tablet;
-				.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-tablet, @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-tablet);
-				font-size: @form-input-add-on-small-text-font-size * @form-input-add-on-responsive-ratio-tablet;
-				line-height: @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-tablet;
+				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-add-on-ratio-screen-medium;
+				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-add-on-ratio-screen-medium;
+				.block-padding-vertical(@form-input-small-height * @form-input-small-ratio-screen-medium, @form-input-add-on-small-text-line-height * @form-input-add-on-ratio-screen-medium);
+				font-size: @form-input-add-on-small-text-font-size * @form-input-add-on-ratio-screen-medium;
+				line-height: @form-input-add-on-small-text-line-height * @form-input-add-on-ratio-screen-medium;
 				
 			}
 			
 			.add-on-group {
 				
-				height:  @form-input-small-height * @form-input-responsive-ratio-tablet;
+				height:  @form-input-small-height * @form-input-ratio-screen-medium;
 				
 			}
 			
@@ -3668,742 +3669,7 @@ textarea[class*="span"],
 	
 	.form-actions {
 		
-		padding: @form-actions-padding-vertical-tablet @form-actions-padding-horizontal-tablet;
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Grid Sizing for Inputs                                                                               */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	#grid > .input(@grid-column-width-tablet, @grid-gutter-width-tablet);
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive Styles: Tablet (@viewport-tablet) and smaller                                             */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (max-width: @viewport-mobile-landscape-max) {
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* General Form Styling                                                                                 */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	form {
-		
-		margin-bottom: @primary-margin-mobile;
-		
-		&.tall {
-			
-			margin-bottom: @primary-margin-tall-mobile;
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @primary-margin-short-mobile;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Legend                                                                                               */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	legend {
-		
-		font-size: @form-legend-font-size * @form-legend-responsive-ratio-mobile;
-		line-height: @form-legend-line-height * @form-legend-responsive-ratio-mobile;
-		margin: (@form-legend-margin-top * @form-legend-responsive-ratio-mobile) 0px (@form-legend-margin-bottom * @form-legend-responsive-ratio-mobile) 0px;
-		padding: 0px 0px ((@form-legend-margin-bottom * @form-legend-responsive-ratio-mobile) / 2) 0px;
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall * @form-legend-responsive-ratio-mobile;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short * @form-legend-responsive-ratio-mobile;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Labels                                                                                               */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	label {
-		
-		font-size: @form-label-font-size * @form-label-responsive-ratio-mobile;
-		line-height: @form-label-line-height * @form-label-responsive-ratio-mobile;
-		margin: (@form-label-margin-top * @form-label-responsive-ratio-mobile) 0px (@form-label-margin-bottom * @form-label-responsive-ratio-mobile) 0px;
-		
-		// Tall
-		
-		&.tall {
-			
-			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall * @form-label-responsive-ratio-mobile;
-			
-		}
-		
-		// Short
-			
-		&.short {
-			
-			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-responsive-ratio-mobile;
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Help Block                                                                                           */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	.help-block {
-		
-		font-size: @form-help-block-text-font-size * @form-help-block-responsive-ratio-mobile;
-		line-height: @form-help-block-text-line-height * @form-help-block-responsive-ratio-mobile;
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Inputs                                                                                               */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	input[type="text"],
-	input[type="password"],
-	input[type="datetime"],
-	input[type="datetime-local"],
-	input[type="date"],
-	input[type="month"],
-	input[type="time"],
-	input[type="week"],
-	input[type="number"],
-	input[type="email"],
-	input[type="url"],
-	input[type="search"],
-	input[type="tel"],
-	input[type="color"],
-	.uneditable-input,
-	textarea {
-		
-		height: @form-input-height * @form-input-responsive-ratio-mobile;
-		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-mobile, @form-input-text-line-height * @form-input-responsive-ratio-mobile);
-		padding-left: @form-input-padding-horizontal * @form-input-responsive-ratio-mobile;
-		padding-right: @form-input-padding-horizontal * @form-input-responsive-ratio-mobile;
-		font-size: @form-input-text-font-size * @form-input-responsive-ratio-mobile;
-		line-height: @form-input-text-line-height * @form-input-responsive-ratio-mobile;
-		margin-bottom: @form-input-margin-mobile;
-		
-		+ .help-block {
-			
-			margin-top: -@form-input-margin-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
-			margin-bottom: @form-input-margin-mobile;
-			
-		}
-		
-		&.tall {
-			
-			margin-bottom: @form-input-margin-tall-mobile;
-			
-			+ .help-block {
-				
-				margin-top: -@form-input-margin-tall-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
-				margin-bottom: @form-input-margin-tall-mobile;
-				
-			}
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @form-input-margin-short-mobile;
-			
-			+ .help-block {
-				
-				margin-top: -@form-input-margin-short-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
-				margin-bottom: @form-input-margin-short-mobile;
-				
-			}
-			
-		}
-		
-		&.flush-bottom {
-			
-			+ .help-block {
-				
-				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-mobile;
-				margin-bottom: 0px;
-				
-			}
-			
-		}
-		
-		/* ---------------------------------------------------------------------------------------------------- */
-		/* Large Input                                                                                          */
-		/* ---------------------------------------------------------------------------------------------------- */
-		
-		&.input-large {
-			
-			height: @form-input-large-height * @form-input-large-responsive-ratio-mobile;
-			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-mobile, @form-input-large-text-line-height * @form-input-large-responsive-ratio-mobile);
-			padding-left: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-mobile;
-			padding-right: @form-input-large-padding-horizontal * @form-input-large-responsive-ratio-mobile;
-			font-size: @form-input-large-text-font-size * @form-input-large-responsive-ratio-mobile;
-			line-height: @form-input-large-text-line-height * @form-input-large-responsive-ratio-mobile;
-			
-		}
-		
-		/* ---------------------------------------------------------------------------------------------------- */
-		/* Small Input                                                                                          */
-		/* ---------------------------------------------------------------------------------------------------- */
-		
-		&.input-small {
-			
-			height: @form-input-small-height * @form-input-small-responsive-ratio-mobile;
-			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-mobile, @form-input-small-text-line-height * @form-input-small-responsive-ratio-mobile);
-			padding-left: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-mobile;
-			padding-right: @form-input-small-padding-horizontal * @form-input-small-responsive-ratio-mobile;
-			font-size: @form-input-small-text-font-size * @form-input-small-responsive-ratio-mobile;
-			line-height: @form-input-small-text-line-height * @form-input-small-responsive-ratio-mobile;
-			
-		}
-		
-	}
-	
-	textarea {
-		
-		height: auto;
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Radio Buttons & Checkboxes                                                                           */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	.radio,
-	.checkbox {
-		
-		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-mobile));
-		min-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-mobile;
-		font-size: @form-input-toggles-text-font-size * @form-input-toggles-responsive-ratio-mobile;
-		line-height: @form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-mobile;
-		margin-bottom: @form-input-margin-mobile;
-		
-		input[type="radio"] {
-			
-			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-mobile));
-			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-mobile) / 2) - (@form-input-radio-height / 2);
-			
-		}
-		
-		input[type="checkbox"] {
-			
-			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-responsive-ratio-mobile));
-			top: ((@form-input-toggles-text-line-height * @form-input-toggles-responsive-ratio-mobile) / 2) - (@form-input-checkbox-height / 2);
-			
-		}
-		
-		+ .help-block {
-			
-			margin-top: -@form-input-margin-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
-			margin-bottom: @form-input-margin-mobile;
-			
-		}
-		
-		&.tall {
-			
-			margin-bottom: @form-input-margin-tall-mobile;
-			
-			+ .help-block {
-				
-				margin-top: -@form-input-margin-tall-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
-				margin-bottom: @form-input-margin-tall-mobile;
-				
-			}
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @form-input-margin-short-mobile;
-			
-			+ .help-block {
-				
-				margin-top: -@form-input-margin-short-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
-				margin-bottom: @form-input-margin-short-mobile;
-				
-			}
-			
-		}
-		
-		&.flush-bottom {
-			
-			+ .help-block {
-				
-				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-mobile;
-				margin-bottom: 0px;
-				
-			}
-			
-		}
-		
-		&.input-height {
-			
-			min-height: @form-input-height * @form-input-responsive-ratio-mobile;
-			line-height: @form-input-height * @form-input-responsive-ratio-mobile;
-			
-			input[type="radio"] {
-				
-				top: ((@form-input-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-radio-height / 2);
-				
-			}
-			
-			input[type="checkbox"] {
-				
-				top: ((@form-input-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-checkbox-height / 2);
-				
-			}
-			
-			&.input-large {
-				
-				min-height: @form-input-large-height * @form-input-responsive-ratio-mobile;
-				line-height: @form-input-large-height * @form-input-responsive-ratio-mobile;
-				
-				input[type="radio"] {
-					
-					top: ((@form-input-large-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-radio-height / 2);
-					
-				}
-				
-				input[type="checkbox"] {
-					
-					top: ((@form-input-large-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-checkbox-height / 2);
-					
-				}
-				
-			}
-			
-			&.input-small {
-				
-				min-height: @form-input-small-height * @form-input-responsive-ratio-mobile;
-				line-height: @form-input-small-height * @form-input-responsive-ratio-mobile;
-				
-				input[type="radio"] {
-					
-					top: ((@form-input-small-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-radio-height / 2);
-					
-				}
-				
-				input[type="checkbox"] {
-					
-					top: ((@form-input-small-height * @form-input-responsive-ratio-mobile) / 2) - (@form-input-checkbox-height / 2);
-					
-				}
-				
-			}
-			
-		}
-		
-		&.inline {
-			
-			+ .radio.inline,
-			+ .checkbox.inline {
-				
-				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-responsive-ratio-mobile;
-				
-			}
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Select Boxes                                                                                         */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	/* ---------------------------------------------------------------------------------------------------- */
-	/* Standard Select Box                                                                                  */
-	/* ---------------------------------------------------------------------------------------------------- */
-	
-	select {
-		
-		height: @form-input-height * @form-input-responsive-ratio-mobile;
-		.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-mobile, @button-text-line-height * @button-responsive-ratio-mobile);
-		padding-left: @button-padding-horizontal * @button-responsive-ratio-mobile;
-		padding-right: @button-padding-horizontal * @button-responsive-ratio-mobile;
-		margin-bottom: @form-input-margin-mobile;
-		font-size: @button-text-font-size * @button-responsive-ratio-mobile;
-		line-height: @button-text-line-height * @button-responsive-ratio-mobile;
-		*line-height:  @button-text-line-height * @button-responsive-ratio-mobile;
-		
-		+ .help-block {
-			
-			margin-top: -@form-input-margin-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
-			margin-bottom: @form-input-margin-mobile;
-			
-		}
-		
-		&.tall {
-			
-			margin-bottom: @form-input-margin-tall-mobile;
-			
-			+ .help-block {
-				
-				margin-top: -@form-input-margin-tall-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
-				margin-bottom: @form-input-margin-tall-mobile;
-				
-			}
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @form-input-margin-short-mobile;
-			
-			+ .help-block {
-				
-				margin-top: -@form-input-margin-short-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
-				margin-bottom: @form-input-margin-short-mobile;
-				
-			}
-			
-		}
-		
-		&.flush-bottom {
-			
-			+ .help-block {
-				
-				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-mobile;
-				margin-bottom: 0px;
-				
-			}
-			
-		}
-		
-		/* ---------------------------------------------------------------------------------------------------- */
-		/* Large Input                                                                                          */
-		/* ---------------------------------------------------------------------------------------------------- */
-		
-		&.input-large {
-			
-			height: @form-input-large-height * @form-input-large-responsive-ratio-mobile;
-			.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-mobile, @button-large-text-line-height * @button-large-responsive-ratio-mobile);
-			padding-left: @button-large-padding-horizontal * @button-large-responsive-ratio-mobile;
-			padding-right: @button-large-padding-horizontal * @button-large-responsive-ratio-mobile;
-			font-size: @button-large-text-font-size * @button-large-responsive-ratio-mobile;
-			line-height: @button-large-text-line-height * @button-large-responsive-ratio-mobile;
-			*line-height:  @button-large-text-line-height * @button-large-responsive-ratio-mobile;
-			
-		}
-		
-		/* ---------------------------------------------------------------------------------------------------- */
-		/* Small Input                                                                                          */
-		/* ---------------------------------------------------------------------------------------------------- */
-		
-		&.input-small {
-			
-			height: @form-input-small-height * @form-input-small-responsive-ratio-mobile;
-			.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-mobile, @button-small-text-line-height * @button-small-responsive-ratio-mobile);
-			padding-left: @button-small-padding-horizontal * @button-small-responsive-ratio-mobile;
-			padding-right: @button-small-padding-horizontal * @button-small-responsive-ratio-mobile;
-			font-size: @button-small-text-font-size * @button-small-responsive-ratio-mobile;
-			line-height: @button-small-text-line-height * @button-small-responsive-ratio-mobile;
-			*line-height:  @button-small-text-line-height * @button-small-responsive-ratio-mobile;
-			
-		}
-		
-		&[multiple],
-		&[size] {
-			
-			height: auto;
-			
-		}
-		
-	}
-	
-	/* ---------------------------------------------------------------------------------------------------- */
-	/* Stylized Select Box                                                                                  */
-	/* ---------------------------------------------------------------------------------------------------- */
-	
-	.select-wrapper {
-		
-		margin-bottom: @form-input-margin-mobile;
-			
-		.select-wrapper-inner {
-			
-			height: @form-input-height * @form-input-responsive-ratio-mobile;
-			
-			&:after {
-				
-				top: ((@button-height * @button-responsive-ratio-mobile) / 2) - (6 / 2);
-				
-			}
-			
-		}
-		
-		&.tall {
-			
-			margin-bottom: @form-input-margin-tall-mobile;
-			
-			+ .help-block {
-				
-				margin-top: -@form-input-margin-tall-mobile;
-				
-			}
-			
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @form-input-margin-short-mobile;
-			
-			+ .help-block {
-				
-				margin-top: -@form-input-margin-short-mobile;
-				
-			}
-			
-			
-		}
-		
-		/* ---------------------------------------------------------------------------------------------------- */
-		/* Large Select Wrapper                                                                                 */
-		/* ---------------------------------------------------------------------------------------------------- */
-		
-		&.select-wrapper-large {
-			
-			.select-wrapper-inner {
-				
-				height: @form-input-large-height * @form-input-large-responsive-ratio-mobile;
-				
-				&:after {
-					
-					top: ((@form-input-large-height * @form-input-large-responsive-ratio-mobile) / 2) - (6 / 2);
-					right: @button-large-padding-horizontal;
-					
-				}
-				
-			}
-			
-		}
-		
-		/* ---------------------------------------------------------------------------------------------------- */
-		/* Small Select Wrapper                                                                                 */
-		/* ---------------------------------------------------------------------------------------------------- */
-		
-		&.select-wrapper-small {
-			
-			.select-wrapper-inner {
-				
-				height: @form-input-small-height * @form-input-small-responsive-ratio-mobile;
-				
-				&:after {
-					
-					top: ((@form-input-small-height * @form-input-small-responsive-ratio-mobile) / 2) - (6 / 2);
-					right: @button-small-padding-horizontal;
-					
-				}
-				
-			}
-			
-		}
-		
-	}
-	
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Input Groups                                                                                         */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	.input-group {
-		
-		margin-bottom: @form-input-margin-mobile;
-		
-		input,
-		select,
-		.uneditable-input {
-			
-			margin-bottom: 0px;
-			
-		}
-		
-		+ .help-block {
-			
-			margin-top: -@form-input-margin-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
-			margin-bottom: @form-input-margin-mobile;
-			
-		}
-		
-		&.tall {
-			
-			margin-bottom: @form-input-margin-tall-mobile;
-			
-			+ .help-block {
-				
-				margin-top: -@form-input-margin-tall-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
-				margin-bottom: @form-input-margin-tall-mobile;
-				
-			}
-			
-		}
-		
-		&.short {
-			
-			margin-bottom: @form-input-margin-short-mobile;
-			
-			+ .help-block {
-				
-				margin-top: -@form-input-margin-short-mobile + (@form-help-block-margin * @form-help-block-responsive-ratio-mobile);
-				margin-bottom: @form-input-margin-short-mobile;
-				
-			}
-			
-		}
-		
-		&.flush-bottom {
-			
-			+ .help-block {
-				
-				margin-top: @form-help-block-margin * @form-help-block-responsive-ratio-mobile;
-				margin-bottom: 0px;
-				
-			}
-			
-		}
-		
-		/* ---------------------------------------------------------------------------------------------------- */
-		/* Input Group Add-On                                                                                   */
-		/* ---------------------------------------------------------------------------------------------------- */
-		
-		.add-on {
-			
-			padding-left: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
-			padding-right: @form-input-add-on-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
-			.block-padding-vertical(@form-input-height * @form-input-responsive-ratio-mobile, @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-mobile);
-			font-size: @form-input-add-on-text-font-size * @form-input-add-on-responsive-ratio-mobile;
-			line-height: @form-input-add-on-text-line-height * @form-input-add-on-responsive-ratio-mobile;
-			
-		}
-		
-		/* ---------------------------------------------------------------------------------------------------- */
-		/* Input Group Add-On Group                                                                             */
-		/* ---------------------------------------------------------------------------------------------------- */
-		
-		.add-on-group {
-			
-			height:  @form-input-height * @form-input-responsive-ratio-mobile;
-			
-		}
-		
-		/* ---------------------------------------------------------------------------------------------------- */
-		/* Large Input Add-On                                                                                   */
-		/* ---------------------------------------------------------------------------------------------------- */
-		
-		&.input-group-large {
-			
-			.add-on {
-				
-				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
-				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
-				.block-padding-vertical(@form-input-large-height * @form-input-large-responsive-ratio-mobile, @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-mobile);
-				font-size: @form-input-add-on-large-text-font-size * @form-input-add-on-responsive-ratio-mobile;
-				line-height: @form-input-add-on-large-text-line-height * @form-input-add-on-responsive-ratio-mobile;
-				
-			}
-			
-			.add-on-group {
-				
-				height:  @form-input-large-height * @form-input-responsive-ratio-mobile;
-				
-			}
-			
-		}
-		
-		/* ---------------------------------------------------------------------------------------------------- */
-		/* Small Input Add-On                                                                                   */
-		/* ---------------------------------------------------------------------------------------------------- */
-		
-		&.input-group-small {
-			
-			.add-on {
-				
-				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
-				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-add-on-responsive-ratio-mobile;
-				.block-padding-vertical(@form-input-small-height * @form-input-small-responsive-ratio-mobile, @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-mobile);
-				font-size: @form-input-add-on-small-text-font-size * @form-input-add-on-responsive-ratio-mobile;
-				line-height: @form-input-add-on-small-text-line-height * @form-input-add-on-responsive-ratio-mobile;
-				
-			}
-			
-			.add-on-group {
-				
-				height:  @form-input-small-height * @form-input-responsive-ratio-mobile;
-				
-			}
-			
-		}
-		
-	}
-	
-	
-	/* ==================================================================================================== */
-	/*                                                                                                      */
-	/* Form Actions                                                                                         */
-	/*                                                                                                      */
-	/* ==================================================================================================== */
-	
-	.form-actions {
-		
-		padding: @form-actions-padding-vertical-mobile @form-actions-padding-horizontal-mobile;
+		padding: @form-actions-padding-vertical-screen-medium @form-actions-padding-horizontal-screen-medium;
 		
 	}
 	
@@ -4429,11 +3695,734 @@ textarea[class*="span"],
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Landscape Mobiles (@viewport-mobile-landscape) and smaller                        */
+/* Screen Size: Large (@screen-large) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (max-width: @viewport-mobile-max) {
+@media (min-width: @screen-large) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* General Form Styling                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	form {
+		
+		margin-bottom: @primary-margin-screen-large;
+		
+		&.tall {
+			
+			margin-bottom: @primary-margin-tall-screen-large;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @primary-margin-short-screen-large;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Legend                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	legend {
+		
+		font-size: @form-legend-font-size * @form-legend-ratio-screen-large;
+		line-height: @form-legend-line-height * @form-legend-ratio-screen-large;
+		margin: (@form-legend-margin-top * @form-legend-ratio-screen-large) 0px (@form-legend-margin-bottom * @form-legend-ratio-screen-large) 0px;
+		padding: 0px 0px ((@form-legend-margin-bottom * @form-legend-ratio-screen-large) / 2) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-tall * @form-legend-ratio-screen-large;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-legend-margin-bottom * @text-margin-ratio-short * @form-legend-ratio-screen-large;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Labels                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	label {
+		
+		font-size: @form-label-font-size * @form-label-ratio-screen-large;
+		line-height: @form-label-line-height * @form-label-ratio-screen-large;
+		margin: (@form-label-margin-top * @form-label-ratio-screen-large) 0px (@form-label-margin-bottom * @form-label-ratio-screen-large) 0px;
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-tall * @form-label-ratio-screen-large;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-ratio-screen-large;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Help Block                                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.help-block {
+		
+		font-size: @form-help-block-text-font-size * @form-help-block-ratio-screen-large;
+		line-height: @form-help-block-text-line-height * @form-help-block-ratio-screen-large;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Inputs                                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	.uneditable-input,
+	textarea {
+		
+		height: @form-input-height * @form-input-ratio-screen-large;
+		.block-padding-vertical(@form-input-height * @form-input-ratio-screen-large, @form-input-text-line-height * @form-input-ratio-screen-large);
+		padding-left: @form-input-padding-horizontal * @form-input-ratio-screen-large;
+		padding-right: @form-input-padding-horizontal * @form-input-ratio-screen-large;
+		font-size: @form-input-text-font-size * @form-input-ratio-screen-large;
+		line-height: @form-input-text-line-height * @form-input-ratio-screen-large;
+		margin-bottom: @form-input-margin-screen-large;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+			margin-bottom: @form-input-margin-screen-large;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-screen-large;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+				margin-bottom: @form-input-margin-tall-screen-large;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-screen-large;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+				margin-bottom: @form-input-margin-short-screen-large;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-ratio-screen-large;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-ratio-screen-large;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-ratio-screen-large, @form-input-large-text-line-height * @form-input-large-ratio-screen-large);
+			padding-left: @form-input-large-padding-horizontal * @form-input-large-ratio-screen-large;
+			padding-right: @form-input-large-padding-horizontal * @form-input-large-ratio-screen-large;
+			font-size: @form-input-large-text-font-size * @form-input-large-ratio-screen-large;
+			line-height: @form-input-large-text-line-height * @form-input-large-ratio-screen-large;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-ratio-screen-large;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-ratio-screen-large, @form-input-small-text-line-height * @form-input-small-ratio-screen-large);
+			padding-left: @form-input-small-padding-horizontal * @form-input-small-ratio-screen-large;
+			padding-right: @form-input-small-padding-horizontal * @form-input-small-ratio-screen-large;
+			font-size: @form-input-small-text-font-size * @form-input-small-ratio-screen-large;
+			line-height: @form-input-small-text-line-height * @form-input-small-ratio-screen-large;
+			
+		}
+		
+	}
+	
+	textarea {
+		
+		height: auto;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Radio Buttons & Checkboxes                                                                           */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.radio,
+	.checkbox {
+		
+		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-large));
+		min-height: @form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-large;
+		font-size: @form-input-toggles-text-font-size * @form-input-toggles-ratio-screen-large;
+		line-height: @form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-large;
+		margin-bottom: @form-input-margin-screen-large;
+		
+		input[type="radio"] {
+			
+			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-large));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-large) / 2) - (@form-input-radio-height / 2);
+			
+		}
+		
+		input[type="checkbox"] {
+			
+			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-large));
+			top: ((@form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-large) / 2) - (@form-input-checkbox-height / 2);
+			
+		}
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+			margin-bottom: @form-input-margin-screen-large;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-screen-large;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+				margin-bottom: @form-input-margin-tall-screen-large;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-screen-large;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+				margin-bottom: @form-input-margin-short-screen-large;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-ratio-screen-large;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		&.input-height {
+			
+			min-height: @form-input-height * @form-input-ratio-screen-large;
+			line-height: @form-input-height * @form-input-ratio-screen-large;
+			
+			input[type="radio"] {
+				
+				top: ((@form-input-height * @form-input-ratio-screen-large) / 2) - (@form-input-radio-height / 2);
+				
+			}
+			
+			input[type="checkbox"] {
+				
+				top: ((@form-input-height * @form-input-ratio-screen-large) / 2) - (@form-input-checkbox-height / 2);
+				
+			}
+			
+			&.input-large {
+				
+				min-height: @form-input-large-height * @form-input-ratio-screen-large;
+				line-height: @form-input-large-height * @form-input-ratio-screen-large;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-large-height * @form-input-ratio-screen-large) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-large-height * @form-input-ratio-screen-large) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+			&.input-small {
+				
+				min-height: @form-input-small-height * @form-input-ratio-screen-large;
+				line-height: @form-input-small-height * @form-input-ratio-screen-large;
+				
+				input[type="radio"] {
+					
+					top: ((@form-input-small-height * @form-input-ratio-screen-large) / 2) - (@form-input-radio-height / 2);
+					
+				}
+				
+				input[type="checkbox"] {
+					
+					top: ((@form-input-small-height * @form-input-ratio-screen-large) / 2) - (@form-input-checkbox-height / 2);
+					
+				}
+				
+			}
+			
+		}
+		
+		&.inline {
+			
+			+ .radio.inline,
+			+ .checkbox.inline {
+				
+				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-ratio-screen-large;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Select Boxes                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Standard Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	select {
+		
+		height: @form-input-height * @form-input-ratio-screen-large;
+		.block-padding-vertical(@form-input-height * @form-input-ratio-screen-large, @button-text-line-height * @button-ratio-screen-large);
+		padding-left: @button-padding-horizontal * @button-ratio-screen-large;
+		padding-right: @button-padding-horizontal * @button-ratio-screen-large;
+		margin-bottom: @form-input-margin-screen-large;
+		font-size: @button-text-font-size * @button-ratio-screen-large;
+		line-height: @button-text-line-height * @button-ratio-screen-large;
+		*line-height:  @button-text-line-height * @button-ratio-screen-large;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+			margin-bottom: @form-input-margin-screen-large;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-screen-large;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+				margin-bottom: @form-input-margin-tall-screen-large;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-screen-large;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+				margin-bottom: @form-input-margin-short-screen-large;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-ratio-screen-large;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-large {
+			
+			height: @form-input-large-height * @form-input-large-ratio-screen-large;
+			.block-padding-vertical(@form-input-large-height * @form-input-large-ratio-screen-large, @button-large-text-line-height * @button-large-ratio-screen-large);
+			padding-left: @button-large-padding-horizontal * @button-large-ratio-screen-large;
+			padding-right: @button-large-padding-horizontal * @button-large-ratio-screen-large;
+			font-size: @button-large-text-font-size * @button-large-ratio-screen-large;
+			line-height: @button-large-text-line-height * @button-large-ratio-screen-large;
+			*line-height:  @button-large-text-line-height * @button-large-ratio-screen-large;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input                                                                                          */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-small {
+			
+			height: @form-input-small-height * @form-input-small-ratio-screen-large;
+			.block-padding-vertical(@form-input-small-height * @form-input-small-ratio-screen-large, @button-small-text-line-height * @button-small-ratio-screen-large);
+			padding-left: @button-small-padding-horizontal * @button-small-ratio-screen-large;
+			padding-right: @button-small-padding-horizontal * @button-small-ratio-screen-large;
+			font-size: @button-small-text-font-size * @button-small-ratio-screen-large;
+			line-height: @button-small-text-line-height * @button-small-ratio-screen-large;
+			*line-height:  @button-small-text-line-height * @button-small-ratio-screen-large;
+			
+		}
+		
+		&[multiple],
+		&[size] {
+			
+			height: auto;
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Stylized Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.select-wrapper {
+		
+		margin-bottom: @form-input-margin-screen-large;
+			
+		.select-wrapper-inner {
+			
+			height: @form-input-height * @form-input-ratio-screen-large;
+			
+			&:after {
+				
+				top: ((@button-height * @button-ratio-screen-large) / 2) - (6 / 2);
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-screen-large;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-screen-large;
+				
+			}
+			
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-screen-large;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-screen-large;
+				
+			}
+			
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-large {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-large-height * @form-input-large-ratio-screen-large;
+				
+				&:after {
+					
+					top: ((@form-input-large-height * @form-input-large-ratio-screen-large) / 2) - (6 / 2);
+					right: @button-large-padding-horizontal;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Select Wrapper                                                                                 */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.select-wrapper-small {
+			
+			.select-wrapper-inner {
+				
+				height: @form-input-small-height * @form-input-small-ratio-screen-large;
+				
+				&:after {
+					
+					top: ((@form-input-small-height * @form-input-small-ratio-screen-large) / 2) - (6 / 2);
+					right: @button-small-padding-horizontal;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Input Groups                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.input-group {
+		
+		margin-bottom: @form-input-margin-screen-large;
+		
+		input,
+		select,
+		.uneditable-input {
+			
+			margin-bottom: 0px;
+			
+		}
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+			margin-bottom: @form-input-margin-screen-large;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @form-input-margin-tall-screen-large;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-tall-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+				margin-bottom: @form-input-margin-tall-screen-large;
+				
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @form-input-margin-short-screen-large;
+			
+			+ .help-block {
+				
+				margin-top: -@form-input-margin-short-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+				margin-bottom: @form-input-margin-short-screen-large;
+				
+			}
+			
+		}
+		
+		&.flush-bottom {
+			
+			+ .help-block {
+				
+				margin-top: @form-help-block-margin * @form-help-block-ratio-screen-large;
+				margin-bottom: 0px;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on {
+			
+			padding-left: @form-input-add-on-padding-horizontal * @form-input-add-on-ratio-screen-large;
+			padding-right: @form-input-add-on-padding-horizontal * @form-input-add-on-ratio-screen-large;
+			.block-padding-vertical(@form-input-height * @form-input-ratio-screen-large, @form-input-add-on-text-line-height * @form-input-add-on-ratio-screen-large);
+			font-size: @form-input-add-on-text-font-size * @form-input-add-on-ratio-screen-large;
+			line-height: @form-input-add-on-text-line-height * @form-input-add-on-ratio-screen-large;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Input Group Add-On Group                                                                             */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		.add-on-group {
+			
+			height:  @form-input-height * @form-input-ratio-screen-large;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Large Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-large {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-large-padding-horizontal * @form-input-add-on-ratio-screen-large;
+				padding-right: @form-input-add-on-large-padding-horizontal * @form-input-add-on-ratio-screen-large;
+				.block-padding-vertical(@form-input-large-height * @form-input-large-ratio-screen-large, @form-input-add-on-large-text-line-height * @form-input-add-on-ratio-screen-large);
+				font-size: @form-input-add-on-large-text-font-size * @form-input-add-on-ratio-screen-large;
+				line-height: @form-input-add-on-large-text-line-height * @form-input-add-on-ratio-screen-large;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-large-height * @form-input-ratio-screen-large;
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Small Input Add-On                                                                                   */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.input-group-small {
+			
+			.add-on {
+				
+				padding-left: @form-input-add-on-small-padding-horizontal * @form-input-add-on-ratio-screen-large;
+				padding-right: @form-input-add-on-small-padding-horizontal * @form-input-add-on-ratio-screen-large;
+				.block-padding-vertical(@form-input-small-height * @form-input-small-ratio-screen-large, @form-input-add-on-small-text-line-height * @form-input-add-on-ratio-screen-large);
+				font-size: @form-input-add-on-small-text-font-size * @form-input-add-on-ratio-screen-large;
+				line-height: @form-input-add-on-small-text-line-height * @form-input-add-on-ratio-screen-large;
+				
+			}
+			
+			.add-on-group {
+				
+				height:  @form-input-small-height * @form-input-ratio-screen-large;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Form Actions                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.form-actions {
+		
+		padding: @form-actions-padding-vertical-screen-large @form-actions-padding-horizontal-screen-large;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Grid Sizing for Inputs                                                                               */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	//#grid > .input(@grid-column-width-screen-large, @grid-gutter-width-screen-large);
 	
 }
 
