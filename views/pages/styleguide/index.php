@@ -14,18 +14,93 @@
 					
 					<li>
 						
-						<a href="#grid">Grid system</a>
+						<a href="#grid">
+							
+							Grid system
+							
+						</a>
 						
 						<ul class="nav">
 							
-							<li><a href="#grid-options">Available options</a></li>
-							<li><a href="#grid-example-basic">Ex: Stacked-to-horizonal</a></li>
-							<li><a href="#grid-example-mixed">Ex: Mobile-desktop</a></li>
-							<li><a href="#grid-example-mixed-complete">Ex: Mobile, tablet, desktop</a></li>
-							<li><a href="#grid-offsetting">Offset columns</a></li>
-							<li><a href="#grid-nesting">Nested columns</a></li>
-							<li><a href="#grid-column-ordering">Column ordering</a></li>
-							<li><a href="#grid-less">LESS mixins and variables</a></li>
+							<li>
+								
+								<a href="#grid-options">
+									
+									Available options
+									
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="#grid-example-basic">
+									
+									Ex: Stacked-to-horizonal
+									
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="#grid-example-mixed">
+									
+									Ex: Mobile-desktop
+									
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="#grid-example-mixed-complete">
+									
+									Ex: Mobile, tablet, desktop
+									
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="#grid-offsetting">
+									
+									Offset columns
+									
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="#grid-nesting">
+									
+									Nested columns
+									
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="#grid-column-ordering">
+									
+									Column ordering
+									
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="#grid-less">
+									
+									LESS mixins and variables
+									
+								</a>
+								
+							</li>
 							
 						</ul>
 						
@@ -43,31 +118,51 @@
 							
 							<li>
 								
-								<a href="#typography-headings">Headings</a>
+								<a href="#typography-headings">
+									
+									Headings
+									
+								</a>
 								
 							</li>
 							
 							<li>
 								
-								<a href="#typography-body-copy">Body copy</a>
+								<a href="#typography-body-copy">
+									
+									Body copy
+									
+								</a>
 								
 							</li>
 							
 							<li>
 								
-								<a href="#typography-addresses">Addresses</a>
+								<a href="#typography-addresses">
+									
+									Addresses
+									
+								</a>
 								
 							</li>
 							
 							<li>
 								
-								<a href="#typography-blockquotes">Blockquotes</a>
+								<a href="#typography-blockquotes">
+									
+									Blockquotes
+									
+								</a>
 								
 							</li>
 							
 							<li>
 								
-								<a href="#typography-lists">Lists</a>
+								<a href="#typography-lists">
+									
+									Lists
+									
+								</a>
 								
 							</li>
 							
@@ -837,6 +932,376 @@
   &lt;div class="content-secondary"&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
+					
+				</section>
+				
+				<hr class="tall">
+						
+				<!-- ================================================== -->
+				<!-- ============== RESPONSIVE UTILITIES ============== -->
+				<!-- ================================================== -->
+				
+				<section id="#responsive-utilities">
+				
+					<h2>
+						
+						Responsive utilities
+						
+					</h2>
+					
+					<p class="lead">
+						
+						For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.
+						
+					</p>
+					
+					<p>
+						
+						Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation. <strong>Responsive utilities are currently only available for block and table toggling.</strong> Use with inline and table elements is currently not supported.
+						
+					</p>
+					
+					<h3 id="responsive-utilities-classes">
+						
+						Available classes
+						
+					</h2>
+					
+					<p>
+						
+						Use a single or combination of the available classes for toggling content across viewport breakpoints.
+						
+					</p>
+					
+					<div class="table-responsive">
+						
+						<table class="table table-bordered responsive-utilities">
+							
+							<thead>
+								
+								<tr>
+									
+									<th></th>
+									
+									<th>
+										
+										Mini devices
+										<small class="flush-bottom">Phones</small>
+										
+									</th>
+									
+									<th>
+										
+										Small devices
+										<small class="flush-bottom">Tablets</small>
+										
+									</th>
+									
+									<th>
+										
+										Medium devices
+										<small class="flush-bottom">Laptops</small>
+										
+									</th>
+									
+									<th>
+										
+										Large devices
+										<small class="flush-bottom">Desktops</small>
+										
+									</th>
+									
+								</tr>
+								
+							</thead>
+							
+							<tbody>
+								
+								<tr>
+								<th><code>.visible-xs</code></th>
+								<td class="is-visible">Visible</td>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-hidden">Hidden</td>
+								</tr>
+								<tr>
+								<th><code>.visible-sm</code></th>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-visible">Visible</td>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-hidden">Hidden</td>
+								</tr>
+								<tr>
+								<th><code>.visible-md</code></th>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-visible">Visible</td>
+								<td class="is-hidden">Hidden</td>
+								</tr>
+								<tr>
+								<th><code>.visible-lg</code></th>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-visible">Visible</td>
+								</tr>
+								
+							</tbody>
+							
+							<tbody>
+								
+								<tr>
+								<th><code>.hidden-xs</code></th>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-visible">Visible</td>
+								<td class="is-visible">Visible</td>
+								<td class="is-visible">Visible</td>
+								</tr>
+								<tr>
+								<th><code>.hidden-sm</code></th>
+								<td class="is-visible">Visible</td>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-visible">Visible</td>
+								<td class="is-visible">Visible</td>
+								</tr>
+								<tr>
+								<th><code>.hidden-md</code></th>
+								<td class="is-visible">Visible</td>
+								<td class="is-visible">Visible</td>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-visible">Visible</td>
+								</tr>
+								<tr>
+								<th><code>.hidden-lg</code></th>
+								<td class="is-visible">Visible</td>
+								<td class="is-visible">Visible</td>
+								<td class="is-visible">Visible</td>
+								<td class="is-hidden">Hidden</td>
+								</tr>
+								
+							</tbody>
+							
+						</table>
+						
+					</div>
+					
+					<hr>
+					
+					<h3 id="responsive-utilities-print">
+						
+						Print classes
+						
+					</h3>
+					
+					<p>
+						
+						Similar to the regular responsive classes, use these for toggling content for print.
+						
+					</p>
+					
+					<div class="table-responsive">
+						
+						<table class="table table-bordered responsive-utilities">
+							
+							<thead>
+								
+								<tr>
+								<th>Class</th>
+								<th>Browser</th>
+								<th>Print</th>
+								</tr>
+								
+							</thead>
+							
+							<tbody>
+								
+								<tr>
+								<th><code>.visible-print</code></th>
+								<td class="is-hidden">Hidden</td>
+								<td class="is-visible">Visible</td>
+								</tr>
+								<tr>
+								<th><code>.hidden-print</code></th>
+								<td class="is-visible">Visible</td>
+								<td class="is-hidden">Hidden</td>
+								</tr>
+								
+							</tbody>
+							
+						</table>
+						
+					</div>
+					
+					<hr>
+					
+					<h3 id="responsive-utilities-tests">
+						
+						Test cases
+						
+					</h3>
+					
+					<p>
+						
+						Resize your browser or load on different devices to test the responsive utility classes.
+						
+					</p>
+					
+					<h4>
+						
+						Visible on...
+						
+					</h4>
+					
+					<p>
+						
+						Green checkmarks indicate the element <strong>is visible</strong> in your current viewport.
+						
+					</p>
+					
+					<div class="row responsive-utilities-test visible-on">
+					
+						<div class="col-mini-6 col-small-3">
+							
+							<span class="hidden-mini">Extra small</span>
+							<span class="visible-mini">&#10004; Visible on x-small</span>
+							
+						</div>
+						
+						<div class="col-mini-6 col-small-3">
+							
+							<span class="hidden-small">Small</span>
+							<span class="visible-small">&#10004; Visible on small</span>
+							
+						</div>
+						
+						<div class="clearfix visible-mini"></div>
+							
+						<div class="col-mini-6 col-small-3">
+							
+							<span class="hidden-medium">Medium</span>
+							<span class="visible-medium">&#10004; Visible on medium</span>
+							
+						</div>
+							
+						<div class="col-mini-6 col-small-3">
+							
+							<span class="hidden-large">Large</span>
+							<span class="visible-large">&#10004; Visible on large</span>
+							
+						</div>
+						
+					</div>
+					
+					<div class="row responsive-utilities-test visible-on">
+						
+						<div class="col-mini-6 col-small-6">
+							
+							<span class="hidden-mini hidden-small">Extra small and small</span>
+							<span class="visible-mini visible-small">&#10004; Visible on x-small and small</span>
+							
+						</div>
+						
+						<div class="col-mini-6 col-small-6">
+							
+							<span class="hidden-medium hidden-large">Medium and large</span>
+							<span class="visible-medium visible-large">&#10004; Visible on medium and large</span>
+							
+						</div>
+						
+						<div class="clearfix visible-mini"></div>
+						
+						<div class="col-mini-6 col-small-6">
+							
+							<span class="hidden-mini hidden-medium">Extra small and medium</span>
+							<span class="visible-mini visible-medium">&#10004; Visible on x-small and medium</span>
+							
+						</div>
+						
+						<div class="col-mini-6 col-small-6">
+							
+							<span class="hidden-small hidden-large">Small and large</span>
+							<span class="visible-small visible-large">&#10004; Visible on small and large</span>
+							
+						</div>
+						
+						<div class="clearfix visible-mini"></div>
+						
+						<div class="col-mini-6 col-small-6">
+							
+							<span class="hidden-mini hidden-large">Extra small and large</span>
+							<span class="visible-mini visible-large">&#10004; Visible on x-small and large</span>
+							
+						</div>
+						
+						<div class="col-mini-6 col-small-6">
+							
+							<span class="hidden-small hidden-medium">Small and medium</span>
+							<span class="visible-small visible-medium">&#10004; Visible on small and medium</span>
+							
+						</div>
+						
+					</div>
+					
+					<h4>Hidden on...</h4>
+					
+					<p>
+						
+						Here, green checkmarks indicate the element <strong>is hidden</strong> in your current viewport.
+						
+					</p>
+					
+					<div class="row responsive-utilities-test hidden-on">
+						
+						<div class="col-mini-6 col-small-3">
+						<span class="visible-mini">Extra small</span>
+						<span class="hidden-mini">&#10004; Hidden on x-small</span>
+						</div>
+						<div class="col-mini-6 col-small-3">
+						<span class="visible-small">Small</span>
+						<span class="hidden-small">&#10004; Hidden on small</span>
+						</div>
+						<div class="clearfix visible-mini"></div>
+						<div class="col-mini-6 col-small-3">
+						<span class="visible-medium">Medium</span>
+						<span class="hidden-medium">&#10004; Hidden on medium</span>
+						</div>
+						<div class="col-mini-6 col-small-3">
+						<span class="visible-large">Large</span>
+						<span class="hidden-large">&#10004; Hidden on large</span>
+						</div>
+						
+					</div>
+					
+					<div class="row responsive-utilities-test hidden-on">
+						
+						<div class="col-mini-6 col-small-6">
+						<span class="visible-mini visible-small">Extra small and small</span>
+						<span class="hidden-mini hidden-small">&#10004; Hidden on x-small and small</span>
+						</div>
+						<div class="col-mini-6 col-small-6">
+						<span class="visible-medium visible-large">Medium and large</span>
+						<span class="hidden-medium hidden-large">&#10004; Hidden on medium and large</span>
+						</div>
+						<div class="clearfix visible-mini"></div>
+						<div class="col-mini-6 col-small-6">
+						<span class="visible-mini visible-medium">Extra small and medium</span>
+						<span class="hidden-mini hidden-medium">&#10004; Hidden on x-small and medium</span>
+						</div>
+						<div class="col-mini-6 col-small-6">
+						<span class="visible-small visible-large">Small and large</span>
+						<span class="hidden-small hidden-large">&#10004; Hidden on small and large</span>
+						</div>
+						<div class="clearfix visible-mini"></div>
+						<div class="col-mini-6 col-small-6">
+						<span class="visible-mini visible-large">Extra small and large</span>
+						<span class="hidden-mini hidden-large">&#10004; Hidden on x-small and large</span>
+						</div>
+						<div class="col-mini-6 col-small-6">
+						<span class="visible-small visible-medium">Small and medium</span>
+						<span class="hidden-small hidden-medium">&#10004; Hidden on small and medium</span>
+						</div>
+						
+					</div>
 					
 				</section>
 				
@@ -2245,7 +2710,11 @@
 				
 				<section id="#code">
 					
-					<h2>Code</h2>
+					<h2>
+						
+						Code
+						
+					</h2>
 					
 					<!-- ================================================== -->
 					<!-- ====================== INLINE ==================== -->
@@ -2322,7 +2791,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 				<!-- ===================== TABLES ===================== -->
 				<!-- ================================================== -->
 				
-				<section id="#tabled">
+				<section id="#tables">
 					
 					<h2>Tables</h2>
 					
@@ -4814,23 +5283,135 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 					<div class="code-example code-example-images flush-bottom">
 						
-						<img data-src="holder.js/140x140" class="img-rounded">
-						<img data-src="holder.js/140x140" class="img-circle">
-						<img data-src="holder.js/140x140" class="img-polaroid">
+						<div class="image-group flush-bottom">
+							
+							<img data-src="holder.js/140x140" class="image-rounded flush-bottom">
+							<img data-src="holder.js/140x140" class="image-circle flush-bottom">
+							<img data-src="holder.js/140x140" class="image-framed flush-bottom">
+							
+						</div>
 						
 					</div>
 					
-		<pre class="prettyprint linenums">
-		&lt;img src="..." class="img-rounded"&gt;
-		&lt;img src="..." class="img-circle"&gt;
-		&lt;img src="..." class="img-polaroid"&gt;
-		</pre>
+<pre class="prettyprint linenums">
+&lt;img src="..." class="image-rounded"&gt;
+&lt;img src="..." class="image-circle"&gt;
+&lt;img src="..." class="image-framed"&gt;
+</pre>
 					
-					<p class="flush-bottom">
+					<p>
 						
 						<span class="label label-info">Heads up!</span> <code>.img-rounded</code> and <code>.img-circle</code> do not work in IE7-8 due to lack of <code>border-radius</code> support.
 						
 					</p>
+					
+					<hr>
+					
+					<h3 id="images-groups">
+						
+						Image Groups
+						
+					</h3>
+					
+					<p>
+						
+						Group a series a images together using <code>.image-group</code>
+						
+					</p>
+					
+					<div class="code-example code-example-images flush-bottom">
+						
+						<div class="image-group flush-bottom">
+							
+							<a href="#">
+								
+								<img data-src="holder.js/140x140" class="image-framed">
+								
+							</a>
+							
+							<a href="#">
+								
+								<img data-src="holder.js/140x140" class="image-framed">
+								
+							</a>
+							
+							<a href="#">
+								
+								<img data-src="holder.js/140x140" class="image-framed">
+								
+							</a>
+							
+						</div>
+						
+					</div>
+					
+<pre class="prettyprint linenums">
+&lt;div class="image-group"&gt;
+  &lt;a href="#"&gt;
+    &lt;img src="..." class="image-framed"&gt;
+  &lt;/a&gt;
+  ...
+  &lt;a href="#"&gt;
+    &lt;img src="..." class="image-framed"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+</pre>
+					
+					<hr>
+					
+					<h3 id="responsive-images">
+						
+						Image Links
+						
+					</h3>
+					
+					<p>
+						
+						Wrap a stylized image in an anchor tag and conditional styling will be applied.
+						
+					</p>
+					
+					<div class="code-example code-example-images flush-bottom">
+						
+						<div class="image-group flush-bottom">
+							
+							<a href="#">
+								
+								<img data-src="holder.js/250x250" class="image-framed">
+								
+							</a>
+							
+						</div>
+						
+					</div>
+					
+<pre class="prettyprint linenums">
+&lt;img src="..." class="img-responsive" alt="Responsive image"&gt;
+</pre>
+					
+					<hr>
+					
+					<h3 id="responsive-images">
+						
+						Responsive images
+						
+					</h3>
+					
+					<p>
+						
+						Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.
+						
+					</p>
+					
+					<div class="code-example code-example-images flush-bottom">
+						
+						<img data-src="holder.js/1200x800" class="image-responsive flush-bottom">
+						
+					</div>
+					
+<pre class="prettyprint linenums flush-bottom">
+&lt;img src="..." class="img-responsive" alt="Responsive image"&gt;
+</pre>
 					
 				</section>
 				

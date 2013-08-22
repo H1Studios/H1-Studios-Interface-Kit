@@ -44,18 +44,93 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<li>
 \t\t\t\t\t\t
-\t\t\t\t\t\t<a href=\"#grid\">Grid system</a>
+\t\t\t\t\t\t<a href=\"#grid\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\tGrid system
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</a>
 \t\t\t\t\t\t
 \t\t\t\t\t\t<ul class=\"nav\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<li><a href=\"#grid-options\">Available options</a></li>
-\t\t\t\t\t\t\t<li><a href=\"#grid-example-basic\">Ex: Stacked-to-horizonal</a></li>
-\t\t\t\t\t\t\t<li><a href=\"#grid-example-mixed\">Ex: Mobile-desktop</a></li>
-\t\t\t\t\t\t\t<li><a href=\"#grid-example-mixed-complete\">Ex: Mobile, tablet, desktop</a></li>
-\t\t\t\t\t\t\t<li><a href=\"#grid-offsetting\">Offset columns</a></li>
-\t\t\t\t\t\t\t<li><a href=\"#grid-nesting\">Nested columns</a></li>
-\t\t\t\t\t\t\t<li><a href=\"#grid-column-ordering\">Column ordering</a></li>
-\t\t\t\t\t\t\t<li><a href=\"#grid-less\">LESS mixins and variables</a></li>
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a href=\"#grid-options\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tAvailable options
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a href=\"#grid-example-basic\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tEx: Stacked-to-horizonal
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a href=\"#grid-example-mixed\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tEx: Mobile-desktop
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a href=\"#grid-example-mixed-complete\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tEx: Mobile, tablet, desktop
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a href=\"#grid-offsetting\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tOffset columns
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a href=\"#grid-nesting\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tNested columns
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a href=\"#grid-column-ordering\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tColumn ordering
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<a href=\"#grid-less\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tLESS mixins and variables
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</ul>
 \t\t\t\t\t\t
@@ -73,31 +148,51 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<a href=\"#typography-headings\">Headings</a>
+\t\t\t\t\t\t\t\t<a href=\"#typography-headings\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tHeadings
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<a href=\"#typography-body-copy\">Body copy</a>
+\t\t\t\t\t\t\t\t<a href=\"#typography-body-copy\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tBody copy
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<a href=\"#typography-addresses\">Addresses</a>
+\t\t\t\t\t\t\t\t<a href=\"#typography-addresses\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tAddresses
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<a href=\"#typography-blockquotes\">Blockquotes</a>
+\t\t\t\t\t\t\t\t<a href=\"#typography-blockquotes\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tBlockquotes
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<a href=\"#typography-lists\">Lists</a>
+\t\t\t\t\t\t\t\t<a href=\"#typography-lists\">
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\tLists
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t
@@ -867,6 +962,376 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
   &lt;div class=\"content-secondary\"&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
+\t\t\t\t\t
+\t\t\t\t</section>
+\t\t\t\t
+\t\t\t\t<hr class=\"tall\">
+\t\t\t\t\t\t
+\t\t\t\t<!-- ================================================== -->
+\t\t\t\t<!-- ============== RESPONSIVE UTILITIES ============== -->
+\t\t\t\t<!-- ================================================== -->
+\t\t\t\t
+\t\t\t\t<section id=\"#responsive-utilities\">
+\t\t\t\t
+\t\t\t\t\t<h2>
+\t\t\t\t\t\t
+\t\t\t\t\t\tResponsive utilities
+\t\t\t\t\t\t
+\t\t\t\t\t</h2>
+\t\t\t\t\t
+\t\t\t\t\t<p class=\"lead\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tFor faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tTry to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation. <strong>Responsive utilities are currently only available for block and table toggling.</strong> Use with inline and table elements is currently not supported.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"responsive-utilities-classes\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tAvailable classes
+\t\t\t\t\t\t
+\t\t\t\t\t</h2>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tUse a single or combination of the available classes for toggling content across viewport breakpoints.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"table-responsive\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<table class=\"table table-bordered responsive-utilities\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<thead>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<th></th>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<th>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\tMini devices
+\t\t\t\t\t\t\t\t\t\t<small class=\"flush-bottom\">Phones</small>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</th>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<th>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\tSmall devices
+\t\t\t\t\t\t\t\t\t\t<small class=\"flush-bottom\">Tablets</small>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</th>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<th>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\tMedium devices
+\t\t\t\t\t\t\t\t\t\t<small class=\"flush-bottom\">Laptops</small>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</th>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t<th>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\tLarge devices
+\t\t\t\t\t\t\t\t\t\t<small class=\"flush-bottom\">Desktops</small>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t</th>
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</thead>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<tbody>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<th><code>.visible-xs</code></th>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<th><code>.visible-sm</code></th>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<th><code>.visible-md</code></th>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<th><code>.visible-lg</code></th>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</tbody>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<tbody>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<th><code>.hidden-xs</code></th>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<th><code>.hidden-sm</code></th>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<th><code>.hidden-md</code></th>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<th><code>.hidden-lg</code></th>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</tbody>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</table>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t\t<hr>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"responsive-utilities-print\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tPrint classes
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tSimilar to the regular responsive classes, use these for toggling content for print.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"table-responsive\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<table class=\"table table-bordered responsive-utilities\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<thead>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<th>Class</th>
+\t\t\t\t\t\t\t\t<th>Browser</th>
+\t\t\t\t\t\t\t\t<th>Print</th>
+\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</thead>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<tbody>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<th><code>.visible-print</code></th>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<th><code>.hidden-print</code></th>
+\t\t\t\t\t\t\t\t<td class=\"is-visible\">Visible</td>
+\t\t\t\t\t\t\t\t<td class=\"is-hidden\">Hidden</td>
+\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</tbody>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</table>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t\t<hr>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"responsive-utilities-tests\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tTest cases
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tResize your browser or load on different devices to test the responsive utility classes.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<h4>
+\t\t\t\t\t\t
+\t\t\t\t\t\tVisible on...
+\t\t\t\t\t\t
+\t\t\t\t\t</h4>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tGreen checkmarks indicate the element <strong>is visible</strong> in your current viewport.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"row responsive-utilities-test visible-on\">
+\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-3\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"hidden-mini\">Extra small</span>
+\t\t\t\t\t\t\t<span class=\"visible-mini\">&#10004; Visible on x-small</span>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-3\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"hidden-small\">Small</span>
+\t\t\t\t\t\t\t<span class=\"visible-small\">&#10004; Visible on small</span>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"clearfix visible-mini\"></div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-3\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"hidden-medium\">Medium</span>
+\t\t\t\t\t\t\t<span class=\"visible-medium\">&#10004; Visible on medium</span>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-3\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"hidden-large\">Large</span>
+\t\t\t\t\t\t\t<span class=\"visible-large\">&#10004; Visible on large</span>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"row responsive-utilities-test visible-on\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"hidden-mini hidden-small\">Extra small and small</span>
+\t\t\t\t\t\t\t<span class=\"visible-mini visible-small\">&#10004; Visible on x-small and small</span>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"hidden-medium hidden-large\">Medium and large</span>
+\t\t\t\t\t\t\t<span class=\"visible-medium visible-large\">&#10004; Visible on medium and large</span>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"clearfix visible-mini\"></div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"hidden-mini hidden-medium\">Extra small and medium</span>
+\t\t\t\t\t\t\t<span class=\"visible-mini visible-medium\">&#10004; Visible on x-small and medium</span>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"hidden-small hidden-large\">Small and large</span>
+\t\t\t\t\t\t\t<span class=\"visible-small visible-large\">&#10004; Visible on small and large</span>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"clearfix visible-mini\"></div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"hidden-mini hidden-large\">Extra small and large</span>
+\t\t\t\t\t\t\t<span class=\"visible-mini visible-large\">&#10004; Visible on x-small and large</span>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"hidden-small hidden-medium\">Small and medium</span>
+\t\t\t\t\t\t\t<span class=\"visible-small visible-medium\">&#10004; Visible on small and medium</span>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t\t<h4>Hidden on...</h4>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tHere, green checkmarks indicate the element <strong>is hidden</strong> in your current viewport.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"row responsive-utilities-test hidden-on\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-3\">
+\t\t\t\t\t\t<span class=\"visible-mini\">Extra small</span>
+\t\t\t\t\t\t<span class=\"hidden-mini\">&#10004; Hidden on x-small</span>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-3\">
+\t\t\t\t\t\t<span class=\"visible-small\">Small</span>
+\t\t\t\t\t\t<span class=\"hidden-small\">&#10004; Hidden on small</span>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"clearfix visible-mini\"></div>
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-3\">
+\t\t\t\t\t\t<span class=\"visible-medium\">Medium</span>
+\t\t\t\t\t\t<span class=\"hidden-medium\">&#10004; Hidden on medium</span>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-3\">
+\t\t\t\t\t\t<span class=\"visible-large\">Large</span>
+\t\t\t\t\t\t<span class=\"hidden-large\">&#10004; Hidden on large</span>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"row responsive-utilities-test hidden-on\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6\">
+\t\t\t\t\t\t<span class=\"visible-mini visible-small\">Extra small and small</span>
+\t\t\t\t\t\t<span class=\"hidden-mini hidden-small\">&#10004; Hidden on x-small and small</span>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6\">
+\t\t\t\t\t\t<span class=\"visible-medium visible-large\">Medium and large</span>
+\t\t\t\t\t\t<span class=\"hidden-medium hidden-large\">&#10004; Hidden on medium and large</span>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"clearfix visible-mini\"></div>
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6\">
+\t\t\t\t\t\t<span class=\"visible-mini visible-medium\">Extra small and medium</span>
+\t\t\t\t\t\t<span class=\"hidden-mini hidden-medium\">&#10004; Hidden on x-small and medium</span>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6\">
+\t\t\t\t\t\t<span class=\"visible-small visible-large\">Small and large</span>
+\t\t\t\t\t\t<span class=\"hidden-small hidden-large\">&#10004; Hidden on small and large</span>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"clearfix visible-mini\"></div>
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6\">
+\t\t\t\t\t\t<span class=\"visible-mini visible-large\">Extra small and large</span>
+\t\t\t\t\t\t<span class=\"hidden-mini hidden-large\">&#10004; Hidden on x-small and large</span>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6\">
+\t\t\t\t\t\t<span class=\"visible-small visible-medium\">Small and medium</span>
+\t\t\t\t\t\t<span class=\"hidden-small hidden-medium\">&#10004; Hidden on small and medium</span>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
 \t\t\t\t\t
 \t\t\t\t</section>
 \t\t\t\t
@@ -2275,7 +2740,11 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t
 \t\t\t\t<section id=\"#code\">
 \t\t\t\t\t
-\t\t\t\t\t<h2>Code</h2>
+\t\t\t\t\t<h2>
+\t\t\t\t\t\t
+\t\t\t\t\t\tCode
+\t\t\t\t\t\t
+\t\t\t\t\t</h2>
 \t\t\t\t\t
 \t\t\t\t\t<!-- ================================================== -->
 \t\t\t\t\t<!-- ====================== INLINE ==================== -->
@@ -2352,7 +2821,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t<!-- ===================== TABLES ===================== -->
 \t\t\t\t<!-- ================================================== -->
 \t\t\t\t
-\t\t\t\t<section id=\"#tabled\">
+\t\t\t\t<section id=\"#tables\">
 \t\t\t\t\t
 \t\t\t\t\t<h2>Tables</h2>
 \t\t\t\t\t
@@ -4844,23 +5313,135 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t\t<div class=\"code-example code-example-images flush-bottom\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<img data-src=\"holder.js/140x140\" class=\"img-rounded\">
-\t\t\t\t\t\t<img data-src=\"holder.js/140x140\" class=\"img-circle\">
-\t\t\t\t\t\t<img data-src=\"holder.js/140x140\" class=\"img-polaroid\">
+\t\t\t\t\t\t<div class=\"image-group flush-bottom\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<img data-src=\"holder.js/140x140\" class=\"image-rounded flush-bottom\">
+\t\t\t\t\t\t\t<img data-src=\"holder.js/140x140\" class=\"image-circle flush-bottom\">
+\t\t\t\t\t\t\t<img data-src=\"holder.js/140x140\" class=\"image-framed flush-bottom\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t</div>
 \t\t\t\t\t
-\t\t<pre class=\"prettyprint linenums\">
-\t\t&lt;img src=\"...\" class=\"img-rounded\"&gt;
-\t\t&lt;img src=\"...\" class=\"img-circle\"&gt;
-\t\t&lt;img src=\"...\" class=\"img-polaroid\"&gt;
-\t\t</pre>
+<pre class=\"prettyprint linenums\">
+&lt;img src=\"...\" class=\"image-rounded\"&gt;
+&lt;img src=\"...\" class=\"image-circle\"&gt;
+&lt;img src=\"...\" class=\"image-framed\"&gt;
+</pre>
 \t\t\t\t\t
-\t\t\t\t\t<p class=\"flush-bottom\">
+\t\t\t\t\t<p>
 \t\t\t\t\t\t
 \t\t\t\t\t\t<span class=\"label label-info\">Heads up!</span> <code>.img-rounded</code> and <code>.img-circle</code> do not work in IE7-8 due to lack of <code>border-radius</code> support.
 \t\t\t\t\t\t
 \t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<hr>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"images-groups\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tImage Groups
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tGroup a series a images together using <code>.image-group</code>
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"code-example code-example-images flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"image-group flush-bottom\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<a href=\"#\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<img data-src=\"holder.js/140x140\" class=\"image-framed\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<a href=\"#\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<img data-src=\"holder.js/140x140\" class=\"image-framed\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<a href=\"#\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<img data-src=\"holder.js/140x140\" class=\"image-framed\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;div class=\"image-group\"&gt;
+  &lt;a href=\"#\"&gt;
+    &lt;img src=\"...\" class=\"image-framed\"&gt;
+  &lt;/a&gt;
+  ...
+  &lt;a href=\"#\"&gt;
+    &lt;img src=\"...\" class=\"image-framed\"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<hr>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"responsive-images\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tImage Links
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tWrap a stylized image in an anchor tag and conditional styling will be applied.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"code-example code-example-images flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<div class=\"image-group flush-bottom\">
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<a href=\"#\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t<img data-src=\"holder.js/250x250\" class=\"image-framed\">
+\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums\">
+&lt;img src=\"...\" class=\"img-responsive\" alt=\"Responsive image\"&gt;
+</pre>
+\t\t\t\t\t
+\t\t\t\t\t<hr>
+\t\t\t\t\t
+\t\t\t\t\t<h3 id=\"responsive-images\">
+\t\t\t\t\t\t
+\t\t\t\t\t\tResponsive images
+\t\t\t\t\t\t
+\t\t\t\t\t</h3>
+\t\t\t\t\t
+\t\t\t\t\t<p>
+\t\t\t\t\t\t
+\t\t\t\t\t\tImages in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.
+\t\t\t\t\t\t
+\t\t\t\t\t</p>
+\t\t\t\t\t
+\t\t\t\t\t<div class=\"code-example code-example-images flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t\t<img data-src=\"holder.js/1200x800\" class=\"image-responsive flush-bottom\">
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+\t\t\t\t\t
+<pre class=\"prettyprint linenums flush-bottom\">
+&lt;img src=\"...\" class=\"img-responsive\" alt=\"Responsive image\"&gt;
+</pre>
 \t\t\t\t\t
 \t\t\t\t</section>
 \t\t\t\t

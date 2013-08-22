@@ -258,39 +258,21 @@
 /* ---------------------------------------------------------------------------------------------------- */
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Buttons                                                                                              */
+/* Media                                                                                                */
 /*                                                                                                      */
 /* ==================================================================================================== */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Default Button                                                                                       */
+/* Image                                                                                                */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Primary Button                                                                                       */
+/* Image Group                                                                                          */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Success Button                                                                                       */
+/* Rounded Image                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Warning Button                                                                                       */
+/* Framed Image                                                                                         */
 /* ---------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------- */
-/* Danger Button                                                                                        */
-/* ---------------------------------------------------------------------------------------------------- */
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Labels & Badges                                                                                      */
-/*                                                                                                      */
-/* ==================================================================================================== */
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Tooltips                                                                                             */
-/*                                                                                                      */
-/* ==================================================================================================== */
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Pagination                                                                                           */
-/*                                                                                                      */
-/* ==================================================================================================== */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
@@ -465,6 +447,18 @@ input[type="search"]::-webkit-search-cancel-button {
 textarea {
   overflow: auto;
   vertical-align: top;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
 }
 /*
 
@@ -1498,7 +1492,7 @@ hr + .h6-clone {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -1521,15 +1515,13 @@ hr + .h6-clone {
   margin-left: auto;
   padding-left: 20px;
   padding-right: 20px;
+  *zoom: 1;
 }
 .container:before,
 .container:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 .container:after {
   clear: both;
@@ -1537,15 +1529,13 @@ hr + .h6-clone {
 .row {
   margin-left: -20px;
   margin-right: -20px;
+  *zoom: 1;
 }
 .row:before,
 .row:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 .row:after {
   clear: both;
@@ -1669,15 +1659,13 @@ hr + .h6-clone {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    *zoom: 1;
   }
   .container:before,
   .container:after {
-    content: " ";
-    /* 1 */
-  
     display: table;
-    /* 2 */
-  
+    content: "";
+    line-height: 0;
   }
   .container:after {
     clear: both;
@@ -1685,15 +1673,13 @@ hr + .h6-clone {
   .row {
     margin-left: -15px;
     margin-right: -15px;
+    *zoom: 1;
   }
   .row:before,
   .row:after {
-    content: " ";
-    /* 1 */
-  
     display: table;
-    /* 2 */
-  
+    content: "";
+    line-height: 0;
   }
   .row:after {
     clear: both;
@@ -1910,15 +1896,13 @@ hr + .h6-clone {
     margin-left: auto;
     padding-left: 20px;
     padding-right: 20px;
+    *zoom: 1;
   }
   .container:before,
   .container:after {
-    content: " ";
-    /* 1 */
-  
     display: table;
-    /* 2 */
-  
+    content: "";
+    line-height: 0;
   }
   .container:after {
     clear: both;
@@ -1926,15 +1910,13 @@ hr + .h6-clone {
   .row {
     margin-left: -20px;
     margin-right: -20px;
+    *zoom: 1;
   }
   .row:before,
   .row:after {
-    content: " ";
-    /* 1 */
-  
     display: table;
-    /* 2 */
-  
+    content: "";
+    line-height: 0;
   }
   .row:after {
     clear: both;
@@ -2160,15 +2142,13 @@ hr + .h6-clone {
     margin-left: auto;
     padding-left: 30px;
     padding-right: 30px;
+    *zoom: 1;
   }
   .container:before,
   .container:after {
-    content: " ";
-    /* 1 */
-  
     display: table;
-    /* 2 */
-  
+    content: "";
+    line-height: 0;
   }
   .container:after {
     clear: both;
@@ -2176,15 +2156,13 @@ hr + .h6-clone {
   .row {
     margin-left: -30px;
     margin-right: -30px;
+    *zoom: 1;
   }
   .row:before,
   .row:after {
-    content: " ";
-    /* 1 */
-  
     display: table;
-    /* 2 */
-  
+    content: "";
+    line-height: 0;
   }
   .row:after {
     clear: both;
@@ -2766,6 +2744,7 @@ p .lead.inverse.muted a:active {
 /* Small Text                                                                                           */
 /*                                                                                                      */
 /* ==================================================================================================== */
+small,
 p.small,
 p small,
 p .small {
@@ -2784,40 +2763,48 @@ p .small {
   /* ---------------------------------------------------------------------------------------------------- */
 
 }
+small.tall,
 p.small.tall,
 p small.tall,
 p .small.tall {
   margin-bottom: 30px;
 }
+small.short,
 p.small.short,
 p small.short,
 p .small.short {
   margin-bottom: 7.5px;
 }
+small a,
 p.small a,
 p small a,
 p .small a {
   color: #35c5af;
   text-decoration: none;
 }
+small a:hover,
 p.small a:hover,
 p small a:hover,
 p .small a:hover {
   color: #207669;
   text-decoration: none;
 }
+small a:active,
 p.small a:active,
 p small a:active,
 p .small a:active {
   color: #0b2723;
   text-decoration: none;
 }
+small.emphasis,
 p.small.emphasis,
 p small.emphasis,
 p .small.emphasis,
+small .emphasis,
 p.small .emphasis,
 p small .emphasis,
 p .small .emphasis,
+small strong,
 p.small strong,
 p small strong,
 p .small strong {
@@ -2825,42 +2812,52 @@ p .small strong {
   color: #bbbbbb;
   font-style: normal;
 }
+small.emphasis a,
 p.small.emphasis a,
 p small.emphasis a,
 p .small.emphasis a,
+small .emphasis a,
 p.small .emphasis a,
 p small .emphasis a,
 p .small .emphasis a,
+small strong a,
 p.small strong a,
 p small strong a,
 p .small strong a {
   color: #35c5af;
   text-decoration: none;
 }
+small.emphasis a:hover,
 p.small.emphasis a:hover,
 p small.emphasis a:hover,
 p .small.emphasis a:hover,
+small .emphasis a:hover,
 p.small .emphasis a:hover,
 p small .emphasis a:hover,
 p .small .emphasis a:hover,
+small strong a:hover,
 p.small strong a:hover,
 p small strong a:hover,
 p .small strong a:hover {
   color: #207669;
   text-decoration: none;
 }
+small.emphasis a:active,
 p.small.emphasis a:active,
 p small.emphasis a:active,
 p .small.emphasis a:active,
+small .emphasis a:active,
 p.small .emphasis a:active,
 p small .emphasis a:active,
 p .small .emphasis a:active,
+small strong a:active,
 p.small strong a:active,
 p small strong a:active,
 p .small strong a:active {
   color: #0b2723;
   text-decoration: none;
 }
+small.muted,
 p.small.muted,
 p small.muted,
 p .small.muted {
@@ -2868,103 +2865,126 @@ p .small.muted {
   color: #bbbbbb;
   font-style: normal;
 }
+small.muted a,
 p.small.muted a,
 p small.muted a,
 p .small.muted a {
   color: #35c5af;
   text-decoration: none;
 }
+small.muted a:hover,
 p.small.muted a:hover,
 p small.muted a:hover,
 p .small.muted a:hover {
   color: #207669;
   text-decoration: none;
 }
+small.muted a:active,
 p.small.muted a:active,
 p small.muted a:active,
 p .small.muted a:active {
   color: #0b2723;
   text-decoration: none;
 }
+small.inverse,
 p.small.inverse,
 p small.inverse,
 p .small.inverse {
   color: #ffffff;
 }
+small.inverse a,
 p.small.inverse a,
 p small.inverse a,
 p .small.inverse a {
   color: #35c5af;
 }
+small.inverse a:hover,
 p.small.inverse a:hover,
 p small.inverse a:hover,
 p .small.inverse a:hover {
   color: #207669;
 }
+small.inverse a:active,
 p.small.inverse a:active,
 p small.inverse a:active,
 p .small.inverse a:active {
   color: #0b2723;
 }
+small.inverse.emphasis,
 p.small.inverse.emphasis,
 p small.inverse.emphasis,
 p .small.inverse.emphasis,
+small.inverse .emphasis,
 p.small.inverse .emphasis,
 p small.inverse .emphasis,
 p .small.inverse .emphasis,
+small.inverse strong,
 p.small.inverse strong,
 p small.inverse strong,
 p .small.inverse strong {
   color: #bbbbbb;
 }
+small.inverse.emphasis a,
 p.small.inverse.emphasis a,
 p small.inverse.emphasis a,
 p .small.inverse.emphasis a,
+small.inverse .emphasis a,
 p.small.inverse .emphasis a,
 p small.inverse .emphasis a,
 p .small.inverse .emphasis a,
+small.inverse strong a,
 p.small.inverse strong a,
 p small.inverse strong a,
 p .small.inverse strong a {
   color: #35c5af;
 }
+small.inverse.emphasis a:hover,
 p.small.inverse.emphasis a:hover,
 p small.inverse.emphasis a:hover,
 p .small.inverse.emphasis a:hover,
+small.inverse .emphasis a:hover,
 p.small.inverse .emphasis a:hover,
 p small.inverse .emphasis a:hover,
 p .small.inverse .emphasis a:hover,
+small.inverse strong a:hover,
 p.small.inverse strong a:hover,
 p small.inverse strong a:hover,
 p .small.inverse strong a:hover {
   color: #207669;
 }
+small.inverse.emphasis a:active,
 p.small.inverse.emphasis a:active,
 p small.inverse.emphasis a:active,
 p .small.inverse.emphasis a:active,
+small.inverse .emphasis a:active,
 p.small.inverse .emphasis a:active,
 p small.inverse .emphasis a:active,
 p .small.inverse .emphasis a:active,
+small.inverse strong a:active,
 p.small.inverse strong a:active,
 p small.inverse strong a:active,
 p .small.inverse strong a:active {
   color: #0b2723;
 }
+small.inverse.muted,
 p.small.inverse.muted,
 p small.inverse.muted,
 p .small.inverse.muted {
   color: #bbbbbb;
 }
+small.inverse.muted a,
 p.small.inverse.muted a,
 p small.inverse.muted a,
 p .small.inverse.muted a {
   color: #35c5af;
 }
+small.inverse.muted a:hover,
 p.small.inverse.muted a:hover,
 p small.inverse.muted a:hover,
 p .small.inverse.muted a:hover {
   color: #207669;
 }
+small.inverse.muted a:active,
 p.small.inverse.muted a:active,
 p small.inverse.muted a:active,
 p .small.inverse.muted a:active {
@@ -3541,7 +3561,7 @@ h4,
   line-height: 26px;
   text-transform: normal;
   font-style: normal;
-  color: #f38339;
+  color: #2f2f2f;
   margin: 40px 0px 20px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
 
@@ -3708,7 +3728,7 @@ h5,
   line-height: 26px;
   text-transform: normal;
   font-style: normal;
-  color: #262626;
+  color: #5e5e5e;
   margin: 30px 0px 15px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
 
@@ -4134,14 +4154,14 @@ dl dd {
 dl dd + dt {
   margin-top: 15px;
 }
+dl.dl-horizontal {
+  *zoom: 1;
+}
 dl.dl-horizontal:before,
 dl.dl-horizontal:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 dl.dl-horizontal:after {
   clear: both;
@@ -4307,6 +4327,7 @@ blockquote:after {
   /* Small Text                                                                                           */
   /*                                                                                                      */
   /* ==================================================================================================== */
+  small,
   p.small,
   p small,
   p .small {
@@ -4314,11 +4335,13 @@ blockquote:after {
     line-height: 16px;
     margin: 0px 0px 15px 0px;
   }
+  small.tall,
   p.small.tall,
   p small.tall,
   p .small.tall {
     margin-bottom: 30px;
   }
+  small.short,
   p.small.short,
   p small.short,
   p .small.short {
@@ -4609,6 +4632,7 @@ blockquote:after {
   /* Small Text                                                                                           */
   /*                                                                                                      */
   /* ==================================================================================================== */
+  small,
   p.small,
   p small,
   p .small {
@@ -4616,11 +4640,13 @@ blockquote:after {
     line-height: 17.6px;
     margin: 0px 0px 16.5px 0px;
   }
+  small.tall,
   p.small.tall,
   p small.tall,
   p .small.tall {
     margin-bottom: 33px;
   }
+  small.short,
   p.small.short,
   p small.short,
   p .small.short {
@@ -4911,6 +4937,7 @@ blockquote:after {
   /* Small Text                                                                                           */
   /*                                                                                                      */
   /* ==================================================================================================== */
+  small,
   p.small,
   p small,
   p .small {
@@ -4918,11 +4945,13 @@ blockquote:after {
     line-height: 19.2px;
     margin: 0px 0px 18px 0px;
   }
+  small.tall,
   p.small.tall,
   p small.tall,
   p .small.tall {
     margin-bottom: 36px;
   }
+  small.short,
   p.small.short,
   p small.short,
   p .small.short {
@@ -5166,7 +5195,7 @@ blockquote:after {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -5226,7 +5255,7 @@ blockquote:after {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -5269,7 +5298,7 @@ blockquote:after {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -5864,7 +5893,7 @@ table th[class*="span"],
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -7487,7 +7516,7 @@ input[type="submit"].button.button-mini {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -8129,6 +8158,7 @@ input[type="submit"].button.button-mini {
   margin-left: -5px;
   margin-bottom: 15px;
   display: block;
+  *zoom: 1;
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Button                                                                                               */
@@ -8144,12 +8174,9 @@ input[type="submit"].button.button-mini {
 }
 .button-toolbar:before,
 .button-toolbar:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 .button-toolbar:after {
   clear: both;
@@ -9737,7 +9764,7 @@ input[type="submit"].button.button-mini {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -9759,17 +9786,15 @@ input[type="submit"].button.button-mini {
 .dropdown.anchor {
   margin: 0px;
   display: block;
+  *zoom: 1;
 }
 .dropup.anchor:before,
 .dropdown.anchor:before,
 .dropup.anchor:after,
 .dropdown.anchor:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 .dropup.anchor:after,
 .dropdown.anchor:after {
@@ -10185,15 +10210,13 @@ input[type="submit"].button.button-mini {
   display: block;
   float: left;
   position: inherit;
+  *zoom: 1;
 }
 .dropdown-menu.anchor:before,
 .dropdown-menu.anchor:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 .dropdown-menu.anchor:after {
   clear: both;
@@ -11590,7 +11613,7 @@ input[type="submit"].button.button-mini {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -11608,15 +11631,13 @@ input[type="submit"].button.button-mini {
 /* ==================================================================================================== */
 form {
   margin: 0px 0px 30px 0px;
+  *zoom: 1;
 }
 form:before,
 form:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 form:after {
   clear: both;
@@ -11653,7 +11674,7 @@ legend {
   line-height: 26px;
   text-transform: normal;
   font-style: normal;
-  color: #f38339;
+  color: #2f2f2f;
   margin: 40px 0px 20px 0px;
   padding: 0px 0px 10px 0px;
 }
@@ -16610,7 +16631,6 @@ select {
   *display: inline;
   /* IE7 inline-block hack */
 
-  *zoom: 1;
   *margin-left: .3em;
   text-rendering: optimizelegibility;
   text-align: left;
@@ -16635,6 +16655,7 @@ select {
   color: #838383;
   -webkit-box-shadow: none;
   box-shadow: none;
+  *zoom: 1;
   border: 1px solid #bbbbbb;
   background: #ffffff;
   /* ---------------------------------------------------------------------------------------------------- */
@@ -16655,12 +16676,9 @@ select:first-child {
 }
 select:before,
 select:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 select:after {
   clear: both;
@@ -16726,6 +16744,7 @@ select[size] {
   display: block;
   width: 100%;
   position: relative;
+  *zoom: 1;
   margin-bottom: 15px;
   /* ---------------------------------------------------------------------------------------------------- */
 
@@ -16742,12 +16761,9 @@ select[size] {
 }
 .select-wrapper:before,
 .select-wrapper:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 .select-wrapper:after {
   clear: both;
@@ -16822,15 +16838,13 @@ select[size] {
   margin: 0px;
   -webkit-box-shadow: none;
   box-shadow: none;
+  *zoom: 1;
 }
 .select-wrapper select:before,
 .select-wrapper select:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 .select-wrapper select:after {
   clear: both;
@@ -16931,6 +16945,7 @@ select[size] {
 .input-group {
   position: relative;
   margin-bottom: 15px;
+  *zoom: 1;
   /* ---------------------------------------------------------------------------------------------------- */
 
   /* Input Group Add-On                                                                                   */
@@ -16964,12 +16979,9 @@ select[size] {
 }
 .input-group:before,
 .input-group:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 .input-group:after {
   clear: both;
@@ -20082,6 +20094,7 @@ select[size] {
 /*                                                                                                      */
 /* ==================================================================================================== */
 .form-actions {
+  *zoom: 1;
   padding: 15px 15px;
   background-color: #f9f9f9;
   -webkit-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
@@ -20089,12 +20102,9 @@ select[size] {
 }
 .form-actions:before,
 .form-actions:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 .form-actions:after {
   clear: both;
@@ -20116,14 +20126,14 @@ textarea[class*="span"],
   margin-left: 0;
   display: block;
 }
+.controls {
+  *zoom: 1;
+}
 .controls:before,
 .controls:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 .controls:after {
   clear: both;
@@ -21926,7 +21936,7 @@ textarea[class*="span"],
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -22287,7 +22297,485 @@ form.code-example .pagination {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/media.less                                                                                */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Image                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
+img {
+  margin-bottom: 15px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Rounded Images                                                                                       */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Circle Images                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Framed Images                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+img.image-responsive {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+}
+img.short {
+  margin-bottom: 7.5px;
+}
+img.tall {
+  margin-bottom: 22.5px;
+}
+img.image-rounded {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+img.image-circle {
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  border-radius: 1000px;
+}
+img.image-framed {
+  padding: 5px;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-width: 0px;
+  border-color: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.075), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.075), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* Image Link                                                                                           */
+/* ---------------------------------------------------------------------------------------------------- */
+a:hover img {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Framed Images                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+a:hover img.image-framed {
+  padding: 5px;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-width: 0px;
+  border-color: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 102, 204, 0.25), 0px 1px 3px 0px rgba(0, 102, 204, 0.5), 0px 4px 10px 0px rgba(0, 102, 204, 0.25);
+  box-shadow: 0px 0px 0px 1px rgba(0, 102, 204, 0.25), 0px 1px 3px 0px rgba(0, 102, 204, 0.5), 0px 4px 10px 0px rgba(0, 102, 204, 0.25);
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+a:active img {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Framed Images                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+a:active img.image-framed {
+  padding: 5px;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-width: 0px;
+  border-color: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 102, 204, 0.25), 0px 1px 3px 0px rgba(0, 102, 204, 0.5);
+  box-shadow: 0px 0px 0px 1px rgba(0, 102, 204, 0.25), 0px 1px 3px 0px rgba(0, 102, 204, 0.5);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Image Group                                                                                          */
+/*                                                                                                      */
+/* ==================================================================================================== */
+.image-group {
+  direction: block;
+  margin-top: -5px;
+  margin-left: -5px;
+  margin-bottom: 15px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Image Link                                                                                           */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.image-group.short {
+  margin-bottom: 7.5px;
+}
+.image-group.tall {
+  margin-bottom: 22.5px;
+}
+.image-group img {
+  vertical-align: top;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.image-group a img {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Framed Images                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.image-group a img.image-framed {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.image-group a:hover img {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Framed Images                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.image-group a:hover img.image-framed {
+  margin-top: 1px;
+  margin-bottom: 4px;
+}
+.image-group a:active img {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Framed Images                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.image-group a:active img.image-framed {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 768px) {
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Image                                                                                                */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  img {
+    margin-bottom: 20px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  img.short {
+    margin-bottom: 10px;
+  }
+  img.tall {
+    margin-bottom: 30px;
+  }
+  img.image-framed {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Image Group                                                                                          */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  .image-group {
+    margin-top: -5px;
+    margin-left: -5px;
+    margin-bottom: 20px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Image Link                                                                                           */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  .image-group.short {
+    margin-bottom: 10px;
+  }
+  .image-group.tall {
+    margin-bottom: 30px;
+  }
+  .image-group img {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .image-group a img {
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  .image-group a img.image-framed {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  .image-group a:hover img {
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  .image-group a:hover img.image-framed {
+    margin-top: 1px;
+    margin-bottom: 4px;
+  }
+  .image-group a:active img {
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  .image-group a:active img.image-framed {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 992px) {
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Image                                                                                                */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  img {
+    margin-bottom: 30px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  img.short {
+    margin-bottom: 15px;
+  }
+  img.tall {
+    margin-bottom: 45px;
+  }
+  img.image-framed {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Image Group                                                                                          */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  .image-group {
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-bottom: 30px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Image Link                                                                                           */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  .image-group.short {
+    margin-bottom: 15px;
+  }
+  .image-group.tall {
+    margin-bottom: 45px;
+  }
+  .image-group img {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .image-group a img {
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  .image-group a img.image-framed {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .image-group a:hover img {
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  .image-group a:hover img.image-framed {
+    margin-top: 6px;
+    margin-bottom: 4px;
+  }
+  .image-group a:active img {
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  .image-group a:active img.image-framed {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 1200px) {
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Image                                                                                                */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  img {
+    margin-bottom: 40px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  img.short {
+    margin-bottom: 20px;
+  }
+  img.tall {
+    margin-bottom: 60px;
+  }
+  img.image-framed {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Image Group                                                                                          */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  .image-group {
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-bottom: 40px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Image Link                                                                                           */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  .image-group.short {
+    margin-bottom: 20px;
+  }
+  .image-group.tall {
+    margin-bottom: 60px;
+  }
+  .image-group img {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .image-group a img {
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  .image-group a img.image-framed {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  .image-group a:hover img {
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  .image-group a:hover img.image-framed {
+    margin-top: 11px;
+    margin-bottom: 4px;
+  }
+  .image-group a:active img {
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  .image-group a:active img.image-framed {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -22342,7 +22830,7 @@ form.code-example .pagination {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -22381,7 +22869,7 @@ form.code-example .pagination {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -22403,17 +22891,15 @@ header {
 #header .header-toolbar,
 header .header-toolbar {
   padding: 20px;
+  *zoom: 1;
 }
 #header .header-toolbar:before,
 header .header-toolbar:before,
 #header .header-toolbar:after,
 header .header-toolbar:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 #header .header-toolbar:after,
 header .header-toolbar:after {
@@ -22459,6 +22945,7 @@ header .header-toolbar #nav,
 #header .header-toolbar nav,
 header .header-toolbar nav {
   float: right;
+  *zoom: 1;
 }
 #header .header-toolbar #nav:before,
 header .header-toolbar #nav:before,
@@ -22468,12 +22955,9 @@ header .header-toolbar nav:before,
 header .header-toolbar #nav:after,
 #header .header-toolbar nav:after,
 header .header-toolbar nav:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 #header .header-toolbar #nav:after,
 header .header-toolbar #nav:after,
@@ -22631,7 +23115,7 @@ header .header-content .header-subtitle {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -22717,7 +23201,7 @@ header .header-content .header-subtitle {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -22730,18 +23214,20 @@ header .header-content .header-subtitle {
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#stage.styleguide {
+  /* Utility classes table  */
+
+}
 #stage.styleguide .colorscale {
   position: relative;
   height: 50px;
+  *zoom: 1;
 }
 #stage.styleguide .colorscale:before,
 #stage.styleguide .colorscale:after {
-  content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
+  content: "";
+  line-height: 0;
 }
 #stage.styleguide .colorscale:after {
   clear: both;
@@ -23469,6 +23955,61 @@ header .header-content .header-subtitle {
   font-size: 11px;
   line-height: 16px;
 }
+#stage.styleguide .bs-table th small,
+#stage.styleguide .responsive-utilities th small {
+  display: block;
+}
+#stage.styleguide .responsive-utilities tbody th {
+  font-weight: normal;
+}
+#stage.styleguide .responsive-utilities td {
+  text-align: center;
+}
+#stage.styleguide .responsive-utilities td.is-visible {
+  color: #70af2f;
+  background-color: #f0f8e7 !important;
+}
+#stage.styleguide .responsive-utilities td.is-hidden {
+  color: #dddddd;
+  background-color: #fcfcfc !important;
+}
+#stage.styleguide .responsive-utilities-test {
+  margin-top: 5px;
+}
+#stage.styleguide .responsive-utilities-test .col-mini-6 {
+  margin-bottom: 10px;
+}
+#stage.styleguide .responsive-utilities-test span {
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+  border-radius: 4px;
+}
+#stage.styleguide .visible-on .col-mini-6 .hidden-mini,
+#stage.styleguide .visible-on .col-mini-6 .hidden-small,
+#stage.styleguide .visible-on .col-mini-6 .hidden-medium,
+#stage.styleguide .visible-on .col-mini-6 .hidden-large,
+#stage.styleguide .hidden-on .col-mini-6 .visible-mini,
+#stage.styleguide .hidden-on .col-mini-6 .visible-small,
+#stage.styleguide .hidden-on .col-mini-6 .visible-medium,
+#stage.styleguide .hidden-on .col-mini-6 .visible-large {
+  color: #bbbbbb;
+  border: 1px solid #efefef;
+}
+#stage.styleguide .visible-on .col-mini-6 .visible-mini,
+#stage.styleguide .visible-on .col-mini-6 .visible-small,
+#stage.styleguide .visible-on .col-mini-6 .visible-medium,
+#stage.styleguide .visible-on .col-mini-6 .visible-large,
+#stage.styleguide .hidden-on .col-mini-6 .hidden-mini,
+#stage.styleguide .hidden-on .col-mini-6 .hidden-small,
+#stage.styleguide .hidden-on .col-mini-6 .hidden-medium,
+#stage.styleguide .hidden-on .col-mini-6 .hidden-large {
+  color: #70af2f;
+  background-color: #f0f8e7;
+  border: 1px solid #b7e08d;
+}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Screen Size: Small (@screen-small) and above                                                         */
@@ -23519,7 +24060,7 @@ header .header-content .header-subtitle {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -23562,7 +24103,7 @@ header .header-content .header-subtitle {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {

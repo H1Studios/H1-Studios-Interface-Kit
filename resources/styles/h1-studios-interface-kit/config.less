@@ -926,7 +926,7 @@
 @heading-h4-text-font-style:												normal;
 @heading-h4-text-line-height:												26px;
 @heading-h4-text-transform:													normal;
-@heading-h4-text-color:														@orange;
+@heading-h4-text-color:														@gray-darken-75;
 
 // Margins
 
@@ -1000,7 +1000,7 @@
 @heading-h5-text-font-style:												normal;
 @heading-h5-text-line-height:												26px;
 @heading-h5-text-transform:													normal;
-@heading-h5-text-color:														@gray-darken-80;
+@heading-h5-text-color:														@gray-darken-50;
 
 // Margins
 
@@ -3032,517 +3032,104 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Buttons                                                                                              */
+/* Media                                                                                                */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-
-// Button Sizes
-
-@buttonHeight:													40px;
-@buttonHeightLarge:												52px;
-@buttonHeightSmall:												26px;
-@buttonHeightMini:												20px;
-
-// Button Groups
-
-@buttonGroupHorizontalPadding:									6px;
-
-// Universal Button Attritubes
-
-@buttonBorderRadius:											4px;
-@buttonHorizontalPadding:										15px;
-@buttonTextFontFamily:											@font-family-primary;
-@buttonTextFontSize:											16px;
-@buttonTextFontWeight:											500;
-@buttonTextFontStyle:											normal;
-@buttonTextLineHeight:											24px;
-@buttonTextTransform:											normal;
-
-// Large Button Attributes
-
-@buttonBorderRadiusLarge:										6px;
-@buttonHorizontalPaddingLarge:									@buttonHorizontalPadding * 2.0;
-@buttonTextFontSizeLarge:										22px;
-@buttonTextFontWeightLarge:										400;
-@buttonTextLineHeightLarge:										24px;
-
-// Small Button Attributes
-
-@buttonBorderRadiusSmall:										3px;
-@buttonHorizontalPaddingSmall:									@buttonHorizontalPadding;
-@buttonTextFontSizeSmall:										12px;
-@buttonTextFontWeightSmall:										700;
-@buttonTextLineHeightSmall:										17px;
-
-// Mini Button Attributes
-
-@buttonBorderRadiusMini:										3px;
-@buttonHorizontalPaddingMini:									@buttonHorizontalPadding * 0.5;
-@buttonTextFontSizeMini:										11px;
-@buttonTextFontWeightMini:										700;
-@buttonTextLineHeightMini:										15px;
-
 /* ---------------------------------------------------------------------------------------------------- */
-/* Default Button                                                                                       */
+/* Image                                                                                                */
 /* ---------------------------------------------------------------------------------------------------- */
 
-@buttonTextColor:												@gray-darken-30;
-@buttonTextShadow:												0 1px 1px rgba(255, 255, 255, 0.75);
-@buttonBackgroundColor:											@gray-lighten-80;
-@buttonBackgroundGradientColorTop:								@gray-lighten-90;
-@buttonBackgroundGradientColorBottom:							@gray-lighten-70;
-@buttonShadow:													inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
-																0px 0px 0px 1px rgba(0, 0, 0, 0.15),
-																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-@buttonMarginTop:												0px;
-@buttonMarginBottom:											0px;
+@image-margin:																@primary-margin * 0.5;
+@image-margin-screen-small:													@primary-margin-screen-small * 0.5;
+@image-margin-screen-medium:												@primary-margin-screen-medium * 0.5;
+@image-margin-screen-large:													@primary-margin-screen-large * 0.5;
 
-@buttonHoverTextColor:											@gray-darken-30;
-@buttonHoverTextShadow:											0 1px 1px rgba(255, 255, 255, 0.75);
-@buttonHoverBackgroundColor:									@gray-lighten-70;
-@buttonHoverBackgroundGradientColorTop:							@gray-lighten-90;
-@buttonHoverBackgroundGradientColorBottom:						@gray-lighten-50;
-@buttonHoverShadow:												inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
-																0px 0px 0px 1px rgba(0, 0, 0, 0.25),
-																0px 1px 5px 0px rgba(0, 0, 0, 0.2);
-@buttonHoverMarginTop:											0px;
-@buttonHoverMarginBottom:										0px;
+@image-margin-short:														@primary-margin-short * 0.5;
+@image-margin-short-screen-small:											@primary-margin-short-screen-small * 0.5;
+@image-margin-short-screen-medium:											@primary-margin-short-screen-medium * 0.5;
+@image-margin-short-screen-large:											@primary-margin-short-screen-large * 0.5;
 
-@buttonActiveTextColor:											@gray-darken-10;
-@buttonActiveTextShadow:										none;
-@buttonActiveBackgroundColor:									@gray-lighten-70;
-@buttonActiveBackgroundGradientColorTop:						@gray-lighten-60;
-@buttonActiveBackgroundGradientColorBottom:						@gray-lighten-90;
-@buttonActiveShadow:											inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px rgba(0, 0, 0, 0.3),
-																0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-@buttonActiveMarginTop:											0px;
-@buttonActiveMarginBottom:										0px;
-
-@buttonDisabledTextColor:										@gray-darken-30;
-@buttonDisabledTextShadow:										0 1px 1px rgba(255, 255, 255, 0.75);
-@buttonDisabledBackgroundColor:									@gray-lighten-80;
-@buttonDisabledBackgroundGradientColorTop:						@gray-lighten-90;
-@buttonDisabledBackgroundGradientColorBottom:					@gray-lighten-70;
-@buttonDisabledShadow:											inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
-																0px 0px 0px 1px rgba(0, 0, 0, 0.15),
-																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-@buttonDisabledMarginTop:										0px;
-@buttonDisabledMarginBottom:									0px;
-@buttonDisabledOpacity:											50;
-
-// Default Button (Inverse)
-
-@buttonInverseTextColor:										@gray-lighten-60;
-@buttonInverseTextShadow:										0 -1px 1px rgba(0, 0, 0, 0.75);
-@buttonInverseBackgroundColor:									@gray-darken-80;
-@buttonInverseBackgroundGradientColorTop:						@gray-darken-70;
-@buttonInverseBackgroundGradientColorBottom:					@gray-darken-90;
-@buttonInverseShadow:											inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15),
-																0px 0px 0px 1px rgba(0, 0, 0, 0.75),
-																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-@buttonInverseMarginTop:										0px;
-@buttonInverseMarginBottom:										0px;
-
-@buttonInverseHoverTextColor:									@gray-lighten-60;
-@buttonInverseHoverTextShadow:									0 -1px 1px rgba(0, 0, 0, 0.75);
-@buttonInverseHoverBackgroundColor:								@gray-darken-70;
-@buttonInverseHoverBackgroundGradientColorTop:					@gray-darken-60;
-@buttonInverseHoverBackgroundGradientColorBottom:				@gray-darken-85;
-@buttonInverseHoverShadow:										inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15),
-																0px 0px 0px 1px rgba(0, 0, 0, 0.75),
-																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-@buttonInverseHoverMarginTop:									0px;
-@buttonInverseHoverMarginBottom:								0px;
-
-@buttonInverseActiveTextColor:									@gray-lighten-60;
-@buttonInverseActiveTextShadow:									0 -1px 1px rgba(0, 0, 0, 0.75);
-@buttonInverseActiveBackgroundColor:							@gray-darken-80;
-@buttonInverseActiveBackgroundGradientColorTop:					@gray-darken-85;
-@buttonInverseActiveBackgroundGradientColorBottom:				@gray-darken-60;
-@buttonInverseActiveShadow:										inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px rgba(0, 0, 0, 0.75),
-																0px 1px 2px 0px rgba(255, 255, 255, 0.15);
-@buttonInverseActiveMarginTop:									0px;
-@buttonInverseActiveMarginBottom:								0px;
-
-@buttonInverseDisabledTextColor:								@white;
-@buttonInverseDisabledTextShadow:								none;
-@buttonInverseDisabledBackgroundColor:							rgba(255, 255, 255, 0.1);
-@buttonInverseDisabledBackgroundGradientColorTop:				none;
-@buttonInverseDisabledBackgroundGradientColorBottom:			none;
-@buttonInverseDisabledShadow:									none;
-@buttonInverseDisabledMarginTop:								0px;
-@buttonInverseDisabledMarginBottom:								0px;
-@buttonInverseDisabledOpacity:									50;
+@image-margin-tall:															@primary-margin-tall * 0.5;
+@image-margin-tall-screen-small:											@primary-margin-tall-screen-small * 0.5;
+@image-margin-tall-screen-medium:											@primary-margin-tall-screen-medium * 0.5;
+@image-margin-tall-screen-large:											@primary-margin-tall-screen-large * 0.5;
 
 /* ---------------------------------------------------------------------------------------------------- */
-/* Primary Button                                                                                       */
+/* Image Group                                                                                          */
 /* ---------------------------------------------------------------------------------------------------- */
 
-@buttonPrimaryTextColor:										@white;
-@buttonPrimaryTextShadow:										0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonPrimaryBackgroundColor:									@blue;
-@buttonPrimaryBackgroundGradientColorTop:						@blue-lighten-10;
-@buttonPrimaryBackgroundGradientColorBottom:					@blue-darken-10;
-@buttonPrimaryShadow:											inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@blue-darken-40), saturation(@blue-darken-40), lightness(@blue-darken-40), 0.75),
-																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-@buttonPrimaryMarginTop:										0px;
-@buttonPrimaryMarginBottom:										0px;
+@image-group-margin:														@image-margin;
+@image-group-margin-screen-small:											@image-margin-screen-small;
+@image-group-margin-screen-medium:											@image-margin-screen-medium;
+@image-group-margin-screen-large:											@image-margin-screen-large;
 
-@buttonPrimaryHoverTextColor:									@white;
-@buttonPrimaryHoverTextShadow:									0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonPrimaryHoverBackgroundColor:								@blue-darken-20;
-@buttonPrimaryHoverBackgroundGradientColorTop:					@blue-lighten-10;
-@buttonPrimaryHoverBackgroundGradientColorBottom:				@blue-darken-20;
-@buttonPrimaryHoverShadow:										inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@blue-darken-60), saturation(@blue-darken-60), lightness(@blue-darken-60), 0.75),
-																0px 1px 5px 0px rgba(0, 0, 0, 0.3);
-@buttonPrimaryHoverMarginTop:									0px;
-@buttonPrimaryHoverMarginBottom:								0px;
+@image-group-margin-short:													@image-margin-short;
+@image-group-margin-short-screen-small:										@image-margin-short-screen-small;
+@image-group-margin-short-screen-medium:									@image-margin-short-screen-medium;
+@image-group-margin-short-screen-large:										@image-margin-short-screen-large;
 
-@buttonPrimaryActiveTextColor:									@blue-lighten-90;
-@buttonPrimaryActiveTextShadow:									none;
-@buttonPrimaryActiveBackgroundColor:							@blue-darken-20;
-@buttonPrimaryActiveBackgroundGradientColorTop:					@blue-darken-20;
-@buttonPrimaryActiveBackgroundGradientColorBottom:				@blue;
-@buttonPrimaryActiveShadow:										inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@blue-darken-60), saturation(@blue-darken-60), lightness(@blue-darken-60), 0.75),
-																0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-@buttonPrimaryActiveMarginTop:									0px;
-@buttonPrimaryActiveMarginBottom:								0px;
+@image-group-margin-tall:													@image-margin-tall;
+@image-group-margin-tall-screen-small:										@image-margin-tall-screen-small;
+@image-group-margin-tall-screen-medium:										@image-margin-tall-screen-medium;
+@image-group-margin-tall-screen-large:										@image-margin-tall-screen-large;
 
-@buttonPrimaryDisabledTextColor:								@white;
-@buttonPrimaryDisabledTextShadow:								0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonPrimaryDisabledBackgroundColor:							@blue;
-@buttonPrimaryDisabledBackgroundGradientColorTop:				@blue-lighten-10;
-@buttonPrimaryDisabledBackgroundGradientColorBottom:			@blue-darken-10;
-@buttonPrimaryDisabledShadow:									inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@blue-darken-40), saturation(@blue-darken-40), lightness(@blue-darken-40), 0.75),
-																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-@buttonPrimaryDisabledMarginTop:								0px;
-@buttonPrimaryDisabledMarginBottom:								0px;
-@buttonPrimaryDisabledOpacity:									50;
-
-// Primary Button (Inverse)
-
-@buttonPrimaryInverseTextColor:									@white;
-@buttonPrimaryInverseTextShadow:								none;
-@buttonPrimaryInverseBackgroundColor:							rgba(255, 255, 255, 0.3);
-@buttonPrimaryInverseBackgroundGradientColorTop:				none;
-@buttonPrimaryInverseBackgroundGradientColorBottom:				none;
-@buttonPrimaryInverseShadow:									none;
-@buttonPrimaryInverseMarginTop:									0px;
-@buttonPrimaryInverseMarginBottom:								0px;
-
-@buttonPrimaryInverseHoverTextColor:							@white;
-@buttonPrimaryInverseHoverTextShadow:							none;
-@buttonPrimaryInverseHoverBackgroundColor:						rgba(255, 255, 255, 0.15);
-@buttonPrimaryInverseHoverBackgroundGradientColorTop:			none;
-@buttonPrimaryInverseHoverBackgroundGradientColorBottom:		none;
-@buttonPrimaryInverseHoverShadow:								none;
-@buttonPrimaryInverseHoverMarginTop:							0px;
-@buttonPrimaryInverseHoverMarginBottom:							0px;
-
-@buttonPrimaryInverseActiveTextColor:							@blue;
-@buttonPrimaryInverseActiveTextShadow:							none;
-@buttonPrimaryInverseActiveBackgroundColor:						rgba(255, 255, 255, 1.0);
-@buttonPrimaryInverseActiveBackgroundGradientColorTop:			none;
-@buttonPrimaryInverseActiveBackgroundGradientColorBottom:		none;
-@buttonPrimaryInverseActiveShadow:								none;
-@buttonPrimaryInverseActiveMarginTop:							0px;
-@buttonPrimaryInverseActiveMarginBottom:						0px;
-
-@buttonPrimaryInverseDisabledTextColor:							@white;
-@buttonPrimaryInverseDisabledTextShadow:						none;
-@buttonPrimaryInverseDisabledBackgroundColor:					rgba(255, 255, 255, 0.1);
-@buttonPrimaryInverseDisabledBackgroundGradientColorTop:		none;
-@buttonPrimaryInverseDisabledBackgroundGradientColorBottom:		none;
-@buttonPrimaryInverseDisabledShadow:							none;
-@buttonPrimaryInverseDisabledMarginTop:							0px;
-@buttonPrimaryInverseDisabledMarginBottom:						0px;
-@buttonPrimaryInverseDisabledOpacity:							50;
+@image-group-padding-horizontal:											5px;
+@image-group-padding-horizontal-screen-small:								5px;
+@image-group-padding-horizontal-screen-medium:								10px;
+@image-group-padding-horizontal-screen-large:								15px;
 
 /* ---------------------------------------------------------------------------------------------------- */
-/* Success Button                                                                                       */
+/* Rounded Image                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
 
-@buttonSuccessTextColor:										@white;
-@buttonSuccessTextShadow:										0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonSuccessBackgroundColor:									@green;
-@buttonSuccessBackgroundGradientColorTop:						@green-lighten-10;
-@buttonSuccessBackgroundGradientColorBottom:					@green-darken-10;
-@buttonSuccessShadow:											inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@green-darken-40), saturation(@green-darken-40), lightness(@green-darken-40), 0.75),
-																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-@buttonSuccessMarginTop:										0px;
-@buttonSuccessMarginBottom:										0px;
-
-@buttonSuccessHoverTextColor:									@white;
-@buttonSuccessHoverTextShadow:									0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonSuccessHoverBackgroundColor:								@green-darken-20;
-@buttonSuccessHoverBackgroundGradientColorTop:					@green-lighten-10;
-@buttonSuccessHoverBackgroundGradientColorBottom:				@green-darken-20;
-@buttonSuccessHoverShadow:										inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@green-darken-60), saturation(@green-darken-60), lightness(@green-darken-60), 0.75),
-																0px 1px 5px 0px rgba(0, 0, 0, 0.3);
-@buttonSuccessHoverMarginTop:									0px;
-@buttonSuccessHoverMarginBottom:								0px;
-
-@buttonSuccessActiveTextColor:									@green-lighten-90;
-@buttonSuccessActiveTextShadow:									none;
-@buttonSuccessActiveBackgroundColor:							@green-darken-20;
-@buttonSuccessActiveBackgroundGradientColorTop:					@green-darken-20;
-@buttonSuccessActiveBackgroundGradientColorBottom:				@green;
-@buttonSuccessActiveShadow:										inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@green-darken-60), saturation(@green-darken-60), lightness(@green-darken-60), 0.75),
-																0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-@buttonSuccessActiveMarginTop:									0px;
-@buttonSuccessActiveMarginBottom:								0px;
-
-@buttonSuccessDisabledTextColor:								@white;
-@buttonSuccessDisabledTextShadow:								0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonSuccessDisabledBackgroundColor:							@green;
-@buttonSuccessDisabledBackgroundGradientColorTop:				@green-lighten-10;
-@buttonSuccessDisabledBackgroundGradientColorBottom:			@green-darken-10;
-@buttonSuccessDisabledShadow:									inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@green-darken-40), saturation(@green-darken-40), lightness(@green-darken-40), 0.75),
-																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-@buttonSuccessDisabledMarginTop:								0px;
-@buttonSuccessDisabledMarginBottom:								0px;
-@buttonSuccessDisabledOpacity:									50;
-
-// Success Button (Inverse)
-
-@buttonSuccessInverseTextColor:									@green;
-@buttonSuccessInverseTextShadow:								@buttonTextShadow;
-@buttonSuccessInverseBackgroundColor:							@buttonBackgroundColor;
-@buttonSuccessInverseBackgroundGradientColorTop:				@buttonBackgroundGradientColorTop;
-@buttonSuccessInverseBackgroundGradientColorBottom:				@buttonBackgroundGradientColorBottom;
-@buttonSuccessInverseShadow:									@buttonShadow;
-@buttonSuccessInverseMarginTop:									@buttonMarginTop;
-@buttonSuccessInverseMarginBottom:								@buttonMarginBottom;
-
-@buttonSuccessInverseHoverTextColor:							@green-darken-20;
-@buttonSuccessInverseHoverTextShadow:							@buttonHoverTextShadow;
-@buttonSuccessInverseHoverBackgroundColor:						@buttonHoverBackgroundColor;
-@buttonSuccessInverseHoverBackgroundGradientColorTop:			@buttonHoverBackgroundGradientColorTop;
-@buttonSuccessInverseHoverBackgroundGradientColorBottom:		@buttonHoverBackgroundGradientColorBottom;
-@buttonSuccessInverseHoverShadow:								@buttonHoverShadow;
-@buttonSuccessInverseHoverMarginTop:							@buttonHoverMarginTop;
-@buttonSuccessInverseHoverMarginBottom:							@buttonHoverMarginBottom;
-
-@buttonSuccessInverseActiveTextColor:							@green-darken-30;
-@buttonSuccessInverseActiveTextShadow:							@buttonActiveTextShadow;
-@buttonSuccessInverseActiveBackgroundColor:						@buttonActiveBackgroundColor;
-@buttonSuccessInverseActiveBackgroundGradientColorTop:			@buttonActiveBackgroundGradientColorTop;
-@buttonSuccessInverseActiveBackgroundGradientColorBottom:		@buttonActiveBackgroundGradientColorBottom;
-@buttonSuccessInverseActiveShadow:								@buttonActiveShadow;
-@buttonSuccessInverseActiveMarginTop:							@buttonActiveMarginTop;
-@buttonSuccessInverseActiveMarginBottom:						@buttonActiveMarginBottom;
-
-@buttonSuccessInverseDisabledTextColor:							@buttonSuccessInverseTextColor;
-@buttonSuccessInverseDisabledTextShadow:						@buttonSuccessInverseTextShadow;
-@buttonSuccessInverseDisabledBackgroundColor:					@buttonSuccessInverseBackgroundColor;
-@buttonSuccessInverseDisabledBackgroundGradientColorTop:		@buttonSuccessInverseBackgroundGradientColorTop;
-@buttonSuccessInverseDisabledBackgroundGradientColorBottom:		@buttonSuccessInverseBackgroundGradientColorBottom;
-@buttonSuccessInverseDisabledShadow:							@buttonSuccessInverseShadow;
-@buttonSuccessInverseDisabledMarginTop:							@buttonSuccessInverseMarginTop;
-@buttonSuccessInverseDisabledMarginBottom:						@buttonSuccessInverseMarginBottom;
-@buttonSuccessInverseDisabledDisabledOpacity:					50;
+@image-rounded-border-radius:												5px;
 
 /* ---------------------------------------------------------------------------------------------------- */
-/* Warning Button                                                                                       */
+/* Framed Image                                                                                         */
 /* ---------------------------------------------------------------------------------------------------- */
 
-@buttonWarningTextColor:										@white;
-@buttonWarningTextShadow:										0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonWarningBackgroundColor:									@orange;
-@buttonWarningBackgroundGradientColorTop:						@orange-lighten-10;
-@buttonWarningBackgroundGradientColorBottom:					@orange-darken-20;
-@buttonWarningShadow:											inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@orange-darken-50), saturation(@orange-darken-50), lightness(@orange-darken-50), 0.75),
-																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-@buttonWarningMarginTop:										0px;
-@buttonWarningMarginBottom:										0px;
+@image-framed-corner-radius:												5px;
+@image-framed-padding:														5px;
+@image-framed-border-radius:												5px;
+@image-framed-background-color:												@white;
+@image-framed-background-gradient-top-color:								none;
+@image-framed-background-gradient-bottom-color:								none;
+@image-framed-border-width:													0px;
+@image-framed-border-color:													none;
+@image-framed-offset-top:													0px;
+@image-framed-offset-bottom:												0px;
+@image-framed-shadow:														0px 0px 0px 1px rgba(0, 0, 0, 0.075),
+																			0px 1px 3px 0px rgba(0, 0, 0, 0.1);
 
-@buttonWarningHoverTextColor:									@white;
-@buttonWarningHoverTextShadow:									0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonWarningHoverBackgroundColor:								@orange-darken-20;
-@buttonWarningHoverBackgroundGradientColorTop:					@orange-lighten-10;
-@buttonWarningHoverBackgroundGradientColorBottom:				@orange-darken-30;
-@buttonWarningHoverShadow:										inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@orange-darken-60), saturation(@orange-darken-60), lightness(@orange-darken-60), 0.75),
-																0px 1px 5px 0px rgba(0, 0, 0, 0.3);
-@buttonWarningHoverMarginTop:									0px;
-@buttonWarningHoverMarginBottom:								0px;
+@image-framed-hover-corner-radius:											5px;
+@image-framed-hover-padding:												5px;
+@image-framed-hover-border-radius:											5px;
+@image-framed-hover-background-color:										@white;
+@image-framed-hover-background-gradient-top-color:							none;
+@image-framed-hover-background-gradient-bottom-color:						none;
+@image-framed-hover-border-width:											0px;
+@image-framed-hover-border-color:											none;
+@image-framed-hover-offset-top:												-4px;
+@image-framed-hover-offset-bottom:											4px;
+@image-framed-hover-shadow:													0px 0px 0px 1px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.25),
+																			0px 1px 3px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.5),
+																			0px 4px 10px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.25);
 
-@buttonWarningActiveTextColor:									@orange-lighten-90;
-@buttonWarningActiveTextShadow:									none;
-@buttonWarningActiveBackgroundColor:							@orange-darken-20;
-@buttonWarningActiveBackgroundGradientColorTop:					@orange-darken-20;
-@buttonWarningActiveBackgroundGradientColorBottom:				@orange-darken-10;
-@buttonWarningActiveShadow:										inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@orange-darken-60), saturation(@orange-darken-60), lightness(@orange-darken-60), 0.75),
-																0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-@buttonWarningActiveMarginTop:									0px;
-@buttonWarningActiveMarginBottom:								0px;
-
-@buttonWarningDisabledTextColor:								@white;
-@buttonWarningDisabledTextShadow:								0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonWarningDisabledBackgroundColor:							@orange;
-@buttonWarningDisabledBackgroundGradientColorTop:				@orange-lighten-10;
-@buttonWarningDisabledBackgroundGradientColorBottom:			@orange-darken-20;
-@buttonWarningDisabledShadow:									inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@orange-darken-50), saturation(@orange-darken-50), lightness(@orange-darken-50), 0.75),
-																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-@buttonWarningDisabledMarginTop:								0px;
-@buttonWarningDisabledMarginBottom:								0px;
-@buttonWarningDisabledOpacity:									50;
-
-// Warning Button (Inverse)
-
-@buttonWarningInverseTextColor:									@white;
-@buttonWarningInverseTextShadow:								none;
-@buttonWarningInverseBackgroundColor:							rgba(255, 255, 255, 0.3);
-@buttonWarningInverseBackgroundGradientColorTop:				none;
-@buttonWarningInverseBackgroundGradientColorBottom:				none;
-@buttonWarningInverseShadow:									none;
-@buttonWarningInverseMarginTop:									0px;
-@buttonWarningInverseMarginBottom:								0px;
-
-@buttonWarningInverseHoverTextColor:							@white;
-@buttonWarningInverseHoverTextShadow:							none;
-@buttonWarningInverseHoverBackgroundColor:						rgba(255, 255, 255, 0.15);
-@buttonWarningInverseHoverBackgroundGradientColorTop:			none;
-@buttonWarningInverseHoverBackgroundGradientColorBottom:		none;
-@buttonWarningInverseHoverShadow:								none;
-@buttonWarningInverseHoverMarginTop:							0px;
-@buttonWarningInverseHoverMarginBottom:							0px;
-
-@buttonWarningInverseActiveTextColor:							@blue;
-@buttonWarningInverseActiveTextShadow:							none;
-@buttonWarningInverseActiveBackgroundColor:						rgba(255, 255, 255, 1.0);
-@buttonWarningInverseActiveBackgroundGradientColorTop:			none;
-@buttonWarningInverseActiveBackgroundGradientColorBottom:		none;
-@buttonWarningInverseActiveShadow:								none;
-@buttonWarningInverseActiveMarginTop:							0px;
-@buttonWarningInverseActiveMarginBottom:						0px;
-
-@buttonWarningInverseDisabledTextColor:							@white;
-@buttonWarningInverseDisabledTextShadow:						none;
-@buttonWarningInverseDisabledBackgroundColor:					rgba(255, 255, 255, 0.1);
-@buttonWarningInverseDisabledBackgroundGradientColorTop:		none;
-@buttonWarningInverseDisabledBackgroundGradientColorBottom:		none;
-@buttonWarningInverseDisabledShadow:							none;
-@buttonWarningInverseDisabledMarginTop:							0px;
-@buttonWarningInverseDisabledMarginBottom:						0px;
-@buttonWarningInverseDisabledOpacity:							50;
-
-/* ---------------------------------------------------------------------------------------------------- */
-/* Danger Button                                                                                        */
-/* ---------------------------------------------------------------------------------------------------- */
-
-@buttonDangerTextColor:											@white;
-@buttonDangerTextShadow:										0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonDangerBackgroundColor:									@red;
-@buttonDangerBackgroundGradientColorTop:						@red-darken-10;
-@buttonDangerBackgroundGradientColorBottom:						@red-darken-40;
-@buttonDangerShadow:											inset 0px 1px 0px 0px hsla(hue(@red-lighten-30), saturation(@red-lighten-30), lightness(@red-lighten-30), 1.0),
-																0px 0px 0px 1px hsla(hue(@red-darken-50), saturation(@red-darken-50), lightness(@red-darken-50), 0.85),
-																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-@buttonDangerMarginTop:											0px;
-@buttonDangerMarginBottom:										0px;
-
-@buttonDangerHoverTextColor:									@white;
-@buttonDangerHoverTextShadow:									0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonDangerHoverBackgroundColor:								@red-darken-20;
-@buttonDangerHoverBackgroundGradientColorTop:					@red-lighten-10;
-@buttonDangerHoverBackgroundGradientColorBottom:				@red-darken-30;
-@buttonDangerHoverShadow:										inset 0px 1px 0px 0px hsla(hue(@red-lighten-20), saturation(@red-lighten-20), lightness(@red-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@red-darken-60), saturation(@red-darken-60), lightness(@red-darken-60), 0.75),
-																0px 1px 5px 0px rgba(0, 0, 0, 0.3);
-@buttonDangerHoverMarginTop:									0px;
-@buttonDangerHoverMarginBottom:									0px;
-
-@buttonDangerActiveTextColor:									@red-lighten-90;
-@buttonDangerActiveTextShadow:									none;
-@buttonDangerActiveBackgroundColor:								@red-darken-20;
-@buttonDangerActiveBackgroundGradientColorTop:					@red-darken-20;
-@buttonDangerActiveBackgroundGradientColorBottom:				@red-darken-10;
-@buttonDangerActiveShadow:										inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																0px 0px 0px 1px hsla(hue(@red-darken-60), saturation(@red-darken-60), lightness(@red-darken-60), 0.75),
-																0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-@buttonDangerActiveMarginTop:									0px;
-@buttonDangerActiveMarginBottom:								0px;
-
-@buttonDangerDisabledTextColor:									@white;
-@buttonDangerDisabledTextShadow:								0 1px 1px rgba(0, 0, 0, 0.25);
-@buttonDangerDisabledBackgroundColor:							@red;
-@buttonDangerDisabledBackgroundGradientColorTop:				@red-lighten-10;
-@buttonDangerDisabledBackgroundGradientColorBottom:				@red-darken-20;
-@buttonDangerDisabledShadow:									inset 0px 1px 0px 0px hsla(hue(@red-lighten-20), saturation(@red-lighten-20), lightness(@red-lighten-20), 1.0),
-																0px 0px 0px 1px hsla(hue(@red-darken-50), saturation(@red-darken-50), lightness(@red-darken-50), 0.75),
-																0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-@buttonDangerDisabledMarginTop:									0px;
-@buttonDangerDisabledMarginBottom:								0px;
-@buttonDangerDisabledOpacity:									50;
-
-// Danger Button (Inverse)
-
-@buttonDangerInverseTextColor:									@white;
-@buttonDangerInverseTextShadow:									none;
-@buttonDangerInverseBackgroundColor:							rgba(255, 255, 255, 0.3);
-@buttonDangerInverseBackgroundGradientColorTop:					none;
-@buttonDangerInverseBackgroundGradientColorBottom:				none;
-@buttonDangerInverseShadow:										none;
-@buttonDangerInverseMarginTop:									0px;
-@buttonDangerInverseMarginBottom:								0px;
-
-@buttonDangerInverseHoverTextColor:								@white;
-@buttonDangerInverseHoverTextShadow:							none;
-@buttonDangerInverseHoverBackgroundColor:						rgba(255, 255, 255, 0.15);
-@buttonDangerInverseHoverBackgroundGradientColorTop:			none;
-@buttonDangerInverseHoverBackgroundGradientColorBottom:			none;
-@buttonDangerInverseHoverShadow:								none;
-@buttonDangerInverseHoverMarginTop:								0px;
-@buttonDangerInverseHoverMarginBottom:							0px;
-
-@buttonDangerInverseActiveTextColor:							@blue;
-@buttonDangerInverseActiveTextShadow:							none;
-@buttonDangerInverseActiveBackgroundColor:						rgba(255, 255, 255, 1.0);
-@buttonDangerInverseActiveBackgroundGradientColorTop:			none;
-@buttonDangerInverseActiveBackgroundGradientColorBottom:		none;
-@buttonDangerInverseActiveShadow:								none;
-@buttonDangerInverseActiveMarginTop:							0px;
-@buttonDangerInverseActiveMarginBottom:							0px;
-
-@buttonDangerInverseDisabledTextColor:							@white;
-@buttonDangerInverseDisabledTextShadow:							none;
-@buttonDangerInverseDisabledBackgroundColor:					rgba(255, 255, 255, 0.1);
-@buttonDangerInverseDisabledBackgroundGradientColorTop:			none;
-@buttonDangerInverseDisabledBackgroundGradientColorBottom:		none;
-@buttonDangerInverseDisabledShadow:								none;
-@buttonDangerInverseDisabledMarginTop:							0px;
-@buttonDangerInverseDisabledMarginBottom:						0px;
-@buttonDangerInverseDisabledOpacity:							50;
+@image-framed-active-corner-radius:											5px;
+@image-framed-active-padding:												5px;
+@image-framed-active-border-radius:											5px;
+@image-framed-active-background-color:										@white;
+@image-framed-active-background-gradient-top-color:							none;
+@image-framed-active-background-gradient-bottom-color:						none;
+@image-framed-active-border-width:											0px;
+@image-framed-active-border-color:											none;
+@image-framed-active-offset-top:											0px;
+@image-framed-active-offset-bottom:											0px;
+@image-framed-active-shadow:												0px 0px 0px 1px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.25),
+																			0px 1px 3px 0px hsla(hue(@blue), saturation(@blue), lightness(@blue), 0.5);
 
 
 
@@ -3550,90 +3137,5 @@
 
 
 
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Labels & Badges                                                                                      */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@labelHorizontalPadding:										8px;
-@labelFontFamily:												@font-family-primary;
-@labelFontSize:													@body-text-font-size * 0.9;
-@labelFontWeight:												500;
-@labelFontLineHeight:											@body-text-line-height - 2;
-@labelTextColor:												@white;
-@labelFontShadow:												none;
-@labelBackgroundColor:											@gray;
-
-@labelSuccessTextColor:											@white;
-@labelSuccessFontShadow:										none;
-@labelSuccessBackgroundColor:									@green;
-
-@labelWarningTextColor:											@white;
-@labelWarningFontShadow:										none;
-@labelWarningBackgroundColor:									@orange;
-
-@labelDangerTextColor:											@white;
-@labelDangerFontShadow:											none;
-@labelDangerBackgroundColor:									@red;
-
-@labelInfoTextColor:											@white;
-@labelInfoFontShadow:											none;
-@labelInfoBackgroundColor:										@blue;
-
-@labelInverseTextColor:											@white;
-@labelInverseFontShadow:										none;
-@labelInverseBackgroundColor:									#333;
 
 
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Tooltips                                                                                             */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@tooltipColor:													#fff;
-@tooltipBackground:												@gray;
-@tooltipArrowWidth:												8px;
-@tooltipArrowColor:												@tooltipBackground;
-@tooltipOffset:													5px;
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Pagination                                                                                           */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@paginationBorderRadius:										4px;
-
-@paginationLinkFontFamily:										@font-family-primary;
-@paginationLinkFontSize:										13px;
-@paginationLinkTextColor:										@gray;
-@paginationLinkFontLineHeight:									16px;
-@paginationLinkBackground:										@white;
-@paginationLinkShadow:											0px 0px 0px 1px @gray;
-@paginationLinkShadowMarginOffset:								1px;
-
-@paginationLinkHoverTextColor:									@link-text-color;
-@paginationLinkHoverBackground:									lighten(@link-text-color, 52);
-@paginationLinkHoverShadow:										0px 0px 0px 1px @gray;
-
-@paginationLinkActiveTextColor:									@white;
-@paginationLinkActiveBackground:								@link-text-color;
-@paginationLinkActiveShadow:									0px 0px 0px 1px @link-text-color;
-
-@paginationLinkHorizontalPadding:								14px;
-@paginationLinkHeight:											34px;
-
-@paginationLinkHorizontalPaddingLarge:							20px;
-@paginationLinkHeightLarge:										42px;
-@paginationLinkFontLineHeightLarge:								24px;
-@paginationLinkFontSizeLarge:									16px;
-
-@paginationLinkHorizontalPaddingSmall:							8px;
-@paginationLinkHeightSmall:										22px;
-@paginationLinkFontLineHeightSmall:								16px;
-@paginationLinkFontSizeSmall:									11px;

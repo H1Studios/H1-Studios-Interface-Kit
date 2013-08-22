@@ -1499,6 +1499,92 @@
 		
 	}
 	
+	/* Utility classes table  */
+	.bs-table th small,
+	.responsive-utilities th small {
+		
+		display: block;
+		
+	}
+	
+	.responsive-utilities tbody th {
+		
+		font-weight: normal;
+		
+	}
+	
+	.responsive-utilities td {
+		
+		text-align: center;
+		
+	}
+	
+	.responsive-utilities td.is-visible {
+		
+		color: @green;
+		background-color: @green-lighten-90 !important;
+		
+	}
+	
+	.responsive-utilities td.is-hidden {
+		
+		color: @gray-lighten-50;
+		background-color: @gray-lighten-95 !important;
+		
+	}
+	
+	.responsive-utilities-test {
+		
+		margin-top: 5px;
+		
+	}
+	
+	.responsive-utilities-test .col-mini-6 {
+		
+		margin-bottom: 10px;
+		
+	}
+	
+	.responsive-utilities-test span {
+		
+		padding: 15px 10px;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 1.1;
+		text-align: center;
+		border-radius: 4px;
+		
+	}
+	
+	.visible-on .col-mini-6 .hidden-mini,
+	.visible-on .col-mini-6 .hidden-small,
+	.visible-on .col-mini-6 .hidden-medium,
+	.visible-on .col-mini-6 .hidden-large,
+	.hidden-on .col-mini-6 .visible-mini,
+	.hidden-on .col-mini-6 .visible-small,
+	.hidden-on .col-mini-6 .visible-medium,
+	.hidden-on .col-mini-6 .visible-large {
+		
+		color: @gray;
+		border: 1px solid @gray-lighten-75;
+		
+	}
+	
+	.visible-on .col-mini-6 .visible-mini,
+	.visible-on .col-mini-6 .visible-small,
+	.visible-on .col-mini-6 .visible-medium,
+	.visible-on .col-mini-6 .visible-large,
+	.hidden-on .col-mini-6 .hidden-mini,
+	.hidden-on .col-mini-6 .hidden-small,
+	.hidden-on .col-mini-6 .hidden-medium,
+	.hidden-on .col-mini-6 .hidden-large {
+		
+		color: @green;
+		background-color: @green-lighten-90;
+		border: 1px solid @green-lighten-50;
+		
+	}
+	
 }
 
 
@@ -1598,7 +1684,7 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive Styles: Retina Displays                                                                   */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
