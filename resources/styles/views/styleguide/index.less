@@ -1481,19 +1481,21 @@
 		
 	}
 	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Screen Size: Large (@screen-large) and above                                                         */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (min-width: @screen-large) {
-	
-	#stage.styleguide {
+	.show-grid {
+		
+		margin-bottom: @primary-margin-short;
+		 
+		[class^="col-"] {
+				
+			padding-top: (@grid-gutter-width-screen-small / 2);
+			padding-bottom: (@grid-gutter-width-screen-small / 2);
+			background-color: @green-lighten-95;
+			.box-shadow(0px 0px 0px 1px @green-lighten-50);
+			color: @green;
+			font-size: @small-text-font-size;
+			line-height: @small-text-line-height;
+			
+		}
 		
 	}
 	
@@ -1510,6 +1512,21 @@
 @media (min-width: @screen-small) {
 	
 	#stage.styleguide {
+	
+		.show-grid {
+			
+			margin-bottom: @primary-margin-short-screen-small;
+			 
+			[class^="col-"] {
+				
+				padding-top: (@grid-gutter-width-screen-small / 2);
+				padding-bottom: (@grid-gutter-width-screen-small / 2);
+				font-size: @small-text-font-size * @small-text-ratio-screen-small;
+				line-height: @small-text-line-height * @small-text-ratio-screen-small;
+				
+			}
+			
+		}
 		
 	}
 	
@@ -1526,6 +1543,52 @@
 @media (min-width: @screen-medium) {
 	
 	#stage.styleguide {
+	
+		.show-grid {
+			
+			margin-bottom: @primary-margin-short-screen-medium;
+			 
+			[class^="col-"] {
+				
+				padding-top: (@grid-gutter-width-screen-medium / 2);
+				padding-bottom: (@grid-gutter-width-screen-medium / 2);
+				font-size: @small-text-font-size * @small-text-ratio-screen-medium;
+				line-height: @small-text-line-height * @small-text-ratio-screen-medium;
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-large) {
+	
+	#stage.styleguide {
+	
+		.show-grid {
+			
+			margin-bottom: @primary-margin-short-screen-large;
+			 
+			[class^="col-"] {
+				
+				padding-top: (@grid-gutter-width-screen-large / 2);
+				padding-bottom: (@grid-gutter-width-screen-large / 2);
+				font-size: @small-text-font-size * @small-text-ratio-screen-large;
+				line-height: @small-text-line-height * @small-text-ratio-screen-large;
+				
+			}
+			
+		}
 		
 	}
 	

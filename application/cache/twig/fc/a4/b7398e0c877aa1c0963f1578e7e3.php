@@ -38,7 +38,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t
 \t\t<div class=\"row\">
 \t\t\t
-\t\t\t<div class=\"col-sm-3\">
+\t\t\t<div class=\"col-small-3 hidden-mini\">
 \t\t\t\t
 \t\t\t\t<ul class=\"nav\">
 \t\t\t\t\t
@@ -146,7 +146,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t
 \t\t\t</div>
 \t\t\t
-\t\t\t<div class=\"col-sm-9\">
+\t\t\t<div class=\"col-small-9\">
 \t\t\t\t
 \t\t\t\t<!-- ================================================== -->
 \t\t\t\t<!-- =================== GRID SYSTEM ================== -->
@@ -257,10 +257,10 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t\t\t</tr>
 \t\t\t\t\t\t\t<tr>
 \t\t\t\t\t\t\t<th>Class prefix</th>
-\t\t\t\t\t\t\t<td><code>.col-xs-</code></td>
-\t\t\t\t\t\t\t<td><code>.col-sm-</code></td>
-\t\t\t\t\t\t\t<td><code>.col-md-</code></td>
-\t\t\t\t\t\t\t<td><code>.col-lg-</code></td>
+\t\t\t\t\t\t\t<td><code>.col-mini-</code></td>
+\t\t\t\t\t\t\t<td><code>.col-small-</code></td>
+\t\t\t\t\t\t\t<td><code>.col-medium-</code></td>
+\t\t\t\t\t\t\t<td><code>.col-large-</code></td>
 \t\t\t\t\t\t\t</tr>
 \t\t\t\t\t\t\t<tr>
 \t\t\t\t\t\t\t<th># of columns</th>
@@ -305,7 +305,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<p>
 \t\t\t\t\t\t
-\t\t\t\t\t\tUsing a single set of <code>.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices.
+\t\t\t\t\t\tUsing a single set of <code>.col-medium-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices.
 \t\t\t\t\t\t
 \t\t\t\t\t</p>
 \t\t\t\t\t
@@ -313,40 +313,40 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
-\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
-\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
-\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
-\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
-\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
-\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
-\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
-\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
-\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
-\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
-\t\t\t\t\t\t\t<div class=\"col-md-1\">.col-md-1</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-1\">.col-medium-1</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-1\">.col-medium-1</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-1\">.col-medium-1</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-1\">.col-medium-1</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-1\">.col-medium-1</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-1\">.col-medium-1</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-1\">.col-medium-1</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-1\">.col-medium-1</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-1\">.col-medium-1</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-1\">.col-medium-1</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-1\">.col-medium-1</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-1\">.col-medium-1</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-md-8\">.col-md-8</div>
-\t\t\t\t\t\t\t<div class=\"col-md-4\">.col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-8\">.col-medium-8</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-4\">.col-medium-4</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-md-4\">.col-md-4</div>
-\t\t\t\t\t\t\t<div class=\"col-md-4\">.col-md-4</div>
-\t\t\t\t\t\t\t<div class=\"col-md-4\">.col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-4\">.col-medium-4</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-4\">.col-medium-4</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-4\">.col-medium-4</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-md-6\">.col-md-6</div>
-\t\t\t\t\t\t\t<div class=\"col-md-6\">.col-md-6</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-6\">.col-medium-6</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-6\">.col-medium-6</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
@@ -354,31 +354,31 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
-  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
-  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
-  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
-  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
-  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
-  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
-  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
-  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
-  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
-  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
-  &lt;div class=\"col-md-1\"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=\"col-medium-1\"&gt;.col-medium-1&lt;/div&gt;
+  &lt;div class=\"col-medium-1\"&gt;.col-medium-1&lt;/div&gt;
+  &lt;div class=\"col-medium-1\"&gt;.col-medium-1&lt;/div&gt;
+  &lt;div class=\"col-medium-1\"&gt;.col-medium-1&lt;/div&gt;
+  &lt;div class=\"col-medium-1\"&gt;.col-medium-1&lt;/div&gt;
+  &lt;div class=\"col-medium-1\"&gt;.col-medium-1&lt;/div&gt;
+  &lt;div class=\"col-medium-1\"&gt;.col-medium-1&lt;/div&gt;
+  &lt;div class=\"col-medium-1\"&gt;.col-medium-1&lt;/div&gt;
+  &lt;div class=\"col-medium-1\"&gt;.col-medium-1&lt;/div&gt;
+  &lt;div class=\"col-medium-1\"&gt;.col-medium-1&lt;/div&gt;
+  &lt;div class=\"col-medium-1\"&gt;.col-medium-1&lt;/div&gt;
+  &lt;div class=\"col-medium-1\"&gt;.col-medium-1&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-md-8\"&gt;.col-md-8&lt;/div&gt;
-  &lt;div class=\"col-md-4\"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class=\"col-medium-8\"&gt;.col-medium-8&lt;/div&gt;
+  &lt;div class=\"col-medium-4\"&gt;.col-medium-4&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-md-4\"&gt;.col-md-4&lt;/div&gt;
-  &lt;div class=\"col-md-4\"&gt;.col-md-4&lt;/div&gt;
-  &lt;div class=\"col-md-4\"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class=\"col-medium-4\"&gt;.col-medium-4&lt;/div&gt;
+  &lt;div class=\"col-medium-4\"&gt;.col-medium-4&lt;/div&gt;
+  &lt;div class=\"col-medium-4\"&gt;.col-medium-4&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-md-6\"&gt;.col-md-6&lt;/div&gt;
-  &lt;div class=\"col-md-6\"&gt;.col-md-6&lt;/div&gt;
+  &lt;div class=\"col-medium-6\"&gt;.col-medium-6&lt;/div&gt;
+  &lt;div class=\"col-medium-6\"&gt;.col-medium-6&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 \t\t\t\t\t
@@ -390,7 +390,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<p>
 \t\t\t\t\t\t
-\t\t\t\t\t\tDon't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code>.col-xs-*</code> <code>.col-md-*</code> to your columns. See the example below for a better idea of how it all works.
+\t\t\t\t\t\tDon't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code>.col-mini-*</code> <code>.col-medium-*</code> to your columns. See the example below for a better idea of how it all works.
 \t\t\t\t\t\t
 \t\t\t\t\t</p>
 \t\t\t\t\t
@@ -398,23 +398,23 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-xs-12 col-md-8\">.col-xs-12 col-md-8</div>
-\t\t\t\t\t\t\t<div class=\"col-xs-6 col-md-4\">.col-xs-6 .col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-mini-12 col-medium-8\">.col-mini-12 col-medium-8</div>
+\t\t\t\t\t\t\t<div class=\"col-mini-6 col-medium-4\">.col-mini-6 .col-medium-4</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-xs-6 col-md-4\">.col-xs-6 .col-md-4</div>
-\t\t\t\t\t\t\t<div class=\"col-xs-6 col-md-4\">.col-xs-6 .col-md-4</div>
-\t\t\t\t\t\t\t<div class=\"col-xs-6 col-md-4\">.col-xs-6 .col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-mini-6 col-medium-4\">.col-mini-6 .col-medium-4</div>
+\t\t\t\t\t\t\t<div class=\"col-mini-6 col-medium-4\">.col-mini-6 .col-medium-4</div>
+\t\t\t\t\t\t\t<div class=\"col-mini-6 col-medium-4\">.col-mini-6 .col-medium-4</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-xs-6\">.col-xs-6</div>
-\t\t\t\t\t\t\t<div class=\"col-xs-6\">.col-xs-6</div>
+\t\t\t\t\t\t\t<div class=\"col-mini-6\">.col-mini-6</div>
+\t\t\t\t\t\t\t<div class=\"col-mini-6\">.col-mini-6</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
@@ -423,21 +423,21 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 <pre class=\"prettyprint linenums\">
 &lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-xs-12 col-md-8\"&gt;.col-xs-12 col-md-8&lt;/div&gt;
-  &lt;div class=\"col-xs-6 col-md-4\"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+  &lt;div class=\"col-mini-12 col-medium-8\"&gt;.col-mini-12 col-medium-8&lt;/div&gt;
+  &lt;div class=\"col-mini-6 col-medium-4\"&gt;.col-mini-6 .col-medium-4&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop --&gt;
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-xs-6 col-md-4\"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
-  &lt;div class=\"col-xs-6 col-md-4\"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
-  &lt;div class=\"col-xs-6 col-md-4\"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+  &lt;div class=\"col-mini-6 col-medium-4\"&gt;.col-mini-6 .col-medium-4&lt;/div&gt;
+  &lt;div class=\"col-mini-6 col-medium-4\"&gt;.col-mini-6 .col-medium-4&lt;/div&gt;
+  &lt;div class=\"col-mini-6 col-medium-4\"&gt;.col-mini-6 .col-medium-4&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;!-- Columns are always 50% wide, on mobile and desktop --&gt;
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-xs-6\"&gt;.col-xs-6&lt;/div&gt;
-  &lt;div class=\"col-xs-6\"&gt;.col-xs-6&lt;/div&gt;
+  &lt;div class=\"col-mini-6\"&gt;.col-mini-6&lt;/div&gt;
+  &lt;div class=\"col-mini-6\"&gt;.col-mini-6&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 \t\t\t\t\t
@@ -449,7 +449,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<p>
 \t\t\t\t\t\t
-\t\t\t\t\t\tBuild on the previous example by creating even more dynamic and powerful layouts with tablet <code>.col-sm-*</code> classes.
+\t\t\t\t\t\tBuild on the previous example by creating even more dynamic and powerful layouts with tablet <code>.col-small-*</code> classes.
 \t\t\t\t\t\t
 \t\t\t\t\t</p>
 \t\t\t\t\t
@@ -457,18 +457,18 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-xs-12 col-sm-6 col-md-8\">.col-xs-12 .col-sm-6 .col-md-8</div>
-\t\t\t\t\t\t\t<div class=\"col-xs-6 col-sm-6 col-md-4\">.col-xs-6 .col-sm-6 .col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-mini-12 col-small-6 col-medium-8\">.col-mini-12 .col-small-6 .col-medium-8</div>
+\t\t\t\t\t\t\t<div class=\"col-mini-6 col-small-6 col-medium-4\">.col-mini-6 .col-small-6 .col-medium-4</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-xs-6 col-sm-4 col-md-4\">.col-xs-6 .col-sm-4 .col-md-4</div>
-\t\t\t\t\t\t\t<div class=\"col-xs-6 col-sm-4 col-md-4\">.col-xs-6 .col-sm-4 .col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-mini-6 col-small-4 col-medium-4\">.col-mini-6 .col-small-4 .col-medium-4</div>
+\t\t\t\t\t\t\t<div class=\"col-mini-6 col-small-4 col-medium-4\">.col-mini-6 .col-small-4 .col-medium-4</div>
 \t\t\t\t\t\t\t<!-- Optional: clear the XS cols if their content doesn't match in height -->
 \t\t\t\t\t\t\t<div class=\"clearfix visible-xs\"></div>
-\t\t\t\t\t\t\t<div class=\"col-xs-6 col-sm-4 col-md-4\">.col-xs-6 .col-sm-4 .col-md-4</div>
+\t\t\t\t\t\t\t<div class=\"col-mini-6 col-small-4 col-medium-4\">.col-mini-6 .col-small-4 .col-medium-4</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
@@ -476,15 +476,15 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-xs-12 col-sm-6 col-md-8\"&gt;.col-xs-12 .col-sm-6 .col-md-8&lt;/div&gt;
-  &lt;div class=\"col-xs-6 col-sm-6 col-md-4\"&gt;.col-xs-6 .col-sm-6 .col-md-4&lt;/div&gt;
+  &lt;div class=\"col-mini-12 col-small-6 col-medium-8\"&gt;.col-mini-12 .col-small-6 .col-medium-8&lt;/div&gt;
+  &lt;div class=\"col-mini-6 col-small-6 col-medium-4\"&gt;.col-mini-6 .col-small-6 .col-medium-4&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-xs-6 col-sm-4 col-md-4\"&gt;.col-xs-6 .col-sm-4 .col-md-4&lt;/div&gt;
-  &lt;div class=\"col-xs-6 col-sm-4 col-md-4\"&gt;.col-xs-6 .col-sm-4 .col-md-4&lt;/div&gt;
+  &lt;div class=\"col-mini-6 col-small-4 col-medium-4\"&gt;.col-mini-6 .col-small-4 .col-medium-4&lt;/div&gt;
+  &lt;div class=\"col-mini-6 col-small-4 col-medium-4\"&gt;.col-mini-6 .col-small-4 .col-medium-4&lt;/div&gt;
   &lt;!-- Optional: clear the XS cols if their content doesn't match in height --&gt;
   &lt;div class=\"clearfix visible-xs\"&gt;&lt;/div&gt;
-  &lt;div class=\"col-xs-6 col-sm-4 col-md-4\"&gt;.col-xs-6 .col-sm-4 .col-md-4&lt;/div&gt;
+  &lt;div class=\"col-mini-6 col-small-4 col-medium-4\"&gt;.col-mini-6 .col-small-4 .col-medium-4&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 \t\t\t\t\t
@@ -502,14 +502,14 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-xs-6 col-sm-3\"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
-  &lt;div class=\"col-xs-6 col-sm-3\"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+  &lt;div class=\"col-mini-6 col-small-3\"&gt;.col-mini-6 .col-small-3&lt;/div&gt;
+  &lt;div class=\"col-mini-6 col-small-3\"&gt;.col-mini-6 .col-small-3&lt;/div&gt;
 
   &lt;!-- Add the extra clearfix for only the required viewport --&gt;
   &lt;div class=\"clearfix visible-xs\"&gt;&lt;/div&gt;
 
-  &lt;div class=\"col-xs-6 col-sm-3\"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
-  &lt;div class=\"col-xs-6 col-sm-3\"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+  &lt;div class=\"col-mini-6 col-small-3\"&gt;.col-mini-6 .col-small-3&lt;/div&gt;
+  &lt;div class=\"col-mini-6 col-small-3\"&gt;.col-mini-6 .col-small-3&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 \t\t\t\t\t
@@ -521,13 +521,13 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-sm-5 col-md-6\"&gt;.col-sm-5 .col-md-6&lt;/div&gt;
-  &lt;div class=\"col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0\"&gt;.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0&lt;/div&gt;
+  &lt;div class=\"col-small-5 col-medium-6\"&gt;.col-small-5 .col-medium-6&lt;/div&gt;
+  &lt;div class=\"col-small-5 col-small-offset-2 col-medium-6 col-medium-offset-0\"&gt;.col-small-5 .col-small-offset-2 .col-medium-6 .col-medium-offset-0&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-sm-6 col-md-5 col-lg-6\"&gt;.col-sm-6 .col-md-5 .col-lg-6&lt;/div&gt;
-  &lt;div class=\"col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0\"&gt;.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0&lt;/div&gt;
+  &lt;div class=\"col-small-6 col-medium-5 col-large-6\"&gt;.col-small-6 .col-medium-5 .col-large-6&lt;/div&gt;
+  &lt;div class=\"col-small-6 col-medium-5 col-medium-offset-2 col-large-6 col-large-offset-0\"&gt;.col-small-6 .col-medium-5 .col-medium-offset-2 .col-large-6 .col-large-offset-0&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 \t\t\t\t\t
@@ -539,7 +539,7 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<p>
 \t\t\t\t\t\t
-\t\t\t\t\t\tMove columns to the right using <code>.col-md-offset-*</code> classes. These classes increase the left margin of a column by <code>*</code> columns. For example, <code>.col-md-offset-4</code> moves <code>.col-md-4</code> over four columns.
+\t\t\t\t\t\tMove columns to the right using <code>.col-medium-offset-*</code> classes. These classes increase the left margin of a column by <code>*</code> columns. For example, <code>.col-medium-offset-4</code> moves <code>.col-medium-4</code> over four columns.
 \t\t\t\t\t\t
 \t\t\t\t\t</p>
 \t\t\t\t\t
@@ -547,21 +547,21 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-md-4\">.col-md-4</div>
-\t\t\t\t\t\t\t<div class=\"col-md-4 col-md-offset-4\">.col-md-4 .col-md-offset-4</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-4\">.col-medium-4</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-4 col-medium-offset-4\">.col-medium-4 .col-medium-offset-4</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-md-3 col-md-offset-3\">.col-md-3 .col-md-offset-3</div>
-\t\t\t\t\t\t\t<div class=\"col-md-3 col-md-offset-3\">.col-md-3 .col-md-offset-3</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-3 col-medium-offset-3\">.col-medium-3 .col-medium-offset-3</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-3 col-medium-offset-3\">.col-medium-3 .col-medium-offset-3</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<div class=\"col-md-6 col-md-offset-3\">.col-md-6 .col-md-offset-3</div>
+\t\t\t\t\t\t\t<div class=\"col-medium-6 col-medium-offset-3\">.col-medium-6 .col-medium-offset-3</div>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
@@ -569,15 +569,15 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-md-4\"&gt;.col-md-4&lt;/div&gt;
-  &lt;div class=\"col-md-4 col-md-offset-4\"&gt;.col-md-4 .col-md-offset-4&lt;/div&gt;
+  &lt;div class=\"col-medium-4\"&gt;.col-medium-4&lt;/div&gt;
+  &lt;div class=\"col-medium-4 col-medium-offset-4\"&gt;.col-medium-4 .col-medium-offset-4&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-md-3 col-md-offset-3\"&gt;.col-md-3 .col-md-offset-3&lt;/div&gt;
-  &lt;div class=\"col-md-3 col-md-offset-3\"&gt;.col-md-3 .col-md-offset-3&lt;/div&gt;
+  &lt;div class=\"col-medium-3 col-medium-offset-3\"&gt;.col-medium-3 .col-medium-offset-3&lt;/div&gt;
+  &lt;div class=\"col-medium-3 col-medium-offset-3\"&gt;.col-medium-3 .col-medium-offset-3&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-md-6 col-md-offset-3\"&gt;.col-md-6 .col-md-offset-3&lt;/div&gt;
+  &lt;div class=\"col-medium-6 col-medium-offset-3\"&gt;.col-medium-6 .col-medium-offset-3&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 \t\t\t\t\t
@@ -589,27 +589,27 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<p>
 \t\t\t\t\t\t
-\t\t\t\t\t\tTo nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-md-*</code> columns within an existing <code>.col-md-*</code> column. Nested rows should include a set of columns that add up to 12.
+\t\t\t\t\t\tTo nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-medium-*</code> columns within an existing <code>.col-medium-*</code> column. Nested rows should include a set of columns that add up to 12.
 \t\t\t\t\t\t
 \t\t\t\t\t</p>
 \t\t\t\t\t
 \t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"col-md-9\">
+\t\t\t\t\t\t<div class=\"col-medium-9\">
 \t\t\t\t\t\t\t
-\t\t\t\t\t\t\tLevel 1: .col-md-9
+\t\t\t\t\t\t\tLevel 1: .col-medium-9
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<div class=\"col-md-6\">
+\t\t\t\t\t\t\t\t<div class=\"col-medium-6\">
 \t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\tLevel 2: .col-md-6
+\t\t\t\t\t\t\t\t\tLevel 2: .col-medium-6
 \t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t<div class=\"col-md-6\">
+\t\t\t\t\t\t\t\t<div class=\"col-medium-6\">
 \t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\tLevel 2: .col-md-6
+\t\t\t\t\t\t\t\t\tLevel 2: .col-medium-6
 \t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t
@@ -620,14 +620,14 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-md-9\"&gt;
-    Level 1: .col-md-9
+  &lt;div class=\"col-medium-9\"&gt;
+    Level 1: .col-medium-9
     &lt;div class=\"row\"&gt;
-      &lt;div class=\"col-md-6\"&gt;
-        Level 2: .col-md-6
+      &lt;div class=\"col-medium-6\"&gt;
+        Level 2: .col-medium-6
       &lt;/div&gt;
-      &lt;div class=\"col-md-6\"&gt;
-        Level 2: .col-md-6
+      &lt;div class=\"col-medium-6\"&gt;
+        Level 2: .col-medium-6
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -642,21 +642,21 @@ class __TwigTemplate_fca4b7398e0c877aa1c0963f1578e7e3 extends Twig_Template
 \t\t\t\t\t
 \t\t\t\t\t<p>
 \t\t\t\t\t\t
-\t\t\t\t\t\tEasily change the order of our built-in grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> modifier classes.
+\t\t\t\t\t\tEasily change the order of our built-in grid columns with <code>.col-medium-push-*</code> and <code>.col-medium-pull-*</code> modifier classes.
 \t\t\t\t\t\t
 \t\t\t\t\t</p>
 \t\t\t\t\t
 \t\t\t\t\t<div class=\"row show-grid\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t<div class=\"col-md-9 col-md-push-3\">.col-md-9 .col-md-push-3</div>
-\t\t\t\t\t\t<div class=\"col-md-3 col-md-pull-9\">.col-md-3 .col-md-pull-9</div>
+\t\t\t\t\t\t<div class=\"col-medium-9 col-medium-push-3\">.col-medium-9 .col-medium-push-3</div>
+\t\t\t\t\t\t<div class=\"col-medium-3 col-medium-pull-9\">.col-medium-3 .col-medium-pull-9</div>
 \t\t\t\t\t\t
 \t\t\t\t\t</div>
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
 &lt;div class=\"row\"&gt;
-  &lt;div class=\"col-md-9 col-md-push-3\"&gt;.col-md-9 .col-md-push-3&lt;/div&gt;
-  &lt;div class=\"col-md-3 col-md-pull-9\"&gt;.col-md-3 .col-md-pull-9&lt;/div&gt;
+  &lt;div class=\"col-medium-9 col-medium-push-3\"&gt;.col-medium-9 .col-medium-push-3&lt;/div&gt;
+  &lt;div class=\"col-medium-3 col-medium-pull-9\"&gt;.col-medium-3 .col-medium-pull-9&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 \t\t\t\t\t
@@ -4763,7 +4763,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t\t<p class=\"tall\">
 \t\t\t\t\t\t
-\t\t\t\t\t\tSet heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.
+\t\t\t\t\t\tSet heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-large-*</code>.
 \t\t\t\t\t\t
 \t\t\t\t\t</p>
 \t\t\t\t\t
