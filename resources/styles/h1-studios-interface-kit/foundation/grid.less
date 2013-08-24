@@ -18,6 +18,17 @@
 	
 	.make-container-fixed();
 	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Fluid Grid                                                                                           */
+	/* ---------------------------------------------------------------------------------------------------- */
+		
+	&.container-fluid {
+		
+		max-width: none !important;
+		width: auto !important;
+		
+	}
+	
 }
 
 .row {
@@ -85,6 +96,32 @@
 	
 	padding-left:  (@grid-gutter-width / 2);
 	padding-right: (@grid-gutter-width / 2);
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Column Spill                                                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.col-spill {
+	
+	margin-top: @primary-margin;
+	
+	&.col-spill-short {
+	
+		margin-top: @primary-margin-short;
+		
+	}
+	
+	&.col-spill-tall {
+	
+		margin-top: @primary-margin-tall;
+		
+	}
 	
 }
 
@@ -273,6 +310,30 @@
 	.col-small-offset-10 { margin-left: percentage((10/ @grid-column-count)); }
 	.col-small-offset-11 { margin-left: percentage((11/ @grid-column-count)); }
 	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Column Spill                                                                                         */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.col-spill {
+		
+		margin-top: 0px;
+		
+		&.col-spill-short {
+		
+			margin-top: 0px;
+			
+		}
+		
+		&.col-spill-tall {
+		
+			margin-top: 0px;
+			
+		}
+		
+	}
+
 }
 
 

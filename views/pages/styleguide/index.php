@@ -3686,7 +3686,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					
 					<p>
 						
-						You can de-emphasize a button by making it look like a link while maintaining button behavior by adding the class <code>.btn-link</code> to the button.
+						You can de-emphasize a button by making it look like a link while maintaining button behavior by adding the class <code>.button-link</code> to the button.
 						
 					</p>
 					
@@ -3695,22 +3695,22 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 						<div class="button-toolbar">
 							
 							<button type="button" class="button button-default">Default</button>
-							<button type="button" class="button button-default btn-link">Default</button>
-							<button type="button" class="button button-primary btn-link">Primary</button>
-							<button type="button" class="button button-success btn-link">Success</button>
-							<button type="button" class="button button-warning btn-link">Warning</button>
-							<button type="button" class="button button-danger btn-link">Danger</button>
+							<button type="button" class="button button-default button-link">Default</button>
+							<button type="button" class="button button-primary button-link">Primary</button>
+							<button type="button" class="button button-success button-link">Success</button>
+							<button type="button" class="button button-warning button-link">Warning</button>
+							<button type="button" class="button button-danger button-link">Danger</button>
 							
 						</div>
 						
 					</div>
 					
 <pre class="prettyprint linenums">
-&lt;button type="button" class="button button-default btn-link"&gt;Default&lt;/button&gt;
-&lt;button type="button" class="button button-primary btn-link"&gt;Primary&lt;/button&gt;
-&lt;button type="button" class="button button-success btn-link"&gt;Success&lt;/button&gt;
-&lt;button type="button" class="button button-warning btn-link"&gt;Warning&lt;/button&gt;
-&lt;button type="button" class="button button-danger btn-link"&gt;Danger&lt;/button&gt;
+&lt;button type="button" class="button button-default button-link"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="button button-primary button-link"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="button button-success button-link"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="button button-warning button-link"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="button button-danger button-link"&gt;Danger&lt;/button&gt;
 </pre>
 					
 					<!-- ================================================== -->
@@ -4059,7 +4059,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
         &lt;input type="checkbox"&gt; Check me out
       &lt;/label&gt;
     &lt;/div&gt;
-    &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+    &lt;button type="submit" class="button button-default"&gt;Submit&lt;/button&gt;
   &lt;/fieldset&gt;
 &lt;/form&gt;
 </pre>

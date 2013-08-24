@@ -362,7 +362,7 @@
 
 // Large Screen (Desktop)
 
-@screen-large:																1200px;
+@screen-large:																1280px;
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* Fixed Grid                                                                                           */
@@ -3133,9 +3133,271 @@
 
 
 
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Labels                                                                                               */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
+/* ---------------------------------------------------------------------------------------------------- */
+/* Label                                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
 
+@label-border-radius:														4px;
+@label-border-width:														0px;
+@label-padding-horizontal:													12px;
+@label-text-font-family:													@body-text-font-family;
+@label-text-font-size:														@body-text-font-size;
+@label-text-font-style:													@body-text-font-style;
+@label-text-font-weight:													600;
+@label-text-line-height:													@body-text-line-height;
+@label-text-transform:														@body-text-transform;
 
+// Responsive Sizing
 
+@label-ratio-screen-small:													1.13;
+@label-ratio-screen-medium:												1.25;
+@label-ratio-screen-large:													1.30;
 
+/* ---------------------------------------------------------------------------------------------------- */
+/* Large Button                                                                                         */
+/* ---------------------------------------------------------------------------------------------------- */
 
+@label-large-height:														42px;
+@label-large-border-radius:												6px;
+@label-large-border-width:													0px;
+@label-large-padding-horizontal:											@label-padding-horizontal * 1.2;
+@label-large-text-font-size:												18px;
+@label-large-text-font-weight:												500;
+@label-large-text-font-style:												@label-text-font-style;
+@label-large-text-line-height:												24px;
+@label-large-text-transform:												@label-text-transform;
+
+// Responsive Sizing
+
+@label-large-ratio-screen-small:											@label-ratio-screen-small;
+@label-large-ratio-screen-medium:											@label-ratio-screen-medium;
+@label-large-ratio-screen-large:											@label-ratio-screen-large;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Small Button                                                                                         */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@label-small-height:														24px;
+@label-small-border-radius:												3px;
+@label-small-border-width:													0px;
+@label-small-padding-horizontal:											@label-padding-horizontal;
+@label-small-text-font-size:												11px;
+@label-small-text-font-weight:												@label-text-font-weight;
+@label-small-text-font-style:												@label-text-font-style;
+@label-small-text-line-height:												16px;
+@label-small-text-transform:												@label-text-transform;
+
+// Responsive Sizing
+
+@label-small-ratio-screen-small:											@label-ratio-screen-small;
+@label-small-ratio-screen-medium:											@label-ratio-screen-medium;
+@label-small-ratio-screen-large:											@label-ratio-screen-large;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Mini Button                                                                                          */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@label-mini-height:														18px;
+@label-mini-border-radius:													3px;
+@label-mini-border-width:													0px;
+@label-mini-padding-horizontal:											@label-padding-horizontal * 0.75;
+@label-mini-text-font-size:												9px;
+@label-mini-text-font-weight:												@label-text-font-weight;
+@label-mini-text-font-style:												@label-text-font-style;
+@label-mini-text-line-height:												16px;
+@label-mini-text-transform:												@label-text-transform;
+
+// Responsive Sizing
+
+@label-mini-ratio-screen-small:											@label-ratio-screen-small;
+@label-mini-ratio-screen-medium:											@label-ratio-screen-medium;
+@label-mini-ratio-screen-large:											@label-ratio-screen-large;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Button Group                                                                                         */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@label-group-padding-horizontal:											1px;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Button Toolbar                                                                                       */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@label-toolbar-padding-horizontal:											5px;
+@label-toolbar-padding-horizontal-screen-small:							5px;
+@label-toolbar-padding-horizontal-screen-medium:							10px;
+@label-toolbar-padding-horizontal-screen-large:							15px;
+
+// Button Toolbar Margins
+
+@label-toolbar-margin:														@primary-margin * 0.5;
+@label-toolbar-margin-screen-small:										@primary-margin-screen-small * 0.5;
+@label-toolbar-margin-screen-medium:										@primary-margin-screen-medium * 0.5;
+@label-toolbar-margin-screen-large:										@primary-margin-screen-large * 0.5;
+
+@label-toolbar-margin-short:												@primary-margin-short * 0.5;
+@label-toolbar-margin-short-screen-small:									@primary-margin-short-screen-small * 0.5;
+@label-toolbar-margin-short-screen-medium:									@primary-margin-short-screen-medium * 0.5;
+@label-toolbar-margin-short-screen-large:									@primary-margin-short-screen-large * 0.5;
+
+@label-toolbar-margin-tall:												@primary-margin-tall * 0.5;
+@label-toolbar-margin-tall-screen-small:									@primary-margin-tall-screen-small * 0.5;
+@label-toolbar-margin-tall-screen-medium:									@primary-margin-tall-screen-medium * 0.5;
+@label-toolbar-margin-tall-screen-large:									@primary-margin-tall-screen-large * 0.5;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Default Button                                                                                       */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@label-default-text-color:													@gray-darken-30;
+@label-default-text-shadow:													0 1px 1px rgba(255, 255, 255, 0.75);
+@label-default-offset-top:													0px;
+@label-default-offset-bottom:												0px;
+@label-default-background-color:											@gray-lighten-80;
+@label-default-background-gradient-top-color:								@gray-lighten-90;
+@label-default-background-gradient-bottom-color:							@gray-lighten-70;
+@label-default-border-color:												none;
+@label-default-shadow:														inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
+																			0px 0px 0px 1px rgba(0, 0, 0, 0.15),
+																			0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+
+@label-default-hover-text-color:											@gray-darken-30;
+@label-default-hover-text-shadow:											0 1px 1px rgba(255, 255, 255, 0.75);
+@label-default-hover-offset-top:											0px;
+@label-default-hover-offset-bottom:										0px;
+@label-default-hover-background-color:										@gray-lighten-70;
+@label-default-hover-background-gradient-top-color:						@gray-lighten-90;
+@label-default-hover-background-gradient-bottom-color:						@gray-lighten-50;
+@label-default-hover-border-color:											none;
+@label-default-hover-shadow:												inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
+																			0px 0px 0px 1px rgba(0, 0, 0, 0.25),
+																			0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+
+@label-default-active-text-color:											@gray-darken-10;
+@label-default-active-text-shadow:											none;
+@label-default-active-offset-top:											0px;
+@label-default-active-offset-bottom:										0px;
+@label-default-active-background-color:									@gray-lighten-70;
+@label-default-active-background-gradient-top-color:						@gray-lighten-60;
+@label-default-active-background-gradient-bottom-color:					@gray-lighten-90;
+@label-default-active-border-color:										none;
+@label-default-active-shadow:												inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
+																			0px 0px 0px 1px rgba(0, 0, 0, 0.3),
+																			0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+
+@label-default-disabled-opacity:											50;
+@label-default-disabled-text-color:										@label-default-text-color;
+@label-default-disabled-text-shadow:										@label-default-text-shadow;
+@label-default-disabled-offset-top:										@label-default-offset-top;
+@label-default-disabled-offset-bottom:										@label-default-offset-bottom;
+@label-default-disabled-background-color:									@label-default-background-color;
+@label-default-disabled-background-gradient-top-color:						@label-default-background-gradient-top-color;
+@label-default-disabled-background-gradient-bottom-color:					@label-default-background-gradient-bottom-color;
+@label-default-disabled-border-color:										@label-default-border-color;
+@label-default-disabled-shadow:											@label-default-shadow;
+
+// Link
+
+@label-default-link-text-color:											@gray-darken-25;
+@label-default-link-text-shadow:											none;
+@label-default-link-offset-top:											@label-default-offset-top;
+@label-default-link-offset-bottom:											@label-default-offset-bottom;
+@label-default-link-background-color:										none;
+@label-default-link-background-gradient-top-color:							none;
+@label-default-link-background-gradient-bottom-color:						none;
+@label-default-link-border-width:											0px;
+@label-default-link-border-color:											none;
+@label-default-link-shadow:												none;
+
+@label-default-link-hover-text-color:										@gray-darken-50;
+@label-default-link-hover-text-shadow:										none;
+@label-default-link-hover-offset-top:										@label-default-hover-offset-top;
+@label-default-link-hover-offset-bottom:									@label-default-hover-offset-bottom;
+@label-default-link-hover-background-color:								none;
+@label-default-link-hover-background-gradient-top-color:					none;
+@label-default-link-hover-background-gradient-bottom-color:				none;
+@label-default-link-hover-border-width:									0px;
+@label-default-link-hover-border-color:									none;
+@label-default-link-hover-shadow:											none;
+
+@label-default-link-active-text-color:										@gray-darken-75;
+@label-default-link-active-text-shadow:									none;
+@label-default-link-active-offset-top:										@label-default-active-offset-top;
+@label-default-link-active-offset-bottom:									@label-default-active-offset-bottom;
+@label-default-link-active-background-color:								none;
+@label-default-link-active-background-gradient-top-color:					none;
+@label-default-link-active-background-gradient-bottom-color:				none;
+@label-default-link-active-border-width:									0px;
+@label-default-link-active-border-color:									none;
+@label-default-link-active-shadow:											none;
+
+@label-default-link-disabled-opacity:										50;
+@label-default-link-disabled-text-color:									@label-default-link-text-color;
+@label-default-link-disabled-text-shadow:									@label-default-link-text-shadow;
+@label-default-link-disabled-offset-top:									@label-default-link-offset-top;
+@label-default-link-disabled-offset-bottom:								@label-default-link-offset-bottom;
+@label-default-link-disabled-background-color:								@label-default-link-background-color;
+@label-default-link-disabled-background-gradient-top-color:				@label-default-link-background-gradient-top-color;
+@label-default-link-disabled-background-gradient-bottom-color:				@label-default-link-background-gradient-bottom-color;
+@label-default-link-disabled-border-width:									@label-default-link-border-width;
+@label-default-link-disabled-border-color:									@label-default-link-border-color;
+@label-default-link-disabled-shadow:										@label-default-link-shadow;
+
+// Inverse
+
+@label-default-inverse-text-color:											@gray-lighten-60;
+@label-default-inverse-text-shadow:										0 -1px 1px rgba(0, 0, 0, 0.75);
+@label-default-inverse-offset-top:											0px;
+@label-default-inverse-offset-bottom:										0px;
+@label-default-inverse-background-color:									@gray-darken-80;
+@label-default-inverse-background-gradient-top-color:						@gray-darken-70;
+@label-default-inverse-background-gradient-bottom-color:					@gray-darken-90;
+@label-default-inverse-border-width:										0px;
+@label-default-inverse-border-color:										none;
+@label-default-inverse-shadow:												inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15),
+																			0px 0px 0px 1px rgba(0, 0, 0, 0.75),
+																			0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+
+@label-default-inverse-hover-text-color:									@gray-lighten-60;
+@label-default-inverse-hover-text-shadow:									0 -1px 1px rgba(0, 0, 0, 0.75);
+@label-default-inverse-hover-offset-top:									0px;
+@label-default-inverse-hover-offset-bottom:								0px;
+@label-default-inverse-hover-background-color:								@gray-darken-70;
+@label-default-inverse-hover-background-gradient-top-color:				@gray-darken-60;
+@label-default-inverse-hover-background-gradient-bottom-color:				@gray-darken-85;
+@label-default-inverse-hover-border-width:									0px;
+@label-default-inverse-hover-border-color:									none;
+@label-default-inverse-hover-shadow:										inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15),
+																			0px 0px 0px 1px rgba(0, 0, 0, 0.75),
+																			0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+
+@label-default-inverse-active-text-color:									@gray-lighten-60;
+@label-default-inverse-active-text-shadow:									0 -1px 1px rgba(0, 0, 0, 0.75);
+@label-default-inverse-active-offset-top:									0px;
+@label-default-inverse-active-offset-bottom:								0px;
+@label-default-inverse-active-background-color:							@gray-darken-80;
+@label-default-inverse-active-background-gradient-top-color:				@gray-darken-85;
+@label-default-inverse-active-background-gradient-bottom-color:			@gray-darken-60;
+@label-default-inverse-active-border-width:								0px;
+@label-default-inverse-active-border-color:								none;
+@label-default-inverse-active-shadow:										inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
+																			0px 0px 0px 1px rgba(0, 0, 0, 0.75),
+																			0px 1px 2px 0px rgba(255, 255, 255, 0.15);
+
+@label-default-inverse-disabled-opacity:									50;
+@label-default-inverse-disabled-text-color:								@label-default-inverse-text-color;
+@label-default-inverse-disabled-text-shadow:								@label-default-inverse-text-shadow;
+@label-default-inverse-disabled-offset-top:								@label-default-inverse-offset-top;
+@label-default-inverse-disabled-offset-bottom:								@label-default-inverse-offset-bottom;
+@label-default-inverse-disabled-background-color:							@label-default-inverse-background-color;
+@label-default-inverse-disabled-background-gradient-top-color:				@label-default-inverse-background-gradient-top-color;
+@label-default-inverse-disabled-background-gradient-bottom-color:			@label-default-inverse-background-gradient-bottom-color;
+@label-default-inverse-disabled-border-width:								@label-default-inverse-border-width;
+@label-default-inverse-disabled-border-color:								@label-default-inverse-border-color;
+@label-default-inverse-disabled-shadow:									@label-default-inverse-shadow;

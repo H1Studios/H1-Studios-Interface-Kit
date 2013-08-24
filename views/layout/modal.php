@@ -4,7 +4,7 @@
 		
 		{% block modal_header %}
 		
-			<button type="button" class="btn btn-primary close" title="Close" data-dismiss="modal" aria-hidden="true">
+			<button type="button" class="button button-primary close" title="Close" data-dismiss="modal" aria-hidden="true">
 				
 				<i class="icon-16 icon-white-shadowed icon-close"></i>
 				

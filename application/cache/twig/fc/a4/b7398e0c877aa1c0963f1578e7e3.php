@@ -3716,7 +3716,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t
 \t\t\t\t\t<p>
 \t\t\t\t\t\t
-\t\t\t\t\t\tYou can de-emphasize a button by making it look like a link while maintaining button behavior by adding the class <code>.btn-link</code> to the button.
+\t\t\t\t\t\tYou can de-emphasize a button by making it look like a link while maintaining button behavior by adding the class <code>.button-link</code> to the button.
 \t\t\t\t\t\t
 \t\t\t\t\t</p>
 \t\t\t\t\t
@@ -3725,22 +3725,22 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 \t\t\t\t\t\t<div class=\"button-toolbar\">
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<button type=\"button\" class=\"button button-default\">Default</button>
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-default btn-link\">Default</button>
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-primary btn-link\">Primary</button>
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-success btn-link\">Success</button>
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-warning btn-link\">Warning</button>
-\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-danger btn-link\">Danger</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-default button-link\">Default</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-primary button-link\">Primary</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-success button-link\">Success</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-warning button-link\">Warning</button>
+\t\t\t\t\t\t\t<button type=\"button\" class=\"button button-danger button-link\">Danger</button>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t</div>
 \t\t\t\t\t
 <pre class=\"prettyprint linenums\">
-&lt;button type=\"button\" class=\"button button-default btn-link\"&gt;Default&lt;/button&gt;
-&lt;button type=\"button\" class=\"button button-primary btn-link\"&gt;Primary&lt;/button&gt;
-&lt;button type=\"button\" class=\"button button-success btn-link\"&gt;Success&lt;/button&gt;
-&lt;button type=\"button\" class=\"button button-warning btn-link\"&gt;Warning&lt;/button&gt;
-&lt;button type=\"button\" class=\"button button-danger btn-link\"&gt;Danger&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-default button-link\"&gt;Default&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-primary button-link\"&gt;Primary&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-success button-link\"&gt;Success&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-warning button-link\"&gt;Warning&lt;/button&gt;
+&lt;button type=\"button\" class=\"button button-danger button-link\"&gt;Danger&lt;/button&gt;
 </pre>
 \t\t\t\t\t
 \t\t\t\t\t<!-- ================================================== -->
@@ -4089,7 +4089,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
         &lt;input type=\"checkbox\"&gt; Check me out
       &lt;/label&gt;
     &lt;/div&gt;
-    &lt;button type=\"submit\" class=\"btn btn-default\"&gt;Submit&lt;/button&gt;
+    &lt;button type=\"submit\" class=\"button button-default\"&gt;Submit&lt;/button&gt;
   &lt;/fieldset&gt;
 &lt;/form&gt;
 </pre>
