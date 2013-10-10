@@ -614,12 +614,6 @@ textarea {
   position: absolute !important;
   left: -9999px !important;
 }
-.flush-bottom {
-  margin-bottom: 0px !important;
-}
-.flush-top {
-  margin-top: 0px !important;
-}
 .hasCursor {
   cursor: pointer;
 }
@@ -665,6 +659,17 @@ Uncomment when LESS Support functions that return as value
 .hidden {
   display: none;
   visibility: hidden;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Flush Margins                                                                                        */
+/*                                                                                                      */
+/* ==================================================================================================== */
+.flush-bottom {
+  margin-bottom: 0px !important;
+}
+.flush-top {
+  margin-top: 0px !important;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -1170,6 +1175,45 @@ td.visible-print {
   th.hidden-print,
   td.hidden-print {
     display: none !important;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 768px) {
+  .flush-bottom-screen-small {
+    margin-bottom: 0px !important;
+  }
+  .flush-top-screen-small {
+    margin-top: 0px !important;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 992px) {
+  .flush-bottom-screen-medium {
+    margin-bottom: 0px !important;
+  }
+  .flush-top-screen-medium {
+    margin-top: 0px !important;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 1280px) {
+  .flush-bottom-screen-large {
+    margin-bottom: 0px !important;
+  }
+  .flush-top-screen-large {
+    margin-top: 0px !important;
   }
 }
 /* ==================================================================================================== */
@@ -6961,9 +7005,7 @@ table th[class*="span"],
   margin-right: 6px;
 }
 .button:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  outline: none;
 }
 .button:hover {
   text-decoration: none;
@@ -12854,7 +12896,7 @@ input[type="submit"].button.button-mini {
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
-/* core/forms.less                                                                                      */
+/* components/forms.less                                                                                */
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ==================================================================================================== */
