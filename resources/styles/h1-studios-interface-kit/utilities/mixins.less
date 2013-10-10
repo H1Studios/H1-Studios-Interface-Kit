@@ -430,9 +430,20 @@
 		
 	}
 	
+	.horizontal-three-colors(@startColor: #00b3ee, @midColor: #7a43b6, @colorStop: 50%, @endColor: #c3325f) {
+		
+		background: -moz-linear-gradient(left, @startColor 0%, @midColor @colorStop, @endColor 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%, @startColor), color-stop(@colorStop, @midColor), color-stop(100%,@endColor)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left, @startColor 0%, @midColor @colorStop, @endColor 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left, @startColor 0%, @midColor @colorStop, @endColor 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left, @startColor 0%, @midColor @colorStop, @endColor 100%); /* IE10+ */
+		background: linear-gradient(to right, @startColor 0%, @midColor @colorStop, @endColor 100%); /* W3C */
+		filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",argb(@startColor),argb(@endColor)));
+		
+	}
+	
 	.vertical-three-colors(@startColor: #00b3ee, @midColor: #7a43b6, @colorStop: 50%, @endColor: #c3325f) {
 		
-		background-color: mix(@midColor, @endColor, 80%);
 		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), color-stop(@colorStop, @midColor), to(@endColor));
 		background-image: -webkit-linear-gradient(@startColor, @midColor @colorStop, @endColor);
 		background-image: -moz-linear-gradient(top, @startColor, @midColor @colorStop, @endColor);
@@ -1147,6 +1158,8 @@
 .invisible {
 	
 	visibility: hidden;
+	position: absolute !important;
+	left: -9999px !important;
 	
 }
 

@@ -1,0 +1,277 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* layout/modal.less                                                                                    */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+.modal-open .modal {
+	
+	.dropdown-menu {
+		
+		z-index: @z-index-dropdown + @z-index-modal;
+		
+	}
+	
+	.dropdown.open {
+		
+		*z-index: @z-index-dropdown + @z-index-modal;
+		
+	}
+	
+	.popover {
+		
+		z-index: @z-index-popover  + @z-index-modal;
+		
+	}
+	
+	.tooltip {
+		
+		z-index: @z-index-tooltip  + @z-index-modal;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Modal Backdrop                                                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.modal-backdrop {
+	
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: @z-index-modal-backdrop;
+	background-color: @modal-backdrop-color;
+	
+	&.fade {
+		
+		opacity: 0;
+		
+	}
+	
+}
+
+.modal-backdrop,
+.modal-backdrop.fade.in {
+	
+	.opacity(@modal-backdrop-opacity);
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Modal                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.modal {
+	
+	position: fixed;
+	top: auto;
+	left: @modal-margin-horizontal;
+	right: @modal-margin-horizontal;
+	width: auto;
+	margin: 0;
+	display: block;
+	z-index: @z-index-modal;
+	.border-radius(10px);
+	@shadow:
+		0px 0px 0px 1px rgba(0, 0, 0, 0.15),
+		0px 3px 10px 1px rgba(0, 0, 0, 0.25);
+	.box-shadow(@shadow);
+	
+	&:hover,
+	&:focus,
+	&:active {
+		
+		outline: 0;
+		
+	}
+	
+	&.fade {
+		
+		.transition(e('opacity .3s linear, top .3s ease-out'));
+		top: 35%;
+		.opacity(0);
+		
+	}
+	
+	&.fade.in {
+		
+		top: 50%;
+		.opacity(100);
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Modal Header                                                                                         */
+	/* ---------------------------------------------------------------------------------------------------- */
+		
+	.modal-header {
+		
+		background: @gray-lighten-95;
+		.border-radius(10px 10px 0px 0px);
+		position: relative;
+		z-index: @z-index-modal + 2;
+		.clearfix();
+		.box-shadow(0px 1px 0px 0px @border-color);
+		
+		.close {
+			
+			position: absolute;
+			top: -14px;
+			right: -14px;
+			width: auto !important;
+			height: auto !important;
+			line-height: 16px !important;
+			.border-radius(50px);
+			padding: 6px !important;
+				
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Modal Body                                                                                           */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.modal-body {
+		
+		position: relative;
+		z-index: @z-index-modal + 1;
+		background: @white;
+		.clearfix();
+		display: block;
+		z-index: @z-index-modal + 1;
+		.border-radius(10px 10px 0px 0px);		
+		
+		&.has-header {
+			
+			.border-radius(0px);
+			
+		}
+		
+		.modal-body-scrollable {
+			
+			.clearfix();
+			display: block;
+			height: 100%;
+			
+		}
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Modal Footer                                                                                         */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.modal-footer {
+		
+		background: @gray-lighten-95;
+		.border-radius(0px 0px 10px 10px);
+		position: relative;
+		z-index: @z-index-modal + 3;
+		.clearfix();
+		.box-shadow(0px -1px 0px 0px @border-color);
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-small) {
+	
+	/* ==================================================================================================== */
+	/* Modal                                                                                                */
+	/* ==================================================================================================== */
+	
+	.modal {
+		
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: @modal-width-screen-small;
+		margin: 0px 0 0 -(@modal-width-screen-small / 2);
+		
+	}
+	
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-medium) {
+	
+	/* ==================================================================================================== */
+	/* Modal                                                                                                */
+	/* ==================================================================================================== */
+	
+	.modal {
+		
+		width: @modal-width-screen-medium;
+		margin: 0px 0 0 -(@modal-width-screen-medium / 2);
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-large) {
+	
+	/* ==================================================================================================== */
+	/* Modal                                                                                                */
+	/* ==================================================================================================== */
+	
+	.modal {
+		
+		width: @modal-width-screen-large;
+		margin: 0px 0 0 -(@modal-width-screen-large / 2);
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

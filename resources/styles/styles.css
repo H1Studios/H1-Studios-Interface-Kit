@@ -55,6 +55,11 @@
 /* ---------------------------------------------------------------------------------------------------- */
 /* ==================================================================================================== */
 /*                                                                                                      */
+/* Modal                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Foundation                                                                                           */
 /*                                                                                                      */
 /* ==================================================================================================== */
@@ -275,6 +280,26 @@
 /* ---------------------------------------------------------------------------------------------------- */
 /* ==================================================================================================== */
 /*                                                                                                      */
+/* Icons                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Mini Icon                                                                                            */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Mini Icon                                                                                            */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Mini Icon                                                                                            */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Mini Icon                                                                                            */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Mini Icon                                                                                            */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Labels                                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
@@ -299,6 +324,11 @@
 /* ---------------------------------------------------------------------------------------------------- */
 /* Default Button                                                                                       */
 /* ---------------------------------------------------------------------------------------------------- */
+/* ========================================================================= */
+/*                                                                           */
+/* Progress Bars                                                             */
+/*                                                                           */
+/* ========================================================================= */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
@@ -581,6 +611,8 @@ textarea {
 }
 .invisible {
   visibility: hidden;
+  position: absolute !important;
+  left: -9999px !important;
 }
 .flush-bottom {
   margin-bottom: 0px !important;
@@ -3177,6 +3209,31 @@ h1 a:active,
   color: #0b2723;
   text-decoration: none;
 }
+h1 .icon,
+.h1-clone .icon {
+  margin-right: 10px;
+  margin-top: 19px;
+}
+h1 .icon.icon-small,
+.h1-clone .icon.icon-small {
+  margin-right: 10px;
+  margin-top: 15px;
+}
+h1 .icon.icon-medium,
+.h1-clone .icon.icon-medium {
+  margin-right: 10px;
+  margin-top: 11px;
+}
+h1 .icon.icon-large,
+.h1-clone .icon.icon-large {
+  margin-right: 10px;
+  margin-top: 3px;
+}
+h1 .icon.icon-jumbo,
+.h1-clone .icon.icon-jumbo {
+  margin-right: 10px;
+  margin-top: -5px;
+}
 h1.emphasis,
 .h1-clone.emphasis,
 h1 .emphasis,
@@ -3343,6 +3400,31 @@ h2 a:active,
 .h2-clone a:active {
   color: #0b2723;
   text-decoration: none;
+}
+h2 .icon,
+.h2-clone .icon {
+  margin-right: 10px;
+  margin-top: 11px;
+}
+h2 .icon.icon-small,
+.h2-clone .icon.icon-small {
+  margin-right: 10px;
+  margin-top: 7px;
+}
+h2 .icon.icon-medium,
+.h2-clone .icon.icon-medium {
+  margin-right: 10px;
+  margin-top: 3px;
+}
+h2 .icon.icon-large,
+.h2-clone .icon.icon-large {
+  margin-right: 10px;
+  margin-top: -5px;
+}
+h2 .icon.icon-jumbo,
+.h2-clone .icon.icon-jumbo {
+  margin-right: 10px;
+  margin-top: -13px;
 }
 h2.emphasis,
 .h2-clone.emphasis,
@@ -3511,6 +3593,31 @@ h3 a:active,
   color: #0b2723;
   text-decoration: none;
 }
+h3 .icon,
+.h3-clone .icon {
+  margin-right: 10px;
+  margin-top: 8px;
+}
+h3 .icon.icon-small,
+.h3-clone .icon.icon-small {
+  margin-right: 10px;
+  margin-top: 4px;
+}
+h3 .icon.icon-medium,
+.h3-clone .icon.icon-medium {
+  margin-right: 10px;
+  margin-top: 0px;
+}
+h3 .icon.icon-large,
+.h3-clone .icon.icon-large {
+  margin-right: 10px;
+  margin-top: -8px;
+}
+h3 .icon.icon-jumbo,
+.h3-clone .icon.icon-jumbo {
+  margin-right: 10px;
+  margin-top: -16px;
+}
 h3.emphasis,
 .h3-clone.emphasis,
 h3 .emphasis,
@@ -3677,6 +3784,31 @@ h4 a:active,
 .h4-clone a:active {
   color: #0b2723;
   text-decoration: none;
+}
+h4 .icon,
+.h4-clone .icon {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+h4 .icon.icon-small,
+.h4-clone .icon.icon-small {
+  margin-right: 10px;
+  margin-top: 1px;
+}
+h4 .icon.icon-medium,
+.h4-clone .icon.icon-medium {
+  margin-right: 10px;
+  margin-top: -3px;
+}
+h4 .icon.icon-large,
+.h4-clone .icon.icon-large {
+  margin-right: 10px;
+  margin-top: -11px;
+}
+h4 .icon.icon-jumbo,
+.h4-clone .icon.icon-jumbo {
+  margin-right: 10px;
+  margin-top: -19px;
 }
 h4.emphasis,
 .h4-clone.emphasis,
@@ -3845,6 +3977,31 @@ h5 a:active,
   color: #0b2723;
   text-decoration: none;
 }
+h5 .icon,
+.h5-clone .icon {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+h5 .icon.icon-small,
+.h5-clone .icon.icon-small {
+  margin-right: 10px;
+  margin-top: 1px;
+}
+h5 .icon.icon-medium,
+.h5-clone .icon.icon-medium {
+  margin-right: 10px;
+  margin-top: -3px;
+}
+h5 .icon.icon-large,
+.h5-clone .icon.icon-large {
+  margin-right: 10px;
+  margin-top: -11px;
+}
+h5 .icon.icon-jumbo,
+.h5-clone .icon.icon-jumbo {
+  margin-right: 10px;
+  margin-top: -19px;
+}
 h5.emphasis,
 .h5-clone.emphasis,
 h5 .emphasis,
@@ -4011,6 +4168,31 @@ h6 a:active,
 .h6-clone a:active {
   color: #0b2723;
   text-decoration: none;
+}
+h6 .icon,
+.h6-clone .icon {
+  margin-right: 10px;
+  margin-top: 2px;
+}
+h6 .icon.icon-small,
+.h6-clone .icon.icon-small {
+  margin-right: 10px;
+  margin-top: -2px;
+}
+h6 .icon.icon-medium,
+.h6-clone .icon.icon-medium {
+  margin-right: 10px;
+  margin-top: -6px;
+}
+h6 .icon.icon-large,
+.h6-clone .icon.icon-large {
+  margin-right: 10px;
+  margin-top: -14px;
+}
+h6 .icon.icon-jumbo,
+.h6-clone .icon.icon-jumbo {
+  margin-right: 10px;
+  margin-top: -22px;
 }
 h6.emphasis,
 .h6-clone.emphasis,
@@ -4451,6 +4633,31 @@ blockquote:after {
   .h1-clone.short {
     margin-bottom: 21px;
   }
+  h1 .icon,
+  .h1-clone .icon {
+    margin-right: 14px;
+    margin-top: 29.799999999999997px;
+  }
+  h1 .icon.icon-small,
+  .h1-clone .icon.icon-small {
+    margin-right: 14px;
+    margin-top: 25.799999999999997px;
+  }
+  h1 .icon.icon-medium,
+  .h1-clone .icon.icon-medium {
+    margin-right: 14px;
+    margin-top: 21.799999999999997px;
+  }
+  h1 .icon.icon-large,
+  .h1-clone .icon.icon-large {
+    margin-right: 14px;
+    margin-top: 13.799999999999997px;
+  }
+  h1 .icon.icon-jumbo,
+  .h1-clone .icon.icon-jumbo {
+    margin-right: 14px;
+    margin-top: 5.799999999999997px;
+  }
   /* ==================================================================================================== */
   /*                                                                                                      */
   /* Heading h2 Text                                                                                      */
@@ -4469,6 +4676,31 @@ blockquote:after {
   h2.short,
   .h2-clone.short {
     margin-bottom: 19.5px;
+  }
+  h2 .icon,
+  .h2-clone .icon {
+    margin-right: 13px;
+    margin-top: 16.7px;
+  }
+  h2 .icon.icon-small,
+  .h2-clone .icon.icon-small {
+    margin-right: 13px;
+    margin-top: 12.7px;
+  }
+  h2 .icon.icon-medium,
+  .h2-clone .icon.icon-medium {
+    margin-right: 13px;
+    margin-top: 8.7px;
+  }
+  h2 .icon.icon-large,
+  .h2-clone .icon.icon-large {
+    margin-right: 13px;
+    margin-top: 0.6999999999999993px;
+  }
+  h2 .icon.icon-jumbo,
+  .h2-clone .icon.icon-jumbo {
+    margin-right: 13px;
+    margin-top: -7.300000000000001px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -4489,6 +4721,31 @@ blockquote:after {
   .h3-clone.short {
     margin-bottom: 18px;
   }
+  h3 .icon,
+  .h3-clone .icon {
+    margin-right: 12px;
+    margin-top: 11.2px;
+  }
+  h3 .icon.icon-small,
+  .h3-clone .icon.icon-small {
+    margin-right: 12px;
+    margin-top: 7.199999999999999px;
+  }
+  h3 .icon.icon-medium,
+  .h3-clone .icon.icon-medium {
+    margin-right: 12px;
+    margin-top: 3.1999999999999993px;
+  }
+  h3 .icon.icon-large,
+  .h3-clone .icon.icon-large {
+    margin-right: 12px;
+    margin-top: -4.800000000000001px;
+  }
+  h3 .icon.icon-jumbo,
+  .h3-clone .icon.icon-jumbo {
+    margin-right: 12px;
+    margin-top: -12.8px;
+  }
   /* ==================================================================================================== */
   /*                                                                                                      */
   /* Heading h4 Text                                                                                      */
@@ -4507,6 +4764,31 @@ blockquote:after {
   h4.short,
   .h4-clone.short {
     margin-bottom: 11px;
+  }
+  h4 .icon,
+  .h4-clone .icon {
+    margin-right: 11px;
+    margin-top: 6.300000000000001px;
+  }
+  h4 .icon.icon-small,
+  .h4-clone .icon.icon-small {
+    margin-right: 11px;
+    margin-top: 2.3000000000000007px;
+  }
+  h4 .icon.icon-medium,
+  .h4-clone .icon.icon-medium {
+    margin-right: 11px;
+    margin-top: -1.6999999999999993px;
+  }
+  h4 .icon.icon-large,
+  .h4-clone .icon.icon-large {
+    margin-right: 11px;
+    margin-top: -9.7px;
+  }
+  h4 .icon.icon-jumbo,
+  .h4-clone .icon.icon-jumbo {
+    margin-right: 11px;
+    margin-top: -17.7px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -4527,6 +4809,31 @@ blockquote:after {
   .h5-clone.short {
     margin-bottom: 7.5px;
   }
+  h5 .icon,
+  .h5-clone .icon {
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  h5 .icon.icon-small,
+  .h5-clone .icon.icon-small {
+    margin-right: 10px;
+    margin-top: 1px;
+  }
+  h5 .icon.icon-medium,
+  .h5-clone .icon.icon-medium {
+    margin-right: 10px;
+    margin-top: -3px;
+  }
+  h5 .icon.icon-large,
+  .h5-clone .icon.icon-large {
+    margin-right: 10px;
+    margin-top: -11px;
+  }
+  h5 .icon.icon-jumbo,
+  .h5-clone .icon.icon-jumbo {
+    margin-right: 10px;
+    margin-top: -19px;
+  }
   /* ==================================================================================================== */
   /*                                                                                                      */
   /* Heading h6 Text                                                                                      */
@@ -4545,6 +4852,31 @@ blockquote:after {
   h6.short,
   .h6-clone.short {
     margin-bottom: 7.5px;
+  }
+  h6 .icon,
+  .h6-clone .icon {
+    margin-right: 10px;
+    margin-top: 2px;
+  }
+  h6 .icon.icon-small,
+  .h6-clone .icon.icon-small {
+    margin-right: 10px;
+    margin-top: -2px;
+  }
+  h6 .icon.icon-medium,
+  .h6-clone .icon.icon-medium {
+    margin-right: 10px;
+    margin-top: -6px;
+  }
+  h6 .icon.icon-large,
+  .h6-clone .icon.icon-large {
+    margin-right: 10px;
+    margin-top: -14px;
+  }
+  h6 .icon.icon-jumbo,
+  .h6-clone .icon.icon-jumbo {
+    margin-right: 10px;
+    margin-top: -22px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -4756,6 +5088,31 @@ blockquote:after {
   .h1-clone.short {
     margin-bottom: 25.5px;
   }
+  h1 .icon,
+  .h1-clone .icon {
+    margin-right: 17px;
+    margin-top: 37.9px;
+  }
+  h1 .icon.icon-small,
+  .h1-clone .icon.icon-small {
+    margin-right: 17px;
+    margin-top: 33.9px;
+  }
+  h1 .icon.icon-medium,
+  .h1-clone .icon.icon-medium {
+    margin-right: 17px;
+    margin-top: 29.9px;
+  }
+  h1 .icon.icon-large,
+  .h1-clone .icon.icon-large {
+    margin-right: 17px;
+    margin-top: 21.9px;
+  }
+  h1 .icon.icon-jumbo,
+  .h1-clone .icon.icon-jumbo {
+    margin-right: 17px;
+    margin-top: 13.899999999999999px;
+  }
   /* ==================================================================================================== */
   /*                                                                                                      */
   /* Heading h2 Text                                                                                      */
@@ -4774,6 +5131,31 @@ blockquote:after {
   h2.short,
   .h2-clone.short {
     margin-bottom: 25.5px;
+  }
+  h2 .icon,
+  .h2-clone .icon {
+    margin-right: 17px;
+    margin-top: 24.299999999999997px;
+  }
+  h2 .icon.icon-small,
+  .h2-clone .icon.icon-small {
+    margin-right: 17px;
+    margin-top: 20.299999999999997px;
+  }
+  h2 .icon.icon-medium,
+  .h2-clone .icon.icon-medium {
+    margin-right: 17px;
+    margin-top: 16.299999999999997px;
+  }
+  h2 .icon.icon-large,
+  .h2-clone .icon.icon-large {
+    margin-right: 17px;
+    margin-top: 8.299999999999997px;
+  }
+  h2 .icon.icon-jumbo,
+  .h2-clone .icon.icon-jumbo {
+    margin-right: 17px;
+    margin-top: 0.29999999999999716px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -4794,6 +5176,31 @@ blockquote:after {
   .h3-clone.short {
     margin-bottom: 21px;
   }
+  h3 .icon,
+  .h3-clone .icon {
+    margin-right: 14px;
+    margin-top: 14.399999999999999px;
+  }
+  h3 .icon.icon-small,
+  .h3-clone .icon.icon-small {
+    margin-right: 14px;
+    margin-top: 10.399999999999999px;
+  }
+  h3 .icon.icon-medium,
+  .h3-clone .icon.icon-medium {
+    margin-right: 14px;
+    margin-top: 6.399999999999999px;
+  }
+  h3 .icon.icon-large,
+  .h3-clone .icon.icon-large {
+    margin-right: 14px;
+    margin-top: -1.6000000000000014px;
+  }
+  h3 .icon.icon-jumbo,
+  .h3-clone .icon.icon-jumbo {
+    margin-right: 14px;
+    margin-top: -9.600000000000001px;
+  }
   /* ==================================================================================================== */
   /*                                                                                                      */
   /* Heading h4 Text                                                                                      */
@@ -4812,6 +5219,31 @@ blockquote:after {
   h4.short,
   .h4-clone.short {
     margin-bottom: 12px;
+  }
+  h4 .icon,
+  .h4-clone .icon {
+    margin-right: 12px;
+    margin-top: 7.6px;
+  }
+  h4 .icon.icon-small,
+  .h4-clone .icon.icon-small {
+    margin-right: 12px;
+    margin-top: 3.5999999999999996px;
+  }
+  h4 .icon.icon-medium,
+  .h4-clone .icon.icon-medium {
+    margin-right: 12px;
+    margin-top: -0.40000000000000036px;
+  }
+  h4 .icon.icon-large,
+  .h4-clone .icon.icon-large {
+    margin-right: 12px;
+    margin-top: -8.4px;
+  }
+  h4 .icon.icon-jumbo,
+  .h4-clone .icon.icon-jumbo {
+    margin-right: 12px;
+    margin-top: -16.4px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -4832,6 +5264,31 @@ blockquote:after {
   .h5-clone.short {
     margin-bottom: 8.25px;
   }
+  h5 .icon,
+  .h5-clone .icon {
+    margin-right: 11px;
+    margin-top: 6.300000000000001px;
+  }
+  h5 .icon.icon-small,
+  .h5-clone .icon.icon-small {
+    margin-right: 11px;
+    margin-top: 2.3000000000000007px;
+  }
+  h5 .icon.icon-medium,
+  .h5-clone .icon.icon-medium {
+    margin-right: 11px;
+    margin-top: -1.6999999999999993px;
+  }
+  h5 .icon.icon-large,
+  .h5-clone .icon.icon-large {
+    margin-right: 11px;
+    margin-top: -9.7px;
+  }
+  h5 .icon.icon-jumbo,
+  .h5-clone .icon.icon-jumbo {
+    margin-right: 11px;
+    margin-top: -17.7px;
+  }
   /* ==================================================================================================== */
   /*                                                                                                      */
   /* Heading h6 Text                                                                                      */
@@ -4850,6 +5307,31 @@ blockquote:after {
   h6.short,
   .h6-clone.short {
     margin-bottom: 8.25px;
+  }
+  h6 .icon,
+  .h6-clone .icon {
+    margin-right: 11px;
+    margin-top: 3px;
+  }
+  h6 .icon.icon-small,
+  .h6-clone .icon.icon-small {
+    margin-right: 11px;
+    margin-top: -1px;
+  }
+  h6 .icon.icon-medium,
+  .h6-clone .icon.icon-medium {
+    margin-right: 11px;
+    margin-top: -5px;
+  }
+  h6 .icon.icon-large,
+  .h6-clone .icon.icon-large {
+    margin-right: 11px;
+    margin-top: -13px;
+  }
+  h6 .icon.icon-jumbo,
+  .h6-clone .icon.icon-jumbo {
+    margin-right: 11px;
+    margin-top: -21px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5061,6 +5543,31 @@ blockquote:after {
   .h1-clone.short {
     margin-bottom: 27px;
   }
+  h1 .icon,
+  .h1-clone .icon {
+    margin-right: 18px;
+    margin-top: 40.6px;
+  }
+  h1 .icon.icon-small,
+  .h1-clone .icon.icon-small {
+    margin-right: 18px;
+    margin-top: 36.6px;
+  }
+  h1 .icon.icon-medium,
+  .h1-clone .icon.icon-medium {
+    margin-right: 18px;
+    margin-top: 32.6px;
+  }
+  h1 .icon.icon-large,
+  .h1-clone .icon.icon-large {
+    margin-right: 18px;
+    margin-top: 24.6px;
+  }
+  h1 .icon.icon-jumbo,
+  .h1-clone .icon.icon-jumbo {
+    margin-right: 18px;
+    margin-top: 16.6px;
+  }
   /* ==================================================================================================== */
   /*                                                                                                      */
   /* Heading h2 Text                                                                                      */
@@ -5079,6 +5586,31 @@ blockquote:after {
   h2.short,
   .h2-clone.short {
     margin-bottom: 27px;
+  }
+  h2 .icon,
+  .h2-clone .icon {
+    margin-right: 18px;
+    margin-top: 26.200000000000003px;
+  }
+  h2 .icon.icon-small,
+  .h2-clone .icon.icon-small {
+    margin-right: 18px;
+    margin-top: 22.200000000000003px;
+  }
+  h2 .icon.icon-medium,
+  .h2-clone .icon.icon-medium {
+    margin-right: 18px;
+    margin-top: 18.200000000000003px;
+  }
+  h2 .icon.icon-large,
+  .h2-clone .icon.icon-large {
+    margin-right: 18px;
+    margin-top: 10.200000000000003px;
+  }
+  h2 .icon.icon-jumbo,
+  .h2-clone .icon.icon-jumbo {
+    margin-right: 18px;
+    margin-top: 2.200000000000003px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5099,6 +5631,31 @@ blockquote:after {
   .h3-clone.short {
     margin-bottom: 22.5px;
   }
+  h3 .icon,
+  .h3-clone .icon {
+    margin-right: 15px;
+    margin-top: 16px;
+  }
+  h3 .icon.icon-small,
+  .h3-clone .icon.icon-small {
+    margin-right: 15px;
+    margin-top: 12px;
+  }
+  h3 .icon.icon-medium,
+  .h3-clone .icon.icon-medium {
+    margin-right: 15px;
+    margin-top: 8px;
+  }
+  h3 .icon.icon-large,
+  .h3-clone .icon.icon-large {
+    margin-right: 15px;
+    margin-top: 0px;
+  }
+  h3 .icon.icon-jumbo,
+  .h3-clone .icon.icon-jumbo {
+    margin-right: 15px;
+    margin-top: -8px;
+  }
   /* ==================================================================================================== */
   /*                                                                                                      */
   /* Heading h4 Text                                                                                      */
@@ -5117,6 +5674,31 @@ blockquote:after {
   h4.short,
   .h4-clone.short {
     margin-bottom: 13px;
+  }
+  h4 .icon,
+  .h4-clone .icon {
+    margin-right: 13px;
+    margin-top: 8.900000000000002px;
+  }
+  h4 .icon.icon-small,
+  .h4-clone .icon.icon-small {
+    margin-right: 13px;
+    margin-top: 4.900000000000002px;
+  }
+  h4 .icon.icon-medium,
+  .h4-clone .icon.icon-medium {
+    margin-right: 13px;
+    margin-top: 0.9000000000000021px;
+  }
+  h4 .icon.icon-large,
+  .h4-clone .icon.icon-large {
+    margin-right: 13px;
+    margin-top: -7.099999999999998px;
+  }
+  h4 .icon.icon-jumbo,
+  .h4-clone .icon.icon-jumbo {
+    margin-right: 13px;
+    margin-top: -15.099999999999998px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5137,6 +5719,31 @@ blockquote:after {
   .h5-clone.short {
     margin-bottom: 9px;
   }
+  h5 .icon,
+  .h5-clone .icon {
+    margin-right: 12px;
+    margin-top: 7.6px;
+  }
+  h5 .icon.icon-small,
+  .h5-clone .icon.icon-small {
+    margin-right: 12px;
+    margin-top: 3.5999999999999996px;
+  }
+  h5 .icon.icon-medium,
+  .h5-clone .icon.icon-medium {
+    margin-right: 12px;
+    margin-top: -0.40000000000000036px;
+  }
+  h5 .icon.icon-large,
+  .h5-clone .icon.icon-large {
+    margin-right: 12px;
+    margin-top: -8.4px;
+  }
+  h5 .icon.icon-jumbo,
+  .h5-clone .icon.icon-jumbo {
+    margin-right: 12px;
+    margin-top: -16.4px;
+  }
   /* ==================================================================================================== */
   /*                                                                                                      */
   /* Heading h6 Text                                                                                      */
@@ -5155,6 +5762,31 @@ blockquote:after {
   h6.short,
   .h6-clone.short {
     margin-bottom: 9px;
+  }
+  h6 .icon,
+  .h6-clone .icon {
+    margin-right: 12px;
+    margin-top: 4px;
+  }
+  h6 .icon.icon-small,
+  .h6-clone .icon.icon-small {
+    margin-right: 12px;
+    margin-top: 0px;
+  }
+  h6 .icon.icon-medium,
+  .h6-clone .icon.icon-medium {
+    margin-right: 12px;
+    margin-top: -4px;
+  }
+  h6 .icon.icon-large,
+  .h6-clone .icon.icon-large {
+    margin-right: 12px;
+    margin-top: -12px;
+  }
+  h6 .icon.icon-jumbo,
+  .h6-clone .icon.icon-jumbo {
+    margin-right: 12px;
+    margin-top: -20px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5380,6 +6012,247 @@ blockquote:after {
 /* ==================================================================================================== */
 @media (min-width: 1280px) {
   
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* layout/modal.less                                                                                    */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.modal-open .modal .dropdown-menu {
+  z-index: 3005;
+}
+.modal-open .modal .dropdown.open {
+  *z-index: 3005;
+}
+.modal-open .modal .popover {
+  z-index: 3006;
+}
+.modal-open .modal .tooltip {
+  z-index: 3007;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Modal Backdrop                                                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: #000000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Modal                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
+.modal {
+  position: fixed;
+  top: auto;
+  left: 15px;
+  right: 15px;
+  width: auto;
+  margin: 0;
+  display: block;
+  z-index: 2001;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 3px 10px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 3px 10px 1px rgba(0, 0, 0, 0.25);
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Modal Header                                                                                         */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Modal Body                                                                                           */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Modal Footer                                                                                         */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.modal:hover,
+.modal:focus,
+.modal:active {
+  outline: 0;
+}
+.modal.fade {
+  -webkit-transition: opacity .3s linear, top .3s ease-out;
+  -moz-transition: opacity .3s linear, top .3s ease-out;
+  -o-transition: opacity .3s linear, top .3s ease-out;
+  transition: opacity .3s linear, top .3s ease-out;
+  top: 35%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.modal.fade.in {
+  top: 50%;
+  opacity: 100;
+  filter: alpha(opacity=10000);
+}
+.modal .modal-header {
+  background: #fcfcfc;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  z-index: 2003;
+  *zoom: 1;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.modal .modal-header:before,
+.modal .modal-header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.modal .modal-header:after {
+  clear: both;
+}
+.modal .modal-header .close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: auto !important;
+  height: auto !important;
+  line-height: 16px !important;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  padding: 6px !important;
+}
+.modal .modal-body {
+  position: relative;
+  background: #ffffff;
+  *zoom: 1;
+  display: block;
+  z-index: 2002;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+.modal .modal-body:before,
+.modal .modal-body:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.modal .modal-body:after {
+  clear: both;
+}
+.modal .modal-body.has-header {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.modal .modal-body .modal-body-scrollable {
+  *zoom: 1;
+  display: block;
+  height: 100%;
+}
+.modal .modal-body .modal-body-scrollable:before,
+.modal .modal-body .modal-body-scrollable:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.modal .modal-body .modal-body-scrollable:after {
+  clear: both;
+}
+.modal .modal-footer {
+  background: #fcfcfc;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
+  position: relative;
+  z-index: 2004;
+  *zoom: 1;
+  -webkit-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.modal .modal-footer:before,
+.modal .modal-footer:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.modal .modal-footer:after {
+  clear: both;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 768px) {
+  /* ==================================================================================================== */
+  /* Modal                                                                                                */
+  /* ==================================================================================================== */
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    margin: 0px 0 0 -250px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 992px) {
+  /* ==================================================================================================== */
+  /* Modal                                                                                                */
+  /* ==================================================================================================== */
+  .modal {
+    width: 600px;
+    margin: 0px 0 0 -300px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 1280px) {
+  /* ==================================================================================================== */
+  /* Modal                                                                                                */
+  /* ==================================================================================================== */
+  .modal {
+    width: 700px;
+    margin: 0px 0 0 -350px;
+  }
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -6058,6 +6931,35 @@ table th[class*="span"],
 .button:first-child {
   *margin-left: 0;
 }
+.button .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.button .icon.icon-mini {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+}
+.button .icon.icon-small {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+}
+.button .icon.icon-medium {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+}
+.button .icon.icon-large {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+}
+.button .icon.icon-jumbo {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+}
 .button:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
@@ -6085,6 +6987,10 @@ table th[class*="span"],
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.active,
 .button:active {
   outline: 0;
@@ -6108,6 +7014,11 @@ table th[class*="span"],
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.active .icon,
+.button:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.disabled,
 .button[disabled] {
@@ -6134,6 +7045,11 @@ table th[class*="span"],
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.disabled .icon,
+.button[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-link {
   background-color: transparent;
   background-image: none;
@@ -6147,6 +7063,10 @@ table th[class*="span"],
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-link .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-link:hover {
   background-color: transparent;
@@ -6162,6 +7082,10 @@ table th[class*="span"],
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-link:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-link.active,
 .button.button-link:active {
   background-color: transparent;
@@ -6176,6 +7100,11 @@ table th[class*="span"],
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-link.active .icon,
+.button.button-link:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-link.disabled,
 .button.button-link[disabled] {
@@ -6193,6 +7122,11 @@ table th[class*="span"],
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-link.disabled .icon,
+.button.button-link[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.inverse {
   background-color: transparent;
@@ -6215,6 +7149,10 @@ table th[class*="span"],
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.inverse .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.inverse:hover {
   background-color: transparent;
   background-image: none;
@@ -6235,6 +7173,10 @@ table th[class*="span"],
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.inverse:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.inverse.active,
 .button.inverse:active {
@@ -6257,6 +7199,11 @@ table th[class*="span"],
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.inverse.active .icon,
+.button.inverse:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.inverse.disabled,
 .button.inverse[disabled] {
@@ -6282,25 +7229,10 @@ table th[class*="span"],
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button [class^="icon-"].icon-mini {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.button [class^="icon-"].icon-small {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.button [class^="icon-"].icon-medium {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.button [class^="icon-"].icon-large {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.button [class^="icon-"].icon-jumbo {
-  margin-top: 0px;
-  margin-bottom: 0px;
+.button.inverse.disabled .icon,
+.button.inverse[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -6325,25 +7257,25 @@ table th[class*="span"],
   line-height: 24px;
   text-transform: normal;
 }
-.button.button-large [class^="icon-"].icon-mini {
+.button.button-large .icon.icon-mini {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.button.button-large [class^="icon-"].icon-small {
+.button.button-large .icon.icon-small {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.button.button-large [class^="icon-"].icon-medium {
+.button.button-large .icon.icon-medium {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.button.button-large [class^="icon-"].icon-large {
+.button.button-large .icon.icon-large {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.button.button-large [class^="icon-"].icon-jumbo {
+.button.button-large .icon.icon-jumbo {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
 /* ---------------------------------------------------------------------------------------------------- */
 /* Small Button                                                                                         */
@@ -6363,25 +7295,25 @@ table th[class*="span"],
   line-height: 16px;
   text-transform: normal;
 }
-.button.button-small [class^="icon-"].icon-mini {
+.button.button-small .icon.icon-mini {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.button.button-small [class^="icon-"].icon-small {
+.button.button-small .icon.icon-small {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.button.button-small [class^="icon-"].icon-medium {
+.button.button-small .icon.icon-medium {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.button.button-small [class^="icon-"].icon-small {
+.button.button-small .icon.icon-large {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.button.button-small [class^="icon-"].icon-jumbo {
+.button.button-small .icon.icon-jumbo {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
 /* ---------------------------------------------------------------------------------------------------- */
 /* Mini Button                                                                                          */
@@ -6401,25 +7333,25 @@ table th[class*="span"],
   line-height: 16px;
   text-transform: normal;
 }
-.button.button-mini [class^="icon-"].icon-mini {
+.button.button-mini .icon.icon-mini {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.button.button-mini [class^="icon-"].icon-small {
+.button.button-mini .icon.icon-small {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.button.button-mini [class^="icon-"].icon-medium {
+.button.button-mini .icon.icon-medium {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.button.button-mini [class^="icon-"].icon-mini {
+.button.button-mini .icon.icon-large {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.button.button-mini [class^="icon-"].icon-jumbo {
+.button.button-mini .icon.icon-jumbo {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0px;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -6472,6 +7404,10 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-primary .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-primary:hover {
   background-color: transparent;
   background-image: none;
@@ -6492,6 +7428,10 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 0px 0px #0a85ff, 0px 0px 0px 1px rgba(0, 41, 82, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-primary:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-primary.active,
 .button.button-primary:active {
@@ -6514,6 +7454,11 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 41, 82, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-primary.active .icon,
+.button.button-primary:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-primary.disabled,
 .button.button-primary[disabled] {
@@ -6539,6 +7484,11 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-primary.disabled .icon,
+.button.button-primary[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-primary.button-link {
   background-color: transparent;
   background-image: none;
@@ -6552,6 +7502,10 @@ input[type="button"].button-block {
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-primary.button-link .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-primary.button-link:hover {
   background-color: transparent;
@@ -6567,6 +7521,10 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-primary.button-link:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-primary.button-link.active,
 .button.button-primary.button-link:active {
   background-color: transparent;
@@ -6581,6 +7539,11 @@ input[type="button"].button-block {
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-primary.button-link.active .icon,
+.button.button-primary.button-link:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-primary.button-link.disabled,
 .button.button-primary.button-link[disabled] {
@@ -6598,6 +7561,11 @@ input[type="button"].button-block {
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-primary.button-link.disabled .icon,
+.button.button-primary.button-link[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-primary.inverse {
   background-color: transparent;
@@ -6620,6 +7588,10 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-primary.inverse .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-primary.inverse:hover {
   background-color: transparent;
   background-image: none;
@@ -6640,6 +7612,10 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-primary.inverse:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-primary.inverse.active,
 .button.button-primary.inverse:active {
@@ -6662,6 +7638,11 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-primary.inverse.active .icon,
+.button.button-primary.inverse:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-primary.inverse.disabled,
 .button.button-primary.inverse[disabled] {
@@ -6687,6 +7668,11 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-primary.inverse.disabled .icon,
+.button.button-primary.inverse[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 /* ---------------------------------------------------------------------------------------------------- */
 /* Success Button                                                                                       */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -6711,6 +7697,10 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-success .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-success:hover {
   background-color: transparent;
   background-image: none;
@@ -6731,6 +7721,10 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 0px 0px #8ccf4a, 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-success:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-success.active,
 .button.button-success:active {
@@ -6753,6 +7747,11 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-success.active .icon,
+.button.button-success:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-success.disabled,
 .button.button-success[disabled] {
@@ -6778,6 +7777,11 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-success.disabled .icon,
+.button.button-success[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-success.button-link {
   background-color: transparent;
   background-image: none;
@@ -6791,6 +7795,10 @@ input[type="button"].button-block {
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-success.button-link .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-success.button-link:hover {
   background-color: transparent;
@@ -6806,6 +7814,10 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-success.button-link:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-success.button-link.active,
 .button.button-success.button-link:active {
   background-color: transparent;
@@ -6820,6 +7832,11 @@ input[type="button"].button-block {
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-success.button-link.active .icon,
+.button.button-success.button-link:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-success.button-link.disabled,
 .button.button-success.button-link[disabled] {
@@ -6837,6 +7854,11 @@ input[type="button"].button-block {
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-success.button-link.disabled .icon,
+.button.button-success.button-link[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-success.inverse {
   background-color: transparent;
@@ -6859,6 +7881,10 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-success.inverse .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-success.inverse:hover {
   background-color: transparent;
   background-image: none;
@@ -6879,6 +7905,10 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-success.inverse:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-success.inverse.active,
 .button.button-success.inverse:active {
@@ -6901,6 +7931,11 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-success.inverse.active .icon,
+.button.button-success.inverse:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-success.inverse.disabled,
 .button.button-success.inverse[disabled] {
@@ -6926,6 +7961,11 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-success.inverse.disabled .icon,
+.button.button-success.inverse[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 /* ---------------------------------------------------------------------------------------------------- */
 /* Warning Button                                                                                       */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -6950,6 +7990,10 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-warning .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-warning:hover {
   background-color: transparent;
   background-image: none;
@@ -6970,6 +8014,10 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 0px 0px #f69c60, 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-warning:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-warning.active,
 .button.button-warning:active {
@@ -6992,6 +8040,11 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-warning.active .icon,
+.button.button-warning:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-warning.disabled,
 .button.button-warning[disabled] {
@@ -7017,6 +8070,11 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-warning.disabled .icon,
+.button.button-warning[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-warning.button-link {
   background-color: transparent;
   background-image: none;
@@ -7030,6 +8088,10 @@ input[type="button"].button-block {
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-warning.button-link .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-warning.button-link:hover {
   background-color: transparent;
@@ -7045,6 +8107,10 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-warning.button-link:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-warning.button-link.active,
 .button.button-warning.button-link:active {
   background-color: transparent;
@@ -7059,6 +8125,11 @@ input[type="button"].button-block {
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-warning.button-link.active .icon,
+.button.button-warning.button-link:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-warning.button-link.disabled,
 .button.button-warning.button-link[disabled] {
@@ -7076,6 +8147,11 @@ input[type="button"].button-block {
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-warning.button-link.disabled .icon,
+.button.button-warning.button-link[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-warning.inverse {
   background-color: transparent;
@@ -7098,6 +8174,10 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-warning.inverse .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-warning.inverse:hover {
   background-color: transparent;
   background-image: none;
@@ -7118,6 +8198,10 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-warning.inverse:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-warning.inverse.active,
 .button.button-warning.inverse:active {
@@ -7140,6 +8224,11 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-warning.inverse.active .icon,
+.button.button-warning.inverse:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-warning.inverse.disabled,
 .button.button-warning.inverse[disabled] {
@@ -7165,6 +8254,11 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-warning.inverse.disabled .icon,
+.button.button-warning.inverse[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 /* ---------------------------------------------------------------------------------------------------- */
 /* Danger Button                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -7189,6 +8283,10 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-danger .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-danger:hover {
   background-color: transparent;
   background-image: none;
@@ -7209,6 +8307,10 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 0px 0px #fd6153, 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-danger:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-danger.active,
 .button.button-danger:active {
@@ -7231,6 +8333,11 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-danger.active .icon,
+.button.button-danger:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-danger.disabled,
 .button.button-danger[disabled] {
@@ -7256,6 +8363,11 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-danger.disabled .icon,
+.button.button-danger[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-danger.button-link {
   background-color: transparent;
   background-image: none;
@@ -7269,6 +8381,10 @@ input[type="button"].button-block {
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-danger.button-link .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-danger.button-link:hover {
   background-color: transparent;
@@ -7284,6 +8400,10 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-danger.button-link:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-danger.button-link.active,
 .button.button-danger.button-link:active {
   background-color: transparent;
@@ -7298,6 +8418,11 @@ input[type="button"].button-block {
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-danger.button-link.active .icon,
+.button.button-danger.button-link:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-danger.button-link.disabled,
 .button.button-danger.button-link[disabled] {
@@ -7315,6 +8440,11 @@ input[type="button"].button-block {
   box-shadow: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-danger.button-link.disabled .icon,
+.button.button-danger.button-link[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-danger.inverse {
   background-color: transparent;
@@ -7337,6 +8467,10 @@ input[type="button"].button-block {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.button.button-danger.inverse .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .button.button-danger.inverse:hover {
   background-color: transparent;
   background-image: none;
@@ -7357,6 +8491,10 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-danger.inverse:hover .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-danger.inverse.active,
 .button.button-danger.inverse:active {
@@ -7379,6 +8517,11 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(255, 255, 255, 0.15);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-danger.inverse.active .icon,
+.button.button-danger.inverse:active .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .button.button-danger.inverse.disabled,
 .button.button-danger.inverse[disabled] {
@@ -7403,6 +8546,11 @@ input[type="button"].button-block {
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.button.button-danger.inverse.disabled .icon,
+.button.button-danger.inverse[disabled] .icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -7717,15 +8865,15 @@ input[type="submit"].button.button-mini {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-group.button-group-large .button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.button-group.button-group-large .button:not(:first-of-type):not(:last-child):not(.dropdown-toggle) {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-.button-group.button-group-large .button:first-child {
+.button-group.button-group-large .button:first-of-type {
   margin-left: 0px;
 }
-.button-group.button-group-large .button:first-child:not(:last-child):not(.dropdown-toggle) {
+.button-group.button-group-large .button:first-of-type:not(:last-child):not(.dropdown-toggle) {
   -webkit-border-top-right-radius: 0px;
   -moz-border-radius-topright: 0px;
   border-top-right-radius: 0px;
@@ -7733,7 +8881,7 @@ input[type="submit"].button.button-mini {
   -moz-border-radius-bottomright: 0px;
   border-bottom-right-radius: 0px;
 }
-.button-group.button-group-large .button:last-child:not(:first-child):not(.dropdown-toggle) {
+.button-group.button-group-large .button:last-child:not(:first-of-type):not(.dropdown-toggle) {
   -webkit-border-top-left-radius: 0px;
   -moz-border-radius-topleft: 0px;
   border-top-left-radius: 0px;
@@ -7779,15 +8927,15 @@ input[type="submit"].button.button-mini {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-group.button-group-small .button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.button-group.button-group-small .button:not(:first-of-type):not(:last-child):not(.dropdown-toggle) {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-.button-group.button-group-small .button:first-child {
+.button-group.button-group-small .button:first-of-type {
   margin-left: 0px;
 }
-.button-group.button-group-small .button:first-child:not(:last-child):not(.dropdown-toggle) {
+.button-group.button-group-small .button:first-of-type:not(:last-child):not(.dropdown-toggle) {
   -webkit-border-top-right-radius: 0px;
   -moz-border-radius-topright: 0px;
   border-top-right-radius: 0px;
@@ -7795,7 +8943,7 @@ input[type="submit"].button.button-mini {
   -moz-border-radius-bottomright: 0px;
   border-bottom-right-radius: 0px;
 }
-.button-group.button-group-small .button:last-child:not(:first-child):not(.dropdown-toggle) {
+.button-group.button-group-small .button:last-child:not(:first-of-type):not(.dropdown-toggle) {
   -webkit-border-top-left-radius: 0px;
   -moz-border-radius-topleft: 0px;
   border-top-left-radius: 0px;
@@ -7841,15 +8989,15 @@ input[type="submit"].button.button-mini {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.button-group.button-group-mini .button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.button-group.button-group-mini .button:not(:first-of-type):not(:last-child):not(.dropdown-toggle) {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-.button-group.button-group-mini .button:first-child {
+.button-group.button-group-mini .button:first-of-type {
   margin-left: 0px;
 }
-.button-group.button-group-mini .button:first-child:not(:last-child):not(.dropdown-toggle) {
+.button-group.button-group-mini .button:first-of-type:not(:last-child):not(.dropdown-toggle) {
   -webkit-border-top-right-radius: 0px;
   -moz-border-radius-topright: 0px;
   border-top-right-radius: 0px;
@@ -7857,7 +9005,7 @@ input[type="submit"].button.button-mini {
   -moz-border-radius-bottomright: 0px;
   border-bottom-right-radius: 0px;
 }
-.button-group.button-group-mini .button:last-child:not(:first-child):not(.dropdown-toggle) {
+.button-group.button-group-mini .button:last-child:not(:first-of-type):not(.dropdown-toggle) {
   -webkit-border-top-left-radius: 0px;
   -moz-border-radius-topleft: 0px;
   border-top-left-radius: 0px;
@@ -7880,15 +9028,15 @@ input[type="submit"].button.button-mini {
 .button-group > .button.active {
   z-index: 2;
 }
-.button-group > .button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.button-group > .button:not(:first-of-type):not(:last-child):not(.dropdown-toggle) {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-.button-group > .button:first-child {
+.button-group > .button:first-of-type {
   margin-left: 0px;
 }
-.button-group > .button:first-child:not(:last-child):not(.dropdown-toggle) {
+.button-group > .button:first-of-type:not(:last-child):not(.dropdown-toggle) {
   -webkit-border-top-right-radius: 0px;
   -moz-border-radius-topright: 0px;
   border-top-right-radius: 0px;
@@ -7896,7 +9044,7 @@ input[type="submit"].button.button-mini {
   -moz-border-radius-bottomright: 0px;
   border-bottom-right-radius: 0px;
 }
-.button-group > .button:last-child:not(:first-child):not(.dropdown-toggle) {
+.button-group > .button:last-child:not(:first-of-type):not(.dropdown-toggle) {
   -webkit-border-top-left-radius: 0px;
   -moz-border-radius-topleft: 0px;
   border-top-left-radius: 0px;
@@ -7904,7 +9052,7 @@ input[type="submit"].button.button-mini {
   -moz-border-radius-bottomleft: 0px;
   border-bottom-left-radius: 0px;
 }
-.button-group > .dropdown-toggle:not(:first-child) {
+.button-group > .dropdown-toggle:not(:first-of-type) {
   -webkit-border-top-left-radius: 0px;
   -moz-border-radius-topleft: 0px;
   border-top-left-radius: 0px;
@@ -7912,7 +9060,7 @@ input[type="submit"].button.button-mini {
   -moz-border-radius-bottomleft: 0px;
   border-bottom-left-radius: 0px;
 }
-.button-group > .button-group:last-child > .button:first-child {
+.button-group > .button-group:last-child > .button:first-of-type {
   -webkit-border-top-left-radius: 0px;
   -moz-border-radius-topleft: 0px;
   border-top-left-radius: 0px;
@@ -8600,7 +9748,7 @@ input[type="submit"].button.button-mini {
   margin-left: 0px;
   margin-top: 1px;
 }
-.button-group.button-group-vertical > .button:first-child {
+.button-group.button-group-vertical > .button:first-of-type {
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px;
@@ -8611,7 +9759,7 @@ input[type="submit"].button.button-mini {
   -moz-border-radius: 0px 0px 4px 4px;
   border-radius: 0px 0px 4px 4px;
 }
-.button-group.button-group-vertical > .button.button-large:first-child {
+.button-group.button-group-vertical > .button.button-large:first-of-type {
   -webkit-border-radius: 6px 6px 0px 0px;
   -moz-border-radius: 6px 6px 0px 0px;
   border-radius: 6px 6px 0px 0px;
@@ -8621,7 +9769,7 @@ input[type="submit"].button.button-mini {
   -moz-border-radius: 0px 0px 6px 6px;
   border-radius: 0px 0px 6px 6px;
 }
-.button-group.button-group-vertical > .button.button-small:first-child {
+.button-group.button-group-vertical > .button.button-small:first-of-type {
   -webkit-border-radius: 3px 3px 0px 0px;
   -moz-border-radius: 3px 3px 0px 0px;
   border-radius: 3px 3px 0px 0px;
@@ -8631,7 +9779,7 @@ input[type="submit"].button.button-mini {
   -moz-border-radius: 0px 0px 3px 3px;
   border-radius: 0px 0px 3px 3px;
 }
-.button-group.button-group-vertical > .button.button-mini:first-child {
+.button-group.button-group-vertical > .button.button-mini:first-of-type {
   -webkit-border-radius: 3px 3px 0px 0px;
   -moz-border-radius: 3px 3px 0px 0px;
   border-radius: 3px 3px 0px 0px;
@@ -11934,7 +13082,7 @@ input[type="tel"]:-moz-placeholder,
 input[type="color"]:-moz-placeholder,
 .uneditable-input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #bbbbbb;
+  color: #dddddd;
 }
 input[type="text"]::-moz-placeholder,
 input[type="password"]::-moz-placeholder,
@@ -11952,7 +13100,7 @@ input[type="tel"]::-moz-placeholder,
 input[type="color"]::-moz-placeholder,
 .uneditable-input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: #bbbbbb;
+  color: #dddddd;
 }
 input[type="text"]:-ms-input-placeholder,
 input[type="password"]:-ms-input-placeholder,
@@ -11970,7 +13118,7 @@ input[type="tel"]:-ms-input-placeholder,
 input[type="color"]:-ms-input-placeholder,
 .uneditable-input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #bbbbbb;
+  color: #dddddd;
 }
 input[type="text"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder,
@@ -11988,7 +13136,7 @@ input[type="tel"]::-webkit-input-placeholder,
 input[type="color"]::-webkit-input-placeholder,
 .uneditable-input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #bbbbbb;
+  color: #dddddd;
 }
 input[type="text"] + .help-block,
 input[type="password"] + .help-block,
@@ -22894,6 +24042,91 @@ a:active img.image-framed {
 }
 .label:empty {
   display: none;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 768px) {
+  
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 992px) {
+  
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 1280px) {
+  
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/icons.less                                                                                */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.icon {
+  *margin-right: .3em;
+  display: inline-block;
+  line-height: 16px;
+  vertical-align: middle;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.icon.icon-muted {
+  opacity: 25;
+  filter: alpha(opacity=2500);
+}
+.icon.icon-small {
+  width: 24px;
+  height: 24px;
+}
+.icon.icon-small.icon-muted {
+  opacity: 25;
+  filter: alpha(opacity=2500);
+}
+.icon.icon-medium {
+  width: 32px;
+  height: 32px;
+}
+.icon.icon-medium.icon-muted {
+  opacity: 25;
+  filter: alpha(opacity=2500);
+}
+.icon.icon-large {
+  width: 48px;
+  height: 48px;
+}
+.icon.icon-large.icon-muted {
+  opacity: 25;
+  filter: alpha(opacity=2500);
+}
+.icon.icon-jumbo {
+  width: 64px;
+  height: 64px;
+}
+.icon.icon-jumbo.icon-muted {
+  opacity: 25;
+  filter: alpha(opacity=2500);
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
