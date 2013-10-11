@@ -229,6 +229,9 @@
 /* Form Radio/Checkbox                                                                                  */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
+/* Inline Form Inputs                                                                                   */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 /* Default Form Input                                                                                   */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -7318,6 +7321,8 @@ table th[class*="span"],
   cursor: default !important;
   pointer-events: none;
   outline: 0;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7401,8 +7406,8 @@ table th[class*="span"],
 }
 .button.button-link.disabled,
 .button.button-link[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7500,8 +7505,8 @@ table th[class*="span"],
 }
 .button.inverse.disabled,
 .button.inverse[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7755,8 +7760,8 @@ input[type="button"].button-block {
 }
 .button.button-primary.disabled,
 .button.button-primary[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7840,8 +7845,8 @@ input[type="button"].button-block {
 }
 .button.button-primary.button-link.disabled,
 .button.button-primary.button-link[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -7939,8 +7944,8 @@ input[type="button"].button-block {
 }
 .button.button-primary.inverse.disabled,
 .button.button-primary.inverse[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -8048,8 +8053,8 @@ input[type="button"].button-block {
 }
 .button.button-success.disabled,
 .button.button-success[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -8133,8 +8138,8 @@ input[type="button"].button-block {
 }
 .button.button-success.button-link.disabled,
 .button.button-success.button-link[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -8232,8 +8237,8 @@ input[type="button"].button-block {
 }
 .button.button-success.inverse.disabled,
 .button.button-success.inverse[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -8341,8 +8346,8 @@ input[type="button"].button-block {
 }
 .button.button-warning.disabled,
 .button.button-warning[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -8426,8 +8431,8 @@ input[type="button"].button-block {
 }
 .button.button-warning.button-link.disabled,
 .button.button-warning.button-link[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -8525,8 +8530,8 @@ input[type="button"].button-block {
 }
 .button.button-warning.inverse.disabled,
 .button.button-warning.inverse[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -8634,8 +8639,8 @@ input[type="button"].button-block {
 }
 .button.button-danger.disabled,
 .button.button-danger[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -8719,8 +8724,8 @@ input[type="button"].button-block {
 }
 .button.button-danger.button-link.disabled,
 .button.button-danger.button-link[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -8818,8 +8823,8 @@ input[type="button"].button-block {
 }
 .button.button-danger.inverse.disabled,
 .button.button-danger.inverse[disabled] {
-  opacity: 50;
-  filter: alpha(opacity=5000);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -13240,6 +13245,18 @@ label.inverse {
   color: #ffffff;
   border-bottom-color: #424242;
 }
+label.input-height {
+  min-height: 32px;
+  line-height: 32px;
+}
+label.input-height.input-large {
+  min-height: 42px;
+  line-height: 42px;
+}
+label.input-height.input-small {
+  min-height: 24px;
+  line-height: 24px;
+}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Help Block                                                                                           */
@@ -13312,6 +13329,7 @@ textarea {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  vertical-align: inherit;
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
@@ -18030,7 +18048,7 @@ input[type="checkbox"] {
 .radio,
 .checkbox {
   position: relative;
-  padding: 0px 0px 0px 27px;
+  padding: 0px 0px 0px 22px;
   min-height: 20px;
   margin-bottom: 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -18043,7 +18061,7 @@ input[type="checkbox"] {
 .radio input[type="radio"],
 .checkbox input[type="radio"] {
   position: absolute;
-  margin: 0px 0px 0px -27px;
+  margin: 0px 0px 0px -22px;
   top: 4px;
   width: auto !important;
 }
@@ -18056,7 +18074,7 @@ input[type="checkbox"] {
 .radio input[type="checkbox"],
 .checkbox input[type="checkbox"] {
   position: absolute;
-  margin: 0px 0px 0px -27px;
+  margin: 0px 0px 0px -22px;
   top: 4px;
   width: auto !important;
 }
@@ -18098,6 +18116,7 @@ input[type="checkbox"] {
 .checkbox.input-height {
   min-height: 32px;
   line-height: 32px;
+  vertical-align: top;
 }
 .radio.input-height input[type="radio"],
 .checkbox.input-height input[type="radio"] {
@@ -18132,17 +18151,6 @@ input[type="checkbox"] {
 .radio.input-height.input-small input[type="checkbox"],
 .checkbox.input-height.input-small input[type="checkbox"] {
   top: 6px;
-}
-.radio.inline,
-.checkbox.inline {
-  display: inline-block;
-  vertical-align: middle;
-}
-.radio.inline + .radio.inline,
-.checkbox.inline + .radio.inline,
-.radio.inline + .checkbox.inline,
-.checkbox.inline + .checkbox.inline {
-  margin-left: 15px;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -18234,6 +18242,8 @@ select.flush-bottom + .help-block {
 select[disabled],
 select[readonly] {
   cursor: not-allowed;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 select.input-large {
   height: 42px;
@@ -18448,6 +18458,32 @@ select[size] {
   outline: 0;
   text-shadow: none;
   color: #a8a8a8;
+}
+.select-wrapper.disabled .select-wrapper-inner {
+  cursor: default !important;
+  pointer-events: none;
+  outline: 0;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #838383;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f2f2f2;
+  background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#ebebeb));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb);
+  background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb);
+  background-image: linear-gradient(to bottom, #f9f9f9, #ebebeb);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffebebeb', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .select-wrapper.select-wrapper-large .select-wrapper-inner {
   height: 42px;
@@ -21637,6 +21673,17 @@ select[size] {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
+/* Inline Form Elements                                                                                 */
+/*                                                                                                      */
+/* ==================================================================================================== */
+.inline {
+  display: inline-block !important;
+}
+.inline + .inline {
+  margin-left: 10px;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Grid Sizing for Inputs                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
@@ -21719,6 +21766,18 @@ textarea[class*="span"],
   }
   label.short {
     margin-bottom: 3.75px;
+  }
+  label.input-height {
+    min-height: 36.16px;
+    line-height: 36.16px;
+  }
+  label.input-height.input-large {
+    min-height: 47.459999999999994px;
+    line-height: 47.459999999999994px;
+  }
+  label.input-height.input-small {
+    min-height: 27.119999999999997px;
+    line-height: 27.119999999999997px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -21941,7 +22000,7 @@ textarea[class*="span"],
   /* ==================================================================================================== */
   .radio,
   .checkbox {
-    padding: 0px 0px 0px 28.5px;
+    padding: 0px 0px 0px 23px;
     min-height: 22px;
     font-size: 13.200000000000001px;
     line-height: 22px;
@@ -21949,12 +22008,12 @@ textarea[class*="span"],
   }
   .radio input[type="radio"],
   .checkbox input[type="radio"] {
-    margin: 0px 0px 0px -28.5px;
+    margin: 0px 0px 0px -23px;
     top: 5px;
   }
   .radio input[type="checkbox"],
   .checkbox input[type="checkbox"] {
-    margin: 0px 0px 0px -28.5px;
+    margin: 0px 0px 0px -23px;
     top: 5px;
   }
   .radio + .help-block,
@@ -22023,12 +22082,6 @@ textarea[class*="span"],
   .radio.input-height.input-small input[type="checkbox"],
   .checkbox.input-height.input-small input[type="checkbox"] {
     top: 7.559999999999999px;
-  }
-  .radio.inline + .radio.inline,
-  .checkbox.inline + .radio.inline,
-  .radio.inline + .checkbox.inline,
-  .checkbox.inline + .checkbox.inline {
-    margin-left: 16.95px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -22262,6 +22315,14 @@ textarea[class*="span"],
   /* Grid Sizing for Inputs                                                                               */
   /*                                                                                                      */
   /* ==================================================================================================== */
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Inline Form Elements                                                                                 */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  .inline + .inline {
+    margin-left: 11.299999999999999px;
+  }
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -22315,6 +22376,18 @@ textarea[class*="span"],
   }
   label.short {
     margin-bottom: 4.125px;
+  }
+  label.input-height {
+    min-height: 40px;
+    line-height: 40px;
+  }
+  label.input-height.input-large {
+    min-height: 52.5px;
+    line-height: 52.5px;
+  }
+  label.input-height.input-small {
+    min-height: 30px;
+    line-height: 30px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -22537,7 +22610,7 @@ textarea[class*="span"],
   /* ==================================================================================================== */
   .radio,
   .checkbox {
-    padding: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 24px;
     min-height: 24px;
     font-size: 14.399999999999999px;
     line-height: 24px;
@@ -22545,12 +22618,12 @@ textarea[class*="span"],
   }
   .radio input[type="radio"],
   .checkbox input[type="radio"] {
-    margin: 0px 0px 0px -30px;
+    margin: 0px 0px 0px -24px;
     top: 6px;
   }
   .radio input[type="checkbox"],
   .checkbox input[type="checkbox"] {
-    margin: 0px 0px 0px -30px;
+    margin: 0px 0px 0px -24px;
     top: 6px;
   }
   .radio + .help-block,
@@ -22619,12 +22692,6 @@ textarea[class*="span"],
   .radio.input-height.input-small input[type="checkbox"],
   .checkbox.input-height.input-small input[type="checkbox"] {
     top: 9px;
-  }
-  .radio.inline + .radio.inline,
-  .checkbox.inline + .radio.inline,
-  .radio.inline + .checkbox.inline,
-  .checkbox.inline + .checkbox.inline {
-    margin-left: 18.75px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -22863,6 +22930,14 @@ textarea[class*="span"],
     float: none;
     margin-left: 0px !important;
   }
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Inline Form Elements                                                                                 */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  .inline + .inline {
+    margin-left: 12.5px;
+  }
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -22916,6 +22991,18 @@ textarea[class*="span"],
   }
   label.short {
     margin-bottom: 4.5px;
+  }
+  label.input-height {
+    min-height: 41.6px;
+    line-height: 41.6px;
+  }
+  label.input-height.input-large {
+    min-height: 54.6px;
+    line-height: 54.6px;
+  }
+  label.input-height.input-small {
+    min-height: 31.200000000000003px;
+    line-height: 31.200000000000003px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -23138,7 +23225,7 @@ textarea[class*="span"],
   /* ==================================================================================================== */
   .radio,
   .checkbox {
-    padding: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 24px;
     min-height: 24px;
     font-size: 14.399999999999999px;
     line-height: 24px;
@@ -23146,12 +23233,12 @@ textarea[class*="span"],
   }
   .radio input[type="radio"],
   .checkbox input[type="radio"] {
-    margin: 0px 0px 0px -30px;
+    margin: 0px 0px 0px -24px;
     top: 6px;
   }
   .radio input[type="checkbox"],
   .checkbox input[type="checkbox"] {
-    margin: 0px 0px 0px -30px;
+    margin: 0px 0px 0px -24px;
     top: 6px;
   }
   .radio + .help-block,
@@ -23220,12 +23307,6 @@ textarea[class*="span"],
   .radio.input-height.input-small input[type="checkbox"],
   .checkbox.input-height.input-small input[type="checkbox"] {
     top: 9.600000000000001px;
-  }
-  .radio.inline + .radio.inline,
-  .checkbox.inline + .radio.inline,
-  .radio.inline + .checkbox.inline,
-  .checkbox.inline + .checkbox.inline {
-    margin-left: 19.5px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -23456,9 +23537,12 @@ textarea[class*="span"],
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
-  /* Grid Sizing for Inputs                                                                               */
+  /* Inline Form Elements                                                                                 */
   /*                                                                                                      */
   /* ==================================================================================================== */
+  .inline + .inline {
+    margin-left: 13px;
+  }
 }
 /* ==================================================================================================== */
 /*                                                                                                      */

@@ -139,6 +139,27 @@ label {
 		
 	}
 	
+	&.input-height {
+		
+		min-height: @form-input-height;
+		line-height: @form-input-height;
+		
+		&.input-large {
+			
+			min-height: @form-input-large-height;
+			line-height: @form-input-large-height;
+			
+		}
+		
+		&.input-small {
+			
+			min-height: @form-input-small-height;
+			line-height: @form-input-small-height;
+			
+		}
+		
+	}
+	
 }
 
 
@@ -214,6 +235,7 @@ textarea {
 	border-width: @form-input-border-width;
 	*border: @form-input-border-width;
 	.border-radius(@form-input-border-radius);
+	vertical-align: inherit;
 	.input-states (
 		
 		@form-input-default-border-color,
@@ -808,7 +830,7 @@ input[type="checkbox"] {
 .checkbox {
 	
 	position: relative;
-	padding: 0px 0px 0px (@form-input-radio-height + @form-input-toggles-inline-padding-horizontal);
+	padding: 0px 0px 0px (@form-input-radio-height + @form-inline-padding-horizontal);
 	min-height: @form-input-toggles-text-line-height;
 	margin-bottom: @form-input-margin;
 	font-family: @form-input-toggles-text-font-family;
@@ -821,7 +843,7 @@ input[type="checkbox"] {
 	input[type="radio"] {
 		
 		position: absolute;
-		margin: 0px 0px 0px -(@form-input-radio-height + @form-input-toggles-inline-padding-horizontal);
+		margin: 0px 0px 0px -(@form-input-radio-height + @form-inline-padding-horizontal);
 		top: (@body-text-line-height / 2) - (@form-input-radio-height / 2);
 		width: auto !important;
 		
@@ -837,7 +859,7 @@ input[type="checkbox"] {
 	input[type="checkbox"] {
 		
 		position: absolute;
-		margin: 0px 0px 0px -(@form-input-checkbox-height + @form-input-toggles-inline-padding-horizontal);
+		margin: 0px 0px 0px -(@form-input-checkbox-height + @form-inline-padding-horizontal);
 		top: (@body-text-line-height / 2) - (@form-input-checkbox-height / 2);
 		width: auto !important;
 		
@@ -898,6 +920,7 @@ input[type="checkbox"] {
 		
 		min-height: @form-input-height;
 		line-height: @form-input-height;
+		vertical-align: top;
 		
 		input[type="radio"] {
 			
@@ -946,20 +969,6 @@ input[type="checkbox"] {
 				top: (@form-input-small-height / 2) - (@form-input-checkbox-height / 2);
 				
 			}
-			
-		}
-		
-	}
-	
-	&.inline {
-		
-		display: inline-block;
-		vertical-align: middle;
-		
-		+ .radio.inline,
-		+ .checkbox.inline {
-			
-			margin-left: @form-input-toggles-inline-padding-horizontal;
 			
 		}
 		
@@ -1055,9 +1064,10 @@ select {
 	
 	&[disabled],
 	&[readonly] {
-	
-	cursor: not-allowed;
-	
+		
+		cursor: not-allowed;
+		.opacity(@button-default-disabled-opacity);
+		
 	}
 		
 	/* ---------------------------------------------------------------------------------------------------- */
@@ -1280,6 +1290,32 @@ select {
 			outline: 0;
 			text-shadow: @button-default-active-text-shadow;
 			color: @button-default-active-text-color;
+			
+		}
+		
+	}
+	
+	&.disabled {
+		
+		.select-wrapper-inner {
+			
+			cursor: default !important;
+			pointer-events: none;
+			outline: 0;
+			.opacity(@button-default-disabled-opacity);
+			.button-states (
+				
+				@button-default-disabled-border-color,
+				@button-default-disabled-text-color,
+				@button-default-disabled-text-shadow,
+				@button-default-disabled-background-color,
+				@button-default-disabled-background-gradient-top-color,
+				@button-default-disabled-background-gradient-bottom-color,
+				@button-default-disabled-shadow,
+				@button-default-disabled-offset-top,
+				@button-default-disabled-offset-bottom
+			
+			);
 			
 		}
 		
@@ -2180,6 +2216,25 @@ select {
 
 /* ==================================================================================================== */
 /*                                                                                                      */
+/* Inline Form Elements                                                                                 */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.inline {
+	
+	display: inline-block !important;
+	
+	+ .inline {
+		
+		margin-left: @form-inline-padding-horizontal;
+		
+	}
+	
+}
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Grid Sizing for Inputs                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
@@ -2309,6 +2364,27 @@ textarea[class*="span"],
 		&.short {
 			
 			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-ratio-screen-small;
+			
+		}
+		
+		&.input-height {
+			
+			min-height: @form-input-height * @form-input-ratio-screen-small;
+			line-height: @form-input-height * @form-input-ratio-screen-small;
+			
+			&.input-large {
+				
+				min-height: @form-input-large-height * @form-input-ratio-screen-small;
+				line-height: @form-input-large-height * @form-input-ratio-screen-small;
+				
+			}
+			
+			&.input-small {
+				
+				min-height: @form-input-small-height * @form-input-ratio-screen-small;
+				line-height: @form-input-small-height * @form-input-ratio-screen-small;
+				
+			}
 			
 		}
 		
@@ -2455,7 +2531,7 @@ textarea[class*="span"],
 	.radio,
 	.checkbox {
 		
-		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-small));
+		padding: 0px 0px 0px (@form-input-radio-height + (@form-inline-padding-horizontal * @form-input-toggles-ratio-screen-small));
 		min-height: @form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-small;
 		font-size: @form-input-toggles-text-font-size * @form-input-toggles-ratio-screen-small;
 		line-height: @form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-small;
@@ -2463,14 +2539,14 @@ textarea[class*="span"],
 		
 		input[type="radio"] {
 			
-			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-small));
+			margin: 0px 0px 0px -(@form-input-radio-height + (@form-inline-padding-horizontal * @form-input-toggles-ratio-screen-small));
 			top: ((@form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-small) / 2) - (@form-input-radio-height / 2);
 			
 		}
 		
 		input[type="checkbox"] {
 			
-			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-small));
+			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-inline-padding-horizontal * @form-input-toggles-ratio-screen-small));
 			top: ((@form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-small) / 2) - (@form-input-checkbox-height / 2);
 			
 		}
@@ -2571,17 +2647,6 @@ textarea[class*="span"],
 					top: ((@form-input-small-height * @form-input-ratio-screen-small) / 2) - (@form-input-checkbox-height / 2);
 					
 				}
-				
-			}
-			
-		}
-		
-		&.inline {
-			
-			+ .radio.inline,
-			+ .checkbox.inline {
-				
-				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-ratio-screen-small;
 				
 			}
 			
@@ -2948,6 +3013,24 @@ textarea[class*="span"],
 	
 	//#grid > .input(@grid-column-width-screen-small, @grid-gutter-width-screen-small);
 	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Inline Form Elements                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+		
+	.inline {
+		
+		+ .inline {
+			
+			margin-left: @form-inline-padding-horizontal * @form-input-ratio-screen-small;
+			
+		}
+		
+	}
+	
 }
 
 
@@ -3044,6 +3127,27 @@ textarea[class*="span"],
 		&.short {
 			
 			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-ratio-screen-medium;
+			
+		}
+		
+		&.input-height {
+			
+			min-height: @form-input-height * @form-input-ratio-screen-medium;
+			line-height: @form-input-height * @form-input-ratio-screen-medium;
+			
+			&.input-large {
+				
+				min-height: @form-input-large-height * @form-input-ratio-screen-medium;
+				line-height: @form-input-large-height * @form-input-ratio-screen-medium;
+				
+			}
+			
+			&.input-small {
+				
+				min-height: @form-input-small-height * @form-input-ratio-screen-medium;
+				line-height: @form-input-small-height * @form-input-ratio-screen-medium;
+				
+			}
 			
 		}
 		
@@ -3190,7 +3294,7 @@ textarea[class*="span"],
 	.radio,
 	.checkbox {
 		
-		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-medium));
+		padding: 0px 0px 0px (@form-input-radio-height + (@form-inline-padding-horizontal * @form-input-toggles-ratio-screen-medium));
 		min-height: @form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-medium;
 		font-size: @form-input-toggles-text-font-size * @form-input-toggles-ratio-screen-medium;
 		line-height: @form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-medium;
@@ -3198,14 +3302,14 @@ textarea[class*="span"],
 		
 		input[type="radio"] {
 			
-			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-medium));
+			margin: 0px 0px 0px -(@form-input-radio-height + (@form-inline-padding-horizontal * @form-input-toggles-ratio-screen-medium));
 			top: ((@form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-medium) / 2) - (@form-input-radio-height / 2);
 			
 		}
 		
 		input[type="checkbox"] {
 			
-			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-medium));
+			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-inline-padding-horizontal * @form-input-toggles-ratio-screen-medium));
 			top: ((@form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-medium) / 2) - (@form-input-checkbox-height / 2);
 			
 		}
@@ -3306,17 +3410,6 @@ textarea[class*="span"],
 					top: ((@form-input-small-height * @form-input-ratio-screen-medium) / 2) - (@form-input-checkbox-height / 2);
 					
 				}
-				
-			}
-			
-		}
-		
-		&.inline {
-			
-			+ .radio.inline,
-			+ .checkbox.inline {
-				
-				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-ratio-screen-medium;
 				
 			}
 			
@@ -3689,6 +3782,24 @@ textarea[class*="span"],
 		
 	}
 	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Inline Form Elements                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+		
+	.inline {
+		
+		+ .inline {
+			
+			margin-left: @form-inline-padding-horizontal * @form-input-ratio-screen-medium;
+			
+		}
+		
+	}
+	
 }
 
 
@@ -3785,6 +3896,27 @@ textarea[class*="span"],
 		&.short {
 			
 			margin-bottom: @form-label-margin-bottom * @text-margin-ratio-short * @form-label-ratio-screen-large;
+			
+		}
+		
+		&.input-height {
+			
+			min-height: @form-input-height * @form-input-ratio-screen-large;
+			line-height: @form-input-height * @form-input-ratio-screen-large;
+			
+			&.input-large {
+				
+				min-height: @form-input-large-height * @form-input-ratio-screen-large;
+				line-height: @form-input-large-height * @form-input-ratio-screen-large;
+				
+			}
+			
+			&.input-small {
+				
+				min-height: @form-input-small-height * @form-input-ratio-screen-large;
+				line-height: @form-input-small-height * @form-input-ratio-screen-large;
+				
+			}
 			
 		}
 		
@@ -3931,7 +4063,7 @@ textarea[class*="span"],
 	.radio,
 	.checkbox {
 		
-		padding: 0px 0px 0px (@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-large));
+		padding: 0px 0px 0px (@form-input-radio-height + (@form-inline-padding-horizontal * @form-input-toggles-ratio-screen-large));
 		min-height: @form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-large;
 		font-size: @form-input-toggles-text-font-size * @form-input-toggles-ratio-screen-large;
 		line-height: @form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-large;
@@ -3939,14 +4071,14 @@ textarea[class*="span"],
 		
 		input[type="radio"] {
 			
-			margin: 0px 0px 0px -(@form-input-radio-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-large));
+			margin: 0px 0px 0px -(@form-input-radio-height + (@form-inline-padding-horizontal * @form-input-toggles-ratio-screen-large));
 			top: ((@form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-large) / 2) - (@form-input-radio-height / 2);
 			
 		}
 		
 		input[type="checkbox"] {
 			
-			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-input-toggles-inline-padding-horizontal * @form-input-toggles-ratio-screen-large));
+			margin: 0px 0px 0px -(@form-input-checkbox-height + (@form-inline-padding-horizontal * @form-input-toggles-ratio-screen-large));
 			top: ((@form-input-toggles-text-line-height * @form-input-toggles-ratio-screen-large) / 2) - (@form-input-checkbox-height / 2);
 			
 		}
@@ -4047,17 +4179,6 @@ textarea[class*="span"],
 					top: ((@form-input-small-height * @form-input-ratio-screen-large) / 2) - (@form-input-checkbox-height / 2);
 					
 				}
-				
-			}
-			
-		}
-		
-		&.inline {
-			
-			+ .radio.inline,
-			+ .checkbox.inline {
-				
-				margin-left: @form-input-toggles-inline-padding-horizontal * @form-input-ratio-screen-large;
 				
 			}
 			
@@ -4418,11 +4539,19 @@ textarea[class*="span"],
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Grid Sizing for Inputs                                                                               */
+	/* Inline Form Elements                                                                                 */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
-	//#grid > .input(@grid-column-width-screen-large, @grid-gutter-width-screen-large);
+	.inline {
+		
+		+ .inline {
+			
+			margin-left: @form-inline-padding-horizontal * @form-input-ratio-screen-large;
+			
+		}
+		
+	}
 	
 }
 
