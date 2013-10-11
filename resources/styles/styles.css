@@ -1745,53 +1745,53 @@ hr + .h6-clone {
 /* Screen Size: Mini (@screen-mini) and below                                                           */
 /*                                                                                                      */
 /* ==================================================================================================== */
-.col-mini-1,
-.col-mini-2,
-.col-mini-3,
-.col-mini-4,
-.col-mini-5,
-.col-mini-6,
-.col-mini-7,
-.col-mini-8,
-.col-mini-9,
-.col-mini-10,
-.col-mini-11 {
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11 {
   float: left;
 }
-.col-mini-1 {
+.col-1 {
   width: 8.333333333333332%;
 }
-.col-mini-2 {
+.col-2 {
   width: 16.666666666666664%;
 }
-.col-mini-3 {
+.col-3 {
   width: 25%;
 }
-.col-mini-4 {
+.col-4 {
   width: 33.33333333333333%;
 }
-.col-mini-5 {
+.col-5 {
   width: 41.66666666666667%;
 }
-.col-mini-6 {
+.col-6 {
   width: 50%;
 }
-.col-mini-7 {
+.col-7 {
   width: 58.333333333333336%;
 }
-.col-mini-8 {
+.col-8 {
   width: 66.66666666666666%;
 }
-.col-mini-9 {
+.col-9 {
   width: 75%;
 }
-.col-mini-10 {
+.col-10 {
   width: 83.33333333333334%;
 }
-.col-mini-11 {
+.col-11 {
   width: 91.66666666666666%;
 }
-.col-mini-12 {
+.col-12 {
   width: 100%;
 }
 /* ==================================================================================================== */
