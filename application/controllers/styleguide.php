@@ -52,4 +52,17 @@ class Styleguide extends BASE_Controller {
         
     }
 	
+    public function selectbox() {
+        
+        $this->data['page']['title'] = "Select";
+        $this->data['page']['subtitle'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, turpis et condimentum sagittis, odio mi mollis purus, eget posuere ante nulla a neque.";
+        
+	    /* ----------------------------------------------------------- */
+    	/* Define View                                                 */
+    	/* ----------------------------------------------------------- */
+    	
+        $this->twig->display('pages/styleguide/select.php', $this->data);
+        
+    }
+	
 }

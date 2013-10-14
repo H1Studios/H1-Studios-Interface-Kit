@@ -1512,6 +1512,22 @@
 						
 						<td>
 							
+							<span class="label label-primary">Primary</span>
+							
+						</td>
+						
+						<td>
+							
+							<code>&lt;span class="label label-primary"&gt;Primary&lt;/span&gt;</code>
+							
+						</td>
+						
+					</tr>
+					
+					<tr>
+						
+						<td>
+							
 							<span class="label label-success">Success</span>
 							
 						</td>
@@ -1551,38 +1567,6 @@
 						<td>
 							
 							<code>&lt;span class="label label-danger"&gt;Danger&lt;/span&gt;</code>
-							
-						</td>
-						
-					</tr>
-					
-					<tr>
-						
-						<td>
-							
-							<span class="label label-info">Info</span>
-							
-						</td>
-						
-						<td>
-							
-							<code>&lt;span class="label label-info"&gt;Info&lt;/span&gt;</code>
-							
-						</td>
-						
-					</tr>
-					
-					<tr>
-						
-						<td>
-							
-							<span class="label label-inverse">Inverse</span>
-							
-						</td>
-						
-						<td>
-							
-							<code>&lt;span class="label label-inverse"&gt;Inverse&lt;/span&gt;</code>
 							
 						</td>
 						

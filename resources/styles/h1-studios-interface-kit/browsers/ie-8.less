@@ -1,13 +1,81 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
 /* browsers/ie-8.less                                                                                   */
 /*                                                                                                      */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
 
 html.ie8 {
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Stylized Select Box                                                                                  */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.select-wrapper {
+		
+		.select-wrapper-inner {
+			
+			display: none;
+			
+			&:after {
+				
+				display: none;
+				
+			}
+			
+		}
+		
+		select {
+			
+			-webkit-appearance: menulist;
+			box-sizing: border-box;
+			align-items: center;
+			border-image-source: initial;
+			border-image-slice: initial;
+			border-image-width: initial;
+			border-image-outset: initial;
+			border-image-repeat: initial;
+			white-space: pre;
+			-webkit-rtl-ordering: logical;
+			color: black;
+			background-color: white;
+			cursor: default;
+			padding: 0px;
+			.clearfix();
+			
+			&:focus {
+				
+				outline: 0;
+				
+			}
+			
+		}
+				
+		&:hover {
+			
+			select {
+				
+				cursor: pointer;
+				
+			}
+			
+		}
+		
+		&:active {
+			
+			select {
+				
+				outline: 0;
+				
+			}
+			
+		}
+		
+		&.disabled {
+			
+		}
+		
+	}
 	
 }

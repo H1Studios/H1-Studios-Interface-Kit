@@ -1542,6 +1542,22 @@ class __TwigTemplate_94a491e83de690a6df31b3845a2dde90 extends Twig_Template
 \t\t\t\t\t\t
 \t\t\t\t\t\t<td>
 \t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<span class=\"label label-primary\">Primary</span>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</td>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<td>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t<code>&lt;span class=\"label label-primary\"&gt;Primary&lt;/span&gt;</code>
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</td>
+\t\t\t\t\t\t
+\t\t\t\t\t</tr>
+\t\t\t\t\t
+\t\t\t\t\t<tr>
+\t\t\t\t\t\t
+\t\t\t\t\t\t<td>
+\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<span class=\"label label-success\">Success</span>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</td>
@@ -1581,38 +1597,6 @@ class __TwigTemplate_94a491e83de690a6df31b3845a2dde90 extends Twig_Template
 \t\t\t\t\t\t<td>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<code>&lt;span class=\"label label-danger\"&gt;Danger&lt;/span&gt;</code>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</td>
-\t\t\t\t\t\t
-\t\t\t\t\t</tr>
-\t\t\t\t\t
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<td>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<span class=\"label label-info\">Info</span>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</td>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<td>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<code>&lt;span class=\"label label-info\"&gt;Info&lt;/span&gt;</code>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</td>
-\t\t\t\t\t\t
-\t\t\t\t\t</tr>
-\t\t\t\t\t
-\t\t\t\t\t<tr>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<td>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<span class=\"label label-inverse\">Inverse</span>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t</td>
-\t\t\t\t\t\t
-\t\t\t\t\t\t<td>
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<code>&lt;span class=\"label label-inverse\"&gt;Inverse&lt;/span&gt;</code>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</td>
 \t\t\t\t\t\t

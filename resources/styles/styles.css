@@ -310,22 +310,19 @@
 /* Label                                                                                                */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Large Button                                                                                         */
+/* Default Label                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Small Button                                                                                         */
+/* Primary Label                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Mini Button                                                                                          */
+/* Success Label                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Button Group                                                                                         */
+/* Warning Label                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Button Toolbar                                                                                       */
-/* ---------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------- */
-/* Default Button                                                                                       */
+/* Danger Label                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ========================================================================= */
 /*                                                                           */
@@ -11810,6 +11807,7 @@ input[type="submit"].button.button-mini {
   box-shadow: none;
 }
 .dropdown-menu > li > a {
+  cursor: pointer;
   display: block;
   padding: 0px 12px 0px 12px;
   clear: both;
@@ -24399,26 +24397,533 @@ a:active img.image-framed {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .label {
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
-  color: #bbbbbb;
+  display: inline-block;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25em;
-  background-color: #f2f2f2;
+  padding: 0px 12px;
+  font-size: 0.9em;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: normal;
+  border: 0px;
+  *border: 0px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #cccccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Inverse                                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* ==================================================================================================== */
+
+  /*                                                                                                      */
+
+  /* Primary                                                                                              */
+
+  /*                                                                                                      */
+
+  /* ==================================================================================================== */
+
+  /* ==================================================================================================== */
+
+  /*                                                                                                      */
+
+  /* Success                                                                                              */
+
+  /*                                                                                                      */
+
+  /* ==================================================================================================== */
+
+  /* ==================================================================================================== */
+
+  /*                                                                                                      */
+
+  /* warning                                                                                              */
+
+  /*                                                                                                      */
+
+  /* ==================================================================================================== */
+
+  /* ==================================================================================================== */
+
+  /*                                                                                                      */
+
+  /* Danger                                                                                              */
+
+  /*                                                                                                      */
+
+  /* ==================================================================================================== */
+
 }
 .label[href]:hover,
 .label[href]:focus {
-  color: #0066cc;
   text-decoration: none;
   cursor: pointer;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #bbbbbb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label[href]:active,
+.label[href].active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #8c8c8c;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .label:empty {
   display: none;
+}
+.label.inverse {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #dddddd;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.inverse[href]:hover,
+.label.inverse[href]:focus {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #bbbbbb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.inverse[href]:active,
+.label.inverse[href].active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #bbbbbb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-primary {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #0066cc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Inverse                                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.label.label-primary[href]:hover,
+.label.label-primary[href]:focus {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #0057ad;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-primary[href]:active,
+.label.label-primary[href].active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #004c99;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-primary.inverse {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #dddddd;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-primary.inverse[href]:hover,
+.label.label-primary.inverse[href]:focus {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #bbbbbb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-primary.inverse[href]:active,
+.label.label-primary.inverse[href].active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #bbbbbb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-success {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #70af2f;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Inverse                                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.label.label-success[href]:hover,
+.label.label-success[href]:focus {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #5f9428;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-success[href]:active,
+.label.label-success[href].active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #548323;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-success.inverse {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #dddddd;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-success.inverse[href]:hover,
+.label.label-success.inverse[href]:focus {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #bbbbbb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-success.inverse[href]:active,
+.label.label-success.inverse[href].active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #bbbbbb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-warning {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #f38339;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Inverse                                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.label.label-warning[href]:hover,
+.label.label-warning[href]:focus {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #f0680f;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-warning[href]:active,
+.label.label-warning[href].active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #d45c0d;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-warning.inverse {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #dddddd;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-warning.inverse[href]:hover,
+.label.label-warning.inverse[href]:focus {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #bbbbbb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-warning.inverse[href]:active,
+.label.label-warning.inverse[href].active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #bbbbbb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-danger {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #fd3c2b;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Inverse                                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+.label.label-danger[href]:hover,
+.label.label-danger[href]:focus {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #f91602;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-danger[href]:active,
+.label.label-danger[href].active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #dc1402;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-danger.inverse {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #dddddd;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-danger.inverse[href]:hover,
+.label.label-danger.inverse[href]:focus {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #bbbbbb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.label.label-danger.inverse[href]:active,
+.label.label-danger.inverse[href].active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: none;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #bbbbbb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -24542,13 +25047,104 @@ a:active img.image-framed {
 /* Browser Conditional Styling                                                                          */
 /*                                                                                                      */
 /* ==================================================================================================== */
-/*
-@import "browsers/ie.less";
-@import "browsers/ie-9.less";
-@import "browsers/ie-8.less";
-@import "browsers/ie-7.less";
-@import "browsers/ie-6.less";
-*//* ==================================================================================================== */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* browsers/firefox.less                                                                                */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@-moz-document url-prefix() {
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Stylized Select Box                                                                                  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .select-wrapper select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+  }
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* browsers/ie.less                                                                                     */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* browsers/ie-9.less                                                                                   */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* browsers/ie-8.less                                                                                   */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+html.ie8 {
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Stylized Select Box                                                                                  */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+html.ie8 .select-wrapper .select-wrapper-inner {
+  display: none;
+}
+html.ie8 .select-wrapper .select-wrapper-inner:after {
+  display: none;
+}
+html.ie8 .select-wrapper select {
+  -webkit-appearance: menulist;
+  box-sizing: border-box;
+  align-items: center;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  white-space: pre;
+  -webkit-rtl-ordering: logical;
+  color: black;
+  background-color: white;
+  cursor: default;
+  padding: 0px;
+  *zoom: 1;
+}
+html.ie8 .select-wrapper select:before,
+html.ie8 .select-wrapper select:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+html.ie8 .select-wrapper select:after {
+  clear: both;
+}
+html.ie8 .select-wrapper select:focus {
+  outline: 0;
+}
+html.ie8 .select-wrapper:hover select {
+  cursor: pointer;
+}
+html.ie8 .select-wrapper:active select {
+  outline: 0;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* browsers/ie-7.less                                                                                   */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* browsers/ie-6.less                                                                                   */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ==================================================================================================== */
 /*                                                                                                      */
 /* Layout                                                                                               */
 /*                                                                                                      */
@@ -25870,6 +26466,14 @@ header .header-content .header-subtitle {
 /* Browser Conditional Styling                                                                          */
 /*                                                                                                      */
 /* ==================================================================================================== */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* browsers/firefox.less                                                                                */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@-moz-document url-prefix() {
+  
+}
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                           */
 /* browsers/ie.less                                                          */
