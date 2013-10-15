@@ -4657,6 +4657,31 @@ ul.unstyled li,
 ol.unstyled li {
   padding-left: 0px;
 }
+ul.inline,
+ol.inline {
+  margin-top: -3.75px;
+  margin-left: -3.75px;
+  *zoom: 1;
+}
+ul.inline:before,
+ol.inline:before,
+ul.inline:after,
+ol.inline:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+ul.inline:after,
+ol.inline:after {
+  clear: both;
+}
+ul.inline li,
+ol.inline li {
+  margin-top: 3.75px;
+  margin-left: 3.75px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
 ul ul,
 ul ol,
 ol ol,
@@ -5203,6 +5228,16 @@ blockquote:after {
   ol.short {
     margin-bottom: 8.25px;
   }
+  ul.inline,
+  ol.inline {
+    margin-top: -4.125px;
+    margin-left: -4.125px;
+  }
+  ul.inline li,
+  ol.inline li {
+    margin-top: 4.125px;
+    margin-left: 4.125px;
+  }
   ul ul,
   ul ol,
   ol ol,
@@ -5658,6 +5693,16 @@ blockquote:after {
   ol.short {
     margin-bottom: 9px;
   }
+  ul.inline,
+  ol.inline {
+    margin-top: -4.5px;
+    margin-left: -4.5px;
+  }
+  ul.inline li,
+  ol.inline li {
+    margin-top: 4.5px;
+    margin-left: 4.5px;
+  }
   ul ul,
   ul ol,
   ol ol,
@@ -6112,6 +6157,16 @@ blockquote:after {
   ul.short,
   ol.short {
     margin-bottom: 9px;
+  }
+  ul.inline,
+  ol.inline {
+    margin-top: -4.5px;
+    margin-left: -4.5px;
+  }
+  ul.inline li,
+  ol.inline li {
+    margin-top: 4.5px;
+    margin-left: 4.5px;
   }
   ul ul,
   ul ol,

@@ -2359,6 +2359,23 @@ ol {
 		
 	}
 	
+	&.inline {
+		
+		margin-top: -(@body-text-margin-bottom / 4);
+		margin-left: -(@body-text-margin-bottom / 4);
+		.clearfix();
+		
+		li {
+			
+			margin-top: (@body-text-margin-bottom / 4);
+			margin-left: (@body-text-margin-bottom / 4);
+			margin-bottom: 0px;
+			display: inline-block;
+			
+		}
+		
+	}
+	
 }
 
 ul ul,
@@ -3274,6 +3291,20 @@ blockquote:after {
 			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-ratio-screen-small;
 			
 		}
+	
+		&.inline {
+			
+			margin-top: -((@body-text-margin-bottom / 4) * @body-text-ratio-screen-small);
+			margin-left: -((@body-text-margin-bottom / 4) * @body-text-ratio-screen-small);
+			
+			li {
+				
+				margin-top: ((@body-text-margin-bottom / 4) * @body-text-ratio-screen-small);
+				margin-left: ((@body-text-margin-bottom / 4) * @body-text-ratio-screen-small);
+				
+			}
+			
+		}
 		
 	}
 	
@@ -4052,6 +4083,20 @@ blockquote:after {
 			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-ratio-screen-medium;
 			
 		}
+	
+		&.inline {
+			
+			margin-top: -((@body-text-margin-bottom / 4) * @body-text-ratio-screen-medium);
+			margin-left: -((@body-text-margin-bottom / 4) * @body-text-ratio-screen-medium);
+			
+			li {
+				
+				margin-top: ((@body-text-margin-bottom / 4) * @body-text-ratio-screen-medium);
+				margin-left: ((@body-text-margin-bottom / 4) * @body-text-ratio-screen-medium);
+				
+			}
+			
+		}
 		
 	}
 	
@@ -4828,6 +4873,20 @@ blockquote:after {
 		&.short {
 			
 			margin-bottom: @body-text-margin-bottom * @text-margin-ratio-short * @body-text-ratio-screen-large;
+			
+		}
+	
+		&.inline {
+			
+			margin-top: -((@body-text-margin-bottom / 4) * @body-text-ratio-screen-large);
+			margin-left: -((@body-text-margin-bottom / 4) * @body-text-ratio-screen-large);
+			
+			li {
+				
+				margin-top: ((@body-text-margin-bottom / 4) * @body-text-ratio-screen-large);
+				margin-left: ((@body-text-margin-bottom / 4) * @body-text-ratio-screen-large);
+				
+			}
 			
 		}
 		
