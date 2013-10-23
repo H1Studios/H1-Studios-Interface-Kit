@@ -1616,8 +1616,6 @@ hr + .h6-clone {
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   *zoom: 1;
   /* ---------------------------------------------------------------------------------------------------- */
 
@@ -1804,8 +1802,6 @@ hr + .h6-clone {
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
     *zoom: 1;
   }
   .container:before,
@@ -2055,8 +2051,6 @@ hr + .h6-clone {
     max-width: 760px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
     *zoom: 1;
   }
   .container:before,
@@ -2306,8 +2300,6 @@ hr + .h6-clone {
     max-width: 960px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 20px;
-    padding-right: 20px;
     *zoom: 1;
   }
   .container:before,
@@ -2552,8 +2544,6 @@ hr + .h6-clone {
     max-width: 1220px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 30px;
-    padding-right: 30px;
     *zoom: 1;
   }
   .container:before,
