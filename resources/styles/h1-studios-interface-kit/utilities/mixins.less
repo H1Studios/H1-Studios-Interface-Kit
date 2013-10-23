@@ -794,8 +794,8 @@
 
 .make-container-fixed(@gutter: @grid-gutter-width) {
 	
-	margin-right: auto;
-	margin-left: auto;
+	margin-right: @gutter;
+	margin-left: @gutter;
 	//padding-left:  (@gutter / 2);
 	//padding-right: (@gutter / 2);
 	.clearfix();
@@ -806,8 +806,8 @@
 
 .make-row(@gutter: @grid-gutter-width) {
 	
-	margin-left:  (@gutter / -2);
-	margin-right: (@gutter / -2);
+	margin-left:  -(@gutter / 2);
+	margin-right: -(@gutter / 2);
 	.clearfix();
 	
 }

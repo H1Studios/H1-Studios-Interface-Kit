@@ -17,7 +17,7 @@
 .container {
 	
 	position: relative;
-	.make-container-fixed();
+	.make-container-fixed(@grid-gutter-width);
 	
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* Fluid Grid                                                                                           */
@@ -193,7 +193,18 @@
 	.container {
 		
 		max-width: @grid-container-width-screen-mini;
-		.make-container-fixed(@grid-gutter-width-screen-mini);
+		.make-container-fixed(@grid-gutter-width-screen-mini / 2);
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Fluid Grid                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+			
+		&.container-fluid {
+			
+			margin-left: @grid-gutter-width-screen-mini;
+			margin-right: @grid-gutter-width-screen-mini;
+			
+		}
 		
 	}
 	
@@ -367,7 +378,18 @@
 	.container {
 		
 		max-width: @grid-container-width-screen-small;
-		.make-container-fixed(@grid-gutter-width-screen-small);
+		.make-container-fixed(auto);
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Fluid Grid                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+			
+		&.container-fluid {
+			
+			margin-left: @grid-gutter-width-screen-small;
+			margin-right: @grid-gutter-width-screen-small;
+			
+		}
 		
 	}
 	
@@ -541,7 +563,18 @@
 	.container {
 		
 		max-width: @grid-container-width-screen-medium;
-		.make-container-fixed(@grid-gutter-width-screen-medium);
+		.make-container-fixed(auto);
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Fluid Grid                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+			
+		&.container-fluid {
+			
+			margin-left: @grid-gutter-width-screen-medium;
+			margin-right: @grid-gutter-width-screen-medium;
+			
+		}
 		
 	}
 	
@@ -694,7 +727,18 @@
 	.container {
 		
 		max-width: @grid-container-width-screen-large;
-		.make-container-fixed(@grid-gutter-width-screen-large);
+		.make-container-fixed(auto);
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Fluid Grid                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+			
+		&.container-fluid {
+			
+			margin-left: @grid-gutter-width-screen-large;
+			margin-right: @grid-gutter-width-screen-large;
+			
+		}
 		
 	}
 	
