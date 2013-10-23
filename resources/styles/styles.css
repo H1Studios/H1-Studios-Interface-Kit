@@ -6569,7 +6569,7 @@ blockquote:after {
   /* Modal                                                                                                */
   /* ==================================================================================================== */
   .modal {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     width: 500px;
@@ -24007,12 +24007,6 @@ img.image-responsive {
   width: 100% !important;
   height: auto !important;
 }
-img.short {
-  margin-bottom: 7.5px;
-}
-img.tall {
-  margin-bottom: 22.5px;
-}
 img.image-rounded {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -24024,6 +24018,11 @@ img.image-circle {
   border-radius: 1000px;
 }
 img.image-framed {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 5px;
   background-color: transparent;
   background-image: none;
@@ -24038,7 +24037,31 @@ img.image-framed {
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.075), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.075), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
+}
+img.short {
+  margin-bottom: 7.5px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Framed Images                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+img.short.image-framed {
+  margin-bottom: 7.5px;
+}
+img.tall {
+  margin-bottom: 22.5px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Framed Images                                                                                        */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+img.tall.image-framed {
+  margin-bottom: 22.5px;
 }
 /* ---------------------------------------------------------------------------------------------------- */
 /* Image Link                                                                                           */
@@ -24099,7 +24122,7 @@ a:active img.image-framed {
 /*                                                                                                      */
 /* ==================================================================================================== */
 .image-group {
-  direction: block;
+  display: block;
   margin-top: -5px;
   margin-left: -5px;
   margin-bottom: 15px;
@@ -24177,15 +24200,33 @@ a:active img.image-framed {
     /* ---------------------------------------------------------------------------------------------------- */
   
   }
+  img.image-framed {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
   img.short {
+    margin-bottom: 10px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  img.short.image-framed {
     margin-bottom: 10px;
   }
   img.tall {
     margin-bottom: 30px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
   }
-  img.image-framed {
-    margin-top: 0px;
-    margin-bottom: 0px;
+  img.tall.image-framed {
+    margin-bottom: 30px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -24270,15 +24311,33 @@ a:active img.image-framed {
     /* ---------------------------------------------------------------------------------------------------- */
   
   }
+  img.image-framed {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
   img.short {
+    margin-bottom: 15px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  img.short.image-framed {
     margin-bottom: 15px;
   }
   img.tall {
     margin-bottom: 45px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
   }
-  img.image-framed {
-    margin-top: 0px;
-    margin-bottom: 0px;
+  img.tall.image-framed {
+    margin-bottom: 45px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -24363,15 +24422,33 @@ a:active img.image-framed {
     /* ---------------------------------------------------------------------------------------------------- */
   
   }
+  img.image-framed {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
   img.short {
+    margin-bottom: 20px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+  }
+  img.short.image-framed {
     margin-bottom: 20px;
   }
   img.tall {
     margin-bottom: 60px;
+    /* ---------------------------------------------------------------------------------------------------- */
+  
+    /* Framed Images                                                                                        */
+  
+    /* ---------------------------------------------------------------------------------------------------- */
+  
   }
-  img.image-framed {
-    margin-top: 0px;
-    margin-bottom: 0px;
+  img.tall.image-framed {
+    margin-bottom: 60px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -25064,6 +25141,161 @@ a:active img.image-framed {
 .icon.icon-jumbo.icon-muted {
   opacity: 25;
   filter: alpha(opacity=2500);
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 768px) {
+  
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 992px) {
+  
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 1280px) {
+  
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/scrollbars.less                                                                           */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.scroller {
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+.scroller .scroller-content {
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+}
+.scroller .scroller-bar {
+  display: none;
+  height: 100% !important;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  width: 6px;
+  z-index: 2;
+  opacity: 0.25;
+  filter: alpha(opacity=25);
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.scroller .scroller-bar .scroller-track {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+}
+.scroller .scroller-bar .scroller-track .scroller-handle {
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 6px;
+  z-index: 2;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.28);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.scroller:hover .scroller-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.scroller.scroller-white .scroller-bar .scroller-track {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.12);
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.12);
+}
+.scroller.scroller-white .scroller-bar .scroller-track .scroller-handle {
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.42);
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.42);
+}
+/* Webkit Fix */
+.scroller-content::-webkit-scrollbar,
+.scroller-content::-webkit-scrollbar-button,
+.scroller-content::-webkit-scrollbar-track,
+.scroller-content::-webkit-scrollbar-track-piece,
+.scroller-content::-webkit-scrollbar-thumb,
+.scroller-content::-webkit-scrollbar-corner,
+.scroller-content::-webkit-resizer {
+  background: transparent;
+  opacity: 0;
+}
+/* Active Scrollbar */
+.scroller-active .scroller-bar {
+  display: block;
+}
+/* Setup Scrollbar - Should match 'active' styles for proper sizing */
+.scroller-active .scroller-bar {
+  display: block;
+}
+/* Horizontal */
+.scroller-horizontal .scroller-content {
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 0 10px 0;
+}
+.scroller-horizontal .scroller-bar {
+  border-left: none;
+  border-top: 1px solid #EEEEEE;
+  bottom: 0;
+  height: 20px;
+  top: auto;
+  width: 100%;
+}
+.scroller-horizontal .scroller-handle {
+  bottom: 5px;
+  height: 10px;
+  right: auto;
+  top: auto;
+  width: 20px;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */

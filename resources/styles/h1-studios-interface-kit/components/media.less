@@ -29,18 +29,6 @@ img {
 		
 	}
 	
-	&.short {
-		
-		margin-bottom: @image-margin-short;
-		
-	}
-	
-	&.tall {
-		
-		margin-bottom: @image-margin-tall;
-		
-	}
-	
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* Rounded Images                                                                                       */
 	/* ---------------------------------------------------------------------------------------------------- */
@@ -67,6 +55,7 @@ img {
 	
 	&.image-framed {
 		
+		.input-block-level();
 		padding: @image-framed-padding;
 		.override_gradient_vertical();
 		.border-radius(@image-framed-border-radius);
@@ -76,7 +65,39 @@ img {
 		#gradient > .vertical(@image-framed-background-gradient-top-color, @image-framed-background-gradient-bottom-color);
 		.box-shadow(@image-framed-shadow);
 		margin-top: @image-framed-offset-top;
-		margin-bottom: @image-framed-offset-bottom;
+		margin-bottom: @image-margin + @image-framed-offset-bottom;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @image-margin-short;
+			
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Framed Images                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.image-framed {
+			
+			margin-bottom: @image-margin-short + @image-framed-offset-bottom;
+			
+		}
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @image-margin-tall;
+			
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Framed Images                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.image-framed {
+			
+			margin-bottom: @image-margin-tall + @image-framed-offset-bottom;
+			
+		}
 		
 	}
 	
@@ -154,7 +175,7 @@ a {
 
 .image-group {
 	
-	direction: block;
+	display: block;
 	margin-top: -@image-group-padding-horizontal;
 	margin-left: -@image-group-padding-horizontal;
 	margin-bottom: @image-group-margin;
@@ -262,18 +283,6 @@ a {
 		
 		margin-bottom: @image-margin-screen-small;
 		
-		&.short {
-			
-			margin-bottom: @image-margin-short-screen-small;
-			
-		}
-		
-		&.tall {
-			
-			margin-bottom: @image-margin-tall-screen-small;
-			
-		}
-		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Framed Images                                                                                        */
 		/* ---------------------------------------------------------------------------------------------------- */
@@ -281,7 +290,39 @@ a {
 		&.image-framed {
 			
 			margin-top: @image-framed-offset-top;
-			margin-bottom: @image-framed-offset-bottom;
+			margin-bottom: @image-margin-screen-small + @image-framed-offset-bottom;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @image-margin-short-screen-small;
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-bottom: @image-margin-short-screen-small + @image-framed-offset-bottom;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @image-margin-tall-screen-small;
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-bottom: @image-margin-tall-screen-small + @image-framed-offset-bottom;
+				
+			}
 			
 		}
 		
@@ -403,18 +444,6 @@ a {
 		
 		margin-bottom: @image-margin-screen-medium;
 		
-		&.short {
-			
-			margin-bottom: @image-margin-short-screen-medium;
-			
-		}
-		
-		&.tall {
-			
-			margin-bottom: @image-margin-tall-screen-medium;
-			
-		}
-		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Framed Images                                                                                        */
 		/* ---------------------------------------------------------------------------------------------------- */
@@ -422,7 +451,39 @@ a {
 		&.image-framed {
 			
 			margin-top: @image-framed-offset-top;
-			margin-bottom: @image-framed-offset-bottom;
+			margin-bottom: @image-margin-screen-medium + @image-framed-offset-bottom;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @image-margin-short-screen-medium;
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-bottom: @image-margin-short-screen-medium + @image-framed-offset-bottom;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @image-margin-tall-screen-medium;
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-bottom: @image-margin-tall-screen-medium + @image-framed-offset-bottom;
+				
+			}
 			
 		}
 		
@@ -543,18 +604,6 @@ a {
 		
 		margin-bottom: @image-margin-screen-large;
 		
-		&.short {
-			
-			margin-bottom: @image-margin-short-screen-large;
-			
-		}
-		
-		&.tall {
-			
-			margin-bottom: @image-margin-tall-screen-large;
-			
-		}
-		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Framed Images                                                                                        */
 		/* ---------------------------------------------------------------------------------------------------- */
@@ -562,7 +611,39 @@ a {
 		&.image-framed {
 			
 			margin-top: @image-framed-offset-top;
-			margin-bottom: @image-framed-offset-bottom;
+			margin-bottom: @image-margin-screen-large + @image-framed-offset-bottom;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @image-margin-short-screen-large;
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-bottom: @image-margin-short-screen-large + @image-framed-offset-bottom;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @image-margin-tall-screen-large;
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-bottom: @image-margin-tall-screen-large + @image-framed-offset-bottom;
+				
+			}
 			
 		}
 		
