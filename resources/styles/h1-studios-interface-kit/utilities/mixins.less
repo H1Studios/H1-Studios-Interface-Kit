@@ -98,6 +98,7 @@
 .size(@width; @height) {
   width: @width;
   height: @height;
+  behavior: url("@{css3pie-path}PIE.php");
 }
 .square(@size) {
   .size(@size; @size);
@@ -138,6 +139,7 @@
 
 .border-radius(@radius) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-border-radius: @radius;
 	-moz-border-radius: @radius;
 	border-radius: @radius;
@@ -148,6 +150,7 @@
 
 .border-top-left-radius(@radius) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-border-top-left-radius: @radius;
 	-moz-border-radius-topleft: @radius;
 	border-top-left-radius: @radius;
@@ -156,6 +159,7 @@
 
 .border-top-right-radius(@radius) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-border-top-right-radius: @radius;
 	-moz-border-radius-topright: @radius;
 	border-top-right-radius: @radius;
@@ -164,6 +168,7 @@
 
 .border-bottom-right-radius(@radius) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-border-bottom-right-radius: @radius;
 	-moz-border-radius-bottomright: @radius;
 	border-bottom-right-radius: @radius;
@@ -172,6 +177,7 @@
 
 .border-bottom-left-radius(@radius) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-border-bottom-left-radius: @radius;
 	-moz-border-radius-bottomleft: @radius;
 	border-bottom-left-radius: @radius;
@@ -182,6 +188,7 @@
 
 .border-top-radius(@radius) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	.border-top-right-radius(@radius);
 	.border-top-left-radius(@radius);
 	
@@ -189,6 +196,7 @@
 
 .border-right-radius(@radius) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	.border-top-right-radius(@radius);
 	.border-bottom-right-radius(@radius);
 	
@@ -196,6 +204,7 @@
 
 .border-bottom-radius(@radius) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	.border-bottom-right-radius(@radius);
 	.border-bottom-left-radius(@radius);
 	
@@ -203,6 +212,7 @@
 
 .border-left-radius(@radius) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	.border-top-left-radius(@radius);
 	.border-bottom-left-radius(@radius);
 	
@@ -210,14 +220,17 @@
 
 // Drop shadows
 .box-shadow(@shadow) {
-  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
-          box-shadow: @shadow;
+
+	-webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+	box-shadow: @shadow;
+	behavior: url("@{css3pie-path}PIE.php");
 }
 
 // Transitions
 
 .transition(@transition) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-transition: @transition;
 	-moz-transition: @transition;
 	-o-transition: @transition;
@@ -227,6 +240,7 @@
 
 .transition-delay(@transition-delay) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-transition-delay: @transition-delay;
 	-moz-transition-delay: @transition-delay;
 	-o-transition-delay: @transition-delay;
@@ -238,6 +252,7 @@
 
 .rotate(@degrees) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-transform: rotate(@degrees);
 	-moz-transform: rotate(@degrees);
 	-ms-transform: rotate(@degrees);
@@ -248,6 +263,7 @@
 
 .scale(@ratio) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-transform: scale(@ratio);
 	-moz-transform: scale(@ratio);
 	-ms-transform: scale(@ratio);
@@ -258,6 +274,7 @@
 
 .translate(@x, @y) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-transform: translate(@x, @y);
 	-moz-transform: translate(@x, @y);
 	-ms-transform: translate(@x, @y);
@@ -268,6 +285,7 @@
 
 .skew(@x, @y) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-transform: skew(@x, @y);
 	-moz-transform: skew(@x, @y);
 	-ms-transform: skewX(@x) skewY(@y); // See https://github.com/twitter/bootstrap/issues/4885
@@ -279,6 +297,7 @@
 
 .translate3d(@x, @y, @z) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-transform: translate3d(@x, @y, @z);
 	-moz-transform: translate3d(@x, @y, @z);
 	-o-transform: translate3d(@x, @y, @z);
@@ -313,6 +332,7 @@
 
 .background-size(@size) {
 	
+	behavior: url("@{css3pie-path}PIE.php");
 	-webkit-background-size: @size;
 	-moz-background-size: @size;
 	-o-background-size: @size;
@@ -324,9 +344,12 @@
 
 // Box sizing
 .box-sizing(@boxmodel) {
-  -webkit-box-sizing: @boxmodel;
-     -moz-box-sizing: @boxmodel;
-          box-sizing: @boxmodel;
+
+	behavior: url("@{css3pie-path}PIE.php");
+	-webkit-box-sizing: @boxmodel;
+	-moz-box-sizing: @boxmodel;
+	box-sizing: @boxmodel;
+	
 }
 
 // User select
@@ -367,10 +390,12 @@
 
 // Opacity
 .opacity(@opacity) {
-  opacity: @opacity;
-  // IE8 filter
-  @opacity-ie: (@opacity * 100);
-  filter: ~"alpha(opacity=@{opacity-ie})";
+	
+	behavior: url("@{css3pie-path}PIE.php");
+	opacity: @opacity;
+	// IE8 filter
+	@opacity-ie: (@opacity * 100);
+	filter: ~"alpha(opacity=@{opacity-ie})";
 }
 
 
@@ -395,6 +420,8 @@
 }
 
 #gradient {
+	
+	behavior: url("@{css3pie-path}PIE.php");
 	
 	.horizontal(@startColor: #555, @endColor: #333) {
 		
@@ -568,18 +595,22 @@
 // Short retina mixin for setting background-image and -size
 
 .img-retina(@file-1x; @file-2x; @width-1x; @height-1x) {
+  
   background-image: url("@{file-1x}");
 
   @media
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (   min--moz-device-pixel-ratio: 2),
-  only screen and (     -o-min-device-pixel-ratio: 2/1),
-  only screen and (        min-device-pixel-ratio: 2),
-  only screen and (                min-resolution: 192dpi),
-  only screen and (                min-resolution: 2dppx) {
-    background-image: url("@{file-2x}");
-    background-size: @width-1x @height-1x;
+  	
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) {
+	background-image: url("@{file-2x}");
+	background-size: @width-1x @height-1x;
+	
   }
+  
 }
 
 
@@ -1268,7 +1299,7 @@
 	text-shadow: @dropdown-row-text-shadow;
 	background-color: @dropdown-row-background-color;
 	#gradient > .vertical(@dropdown-row-background-gradient-top-color, @dropdown-row-background-gradient-bottom-color);
-	.box-shadow(@dropdown-row-shadow)
+	.box-shadow(@dropdown-row-shadow);
 	
 }
 
