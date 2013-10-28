@@ -102,7 +102,22 @@ class __TwigTemplate_95ff07bf602497e7673e00187a8f5c95 extends Twig_Template
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>";
+</script>
+\t\t
+<!-- ==================== CSS3PIE ====================== -->
+
+<!--[if lt IE 7 ]>
+\t<script type=\"text/javascript\" src=\"/resources/javascript/libs/CSS3Pie/PIE_IE678.js\"></script>
+<![endif]-->
+<!--[if IE 7 ]>
+\t<script type=\"text/javascript\" src=\"/resources/javascript/libs/CSS3Pie/PIE_IE678.js\"></script>
+<![endif]-->
+<!--[if IE 8 ]>
+\t<script type=\"text/javascript\" src=\"/resources/javascript/libs/CSS3Pie/PIE_IE678.js\"></script>
+<![endif]-->
+<!--[if IE 9 ]>
+\t<script type=\"text/javascript\" src=\"/resources/javascript/libs/CSS3Pie/PIE_IE9.js\"></script>
+<![endif]-->";
     }
 
     public function getTemplateName()
