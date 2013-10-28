@@ -54,3 +54,18 @@
   })();
 
 </script>
+		
+<!-- ==================== CSS3PIE ====================== -->
+
+<!--[if lt IE 7 ]>
+	<script type="text/javascript" src="/resources/javascript/libs/CSS3Pie/PIE_IE678.js"></script>
+<![endif]-->
+<!--[if IE 7 ]>
+	<script type="text/javascript" src="/resources/javascript/libs/CSS3Pie/PIE_IE678.js"></script>
+<![endif]-->
+<!--[if IE 8 ]>
+	<script type="text/javascript" src="/resources/javascript/libs/CSS3Pie/PIE_IE678.js"></script>
+<![endif]-->
+<!--[if IE 9 ]>
+	<script type="text/javascript" src="/resources/javascript/libs/CSS3Pie/PIE_IE9.js"></script>
+<![endif]-->
