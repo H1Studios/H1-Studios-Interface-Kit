@@ -2307,16 +2307,215 @@ ol {
 	
 	li {
 		
-		font-weight: @body-text-font-weight;
+		font-family: @body-text-font-family;
 		font-size: @body-text-font-size;
+		font-weight: @body-text-font-weight;
 		line-height: @body-text-line-height;
+		text-transform: @body-text-transform;
+		font-style: @body-text-font-style;
+		color: @body-text-color;
 		margin-bottom: (@body-text-margin-bottom / 2);
+		
+		// Tall
+		
+		&.tall {
+			
+			margin-bottom: (@body-text-margin-bottom / 2) * @text-margin-ratio-tall;
+			
+		}
+		
+		// Short
+			
+		&.short {
+			
+			margin-bottom: (@body-text-margin-bottom / 2) * @text-margin-ratio-short;
+			
+		}
+		
+		// Links
+		
+		a {
+			
+			color: @body-text-link-text-color;
+			text-decoration: @body-text-link-text-decoration;
+			
+			&:hover {
+				
+				color: @body-text-link-hover-text-color;
+				text-decoration: @body-text-link-hover-text-decoration;
+				
+			}
+			
+			&:active {
+				
+				color: @body-text-link-active-text-color;
+				text-decoration: @body-text-link-active-text-decoration;
+				
+			}
+			
+		}
 		
 		&:last-child {
 			
 			margin-bottom: 0px;
 			
 		}
+		
+		// Emphasis
+		
+		&.emphasis,
+		.emphasis,
+		strong {
+			
+			font-weight: @body-text-emphasis-font-weight;
+			color: @body-text-emphasis-color;
+			font-style: @body-text-emphasis-font-style;
+			
+			// Links
+			
+			a {
+				
+				color: @body-text-emphasis-link-text-color;
+				text-decoration: @body-text-emphasis-link-text-decoration;
+				
+				&:hover {
+					
+					color: @body-text-emphasis-link-hover-text-color;
+					text-decoration: @body-text-emphasis-link-hover-text-decoration;
+					
+				}
+				
+				&:active {
+					
+					color: @body-text-emphasis-link-active-text-color;
+					text-decoration: @body-text-emphasis-link-active-text-decoration;
+					
+				}
+				
+			}
+			
+		}
+		
+		// Muted
+		
+		&.muted {
+			
+			font-weight: @body-text-muted-font-weight;
+			color: @body-text-muted-color;
+			font-style: @body-text-muted-font-style;
+			
+			// Links
+			
+			a {
+				
+				color: @body-text-muted-link-text-color;
+				text-decoration: @body-text-muted-link-text-decoration;
+				
+				&:hover {
+					
+					color: @body-text-muted-link-hover-text-color;
+					text-decoration: @body-text-muted-link-hover-text-decoration;
+					
+				}
+				
+				&:active {
+					
+					color: @body-text-muted-link-active-text-color;
+					text-decoration: @body-text-muted-link-active-text-decoration;
+					
+				}
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Inverse                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+	    &.inverse {
+			
+			color: @body-text-inverse-color;
+			
+			// Links
+			
+			a {
+				
+				color: @body-text-inverse-link-text-color;
+				
+				&:hover {
+					
+					color: @body-text-inverse-link-hover-text-color;
+					
+				}
+				
+				&:active {
+					
+					color: @body-text-inverse-link-active-text-color;
+					
+				}
+				
+			}
+			
+			// Emphasis
+			
+			&.emphasis,
+			.emphasis,
+			strong {
+				
+				color: @body-text-inverse-emphasis-color;
+				
+				// Links
+				
+				a {
+					
+					color: @body-text-inverse-emphasis-link-text-color;
+					
+					&:hover {
+						
+						color: @body-text-inverse-emphasis-link-hover-text-color;
+						
+					}
+					
+					&:active {
+						
+						color: @body-text-inverse-emphasis-link-active-text-color;
+						
+					}
+					
+				}
+				
+			}
+			
+			// Muted
+			
+			&.muted {
+				
+				color: @body-text-inverse-muted-color;
+				
+				// Links
+				
+				a {
+					
+					color: @body-text-inverse-muted-link-text-color;
+					
+					&:hover {
+						
+						color: @body-text-inverse-muted-link-hover-text-color;
+						
+					}
+					
+					&:active {
+						
+						color: @body-text-inverse-muted-link-active-text-color;
+						
+					}
+					
+				}
+				
+			}
+			
+	    }
 		
 	}
 	
@@ -3268,6 +3467,22 @@ blockquote:after {
 			line-height: @body-text-line-height * @body-text-ratio-screen-small;
 			margin-bottom: (@body-text-margin-bottom / 2) * @body-text-ratio-screen-small;
 			
+			// Tall
+			
+			&.tall {
+				
+				margin-bottom: (@body-text-margin-bottom / 2) * @text-margin-ratio-tall * @body-text-ratio-screen-small;
+				
+			}
+			
+			// Short
+				
+			&.short {
+				
+				margin-bottom: (@body-text-margin-bottom / 2) * @text-margin-ratio-short * @body-text-ratio-screen-small;
+				
+			}
+			
 			&:last-child {
 				
 				margin-bottom: 0px;
@@ -4060,6 +4275,22 @@ blockquote:after {
 			line-height: @body-text-line-height * @body-text-ratio-screen-medium;
 			margin-bottom: (@body-text-margin-bottom / 2) * @body-text-ratio-screen-medium;
 			
+			// Tall
+			
+			&.tall {
+				
+				margin-bottom: (@body-text-margin-bottom / 2) * @text-margin-ratio-tall * @body-text-ratio-screen-medium;
+				
+			}
+			
+			// Short
+				
+			&.short {
+				
+				margin-bottom: (@body-text-margin-bottom / 2) * @text-margin-ratio-short * @body-text-ratio-screen-medium;
+				
+			}
+			
 			&:last-child {
 				
 				margin-bottom: 0px;
@@ -4851,6 +5082,22 @@ blockquote:after {
 			font-size: @body-text-font-size * @body-text-ratio-screen-large;
 			line-height: @body-text-line-height * @body-text-ratio-screen-large;
 			margin-bottom: (@body-text-margin-bottom / 2) * @body-text-ratio-screen-large;
+			
+			// Tall
+			
+			&.tall {
+				
+				margin-bottom: (@body-text-margin-bottom / 2) * @text-margin-ratio-tall * @body-text-ratio-screen-large;
+				
+			}
+			
+			// Short
+				
+			&.short {
+				
+				margin-bottom: (@body-text-margin-bottom / 2) * @text-margin-ratio-short * @body-text-ratio-screen-large;
+				
+			}
 			
 			&:last-child {
 				
