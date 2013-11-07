@@ -1999,13 +1999,46 @@ hr + .h6-clone {
   /* Column Spill                                                                                         */
   /*                                                                                                      */
   /* ==================================================================================================== */
-  .col-spill {
+  .col-mini-1.col-spill,
+  .col-mini-2.col-spill,
+  .col-mini-3.col-spill,
+  .col-mini-4.col-spill,
+  .col-mini-5.col-spill,
+  .col-mini-6.col-spill,
+  .col-mini-7.col-spill,
+  .col-mini-8.col-spill,
+  .col-mini-9.col-spill,
+  .col-mini-10.col-spill,
+  .col-mini-11.col-spill,
+  .col-mini-12.col-spill {
     margin-top: 0px;
   }
-  .col-spill.col-spill-short {
+  .col-mini-1.col-spill.col-spill-short,
+  .col-mini-2.col-spill.col-spill-short,
+  .col-mini-3.col-spill.col-spill-short,
+  .col-mini-4.col-spill.col-spill-short,
+  .col-mini-5.col-spill.col-spill-short,
+  .col-mini-6.col-spill.col-spill-short,
+  .col-mini-7.col-spill.col-spill-short,
+  .col-mini-8.col-spill.col-spill-short,
+  .col-mini-9.col-spill.col-spill-short,
+  .col-mini-10.col-spill.col-spill-short,
+  .col-mini-11.col-spill.col-spill-short,
+  .col-mini-12.col-spill.col-spill-short {
     margin-top: 0px;
   }
-  .col-spill.col-spill-tall {
+  .col-mini-1.col-spill.col-spill-tall,
+  .col-mini-2.col-spill.col-spill-tall,
+  .col-mini-3.col-spill.col-spill-tall,
+  .col-mini-4.col-spill.col-spill-tall,
+  .col-mini-5.col-spill.col-spill-tall,
+  .col-mini-6.col-spill.col-spill-tall,
+  .col-mini-7.col-spill.col-spill-tall,
+  .col-mini-8.col-spill.col-spill-tall,
+  .col-mini-9.col-spill.col-spill-tall,
+  .col-mini-10.col-spill.col-spill-tall,
+  .col-mini-11.col-spill.col-spill-tall,
+  .col-mini-12.col-spill.col-spill-tall {
     margin-top: 0px;
   }
 }
@@ -2258,13 +2291,46 @@ hr + .h6-clone {
   /* Column Spill                                                                                         */
   /*                                                                                                      */
   /* ==================================================================================================== */
-  .col-spill {
+  .col-small-1.col-spill,
+  .col-small-2.col-spill,
+  .col-small-3.col-spill,
+  .col-small-4.col-spill,
+  .col-small-5.col-spill,
+  .col-small-6.col-spill,
+  .col-small-7.col-spill,
+  .col-small-8.col-spill,
+  .col-small-9.col-spill,
+  .col-small-10.col-spill,
+  .col-small-11.col-spill,
+  .col-small-12.col-spill {
     margin-top: 0px;
   }
-  .col-spill.col-spill-short {
+  .col-small-1.col-spill.col-spill-short,
+  .col-small-2.col-spill.col-spill-short,
+  .col-small-3.col-spill.col-spill-short,
+  .col-small-4.col-spill.col-spill-short,
+  .col-small-5.col-spill.col-spill-short,
+  .col-small-6.col-spill.col-spill-short,
+  .col-small-7.col-spill.col-spill-short,
+  .col-small-8.col-spill.col-spill-short,
+  .col-small-9.col-spill.col-spill-short,
+  .col-small-10.col-spill.col-spill-short,
+  .col-small-11.col-spill.col-spill-short,
+  .col-small-12.col-spill.col-spill-short {
     margin-top: 0px;
   }
-  .col-spill.col-spill-tall {
+  .col-small-1.col-spill.col-spill-tall,
+  .col-small-2.col-spill.col-spill-tall,
+  .col-small-3.col-spill.col-spill-tall,
+  .col-small-4.col-spill.col-spill-tall,
+  .col-small-5.col-spill.col-spill-tall,
+  .col-small-6.col-spill.col-spill-tall,
+  .col-small-7.col-spill.col-spill-tall,
+  .col-small-8.col-spill.col-spill-tall,
+  .col-small-9.col-spill.col-spill-tall,
+  .col-small-10.col-spill.col-spill-tall,
+  .col-small-11.col-spill.col-spill-tall,
+  .col-small-12.col-spill.col-spill-tall {
     margin-top: 0px;
   }
 }
@@ -2521,6 +2587,53 @@ hr + .h6-clone {
   .col-medium-offset-11 {
     margin-left: 91.66666666666666%;
   }
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Column Spill                                                                                         */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  .col-medium-1.col-spill,
+  .col-medium-2.col-spill,
+  .col-medium-3.col-spill,
+  .col-medium-4.col-spill,
+  .col-medium-5.col-spill,
+  .col-medium-6.col-spill,
+  .col-medium-7.col-spill,
+  .col-medium-8.col-spill,
+  .col-medium-9.col-spill,
+  .col-medium-10.col-spill,
+  .col-medium-11.col-spill,
+  .col-medium-12.col-spill {
+    margin-top: 0px;
+  }
+  .col-medium-1.col-spill.col-spill-short,
+  .col-medium-2.col-spill.col-spill-short,
+  .col-medium-3.col-spill.col-spill-short,
+  .col-medium-4.col-spill.col-spill-short,
+  .col-medium-5.col-spill.col-spill-short,
+  .col-medium-6.col-spill.col-spill-short,
+  .col-medium-7.col-spill.col-spill-short,
+  .col-medium-8.col-spill.col-spill-short,
+  .col-medium-9.col-spill.col-spill-short,
+  .col-medium-10.col-spill.col-spill-short,
+  .col-medium-11.col-spill.col-spill-short,
+  .col-medium-12.col-spill.col-spill-short {
+    margin-top: 0px;
+  }
+  .col-medium-1.col-spill.col-spill-tall,
+  .col-medium-2.col-spill.col-spill-tall,
+  .col-medium-3.col-spill.col-spill-tall,
+  .col-medium-4.col-spill.col-spill-tall,
+  .col-medium-5.col-spill.col-spill-tall,
+  .col-medium-6.col-spill.col-spill-tall,
+  .col-medium-7.col-spill.col-spill-tall,
+  .col-medium-8.col-spill.col-spill-tall,
+  .col-medium-9.col-spill.col-spill-tall,
+  .col-medium-10.col-spill.col-spill-tall,
+  .col-medium-11.col-spill.col-spill-tall,
+  .col-medium-12.col-spill.col-spill-tall {
+    margin-top: 0px;
+  }
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -2774,6 +2887,53 @@ hr + .h6-clone {
   }
   .col-large-offset-11 {
     margin-left: 91.66666666666666%;
+  }
+  /* ==================================================================================================== */
+  /*                                                                                                      */
+  /* Column Spill                                                                                         */
+  /*                                                                                                      */
+  /* ==================================================================================================== */
+  .col-large-1.col-spill,
+  .col-large-2.col-spill,
+  .col-large-3.col-spill,
+  .col-large-4.col-spill,
+  .col-large-5.col-spill,
+  .col-large-6.col-spill,
+  .col-large-7.col-spill,
+  .col-large-8.col-spill,
+  .col-large-9.col-spill,
+  .col-large-10.col-spill,
+  .col-large-11.col-spill,
+  .col-large-12.col-spill {
+    margin-top: 0px;
+  }
+  .col-large-1.col-spill.col-spill-short,
+  .col-large-2.col-spill.col-spill-short,
+  .col-large-3.col-spill.col-spill-short,
+  .col-large-4.col-spill.col-spill-short,
+  .col-large-5.col-spill.col-spill-short,
+  .col-large-6.col-spill.col-spill-short,
+  .col-large-7.col-spill.col-spill-short,
+  .col-large-8.col-spill.col-spill-short,
+  .col-large-9.col-spill.col-spill-short,
+  .col-large-10.col-spill.col-spill-short,
+  .col-large-11.col-spill.col-spill-short,
+  .col-large-12.col-spill.col-spill-short {
+    margin-top: 0px;
+  }
+  .col-large-1.col-spill.col-spill-tall,
+  .col-large-2.col-spill.col-spill-tall,
+  .col-large-3.col-spill.col-spill-tall,
+  .col-large-4.col-spill.col-spill-tall,
+  .col-large-5.col-spill.col-spill-tall,
+  .col-large-6.col-spill.col-spill-tall,
+  .col-large-7.col-spill.col-spill-tall,
+  .col-large-8.col-spill.col-spill-tall,
+  .col-large-9.col-spill.col-spill-tall,
+  .col-large-10.col-spill.col-spill-tall,
+  .col-large-11.col-spill.col-spill-tall,
+  .col-large-12.col-spill.col-spill-tall {
+    margin-top: 0px;
   }
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -4615,14 +4775,169 @@ ol {
 }
 ul li,
 ol li {
-  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
+  font-weight: 300;
   line-height: 20px;
+  text-transform: normal;
+  font-style: normal;
+  color: #bbbbbb;
   margin-bottom: 7.5px;
+  /* ---------------------------------------------------------------------------------------------------- */
+
+  /* Inverse                                                                                              */
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+}
+ul li.tall,
+ol li.tall {
+  margin-bottom: 15px;
+}
+ul li.short,
+ol li.short {
+  margin-bottom: 3.75px;
+}
+ul li a,
+ol li a {
+  color: #0066cc;
+  text-decoration: none;
+}
+ul li a:hover,
+ol li a:hover {
+  color: #003d7a;
+  text-decoration: underline;
+}
+ul li a:active,
+ol li a:active {
+  color: #001429;
+  text-decoration: none;
 }
 ul li:last-child,
 ol li:last-child {
   margin-bottom: 0px;
+}
+ul li.emphasis,
+ol li.emphasis,
+ul li .emphasis,
+ol li .emphasis,
+ul li strong,
+ol li strong {
+  font-weight: 500;
+  color: #8c8c8c;
+  font-style: normal;
+}
+ul li.emphasis a,
+ol li.emphasis a,
+ul li .emphasis a,
+ol li .emphasis a,
+ul li strong a,
+ol li strong a {
+  color: #0066cc;
+  text-decoration: none;
+}
+ul li.emphasis a:hover,
+ol li.emphasis a:hover,
+ul li .emphasis a:hover,
+ol li .emphasis a:hover,
+ul li strong a:hover,
+ol li strong a:hover {
+  color: #003d7a;
+  text-decoration: underline;
+}
+ul li.emphasis a:active,
+ol li.emphasis a:active,
+ul li .emphasis a:active,
+ol li .emphasis a:active,
+ul li strong a:active,
+ol li strong a:active {
+  color: #001429;
+  text-decoration: none;
+}
+ul li.muted,
+ol li.muted {
+  font-weight: 600;
+  color: #bbbbbb;
+  font-style: normal;
+}
+ul li.muted a,
+ol li.muted a {
+  color: #0066cc;
+  text-decoration: none;
+}
+ul li.muted a:hover,
+ol li.muted a:hover {
+  color: #003d7a;
+  text-decoration: underline;
+}
+ul li.muted a:active,
+ol li.muted a:active {
+  color: #001429;
+  text-decoration: none;
+}
+ul li.inverse,
+ol li.inverse {
+  color: #ffffff;
+}
+ul li.inverse a,
+ol li.inverse a {
+  color: #0066cc;
+}
+ul li.inverse a:hover,
+ol li.inverse a:hover {
+  color: #003d7a;
+}
+ul li.inverse a:active,
+ol li.inverse a:active {
+  color: #001429;
+}
+ul li.inverse.emphasis,
+ol li.inverse.emphasis,
+ul li.inverse .emphasis,
+ol li.inverse .emphasis,
+ul li.inverse strong,
+ol li.inverse strong {
+  color: #dddddd;
+}
+ul li.inverse.emphasis a,
+ol li.inverse.emphasis a,
+ul li.inverse .emphasis a,
+ol li.inverse .emphasis a,
+ul li.inverse strong a,
+ol li.inverse strong a {
+  color: #0066cc;
+}
+ul li.inverse.emphasis a:hover,
+ol li.inverse.emphasis a:hover,
+ul li.inverse .emphasis a:hover,
+ol li.inverse .emphasis a:hover,
+ul li.inverse strong a:hover,
+ol li.inverse strong a:hover {
+  color: #003d7a;
+}
+ul li.inverse.emphasis a:active,
+ol li.inverse.emphasis a:active,
+ul li.inverse .emphasis a:active,
+ol li.inverse .emphasis a:active,
+ul li.inverse strong a:active,
+ol li.inverse strong a:active {
+  color: #001429;
+}
+ul li.inverse.muted,
+ol li.inverse.muted {
+  color: #bbbbbb;
+}
+ul li.inverse.muted a,
+ol li.inverse.muted a {
+  color: #0066cc;
+}
+ul li.inverse.muted a:hover,
+ol li.inverse.muted a:hover {
+  color: #003d7a;
+}
+ul li.inverse.muted a:active,
+ol li.inverse.muted a:active {
+  color: #001429;
 }
 ul.tall,
 ol.tall {
@@ -5204,6 +5519,14 @@ blockquote:after {
     line-height: 22px;
     margin-bottom: 8.25px;
   }
+  ul li.tall,
+  ol li.tall {
+    margin-bottom: 16.5px;
+  }
+  ul li.short,
+  ol li.short {
+    margin-bottom: 4.125px;
+  }
   ul li:last-child,
   ol li:last-child {
     margin-bottom: 0px;
@@ -5669,6 +5992,14 @@ blockquote:after {
     line-height: 24px;
     margin-bottom: 9px;
   }
+  ul li.tall,
+  ol li.tall {
+    margin-bottom: 18px;
+  }
+  ul li.short,
+  ol li.short {
+    margin-bottom: 4.5px;
+  }
   ul li:last-child,
   ol li:last-child {
     margin-bottom: 0px;
@@ -6133,6 +6464,14 @@ blockquote:after {
     font-size: 14.399999999999999px;
     line-height: 24px;
     margin-bottom: 9px;
+  }
+  ul li.tall,
+  ol li.tall {
+    margin-bottom: 18px;
+  }
+  ul li.short,
+  ol li.short {
+    margin-bottom: 4.5px;
   }
   ul li:last-child,
   ol li:last-child {
@@ -13838,267 +14177,4 @@ input[type="color"].flush-bottom + .help-block,
 textarea.flush-bottom + .help-block {
   margin-top: 3px;
   margin-bottom: 0px;
-}
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus,
-textarea:focus,
-input[type="text"].focused,
-input[type="password"].focused,
-input[type="datetime"].focused,
-input[type="datetime-local"].focused,
-input[type="date"].focused,
-input[type="month"].focused,
-input[type="time"].focused,
-input[type="week"].focused,
-input[type="number"].focused,
-input[type="email"].focused,
-input[type="url"].focused,
-input[type="search"].focused,
-input[type="tel"].focused,
-input[type="color"].focused,
-.uneditable-input.focused,
-textarea.focused {
-  outline: 0;
-  outline: thin dotted \9;
-  background-color: transparent;
-  background-image: none;
-  background-repeat: no-repeat;
-  filter: none;
-  border-color: none;
-  color: #0066cc;
-  text-shadow: none;
-  background-color: #f0f7ff;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 102, 204, 0.75), 0px 0px 4px 2px rgba(0, 102, 204, 0.2), inset 0px 1px 2px 0px rgba(0, 102, 204, 0.2);
-  box-shadow: 0px 0px 0px 1px rgba(0, 102, 204, 0.75), 0px 0px 4px 2px rgba(0, 102, 204, 0.2), inset 0px 1px 2px 0px rgba(0, 102, 204, 0.2);
-  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
-}
-input[type="text"]:focus:-moz-placeholder,
-input[type="password"]:focus:-moz-placeholder,
-input[type="datetime"]:focus:-moz-placeholder,
-input[type="datetime-local"]:focus:-moz-placeholder,
-input[type="date"]:focus:-moz-placeholder,
-input[type="month"]:focus:-moz-placeholder,
-input[type="time"]:focus:-moz-placeholder,
-input[type="week"]:focus:-moz-placeholder,
-input[type="number"]:focus:-moz-placeholder,
-input[type="email"]:focus:-moz-placeholder,
-input[type="url"]:focus:-moz-placeholder,
-input[type="search"]:focus:-moz-placeholder,
-input[type="tel"]:focus:-moz-placeholder,
-input[type="color"]:focus:-moz-placeholder,
-.uneditable-input:focus:-moz-placeholder,
-textarea:focus:-moz-placeholder,
-input[type="text"].focused:-moz-placeholder,
-input[type="password"].focused:-moz-placeholder,
-input[type="datetime"].focused:-moz-placeholder,
-input[type="datetime-local"].focused:-moz-placeholder,
-input[type="date"].focused:-moz-placeholder,
-input[type="month"].focused:-moz-placeholder,
-input[type="time"].focused:-moz-placeholder,
-input[type="week"].focused:-moz-placeholder,
-input[type="number"].focused:-moz-placeholder,
-input[type="email"].focused:-moz-placeholder,
-input[type="url"].focused:-moz-placeholder,
-input[type="search"].focused:-moz-placeholder,
-input[type="tel"].focused:-moz-placeholder,
-input[type="color"].focused:-moz-placeholder,
-.uneditable-input.focused:-moz-placeholder,
-textarea.focused:-moz-placeholder {
-  color: #94c9ff;
-}
-input[type="text"]:focus::-moz-placeholder,
-input[type="password"]:focus::-moz-placeholder,
-input[type="datetime"]:focus::-moz-placeholder,
-input[type="datetime-local"]:focus::-moz-placeholder,
-input[type="date"]:focus::-moz-placeholder,
-input[type="month"]:focus::-moz-placeholder,
-input[type="time"]:focus::-moz-placeholder,
-input[type="week"]:focus::-moz-placeholder,
-input[type="number"]:focus::-moz-placeholder,
-input[type="email"]:focus::-moz-placeholder,
-input[type="url"]:focus::-moz-placeholder,
-input[type="search"]:focus::-moz-placeholder,
-input[type="tel"]:focus::-moz-placeholder,
-input[type="color"]:focus::-moz-placeholder,
-.uneditable-input:focus::-moz-placeholder,
-textarea:focus::-moz-placeholder,
-input[type="text"].focused::-moz-placeholder,
-input[type="password"].focused::-moz-placeholder,
-input[type="datetime"].focused::-moz-placeholder,
-input[type="datetime-local"].focused::-moz-placeholder,
-input[type="date"].focused::-moz-placeholder,
-input[type="month"].focused::-moz-placeholder,
-input[type="time"].focused::-moz-placeholder,
-input[type="week"].focused::-moz-placeholder,
-input[type="number"].focused::-moz-placeholder,
-input[type="email"].focused::-moz-placeholder,
-input[type="url"].focused::-moz-placeholder,
-input[type="search"].focused::-moz-placeholder,
-input[type="tel"].focused::-moz-placeholder,
-input[type="color"].focused::-moz-placeholder,
-.uneditable-input.focused::-moz-placeholder,
-textarea.focused::-moz-placeholder {
-  color: #94c9ff;
-}
-input[type="text"]:focus:-ms-input-placeholder,
-input[type="password"]:focus:-ms-input-placeholder,
-input[type="datetime"]:focus:-ms-input-placeholder,
-input[type="datetime-local"]:focus:-ms-input-placeholder,
-input[type="date"]:focus:-ms-input-placeholder,
-input[type="month"]:focus:-ms-input-placeholder,
-input[type="time"]:focus:-ms-input-placeholder,
-input[type="week"]:focus:-ms-input-placeholder,
-input[type="number"]:focus:-ms-input-placeholder,
-input[type="email"]:focus:-ms-input-placeholder,
-input[type="url"]:focus:-ms-input-placeholder,
-input[type="search"]:focus:-ms-input-placeholder,
-input[type="tel"]:focus:-ms-input-placeholder,
-input[type="color"]:focus:-ms-input-placeholder,
-.uneditable-input:focus:-ms-input-placeholder,
-textarea:focus:-ms-input-placeholder,
-input[type="text"].focused:-ms-input-placeholder,
-input[type="password"].focused:-ms-input-placeholder,
-input[type="datetime"].focused:-ms-input-placeholder,
-input[type="datetime-local"].focused:-ms-input-placeholder,
-input[type="date"].focused:-ms-input-placeholder,
-input[type="month"].focused:-ms-input-placeholder,
-input[type="time"].focused:-ms-input-placeholder,
-input[type="week"].focused:-ms-input-placeholder,
-input[type="number"].focused:-ms-input-placeholder,
-input[type="email"].focused:-ms-input-placeholder,
-input[type="url"].focused:-ms-input-placeholder,
-input[type="search"].focused:-ms-input-placeholder,
-input[type="tel"].focused:-ms-input-placeholder,
-input[type="color"].focused:-ms-input-placeholder,
-.uneditable-input.focused:-ms-input-placeholder,
-textarea.focused:-ms-input-placeholder {
-  color: #94c9ff;
-}
-input[type="text"]:focus::-webkit-input-placeholder,
-input[type="password"]:focus::-webkit-input-placeholder,
-input[type="datetime"]:focus::-webkit-input-placeholder,
-input[type="datetime-local"]:focus::-webkit-input-placeholder,
-input[type="date"]:focus::-webkit-input-placeholder,
-input[type="month"]:focus::-webkit-input-placeholder,
-input[type="time"]:focus::-webkit-input-placeholder,
-input[type="week"]:focus::-webkit-input-placeholder,
-input[type="number"]:focus::-webkit-input-placeholder,
-input[type="email"]:focus::-webkit-input-placeholder,
-input[type="url"]:focus::-webkit-input-placeholder,
-input[type="search"]:focus::-webkit-input-placeholder,
-input[type="tel"]:focus::-webkit-input-placeholder,
-input[type="color"]:focus::-webkit-input-placeholder,
-.uneditable-input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder,
-input[type="text"].focused::-webkit-input-placeholder,
-input[type="password"].focused::-webkit-input-placeholder,
-input[type="datetime"].focused::-webkit-input-placeholder,
-input[type="datetime-local"].focused::-webkit-input-placeholder,
-input[type="date"].focused::-webkit-input-placeholder,
-input[type="month"].focused::-webkit-input-placeholder,
-input[type="time"].focused::-webkit-input-placeholder,
-input[type="week"].focused::-webkit-input-placeholder,
-input[type="number"].focused::-webkit-input-placeholder,
-input[type="email"].focused::-webkit-input-placeholder,
-input[type="url"].focused::-webkit-input-placeholder,
-input[type="search"].focused::-webkit-input-placeholder,
-input[type="tel"].focused::-webkit-input-placeholder,
-input[type="color"].focused::-webkit-input-placeholder,
-.uneditable-input.focused::-webkit-input-placeholder,
-textarea.focused::-webkit-input-placeholder {
-  color: #94c9ff;
-}
-input[type="text"][disabled],
-input[type="password"][disabled],
-input[type="datetime"][disabled],
-input[type="datetime-local"][disabled],
-input[type="date"][disabled],
-input[type="month"][disabled],
-input[type="time"][disabled],
-input[type="week"][disabled],
-input[type="number"][disabled],
-input[type="email"][disabled],
-input[type="url"][disabled],
-input[type="search"][disabled],
-input[type="tel"][disabled],
-input[type="color"][disabled],
-.uneditable-input[disabled],
-textarea[disabled],
-input[type="text"][readonly],
-input[type="password"][readonly],
-input[type="datetime"][readonly],
-input[type="datetime-local"][readonly],
-input[type="date"][readonly],
-input[type="month"][readonly],
-input[type="time"][readonly],
-input[type="week"][readonly],
-input[type="number"][readonly],
-input[type="email"][readonly],
-input[type="url"][readonly],
-input[type="search"][readonly],
-input[type="tel"][readonly],
-input[type="color"][readonly],
-.uneditable-input[readonly],
-textarea[readonly] {
-  cursor: not-allowed;
-  opacity: 75;
-  filter: alpha(opacity=7500);
-  background-color: transparent;
-  background-image: none;
-  background-repeat: no-repeat;
-  filter: none;
-  border-color: none;
-  color: #bbbbbb;
-  text-shadow: none;
-  background-color: #f9f9f9;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
-  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
-}
-input[type="text"][disabled]:-moz-placeholder,
-input[type="password"][disabled]:-moz-placeholder,
-input[type="datetime"][disabled]:-moz-placeholder,
-input[type="datetime-local"][disabled]:-moz-placeholder,
-input[type="date"][disabled]:-moz-placeholder,
-input[type="month"][disabled]:-moz-placeholder,
-input[type="time"][disabled]:-moz-placeholder,
-input[type="week"][disabled]:-moz-placeholder,
-input[type="number"][disabled]:-moz-placeholder,
-input[type="email"][disabled]:-moz-placeholder,
-input[type="url"][disabled]:-moz-placeholder,
-input[type="search"][disabled]:-moz-placeholder,
-input[type="tel"][disabled]:-moz-placeholder,
-input[type="color"][disabled]:-moz-placeholder,
-.uneditable-input[disabled]:-moz-placeholder,
-textarea[disabled]:-moz-placeholder,
-input[type="text"][readonly]:-moz-placeholder,
-input[type="password"][readonly]:-moz-placeholder,
-input[type="datetime"][readonly]:-moz-placeholder,
-input[type="datetime-local"][readonly]:-moz-placeholder,
-input[type="date"][readonly]:-moz-placeholder,
-input[type="month"][readonly]:-moz-placeholder,
-input[type="time"][readonly]:-moz-placeholder,
-input[type="week"][readonly]:-moz-placeholder,
-input[type="number"][readonly]:-moz-placeholder,
-input[type="email"][readonly]:-moz-placeholder,
-input[type="url"][readonly]:-moz-placeholder,
-input[type="search"][readonly]:-moz-placeholder,
-input[type="tel"][readonly]:-moz-placeholder,
-input[type="color"][readonly]:-moz-placeholder,
-.uneditable-input[readonly]:-moz-placeholder,
-textarea[readonly]:-moz-placeholder {
-  color: #bbbbbb;
 }
