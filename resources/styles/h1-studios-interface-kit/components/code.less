@@ -94,7 +94,7 @@ code {
 pre {
 	
 	color: @code-text-color;
-	font-family: @code-text-font-family;
+	font-family: @code-text-font-family !important;
 	font-size: @code-text-font-size;
 	font-weight: @code-text-font-weight;
 	line-height: @code-text-line-height;
@@ -110,6 +110,8 @@ pre {
 	white-space: pre-wrap;
 	
 	&.prettyprint {
+		
+		font-family: @code-text-font-family;
 		
 		/*
 		padding: 8px;
@@ -155,6 +157,7 @@ pre {
 		
 		&.linenums {
 			
+			font-family: @code-text-font-family;
 			padding-left: 0px;
 			position: relative;
 			
@@ -174,15 +177,18 @@ pre {
 			
 			ol {
 				
+				font-family: @code-text-font-family;
 				position: relative;
 				
 				&.linenums {
 					
+					font-family: @code-text-font-family;
 					margin: 0 0 0 @primary-margin;
 					list-style-position: outside;
 					
 					li {
 						
+						font-family: @code-text-font-family;
 						padding-left: (@primary-margin / 2);
 						font-size: @code-text-font-size;
 						font-weight: @code-text-font-weight;

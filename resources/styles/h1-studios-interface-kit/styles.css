@@ -10110,6 +10110,13 @@ input[type="submit"].button.button-mini {
   margin: 0 auto;
   margin-top: -5px;
   margin-left: -5px;
+  margin-bottom: 15px;
+}
+.button-toolbar.button-toolbar-centered.tall {
+  margin-bottom: 15px;
+}
+.button-toolbar.button-toolbar-centered.short {
+  margin-bottom: 15px;
 }
 .button-toolbar > .button {
   margin-top: 5px;
@@ -23432,7 +23439,7 @@ code {
 }
 pre {
   color: #bbbbbb;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace !important;
   font-size: 10px;
   font-weight: 300;
   line-height: 20px;
@@ -23452,6 +23459,7 @@ pre {
   white-space: pre-wrap;
 }
 pre.prettyprint {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   /*
 		padding: 8px;
 		background-color: #f7f7f9;
@@ -23486,6 +23494,7 @@ pre.prettyprint.tall {
   margin-bottom: 60px;
 }
 pre.prettyprint.linenums {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   padding-left: 0px;
   position: relative;
 }
@@ -23504,13 +23513,16 @@ pre.prettyprint.linenums:before {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 pre.prettyprint.linenums ol {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   position: relative;
 }
 pre.prettyprint.linenums ol.linenums {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   margin: 0 0 0 30px;
   list-style-position: outside;
 }
 pre.prettyprint.linenums ol.linenums li {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   padding-left: 15px;
   font-size: 10px;
   font-weight: 300;
