@@ -1,0 +1,227 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/icons-glyphs.less                                                                         */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+@font-face {
+	
+	font-family: @icon-glyphs-font-family;
+	src:	url('@{font-path}@{icon-glyphs-font-file}.eot');
+	src:	url('@{font-path}@{icon-glyphs-font-file}.eot?#iefix') format('embedded-opentype'),
+			url('@{font-path}@{icon-glyphs-font-file}.woff') format('woff'),
+			url('@{font-path}@{icon-glyphs-font-file}.ttf') format('truetype'),
+			url('@{font-path}@{icon-glyphs-font-file}.svg#@{icon-glyphs-font-file}') format('svg');
+			
+}
+
+.icon-glyph {
+	
+	font-family: @icon-glyphs-font-family;
+	
+	&.icon-glyph-asterisk               { &:before { content: "\2a"; } }
+	&.icon-glyph-plus                   { &:before { content: "\2b"; } }
+	&.icon-glyph-euro                   { &:before { content: "\20ac"; } }
+	&.icon-glyph-minus                  { &:before { content: "\2212"; } }
+	&.icon-glyph-cloud                  { &:before { content: "\2601"; } }
+	&.icon-glyph-envelope               { &:before { content: "\2709"; } }
+	&.icon-glyph-pencil                 { &:before { content: "\270f"; } }
+	&.icon-glyph-glass                  { &:before { content: "\e001"; } }
+	&.icon-glyph-music                  { &:before { content: "\e002"; } }
+	&.icon-glyph-search                 { &:before { content: "\e003"; } }
+	&.icon-glyph-heart                  { &:before { content: "\e005"; } }
+	&.icon-glyph-star                   { &:before { content: "\e006"; } }
+	&.icon-glyph-star-empty             { &:before { content: "\e007"; } }
+	&.icon-glyph-user                   { &:before { content: "\e008"; } }
+	&.icon-glyph-film                   { &:before { content: "\e009"; } }
+	&.icon-glyph-th-large               { &:before { content: "\e010"; } }
+	&.icon-glyph-th                     { &:before { content: "\e011"; } }
+	&.icon-glyph-th-list                { &:before { content: "\e012"; } }
+	&.icon-glyph-ok                     { &:before { content: "\e013"; } }
+	&.icon-glyph-remove                 { &:before { content: "\e014"; } }
+	&.icon-glyph-zoom-in                { &:before { content: "\e015"; } }
+	&.icon-glyph-zoom-out               { &:before { content: "\e016"; } }
+	&.icon-glyph-off                    { &:before { content: "\e017"; } }
+	&.icon-glyph-signal                 { &:before { content: "\e018"; } }
+	&.icon-glyph-cog                    { &:before { content: "\e019"; } }
+	&.icon-glyph-trash                  { &:before { content: "\e020"; } }
+	&.icon-glyph-home                   { &:before { content: "\e021"; } }
+	&.icon-glyph-file                   { &:before { content: "\e022"; } }
+	&.icon-glyph-time                   { &:before { content: "\e023"; } }
+	&.icon-glyph-road                   { &:before { content: "\e024"; } }
+	&.icon-glyph-download-alt           { &:before { content: "\e025"; } }
+	&.icon-glyph-download               { &:before { content: "\e026"; } }
+	&.icon-glyph-upload                 { &:before { content: "\e027"; } }
+	&.icon-glyph-inbox                  { &:before { content: "\e028"; } }
+	&.icon-glyph-play-circle            { &:before { content: "\e029"; } }
+	&.icon-glyph-repeat                 { &:before { content: "\e030"; } }
+	&.icon-glyph-refresh                { &:before { content: "\e031"; } }
+	&.icon-glyph-list-alt               { &:before { content: "\e032"; } }
+	&.icon-glyph-flag                   { &:before { content: "\e034"; } }
+	&.icon-glyph-headphones             { &:before { content: "\e035"; } }
+	&.icon-glyph-volume-off             { &:before { content: "\e036"; } }
+	&.icon-glyph-volume-down            { &:before { content: "\e037"; } }
+	&.icon-glyph-volume-up              { &:before { content: "\e038"; } }
+	&.icon-glyph-qrcode                 { &:before { content: "\e039"; } }
+	&.icon-glyph-barcode                { &:before { content: "\e040"; } }
+	&.icon-glyph-tag                    { &:before { content: "\e041"; } }
+	&.icon-glyph-tags                   { &:before { content: "\e042"; } }
+	&.icon-glyph-book                   { &:before { content: "\e043"; } }
+	&.icon-glyph-print                  { &:before { content: "\e045"; } }
+	&.icon-glyph-font                   { &:before { content: "\e047"; } }
+	&.icon-glyph-bold                   { &:before { content: "\e048"; } }
+	&.icon-glyph-italic                 { &:before { content: "\e049"; } }
+	&.icon-glyph-text-height            { &:before { content: "\e050"; } }
+	&.icon-glyph-text-width             { &:before { content: "\e051"; } }
+	&.icon-glyph-align-left             { &:before { content: "\e052"; } }
+	&.icon-glyph-align-center           { &:before { content: "\e053"; } }
+	&.icon-glyph-align-right            { &:before { content: "\e054"; } }
+	&.icon-glyph-align-justify          { &:before { content: "\e055"; } }
+	&.icon-glyph-list                   { &:before { content: "\e056"; } }
+	&.icon-glyph-indent-left            { &:before { content: "\e057"; } }
+	&.icon-glyph-indent-right           { &:before { content: "\e058"; } }
+	&.icon-glyph-facetime-video         { &:before { content: "\e059"; } }
+	&.icon-glyph-picture                { &:before { content: "\e060"; } }
+	&.icon-glyph-map-marker             { &:before { content: "\e062"; } }
+	&.icon-glyph-adjust                 { &:before { content: "\e063"; } }
+	&.icon-glyph-tint                   { &:before { content: "\e064"; } }
+	&.icon-glyph-edit                   { &:before { content: "\e065"; } }
+	&.icon-glyph-share                  { &:before { content: "\e066"; } }
+	&.icon-glyph-check                  { &:before { content: "\e067"; } }
+	&.icon-glyph-move                   { &:before { content: "\e068"; } }
+	&.icon-glyph-step-backward          { &:before { content: "\e069"; } }
+	&.icon-glyph-fast-backward          { &:before { content: "\e070"; } }
+	&.icon-glyph-backward               { &:before { content: "\e071"; } }
+	&.icon-glyph-play                   { &:before { content: "\e072"; } }
+	&.icon-glyph-pause                  { &:before { content: "\e073"; } }
+	&.icon-glyph-stop                   { &:before { content: "\e074"; } }
+	&.icon-glyph-forward                { &:before { content: "\e075"; } }
+	&.icon-glyph-fast-forward           { &:before { content: "\e076"; } }
+	&.icon-glyph-step-forward           { &:before { content: "\e077"; } }
+	&.icon-glyph-eject                  { &:before { content: "\e078"; } }
+	&.icon-glyph-chevron-left           { &:before { content: "\e079"; } }
+	&.icon-glyph-chevron-right          { &:before { content: "\e080"; } }
+	&.icon-glyph-plus-sign              { &:before { content: "\e081"; } }
+	&.icon-glyph-minus-sign             { &:before { content: "\e082"; } }
+	&.icon-glyph-remove-sign            { &:before { content: "\e083"; } }
+	&.icon-glyph-ok-sign                { &:before { content: "\e084"; } }
+	&.icon-glyph-question-sign          { &:before { content: "\e085"; } }
+	&.icon-glyph-info-sign              { &:before { content: "\e086"; } }
+	&.icon-glyph-screenshot             { &:before { content: "\e087"; } }
+	&.icon-glyph-remove-circle          { &:before { content: "\e088"; } }
+	&.icon-glyph-ok-circle              { &:before { content: "\e089"; } }
+	&.icon-glyph-ban-circle             { &:before { content: "\e090"; } }
+	&.icon-glyph-arrow-left             { &:before { content: "\e091"; } }
+	&.icon-glyph-arrow-right            { &:before { content: "\e092"; } }
+	&.icon-glyph-arrow-up               { &:before { content: "\e093"; } }
+	&.icon-glyph-arrow-down             { &:before { content: "\e094"; } }
+	&.icon-glyph-share-alt              { &:before { content: "\e095"; } }
+	&.icon-glyph-resize-full            { &:before { content: "\e096"; } }
+	&.icon-glyph-resize-small           { &:before { content: "\e097"; } }
+	&.icon-glyph-exclamation-sign       { &:before { content: "\e101"; } }
+	&.icon-glyph-gift                   { &:before { content: "\e102"; } }
+	&.icon-glyph-leaf                   { &:before { content: "\e103"; } }
+	&.icon-glyph-eye-open               { &:before { content: "\e105"; } }
+	&.icon-glyph-eye-close              { &:before { content: "\e106"; } }
+	&.icon-glyph-warning-sign           { &:before { content: "\e107"; } }
+	&.icon-glyph-plane                  { &:before { content: "\e108"; } }
+	&.icon-glyph-random                 { &:before { content: "\e110"; } }
+	&.icon-glyph-comment                { &:before { content: "\e111"; } }
+	&.icon-glyph-magnet                 { &:before { content: "\e112"; } }
+	&.icon-glyph-chevron-up             { &:before { content: "\e113"; } }
+	&.icon-glyph-chevron-down           { &:before { content: "\e114"; } }
+	&.icon-glyph-retweet                { &:before { content: "\e115"; } }
+	&.icon-glyph-shopping-cart          { &:before { content: "\e116"; } }
+	&.icon-glyph-folder-close           { &:before { content: "\e117"; } }
+	&.icon-glyph-folder-open            { &:before { content: "\e118"; } }
+	&.icon-glyph-resize-vertical        { &:before { content: "\e119"; } }
+	&.icon-glyph-resize-horizontal      { &:before { content: "\e120"; } }
+	&.icon-glyph-hdd                    { &:before { content: "\e121"; } }
+	&.icon-glyph-bullhorn               { &:before { content: "\e122"; } }
+	&.icon-glyph-certificate            { &:before { content: "\e124"; } }
+	&.icon-glyph-thumbs-up              { &:before { content: "\e125"; } }
+	&.icon-glyph-thumbs-down            { &:before { content: "\e126"; } }
+	&.icon-glyph-hand-right             { &:before { content: "\e127"; } }
+	&.icon-glyph-hand-left              { &:before { content: "\e128"; } }
+	&.icon-glyph-hand-up                { &:before { content: "\e129"; } }
+	&.icon-glyph-hand-down              { &:before { content: "\e130"; } }
+	&.icon-glyph-circle-arrow-right     { &:before { content: "\e131"; } }
+	&.icon-glyph-circle-arrow-left      { &:before { content: "\e132"; } }
+	&.icon-glyph-circle-arrow-up        { &:before { content: "\e133"; } }
+	&.icon-glyph-circle-arrow-down      { &:before { content: "\e134"; } }
+	&.icon-glyph-globe                  { &:before { content: "\e135"; } }
+	&.icon-glyph-tasks                  { &:before { content: "\e137"; } }
+	&.icon-glyph-filter                 { &:before { content: "\e138"; } }
+	&.icon-glyph-fullscreen             { &:before { content: "\e140"; } }
+	&.icon-glyph-dashboard              { &:before { content: "\e141"; } }
+	&.icon-glyph-heart-empty            { &:before { content: "\e143"; } }
+	&.icon-glyph-link                   { &:before { content: "\e144"; } }
+	&.icon-glyph-phone                  { &:before { content: "\e145"; } }
+	&.icon-glyph-usd                    { &:before { content: "\e148"; } }
+	&.icon-glyph-gbp                    { &:before { content: "\e149"; } }
+	&.icon-glyph-sort                   { &:before { content: "\e150"; } }
+	&.icon-glyph-sort-by-alphabet       { &:before { content: "\e151"; } }
+	&.icon-glyph-sort-by-alphabet-alt   { &:before { content: "\e152"; } }
+	&.icon-glyph-sort-by-order          { &:before { content: "\e153"; } }
+	&.icon-glyph-sort-by-order-alt      { &:before { content: "\e154"; } }
+	&.icon-glyph-sort-by-attributes     { &:before { content: "\e155"; } }
+	&.icon-glyph-sort-by-attributes-alt { &:before { content: "\e156"; } }
+	&.icon-glyph-unchecked              { &:before { content: "\e157"; } }
+	&.icon-glyph-expand                 { &:before { content: "\e158"; } }
+	&.icon-glyph-collapse-down          { &:before { content: "\e159"; } }
+	&.icon-glyph-collapse-up            { &:before { content: "\e160"; } }
+	&.icon-glyph-log-in                 { &:before { content: "\e161"; } }
+	&.icon-glyph-flash                  { &:before { content: "\e162"; } }
+	&.icon-glyph-log-out                { &:before { content: "\e163"; } }
+	&.icon-glyph-new-window             { &:before { content: "\e164"; } }
+	&.icon-glyph-record                 { &:before { content: "\e165"; } }
+	&.icon-glyph-save                   { &:before { content: "\e166"; } }
+	&.icon-glyph-open                   { &:before { content: "\e167"; } }
+	&.icon-glyph-saved                  { &:before { content: "\e168"; } }
+	&.icon-glyph-import                 { &:before { content: "\e169"; } }
+	&.icon-glyph-export                 { &:before { content: "\e170"; } }
+	&.icon-glyph-send                   { &:before { content: "\e171"; } }
+	&.icon-glyph-floppy-disk            { &:before { content: "\e172"; } }
+	&.icon-glyph-floppy-saved           { &:before { content: "\e173"; } }
+	&.icon-glyph-floppy-remove          { &:before { content: "\e174"; } }
+	&.icon-glyph-floppy-save            { &:before { content: "\e175"; } }
+	&.icon-glyph-floppy-open            { &:before { content: "\e176"; } }
+	&.icon-glyph-credit-card            { &:before { content: "\e177"; } }
+	&.icon-glyph-transfer               { &:before { content: "\e178"; } }
+	&.icon-glyph-cutlery                { &:before { content: "\e179"; } }
+	&.icon-glyph-header                 { &:before { content: "\e180"; } }
+	&.icon-glyph-compressed             { &:before { content: "\e181"; } }
+	&.icon-glyph-earphone               { &:before { content: "\e182"; } }
+	&.icon-glyph-phone-alt              { &:before { content: "\e183"; } }
+	&.icon-glyph-tower                  { &:before { content: "\e184"; } }
+	&.icon-glyph-stats                  { &:before { content: "\e185"; } }
+	&.icon-glyph-sd-video               { &:before { content: "\e186"; } }
+	&.icon-glyph-hd-video               { &:before { content: "\e187"; } }
+	&.icon-glyph-subtitles              { &:before { content: "\e188"; } }
+	&.icon-glyph-sound-stereo           { &:before { content: "\e189"; } }
+	&.icon-glyph-sound-dolby            { &:before { content: "\e190"; } }
+	&.icon-glyph-sound-5-1              { &:before { content: "\e191"; } }
+	&.icon-glyph-sound-6-1              { &:before { content: "\e192"; } }
+	&.icon-glyph-sound-7-1              { &:before { content: "\e193"; } }
+	&.icon-glyph-copyright-mark         { &:before { content: "\e194"; } }
+	&.icon-glyph-registration-mark      { &:before { content: "\e195"; } }
+	&.icon-glyph-cloud-download         { &:before { content: "\e197"; } }
+	&.icon-glyph-cloud-upload           { &:before { content: "\e198"; } }
+	&.icon-glyph-tree-conifer           { &:before { content: "\e199"; } }
+	&.icon-glyph-tree-deciduous         { &:before { content: "\e200"; } }
+	&.icon-glyph-briefcase              { &:before { content: "\1f4bc"; } }
+	&.icon-glyph-calendar               { &:before { content: "\1f4c5"; } }
+	&.icon-glyph-pushpin                { &:before { content: "\1f4cc"; } }
+	&.icon-glyph-paperclip              { &:before { content: "\1f4ce"; } }
+	&.icon-glyph-camera                 { &:before { content: "\1f4f7"; } }
+	&.icon-glyph-lock                   { &:before { content: "\1f512"; } }
+	&.icon-glyph-bell                   { &:before { content: "\1f514"; } }
+	&.icon-glyph-bookmark               { &:before { content: "\1f516"; } }
+	&.icon-glyph-fire                   { &:before { content: "\1f525"; } }
+	&.icon-glyph-wrench                 { &:before { content: "\1f527"; } }
+	
+}
