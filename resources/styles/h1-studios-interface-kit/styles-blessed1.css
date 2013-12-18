@@ -919,11 +919,8 @@ textarea.input-success {
   box-shadow: 0px 0px 0px 1px rgba(112, 177, 47, 0.5);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 input[type="text"].input-success:-moz-placeholder,
 input[type="password"].input-success:-moz-placeholder,
@@ -1849,11 +1846,8 @@ textarea.input-warning {
   box-shadow: 0px 0px 0px 1px rgba(243, 132, 57, 0.5);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 input[type="text"].input-warning:-moz-placeholder,
 input[type="password"].input-warning:-moz-placeholder,
@@ -2788,18 +2782,15 @@ textarea:required:invalid {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #fd3c2b;
+  color: #ff0000;
   text-shadow: none;
-  background-color: #fff5f5;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(253, 60, 43, 0.5);
-  box-shadow: 0px 0px 0px 1px rgba(253, 60, 43, 0.5);
+  background-color: #fff2f2;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.5);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 input[type="text"].input-error:-moz-placeholder,
 input[type="password"].input-error:-moz-placeholder,
@@ -2833,7 +2824,7 @@ input[type="tel"]:required:invalid:-moz-placeholder,
 input[type="color"]:required:invalid:-moz-placeholder,
 .uneditable-input:required:invalid:-moz-placeholder,
 textarea:required:invalid:-moz-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error::-moz-placeholder,
 input[type="password"].input-error::-moz-placeholder,
@@ -2867,7 +2858,7 @@ input[type="tel"]:required:invalid::-moz-placeholder,
 input[type="color"]:required:invalid::-moz-placeholder,
 .uneditable-input:required:invalid::-moz-placeholder,
 textarea:required:invalid::-moz-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error:-ms-input-placeholder,
 input[type="password"].input-error:-ms-input-placeholder,
@@ -2901,7 +2892,7 @@ input[type="tel"]:required:invalid:-ms-input-placeholder,
 input[type="color"]:required:invalid:-ms-input-placeholder,
 .uneditable-input:required:invalid:-ms-input-placeholder,
 textarea:required:invalid:-ms-input-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error::-webkit-input-placeholder,
 input[type="password"].input-error::-webkit-input-placeholder,
@@ -2935,7 +2926,7 @@ input[type="tel"]:required:invalid::-webkit-input-placeholder,
 input[type="color"]:required:invalid::-webkit-input-placeholder,
 .uneditable-input:required:invalid::-webkit-input-placeholder,
 textarea:required:invalid::-webkit-input-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error:focus,
 input[type="password"].input-error:focus,
@@ -3006,11 +2997,11 @@ textarea:required:invalid.focused {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #fd3c2b;
+  color: #ff0000;
   text-shadow: none;
-  background-color: #ffecea;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(253, 60, 43, 0.75), 0px 0px 4px 2px rgba(253, 60, 43, 0.2), inset 0px 1px 2px 0px rgba(253, 60, 43, 0.2);
-  box-shadow: 0px 0px 0px 1px rgba(253, 60, 43, 0.75), 0px 0px 4px 2px rgba(253, 60, 43, 0.2), inset 0px 1px 2px 0px rgba(253, 60, 43, 0.2);
+  background-color: #ffe5e5;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.75), 0px 0px 4px 2px rgba(255, 0, 0, 0.2), inset 0px 1px 2px 0px rgba(255, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.75), 0px 0px 4px 2px rgba(255, 0, 0, 0.2), inset 0px 1px 2px 0px rgba(255, 0, 0, 0.2);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
 }
 input[type="text"].input-error:focus:-moz-placeholder,
@@ -3077,7 +3068,7 @@ input[type="tel"]:required:invalid.focused:-moz-placeholder,
 input[type="color"]:required:invalid.focused:-moz-placeholder,
 .uneditable-input:required:invalid.focused:-moz-placeholder,
 textarea:required:invalid.focused:-moz-placeholder {
-  color: #fe9e95;
+  color: #ff8080;
 }
 input[type="text"].input-error:focus::-moz-placeholder,
 input[type="password"].input-error:focus::-moz-placeholder,
@@ -3143,7 +3134,7 @@ input[type="tel"]:required:invalid.focused::-moz-placeholder,
 input[type="color"]:required:invalid.focused::-moz-placeholder,
 .uneditable-input:required:invalid.focused::-moz-placeholder,
 textarea:required:invalid.focused::-moz-placeholder {
-  color: #fe9e95;
+  color: #ff8080;
 }
 input[type="text"].input-error:focus:-ms-input-placeholder,
 input[type="password"].input-error:focus:-ms-input-placeholder,
@@ -3209,7 +3200,7 @@ input[type="tel"]:required:invalid.focused:-ms-input-placeholder,
 input[type="color"]:required:invalid.focused:-ms-input-placeholder,
 .uneditable-input:required:invalid.focused:-ms-input-placeholder,
 textarea:required:invalid.focused:-ms-input-placeholder {
-  color: #fe9e95;
+  color: #ff8080;
 }
 input[type="text"].input-error:focus::-webkit-input-placeholder,
 input[type="password"].input-error:focus::-webkit-input-placeholder,
@@ -3275,7 +3266,7 @@ input[type="tel"]:required:invalid.focused::-webkit-input-placeholder,
 input[type="color"]:required:invalid.focused::-webkit-input-placeholder,
 .uneditable-input:required:invalid.focused::-webkit-input-placeholder,
 textarea:required:invalid.focused::-webkit-input-placeholder {
-  color: #fe9e95;
+  color: #ff8080;
 }
 input[type="text"].input-error[disabled],
 input[type="password"].input-error[disabled],
@@ -3348,11 +3339,11 @@ textarea:required:invalid[readonly] {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #fd3c2b;
+  color: #ff0000;
   text-shadow: none;
-  background-color: #fff5f5;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(253, 60, 43, 0.5);
-  box-shadow: 0px 0px 0px 1px rgba(253, 60, 43, 0.5);
+  background-color: #fff2f2;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.5);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
 }
 input[type="text"].input-error[disabled]:-moz-placeholder,
@@ -3419,7 +3410,7 @@ input[type="tel"]:required:invalid[readonly]:-moz-placeholder,
 input[type="color"]:required:invalid[readonly]:-moz-placeholder,
 .uneditable-input:required:invalid[readonly]:-moz-placeholder,
 textarea:required:invalid[readonly]:-moz-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error[disabled]::-moz-placeholder,
 input[type="password"].input-error[disabled]::-moz-placeholder,
@@ -3485,7 +3476,7 @@ input[type="tel"]:required:invalid[readonly]::-moz-placeholder,
 input[type="color"]:required:invalid[readonly]::-moz-placeholder,
 .uneditable-input:required:invalid[readonly]::-moz-placeholder,
 textarea:required:invalid[readonly]::-moz-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error[disabled]:-ms-input-placeholder,
 input[type="password"].input-error[disabled]:-ms-input-placeholder,
@@ -3551,7 +3542,7 @@ input[type="tel"]:required:invalid[readonly]:-ms-input-placeholder,
 input[type="color"]:required:invalid[readonly]:-ms-input-placeholder,
 .uneditable-input:required:invalid[readonly]:-ms-input-placeholder,
 textarea:required:invalid[readonly]:-ms-input-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error[disabled]::-webkit-input-placeholder,
 input[type="password"].input-error[disabled]::-webkit-input-placeholder,
@@ -3617,7 +3608,7 @@ input[type="tel"]:required:invalid[readonly]::-webkit-input-placeholder,
 input[type="color"]:required:invalid[readonly]::-webkit-input-placeholder,
 .uneditable-input:required:invalid[readonly]::-webkit-input-placeholder,
 textarea:required:invalid[readonly]::-webkit-input-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error.inverse,
 input[type="password"].input-error.inverse,
@@ -3656,11 +3647,11 @@ textarea:required:invalid.inverse {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #fd3c2b;
+  color: #ff0000;
   text-shadow: none;
-  background-color: #fff5f5;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(253, 60, 43, 0.5);
-  box-shadow: 0px 0px 0px 1px rgba(253, 60, 43, 0.5);
+  background-color: #fff2f2;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.5);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
 }
 input[type="text"].input-error.inverse:-moz-placeholder,
@@ -3695,7 +3686,7 @@ input[type="tel"]:required:invalid.inverse:-moz-placeholder,
 input[type="color"]:required:invalid.inverse:-moz-placeholder,
 .uneditable-input:required:invalid.inverse:-moz-placeholder,
 textarea:required:invalid.inverse:-moz-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error.inverse::-moz-placeholder,
 input[type="password"].input-error.inverse::-moz-placeholder,
@@ -3729,7 +3720,7 @@ input[type="tel"]:required:invalid.inverse::-moz-placeholder,
 input[type="color"]:required:invalid.inverse::-moz-placeholder,
 .uneditable-input:required:invalid.inverse::-moz-placeholder,
 textarea:required:invalid.inverse::-moz-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error.inverse:-ms-input-placeholder,
 input[type="password"].input-error.inverse:-ms-input-placeholder,
@@ -3763,7 +3754,7 @@ input[type="tel"]:required:invalid.inverse:-ms-input-placeholder,
 input[type="color"]:required:invalid.inverse:-ms-input-placeholder,
 .uneditable-input:required:invalid.inverse:-ms-input-placeholder,
 textarea:required:invalid.inverse:-ms-input-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error.inverse::-webkit-input-placeholder,
 input[type="password"].input-error.inverse::-webkit-input-placeholder,
@@ -3797,7 +3788,7 @@ input[type="tel"]:required:invalid.inverse::-webkit-input-placeholder,
 input[type="color"]:required:invalid.inverse::-webkit-input-placeholder,
 .uneditable-input:required:invalid.inverse::-webkit-input-placeholder,
 textarea:required:invalid.inverse::-webkit-input-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error.inverse:focus,
 input[type="password"].input-error.inverse:focus,
@@ -3868,11 +3859,11 @@ textarea:required:invalid.inverse.focused {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #fd3c2b;
+  color: #ff0000;
   text-shadow: none;
-  background-color: #ffecea;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(253, 60, 43, 0.75), 0px 0px 4px 2px rgba(253, 60, 43, 0.2), inset 0px 1px 2px 0px rgba(253, 60, 43, 0.2);
-  box-shadow: 0px 0px 0px 1px rgba(253, 60, 43, 0.75), 0px 0px 4px 2px rgba(253, 60, 43, 0.2), inset 0px 1px 2px 0px rgba(253, 60, 43, 0.2);
+  background-color: #ffe5e5;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.75), 0px 0px 4px 2px rgba(255, 0, 0, 0.2), inset 0px 1px 2px 0px rgba(255, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.75), 0px 0px 4px 2px rgba(255, 0, 0, 0.2), inset 0px 1px 2px 0px rgba(255, 0, 0, 0.2);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
 }
 input[type="text"].input-error.inverse:focus:-moz-placeholder,
@@ -3939,7 +3930,7 @@ input[type="tel"]:required:invalid.inverse.focused:-moz-placeholder,
 input[type="color"]:required:invalid.inverse.focused:-moz-placeholder,
 .uneditable-input:required:invalid.inverse.focused:-moz-placeholder,
 textarea:required:invalid.inverse.focused:-moz-placeholder {
-  color: #fe9e95;
+  color: #ff8080;
 }
 input[type="text"].input-error.inverse:focus::-moz-placeholder,
 input[type="password"].input-error.inverse:focus::-moz-placeholder,
@@ -4005,7 +3996,7 @@ input[type="tel"]:required:invalid.inverse.focused::-moz-placeholder,
 input[type="color"]:required:invalid.inverse.focused::-moz-placeholder,
 .uneditable-input:required:invalid.inverse.focused::-moz-placeholder,
 textarea:required:invalid.inverse.focused::-moz-placeholder {
-  color: #fe9e95;
+  color: #ff8080;
 }
 input[type="text"].input-error.inverse:focus:-ms-input-placeholder,
 input[type="password"].input-error.inverse:focus:-ms-input-placeholder,
@@ -4071,7 +4062,7 @@ input[type="tel"]:required:invalid.inverse.focused:-ms-input-placeholder,
 input[type="color"]:required:invalid.inverse.focused:-ms-input-placeholder,
 .uneditable-input:required:invalid.inverse.focused:-ms-input-placeholder,
 textarea:required:invalid.inverse.focused:-ms-input-placeholder {
-  color: #fe9e95;
+  color: #ff8080;
 }
 input[type="text"].input-error.inverse:focus::-webkit-input-placeholder,
 input[type="password"].input-error.inverse:focus::-webkit-input-placeholder,
@@ -4137,7 +4128,7 @@ input[type="tel"]:required:invalid.inverse.focused::-webkit-input-placeholder,
 input[type="color"]:required:invalid.inverse.focused::-webkit-input-placeholder,
 .uneditable-input:required:invalid.inverse.focused::-webkit-input-placeholder,
 textarea:required:invalid.inverse.focused::-webkit-input-placeholder {
-  color: #fe9e95;
+  color: #ff8080;
 }
 input[type="text"].input-error.inverse[disabled],
 input[type="password"].input-error.inverse[disabled],
@@ -4210,11 +4201,11 @@ textarea:required:invalid.inverse[readonly] {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #fd3c2b;
+  color: #ff0000;
   text-shadow: none;
-  background-color: #fff5f5;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(253, 60, 43, 0.5);
-  box-shadow: 0px 0px 0px 1px rgba(253, 60, 43, 0.5);
+  background-color: #fff2f2;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.5);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
 }
 input[type="text"].input-error.inverse[disabled]:-moz-placeholder,
@@ -4281,7 +4272,7 @@ input[type="tel"]:required:invalid.inverse[readonly]:-moz-placeholder,
 input[type="color"]:required:invalid.inverse[readonly]:-moz-placeholder,
 .uneditable-input:required:invalid.inverse[readonly]:-moz-placeholder,
 textarea:required:invalid.inverse[readonly]:-moz-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error.inverse[disabled]::-moz-placeholder,
 input[type="password"].input-error.inverse[disabled]::-moz-placeholder,
@@ -4347,7 +4338,7 @@ input[type="tel"]:required:invalid.inverse[readonly]::-moz-placeholder,
 input[type="color"]:required:invalid.inverse[readonly]::-moz-placeholder,
 .uneditable-input:required:invalid.inverse[readonly]::-moz-placeholder,
 textarea:required:invalid.inverse[readonly]::-moz-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error.inverse[disabled]:-ms-input-placeholder,
 input[type="password"].input-error.inverse[disabled]:-ms-input-placeholder,
@@ -4413,7 +4404,7 @@ input[type="tel"]:required:invalid.inverse[readonly]:-ms-input-placeholder,
 input[type="color"]:required:invalid.inverse[readonly]:-ms-input-placeholder,
 .uneditable-input:required:invalid.inverse[readonly]:-ms-input-placeholder,
 textarea:required:invalid.inverse[readonly]:-ms-input-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 input[type="text"].input-error.inverse[disabled]::-webkit-input-placeholder,
 input[type="password"].input-error.inverse[disabled]::-webkit-input-placeholder,
@@ -4479,7 +4470,7 @@ input[type="tel"]:required:invalid.inverse[readonly]::-webkit-input-placeholder,
 input[type="color"]:required:invalid.inverse[readonly]::-webkit-input-placeholder,
 .uneditable-input:required:invalid.inverse[readonly]::-webkit-input-placeholder,
 textarea:required:invalid.inverse[readonly]::-webkit-input-placeholder {
-  color: #febbb5;
+  color: #ffa6a6;
 }
 textarea {
   height: auto;
@@ -4626,7 +4617,6 @@ select {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *margin-left: .3em;
   text-rendering: optimizelegibility;
   text-align: left;
@@ -4656,17 +4646,11 @@ select {
   border: 1px solid #bbbbbb;
   background: #ffffff;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Large Input                                                                                          */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Small Input                                                                                          */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 select:first-child {
   *margin-left: 0;
@@ -4747,17 +4731,11 @@ select[size] {
   *zoom: 1;
   margin-bottom: 15px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Large Select Wrapper                                                                                 */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Small Select Wrapper                                                                                 */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .select-wrapper:before,
 .select-wrapper:after {
@@ -4775,7 +4753,6 @@ select[size] {
   height: 32px;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   *margin-left: .3em;
   text-rendering: optimizelegibility;
@@ -4978,35 +4955,20 @@ select[size] {
   margin-bottom: 15px;
   *zoom: 1;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Input Group Add-On                                                                                   */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Input Group Add-On Button                                                                            */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Input Group Add-On Group                                                                             */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Large Input Add-On                                                                                   */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Small Input Add-On                                                                                   */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .input-group:before,
 .input-group:after {

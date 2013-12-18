@@ -128,6 +128,9 @@
 /* ---------------------------------------------------------------------------------------------------- */
 /* Heading h6 Text                                                                                      */
 /* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Lists                                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Code                                                                                                 */
@@ -1134,6 +1137,19 @@ td.visible-print {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
+/* Screen Size: Mini (@screen-mini) and above                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 480px) {
+  .flush-bottom-screen-mini {
+    margin-bottom: 0px !important;
+  }
+  .flush-top-screen-mini {
+    margin-top: 0px !important;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Screen Size: Small (@screen-small) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
@@ -1553,9 +1569,6 @@ hr + .h6-clone {
 /* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  
-}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
@@ -1574,11 +1587,8 @@ hr + .h6-clone {
   margin-left: 20px;
   *zoom: 1;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Fluid Grid                                                                                           */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .container:before,
 .container:after {
@@ -1762,11 +1772,8 @@ hr + .h6-clone {
     margin-left: 2.5%;
     *zoom: 1;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Fluid Grid                                                                                           */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .container:before,
   .container:after {
@@ -2054,11 +2061,8 @@ hr + .h6-clone {
     margin-left: auto;
     *zoom: 1;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Fluid Grid                                                                                           */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .container:before,
   .container:after {
@@ -2346,11 +2350,8 @@ hr + .h6-clone {
     margin-left: auto;
     *zoom: 1;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Fluid Grid                                                                                           */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .container:before,
   .container:after {
@@ -2647,11 +2648,8 @@ hr + .h6-clone {
     margin-left: auto;
     *zoom: 1;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Fluid Grid                                                                                           */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .container:before,
   .container:after {
@@ -2980,11 +2978,8 @@ p {
   color: #bbbbbb;
   margin: 0px 0px 15px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 p.tall {
   margin-bottom: 30px;
@@ -3107,11 +3102,8 @@ p .lead {
   color: #9f9f9f;
   margin: 0px 0px 15px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 p.lead.tall,
 p lead.tall,
@@ -3317,11 +3309,8 @@ p .small {
   color: #bbbbbb;
   margin: 0px 0px 15px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 small.tall,
 p.small.tall,
@@ -3623,11 +3612,8 @@ h1,
   color: #262626;
   margin: 45px 0px 30px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 h1.tall,
 .h1-clone.tall {
@@ -3815,11 +3801,8 @@ h2,
   color: #262626;
   margin: 45px 0px 30px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 h2.tall,
 .h2-clone.tall {
@@ -4007,11 +3990,8 @@ h3,
   color: #5e5e5e;
   margin: 45px 0px 30px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 h3.tall,
 .h3-clone.tall {
@@ -4199,11 +4179,8 @@ h4,
   color: #2f2f2f;
   margin: 40px 0px 20px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 h4.tall,
 .h4-clone.tall {
@@ -4391,11 +4368,8 @@ h5,
   color: #5e5e5e;
   margin: 30px 0px 15px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 h5.tall,
 .h5-clone.tall {
@@ -4583,11 +4557,8 @@ h6,
   color: #8c8c8c;
   margin: 25px 0px 15px 0px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 h6.tall,
 .h6-clone.tall {
@@ -4784,11 +4755,8 @@ ol li {
   color: #bbbbbb;
   margin-bottom: 7.5px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 ul li.tall,
 ol li.tall {
@@ -6592,9 +6560,6 @@ blockquote:after {
 /* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Layout                                                                                               */
@@ -6628,33 +6593,21 @@ blockquote:after {
 /* Screen Size: Small (@screen-small) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media (min-width: 768px) {
-  
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Screen Size: Medium (@screen-medium) and above                                                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media (min-width: 992px) {
-  
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Screen Size: Large (@screen-large) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media (min-width: 1280px) {
-  
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  
-}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
@@ -6671,33 +6624,21 @@ blockquote:after {
 /* Screen Size: Small (@screen-small) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media (min-width: 768px) {
-  
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Screen Size: Medium (@screen-medium) and above                                                       */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media (min-width: 992px) {
-  
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Screen Size: Large (@screen-large) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media (min-width: 1280px) {
-  
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  
-}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
@@ -6761,23 +6702,14 @@ blockquote:after {
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 3px 10px 1px rgba(0, 0, 0, 0.25);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Modal Header                                                                                         */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Modal Body                                                                                           */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Modal Footer                                                                                         */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .modal:hover,
 .modal:focus,
@@ -6984,9 +6916,6 @@ blockquote:after {
 /* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Components                                                                                           */
@@ -7038,29 +6967,17 @@ table {
 }
 .table tr {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Active State                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Success State                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row warning State                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Error State                                                                                */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .table tr.active td {
   background-color: #f9f9f9;
@@ -7078,8 +6995,8 @@ table {
   font-weight: 300;
 }
 .table tr.error td {
-  background-color: #fff5f5;
-  color: #fd3c2b;
+  background-color: #fff2f2;
+  color: #ff0000;
   font-weight: 300;
 }
 .table thead th {
@@ -7114,29 +7031,17 @@ table {
 }
 .table.inverse tr {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Active State                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Success State                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row warning State                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Error State                                                                                */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .table.inverse tr.active td {
   background-color: #262626;
@@ -7151,8 +7056,8 @@ table {
   color: #f38339;
 }
 .table.inverse tr.error td {
-  background-color: #490701;
-  color: #fd3c2b;
+  background-color: #400000;
+  color: #ff0000;
 }
 .table.inverse tbody + tbody {
   border-top: 2px solid #424242;
@@ -7273,23 +7178,14 @@ table {
 /* ==================================================================================================== */
 .table.table-striped tbody > tr:nth-child(odd) {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Success States                                                                             */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Warning States                                                                             */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Error States                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .table.table-striped tbody > tr:nth-child(odd) td,
 .table.table-striped tbody > tr:nth-child(odd) th {
@@ -7308,29 +7204,20 @@ table {
   font-weight: 300;
 }
 .table.table-striped tbody > tr:nth-child(odd).error td {
-  background-color: #fff5f5;
-  color: #dc1402;
+  background-color: #fff2f2;
+  color: #bf0000;
   font-weight: 300;
 }
 .table.table-striped.inverse tbody > tr:nth-child(odd) {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Success States                                                                             */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Warning States                                                                             */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Error States                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .table.table-striped.inverse tbody > tr:nth-child(odd) td,
 .table.table-striped.inverse tbody > tr:nth-child(odd) th {
@@ -7346,8 +7233,8 @@ table {
   color: #f6a26a;
 }
 .table.table-striped.inverse tbody > tr:nth-child(odd).error td {
-  background-color: #580801;
-  color: #fe6d60;
+  background-color: #4d0000;
+  color: #ff4040;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -7356,29 +7243,17 @@ table {
 /* ==================================================================================================== */
 .table.table-hover tbody tr {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Active State                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Success States                                                                             */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Warning States                                                                             */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Error States                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .table.table-hover tbody tr:hover td,
 .table.table-hover tbody tr:hover th {
@@ -7402,35 +7277,23 @@ table {
   font-weight: 300;
 }
 .table.table-hover tbody tr.error:hover td {
-  background-color: #ffe2df;
-  color: #dc1402;
+  background-color: #ffd9d9;
+  color: #bf0000;
   font-weight: 300;
 }
 .table.table-hover.inverse tbody tr {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Active State                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Success States                                                                             */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Warning States                                                                             */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Table Row Error States                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .table.table-hover.inverse tbody tr:hover td,
 .table.table-hover.inverse tbody tr:hover th {
@@ -7450,8 +7313,8 @@ table {
   color: #f6a26a;
 }
 .table.table-hover.inverse tbody tr.error:hover td {
-  background-color: #580801;
-  color: #fe6d60;
+  background-color: #4d0000;
+  color: #ff4040;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -7482,7 +7345,6 @@ table th[class*="span"],
 	&.span11    { .tableColumns(11); }
 	&.span12    { .tableColumns(12); }
 	*/
-
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -7588,9 +7450,6 @@ table th[class*="span"],
 /* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  
-}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
@@ -7608,7 +7467,6 @@ table th[class*="span"],
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   *margin-left: .3em;
   text-rendering: optimizelegibility;
@@ -7652,17 +7510,11 @@ table th[class*="span"],
   margin-top: 0px;
   margin-bottom: 0px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Link                                                                                                 */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .button:first-child {
   *margin-left: 0;
@@ -9105,16 +8957,16 @@ input[type="button"].button-block {
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  background-color: #fd3c2b;
-  background-image: -moz-linear-gradient(top, #fd210e, #b01002);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fd210e), to(#b01002));
-  background-image: -webkit-linear-gradient(top, #fd210e, #b01002);
-  background-image: -o-linear-gradient(top, #fd210e, #b01002);
-  background-image: linear-gradient(to bottom, #fd210e, #b01002);
+  background-color: #ff0000;
+  background-image: -moz-linear-gradient(top, #e60000, #990000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e60000), to(#990000));
+  background-image: -webkit-linear-gradient(top, #e60000, #990000);
+  background-image: -o-linear-gradient(top, #e60000, #990000);
+  background-image: linear-gradient(to bottom, #e60000, #990000);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffd210e', endColorstr='#ffb01002', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 0px 0px #fe796d, 0px 0px 0px 1px rgba(146, 14, 1, 0.85), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0px 1px 0px 0px #fe796d, 0px 0px 0px 1px rgba(146, 14, 1, 0.85), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe60000', endColorstr='#ff990000', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ff4d4d, 0px 0px 0px 1px rgba(128, 0, 0, 0.85), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 1px 0px 0px #ff4d4d, 0px 0px 0px 1px rgba(128, 0, 0, 0.85), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   margin-top: 0px;
   margin-bottom: 0px;
@@ -9132,16 +8984,16 @@ input[type="button"].button-block {
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  background-color: #eb1502;
-  background-image: -moz-linear-gradient(top, #fd5040, #cd1202);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fd5040), to(#cd1202));
-  background-image: -webkit-linear-gradient(top, #fd5040, #cd1202);
-  background-image: -o-linear-gradient(top, #fd5040, #cd1202);
-  background-image: linear-gradient(to bottom, #fd5040, #cd1202);
+  background-color: #cc0000;
+  background-image: -moz-linear-gradient(top, #ff1a1a, #b30000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff1a1a), to(#b30000));
+  background-image: -webkit-linear-gradient(top, #ff1a1a, #b30000);
+  background-image: -o-linear-gradient(top, #ff1a1a, #b30000);
+  background-image: linear-gradient(to bottom, #ff1a1a, #b30000);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffd5040', endColorstr='#ffcd1202', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 0px 0px #fd6153, 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px 1px 0px 0px #fd6153, 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff1a1a', endColorstr='#ffb30000', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ff3333, 0px 0px 0px 1px rgba(102, 0, 0, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px 0px #ff3333, 0px 0px 0px 1px rgba(102, 0, 0, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   margin-top: 0px;
   margin-bottom: 0px;
@@ -9158,18 +9010,18 @@ input[type="button"].button-block {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #ffecea;
+  color: #ffe5e5;
   text-shadow: none;
-  background-color: #eb1502;
-  background-image: -moz-linear-gradient(top, #eb1502, #fd210e);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eb1502), to(#fd210e));
-  background-image: -webkit-linear-gradient(top, #eb1502, #fd210e);
-  background-image: -o-linear-gradient(top, #eb1502, #fd210e);
-  background-image: linear-gradient(to bottom, #eb1502, #fd210e);
+  background-color: #cc0000;
+  background-image: -moz-linear-gradient(top, #cc0000, #e60000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cc0000), to(#e60000));
+  background-image: -webkit-linear-gradient(top, #cc0000, #e60000);
+  background-image: -o-linear-gradient(top, #cc0000, #e60000);
+  background-image: linear-gradient(to bottom, #cc0000, #e60000);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeb1502', endColorstr='#fffd210e', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffe60000', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(102, 0, 0, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(102, 0, 0, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   margin-top: 0px;
   margin-bottom: 0px;
@@ -9191,16 +9043,16 @@ input[type="button"].button-block {
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  background-color: #fd3c2b;
-  background-image: -moz-linear-gradient(top, #fd210e, #b01002);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fd210e), to(#b01002));
-  background-image: -webkit-linear-gradient(top, #fd210e, #b01002);
-  background-image: -o-linear-gradient(top, #fd210e, #b01002);
-  background-image: linear-gradient(to bottom, #fd210e, #b01002);
+  background-color: #ff0000;
+  background-image: -moz-linear-gradient(top, #e60000, #990000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e60000), to(#990000));
+  background-image: -webkit-linear-gradient(top, #e60000, #990000);
+  background-image: -o-linear-gradient(top, #e60000, #990000);
+  background-image: linear-gradient(to bottom, #e60000, #990000);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffd210e', endColorstr='#ffb01002', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 0px 0px #fe796d, 0px 0px 0px 1px rgba(146, 14, 1, 0.85), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0px 1px 0px 0px #fe796d, 0px 0px 0px 1px rgba(146, 14, 1, 0.85), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe60000', endColorstr='#ff990000', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ff4d4d, 0px 0px 0px 1px rgba(128, 0, 0, 0.85), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 1px 0px 0px #ff4d4d, 0px 0px 0px 1px rgba(128, 0, 0, 0.85), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   margin-top: 0px;
   margin-bottom: 0px;
@@ -9217,7 +9069,7 @@ input[type="button"].button-block {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #fd3c2b;
+  color: #ff0000;
   text-shadow: none;
   background-color: none;
   -webkit-box-shadow: none;
@@ -9237,7 +9089,7 @@ input[type="button"].button-block {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #dc1402;
+  color: #bf0000;
   text-shadow: none;
   background-color: none;
   -webkit-box-shadow: none;
@@ -9258,7 +9110,7 @@ input[type="button"].button-block {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #930d01;
+  color: #800000;
   text-shadow: none;
   background-color: none;
   -webkit-box-shadow: none;
@@ -9282,7 +9134,7 @@ input[type="button"].button-block {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #fd3c2b;
+  color: #ff0000;
   text-shadow: none;
   background-color: none;
   -webkit-box-shadow: none;
@@ -9611,9 +9463,6 @@ input[type="submit"].button.button-mini {
 /* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  
-}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
@@ -9631,54 +9480,32 @@ input[type="submit"].button.button-mini {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   font-size: 0;
   vertical-align: top;
   white-space: nowrap;
   *margin-left: .3em;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Group Large                                                                                   */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Group Small                                                                                   */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Group Mini                                                                                    */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button                                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Dropdown Toggle                                                                                      */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Group                                                                                         */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Dropdown                                                                                             */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .button-group:first-child {
   *margin-left: 0;
@@ -9975,29 +9802,17 @@ input[type="submit"].button.button-mini {
   margin-top: 0px;
   margin-bottom: 0px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Primary Button                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Success Button                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Warning Button                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Danger Button                                                                                        */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .button-group.open .button.dropdown-toggle.button-link {
   background-color: transparent;
@@ -10219,18 +10034,18 @@ input[type="submit"].button.button-mini {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #ffecea;
+  color: #ffe5e5;
   text-shadow: none;
-  background-color: #eb1502;
-  background-image: -moz-linear-gradient(top, #eb1502, #fd210e);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eb1502), to(#fd210e));
-  background-image: -webkit-linear-gradient(top, #eb1502, #fd210e);
-  background-image: -o-linear-gradient(top, #eb1502, #fd210e);
-  background-image: linear-gradient(to bottom, #eb1502, #fd210e);
+  background-color: #cc0000;
+  background-image: -moz-linear-gradient(top, #cc0000, #e60000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cc0000), to(#e60000));
+  background-image: -webkit-linear-gradient(top, #cc0000, #e60000);
+  background-image: -o-linear-gradient(top, #cc0000, #e60000);
+  background-image: linear-gradient(to bottom, #cc0000, #e60000);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeb1502', endColorstr='#fffd210e', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(116, 11, 1, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffe60000', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(102, 0, 0, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(102, 0, 0, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   margin-top: 0px;
   margin-bottom: 0px;
@@ -10241,7 +10056,7 @@ input[type="submit"].button.button-mini {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #930d01;
+  color: #800000;
   text-shadow: none;
   background-color: none;
   -webkit-box-shadow: none;
@@ -10284,17 +10099,11 @@ input[type="submit"].button.button-mini {
   display: block;
   *zoom: 1;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button                                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Group                                                                                         */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .button-toolbar:before,
 .button-toolbar:after {
@@ -10317,46 +10126,35 @@ input[type="submit"].button.button-mini {
   margin: 0 auto;
   margin-top: -5px;
   margin-left: -5px;
+  margin-bottom: 15px;
+}
+.button-toolbar.button-toolbar-centered.tall {
+  margin-bottom: 15px;
+}
+.button-toolbar.button-toolbar-centered.short {
+  margin-bottom: 15px;
 }
 .button-toolbar > .button {
   margin-top: 5px;
   margin-left: 5px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Link                                                                                                 */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Primary Button                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Warning Button                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Success Button                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Danger Button                                                                                        */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .button-toolbar > .button:hover {
   margin-top: 5px;
@@ -10400,17 +10198,11 @@ input[type="submit"].button.button-mini {
 .button-toolbar > .button.button-primary {
   margin-top: 5px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Link                                                                                                 */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .button-toolbar > .button.button-primary:hover {
   margin-top: 5px;
@@ -10454,17 +10246,11 @@ input[type="submit"].button.button-mini {
 .button-toolbar > .button.button-warning {
   margin-top: 5px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Link                                                                                                 */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .button-toolbar > .button.button-warning:hover {
   margin-top: 5px;
@@ -10508,17 +10294,11 @@ input[type="submit"].button.button-mini {
 .button-toolbar > .button.button-success {
   margin-top: 5px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Link                                                                                                 */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .button-toolbar > .button.button-success:hover {
   margin-top: 5px;
@@ -10562,17 +10342,11 @@ input[type="submit"].button.button-mini {
 .button-toolbar > .button.button-danger {
   margin-top: 5px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Link                                                                                                 */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .button-toolbar > .button.button-danger:hover {
   margin-top: 5px;
@@ -10626,7 +10400,6 @@ input[type="submit"].button.button-mini {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
 }
 .button-group.button-group-vertical > .button {
@@ -10702,23 +10475,14 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .button-group {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Group Large                                                                                   */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Group Small                                                                                   */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Group Mini                                                                                    */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-group + .button-group {
     margin-left: 5px;
@@ -10769,17 +10533,11 @@ input[type="submit"].button.button-mini {
     margin-left: -5px;
     margin-bottom: 20px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button                                                                                               */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Group                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar.tall {
     margin-bottom: 30px;
@@ -10795,41 +10553,23 @@ input[type="submit"].button.button-mini {
     margin-top: 5px;
     margin-left: 5px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Primary Button                                                                                       */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Warning Button                                                                                       */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Success Button                                                                                       */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Danger Button                                                                                        */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button:hover {
     margin-top: 5px;
@@ -10873,17 +10613,11 @@ input[type="submit"].button.button-mini {
   .button-toolbar > .button.button-primary {
     margin-top: 5px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button.button-primary:hover {
     margin-top: 5px;
@@ -10927,17 +10661,11 @@ input[type="submit"].button.button-mini {
   .button-toolbar > .button.button-warning {
     margin-top: 5px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button.button-warning:hover {
     margin-top: 5px;
@@ -10981,17 +10709,11 @@ input[type="submit"].button.button-mini {
   .button-toolbar > .button.button-success {
     margin-top: 5px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button.button-success:hover {
     margin-top: 5px;
@@ -11035,17 +10757,11 @@ input[type="submit"].button.button-mini {
   .button-toolbar > .button.button-danger {
     margin-top: 5px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button.button-danger:hover {
     margin-top: 5px;
@@ -11104,23 +10820,14 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .button-group {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Group Large                                                                                   */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Group Small                                                                                   */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Group Mini                                                                                    */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-group + .button-group {
     margin-left: 10px;
@@ -11171,17 +10878,11 @@ input[type="submit"].button.button-mini {
     margin-left: -10px;
     margin-bottom: 30px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button                                                                                               */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Group                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar.tall {
     margin-bottom: 45px;
@@ -11197,41 +10898,23 @@ input[type="submit"].button.button-mini {
     margin-top: 10px;
     margin-left: 10px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Primary Button                                                                                       */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Warning Button                                                                                       */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Success Button                                                                                       */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Danger Button                                                                                        */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button:hover {
     margin-top: 10px;
@@ -11275,17 +10958,11 @@ input[type="submit"].button.button-mini {
   .button-toolbar > .button.button-primary {
     margin-top: 10px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button.button-primary:hover {
     margin-top: 10px;
@@ -11329,17 +11006,11 @@ input[type="submit"].button.button-mini {
   .button-toolbar > .button.button-warning {
     margin-top: 10px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button.button-warning:hover {
     margin-top: 10px;
@@ -11383,17 +11054,11 @@ input[type="submit"].button.button-mini {
   .button-toolbar > .button.button-success {
     margin-top: 10px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button.button-success:hover {
     margin-top: 10px;
@@ -11437,17 +11102,11 @@ input[type="submit"].button.button-mini {
   .button-toolbar > .button.button-danger {
     margin-top: 10px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button.button-danger:hover {
     margin-top: 10px;
@@ -11506,23 +11165,14 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .button-group {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Group Large                                                                                   */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Group Small                                                                                   */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Group Mini                                                                                    */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-group + .button-group {
     margin-left: 15px;
@@ -11573,17 +11223,11 @@ input[type="submit"].button.button-mini {
     margin-left: -15px;
     margin-bottom: 40px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button                                                                                               */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Group                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar.tall {
     margin-bottom: 60px;
@@ -11599,41 +11243,23 @@ input[type="submit"].button.button-mini {
     margin-top: 15px;
     margin-left: 15px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Primary Button                                                                                       */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Warning Button                                                                                       */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Success Button                                                                                       */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Danger Button                                                                                        */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button:hover {
     margin-top: 15px;
@@ -11677,17 +11303,11 @@ input[type="submit"].button.button-mini {
   .button-toolbar > .button.button-primary {
     margin-top: 15px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button.button-primary:hover {
     margin-top: 15px;
@@ -11731,17 +11351,11 @@ input[type="submit"].button.button-mini {
   .button-toolbar > .button.button-warning {
     margin-top: 15px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button.button-warning:hover {
     margin-top: 15px;
@@ -11785,17 +11399,11 @@ input[type="submit"].button.button-mini {
   .button-toolbar > .button.button-success {
     margin-top: 15px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button.button-success:hover {
     margin-top: 15px;
@@ -11839,17 +11447,11 @@ input[type="submit"].button.button-mini {
   .button-toolbar > .button.button-danger {
     margin-top: 15px;
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Link                                                                                                 */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Inverse                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-toolbar > .button.button-danger:hover {
     margin-top: 15px;
@@ -11900,9 +11502,6 @@ input[type="submit"].button.button-mini {
 /* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  
-}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
@@ -11944,47 +11543,26 @@ input[type="submit"].button.button-mini {
 /* ==================================================================================================== */
 .dropdown-toggle.button {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Large                                                                                         */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Small                                                                                         */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Mini                                                                                          */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Primary                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Success                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Warning                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Danger                                                                                        */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .dropdown-toggle.button .caret {
   display: inline-block;
@@ -12137,16 +11715,16 @@ input[type="submit"].button.button-mini {
   border-top-color: #ffffff;
 }
 .dropdown-toggle.button.button-danger:active .caret {
-  border-top-color: #ffecea;
+  border-top-color: #ffe5e5;
 }
 .dropdown-toggle.button.button-danger.button-link .caret {
-  border-top-color: #fd3c2b;
+  border-top-color: #ff0000;
 }
 .dropdown-toggle.button.button-danger.button-link:hover .caret {
-  border-top-color: #dc1402;
+  border-top-color: #bf0000;
 }
 .dropdown-toggle.button.button-danger.button-link:active .caret {
-  border-top-color: #930d01;
+  border-top-color: #800000;
 }
 .dropdown-toggle.button.button-danger.inverse .caret {
   border-top-color: #e4e4e4;
@@ -12164,29 +11742,17 @@ input[type="submit"].button.button-mini {
 /* ==================================================================================================== */
 .button-group {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Large                                                                                         */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Small                                                                                         */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Mini                                                                                          */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Dropdown Open                                                                                        */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .button-group.button-group-large .button .caret {
   border-width: 8px 7px 0px 7px;
@@ -12229,37 +11795,22 @@ input[type="submit"].button.button-mini {
 }
 .button-group.open {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Dropdown Toggle                                                                                      */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .button-group.open .dropdown-toggle.button {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Primary                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Success                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Warning                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Danger                                                                                        */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .button-group.open .dropdown-toggle.button .caret {
   border-top-color: #a8a8a8;
@@ -12298,10 +11849,10 @@ input[type="submit"].button.button-mini {
   border-top-color: #e4e4e4;
 }
 .button-group.open .dropdown-toggle.button.button-danger .caret {
-  border-top-color: #ffecea;
+  border-top-color: #ffe5e5;
 }
 .button-group.open .dropdown-toggle.button.button-danger.button-link .caret {
-  border-top-color: #930d01;
+  border-top-color: #800000;
 }
 .button-group.open .dropdown-toggle.button.button-danger.inverse .caret {
   border-top-color: #e4e4e4;
@@ -12371,23 +11922,14 @@ input[type="submit"].button.button-mini {
 .dropdown-menu > li {
   margin: 0px;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Danger                                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Disabled                                                                                             */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Rounded Corners for First/Last Rows                                                                  */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .dropdown-menu > li.dropdown-header {
   display: block;
@@ -12476,7 +12018,7 @@ input[type="submit"].button.button-mini {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #fd3c2b;
+  color: #ff0000;
   text-shadow: none;
   background-color: #ffffff;
   -webkit-box-shadow: none;
@@ -12492,9 +12034,9 @@ input[type="submit"].button.button-mini {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #cd1202;
+  color: #b30000;
   text-shadow: none;
-  background-color: #ffd8d5;
+  background-color: #ffcccc;
   -webkit-box-shadow: none;
   box-shadow: none;
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
@@ -12508,18 +12050,15 @@ input[type="submit"].button.button-mini {
   border-color: none;
   color: #ffffff;
   text-shadow: none;
-  background-color: #fd3c2b;
+  background-color: #ff0000;
   -webkit-box-shadow: none;
   box-shadow: none;
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
 }
 .dropdown-menu > li.disabled {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Danger                                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .dropdown-menu > li.disabled > a {
   opacity: 50;
@@ -12545,7 +12084,7 @@ input[type="submit"].button.button-mini {
   background-repeat: no-repeat;
   filter: none;
   border-color: none;
-  color: #fd3c2b;
+  color: #ff0000;
   text-shadow: none;
   background-color: #ffffff;
   -webkit-box-shadow: none;
@@ -12572,23 +12111,14 @@ input[type="submit"].button.button-mini {
 .dropdown-submenu {
   position: relative;
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Submenu                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Submenu Caret                                                                                        */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Danger                                                                                               */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .dropdown-submenu > .dropdown-menu {
   top: 0px;
@@ -12620,10 +12150,10 @@ input[type="submit"].button.button-mini {
   border-left-color: #ffffff;
 }
 .dropdown-submenu.danger > a:after {
-  border-left-color: #fd3c2b;
+  border-left-color: #ff0000;
 }
 .dropdown-submenu.danger > a:hover:after {
-  border-left-color: #cd1202;
+  border-left-color: #b30000;
 }
 .dropdown-submenu.danger > a:active:after,
 .dropdown-submenu.danger > a:focus:after {
@@ -12647,29 +12177,17 @@ input[type="submit"].button.button-mini {
 /* ==================================================================================================== */
 .dropup {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Dropdown Menu                                                                                        */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Dropup Submenu                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Dropdown Toggle                                                                                      */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Dropup Open                                                                                          */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .dropup .dropdown-menu {
   top: auto;
@@ -12685,47 +12203,26 @@ input[type="submit"].button.button-mini {
 }
 .dropup .dropdown-toggle.button {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Large                                                                                         */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Small                                                                                         */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Mini                                                                                          */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Primary                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Success                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Warning                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Danger                                                                                        */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .dropup .dropdown-toggle.button .caret {
   border-width: 0px 5px 6px 5px;
@@ -12856,16 +12353,16 @@ input[type="submit"].button.button-mini {
   border-bottom-color: #ffffff;
 }
 .dropup .dropdown-toggle.button.button-danger:active .caret {
-  border-bottom-color: #ffecea;
+  border-bottom-color: #ffe5e5;
 }
 .dropup .dropdown-toggle.button.button-danger.button-link .caret {
-  border-bottom-color: #fd3c2b;
+  border-bottom-color: #ff0000;
 }
 .dropup .dropdown-toggle.button.button-danger.button-link:hover .caret {
-  border-bottom-color: #dc1402;
+  border-bottom-color: #bf0000;
 }
 .dropup .dropdown-toggle.button.button-danger.button-link:active .caret {
-  border-bottom-color: #930d01;
+  border-bottom-color: #800000;
 }
 .dropup .dropdown-toggle.button.button-danger.inverse .caret {
   border-bottom-color: #e4e4e4;
@@ -12878,37 +12375,22 @@ input[type="submit"].button.button-mini {
 }
 .dropup.open {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Dropdown Toggle                                                                                      */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .dropup.open .dropdown-toggle.button {
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Primary                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Success                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Warning                                                                                       */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Button Danger                                                                                        */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 .dropup.open .dropdown-toggle.button .caret {
   border-bottom-color: #a8a8a8;
@@ -12947,10 +12429,10 @@ input[type="submit"].button.button-mini {
   border-bottom-color: #e4e4e4;
 }
 .dropup.open .dropdown-toggle.button.button-danger .caret {
-  border-bottom-color: #ffecea;
+  border-bottom-color: #ffe5e5;
 }
 .dropup.open .dropdown-toggle.button.button-danger.button-link .caret {
-  border-bottom-color: #930d01;
+  border-bottom-color: #800000;
 }
 .dropup.open .dropdown-toggle.button.button-danger.inverse .caret {
   border-bottom-color: #e4e4e4;
@@ -12988,23 +12470,14 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .dropdown-toggle.button {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Large                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Small                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Mini                                                                                          */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .dropdown-toggle.button .caret {
     border-width: 6.779999999999999px 5.6499999999999995px 0px 5.6499999999999995px;
@@ -13045,23 +12518,14 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .button-group {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Large                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Small                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Mini                                                                                          */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-group.button-group-large .button .caret {
     border-width: 9.04px 7.909999999999999px 0px 7.909999999999999px;
@@ -13139,17 +12603,11 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .dropdown-submenu {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Submenu                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Submenu Caret                                                                                        */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .dropdown-submenu > .dropdown-menu {
     margin-top: -5.6499999999999995px;
@@ -13173,23 +12631,14 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .dropup {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Dropdown Menu                                                                                        */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Dropup Submenu                                                                                       */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Dropdown Toggle                                                                                      */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .dropup .dropdown-menu {
     margin-top: 0px;
@@ -13201,23 +12650,14 @@ input[type="submit"].button.button-mini {
   }
   .dropup .dropdown-toggle.button {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Large                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Small                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Mini                                                                                          */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .dropup .dropdown-toggle.button .caret {
     border-width: 0px 5.6499999999999995px 6.779999999999999px 5.6499999999999995px;
@@ -13249,23 +12689,14 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .dropdown-toggle.button {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Large                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Small                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Mini                                                                                          */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .dropdown-toggle.button .caret {
     border-width: 7.5px 6.25px 0px 6.25px;
@@ -13306,23 +12737,14 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .button-group {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Large                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Small                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Mini                                                                                          */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-group.button-group-large .button .caret {
     border-width: 10px 8.75px 0px 8.75px;
@@ -13400,17 +12822,11 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .dropdown-submenu {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Submenu                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Submenu Caret                                                                                        */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .dropdown-submenu > .dropdown-menu {
     margin-top: -6.25px;
@@ -13434,23 +12850,14 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .dropup {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Dropdown Menu                                                                                        */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Dropup Submenu                                                                                       */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Dropdown Toggle                                                                                      */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .dropup .dropdown-menu {
     margin-top: 0px;
@@ -13462,23 +12869,14 @@ input[type="submit"].button.button-mini {
   }
   .dropup .dropdown-toggle.button {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Large                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Small                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Mini                                                                                          */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .dropup .dropdown-toggle.button .caret {
     border-width: 0px 6.25px 7.5px 6.25px;
@@ -13510,23 +12908,14 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .dropdown-toggle.button {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Large                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Small                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Mini                                                                                          */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .dropdown-toggle.button .caret {
     border-width: 7.800000000000001px 6.5px 0px 6.5px;
@@ -13567,23 +12956,14 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .button-group {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Large                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Small                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Mini                                                                                          */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .button-group.button-group-large .button .caret {
     border-width: 10.4px 9.1px 0px 9.1px;
@@ -13661,17 +13041,11 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .dropdown-submenu {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Submenu                                                                                              */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Submenu Caret                                                                                        */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .dropdown-submenu > .dropdown-menu {
     margin-top: -6.5px;
@@ -13695,23 +13069,14 @@ input[type="submit"].button.button-mini {
   /* ==================================================================================================== */
   .dropup {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Dropdown Menu                                                                                        */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Dropup Submenu                                                                                       */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Dropdown Toggle                                                                                      */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .dropup .dropdown-menu {
     margin-top: 0px;
@@ -13723,23 +13088,14 @@ input[type="submit"].button.button-mini {
   }
   .dropup .dropdown-toggle.button {
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Large                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Small                                                                                         */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
     /* Button Mini                                                                                          */
-  
     /* ---------------------------------------------------------------------------------------------------- */
-  
   }
   .dropup .dropdown-toggle.button .caret {
     border-width: 0px 6.5px 7.800000000000001px 6.5px;
@@ -13763,9 +13119,6 @@ input[type="submit"].button.button-mini {
 /* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  
-}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
 /* components/forms.less                                                                                */
@@ -13893,7 +13246,6 @@ label.input-height.input-small {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   vertical-align: middle;
 }
@@ -13958,41 +13310,23 @@ textarea {
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Inverse                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Large Input                                                                                          */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Small Input                                                                                          */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Success                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Warning                                                                                              */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
   /* Error                                                                                                */
-
   /* ---------------------------------------------------------------------------------------------------- */
-
 }
 input[type="text"]:-moz-placeholder,
 input[type="password"]:-moz-placeholder,
