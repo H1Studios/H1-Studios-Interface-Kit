@@ -10,82 +10,26 @@
 
 .well {
 	
-	.border-radius(5px);
-	background: @white;
-	display: block;
-	margin: 0 0 0 0;
-	padding: @grid-gutter-width-standard;
-	overflow: hidden;
-	position: relative;
-	.clearfix();
-	margin-bottom: @primary-margin;
-	
-	@wellGridColumnWidth: ((@grid-row-width-standard - (4 * @grid-gutter-width-standard)) - (@grid-gutter-width-standard * (@grid-column-count - 1))) / @grid-column-count;
-	@wellGridGutterWidth: @grid-gutter-width-standard;
-	
-	#grid > .core(@wellGridColumnWidth , @wellGridGutterWidth);
+	.border-radius(@well-border-radius);
+	padding: @well-padding;
+	margin-bottom: @well-margin;
+	background: @well-default-background-color;
+	border-width: @well-default-border-width;
+	border-color: @well-default-border-color;
+	.box-shadow(@well-default-shadow);
 	
 	&.short {
 		
-		margin-bottom: @primary-margin-short;
+		margin-bottom: @well-margin-short;
 		
 	}
 	
 	&.tall {
 		
-		margin-bottom: @primary-margin-tall;
+		margin-bottom: @well-margin-tall;
 		
 	}
 	
-	hr {
-		
-		margin-left: -@grid-gutter-width-standard !important;
-		margin-right: -@grid-gutter-width-standard !important;
-		
-	}
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Screen Size: Large (@screen-large) and above                                                         */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (min-width: @screen-large) {
-	
-	.well {
-		
-		padding: @grid-gutter-width-screen-large;
-		margin-bottom: @primary-margin-screen-large;
-		
-		&.short {
-			
-			margin-bottom: @primary-margin-short-screen-large;
-			
-		}
-		
-		&.tall {
-			
-			margin-bottom: @primary-margin-tall-screen-large;
-			
-		}
-		
-		@wellGridColumnWidthWidescreen: ((@grid-row-width-screen-large - (4 * @grid-gutter-width-screen-large)) - (@grid-gutter-width-screen-large * (@grid-column-count - 1))) / @grid-column-count;
-		@wellGridGutterWidthWidescreen: @grid-gutter-width-screen-large;
-		
-		#grid > .core(@wellGridColumnWidthWidescreen , @wellGridGutterWidthWidescreen);
-	
-		hr {
-			
-			margin-left: -@grid-gutter-width-screen-large !important;
-			margin-right: -@grid-gutter-width-screen-large !important;
-			
-		}
-		
-	}
 }
 
 
@@ -100,30 +44,18 @@
 	
 	.well {
 		
-		padding: @grid-gutter-width-screen-small;
-		margin-bottom: @primary-margin-screen-small;
+		padding: @well-padding-screen-small;
+		margin-bottom: @well-margin-screen-small;
 		
 		&.short {
 			
-			margin-bottom: @primary-margin-short-screen-small;
+			margin-bottom: @well-margin-short-screen-small;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primary-margin-tall-screen-small;
-			
-		}
-		
-		@wellGridColumnWidthTablet: ((@grid-row-width-screen-small - (4 * @grid-gutter-width-screen-small)) - (@grid-gutter-width-screen-small * (@grid-column-count - 1))) / @grid-column-count;
-		@wellGridGutterWidthTablet: @grid-gutter-width-screen-small;
-		
-		#grid > .core(@wellGridColumnWidthTablet , @wellGridGutterWidthTablet);
-	
-		hr {
-			
-			margin-left: -@wellGridGutterWidthTablet !important;
-			margin-right: -@wellGridGutterWidthTablet !important;
+			margin-bottom: @well-margin-tall-screen-small;
 			
 		}
 		
@@ -143,69 +75,49 @@
 	
 	.well {
 		
-		margin-bottom: @primary-margin-screen-small;
+		padding: @well-padding-screen-medium;
+		margin-bottom: @well-margin-screen-medium;
 		
 		&.short {
 			
-			margin-bottom: @primary-margin-short-screen-small;
+			margin-bottom: @well-margin-short-screen-medium;
 			
 		}
 		
 		&.tall {
 			
-			margin-bottom: @primary-margin-tall-screen-small;
+			margin-bottom: @well-margin-tall-screen-medium;
 			
 		}
+		
+	}
 	
-		/* ==================================================================================================== */
-		/*                                                                       */
-		/* Grid                                                                  */
-		/*                                                                       */
-		/* ==================================================================================================== */
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-large) {
+	
+	.well {
 		
-		// Remove width from containers
+		padding: @well-padding-screen-large;
+		margin-bottom: @well-margin-screen-large;
 		
-		.container {
+		&.short {
 			
-			width: auto;
-			padding-left: 15px;
-			padding-right: 15px;
-			
-		}
-		
-		.container-fluid {
-			
-			padding-left: 0px;
-			padding-right: 0px;
-			
-		}
-		
-		// Fluid rows
-		
-		.row-fluid {
-			
-			width: 100%;
+			margin-bottom: @well-margin-short-screen-large;
 			
 		}
 		
-		// Undo negative margin on rows and thumbnails
-		
-		.row,
-		.thumbnails {
+		&.tall {
 			
-			margin-left: 0;
-			
-		}
-		
-		// Make all grid-sized elements block level again
-		
-		[class*="span"],
-		.row-fluid [class*="span"] {
-			
-			float: none;
-			display: block;
-			width: auto;
-			margin-left: 0;
+			margin-bottom: @well-margin-tall-screen-large;
 			
 		}
 		
