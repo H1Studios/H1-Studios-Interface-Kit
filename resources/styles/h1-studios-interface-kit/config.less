@@ -537,6 +537,10 @@
 @body-text-ratio-screen-medium:												1.2;
 @body-text-ratio-screen-large:												1.2;
 
+@body-margin-ratio-screen-small:											@body-text-ratio-screen-small;
+@body-margin-ratio-screen-medium:											@body-text-ratio-screen-medium;
+@body-margin-ratio-screen-large:											@body-text-ratio-screen-large;
+
 // Link
 
 @body-text-link-text-color:													@link-text-color;
@@ -610,6 +614,10 @@
 @lead-text-ratio-screen-small:												1.1;
 @lead-text-ratio-screen-medium:												1.2;
 @lead-text-ratio-screen-large:												1.3;
+
+@lead-margin-ratio-screen-small:											@lead-text-ratio-screen-small;
+@lead-margin-ratio-screen-medium:											@lead-text-ratio-screen-medium;
+@lead-margin-ratio-screen-large:											@lead-text-ratio-screen-large;
 
 // Link
 
@@ -685,6 +693,10 @@
 @small-text-ratio-screen-medium:											1.1;
 @small-text-ratio-screen-large:												1.2;
 
+@small-margin-ratio-screen-small:											@small-text-ratio-screen-small;
+@small-margin-ratio-screen-medium:											@small-text-ratio-screen-medium;
+@small-margin-ratio-screen-large:											@small-text-ratio-screen-large;
+
 // Link
 
 @small-text-link-text-color:												@link-text-color;
@@ -758,6 +770,10 @@
 @heading-h1-text-ratio-screen-small:										1.4;
 @heading-h1-text-ratio-screen-medium:										1.7;
 @heading-h1-text-ratio-screen-large:										1.8;
+
+@heading-h1-margin-ratio-screen-small:										@heading-h1-text-ratio-screen-small;
+@heading-h1-margin-ratio-screen-medium:										@heading-h1-text-ratio-screen-medium;
+@heading-h1-margin-ratio-screen-large:										@heading-h1-text-ratio-screen-large;
 
 // Link
 
@@ -846,6 +862,10 @@
 @heading-h2-text-ratio-screen-medium:										1.7;
 @heading-h2-text-ratio-screen-large:										1.8;
 
+@heading-h2-margin-ratio-screen-small:										@heading-h2-text-ratio-screen-small;
+@heading-h2-margin-ratio-screen-medium:										@heading-h2-text-ratio-screen-medium;
+@heading-h2-margin-ratio-screen-large:										@heading-h2-text-ratio-screen-large;
+
 // Link
 
 @heading-h2-text-link-text-color:											@link-text-color;
@@ -933,6 +953,10 @@
 @heading-h3-text-ratio-screen-medium:										1.4;
 @heading-h3-text-ratio-screen-large:										1.5;
 
+@heading-h3-margin-ratio-screen-small:										@heading-h3-text-ratio-screen-small;
+@heading-h3-margin-ratio-screen-medium:										@heading-h3-text-ratio-screen-medium;
+@heading-h3-margin-ratio-screen-large:										@heading-h3-text-ratio-screen-large;
+
 // Link
 
 @heading-h3-text-link-text-color:											@link-text-color;
@@ -1013,6 +1037,10 @@
 
 @heading-h4-text-margin-top:												40px;
 @heading-h4-text-margin-bottom:												20px;
+
+@heading-h4-margin-ratio-screen-small:										@heading-h4-text-ratio-screen-small;
+@heading-h4-margin-ratio-screen-medium:										@heading-h4-text-ratio-screen-medium;
+@heading-h4-margin-ratio-screen-large:										@heading-h4-text-ratio-screen-large;
 
 // Responsive Sizing
 
@@ -1107,6 +1135,10 @@
 @heading-h5-text-ratio-screen-medium:										1.1;
 @heading-h5-text-ratio-screen-large:										1.2;
 
+@heading-h5-margin-ratio-screen-small:										@heading-h5-text-ratio-screen-small;
+@heading-h5-margin-ratio-screen-medium:										@heading-h5-text-ratio-screen-medium;
+@heading-h5-margin-ratio-screen-large:										@heading-h5-text-ratio-screen-large;
+
 // Link
 
 @heading-h5-text-link-text-color:											@link-text-color;
@@ -1193,6 +1225,10 @@
 @heading-h6-text-ratio-screen-small:										1.0;
 @heading-h6-text-ratio-screen-medium:										1.1;
 @heading-h6-text-ratio-screen-large:										1.2;
+
+@heading-h6-margin-ratio-screen-small:										@heading-h6-text-ratio-screen-small;
+@heading-h6-margin-ratio-screen-medium:										@heading-h6-text-ratio-screen-medium;
+@heading-h6-margin-ratio-screen-large:										@heading-h6-text-ratio-screen-large;
 
 // Link
 
@@ -3752,7 +3788,7 @@
 @label-warning-inverse-active-shadow:										none;
 
 /* ---------------------------------------------------------------------------------------------------- */
-/* Danger Label                                                                                        */
+/* Danger Label                                                                                         */
 /* ---------------------------------------------------------------------------------------------------- */
 
 @label-danger-text-color:													@white;
@@ -3818,7 +3854,42 @@
 @label-danger-inverse-active-shadow:										none;
 
 
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Wells                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
+@well-border-radius:														10px;
+
+@well-margin:																@primary-margin * 0.5;
+@well-margin-screen-small:													@primary-margin-screen-small * 0.5;
+@well-margin-screen-medium:													@primary-margin-screen-medium * 0.5;
+@well-margin-screen-large:													@primary-margin-screen-large * 0.5;
+
+@well-margin-short:															@primary-margin-short * 0.5;
+@well-margin-short-screen-small:											@primary-margin-short-screen-small * 0.5;
+@well-margin-short-screen-medium:											@primary-margin-short-screen-medium * 0.5;
+@well-margin-short-screen-large:											@primary-margin-short-screen-large * 0.5;
+
+@well-margin-tall:															@primary-margin-tall * 0.5;
+@well-margin-tall-screen-small:												@primary-margin-tall-screen-small * 0.5;
+@well-margin-tall-screen-medium:											@primary-margin-tall-screen-medium * 0.5;
+@well-margin-tall-screen-large:												@primary-margin-tall-screen-large * 0.5;
+
+@well-padding:																@grid-gutter-width;
+@well-padding-screen-small:													@grid-gutter-width-screen-small;
+@well-padding-screen-medium:												@grid-gutter-width-screen-medium;
+@well-padding-screen-large:													@grid-gutter-width-screen-large;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Default Well                                                                                         */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@well-default-background-color:												@white;
+@well-default-border-width:													0px;
+@well-default-border-color:													none;
+@well-default-shadow:														0px 0px 0px 1px rgba(0, 0, 0, 0.1);
 
 
 
