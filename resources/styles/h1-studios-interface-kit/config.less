@@ -428,9 +428,13 @@
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@modal-backdrop-color:														@black;
-@modal-backdrop-opacity:													0.8;
+@modal-transition:															e('opacity .3s linear, top .3s ease-out');
 @modal-margin-horizontal:													@primary-margin / 2;
+@modal-border-radius:														10px;
+
+@modal-backdrop-color:														@black;
+@modal-backdrop-transition:													e('opacity .3s linear');
+@modal-backdrop-opacity:													0.8;
 
 @modal-width-screen-small:													500px;
 @modal-width-screen-medium:													600px;
@@ -4032,12 +4036,44 @@
 @well-default-shadow:														0px 0px 0px 1px rgba(0, 0, 0, 0.1);
 
 
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Tooltips                                                                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
+@tooltip-offset:															5px;
+@tooltip-offset-hidden:														-5px;
 
+@tooltip-opacity:															1.0;
+@tooltip-opacity-hidden:													0.0;
 
+@tooltip-transition-in:														margin 0.5s ease, opacity 0.5s ease;
+@tooltip-transition-out:													margin 0.5s ease, opacity 0.5s ease;
 
+@tooltip-padding:															@primary-margin * 0.25;
+@tooltip-padding-screen-small:												@primary-margin-screen-small * 0.25;
+@tooltip-padding-screen-medium:												@primary-margin-screen-medium * 0.25;
+@tooltip-padding-screen-large:												@primary-margin-screen-large * 0.25;
 
+/* ---------------------------------------------------------------------------------------------------- */
+/* Styling                                                                                              */
+/* ---------------------------------------------------------------------------------------------------- */
 
+@tooltip-border-radius:														5px;
+@tooltip-text-color:														@white;
+@tooltip-text-shadow:														none;
+@tooltip-background-color:													rgba(0, 0, 0, 0.8);
+@tooltip-background-gradient-top-color:										none;
+@tooltip-background-gradient-bottom-color:									none;
+@tooltip-border-color:														none;
+@tooltip-shadow:															none;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Notch                                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@tooltip-notch-size:														6px;
 
 
 
