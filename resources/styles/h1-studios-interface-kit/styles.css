@@ -3635,7 +3635,7 @@ h4 .icon,
 h5 .icon,
 .h5-clone .icon,
 h6 .h6-clone .icon {
-  vertical-align: text-top;
+  vertical-align: middle;
 }
 h1:first-child,
 .h1-clone:first-child,
@@ -3696,57 +3696,47 @@ h1 a:active,
 h1 .icon,
 .h1-clone .icon {
   margin-right: 10px;
-  margin-top: 9.5px;
-  margin-bottom: 9.5px;
+  margin-top: 0px;
 }
 h1 .icon.icon-small,
 .h1-clone .icon.icon-small {
   margin-right: 10px;
-  margin-top: 7.5px;
-  margin-bottom: 7.5px;
+  margin-top: 0px;
 }
 h1 .icon.icon-medium,
 .h1-clone .icon.icon-medium {
   margin-right: 10px;
-  margin-top: 5.5px;
-  margin-bottom: 5.5px;
+  margin-top: 0px;
 }
 h1 .icon.icon-large,
 .h1-clone .icon.icon-large {
   margin-right: 10px;
-  margin-top: 1.5px;
-  margin-bottom: 1.5px;
+  margin-top: 0px;
 }
 h1 .icon.icon-jumbo,
 .h1-clone .icon.icon-jumbo {
   margin-right: 10px;
-  margin-top: -2.5px;
-  margin-bottom: -2.5px;
+  margin-top: 0px;
 }
 h1.has-icon,
 .h1-clone.has-icon {
-  padding-top: -9.5px;
-  padding-bottom: -9.5px;
+  padding-top: 0px;
 }
 h1.has-icon.has-icon-small,
 .h1-clone.has-icon.has-icon-small {
-  padding-top: -7.5px;
-  padding-bottom: -7.5px;
+  padding-top: 0px;
 }
 h1.has-icon.has-icon-medium,
 .h1-clone.has-icon.has-icon-medium {
-  padding-top: -5.5px;
-  padding-bottom: -5.5px;
+  padding-top: 0px;
 }
 h1.has-icon.has-icon-large,
 .h1-clone.has-icon.has-icon-large {
-  padding-top: -1.5px;
-  padding-bottom: -1.5px;
+  padding-top: 0px;
 }
 h1.has-icon.has-icon-jumbo,
 .h1-clone.has-icon.has-icon-jumbo {
-  padding-top: 2.5px;
-  padding-bottom: 2.5px;
+  padding-top: 0px;
 }
 h1.emphasis,
 .h1-clone.emphasis,
@@ -3919,57 +3909,47 @@ h2 a:active,
 h2 .icon,
 .h2-clone .icon {
   margin-right: 10px;
-  margin-top: 5.5px;
-  margin-bottom: 5.5px;
+  margin-top: 0px;
 }
 h2 .icon.icon-small,
 .h2-clone .icon.icon-small {
   margin-right: 10px;
-  margin-top: 3.5px;
-  margin-bottom: 3.5px;
+  margin-top: 0px;
 }
 h2 .icon.icon-medium,
 .h2-clone .icon.icon-medium {
   margin-right: 10px;
-  margin-top: 1.5px;
-  margin-bottom: 1.5px;
+  margin-top: 0px;
 }
 h2 .icon.icon-large,
 .h2-clone .icon.icon-large {
   margin-right: 10px;
-  margin-top: -2.5px;
-  margin-bottom: -2.5px;
+  margin-top: 0px;
 }
 h2 .icon.icon-jumbo,
 .h2-clone .icon.icon-jumbo {
   margin-right: 10px;
-  margin-top: -6.5px;
-  margin-bottom: -6.5px;
+  margin-top: 0px;
 }
 h2.has-icon,
 .h2-clone.has-icon {
-  padding-top: -5.5px;
-  padding-bottom: -5.5px;
+  padding-top: 0px;
 }
 h2.has-icon.has-icon-small,
 .h2-clone.has-icon.has-icon-small {
-  padding-top: -3.5px;
-  padding-bottom: -3.5px;
+  padding-top: 0px;
 }
 h2.has-icon.has-icon-medium,
 .h2-clone.has-icon.has-icon-medium {
-  padding-top: -1.5px;
-  padding-bottom: -1.5px;
+  padding-top: 0px;
 }
 h2.has-icon.has-icon-large,
 .h2-clone.has-icon.has-icon-large {
-  padding-top: 2.5px;
-  padding-bottom: 2.5px;
+  padding-top: 0px;
 }
 h2.has-icon.has-icon-jumbo,
 .h2-clone.has-icon.has-icon-jumbo {
-  padding-top: 6.5px;
-  padding-bottom: 6.5px;
+  padding-top: 0px;
 }
 h2.emphasis,
 .h2-clone.emphasis,
@@ -4142,57 +4122,47 @@ h3 a:active,
 h3 .icon,
 .h3-clone .icon {
   margin-right: 10px;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 0px;
 }
 h3 .icon.icon-small,
 .h3-clone .icon.icon-small {
   margin-right: 10px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 0px;
 }
 h3 .icon.icon-medium,
 .h3-clone .icon.icon-medium {
   margin-right: 10px;
   margin-top: 0px;
-  margin-bottom: 0px;
 }
 h3 .icon.icon-large,
 .h3-clone .icon.icon-large {
   margin-right: 10px;
-  margin-top: -4px;
-  margin-bottom: -4px;
+  margin-top: 0px;
 }
 h3 .icon.icon-jumbo,
 .h3-clone .icon.icon-jumbo {
   margin-right: 10px;
-  margin-top: -8px;
-  margin-bottom: -8px;
+  margin-top: 0px;
 }
 h3.has-icon,
 .h3-clone.has-icon {
-  padding-top: -4px;
-  padding-bottom: -4px;
+  padding-top: 0px;
 }
 h3.has-icon.has-icon-small,
 .h3-clone.has-icon.has-icon-small {
-  padding-top: -2px;
-  padding-bottom: -2px;
+  padding-top: 0px;
 }
 h3.has-icon.has-icon-medium,
 .h3-clone.has-icon.has-icon-medium {
   padding-top: 0px;
-  padding-bottom: 0px;
 }
 h3.has-icon.has-icon-large,
 .h3-clone.has-icon.has-icon-large {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 0px;
 }
 h3.has-icon.has-icon-jumbo,
 .h3-clone.has-icon.has-icon-jumbo {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0px;
 }
 h3.emphasis,
 .h3-clone.emphasis,
@@ -4365,57 +4335,47 @@ h4 a:active,
 h4 .icon,
 .h4-clone .icon {
   margin-right: 10px;
-  margin-top: 2.5px;
-  margin-bottom: 2.5px;
+  margin-top: 0px;
 }
 h4 .icon.icon-small,
 .h4-clone .icon.icon-small {
   margin-right: 10px;
-  margin-top: 0.5px;
-  margin-bottom: 0.5px;
+  margin-top: 0px;
 }
 h4 .icon.icon-medium,
 .h4-clone .icon.icon-medium {
   margin-right: 10px;
-  margin-top: -1.5px;
-  margin-bottom: -1.5px;
+  margin-top: 0px;
 }
 h4 .icon.icon-large,
 .h4-clone .icon.icon-large {
   margin-right: 10px;
-  margin-top: -5.5px;
-  margin-bottom: -5.5px;
+  margin-top: 0px;
 }
 h4 .icon.icon-jumbo,
 .h4-clone .icon.icon-jumbo {
   margin-right: 10px;
-  margin-top: -9.5px;
-  margin-bottom: -9.5px;
+  margin-top: 0px;
 }
 h4.has-icon,
 .h4-clone.has-icon {
-  padding-top: -2.5px;
-  padding-bottom: -2.5px;
+  padding-top: 0px;
 }
 h4.has-icon.has-icon-small,
 .h4-clone.has-icon.has-icon-small {
-  padding-top: -0.5px;
-  padding-bottom: -0.5px;
+  padding-top: 0px;
 }
 h4.has-icon.has-icon-medium,
 .h4-clone.has-icon.has-icon-medium {
-  padding-top: 1.5px;
-  padding-bottom: 1.5px;
+  padding-top: 0px;
 }
 h4.has-icon.has-icon-large,
 .h4-clone.has-icon.has-icon-large {
-  padding-top: 5.5px;
-  padding-bottom: 5.5px;
+  padding-top: 0px;
 }
 h4.has-icon.has-icon-jumbo,
 .h4-clone.has-icon.has-icon-jumbo {
-  padding-top: 9.5px;
-  padding-bottom: 9.5px;
+  padding-top: 0px;
 }
 h4.emphasis,
 .h4-clone.emphasis,
@@ -4588,57 +4548,47 @@ h5 a:active,
 h5 .icon,
 .h5-clone .icon {
   margin-right: 10px;
-  margin-top: 2.5px;
-  margin-bottom: 2.5px;
+  margin-top: 0px;
 }
 h5 .icon.icon-small,
 .h5-clone .icon.icon-small {
   margin-right: 10px;
-  margin-top: 0.5px;
-  margin-bottom: 0.5px;
+  margin-top: 0px;
 }
 h5 .icon.icon-medium,
 .h5-clone .icon.icon-medium {
   margin-right: 10px;
-  margin-top: -1.5px;
-  margin-bottom: -1.5px;
+  margin-top: 0px;
 }
 h5 .icon.icon-large,
 .h5-clone .icon.icon-large {
   margin-right: 10px;
-  margin-top: -5.5px;
-  margin-bottom: -5.5px;
+  margin-top: 0px;
 }
 h5 .icon.icon-jumbo,
 .h5-clone .icon.icon-jumbo {
   margin-right: 10px;
-  margin-top: -9.5px;
-  margin-bottom: -9.5px;
+  margin-top: 0px;
 }
 h5.has-icon,
 .h5-clone.has-icon {
-  padding-top: -2.5px;
-  padding-bottom: -2.5px;
+  padding-top: 0px;
 }
 h5.has-icon.has-icon-small,
 .h5-clone.has-icon.has-icon-small {
-  padding-top: -0.5px;
-  padding-bottom: -0.5px;
+  padding-top: 0px;
 }
 h5.has-icon.has-icon-medium,
 .h5-clone.has-icon.has-icon-medium {
-  padding-top: 1.5px;
-  padding-bottom: 1.5px;
+  padding-top: 0px;
 }
 h5.has-icon.has-icon-large,
 .h5-clone.has-icon.has-icon-large {
-  padding-top: 5.5px;
-  padding-bottom: 5.5px;
+  padding-top: 0px;
 }
 h5.has-icon.has-icon-jumbo,
 .h5-clone.has-icon.has-icon-jumbo {
-  padding-top: 9.5px;
-  padding-bottom: 9.5px;
+  padding-top: 0px;
 }
 h5.emphasis,
 .h5-clone.emphasis,
@@ -4811,57 +4761,47 @@ h6 a:active,
 h6 .icon,
 .h6-clone .icon {
   margin-right: 10px;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-top: 0px;
 }
 h6 .icon.icon-small,
 .h6-clone .icon.icon-small {
   margin-right: 10px;
-  margin-top: -1px;
-  margin-bottom: -1px;
+  margin-top: 0px;
 }
 h6 .icon.icon-medium,
 .h6-clone .icon.icon-medium {
   margin-right: 10px;
-  margin-top: -3px;
-  margin-bottom: -3px;
+  margin-top: 0px;
 }
 h6 .icon.icon-large,
 .h6-clone .icon.icon-large {
   margin-right: 10px;
-  margin-top: -7px;
-  margin-bottom: -7px;
+  margin-top: 0px;
 }
 h6 .icon.icon-jumbo,
 .h6-clone .icon.icon-jumbo {
   margin-right: 10px;
-  margin-top: -11px;
-  margin-bottom: -11px;
+  margin-top: 0px;
 }
 h6.has-icon,
 .h6-clone.has-icon {
-  padding-top: -1px;
-  padding-bottom: -1px;
+  padding-top: 0px;
 }
 h6.has-icon.has-icon-small,
 .h6-clone.has-icon.has-icon-small {
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding-top: 0px;
 }
 h6.has-icon.has-icon-medium,
 .h6-clone.has-icon.has-icon-medium {
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 0px;
 }
 h6.has-icon.has-icon-large,
 .h6-clone.has-icon.has-icon-large {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 0px;
 }
 h6.has-icon.has-icon-jumbo,
 .h6-clone.has-icon.has-icon-jumbo {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 0px;
 }
 h6.emphasis,
 .h6-clone.emphasis,
@@ -5485,57 +5425,47 @@ blockquote:after {
   h1 .icon,
   .h1-clone .icon {
     margin-right: 14px;
-    margin-top: 14.899999999999999px;
-    margin-bottom: 14.899999999999999px;
+    margin-top: 0px;
   }
   h1 .icon.icon-small,
   .h1-clone .icon.icon-small {
     margin-right: 14px;
-    margin-top: 12.899999999999999px;
-    margin-bottom: 12.899999999999999px;
+    margin-top: 0px;
   }
   h1 .icon.icon-medium,
   .h1-clone .icon.icon-medium {
     margin-right: 14px;
-    margin-top: 10.899999999999999px;
-    margin-bottom: 10.899999999999999px;
+    margin-top: 0px;
   }
   h1 .icon.icon-large,
   .h1-clone .icon.icon-large {
     margin-right: 14px;
-    margin-top: 6.899999999999999px;
-    margin-bottom: 6.899999999999999px;
+    margin-top: 0px;
   }
   h1 .icon.icon-jumbo,
   .h1-clone .icon.icon-jumbo {
     margin-right: 14px;
-    margin-top: 2.8999999999999986px;
-    margin-bottom: 2.8999999999999986px;
+    margin-top: 0px;
   }
   h1.has-icon,
   .h1-clone.has-icon {
-    padding-top: -14.899999999999999px;
-    padding-bottom: -14.899999999999999px;
+    padding-top: 0px;
   }
   h1.has-icon.has-icon-small,
   .h1-clone.has-icon.has-icon-small {
-    padding-top: -12.899999999999999px;
-    padding-bottom: -12.899999999999999px;
+    padding-top: 0px;
   }
   h1.has-icon.has-icon-medium,
   .h1-clone.has-icon.has-icon-medium {
-    padding-top: -10.899999999999999px;
-    padding-bottom: -10.899999999999999px;
+    padding-top: 0px;
   }
   h1.has-icon.has-icon-large,
   .h1-clone.has-icon.has-icon-large {
-    padding-top: -6.899999999999999px;
-    padding-bottom: -6.899999999999999px;
+    padding-top: 0px;
   }
   h1.has-icon.has-icon-jumbo,
   .h1-clone.has-icon.has-icon-jumbo {
-    padding-top: -2.8999999999999986px;
-    padding-bottom: -2.8999999999999986px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5559,57 +5489,47 @@ blockquote:after {
   h2 .icon,
   .h2-clone .icon {
     margin-right: 13px;
-    margin-top: 8.35px;
-    margin-bottom: 8.35px;
+    margin-top: 0px;
   }
   h2 .icon.icon-small,
   .h2-clone .icon.icon-small {
     margin-right: 13px;
-    margin-top: 6.35px;
-    margin-bottom: 6.35px;
+    margin-top: 0px;
   }
   h2 .icon.icon-medium,
   .h2-clone .icon.icon-medium {
     margin-right: 13px;
-    margin-top: 4.35px;
-    margin-bottom: 4.35px;
+    margin-top: 0px;
   }
   h2 .icon.icon-large,
   .h2-clone .icon.icon-large {
     margin-right: 13px;
-    margin-top: 0.34999999999999964px;
-    margin-bottom: 0.34999999999999964px;
+    margin-top: 0px;
   }
   h2 .icon.icon-jumbo,
   .h2-clone .icon.icon-jumbo {
     margin-right: 13px;
-    margin-top: -3.6500000000000004px;
-    margin-bottom: -3.6500000000000004px;
+    margin-top: 0px;
   }
   h2.has-icon,
   .h2-clone.has-icon {
-    padding-top: -8.35px;
-    padding-bottom: -8.35px;
+    padding-top: 0px;
   }
   h2.has-icon.has-icon-small,
   .h2-clone.has-icon.has-icon-small {
-    padding-top: -6.35px;
-    padding-bottom: -6.35px;
+    padding-top: 0px;
   }
   h2.has-icon.has-icon-medium,
   .h2-clone.has-icon.has-icon-medium {
-    padding-top: -4.35px;
-    padding-bottom: -4.35px;
+    padding-top: 0px;
   }
   h2.has-icon.has-icon-large,
   .h2-clone.has-icon.has-icon-large {
-    padding-top: -0.34999999999999964px;
-    padding-bottom: -0.34999999999999964px;
+    padding-top: 0px;
   }
   h2.has-icon.has-icon-jumbo,
   .h2-clone.has-icon.has-icon-jumbo {
-    padding-top: 3.6500000000000004px;
-    padding-bottom: 3.6500000000000004px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5633,57 +5553,47 @@ blockquote:after {
   h3 .icon,
   .h3-clone .icon {
     margin-right: 12px;
-    margin-top: 5.6px;
-    margin-bottom: 5.6px;
+    margin-top: 0px;
   }
   h3 .icon.icon-small,
   .h3-clone .icon.icon-small {
     margin-right: 12px;
-    margin-top: 3.5999999999999996px;
-    margin-bottom: 3.5999999999999996px;
+    margin-top: 0px;
   }
   h3 .icon.icon-medium,
   .h3-clone .icon.icon-medium {
     margin-right: 12px;
-    margin-top: 1.5999999999999996px;
-    margin-bottom: 1.5999999999999996px;
+    margin-top: 0px;
   }
   h3 .icon.icon-large,
   .h3-clone .icon.icon-large {
     margin-right: 12px;
-    margin-top: -2.4000000000000004px;
-    margin-bottom: -2.4000000000000004px;
+    margin-top: 0px;
   }
   h3 .icon.icon-jumbo,
   .h3-clone .icon.icon-jumbo {
     margin-right: 12px;
-    margin-top: -6.4px;
-    margin-bottom: -6.4px;
+    margin-top: 0px;
   }
   h3.has-icon,
   .h3-clone.has-icon {
-    padding-top: -5.6px;
-    padding-bottom: -5.6px;
+    padding-top: 0px;
   }
   h3.has-icon.has-icon-small,
   .h3-clone.has-icon.has-icon-small {
-    padding-top: -3.5999999999999996px;
-    padding-bottom: -3.5999999999999996px;
+    padding-top: 0px;
   }
   h3.has-icon.has-icon-medium,
   .h3-clone.has-icon.has-icon-medium {
-    padding-top: -1.5999999999999996px;
-    padding-bottom: -1.5999999999999996px;
+    padding-top: 0px;
   }
   h3.has-icon.has-icon-large,
   .h3-clone.has-icon.has-icon-large {
-    padding-top: 2.4000000000000004px;
-    padding-bottom: 2.4000000000000004px;
+    padding-top: 0px;
   }
   h3.has-icon.has-icon-jumbo,
   .h3-clone.has-icon.has-icon-jumbo {
-    padding-top: 6.4px;
-    padding-bottom: 6.4px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5707,57 +5617,47 @@ blockquote:after {
   h4 .icon,
   .h4-clone .icon {
     margin-right: 11px;
-    margin-top: 3.1500000000000004px;
-    margin-bottom: 3.1500000000000004px;
+    margin-top: 0px;
   }
   h4 .icon.icon-small,
   .h4-clone .icon.icon-small {
     margin-right: 11px;
-    margin-top: 1.1500000000000004px;
-    margin-bottom: 1.1500000000000004px;
+    margin-top: 0px;
   }
   h4 .icon.icon-medium,
   .h4-clone .icon.icon-medium {
     margin-right: 11px;
-    margin-top: -0.8499999999999996px;
-    margin-bottom: -0.8499999999999996px;
+    margin-top: 0px;
   }
   h4 .icon.icon-large,
   .h4-clone .icon.icon-large {
     margin-right: 11px;
-    margin-top: -4.85px;
-    margin-bottom: -4.85px;
+    margin-top: 0px;
   }
   h4 .icon.icon-jumbo,
   .h4-clone .icon.icon-jumbo {
     margin-right: 11px;
-    margin-top: -8.85px;
-    margin-bottom: -8.85px;
+    margin-top: 0px;
   }
   h4.has-icon,
   .h4-clone.has-icon {
-    padding-top: -3.1500000000000004px;
-    padding-bottom: -3.1500000000000004px;
+    padding-top: 0px;
   }
   h4.has-icon.has-icon-small,
   .h4-clone.has-icon.has-icon-small {
-    padding-top: -1.1500000000000004px;
-    padding-bottom: -1.1500000000000004px;
+    padding-top: 0px;
   }
   h4.has-icon.has-icon-medium,
   .h4-clone.has-icon.has-icon-medium {
-    padding-top: 0.8499999999999996px;
-    padding-bottom: 0.8499999999999996px;
+    padding-top: 0px;
   }
   h4.has-icon.has-icon-large,
   .h4-clone.has-icon.has-icon-large {
-    padding-top: 4.85px;
-    padding-bottom: 4.85px;
+    padding-top: 0px;
   }
   h4.has-icon.has-icon-jumbo,
   .h4-clone.has-icon.has-icon-jumbo {
-    padding-top: 8.85px;
-    padding-bottom: 8.85px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5781,57 +5681,47 @@ blockquote:after {
   h5 .icon,
   .h5-clone .icon {
     margin-right: 10px;
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
+    margin-top: 0px;
   }
   h5 .icon.icon-small,
   .h5-clone .icon.icon-small {
     margin-right: 10px;
-    margin-top: 0.5px;
-    margin-bottom: 0.5px;
+    margin-top: 0px;
   }
   h5 .icon.icon-medium,
   .h5-clone .icon.icon-medium {
     margin-right: 10px;
-    margin-top: -1.5px;
-    margin-bottom: -1.5px;
+    margin-top: 0px;
   }
   h5 .icon.icon-large,
   .h5-clone .icon.icon-large {
     margin-right: 10px;
-    margin-top: -5.5px;
-    margin-bottom: -5.5px;
+    margin-top: 0px;
   }
   h5 .icon.icon-jumbo,
   .h5-clone .icon.icon-jumbo {
     margin-right: 10px;
-    margin-top: -9.5px;
-    margin-bottom: -9.5px;
+    margin-top: 0px;
   }
   h5.has-icon,
   .h5-clone.has-icon {
-    padding-top: -2.5px;
-    padding-bottom: -2.5px;
+    padding-top: 0px;
   }
   h5.has-icon.has-icon-small,
   .h5-clone.has-icon.has-icon-small {
-    padding-top: -0.5px;
-    padding-bottom: -0.5px;
+    padding-top: 0px;
   }
   h5.has-icon.has-icon-medium,
   .h5-clone.has-icon.has-icon-medium {
-    padding-top: 1.5px;
-    padding-bottom: 1.5px;
+    padding-top: 0px;
   }
   h5.has-icon.has-icon-large,
   .h5-clone.has-icon.has-icon-large {
-    padding-top: 5.5px;
-    padding-bottom: 5.5px;
+    padding-top: 0px;
   }
   h5.has-icon.has-icon-jumbo,
   .h5-clone.has-icon.has-icon-jumbo {
-    padding-top: 9.5px;
-    padding-bottom: 9.5px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5855,57 +5745,47 @@ blockquote:after {
   h6 .icon,
   .h6-clone .icon {
     margin-right: 10px;
-    margin-top: 1px;
-    margin-bottom: 1px;
+    margin-top: 0px;
   }
   h6 .icon.icon-small,
   .h6-clone .icon.icon-small {
     margin-right: 10px;
-    margin-top: -1px;
-    margin-bottom: -1px;
+    margin-top: 0px;
   }
   h6 .icon.icon-medium,
   .h6-clone .icon.icon-medium {
     margin-right: 10px;
-    margin-top: -3px;
-    margin-bottom: -3px;
+    margin-top: 0px;
   }
   h6 .icon.icon-large,
   .h6-clone .icon.icon-large {
     margin-right: 10px;
-    margin-top: -7px;
-    margin-bottom: -7px;
+    margin-top: 0px;
   }
   h6 .icon.icon-jumbo,
   .h6-clone .icon.icon-jumbo {
     margin-right: 10px;
-    margin-top: -11px;
-    margin-bottom: -11px;
+    margin-top: 0px;
   }
   h6.has-icon,
   .h6-clone.has-icon {
-    padding-top: -1px;
-    padding-bottom: -1px;
+    padding-top: 0px;
   }
   h6.has-icon.has-icon-small,
   .h6-clone.has-icon.has-icon-small {
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 0px;
   }
   h6.has-icon.has-icon-medium,
   .h6-clone.has-icon.has-icon-medium {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 0px;
   }
   h6.has-icon.has-icon-large,
   .h6-clone.has-icon.has-icon-large {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 0px;
   }
   h6.has-icon.has-icon-jumbo,
   .h6-clone.has-icon.has-icon-jumbo {
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6138,57 +6018,47 @@ blockquote:after {
   h1 .icon,
   .h1-clone .icon {
     margin-right: 17px;
-    margin-top: 18.95px;
-    margin-bottom: 18.95px;
+    margin-top: 0px;
   }
   h1 .icon.icon-small,
   .h1-clone .icon.icon-small {
     margin-right: 17px;
-    margin-top: 16.95px;
-    margin-bottom: 16.95px;
+    margin-top: 0px;
   }
   h1 .icon.icon-medium,
   .h1-clone .icon.icon-medium {
     margin-right: 17px;
-    margin-top: 14.95px;
-    margin-bottom: 14.95px;
+    margin-top: 0px;
   }
   h1 .icon.icon-large,
   .h1-clone .icon.icon-large {
     margin-right: 17px;
-    margin-top: 10.95px;
-    margin-bottom: 10.95px;
+    margin-top: 0px;
   }
   h1 .icon.icon-jumbo,
   .h1-clone .icon.icon-jumbo {
     margin-right: 17px;
-    margin-top: 6.949999999999999px;
-    margin-bottom: 6.949999999999999px;
+    margin-top: 0px;
   }
   h1.has-icon,
   .h1-clone.has-icon {
-    padding-top: -18.95px;
-    padding-bottom: -18.95px;
+    padding-top: 0px;
   }
   h1.has-icon.has-icon-small,
   .h1-clone.has-icon.has-icon-small {
-    padding-top: -16.95px;
-    padding-bottom: -16.95px;
+    padding-top: 0px;
   }
   h1.has-icon.has-icon-medium,
   .h1-clone.has-icon.has-icon-medium {
-    padding-top: -14.95px;
-    padding-bottom: -14.95px;
+    padding-top: 0px;
   }
   h1.has-icon.has-icon-large,
   .h1-clone.has-icon.has-icon-large {
-    padding-top: -10.95px;
-    padding-bottom: -10.95px;
+    padding-top: 0px;
   }
   h1.has-icon.has-icon-jumbo,
   .h1-clone.has-icon.has-icon-jumbo {
-    padding-top: -6.949999999999999px;
-    padding-bottom: -6.949999999999999px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6212,57 +6082,47 @@ blockquote:after {
   h2 .icon,
   .h2-clone .icon {
     margin-right: 17px;
-    margin-top: 12.149999999999999px;
-    margin-bottom: 12.149999999999999px;
+    margin-top: 0px;
   }
   h2 .icon.icon-small,
   .h2-clone .icon.icon-small {
     margin-right: 17px;
-    margin-top: 10.149999999999999px;
-    margin-bottom: 10.149999999999999px;
+    margin-top: 0px;
   }
   h2 .icon.icon-medium,
   .h2-clone .icon.icon-medium {
     margin-right: 17px;
-    margin-top: 8.149999999999999px;
-    margin-bottom: 8.149999999999999px;
+    margin-top: 0px;
   }
   h2 .icon.icon-large,
   .h2-clone .icon.icon-large {
     margin-right: 17px;
-    margin-top: 4.149999999999999px;
-    margin-bottom: 4.149999999999999px;
+    margin-top: 0px;
   }
   h2 .icon.icon-jumbo,
   .h2-clone .icon.icon-jumbo {
     margin-right: 17px;
-    margin-top: 0.14999999999999858px;
-    margin-bottom: 0.14999999999999858px;
+    margin-top: 0px;
   }
   h2.has-icon,
   .h2-clone.has-icon {
-    padding-top: -12.149999999999999px;
-    padding-bottom: -12.149999999999999px;
+    padding-top: 0px;
   }
   h2.has-icon.has-icon-small,
   .h2-clone.has-icon.has-icon-small {
-    padding-top: -10.149999999999999px;
-    padding-bottom: -10.149999999999999px;
+    padding-top: 0px;
   }
   h2.has-icon.has-icon-medium,
   .h2-clone.has-icon.has-icon-medium {
-    padding-top: -8.149999999999999px;
-    padding-bottom: -8.149999999999999px;
+    padding-top: 0px;
   }
   h2.has-icon.has-icon-large,
   .h2-clone.has-icon.has-icon-large {
-    padding-top: -4.149999999999999px;
-    padding-bottom: -4.149999999999999px;
+    padding-top: 0px;
   }
   h2.has-icon.has-icon-jumbo,
   .h2-clone.has-icon.has-icon-jumbo {
-    padding-top: -0.14999999999999858px;
-    padding-bottom: -0.14999999999999858px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6286,57 +6146,47 @@ blockquote:after {
   h3 .icon,
   .h3-clone .icon {
     margin-right: 14px;
-    margin-top: 7.199999999999999px;
-    margin-bottom: 7.199999999999999px;
+    margin-top: 0px;
   }
   h3 .icon.icon-small,
   .h3-clone .icon.icon-small {
     margin-right: 14px;
-    margin-top: 5.199999999999999px;
-    margin-bottom: 5.199999999999999px;
+    margin-top: 0px;
   }
   h3 .icon.icon-medium,
   .h3-clone .icon.icon-medium {
     margin-right: 14px;
-    margin-top: 3.1999999999999993px;
-    margin-bottom: 3.1999999999999993px;
+    margin-top: 0px;
   }
   h3 .icon.icon-large,
   .h3-clone .icon.icon-large {
     margin-right: 14px;
-    margin-top: -0.8000000000000007px;
-    margin-bottom: -0.8000000000000007px;
+    margin-top: 0px;
   }
   h3 .icon.icon-jumbo,
   .h3-clone .icon.icon-jumbo {
     margin-right: 14px;
-    margin-top: -4.800000000000001px;
-    margin-bottom: -4.800000000000001px;
+    margin-top: 0px;
   }
   h3.has-icon,
   .h3-clone.has-icon {
-    padding-top: -7.199999999999999px;
-    padding-bottom: -7.199999999999999px;
+    padding-top: 0px;
   }
   h3.has-icon.has-icon-small,
   .h3-clone.has-icon.has-icon-small {
-    padding-top: -5.199999999999999px;
-    padding-bottom: -5.199999999999999px;
+    padding-top: 0px;
   }
   h3.has-icon.has-icon-medium,
   .h3-clone.has-icon.has-icon-medium {
-    padding-top: -3.1999999999999993px;
-    padding-bottom: -3.1999999999999993px;
+    padding-top: 0px;
   }
   h3.has-icon.has-icon-large,
   .h3-clone.has-icon.has-icon-large {
-    padding-top: 0.8000000000000007px;
-    padding-bottom: 0.8000000000000007px;
+    padding-top: 0px;
   }
   h3.has-icon.has-icon-jumbo,
   .h3-clone.has-icon.has-icon-jumbo {
-    padding-top: 4.800000000000001px;
-    padding-bottom: 4.800000000000001px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6360,57 +6210,47 @@ blockquote:after {
   h4 .icon,
   .h4-clone .icon {
     margin-right: 12px;
-    margin-top: 3.8px;
-    margin-bottom: 3.8px;
+    margin-top: 0px;
   }
   h4 .icon.icon-small,
   .h4-clone .icon.icon-small {
     margin-right: 12px;
-    margin-top: 1.7999999999999998px;
-    margin-bottom: 1.7999999999999998px;
+    margin-top: 0px;
   }
   h4 .icon.icon-medium,
   .h4-clone .icon.icon-medium {
     margin-right: 12px;
-    margin-top: -0.20000000000000018px;
-    margin-bottom: -0.20000000000000018px;
+    margin-top: 0px;
   }
   h4 .icon.icon-large,
   .h4-clone .icon.icon-large {
     margin-right: 12px;
-    margin-top: -4.2px;
-    margin-bottom: -4.2px;
+    margin-top: 0px;
   }
   h4 .icon.icon-jumbo,
   .h4-clone .icon.icon-jumbo {
     margin-right: 12px;
-    margin-top: -8.2px;
-    margin-bottom: -8.2px;
+    margin-top: 0px;
   }
   h4.has-icon,
   .h4-clone.has-icon {
-    padding-top: -3.8px;
-    padding-bottom: -3.8px;
+    padding-top: 0px;
   }
   h4.has-icon.has-icon-small,
   .h4-clone.has-icon.has-icon-small {
-    padding-top: -1.7999999999999998px;
-    padding-bottom: -1.7999999999999998px;
+    padding-top: 0px;
   }
   h4.has-icon.has-icon-medium,
   .h4-clone.has-icon.has-icon-medium {
-    padding-top: 0.20000000000000018px;
-    padding-bottom: 0.20000000000000018px;
+    padding-top: 0px;
   }
   h4.has-icon.has-icon-large,
   .h4-clone.has-icon.has-icon-large {
-    padding-top: 4.2px;
-    padding-bottom: 4.2px;
+    padding-top: 0px;
   }
   h4.has-icon.has-icon-jumbo,
   .h4-clone.has-icon.has-icon-jumbo {
-    padding-top: 8.2px;
-    padding-bottom: 8.2px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6434,57 +6274,47 @@ blockquote:after {
   h5 .icon,
   .h5-clone .icon {
     margin-right: 11px;
-    margin-top: 3.1500000000000004px;
-    margin-bottom: 3.1500000000000004px;
+    margin-top: 0px;
   }
   h5 .icon.icon-small,
   .h5-clone .icon.icon-small {
     margin-right: 11px;
-    margin-top: 1.1500000000000004px;
-    margin-bottom: 1.1500000000000004px;
+    margin-top: 0px;
   }
   h5 .icon.icon-medium,
   .h5-clone .icon.icon-medium {
     margin-right: 11px;
-    margin-top: -0.8499999999999996px;
-    margin-bottom: -0.8499999999999996px;
+    margin-top: 0px;
   }
   h5 .icon.icon-large,
   .h5-clone .icon.icon-large {
     margin-right: 11px;
-    margin-top: -4.85px;
-    margin-bottom: -4.85px;
+    margin-top: 0px;
   }
   h5 .icon.icon-jumbo,
   .h5-clone .icon.icon-jumbo {
     margin-right: 11px;
-    margin-top: -8.85px;
-    margin-bottom: -8.85px;
+    margin-top: 0px;
   }
   h5.has-icon,
   .h5-clone.has-icon {
-    padding-top: -3.1500000000000004px;
-    padding-bottom: -3.1500000000000004px;
+    padding-top: 0px;
   }
   h5.has-icon.has-icon-small,
   .h5-clone.has-icon.has-icon-small {
-    padding-top: -1.1500000000000004px;
-    padding-bottom: -1.1500000000000004px;
+    padding-top: 0px;
   }
   h5.has-icon.has-icon-medium,
   .h5-clone.has-icon.has-icon-medium {
-    padding-top: 0.8499999999999996px;
-    padding-bottom: 0.8499999999999996px;
+    padding-top: 0px;
   }
   h5.has-icon.has-icon-large,
   .h5-clone.has-icon.has-icon-large {
-    padding-top: 4.85px;
-    padding-bottom: 4.85px;
+    padding-top: 0px;
   }
   h5.has-icon.has-icon-jumbo,
   .h5-clone.has-icon.has-icon-jumbo {
-    padding-top: 8.85px;
-    padding-bottom: 8.85px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6508,57 +6338,47 @@ blockquote:after {
   h6 .icon,
   .h6-clone .icon {
     margin-right: 11px;
-    margin-top: 1.5px;
-    margin-bottom: 1.5px;
+    margin-top: 0px;
   }
   h6 .icon.icon-small,
   .h6-clone .icon.icon-small {
     margin-right: 11px;
-    margin-top: -0.5px;
-    margin-bottom: -0.5px;
+    margin-top: 0px;
   }
   h6 .icon.icon-medium,
   .h6-clone .icon.icon-medium {
     margin-right: 11px;
-    margin-top: -2.5px;
-    margin-bottom: -2.5px;
+    margin-top: 0px;
   }
   h6 .icon.icon-large,
   .h6-clone .icon.icon-large {
     margin-right: 11px;
-    margin-top: -6.5px;
-    margin-bottom: -6.5px;
+    margin-top: 0px;
   }
   h6 .icon.icon-jumbo,
   .h6-clone .icon.icon-jumbo {
     margin-right: 11px;
-    margin-top: -10.5px;
-    margin-bottom: -10.5px;
+    margin-top: 0px;
   }
   h6.has-icon,
   .h6-clone.has-icon {
-    padding-top: -1.5px;
-    padding-bottom: -1.5px;
+    padding-top: 0px;
   }
   h6.has-icon.has-icon-small,
   .h6-clone.has-icon.has-icon-small {
-    padding-top: 0.5px;
-    padding-bottom: 0.5px;
+    padding-top: 0px;
   }
   h6.has-icon.has-icon-medium,
   .h6-clone.has-icon.has-icon-medium {
-    padding-top: 2.5px;
-    padding-bottom: 2.5px;
+    padding-top: 0px;
   }
   h6.has-icon.has-icon-large,
   .h6-clone.has-icon.has-icon-large {
-    padding-top: 6.5px;
-    padding-bottom: 6.5px;
+    padding-top: 0px;
   }
   h6.has-icon.has-icon-jumbo,
   .h6-clone.has-icon.has-icon-jumbo {
-    padding-top: 10.5px;
-    padding-bottom: 10.5px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6791,57 +6611,47 @@ blockquote:after {
   h1 .icon,
   .h1-clone .icon {
     margin-right: 18px;
-    margin-top: 20.3px;
-    margin-bottom: 20.3px;
+    margin-top: 0px;
   }
   h1 .icon.icon-small,
   .h1-clone .icon.icon-small {
     margin-right: 18px;
-    margin-top: 18.3px;
-    margin-bottom: 18.3px;
+    margin-top: 0px;
   }
   h1 .icon.icon-medium,
   .h1-clone .icon.icon-medium {
     margin-right: 18px;
-    margin-top: 16.3px;
-    margin-bottom: 16.3px;
+    margin-top: 0px;
   }
   h1 .icon.icon-large,
   .h1-clone .icon.icon-large {
     margin-right: 18px;
-    margin-top: 12.3px;
-    margin-bottom: 12.3px;
+    margin-top: 0px;
   }
   h1 .icon.icon-jumbo,
   .h1-clone .icon.icon-jumbo {
     margin-right: 18px;
-    margin-top: 8.3px;
-    margin-bottom: 8.3px;
+    margin-top: 0px;
   }
   h1.has-icon,
   .h1-clone.has-icon {
-    padding-top: -20.3px;
-    padding-bottom: -20.3px;
+    padding-top: 0px;
   }
   h1.has-icon.has-icon-small,
   .h1-clone.has-icon.has-icon-small {
-    padding-top: -18.3px;
-    padding-bottom: -18.3px;
+    padding-top: 0px;
   }
   h1.has-icon.has-icon-medium,
   .h1-clone.has-icon.has-icon-medium {
-    padding-top: -16.3px;
-    padding-bottom: -16.3px;
+    padding-top: 0px;
   }
   h1.has-icon.has-icon-large,
   .h1-clone.has-icon.has-icon-large {
-    padding-top: -12.3px;
-    padding-bottom: -12.3px;
+    padding-top: 0px;
   }
   h1.has-icon.has-icon-jumbo,
   .h1-clone.has-icon.has-icon-jumbo {
-    padding-top: -8.3px;
-    padding-bottom: -8.3px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6865,57 +6675,47 @@ blockquote:after {
   h2 .icon,
   .h2-clone .icon {
     margin-right: 18px;
-    margin-top: 13.100000000000001px;
-    margin-bottom: 13.100000000000001px;
+    margin-top: 0px;
   }
   h2 .icon.icon-small,
   .h2-clone .icon.icon-small {
     margin-right: 18px;
-    margin-top: 11.100000000000001px;
-    margin-bottom: 11.100000000000001px;
+    margin-top: 0px;
   }
   h2 .icon.icon-medium,
   .h2-clone .icon.icon-medium {
     margin-right: 18px;
-    margin-top: 9.100000000000001px;
-    margin-bottom: 9.100000000000001px;
+    margin-top: 0px;
   }
   h2 .icon.icon-large,
   .h2-clone .icon.icon-large {
     margin-right: 18px;
-    margin-top: 5.100000000000001px;
-    margin-bottom: 5.100000000000001px;
+    margin-top: 0px;
   }
   h2 .icon.icon-jumbo,
   .h2-clone .icon.icon-jumbo {
     margin-right: 18px;
-    margin-top: 1.1000000000000014px;
-    margin-bottom: 1.1000000000000014px;
+    margin-top: 0px;
   }
   h2.has-icon,
   .h2-clone.has-icon {
-    padding-top: -13.100000000000001px;
-    padding-bottom: -13.100000000000001px;
+    padding-top: 0px;
   }
   h2.has-icon.has-icon-small,
   .h2-clone.has-icon.has-icon-small {
-    padding-top: -11.100000000000001px;
-    padding-bottom: -11.100000000000001px;
+    padding-top: 0px;
   }
   h2.has-icon.has-icon-medium,
   .h2-clone.has-icon.has-icon-medium {
-    padding-top: -9.100000000000001px;
-    padding-bottom: -9.100000000000001px;
+    padding-top: 0px;
   }
   h2.has-icon.has-icon-large,
   .h2-clone.has-icon.has-icon-large {
-    padding-top: -5.100000000000001px;
-    padding-bottom: -5.100000000000001px;
+    padding-top: 0px;
   }
   h2.has-icon.has-icon-jumbo,
   .h2-clone.has-icon.has-icon-jumbo {
-    padding-top: -1.1000000000000014px;
-    padding-bottom: -1.1000000000000014px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6939,57 +6739,47 @@ blockquote:after {
   h3 .icon,
   .h3-clone .icon {
     margin-right: 15px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 0px;
   }
   h3 .icon.icon-small,
   .h3-clone .icon.icon-small {
     margin-right: 15px;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 0px;
   }
   h3 .icon.icon-medium,
   .h3-clone .icon.icon-medium {
     margin-right: 15px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 0px;
   }
   h3 .icon.icon-large,
   .h3-clone .icon.icon-large {
     margin-right: 15px;
     margin-top: 0px;
-    margin-bottom: 0px;
   }
   h3 .icon.icon-jumbo,
   .h3-clone .icon.icon-jumbo {
     margin-right: 15px;
-    margin-top: -4px;
-    margin-bottom: -4px;
+    margin-top: 0px;
   }
   h3.has-icon,
   .h3-clone.has-icon {
-    padding-top: -8px;
-    padding-bottom: -8px;
+    padding-top: 0px;
   }
   h3.has-icon.has-icon-small,
   .h3-clone.has-icon.has-icon-small {
-    padding-top: -6px;
-    padding-bottom: -6px;
+    padding-top: 0px;
   }
   h3.has-icon.has-icon-medium,
   .h3-clone.has-icon.has-icon-medium {
-    padding-top: -4px;
-    padding-bottom: -4px;
+    padding-top: 0px;
   }
   h3.has-icon.has-icon-large,
   .h3-clone.has-icon.has-icon-large {
     padding-top: 0px;
-    padding-bottom: 0px;
   }
   h3.has-icon.has-icon-jumbo,
   .h3-clone.has-icon.has-icon-jumbo {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -7013,57 +6803,47 @@ blockquote:after {
   h4 .icon,
   .h4-clone .icon {
     margin-right: 13px;
-    margin-top: 4.450000000000001px;
-    margin-bottom: 4.450000000000001px;
+    margin-top: 0px;
   }
   h4 .icon.icon-small,
   .h4-clone .icon.icon-small {
     margin-right: 13px;
-    margin-top: 2.450000000000001px;
-    margin-bottom: 2.450000000000001px;
+    margin-top: 0px;
   }
   h4 .icon.icon-medium,
   .h4-clone .icon.icon-medium {
     margin-right: 13px;
-    margin-top: 0.45000000000000107px;
-    margin-bottom: 0.45000000000000107px;
+    margin-top: 0px;
   }
   h4 .icon.icon-large,
   .h4-clone .icon.icon-large {
     margin-right: 13px;
-    margin-top: -3.549999999999999px;
-    margin-bottom: -3.549999999999999px;
+    margin-top: 0px;
   }
   h4 .icon.icon-jumbo,
   .h4-clone .icon.icon-jumbo {
     margin-right: 13px;
-    margin-top: -7.549999999999999px;
-    margin-bottom: -7.549999999999999px;
+    margin-top: 0px;
   }
   h4.has-icon,
   .h4-clone.has-icon {
-    padding-top: -4.450000000000001px;
-    padding-bottom: -4.450000000000001px;
+    padding-top: 0px;
   }
   h4.has-icon.has-icon-small,
   .h4-clone.has-icon.has-icon-small {
-    padding-top: -2.450000000000001px;
-    padding-bottom: -2.450000000000001px;
+    padding-top: 0px;
   }
   h4.has-icon.has-icon-medium,
   .h4-clone.has-icon.has-icon-medium {
-    padding-top: -0.45000000000000107px;
-    padding-bottom: -0.45000000000000107px;
+    padding-top: 0px;
   }
   h4.has-icon.has-icon-large,
   .h4-clone.has-icon.has-icon-large {
-    padding-top: 3.549999999999999px;
-    padding-bottom: 3.549999999999999px;
+    padding-top: 0px;
   }
   h4.has-icon.has-icon-jumbo,
   .h4-clone.has-icon.has-icon-jumbo {
-    padding-top: 7.549999999999999px;
-    padding-bottom: 7.549999999999999px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -7087,57 +6867,47 @@ blockquote:after {
   h5 .icon,
   .h5-clone .icon {
     margin-right: 12px;
-    margin-top: 3.8px;
-    margin-bottom: 3.8px;
+    margin-top: 0px;
   }
   h5 .icon.icon-small,
   .h5-clone .icon.icon-small {
     margin-right: 12px;
-    margin-top: 1.7999999999999998px;
-    margin-bottom: 1.7999999999999998px;
+    margin-top: 0px;
   }
   h5 .icon.icon-medium,
   .h5-clone .icon.icon-medium {
     margin-right: 12px;
-    margin-top: -0.20000000000000018px;
-    margin-bottom: -0.20000000000000018px;
+    margin-top: 0px;
   }
   h5 .icon.icon-large,
   .h5-clone .icon.icon-large {
     margin-right: 12px;
-    margin-top: -4.2px;
-    margin-bottom: -4.2px;
+    margin-top: 0px;
   }
   h5 .icon.icon-jumbo,
   .h5-clone .icon.icon-jumbo {
     margin-right: 12px;
-    margin-top: -8.2px;
-    margin-bottom: -8.2px;
+    margin-top: 0px;
   }
   h5.has-icon,
   .h5-clone.has-icon {
-    padding-top: -3.8px;
-    padding-bottom: -3.8px;
+    padding-top: 0px;
   }
   h5.has-icon.has-icon-small,
   .h5-clone.has-icon.has-icon-small {
-    padding-top: -1.7999999999999998px;
-    padding-bottom: -1.7999999999999998px;
+    padding-top: 0px;
   }
   h5.has-icon.has-icon-medium,
   .h5-clone.has-icon.has-icon-medium {
-    padding-top: 0.20000000000000018px;
-    padding-bottom: 0.20000000000000018px;
+    padding-top: 0px;
   }
   h5.has-icon.has-icon-large,
   .h5-clone.has-icon.has-icon-large {
-    padding-top: 4.2px;
-    padding-bottom: 4.2px;
+    padding-top: 0px;
   }
   h5.has-icon.has-icon-jumbo,
   .h5-clone.has-icon.has-icon-jumbo {
-    padding-top: 8.2px;
-    padding-bottom: 8.2px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -7161,57 +6931,47 @@ blockquote:after {
   h6 .icon,
   .h6-clone .icon {
     margin-right: 12px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 0px;
   }
   h6 .icon.icon-small,
   .h6-clone .icon.icon-small {
     margin-right: 12px;
     margin-top: 0px;
-    margin-bottom: 0px;
   }
   h6 .icon.icon-medium,
   .h6-clone .icon.icon-medium {
     margin-right: 12px;
-    margin-top: -2px;
-    margin-bottom: -2px;
+    margin-top: 0px;
   }
   h6 .icon.icon-large,
   .h6-clone .icon.icon-large {
     margin-right: 12px;
-    margin-top: -6px;
-    margin-bottom: -6px;
+    margin-top: 0px;
   }
   h6 .icon.icon-jumbo,
   .h6-clone .icon.icon-jumbo {
     margin-right: 12px;
-    margin-top: -10px;
-    margin-bottom: -10px;
+    margin-top: 0px;
   }
   h6.has-icon,
   .h6-clone.has-icon {
-    padding-top: -2px;
-    padding-bottom: -2px;
+    padding-top: 0px;
   }
   h6.has-icon.has-icon-small,
   .h6-clone.has-icon.has-icon-small {
     padding-top: 0px;
-    padding-bottom: 0px;
   }
   h6.has-icon.has-icon-medium,
   .h6-clone.has-icon.has-icon-medium {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 0px;
   }
   h6.has-icon.has-icon-large,
   .h6-clone.has-icon.has-icon-large {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 0px;
   }
   h6.has-icon.has-icon-jumbo,
   .h6-clone.has-icon.has-icon-jumbo {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
