@@ -1,0 +1,231 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/tooltips.less                                                                              */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+.has-tooltip {
+	
+	position: relative;
+	
+}
+
+.tooltip {
+	
+	position: absolute !important;
+	z-index: @z-index-tooltip;
+	display: block;
+	visibility: visible;
+	padding: 0px;
+	.opacity(@tooltip-opacity-hidden);
+	.transition(@tooltip-transition-in);
+	
+	&.in {
+		
+		.opacity(@tooltip-opacity);
+		.transition(@tooltip-transition-out);
+		
+		&.top {
+			
+			margin-top: -@tooltip-offset - @tooltip-notch-size;
+			
+		}
+		
+		&.right {
+			
+			margin-left: @tooltip-offset + @tooltip-notch-size;
+			
+		}
+		
+		&.bottom {
+			
+			margin-top: @tooltip-offset + @tooltip-notch-size;
+			
+		}
+		
+		&.left {
+			
+			margin-left: -@tooltip-offset - @tooltip-notch-size;
+			
+		}
+		
+	}
+	
+	&.top {
+		
+		margin-top: -@tooltip-offset-hidden - @tooltip-notch-size;
+		
+	}
+	
+	&.right {
+		
+		margin-left: @tooltip-offset-hidden + @tooltip-notch-size;
+		
+	}
+	
+	&.bottom {
+		
+		margin-top: @tooltip-offset-hidden + @tooltip-notch-size;
+		
+	}
+	
+	&.left {
+		
+		margin-left: -@tooltip-offset-hidden - @tooltip-notch-size;
+		
+	}
+	
+}
+
+// Wrapper for the tooltip content
+
+.tooltip-inner {
+	
+	max-width: 300px;
+	text-align: center;
+	text-decoration: none;
+	background: @tooltip-background-color;
+	.border-radius(@tooltip-border-radius);
+	color: @tooltip-text-color;
+	text-shadow: @tooltip-text-shadow;
+	padding: @tooltip-padding;
+	
+}
+
+// Arrows
+
+.tooltip-arrow {
+	
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	
+}
+
+.tooltip {
+	
+	&.top .tooltip-arrow {
+		
+		bottom: -@tooltip-notch-size;
+		left: 50%;
+		margin-left: -@tooltip-notch-size;
+		border-width: @tooltip-notch-size @tooltip-notch-size 0;
+		border-top-color: @tooltip-background-color;
+		
+	}
+	
+	&.right .tooltip-arrow {
+		
+		top: 50%;
+		left: -@tooltip-notch-size;
+		margin-top: -@tooltip-notch-size;
+		border-width: @tooltip-notch-size @tooltip-notch-size @tooltip-notch-size 0;
+		border-right-color: @tooltip-background-color;
+		
+	}
+	
+	&.left .tooltip-arrow {
+		
+		top: 50%;
+		right: -@tooltip-notch-size;
+		margin-top: -@tooltip-notch-size;
+		border-width: @tooltip-notch-size 0 @tooltip-notch-size @tooltip-notch-size;
+		border-left-color: @tooltip-background-color;
+		
+	}
+	
+	&.bottom .tooltip-arrow {
+		
+		top: -@tooltip-notch-size;
+		left: 50%;
+		margin-left: -@tooltip-notch-size;
+		border-width: 0 @tooltip-notch-size @tooltip-notch-size;
+		border-bottom-color: @tooltip-background-color;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-small) {
+	
+	.tooltip {
+		
+		.tooltip-inner {
+			
+			padding: @tooltip-padding-screen-small;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-medium) {
+	
+	.tooltip {
+		
+		.tooltip-inner {
+			
+			padding: @tooltip-padding-screen-medium;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-large) {
+	
+	.tooltip {
+		
+		.tooltip-inner {
+			
+			padding: @tooltip-padding-screen-large;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

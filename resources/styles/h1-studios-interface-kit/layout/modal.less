@@ -57,6 +57,7 @@
 	&.fade {
 		
 		opacity: 0;
+		.transition(@modal-backdrop-transition);
 		
 	}
 	
@@ -87,7 +88,7 @@
 	margin: 0;
 	display: block;
 	z-index: @z-index-modal;
-	.border-radius(10px);
+	.border-radius(@modal-border-radius);
 	@shadow:
 		0px 0px 0px 1px rgba(0, 0, 0, 0.15),
 		0px 3px 10px 1px rgba(0, 0, 0, 0.25);
@@ -103,7 +104,7 @@
 	
 	&.fade {
 		
-		.transition(e('opacity .3s linear, top .3s ease-out'));
+		.transition(@modal-transition);
 		top: 35%;
 		.opacity(0);
 		
@@ -134,7 +135,7 @@
 	.modal-header {
 		
 		background: @gray-lighten-95;
-		.border-radius(10px 10px 0px 0px);
+		.border-radius(@modal-border-radius @modal-border-radius 0px 0px);
 		position: relative;
 		z-index: @z-index-modal + 2;
 		.clearfix();
@@ -153,7 +154,7 @@
 				
 		}
 		
-		+ .modal-body {
+		~ .modal-body {
 			
 			.border-top-left-radius(0px);
 			.border-top-right-radius(0px);
@@ -174,7 +175,7 @@
 		.clearfix();
 		display: block;
 		z-index: @z-index-modal + 1;
-		.border-radius(10px 10px 0px 0px);		
+		.border-radius(@modal-border-radius @modal-border-radius 0px 0px);		
 		
 		&.has-header {
 			
@@ -190,6 +191,13 @@
 			
 		}
 		
+		&:last-child {
+			
+			.border-bottom-left-radius(@modal-border-radius);
+			.border-bottom-right-radius(@modal-border-radius);
+			
+		}
+		
 	}
 	
 	/* ---------------------------------------------------------------------------------------------------- */
@@ -199,7 +207,7 @@
 	.modal-footer {
 		
 		background: @gray-lighten-95;
-		.border-radius(0px 0px 10px 10px);
+		.border-radius(0px 0px @modal-border-radius @modal-border-radius);
 		position: relative;
 		z-index: @z-index-modal + 3;
 		.clearfix();
