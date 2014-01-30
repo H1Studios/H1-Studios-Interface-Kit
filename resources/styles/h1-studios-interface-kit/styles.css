@@ -241,6 +241,9 @@
 /* Form Help Block                                                                                      */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
+/* Default Select Button                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 /* Form Radio/Checkbox                                                                                  */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -18917,17 +18920,23 @@ select[size] {
 .select-wrapper select:focus {
   outline: 0;
 }
+.select-wrapper + .help-block {
+  margin-top: -12px;
+  margin-bottom: 15px;
+}
 .select-wrapper.tall {
   margin-bottom: 22.5px;
 }
 .select-wrapper.tall + .help-block {
-  margin-top: -22.5px;
+  margin-top: -19.5px;
+  margin-bottom: 22.5px;
 }
 .select-wrapper.short {
   margin-bottom: 7.5px;
 }
 .select-wrapper.short + .help-block {
-  margin-top: -7.5px;
+  margin-top: -4.5px;
+  margin-bottom: 7.5px;
 }
 .select-wrapper:hover .select-wrapper-inner {
   background-color: transparent;
@@ -22318,7 +22327,7 @@ textarea[class*="span"],
     padding-left: 13.559999999999999px;
     padding-right: 13.559999999999999px;
     font-size: 13.559999999999999px;
-    line-height: 22.599999999999998px;
+    line-height: 23px;
     margin-bottom: 20px;
     /* ---------------------------------------------------------------------------------------------------- */
     /* Large Input                                                                                          */
@@ -22477,7 +22486,7 @@ textarea[class*="span"],
     padding-left: 13.559999999999999px;
     padding-right: 13.559999999999999px;
     font-size: 20.339999999999996px;
-    line-height: 27.119999999999997px;
+    line-height: 28px;
   }
   input[type="text"].input-small,
   input[type="password"].input-small,
@@ -22501,7 +22510,7 @@ textarea[class*="span"],
     padding-left: 13.559999999999999px;
     padding-right: 13.559999999999999px;
     font-size: 12.43px;
-    line-height: 18.08px;
+    line-height: 19px;
   }
   textarea {
     height: auto;
@@ -22682,6 +22691,10 @@ textarea[class*="span"],
     /* Small Select Wrapper                                                                                 */
     /* ---------------------------------------------------------------------------------------------------- */
   }
+  .select-wrapper + .help-block {
+    margin-top: -17px;
+    margin-bottom: 20px;
+  }
   .select-wrapper .select-wrapper-inner {
     height: 36.16px;
   }
@@ -22692,13 +22705,15 @@ textarea[class*="span"],
     margin-bottom: 30px;
   }
   .select-wrapper.tall + .help-block {
-    margin-top: -30px;
+    margin-top: -27px;
+    margin-bottom: 30px;
   }
   .select-wrapper.short {
     margin-bottom: 10px;
   }
   .select-wrapper.short + .help-block {
-    margin-top: -10px;
+    margin-top: -7px;
+    margin-bottom: 10px;
   }
   .select-wrapper.select-wrapper-large .select-wrapper-inner {
     height: 47.459999999999994px;
@@ -23301,6 +23316,10 @@ textarea[class*="span"],
     /* Small Select Wrapper                                                                                 */
     /* ---------------------------------------------------------------------------------------------------- */
   }
+  .select-wrapper + .help-block {
+    margin-top: -26.7px;
+    margin-bottom: 30px;
+  }
   .select-wrapper .select-wrapper-inner {
     height: 40px;
   }
@@ -23311,13 +23330,15 @@ textarea[class*="span"],
     margin-bottom: 45px;
   }
   .select-wrapper.tall + .help-block {
-    margin-top: -45px;
+    margin-top: -41.7px;
+    margin-bottom: 45px;
   }
   .select-wrapper.short {
     margin-bottom: 15px;
   }
   .select-wrapper.short + .help-block {
-    margin-top: -15px;
+    margin-top: -11.7px;
+    margin-bottom: 15px;
   }
   .select-wrapper.select-wrapper-large .select-wrapper-inner {
     height: 52.5px;
@@ -23734,7 +23755,7 @@ textarea[class*="span"],
     padding-left: 15.600000000000001px;
     padding-right: 15.600000000000001px;
     font-size: 23.400000000000002px;
-    line-height: 31.200000000000003px;
+    line-height: 32px;
   }
   input[type="text"].input-small,
   input[type="password"].input-small,
@@ -23758,7 +23779,7 @@ textarea[class*="span"],
     padding-left: 15.600000000000001px;
     padding-right: 15.600000000000001px;
     font-size: 14.3px;
-    line-height: 20.8px;
+    line-height: 21px;
   }
   textarea {
     height: auto;
@@ -23945,6 +23966,10 @@ textarea[class*="span"],
     /* Small Select Wrapper                                                                                 */
     /* ---------------------------------------------------------------------------------------------------- */
   }
+  .select-wrapper + .help-block {
+    margin-top: -36.4px;
+    margin-bottom: 40px;
+  }
   .select-wrapper .select-wrapper-inner {
     height: 41.6px;
   }
@@ -23955,13 +23980,15 @@ textarea[class*="span"],
     margin-bottom: 60px;
   }
   .select-wrapper.tall + .help-block {
-    margin-top: -60px;
+    margin-top: -56.4px;
+    margin-bottom: 60px;
   }
   .select-wrapper.short {
     margin-bottom: 20px;
   }
   .select-wrapper.short + .help-block {
-    margin-top: -20px;
+    margin-top: -16.4px;
+    margin-bottom: 20px;
   }
   .select-wrapper.select-wrapper-large .select-wrapper-inner {
     height: 54.6px;
