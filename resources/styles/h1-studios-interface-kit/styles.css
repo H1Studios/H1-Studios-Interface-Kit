@@ -1664,6 +1664,18 @@ hr + .h6-clone {
 .row:after {
   clear: both;
 }
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
 .col-mini-1,
 .col-mini-2,
 .col-mini-3,
@@ -1847,6 +1859,18 @@ hr + .h6-clone {
   .row:after {
     clear: both;
   }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12,
   .col-mini-1,
   .col-mini-2,
   .col-mini-3,
@@ -2136,6 +2160,18 @@ hr + .h6-clone {
   .row:after {
     clear: both;
   }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12,
   .col-mini-1,
   .col-mini-2,
   .col-mini-3,
@@ -2425,6 +2461,18 @@ hr + .h6-clone {
   .row:after {
     clear: both;
   }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12,
   .col-mini-1,
   .col-mini-2,
   .col-mini-3,
@@ -2723,6 +2771,18 @@ hr + .h6-clone {
   .row:after {
     clear: both;
   }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12,
   .col-mini-1,
   .col-mini-2,
   .col-mini-3,
@@ -18919,6 +18979,9 @@ select[size] {
 }
 .select-wrapper select:focus {
   outline: 0;
+}
+.select-wrapper select option {
+  color: #bbbbbb;
 }
 .select-wrapper + .help-block {
   margin-top: -12px;
