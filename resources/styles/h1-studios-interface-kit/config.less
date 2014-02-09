@@ -1508,7 +1508,6 @@
 
 @button-large-height:														42px;
 @button-large-border-radius:												6px;
-@button-large-border-width:													0px;
 @button-large-padding-horizontal:											@button-padding-horizontal * 1.2;
 @button-large-text-font-size:												18px;
 @button-large-text-font-weight:												500;
@@ -1550,7 +1549,6 @@
 
 @button-small-height:														24px;
 @button-small-border-radius:												3px;
-@button-small-border-width:													0px;
 @button-small-padding-horizontal:											@button-padding-horizontal;
 @button-small-text-font-size:												11px;
 @button-small-text-font-weight:												@button-text-font-weight;
@@ -1592,7 +1590,6 @@
 
 @button-mini-height:														18px;
 @button-mini-border-radius:													3px;
-@button-mini-border-width:													0px;
 @button-mini-padding-horizontal:											@button-padding-horizontal * 0.75;
 @button-mini-text-font-size:												9px;
 @button-mini-text-font-weight:												@button-text-font-weight;
@@ -1671,6 +1668,7 @@
 @button-default-background-color:											@gray-lighten-80;
 @button-default-background-gradient-top-color:								@gray-lighten-90;
 @button-default-background-gradient-bottom-color:							@gray-lighten-70;
+@button-default-border-width:												none;
 @button-default-border-color:												none;
 @button-default-icon-opacity:												1.0;
 @button-default-shadow:														inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
@@ -1684,6 +1682,7 @@
 @button-default-hover-background-color:										@gray-lighten-70;
 @button-default-hover-background-gradient-top-color:						@gray-lighten-90;
 @button-default-hover-background-gradient-bottom-color:						@gray-lighten-50;
+@button-default-hover-border-width:											none;
 @button-default-hover-border-color:											none;
 @button-default-hover-icon-opacity:											1.0;
 @button-default-hover-shadow:												inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
@@ -1697,6 +1696,7 @@
 @button-default-active-background-color:									@gray-lighten-70;
 @button-default-active-background-gradient-top-color:						@gray-lighten-60;
 @button-default-active-background-gradient-bottom-color:					@gray-lighten-90;
+@button-default-active-border-width:										none;
 @button-default-active-border-color:										none;
 @button-default-active-icon-opacity:										1.0;
 @button-default-active-shadow:												inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
@@ -1711,6 +1711,7 @@
 @button-default-disabled-background-color:									@button-default-background-color;
 @button-default-disabled-background-gradient-top-color:						@button-default-background-gradient-top-color;
 @button-default-disabled-background-gradient-bottom-color:					@button-default-background-gradient-bottom-color;
+@button-default-disabled-border-width:										@button-default-border-width;
 @button-default-disabled-border-color:										@button-default-border-color;
 @button-default-disabled-icon-opacity:										@button-default-icon-opacity;
 @button-default-disabled-shadow:											@button-default-shadow;
@@ -1834,6 +1835,7 @@
 @button-primary-background-color:											@blue;
 @button-primary-background-gradient-top-color:								@blue-lighten-10;
 @button-primary-background-gradient-bottom-color:							@blue-darken-10;
+@button-primary-border-width:												none;
 @button-primary-border-color:												none;
 @button-primary-icon-opacity:												1.0;
 @button-primary-shadow:														inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
@@ -1847,6 +1849,7 @@
 @button-primary-hover-background-color:										@blue-darken-20;
 @button-primary-hover-background-gradient-top-color:						@blue-lighten-10;
 @button-primary-hover-background-gradient-bottom-color:						@blue-darken-20;
+@button-primary-hover-border-width:											none;
 @button-primary-hover-border-color:											none;
 @button-primary-hover-icon-opacity:											1.0;
 @button-primary-hover-shadow:												inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
@@ -1860,6 +1863,7 @@
 @button-primary-active-background-color:									@blue-darken-20;
 @button-primary-active-background-gradient-top-color:						@blue-darken-20;
 @button-primary-active-background-gradient-bottom-color:					@blue;
+@button-primary-active-border-width:										none;
 @button-primary-active-border-color:										none;
 @button-primary-active-icon-opacity:										1.0;
 @button-primary-active-shadow:												inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
@@ -1874,6 +1878,7 @@
 @button-primary-disabled-background-color:									@button-primary-background-color;
 @button-primary-disabled-background-gradient-top-color:						@button-primary-background-gradient-top-color;
 @button-primary-disabled-background-gradient-bottom-color:					@button-primary-background-gradient-bottom-color;
+@button-primary-disabled-border-width:										@button-primary-border-width;
 @button-primary-disabled-border-color:										@button-primary-border-color;
 @button-primary-disabled-icon-opacity:										@button-primary-icon-opacity;
 @button-primary-disabled-shadow:											@button-primary-shadow;
@@ -1997,6 +2002,7 @@
 @button-success-background-color:											@green;
 @button-success-background-gradient-top-color:								@green-lighten-10;
 @button-success-background-gradient-bottom-color:							@green-darken-10;
+@button-success-border-width:												none;
 @button-success-border-color:												none;
 @button-success-icon-opacity:												1.0;
 @button-success-shadow:														inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
@@ -2010,6 +2016,7 @@
 @button-success-hover-background-color:										@green-darken-20;
 @button-success-hover-background-gradient-top-color:						@green-lighten-10;
 @button-success-hover-background-gradient-bottom-color:						@green-darken-20;
+@button-success-hover-border-width:											none;
 @button-success-hover-border-color:											none;
 @button-success-hover-icon-opacity:											1.0;
 @button-success-hover-shadow:												inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
@@ -2023,6 +2030,7 @@
 @button-success-active-background-color:									@green-darken-20;
 @button-success-active-background-gradient-top-color:						@green-darken-20;
 @button-success-active-background-gradient-bottom-color:					@green;
+@button-success-active-border-width:										none;
 @button-success-active-border-color:										none;
 @button-success-active-icon-opacity:										1.0;
 @button-success-active-shadow:												inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
@@ -2037,6 +2045,7 @@
 @button-success-disabled-background-color:									@button-success-background-color;
 @button-success-disabled-background-gradient-top-color:						@button-success-background-gradient-top-color;
 @button-success-disabled-background-gradient-bottom-color:					@button-success-background-gradient-bottom-color;
+@button-success-disabled-border-width:										@button-success-border-width;
 @button-success-disabled-border-color:										@button-success-border-color;
 @button-success-disabled-icon-opacity:										@button-success-icon-opacity;
 @button-success-disabled-shadow:											@button-success-shadow;
@@ -2157,39 +2166,42 @@
 @button-warning-text-shadow:												0 1px 1px rgba(0, 0, 0, 0.25);
 @button-warning-offset-top:													0px;
 @button-warning-offset-bottom:												0px;
-@button-warning-background-color:											@orange;
-@button-warning-background-gradient-top-color:								@orange-lighten-10;
-@button-warning-background-gradient-bottom-color:							@orange-darken-20;
+@button-warning-background-color:											@green;
+@button-warning-background-gradient-top-color:								@green-lighten-10;
+@button-warning-background-gradient-bottom-color:							@green-darken-10;
+@button-warning-border-width:												none;
 @button-warning-border-color:												none;
 @button-warning-icon-opacity:												1.0;
-@button-warning-shadow:														inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
-																			0px 0px 0px 1px hsla(hue(@orange-darken-50), saturation(@orange-darken-50), lightness(@orange-darken-50), 0.75),
+@button-warning-shadow:														inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
+																			0px 0px 0px 1px hsla(hue(@green-darken-40), saturation(@green-darken-40), lightness(@green-darken-40), 0.75),
 																			0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 
 @button-warning-hover-text-color:											@white;
 @button-warning-hover-text-shadow:											0 1px 1px rgba(0, 0, 0, 0.25);
 @button-warning-hover-offset-top:											0px;
 @button-warning-hover-offset-bottom:										0px;
-@button-warning-hover-background-color:										@orange-darken-20;
-@button-warning-hover-background-gradient-top-color:						@orange-lighten-10;
-@button-warning-hover-background-gradient-bottom-color:						@orange-darken-30;
+@button-warning-hover-background-color:										@green-darken-20;
+@button-warning-hover-background-gradient-top-color:						@green-lighten-10;
+@button-warning-hover-background-gradient-bottom-color:						@green-darken-20;
+@button-warning-hover-border-width:											none;
 @button-warning-hover-border-color:											none;
 @button-warning-hover-icon-opacity:											1.0;
-@button-warning-hover-shadow:												inset 0px 1px 0px 0px hsla(hue(@orange-lighten-20), saturation(@orange-lighten-20), lightness(@orange-lighten-20), 1.0),
-																			0px 0px 0px 1px hsla(hue(@orange-darken-60), saturation(@orange-darken-60), lightness(@orange-darken-60), 0.75),
+@button-warning-hover-shadow:												inset 0px 1px 0px 0px hsla(hue(@green-lighten-20), saturation(@green-lighten-20), lightness(@green-lighten-20), 1.0),
+																			0px 0px 0px 1px hsla(hue(@green-darken-60), saturation(@green-darken-60), lightness(@green-darken-60), 0.75),
 																			0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 
-@button-warning-active-text-color:											@orange-lighten-90;
+@button-warning-active-text-color:											@green-lighten-90;
 @button-warning-active-text-shadow:											none;
 @button-warning-active-offset-top:											0px;
 @button-warning-active-offset-bottom:										0px;
-@button-warning-active-background-color:									@orange-darken-20;
-@button-warning-active-background-gradient-top-color:						@orange-darken-20;
-@button-warning-active-background-gradient-bottom-color:					@orange-darken-10;
+@button-warning-active-background-color:									@green-darken-20;
+@button-warning-active-background-gradient-top-color:						@green-darken-20;
+@button-warning-active-background-gradient-bottom-color:					@green;
+@button-warning-active-border-width:										none;
 @button-warning-active-border-color:										none;
 @button-warning-active-icon-opacity:										1.0;
 @button-warning-active-shadow:												inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
-																			0px 0px 0px 1px hsla(hue(@orange-darken-60), saturation(@orange-darken-60), lightness(@orange-darken-60), 0.75),
+																			0px 0px 0px 1px hsla(hue(@green-darken-60), saturation(@green-darken-60), lightness(@green-darken-60), 0.75),
 																			0px 1px 0px 0px rgba(255, 255, 255, 0.75);
 
 @button-warning-disabled-opacity:											0.50;
@@ -2200,6 +2212,7 @@
 @button-warning-disabled-background-color:									@button-warning-background-color;
 @button-warning-disabled-background-gradient-top-color:						@button-warning-background-gradient-top-color;
 @button-warning-disabled-background-gradient-bottom-color:					@button-warning-background-gradient-bottom-color;
+@button-warning-disabled-border-width:										@button-warning-border-width;
 @button-warning-disabled-border-color:										@button-warning-border-color;
 @button-warning-disabled-icon-opacity:										@button-warning-icon-opacity;
 @button-warning-disabled-shadow:											@button-warning-shadow;
@@ -2321,12 +2334,13 @@
 @button-danger-offset-top:													0px;
 @button-danger-offset-bottom:												0px;
 @button-danger-background-color:											@red;
-@button-danger-background-gradient-top-color:								@red-darken-10;
-@button-danger-background-gradient-bottom-color:							@red-darken-40;
+@button-danger-background-gradient-top-color:								@red-lighten-10;
+@button-danger-background-gradient-bottom-color:							@red-darken-10;
+@button-danger-border-width:												none;
 @button-danger-border-color:												none;
 @button-danger-icon-opacity:												1.0;
-@button-danger-shadow:														inset 0px 1px 0px 0px hsla(hue(@red-lighten-30), saturation(@red-lighten-30), lightness(@red-lighten-30), 1.0),
-																			0px 0px 0px 1px hsla(hue(@red-darken-50), saturation(@red-darken-50), lightness(@red-darken-50), 0.85),
+@button-danger-shadow:														inset 0px 1px 0px 0px hsla(hue(@red-lighten-20), saturation(@red-lighten-20), lightness(@red-lighten-20), 1.0),
+																			0px 0px 0px 1px hsla(hue(@red-darken-40), saturation(@red-darken-40), lightness(@red-darken-40), 0.75),
 																			0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 
 @button-danger-hover-text-color:											@white;
@@ -2335,9 +2349,10 @@
 @button-danger-hover-offset-bottom:											0px;
 @button-danger-hover-background-color:										@red-darken-20;
 @button-danger-hover-background-gradient-top-color:							@red-lighten-10;
-@button-danger-hover-background-gradient-bottom-color:						@red-darken-30;
+@button-danger-hover-background-gradient-bottom-color:						@red-darken-20;
+@button-danger-hover-border-width:											none;
 @button-danger-hover-border-color:											none;
-@button-danger-hover-icon-opacity:												1.0;
+@button-danger-hover-icon-opacity:											1.0;
 @button-danger-hover-shadow:												inset 0px 1px 0px 0px hsla(hue(@red-lighten-20), saturation(@red-lighten-20), lightness(@red-lighten-20), 1.0),
 																			0px 0px 0px 1px hsla(hue(@red-darken-60), saturation(@red-darken-60), lightness(@red-darken-60), 0.75),
 																			0px 1px 5px 0px rgba(0, 0, 0, 0.3);
@@ -2348,7 +2363,8 @@
 @button-danger-active-offset-bottom:										0px;
 @button-danger-active-background-color:										@red-darken-20;
 @button-danger-active-background-gradient-top-color:						@red-darken-20;
-@button-danger-active-background-gradient-bottom-color:						@red-darken-10;
+@button-danger-active-background-gradient-bottom-color:						@red;
+@button-danger-active-border-width:											none;
 @button-danger-active-border-color:											none;
 @button-danger-active-icon-opacity:											1.0;
 @button-danger-active-shadow:												inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
@@ -2363,6 +2379,7 @@
 @button-danger-disabled-background-color:									@button-danger-background-color;
 @button-danger-disabled-background-gradient-top-color:						@button-danger-background-gradient-top-color;
 @button-danger-disabled-background-gradient-bottom-color:					@button-danger-background-gradient-bottom-color;
+@button-danger-disabled-border-width:										@button-danger-border-width;
 @button-danger-disabled-border-color:										@button-danger-border-color;
 @button-danger-disabled-icon-opacity:										@button-danger-icon-opacity;
 @button-danger-disabled-shadow:												@button-danger-shadow;
@@ -3488,6 +3505,7 @@
 @label-default-background-color:											@gray-lighten-25;
 @label-default-background-gradient-top-color:								none;
 @label-default-background-gradient-bottom-color:							none;
+@label-default-border-width:												none;
 @label-default-border-color:												none;
 @label-default-shadow:														none;
 
@@ -3498,6 +3516,7 @@
 @label-default-hover-background-color:										@gray;
 @label-default-hover-background-gradient-top-color:							none;
 @label-default-hover-background-gradient-bottom-color:						none;
+@label-default-hover-border-width:											none;
 @label-default-hover-border-color:											none;
 @label-default-hover-shadow:												none;
 
@@ -3508,6 +3527,7 @@
 @label-default-active-background-color:										@gray-darken-25;
 @label-default-active-background-gradient-top-color:						none;
 @label-default-active-background-gradient-bottom-color:						none;
+@label-default-active-border-width:											none;
 @label-default-active-border-color:											none;
 @label-default-active-shadow:												none;
 
@@ -3520,6 +3540,7 @@
 @label-default-inverse-background-color:									@gray-lighten-50;
 @label-default-inverse-background-gradient-top-color:						none;
 @label-default-inverse-background-gradient-bottom-color:					none;
+@label-default-inverse-border-width:										none;
 @label-default-inverse-border-color:										none;
 @label-default-inverse-shadow:												none;
 
@@ -3530,6 +3551,7 @@
 @label-default-inverse-hover-background-color:								@gray;
 @label-default-inverse-hover-background-gradient-top-color:					none;
 @label-default-inverse-hover-background-gradient-bottom-color:				none;
+@label-default-inverse-hover-border-width:									none;
 @label-default-inverse-hover-border-color:									none;
 @label-default-inverse-hover-shadow:										none;
 
@@ -3540,6 +3562,7 @@
 @label-default-inverse-active-background-color:								@gray;
 @label-default-inverse-active-background-gradient-top-color:				none;
 @label-default-inverse-active-background-gradient-bottom-color:				none;
+@label-default-inverse-active-border-width:									none;
 @label-default-inverse-active-border-color:									none;
 @label-default-inverse-active-shadow:										none;
 
@@ -3554,6 +3577,7 @@
 @label-primary-background-color:											@blue;
 @label-primary-background-gradient-top-color:								none;
 @label-primary-background-gradient-bottom-color:							none;
+@label-primary-border-width:												none;
 @label-primary-border-color:												none;
 @label-primary-shadow:														none;
 
@@ -3564,6 +3588,7 @@
 @label-primary-hover-background-color:										@blue-darken-15;
 @label-primary-hover-background-gradient-top-color:							none;
 @label-primary-hover-background-gradient-bottom-color:						none;
+@label-primary-hover-border-width:											none;
 @label-primary-hover-border-color:											none;
 @label-primary-hover-shadow:												none;
 
@@ -3574,6 +3599,7 @@
 @label-primary-active-background-color:										@blue-darken-25;
 @label-primary-active-background-gradient-top-color:						none;
 @label-primary-active-background-gradient-bottom-color:						none;
+@label-primary-active-border-width:											none;
 @label-primary-active-border-color:											none;
 @label-primary-active-shadow:												none;
 
@@ -3586,6 +3612,7 @@
 @label-primary-inverse-background-color:									@gray-lighten-50;
 @label-primary-inverse-background-gradient-top-color:						none;
 @label-primary-inverse-background-gradient-bottom-color:					none;
+@label-primary-inverse-border-width:										none;
 @label-primary-inverse-border-color:										none;
 @label-primary-inverse-shadow:												none;
 
@@ -3596,6 +3623,7 @@
 @label-primary-inverse-hover-background-color:								@gray;
 @label-primary-inverse-hover-background-gradient-top-color:					none;
 @label-primary-inverse-hover-background-gradient-bottom-color:				none;
+@label-primary-inverse-hover-border-width:									none;
 @label-primary-inverse-hover-border-color:									none;
 @label-primary-inverse-hover-shadow:										none;
 
@@ -3606,6 +3634,7 @@
 @label-primary-inverse-active-background-color:								@gray;
 @label-primary-inverse-active-background-gradient-top-color:				none;
 @label-primary-inverse-active-background-gradient-bottom-color:				none;
+@label-primary-inverse-active-border-width:									none;
 @label-primary-inverse-active-border-color:									none;
 @label-primary-inverse-active-shadow:										none;
 
@@ -3620,6 +3649,7 @@
 @label-success-background-color:											@green;
 @label-success-background-gradient-top-color:								none;
 @label-success-background-gradient-bottom-color:							none;
+@label-success-border-width:												none;
 @label-success-border-color:												none;
 @label-success-shadow:														none;
 
@@ -3630,6 +3660,7 @@
 @label-success-hover-background-color:										@green-darken-15;
 @label-success-hover-background-gradient-top-color:							none;
 @label-success-hover-background-gradient-bottom-color:						none;
+@label-success-hover-border-width:											none;
 @label-success-hover-border-color:											none;
 @label-success-hover-shadow:												none;
 
@@ -3640,6 +3671,7 @@
 @label-success-active-background-color:										@green-darken-25;
 @label-success-active-background-gradient-top-color:						none;
 @label-success-active-background-gradient-bottom-color:						none;
+@label-success-active-border-width:											none;
 @label-success-active-border-color:											none;
 @label-success-active-shadow:												none;
 
@@ -3652,6 +3684,7 @@
 @label-success-inverse-background-color:									@gray-lighten-50;
 @label-success-inverse-background-gradient-top-color:						none;
 @label-success-inverse-background-gradient-bottom-color:					none;
+@label-success-inverse-border-width:										none;
 @label-success-inverse-border-color:										none;
 @label-success-inverse-shadow:												none;
 
@@ -3662,6 +3695,7 @@
 @label-success-inverse-hover-background-color:								@gray;
 @label-success-inverse-hover-background-gradient-top-color:					none;
 @label-success-inverse-hover-background-gradient-bottom-color:				none;
+@label-success-inverse-hover-border-width:									none;
 @label-success-inverse-hover-border-color:									none;
 @label-success-inverse-hover-shadow:										none;
 
@@ -3672,6 +3706,7 @@
 @label-success-inverse-active-background-color:								@gray;
 @label-success-inverse-active-background-gradient-top-color:				none;
 @label-success-inverse-active-background-gradient-bottom-color:				none;
+@label-success-inverse-active-border-width:									none;
 @label-success-inverse-active-border-color:									none;
 @label-success-inverse-active-shadow:										none;
 
@@ -3686,6 +3721,7 @@
 @label-warning-background-color:											@orange;
 @label-warning-background-gradient-top-color:								none;
 @label-warning-background-gradient-bottom-color:							none;
+@label-warning-border-width:												none;
 @label-warning-border-color:												none;
 @label-warning-shadow:														none;
 
@@ -3696,6 +3732,7 @@
 @label-warning-hover-background-color:										@orange-darken-15;
 @label-warning-hover-background-gradient-top-color:							none;
 @label-warning-hover-background-gradient-bottom-color:						none;
+@label-warning-hover-border-width:											none;
 @label-warning-hover-border-color:											none;
 @label-warning-hover-shadow:												none;
 
@@ -3706,6 +3743,7 @@
 @label-warning-active-background-color:										@orange-darken-25;
 @label-warning-active-background-gradient-top-color:						none;
 @label-warning-active-background-gradient-bottom-color:						none;
+@label-warning-active-border-width:											none;
 @label-warning-active-border-color:											none;
 @label-warning-active-shadow:												none;
 
@@ -3718,6 +3756,7 @@
 @label-warning-inverse-background-color:									@gray-lighten-50;
 @label-warning-inverse-background-gradient-top-color:						none;
 @label-warning-inverse-background-gradient-bottom-color:					none;
+@label-warning-inverse-border-width:										none;
 @label-warning-inverse-border-color:										none;
 @label-warning-inverse-shadow:												none;
 
@@ -3728,6 +3767,7 @@
 @label-warning-inverse-hover-background-color:								@gray;
 @label-warning-inverse-hover-background-gradient-top-color:					none;
 @label-warning-inverse-hover-background-gradient-bottom-color:				none;
+@label-warning-inverse-hover-border-width:									none;
 @label-warning-inverse-hover-border-color:									none;
 @label-warning-inverse-hover-shadow:										none;
 
@@ -3738,6 +3778,7 @@
 @label-warning-inverse-active-background-color:								@gray;
 @label-warning-inverse-active-background-gradient-top-color:				none;
 @label-warning-inverse-active-background-gradient-bottom-color:				none;
+@label-warning-inverse-active-border-width:									none;
 @label-warning-inverse-active-border-color:									none;
 @label-warning-inverse-active-shadow:										none;
 
@@ -3752,6 +3793,7 @@
 @label-danger-background-color:												@red;
 @label-danger-background-gradient-top-color:								none;
 @label-danger-background-gradient-bottom-color:								none;
+@label-danger-border-width:													none;
 @label-danger-border-color:													none;
 @label-danger-shadow:														none;
 
@@ -3762,6 +3804,7 @@
 @label-danger-hover-background-color:										@red-darken-15;
 @label-danger-hover-background-gradient-top-color:							none;
 @label-danger-hover-background-gradient-bottom-color:						none;
+@label-danger-hover-border-width:											none;
 @label-danger-hover-border-color:											none;
 @label-danger-hover-shadow:													none;
 
@@ -3772,6 +3815,7 @@
 @label-danger-active-background-color:										@red-darken-25;
 @label-danger-active-background-gradient-top-color:							none;
 @label-danger-active-background-gradient-bottom-color:						none;
+@label-danger-active-border-width:											none;
 @label-danger-active-border-color:											none;
 @label-danger-active-shadow:												none;
 
@@ -3784,6 +3828,7 @@
 @label-danger-inverse-background-color:										@gray-lighten-50;
 @label-danger-inverse-background-gradient-top-color:						none;
 @label-danger-inverse-background-gradient-bottom-color:						none;
+@label-danger-inverse-border-width:											none;
 @label-danger-inverse-border-color:											none;
 @label-danger-inverse-shadow:												none;
 
@@ -3794,6 +3839,7 @@
 @label-danger-inverse-hover-background-color:								@gray;
 @label-danger-inverse-hover-background-gradient-top-color:					none;
 @label-danger-inverse-hover-background-gradient-bottom-color:				none;
+@label-danger-inverse-hover-border-width:									none;
 @label-danger-inverse-hover-border-color:									none;
 @label-danger-inverse-hover-shadow:											none;
 
@@ -3804,6 +3850,7 @@
 @label-danger-inverse-active-background-color:								@gray;
 @label-danger-inverse-active-background-gradient-top-color:					none;
 @label-danger-inverse-active-background-gradient-bottom-color:				none;
+@label-danger-inverse-active-border-width:									none;
 @label-danger-inverse-active-border-color:									none;
 @label-danger-inverse-active-shadow:										none;
 
