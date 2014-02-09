@@ -12,7 +12,7 @@
 	
 	/* ==================================================================================================== */
 	/*                                                                                                      */
-	/* Initialize Application                                                    */
+	/* Initialize Application                                                                               */
 	/*                                                                                                      */
 	/* ==================================================================================================== */
 	
@@ -25,6 +25,8 @@
 		// Define variables
 		
 		$.h1studios.stage = $("#stage");
+		
+		$.h1studios.scrollbar_width = getScrollbarWidth();
 		
 		// Disable certain links in docs
 		
@@ -123,6 +125,7 @@
 		$('.fill-vertical').fillVertical();
 		$('.center-vertical').centerVertical();
 		$('.center-horizontal').centerHorizontal();
+		$('.vertically-balanced').verticallyBalanced();
 		
 		// ------------------------------
 		// Pretty Print
@@ -469,6 +472,7 @@
 		$('.fill-vertical').fillVertical();
 		$('.center-vertical').centerVertical();
 		$('.center-horizontal').centerHorizontal();
+		$('.vertically-balanced').verticallyBalanced();
 		
 	}
 	
@@ -623,5 +627,140 @@
 		});	
 		
 	};
+	
+	/* ==================================================
+	Vertically Balanced Columns
+	================================================== */
+	
+	$.fn.verticallyBalanced = function() {
+		
+	    // Get Viewport width
+	    
+	    var responsive_viewport = $(window).width() + $.h1studios.scrollbar_width;
+		
+		return this.each(function(i){
+			
+			var vertically_balanced_columns = $(this).find('.vertically-balanced-column');
+		    
+		    var vertically_balanced_screen_size_min = 0;
+		    
+		    if($(this).data('vertically-balanced-screen-size-min')) {
+		    	
+		    	vertically_balanced_screen_size_min = $(this).data('vertically-balanced-screen-size-min')
+		    	
+		    }
+		    
+		    console.log(vertically_balanced_screen_size_min);
+		    
+			// If Viewport is less than 768px
+		    
+		    if (responsive_viewport < vertically_balanced_screen_size_min) {
+				
+				vertically_balanced_columns.each(function() {
+					
+					$(this).css({
+						
+						'height':	'auto'
+						
+					});
+					
+					if($(this).hasClass('vertically-balanced-column-center-vertical')) {
+						
+						var vertically_balanced_column_inner = $(this).find('.vertically-balanced-column-inner');
+						
+						vertically_balanced_column_inner.css({
+							
+							"margin-top":	"auto",
+							"top":			"none",
+							"position":		"relative"
+							
+						});
+						
+					}
+					
+				});
+				
+		    }
+		    
+		    // If Viewport is above or equal to 768px
+		    
+		    if (responsive_viewport >= vertically_balanced_screen_size_min) {
+		    	
+				var vertically_balanced_columns_height_max = 0;
+			    
+				vertically_balanced_columns.each(function() {
+					
+					var vertically_balanced_column_inner = $(this).find('.vertically-balanced-column-inner');
+					
+					if (!vertically_balanced_column_inner.length) {
+						
+						$(this).wrapInner("<div class='vertically-balanced-column-inner'></div>");
+						
+						vertically_balanced_column_inner = $(this).find('.vertically-balanced-column-inner');
+						
+					}
+					
+					if (vertically_balanced_column_inner.height() > vertically_balanced_columns_height_max) {
+						
+						vertically_balanced_columns_height_max = vertically_balanced_column_inner.height();
+						
+					}
+					
+				});
+				
+				vertically_balanced_columns.each(function() {
+					
+					var offset_h = $(this).outerHeight() - $(this).height();
+					
+					$(this).css({
+						
+						'height':	vertically_balanced_columns_height_max + offset_h
+						
+					});
+					
+					if($(this).hasClass('vertically-balanced-column-center-vertical')) {
+						
+						var vertically_balanced_column_inner = $(this).find('.vertically-balanced-column-inner');
+						
+						var vertically_balanced_column_inner_height = vertically_balanced_column_inner.height();
+						var vertically_balanced_column_inner_outer_height = vertically_balanced_column_inner.outerHeight();
+						var vertically_balanced_column_inner_margin_top = (vertically_balanced_column_inner_height + (vertically_balanced_column_inner_outer_height - vertically_balanced_column_inner_height)) / 2;
+						
+						vertically_balanced_column_inner.css({
+							
+							"margin-top":	"-" + vertically_balanced_column_inner_margin_top + "px",
+							"top":			"50%",
+							"position":		"absolute",
+							"width":		'100%'
+							
+						});
+						
+						$(this).css({
+							
+							"position":		"relative"
+							
+						});
+						
+					}
+					
+				});
+		    	
+		    }
+			
+		});
+		
+	};
+	
+	function getScrollbarWidth() {
+		
+	    var div = $('<div style="width:50px;height:50px;overflow:hidden;position:absolute;top:-200px;left:-200px;"><div style="height:100px;"></div></div>'); 
+	    $('body').append(div); 
+	    var w1 = $('div', div).innerWidth(); 
+	    div.css('overflow-y', 'auto'); 
+	    var w2 = $('div', div).innerWidth(); 
+	    $(div).remove(); 
+	    return (w1 - w2);
+	    
+	}
 	
 }(window.jQuery)

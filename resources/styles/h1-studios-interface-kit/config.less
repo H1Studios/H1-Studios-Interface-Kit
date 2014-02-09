@@ -15,6 +15,7 @@
 /* ==================================================================================================== */
 
 @image-path:																"../images/";
+@font-path:																	"../fonts/";
 @css3pie-path:																"/resources/javascript/libs/CSS3Pie/";
 
 
@@ -286,7 +287,7 @@
 /* Red                                                                                                  */
 /* ---------------------------------------------------------------------------------------------------- */
 
-@red:																		#fd3c2b;
+@red:																		#ff0000;
 
 // Lighten
 
@@ -427,9 +428,13 @@
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@modal-backdrop-color:														@black;
-@modal-backdrop-opacity:													0.8;
+@modal-transition:															e('opacity .3s linear, top .3s ease-out');
 @modal-margin-horizontal:													@primary-margin / 2;
+@modal-border-radius:														10px;
+
+@modal-backdrop-color:														@black;
+@modal-backdrop-transition:													e('opacity .3s linear');
+@modal-backdrop-opacity:													0.8;
 
 @modal-width-screen-small:													500px;
 @modal-width-screen-medium:													600px;
@@ -524,6 +529,7 @@
 @body-text-line-height:														20px;
 @body-text-transform:														normal;
 @body-text-color:															@gray;
+@body-text-shadow:															none;
 
 // Margins
 
@@ -535,6 +541,10 @@
 @body-text-ratio-screen-small:												1.1;
 @body-text-ratio-screen-medium:												1.2;
 @body-text-ratio-screen-large:												1.2;
+
+@body-margin-ratio-screen-small:											@body-text-ratio-screen-small;
+@body-margin-ratio-screen-medium:											@body-text-ratio-screen-medium;
+@body-margin-ratio-screen-large:											@body-text-ratio-screen-large;
 
 // Link
 
@@ -550,6 +560,7 @@
 @body-text-emphasis-color:													@gray-darken-25;
 @body-text-emphasis-font-weight:											500;
 @body-text-emphasis-font-style:												normal;
+@body-text-emphasis-shadow:													none;
 @body-text-emphasis-link-text-color:										@body-text-link-text-color;
 @body-text-emphasis-link-text-decoration:									@body-text-link-text-decoration;
 @body-text-emphasis-link-hover-text-color:									@body-text-link-hover-text-color;
@@ -562,6 +573,7 @@
 @body-text-muted-color:														@gray;
 @body-text-muted-font-weight:												600;
 @body-text-muted-font-style:												normal;
+@body-text-muted-shadow:													none;
 @body-text-muted-link-text-color:											@body-text-link-text-color;
 @body-text-muted-link-text-decoration:										@body-text-link-text-decoration;
 @body-text-muted-link-hover-text-color:										@body-text-link-hover-text-color;
@@ -572,6 +584,7 @@
 // Inverse
 
 @body-text-inverse-color:													@white;
+@body-text-inverse-shadow:													none;
 
 @body-text-inverse-link-text-color:											@body-text-link-text-color;
 @body-text-inverse-link-hover-text-color:									@body-text-link-hover-text-color;
@@ -598,6 +611,7 @@
 @lead-text-line-height:														28px;
 @lead-text-transform:														normal;
 @lead-text-color:															@gray-darken-15;
+@lead-text-shadow:															none;
 
 // Margins
 
@@ -609,6 +623,10 @@
 @lead-text-ratio-screen-small:												1.1;
 @lead-text-ratio-screen-medium:												1.2;
 @lead-text-ratio-screen-large:												1.3;
+
+@lead-margin-ratio-screen-small:											@lead-text-ratio-screen-small;
+@lead-margin-ratio-screen-medium:											@lead-text-ratio-screen-medium;
+@lead-margin-ratio-screen-large:											@lead-text-ratio-screen-large;
 
 // Link
 
@@ -624,6 +642,7 @@
 @lead-text-emphasis-color:													@gray;
 @lead-text-emphasis-font-weight:											600;
 @lead-text-emphasis-font-style:												normal;
+@lead-text-emphasis-shadow:													none;
 @lead-text-emphasis-link-text-color:										@lead-text-link-text-color;
 @lead-text-emphasis-link-text-decoration:									@lead-text-link-text-decoration;
 @lead-text-emphasis-link-hover-text-color:									@lead-text-link-hover-text-color;
@@ -636,6 +655,7 @@
 @lead-text-muted-color:														@gray;
 @lead-text-muted-font-weight:												600;
 @lead-text-muted-font-style:												normal;
+@lead-text-muted-shadow:													none;
 @lead-text-muted-link-text-color:											@lead-text-link-text-color;
 @lead-text-muted-link-text-decoration:										@lead-text-link-text-decoration;
 @lead-text-muted-link-hover-text-color:										@lead-text-link-hover-text-color;
@@ -646,6 +666,7 @@
 // Inverse
 
 @lead-text-inverse-color:													@white;
+@lead-text-inverse-shadow:													none;
 
 @lead-text-inverse-link-text-color:											@lead-text-link-text-color;
 @lead-text-inverse-link-hover-text-color:									@lead-text-link-hover-text-color;
@@ -672,6 +693,7 @@
 @small-text-line-height:													16px;
 @small-text-transform:														normal;
 @small-text-color:															@gray;
+@small-text-shadow:															none;
 
 // Margins
 
@@ -683,6 +705,10 @@
 @small-text-ratio-screen-small:												1.0;
 @small-text-ratio-screen-medium:											1.1;
 @small-text-ratio-screen-large:												1.2;
+
+@small-margin-ratio-screen-small:											@small-text-ratio-screen-small;
+@small-margin-ratio-screen-medium:											@small-text-ratio-screen-medium;
+@small-margin-ratio-screen-large:											@small-text-ratio-screen-large;
 
 // Link
 
@@ -698,6 +724,7 @@
 @small-text-emphasis-color:													@gray;
 @small-text-emphasis-font-weight:											600;
 @small-text-emphasis-font-style:											normal;
+@small-text-emphasis-shadow:												none;
 @small-text-emphasis-link-text-color:										@small-text-link-text-color;
 @small-text-emphasis-link-text-decoration:									@small-text-link-text-decoration;
 @small-text-emphasis-link-hover-text-color:									@small-text-link-hover-text-color;
@@ -710,6 +737,7 @@
 @small-text-muted-color:													@gray;
 @small-text-muted-font-weight:												600;
 @small-text-muted-font-style:												normal;
+@small-text-muted-shadow:													none;
 @small-text-muted-link-text-color:											@small-text-link-text-color;
 @small-text-muted-link-text-decoration:										@small-text-link-text-decoration;
 @small-text-muted-link-hover-text-color:									@small-text-link-hover-text-color;
@@ -720,6 +748,7 @@
 // Inverse
 
 @small-text-inverse-color:													@white;
+@small-text-inverse-shadow:													none;
 
 @small-text-inverse-link-text-color:										@small-text-link-text-color;
 @small-text-inverse-link-hover-text-color:									@small-text-link-hover-text-color;
@@ -746,6 +775,7 @@
 @heading-h1-text-line-height:												54px;
 @heading-h1-text-transform:													normal;
 @heading-h1-text-color:														@gray-darken-80;
+@heading-h1-text-shadow:													none;
 
 // Margins
 
@@ -757,6 +787,10 @@
 @heading-h1-text-ratio-screen-small:										1.4;
 @heading-h1-text-ratio-screen-medium:										1.7;
 @heading-h1-text-ratio-screen-large:										1.8;
+
+@heading-h1-margin-ratio-screen-small:										@heading-h1-text-ratio-screen-small;
+@heading-h1-margin-ratio-screen-medium:										@heading-h1-text-ratio-screen-medium;
+@heading-h1-margin-ratio-screen-large:										@heading-h1-text-ratio-screen-large;
 
 // Link
 
@@ -785,6 +819,7 @@
 @heading-h1-text-emphasis-color:											@gray;
 @heading-h1-text-emphasis-font-weight:										600;
 @heading-h1-text-emphasis-font-style:										normal;
+@heading-h1-text-emphasis-shadow:											none;
 @heading-h1-text-emphasis-link-text-color:									@heading-h1-text-link-text-color;
 @heading-h1-text-emphasis-link-text-decoration:								@heading-h1-text-link-text-decoration;
 @heading-h1-text-emphasis-link-hover-text-color:							@heading-h1-text-link-hover-text-color;
@@ -797,6 +832,7 @@
 @heading-h1-text-muted-color:												@gray;
 @heading-h1-text-muted-font-weight:											600;
 @heading-h1-text-muted-font-style:											normal;
+@heading-h1-text-muted-shadow:												none;
 @heading-h1-text-muted-link-text-color:										@heading-h1-text-link-text-color;
 @heading-h1-text-muted-link-text-decoration:								@heading-h1-text-link-text-decoration;
 @heading-h1-text-muted-link-hover-text-color:								@heading-h1-text-link-hover-text-color;
@@ -807,6 +843,7 @@
 // Inverse
 
 @heading-h1-text-inverse-color:												@white;
+@heading-h1-text-inverse-shadow:											none;
 
 @heading-h1-text-inverse-link-text-color:									@heading-h1-text-link-text-color;
 @heading-h1-text-inverse-link-hover-text-color:								@heading-h1-text-link-hover-text-color;
@@ -833,6 +870,7 @@
 @heading-h2-text-line-height:												38px;
 @heading-h2-text-transform:													normal;
 @heading-h2-text-color:														@gray-darken-80;
+@heading-h2-text-shadow:													none;
 
 // Margins
 
@@ -844,6 +882,10 @@
 @heading-h2-text-ratio-screen-small:										1.3;
 @heading-h2-text-ratio-screen-medium:										1.7;
 @heading-h2-text-ratio-screen-large:										1.8;
+
+@heading-h2-margin-ratio-screen-small:										@heading-h2-text-ratio-screen-small;
+@heading-h2-margin-ratio-screen-medium:										@heading-h2-text-ratio-screen-medium;
+@heading-h2-margin-ratio-screen-large:										@heading-h2-text-ratio-screen-large;
 
 // Link
 
@@ -872,6 +914,7 @@
 @heading-h2-text-emphasis-color:											@gray;
 @heading-h2-text-emphasis-font-weight:										600;
 @heading-h2-text-emphasis-font-style:										normal;
+@heading-h2-text-emphasis-shadow:											none;
 @heading-h2-text-emphasis-link-text-color:									@heading-h2-text-link-text-color;
 @heading-h2-text-emphasis-link-text-decoration:								@heading-h2-text-link-text-decoration;
 @heading-h2-text-emphasis-link-hover-text-color:							@heading-h2-text-link-hover-text-color;
@@ -884,6 +927,7 @@
 @heading-h2-text-muted-color:												@gray;
 @heading-h2-text-muted-font-weight:											600;
 @heading-h2-text-muted-font-style:											normal;
+@heading-h2-text-muted-shadow:												none;
 @heading-h2-text-muted-link-text-color:										@heading-h2-text-link-text-color;
 @heading-h2-text-muted-link-text-decoration:								@heading-h2-text-link-text-decoration;
 @heading-h2-text-muted-link-hover-text-color:								@heading-h2-text-link-hover-text-color;
@@ -894,6 +938,7 @@
 // Inverse
 
 @heading-h2-text-inverse-color:												@white;
+@heading-h2-text-inverse-shadow:											none;
 
 @heading-h2-text-inverse-link-text-color:									@heading-h2-text-link-text-color;
 @heading-h2-text-inverse-link-hover-text-color:								@heading-h2-text-link-hover-text-color;
@@ -920,6 +965,7 @@
 @heading-h3-text-line-height:												32px;
 @heading-h3-text-transform:													normal;
 @heading-h3-text-color:														@gray-darken-50;
+@heading-h3-text-shadow:													none;
 
 // Margins
 
@@ -931,6 +977,10 @@
 @heading-h3-text-ratio-screen-small:										1.2;
 @heading-h3-text-ratio-screen-medium:										1.4;
 @heading-h3-text-ratio-screen-large:										1.5;
+
+@heading-h3-margin-ratio-screen-small:										@heading-h3-text-ratio-screen-small;
+@heading-h3-margin-ratio-screen-medium:										@heading-h3-text-ratio-screen-medium;
+@heading-h3-margin-ratio-screen-large:										@heading-h3-text-ratio-screen-large;
 
 // Link
 
@@ -959,6 +1009,7 @@
 @heading-h3-text-emphasis-color:											@gray;
 @heading-h3-text-emphasis-font-weight:										600;
 @heading-h3-text-emphasis-font-style:										normal;
+@heading-h3-text-emphasis-shadow:											none;
 @heading-h3-text-emphasis-link-text-color:									@heading-h3-text-link-text-color;
 @heading-h3-text-emphasis-link-text-decoration:								@heading-h3-text-link-text-decoration;
 @heading-h3-text-emphasis-link-hover-text-color:							@heading-h3-text-link-hover-text-color;
@@ -971,6 +1022,7 @@
 @heading-h3-text-muted-color:												@gray;
 @heading-h3-text-muted-font-weight:											600;
 @heading-h3-text-muted-font-style:											normal;
+@heading-h3-text-muted-shadow:												none;
 @heading-h3-text-muted-link-text-color:										@heading-h3-text-link-text-color;
 @heading-h3-text-muted-link-text-decoration:								@heading-h3-text-link-text-decoration;
 @heading-h3-text-muted-link-hover-text-color:								@heading-h3-text-link-hover-text-color;
@@ -981,6 +1033,7 @@
 // Inverse
 
 @heading-h3-text-inverse-color:												@white;
+@heading-h3-text-inverse-shadow:											none;
 
 @heading-h3-text-inverse-link-text-color:									@heading-h3-text-link-text-color;
 @heading-h3-text-inverse-link-hover-text-color:								@heading-h3-text-link-hover-text-color;
@@ -1007,11 +1060,16 @@
 @heading-h4-text-line-height:												26px;
 @heading-h4-text-transform:													normal;
 @heading-h4-text-color:														@gray-darken-75;
+@heading-h4-text-shadow:													none;
 
 // Margins
 
 @heading-h4-text-margin-top:												40px;
 @heading-h4-text-margin-bottom:												20px;
+
+@heading-h4-margin-ratio-screen-small:										@heading-h4-text-ratio-screen-small;
+@heading-h4-margin-ratio-screen-medium:										@heading-h4-text-ratio-screen-medium;
+@heading-h4-margin-ratio-screen-large:										@heading-h4-text-ratio-screen-large;
 
 // Responsive Sizing
 
@@ -1046,6 +1104,7 @@
 @heading-h4-text-emphasis-color:											@gray;
 @heading-h4-text-emphasis-font-weight:										600;
 @heading-h4-text-emphasis-font-style:										normal;
+@heading-h4-text-emphasis-shadow:											none;
 @heading-h4-text-emphasis-link-text-color:									@heading-h4-text-link-text-color;
 @heading-h4-text-emphasis-link-text-decoration:								@heading-h4-text-link-text-decoration;
 @heading-h4-text-emphasis-link-hover-text-color:							@heading-h4-text-link-hover-text-color;
@@ -1058,6 +1117,7 @@
 @heading-h4-text-muted-color:												@gray;
 @heading-h4-text-muted-font-weight:											600;
 @heading-h4-text-muted-font-style:											normal;
+@heading-h4-text-muted-shadow:												none;
 @heading-h4-text-muted-link-text-color:										@heading-h4-text-link-text-color;
 @heading-h4-text-muted-link-text-decoration:								@heading-h4-text-link-text-decoration;
 @heading-h4-text-muted-link-hover-text-color:								@heading-h4-text-link-hover-text-color;
@@ -1068,6 +1128,7 @@
 // Inverse
 
 @heading-h4-text-inverse-color:												@white;
+@heading-h4-text-inverse-shadow:											none;
 
 @heading-h4-text-inverse-link-text-color:									@heading-h4-text-link-text-color;
 @heading-h4-text-inverse-link-hover-text-color:								@heading-h4-text-link-hover-text-color;
@@ -1094,6 +1155,7 @@
 @heading-h5-text-line-height:												26px;
 @heading-h5-text-transform:													normal;
 @heading-h5-text-color:														@gray-darken-50;
+@heading-h5-text-shadow:													none;
 
 // Margins
 
@@ -1105,6 +1167,10 @@
 @heading-h5-text-ratio-screen-small:										1.0;
 @heading-h5-text-ratio-screen-medium:										1.1;
 @heading-h5-text-ratio-screen-large:										1.2;
+
+@heading-h5-margin-ratio-screen-small:										@heading-h5-text-ratio-screen-small;
+@heading-h5-margin-ratio-screen-medium:										@heading-h5-text-ratio-screen-medium;
+@heading-h5-margin-ratio-screen-large:										@heading-h5-text-ratio-screen-large;
 
 // Link
 
@@ -1133,6 +1199,7 @@
 @heading-h5-text-emphasis-color:											@gray;
 @heading-h5-text-emphasis-font-weight:										600;
 @heading-h5-text-emphasis-font-style:										normal;
+@heading-h5-text-emphasis-shadow:											none;
 @heading-h5-text-emphasis-link-text-color:									@heading-h5-text-link-text-color;
 @heading-h5-text-emphasis-link-text-decoration:								@heading-h5-text-link-text-decoration;
 @heading-h5-text-emphasis-link-hover-text-color:							@heading-h5-text-link-hover-text-color;
@@ -1145,6 +1212,7 @@
 @heading-h5-text-muted-color:												@gray;
 @heading-h5-text-muted-font-weight:											600;
 @heading-h5-text-muted-font-style:											normal;
+@heading-h5-text-muted-shadow:												none;
 @heading-h5-text-muted-link-text-color:										@heading-h5-text-link-text-color;
 @heading-h5-text-muted-link-text-decoration:								@heading-h5-text-link-text-decoration;
 @heading-h5-text-muted-link-hover-text-color:								@heading-h5-text-link-hover-text-color;
@@ -1155,6 +1223,7 @@
 // Inverse
 
 @heading-h5-text-inverse-color:												@white;
+@heading-h5-text-inverse-shadow:											none;
 
 @heading-h5-text-inverse-link-text-color:									@heading-h5-text-link-text-color;
 @heading-h5-text-inverse-link-hover-text-color:								@heading-h5-text-link-hover-text-color;
@@ -1181,6 +1250,7 @@
 @heading-h6-text-line-height:												20px;
 @heading-h6-text-transform:													uppercase;
 @heading-h6-text-color:														@gray-darken-25;
+@heading-h6-text-shadow:													none;
 
 // Margins
 
@@ -1192,6 +1262,10 @@
 @heading-h6-text-ratio-screen-small:										1.0;
 @heading-h6-text-ratio-screen-medium:										1.1;
 @heading-h6-text-ratio-screen-large:										1.2;
+
+@heading-h6-margin-ratio-screen-small:										@heading-h6-text-ratio-screen-small;
+@heading-h6-margin-ratio-screen-medium:										@heading-h6-text-ratio-screen-medium;
+@heading-h6-margin-ratio-screen-large:										@heading-h6-text-ratio-screen-large;
 
 // Link
 
@@ -1220,6 +1294,7 @@
 @heading-h6-text-emphasis-color:											@gray;
 @heading-h6-text-emphasis-font-weight:										600;
 @heading-h6-text-emphasis-font-style:										normal;
+@heading-h6-text-emphasis-shadow:											none;
 @heading-h6-text-emphasis-link-text-color:									@heading-h6-text-link-text-color;
 @heading-h6-text-emphasis-link-text-decoration:								@heading-h6-text-link-text-decoration;
 @heading-h6-text-emphasis-link-hover-text-color:							@heading-h6-text-link-hover-text-color;
@@ -1232,6 +1307,7 @@
 @heading-h6-text-muted-color:												@gray;
 @heading-h6-text-muted-font-weight:											600;
 @heading-h6-text-muted-font-style:											normal;
+@heading-h6-text-muted-shadow:												none;
 @heading-h6-text-muted-link-text-color:										@heading-h6-text-link-text-color;
 @heading-h6-text-muted-link-text-decoration:								@heading-h6-text-link-text-decoration;
 @heading-h6-text-muted-link-hover-text-color:								@heading-h6-text-link-hover-text-color;
@@ -1242,6 +1318,7 @@
 // Inverse
 
 @heading-h6-text-inverse-color:												@white;
+@heading-h6-text-inverse-shadow:											none;
 
 @heading-h6-text-inverse-link-text-color:									@heading-h6-text-link-text-color;
 @heading-h6-text-inverse-link-hover-text-color:								@heading-h6-text-link-hover-text-color;
@@ -1256,6 +1333,16 @@
 @heading-h6-text-inverse-muted-link-text-color:								@heading-h6-text-muted-link-text-color;
 @heading-h6-text-inverse-muted-link-hover-text-color:						@heading-h6-text-muted-link-hover-text-color;
 @heading-h6-text-inverse-muted-link-active-text-color:						@heading-h6-text-muted-link-active-text-color;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Lists                                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@list-inline-padding-horizontal:											@body-text-margin-bottom * 0.25;
+@list-inline-padding-horizontal-screen-small:								(@body-text-margin-bottom * @body-text-ratio-screen-small) * 0.25;
+@list-inline-padding-horizontal-screen-medium:								(@body-text-margin-bottom * @body-text-ratio-screen-medium) * 0.25;
+@list-inline-padding-horizontal-screen-large:								(@body-text-margin-bottom * @body-text-ratio-screen-large) * 0.25;
+
 
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -2880,6 +2967,54 @@
 
 @form-help-block-error-text-color:											@red-lighten-50;
 
+/* ---------------------------------------------------------------------------------------------------- */
+/* Default Select Button                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@select-default-text-color:													@button-default-text-color;
+@select-default-text-shadow:												@button-default-text-shadow;
+@select-default-offset-top:													@button-default-offset-top;
+@select-default-offset-bottom:												@button-default-offset-bottom;
+@select-default-background-color:											@button-default-background-color;
+@select-default-background-gradient-top-color:								@button-default-background-gradient-top-color;
+@select-default-background-gradient-bottom-color:							@button-default-background-gradient-bottom-color;
+@select-default-border-color:												@button-default-border-color;
+@select-default-icon-opacity:												@button-default-icon-opacity;
+@select-default-shadow:														@button-default-shadow;
+
+@select-default-hover-text-color:											@button-default-hover-text-color;
+@select-default-hover-text-shadow:											@button-default-hover-text-shadow;
+@select-default-hover-offset-top:											@button-default-hover-offset-top;
+@select-default-hover-offset-bottom:										@button-default-hover-offset-bottom;
+@select-default-hover-background-color:										@button-default-hover-background-color;
+@select-default-hover-background-gradient-top-color:						@button-default-hover-background-gradient-top-color;
+@select-default-hover-background-gradient-bottom-color:						@button-default-hover-background-gradient-bottom-color;
+@select-default-hover-border-color:											@button-default-hover-border-color;
+@select-default-hover-icon-opacity:											@button-default-hover-icon-opacity;
+@select-default-hover-shadow:												@button-default-hover-shadow;
+
+@select-default-active-text-color:											@button-default-active-text-color;
+@select-default-active-text-shadow:											@button-default-active-text-shadow;
+@select-default-active-offset-top:											@button-default-active-offset-top;
+@select-default-active-offset-bottom:										@button-default-active-offset-bottom;
+@select-default-active-background-color:									@button-default-active-background-color;
+@select-default-active-background-gradient-top-color:						@button-default-active-background-gradient-top-color;
+@select-default-active-background-gradient-bottom-color:					@button-default-active-background-gradient-bottom-color;
+@select-default-active-border-color:										@button-default-active-border-color;
+@select-default-active-icon-opacity:										@button-default-active-icon-opacity;
+@select-default-active-shadow:												@button-default-active-shadow;
+
+@select-default-disabled-opacity:											0.50;
+@select-default-disabled-text-color:										@select-default-text-color;
+@select-default-disabled-text-shadow:										@select-default-text-shadow;
+@select-default-disabled-offset-top:										@select-default-offset-top;
+@select-default-disabled-offset-bottom:										@select-default-offset-bottom;
+@select-default-disabled-background-color:									@select-default-background-color;
+@select-default-disabled-background-gradient-top-color:						@select-default-background-gradient-top-color;
+@select-default-disabled-background-gradient-bottom-color:					@select-default-background-gradient-bottom-color;
+@select-default-disabled-border-color:										@select-default-border-color;
+@select-default-disabled-icon-opacity:										@select-default-icon-opacity;
+@select-default-disabled-shadow:											@select-default-shadow;
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* Form Radio/Checkbox                                                                                  */
@@ -3471,6 +3606,109 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
+/* Icon Glyphs                                                                                          */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Mini Icon Glyph                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@icon-glyph-mini-width:														16px;
+@icon-glyph-mini-height:													16px;
+
+@icon-glyph-mini-width-screen-mini:											@icon-glyph-mini-width * 1.0;
+@icon-glyph-mini-height-screen-mini:										@icon-glyph-mini-width * 1.0;
+
+@icon-glyph-mini-width-screen-small:										@icon-glyph-mini-width * 1.0;
+@icon-glyph-mini-height-screen-small:										@icon-glyph-mini-width * 1.0;
+
+@icon-glyph-mini-width-screen-medium:										@icon-glyph-mini-width * 1.0;
+@icon-glyph-mini-height-screen-medium:										@icon-glyph-mini-width * 1.0;
+
+@icon-glyph-mini-width-screen-large:										@icon-glyph-mini-width * 1.0;
+@icon-glyph-mini-height-screen-large:										@icon-glyph-mini-width * 1.0;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Small Icon Glyph                                                                                     */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@icon-glyph-small-width:													24px;
+@icon-glyph-small-height:													24px;
+
+@icon-glyph-small-width-screen-mini:										@icon-glyph-small-width * 1.0;
+@icon-glyph-small-height-screen-mini:										@icon-glyph-small-width * 1.0;
+
+@icon-glyph-small-width-screen-small:										@icon-glyph-small-width * 1.0;
+@icon-glyph-small-height-screen-small:										@icon-glyph-small-width * 1.0;
+
+@icon-glyph-small-width-screen-medium:										@icon-glyph-small-width * 1.0;
+@icon-glyph-small-height-screen-medium:										@icon-glyph-small-width * 1.0;
+
+@icon-glyph-small-width-screen-large:										@icon-glyph-small-width * 1.0;
+@icon-glyph-small-height-screen-large:										@icon-glyph-small-width * 1.0;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Medium Icon Glyph                                                                                    */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@icon-glyph-medium-width:													32px;
+@icon-glyph-medium-height:													32px;
+
+@icon-glyph-medium-width-screen-mini:										@icon-glyph-medium-width * 1.0;
+@icon-glyph-medium-height-screen-mini:										@icon-glyph-medium-width * 1.0;
+
+@icon-glyph-medium-width-screen-small:										@icon-glyph-medium-width * 1.0;
+@icon-glyph-medium-height-screen-small:										@icon-glyph-medium-width * 1.0;
+
+@icon-glyph-medium-width-screen-medium:										@icon-glyph-medium-width * 1.0;
+@icon-glyph-medium-height-screen-medium:									@icon-glyph-medium-width * 1.0;
+
+@icon-glyph-medium-width-screen-large:										@icon-glyph-medium-width * 1.0;
+@icon-glyph-medium-height-screen-large:										@icon-glyph-medium-width * 1.0;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Large Icon Glyph                                                                                     */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@icon-glyph-large-width:													48px;
+@icon-glyph-large-height:													48px;
+
+@icon-glyph-large-width-screen-mini:										@icon-glyph-large-width * 1.0;
+@icon-glyph-large-height-screen-mini:										@icon-glyph-large-width * 1.0;
+
+@icon-glyph-large-width-screen-small:										@icon-glyph-large-width * 1.0;
+@icon-glyph-large-height-screen-small:										@icon-glyph-large-width * 1.0;
+
+@icon-glyph-large-width-screen-medium:										@icon-glyph-large-width * 1.0;
+@icon-glyph-large-height-screen-medium:										@icon-glyph-large-width * 1.0;
+
+@icon-glyph-large-width-screen-large:										@icon-glyph-large-width * 1.0;
+@icon-glyph-large-height-screen-large:										@icon-glyph-large-width * 1.0;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Jumbo Icon Glyph                                                                                     */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@icon-glyph-jumbo-width:													64px;
+@icon-glyph-jumbo-height:													64px;
+
+@icon-glyph-jumbo-width-screen-mini:										@icon-glyph-jumbo-width * 1.0;
+@icon-glyph-jumbo-height-screen-mini:										@icon-glyph-jumbo-width * 1.0;
+
+@icon-glyph-jumbo-width-screen-small:										@icon-glyph-jumbo-width * 1.0;
+@icon-glyph-jumbo-height-screen-small:										@icon-glyph-jumbo-width * 1.0;
+
+@icon-glyph-jumbo-width-screen-medium:										@icon-glyph-jumbo-width * 1.0;
+@icon-glyph-jumbo-height-screen-medium:										@icon-glyph-jumbo-width * 1.0;
+
+@icon-glyph-jumbo-width-screen-large:										@icon-glyph-jumbo-width * 1.0;
+@icon-glyph-jumbo-height-screen-large:										@icon-glyph-jumbo-width * 1.0;
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Labels                                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
@@ -3783,7 +4021,7 @@
 @label-warning-inverse-active-shadow:										none;
 
 /* ---------------------------------------------------------------------------------------------------- */
-/* Danger Label                                                                                        */
+/* Danger Label                                                                                         */
 /* ---------------------------------------------------------------------------------------------------- */
 
 @label-danger-text-color:													@white;
@@ -3855,15 +4093,82 @@
 @label-danger-inverse-active-shadow:										none;
 
 
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Wells                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@well-border-radius:														10px;
+
+@well-margin:																@primary-margin * 0.5;
+@well-margin-screen-small:													@primary-margin-screen-small * 0.5;
+@well-margin-screen-medium:													@primary-margin-screen-medium * 0.5;
+@well-margin-screen-large:													@primary-margin-screen-large * 0.5;
+
+@well-margin-short:															@primary-margin-short * 0.5;
+@well-margin-short-screen-small:											@primary-margin-short-screen-small * 0.5;
+@well-margin-short-screen-medium:											@primary-margin-short-screen-medium * 0.5;
+@well-margin-short-screen-large:											@primary-margin-short-screen-large * 0.5;
+
+@well-margin-tall:															@primary-margin-tall * 0.5;
+@well-margin-tall-screen-small:												@primary-margin-tall-screen-small * 0.5;
+@well-margin-tall-screen-medium:											@primary-margin-tall-screen-medium * 0.5;
+@well-margin-tall-screen-large:												@primary-margin-tall-screen-large * 0.5;
+
+@well-padding:																@grid-gutter-width;
+@well-padding-screen-small:													@grid-gutter-width-screen-small;
+@well-padding-screen-medium:												@grid-gutter-width-screen-medium;
+@well-padding-screen-large:													@grid-gutter-width-screen-large;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Default Well                                                                                         */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@well-default-background-color:												@white;
+@well-default-border-width:													0px;
+@well-default-border-color:													none;
+@well-default-shadow:														0px 0px 0px 1px rgba(0, 0, 0, 0.1);
 
 
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Tooltips                                                                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
+@tooltip-offset:															5px;
+@tooltip-offset-hidden:														-5px;
 
+@tooltip-opacity:															1.0;
+@tooltip-opacity-hidden:													0.0;
 
+@tooltip-transition-in:														margin 0.5s ease, opacity 0.5s ease;
+@tooltip-transition-out:													margin 0.5s ease, opacity 0.5s ease;
 
+@tooltip-padding:															@primary-margin * 0.25;
+@tooltip-padding-screen-small:												@primary-margin-screen-small * 0.25;
+@tooltip-padding-screen-medium:												@primary-margin-screen-medium * 0.25;
+@tooltip-padding-screen-large:												@primary-margin-screen-large * 0.25;
 
+/* ---------------------------------------------------------------------------------------------------- */
+/* Styling                                                                                              */
+/* ---------------------------------------------------------------------------------------------------- */
 
+@tooltip-border-radius:														5px;
+@tooltip-text-color:														@white;
+@tooltip-text-shadow:														none;
+@tooltip-background-color:													rgba(0, 0, 0, 0.8);
+@tooltip-background-gradient-top-color:										none;
+@tooltip-background-gradient-bottom-color:									none;
+@tooltip-border-color:														none;
+@tooltip-shadow:															none;
 
+/* ---------------------------------------------------------------------------------------------------- */
+/* Notch                                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@tooltip-notch-size:														6px;
 
 
 

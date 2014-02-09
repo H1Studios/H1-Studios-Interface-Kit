@@ -1148,16 +1148,15 @@ select {
 		.transition(@form-input-transition .1s linear);
 		.button-states (
 			
-			@button-default-border-color,
-			@button-default-border-width,
-			@button-default-text-color,
-			@button-default-text-shadow,
-			@button-default-background-color,
-			@button-default-background-gradient-top-color,
-			@button-default-background-gradient-bottom-color,
-			@button-default-shadow,
-			@button-default-offset-top,
-			@button-default-offset-bottom
+			@select-default-border-color,
+			@select-default-text-color,
+			@select-default-text-shadow,
+			@select-default-background-color,
+			@select-default-background-gradient-top-color,
+			@select-default-background-gradient-bottom-color,
+			@select-default-shadow,
+			@select-default-offset-top,
+			@select-default-offset-bottom
 		
 		);
 		
@@ -1173,7 +1172,7 @@ select {
 			border-color: transparent;
 			border-style: solid;
 			border-width: 6px 5px 0;
-			border-top-color: @button-default-text-color;
+			border-top-color: @select-default-text-color;
 			
 		}
 		
@@ -1195,6 +1194,18 @@ select {
 			
 		}
 		
+		option{
+			
+			color: @gray;
+			
+		}
+		
+	}
+	+ .help-block {
+		
+		margin-top: -@form-input-margin + @form-help-block-margin;
+		margin-bottom: @form-input-margin;
+		
 	}
 	
 	&.tall {
@@ -1203,7 +1214,8 @@ select {
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-tall;
+			margin-top: -@form-input-margin-tall + @form-help-block-margin;
+			margin-bottom: @form-input-margin-tall;
 			
 		}
 		
@@ -1216,7 +1228,8 @@ select {
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-short;
+			margin-top: -@form-input-margin-short + @form-help-block-margin;
+			margin-bottom: @form-input-margin-short;
 			
 		}
 		
@@ -1229,22 +1242,21 @@ select {
 			
 			.button-states (
 				
-				@button-default-hover-border-width,
-				@button-default-hover-border-color,
-				@button-default-hover-text-color,
-				@button-default-hover-text-shadow,
-				@button-default-hover-background-color,
-				@button-default-hover-background-gradient-top-color,
-				@button-default-hover-background-gradient-bottom-color,
-				@button-default-hover-shadow,
-				@button-default-hover-offset-top,
-				@button-default-hover-offset-bottom
+				@select-default-hover-border-color,
+				@select-default-hover-text-color,
+				@select-default-hover-text-shadow,
+				@select-default-hover-background-color,
+				@select-default-hover-background-gradient-top-color,
+				@select-default-hover-background-gradient-bottom-color,
+				@select-default-hover-shadow,
+				@select-default-hover-offset-top,
+				@select-default-hover-offset-bottom
 			
 			);
 			
 			&:after {
 				
-				border-top-color: @button-default-hover-text-color;
+				border-top-color: @select-default-hover-text-color;
 				
 			}
 		
@@ -1253,8 +1265,8 @@ select {
 		select {
 			
 			cursor: pointer;
-			text-shadow: @button-default-hover-text-shadow;
-			color: @button-default-hover-text-color;
+			text-shadow: @select-default-hover-text-shadow;
+			color: @select-default-hover-text-color;
 			
 		}
 		
@@ -1267,22 +1279,21 @@ select {
 			outline: 0;
 			.button-states (
 				
-				@button-default-active-border-width,
-				@button-default-active-border-color,
-				@button-default-active-text-color,
-				@button-default-active-text-shadow,
-				@button-default-active-background-color,
-				@button-default-active-background-gradient-top-color,
-				@button-default-active-background-gradient-bottom-color,
-				@button-default-active-shadow,
-				@button-default-active-offset-top,
-				@button-default-active-offset-bottom
+				@select-default-active-border-color,
+				@select-default-active-text-color,
+				@select-default-active-text-shadow,
+				@select-default-active-background-color,
+				@select-default-active-background-gradient-top-color,
+				@select-default-active-background-gradient-bottom-color,
+				@select-default-active-shadow,
+				@select-default-active-offset-top,
+				@select-default-active-offset-bottom
 			
 			);
 			
 			&:after {
 				
-				border-top-color: @button-default-active-text-color;
+				border-top-color: @select-default-active-text-color;
 				
 			}
 		
@@ -1291,8 +1302,8 @@ select {
 		select {
 			
 			outline: 0;
-			text-shadow: @button-default-active-text-shadow;
-			color: @button-default-active-text-color;
+			text-shadow: @select-default-active-text-shadow;
+			color: @select-default-active-text-color;
 			
 		}
 		
@@ -1305,19 +1316,18 @@ select {
 			cursor: default !important;
 			pointer-events: none;
 			outline: 0;
-			.opacity(@button-default-disabled-opacity);
+			.opacity(@select-default-disabled-opacity);
 			.button-states (
 				
-				@button-default-disabled-border-width,
-				@button-default-disabled-border-color,
-				@button-default-disabled-text-color,
-				@button-default-disabled-text-shadow,
-				@button-default-disabled-background-color,
-				@button-default-disabled-background-gradient-top-color,
-				@button-default-disabled-background-gradient-bottom-color,
-				@button-default-disabled-shadow,
-				@button-default-disabled-offset-top,
-				@button-default-disabled-offset-bottom
+				@select-default-disabled-border-color,
+				@select-default-disabled-text-color,
+				@select-default-disabled-text-shadow,
+				@select-default-disabled-background-color,
+				@select-default-disabled-background-gradient-top-color,
+				@select-default-disabled-background-gradient-bottom-color,
+				@select-default-disabled-shadow,
+				@select-default-disabled-offset-top,
+				@select-default-disabled-offset-bottom
 			
 			);
 			
@@ -2439,7 +2449,7 @@ textarea[class*="span"],
 		padding-left: @form-input-padding-horizontal * @form-input-ratio-screen-small;
 		padding-right: @form-input-padding-horizontal * @form-input-ratio-screen-small;
 		font-size: @form-input-text-font-size * @form-input-ratio-screen-small;
-		line-height: @form-input-text-line-height * @form-input-ratio-screen-small;
+		line-height: ceil(@form-input-text-line-height * @form-input-ratio-screen-small);
 		margin-bottom: @form-input-margin-screen-small;
 		
 		+ .help-block {
@@ -2475,7 +2485,8 @@ textarea[class*="span"],
 			
 		}
 		
-		&.flush-bottom {
+		&.flush-bottom,
+		&.flush-bottom-screen-small {
 			
 			+ .help-block {
 				
@@ -2497,7 +2508,7 @@ textarea[class*="span"],
 			padding-left: @form-input-large-padding-horizontal * @form-input-large-ratio-screen-small;
 			padding-right: @form-input-large-padding-horizontal * @form-input-large-ratio-screen-small;
 			font-size: @form-input-large-text-font-size * @form-input-large-ratio-screen-small;
-			line-height: @form-input-large-text-line-height * @form-input-large-ratio-screen-small;
+			line-height: ceil(@form-input-large-text-line-height * @form-input-large-ratio-screen-small);
 			
 		}
 		
@@ -2512,7 +2523,7 @@ textarea[class*="span"],
 			padding-left: @form-input-small-padding-horizontal * @form-input-small-ratio-screen-small;
 			padding-right: @form-input-small-padding-horizontal * @form-input-small-ratio-screen-small;
 			font-size: @form-input-small-text-font-size * @form-input-small-ratio-screen-small;
-			line-height: @form-input-small-text-line-height * @form-input-small-ratio-screen-small;
+			line-height: ceil(@form-input-small-text-line-height * @form-input-small-ratio-screen-small);
 			
 		}
 		
@@ -2588,7 +2599,8 @@ textarea[class*="span"],
 			
 		}
 		
-		&.flush-bottom {
+		&.flush-bottom,
+		&.flush-bottom-screen-small {
 			
 			+ .help-block {
 				
@@ -2714,7 +2726,8 @@ textarea[class*="span"],
 			
 		}
 		
-		&.flush-bottom {
+		&.flush-bottom,
+		&.flush-bottom-screen-small {
 			
 			+ .help-block {
 				
@@ -2773,6 +2786,13 @@ textarea[class*="span"],
 	.select-wrapper {
 		
 		margin-bottom: @form-input-margin-screen-small;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+			margin-bottom: @form-input-margin-screen-small;
+			
+		}
 			
 		.select-wrapper-inner {
 			
@@ -2792,10 +2812,10 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-screen-small;
+				margin-top: -@form-input-margin-tall-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+				margin-bottom: @form-input-margin-tall-screen-small;
 				
 			}
-			
 			
 		}
 		
@@ -2805,10 +2825,10 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-screen-small;
+				margin-top: -@form-input-margin-short-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+				margin-bottom: @form-input-margin-short-screen-small;
 				
 			}
-			
 			
 		}
 		
@@ -2909,7 +2929,8 @@ textarea[class*="span"],
 			
 		}
 		
-		&.flush-bottom {
+		&.flush-bottom,
+		&.flush-bottom-screen-small {
 			
 			+ .help-block {
 				
@@ -3202,7 +3223,7 @@ textarea[class*="span"],
 		padding-left: @form-input-padding-horizontal * @form-input-ratio-screen-medium;
 		padding-right: @form-input-padding-horizontal * @form-input-ratio-screen-medium;
 		font-size: @form-input-text-font-size * @form-input-ratio-screen-medium;
-		line-height: @form-input-text-line-height * @form-input-ratio-screen-medium;
+		line-height: ceil(@form-input-text-line-height * @form-input-ratio-screen-medium);
 		margin-bottom: @form-input-margin-screen-medium;
 		
 		+ .help-block {
@@ -3238,7 +3259,9 @@ textarea[class*="span"],
 			
 		}
 		
-		&.flush-bottom {
+		&.flush-bottom,
+		&.flush-bottom-screen-small,
+		&.flush-bottom-screen-medium {
 			
 			+ .help-block {
 				
@@ -3260,7 +3283,7 @@ textarea[class*="span"],
 			padding-left: @form-input-large-padding-horizontal * @form-input-large-ratio-screen-medium;
 			padding-right: @form-input-large-padding-horizontal * @form-input-large-ratio-screen-medium;
 			font-size: @form-input-large-text-font-size * @form-input-large-ratio-screen-medium;
-			line-height: @form-input-large-text-line-height * @form-input-large-ratio-screen-medium;
+			line-height: ceil(@form-input-large-text-line-height * @form-input-large-ratio-screen-medium);
 			
 		}
 		
@@ -3275,7 +3298,7 @@ textarea[class*="span"],
 			padding-left: @form-input-small-padding-horizontal * @form-input-small-ratio-screen-medium;
 			padding-right: @form-input-small-padding-horizontal * @form-input-small-ratio-screen-medium;
 			font-size: @form-input-small-text-font-size * @form-input-small-ratio-screen-medium;
-			line-height: @form-input-small-text-line-height * @form-input-small-ratio-screen-medium;
+			line-height: ceil(@form-input-small-text-line-height * @form-input-small-ratio-screen-medium);
 			
 		}
 		
@@ -3351,7 +3374,9 @@ textarea[class*="span"],
 			
 		}
 		
-		&.flush-bottom {
+		&.flush-bottom,
+		&.flush-bottom-screen-small,
+		&.flush-bottom-screen-medium {
 			
 			+ .help-block {
 				
@@ -3477,7 +3502,9 @@ textarea[class*="span"],
 			
 		}
 		
-		&.flush-bottom {
+		&.flush-bottom,
+		&.flush-bottom-screen-small,
+		&.flush-bottom-screen-medium {
 			
 			+ .help-block {
 				
@@ -3536,6 +3563,13 @@ textarea[class*="span"],
 	.select-wrapper {
 		
 		margin-bottom: @form-input-margin-screen-medium;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+			margin-bottom: @form-input-margin-screen-medium;
+			
+		}
 			
 		.select-wrapper-inner {
 			
@@ -3555,10 +3589,10 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-screen-medium;
+				margin-top: -@form-input-margin-tall-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+				margin-bottom: @form-input-margin-tall-screen-medium;
 				
 			}
-			
 			
 		}
 		
@@ -3568,10 +3602,10 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-screen-medium;
+				margin-top: -@form-input-margin-short-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+				margin-bottom: @form-input-margin-short-screen-medium;
 				
 			}
-			
 			
 		}
 		
@@ -3672,7 +3706,9 @@ textarea[class*="span"],
 			
 		}
 		
-		&.flush-bottom {
+		&.flush-bottom,
+		&.flush-bottom-screen-small,
+		&.flush-bottom-screen-medium {
 			
 			+ .help-block {
 				
@@ -3971,7 +4007,7 @@ textarea[class*="span"],
 		padding-left: @form-input-padding-horizontal * @form-input-ratio-screen-large;
 		padding-right: @form-input-padding-horizontal * @form-input-ratio-screen-large;
 		font-size: @form-input-text-font-size * @form-input-ratio-screen-large;
-		line-height: @form-input-text-line-height * @form-input-ratio-screen-large;
+		line-height: ceil(@form-input-text-line-height * @form-input-ratio-screen-large);
 		margin-bottom: @form-input-margin-screen-large;
 		
 		+ .help-block {
@@ -4007,7 +4043,10 @@ textarea[class*="span"],
 			
 		}
 		
-		&.flush-bottom {
+		&.flush-bottom,
+		&.flush-bottom-screen-small,
+		&.flush-bottom-screen-medium,
+		&.flush-bottom-screen-large {
 			
 			+ .help-block {
 				
@@ -4029,7 +4068,7 @@ textarea[class*="span"],
 			padding-left: @form-input-large-padding-horizontal * @form-input-large-ratio-screen-large;
 			padding-right: @form-input-large-padding-horizontal * @form-input-large-ratio-screen-large;
 			font-size: @form-input-large-text-font-size * @form-input-large-ratio-screen-large;
-			line-height: @form-input-large-text-line-height * @form-input-large-ratio-screen-large;
+			line-height: ceil(@form-input-large-text-line-height * @form-input-large-ratio-screen-large);
 			
 		}
 		
@@ -4044,7 +4083,7 @@ textarea[class*="span"],
 			padding-left: @form-input-small-padding-horizontal * @form-input-small-ratio-screen-large;
 			padding-right: @form-input-small-padding-horizontal * @form-input-small-ratio-screen-large;
 			font-size: @form-input-small-text-font-size * @form-input-small-ratio-screen-large;
-			line-height: @form-input-small-text-line-height * @form-input-small-ratio-screen-large;
+			line-height: ceil(@form-input-small-text-line-height * @form-input-small-ratio-screen-large);
 			
 		}
 		
@@ -4120,7 +4159,10 @@ textarea[class*="span"],
 			
 		}
 		
-		&.flush-bottom {
+		&.flush-bottom,
+		&.flush-bottom-screen-small,
+		&.flush-bottom-screen-medium,
+		&.flush-bottom-screen-large {
 			
 			+ .help-block {
 				
@@ -4246,7 +4288,10 @@ textarea[class*="span"],
 			
 		}
 		
-		&.flush-bottom {
+		&.flush-bottom,
+		&.flush-bottom-screen-small,
+		&.flush-bottom-screen-medium,
+		&.flush-bottom-screen-large {
 			
 			+ .help-block {
 				
@@ -4305,6 +4350,13 @@ textarea[class*="span"],
 	.select-wrapper {
 		
 		margin-bottom: @form-input-margin-screen-large;
+		
+		+ .help-block {
+			
+			margin-top: -@form-input-margin-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+			margin-bottom: @form-input-margin-screen-large;
+			
+		}
 			
 		.select-wrapper-inner {
 			
@@ -4324,10 +4376,10 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-screen-large;
+				margin-top: -@form-input-margin-tall-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+				margin-bottom: @form-input-margin-tall-screen-large;
 				
 			}
-			
 			
 		}
 		
@@ -4337,12 +4389,13 @@ textarea[class*="span"],
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-screen-large;
+				margin-top: -@form-input-margin-short-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+				margin-bottom: @form-input-margin-short-screen-large;
 				
 			}
 			
-			
 		}
+		
 		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Large Select Wrapper                                                                                 */
@@ -4441,7 +4494,10 @@ textarea[class*="span"],
 			
 		}
 		
-		&.flush-bottom {
+		&.flush-bottom,
+		&.flush-bottom-screen-small,
+		&.flush-bottom-screen-medium,
+		&.flush-bottom-screen-large {
 			
 			+ .help-block {
 				
