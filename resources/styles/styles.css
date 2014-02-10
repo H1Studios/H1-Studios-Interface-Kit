@@ -251,6 +251,9 @@
 /* Form Help Block                                                                                      */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
+/* Default Select Button                                                                                */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 /* Form Radio/Checkbox                                                                                  */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -328,6 +331,26 @@
 /* ---------------------------------------------------------------------------------------------------- */
 /* ==================================================================================================== */
 /*                                                                                                      */
+/* Icon Glyphs                                                                                          */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Mini Icon Glyph                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Small Icon Glyph                                                                                     */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Medium Icon Glyph                                                                                    */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Large Icon Glyph                                                                                     */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Jumbo Icon Glyph                                                                                     */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ==================================================================================================== */
+/*                                                                                                      */
 /* Labels                                                                                               */
 /*                                                                                                      */
 /* ==================================================================================================== */
@@ -347,7 +370,26 @@
 /* Warning Label                                                                                        */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
-/* Danger Label                                                                                        */
+/* Danger Label                                                                                         */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Wells                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Default Well                                                                                         */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Tooltips                                                                                             */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Styling                                                                                              */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Notch                                                                                                */
 /* ---------------------------------------------------------------------------------------------------- */
 /* ========================================================================= */
 /*                                                                           */
@@ -1229,13 +1271,16 @@ td.visible-print {
 /* ==================================================================================================== */
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 20px;
-  color: #bbbbbb;
   background-color: #1d1d1d;
   height: 100%;
   overflow-x: hidden;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: normal;
+  font-style: normal;
+  color: #bbbbbb;
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
@@ -1629,6 +1674,18 @@ hr + .h6-clone {
 .row:after {
   clear: both;
 }
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
 .col-mini-1,
 .col-mini-2,
 .col-mini-3,
@@ -1812,6 +1869,18 @@ hr + .h6-clone {
   .row:after {
     clear: both;
   }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12,
   .col-mini-1,
   .col-mini-2,
   .col-mini-3,
@@ -2101,6 +2170,18 @@ hr + .h6-clone {
   .row:after {
     clear: both;
   }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12,
   .col-mini-1,
   .col-mini-2,
   .col-mini-3,
@@ -2390,6 +2471,18 @@ hr + .h6-clone {
   .row:after {
     clear: both;
   }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12,
   .col-mini-1,
   .col-mini-2,
   .col-mini-3,
@@ -2688,6 +2781,18 @@ hr + .h6-clone {
   .row:after {
     clear: both;
   }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12,
   .col-mini-1,
   .col-mini-2,
   .col-mini-3,
@@ -2987,6 +3092,7 @@ p {
   font-style: normal;
   color: #bbbbbb;
   margin: 0px 0px 15px 0px;
+  text-shadow: none;
   /* ---------------------------------------------------------------------------------------------------- */
   /* Inverse                                                                                              */
   /* ---------------------------------------------------------------------------------------------------- */
@@ -3015,6 +3121,7 @@ p strong {
   font-weight: 500;
   color: #8c8c8c;
   font-style: normal;
+  text-shadow: none;
 }
 p.emphasis a,
 p .emphasis a,
@@ -3038,6 +3145,7 @@ p.muted {
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 p.muted a {
   color: #35c5af;
@@ -3053,6 +3161,7 @@ p.muted a:active {
 }
 p.inverse {
   color: #ffffff;
+  text-shadow: none;
 }
 p.inverse a {
   color: #35c5af;
@@ -3111,6 +3220,7 @@ p .lead {
   font-style: normal;
   color: #9f9f9f;
   margin: 0px 0px 15px 0px;
+  text-shadow: none;
   /* ---------------------------------------------------------------------------------------------------- */
   /* Inverse                                                                                              */
   /* ---------------------------------------------------------------------------------------------------- */
@@ -3155,6 +3265,7 @@ p .lead strong {
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 p.lead.emphasis a,
 p lead.emphasis a,
@@ -3198,6 +3309,7 @@ p .lead.muted {
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 p.lead.muted a,
 p lead.muted a,
@@ -3221,6 +3333,7 @@ p.lead.inverse,
 p lead.inverse,
 p .lead.inverse {
   color: #ffffff;
+  text-shadow: none;
 }
 p.lead.inverse a,
 p lead.inverse a,
@@ -3318,6 +3431,7 @@ p .small {
   font-style: normal;
   color: #bbbbbb;
   margin: 0px 0px 15px 0px;
+  text-shadow: none;
   /* ---------------------------------------------------------------------------------------------------- */
   /* Inverse                                                                                              */
   /* ---------------------------------------------------------------------------------------------------- */
@@ -3370,6 +3484,7 @@ p .small strong {
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 small.emphasis a,
 p.small.emphasis a,
@@ -3423,6 +3538,7 @@ p .small.muted {
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 small.muted a,
 p.small.muted a,
@@ -3450,6 +3566,7 @@ p.small.inverse,
 p small.inverse,
 p .small.inverse {
   color: #ffffff;
+  text-shadow: none;
 }
 small.inverse a,
 p.small.inverse a,
@@ -3591,7 +3708,7 @@ h4 .icon,
 h5 .icon,
 .h5-clone .icon,
 h6 .h6-clone .icon {
-  vertical-align: text-top;
+  vertical-align: middle;
 }
 h1:first-child,
 .h1-clone:first-child,
@@ -3621,6 +3738,7 @@ h1,
   font-style: normal;
   color: #262626;
   margin: 45px 0px 30px 0px;
+  text-shadow: none;
   /* ---------------------------------------------------------------------------------------------------- */
   /* Inverse                                                                                              */
   /* ---------------------------------------------------------------------------------------------------- */
@@ -3651,27 +3769,47 @@ h1 a:active,
 h1 .icon,
 .h1-clone .icon {
   margin-right: 10px;
-  margin-top: 19px;
+  margin-top: 0px;
 }
 h1 .icon.icon-small,
 .h1-clone .icon.icon-small {
   margin-right: 10px;
-  margin-top: 15px;
+  margin-top: 0px;
 }
 h1 .icon.icon-medium,
 .h1-clone .icon.icon-medium {
   margin-right: 10px;
-  margin-top: 11px;
+  margin-top: 0px;
 }
 h1 .icon.icon-large,
 .h1-clone .icon.icon-large {
   margin-right: 10px;
-  margin-top: 3px;
+  margin-top: 0px;
 }
 h1 .icon.icon-jumbo,
 .h1-clone .icon.icon-jumbo {
   margin-right: 10px;
-  margin-top: -5px;
+  margin-top: 0px;
+}
+h1.has-icon,
+.h1-clone.has-icon {
+  padding-top: 0px;
+}
+h1.has-icon.has-icon-small,
+.h1-clone.has-icon.has-icon-small {
+  padding-top: 0px;
+}
+h1.has-icon.has-icon-medium,
+.h1-clone.has-icon.has-icon-medium {
+  padding-top: 0px;
+}
+h1.has-icon.has-icon-large,
+.h1-clone.has-icon.has-icon-large {
+  padding-top: 0px;
+}
+h1.has-icon.has-icon-jumbo,
+.h1-clone.has-icon.has-icon-jumbo {
+  padding-top: 0px;
 }
 h1.emphasis,
 .h1-clone.emphasis,
@@ -3682,6 +3820,7 @@ h1 strong,
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 h1.emphasis a,
 .h1-clone.emphasis a,
@@ -3715,6 +3854,7 @@ h1.muted,
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 h1.muted a,
 .h1-clone.muted a {
@@ -3734,6 +3874,7 @@ h1.muted a:active,
 h1.inverse,
 .h1-clone.inverse {
   color: #ffffff;
+  text-shadow: none;
 }
 h1.inverse a,
 .h1-clone.inverse a {
@@ -3810,6 +3951,7 @@ h2,
   font-style: normal;
   color: #262626;
   margin: 45px 0px 30px 0px;
+  text-shadow: none;
   /* ---------------------------------------------------------------------------------------------------- */
   /* Inverse                                                                                              */
   /* ---------------------------------------------------------------------------------------------------- */
@@ -3840,27 +3982,47 @@ h2 a:active,
 h2 .icon,
 .h2-clone .icon {
   margin-right: 10px;
-  margin-top: 11px;
+  margin-top: 0px;
 }
 h2 .icon.icon-small,
 .h2-clone .icon.icon-small {
   margin-right: 10px;
-  margin-top: 7px;
+  margin-top: 0px;
 }
 h2 .icon.icon-medium,
 .h2-clone .icon.icon-medium {
   margin-right: 10px;
-  margin-top: 3px;
+  margin-top: 0px;
 }
 h2 .icon.icon-large,
 .h2-clone .icon.icon-large {
   margin-right: 10px;
-  margin-top: -5px;
+  margin-top: 0px;
 }
 h2 .icon.icon-jumbo,
 .h2-clone .icon.icon-jumbo {
   margin-right: 10px;
-  margin-top: -13px;
+  margin-top: 0px;
+}
+h2.has-icon,
+.h2-clone.has-icon {
+  padding-top: 0px;
+}
+h2.has-icon.has-icon-small,
+.h2-clone.has-icon.has-icon-small {
+  padding-top: 0px;
+}
+h2.has-icon.has-icon-medium,
+.h2-clone.has-icon.has-icon-medium {
+  padding-top: 0px;
+}
+h2.has-icon.has-icon-large,
+.h2-clone.has-icon.has-icon-large {
+  padding-top: 0px;
+}
+h2.has-icon.has-icon-jumbo,
+.h2-clone.has-icon.has-icon-jumbo {
+  padding-top: 0px;
 }
 h2.emphasis,
 .h2-clone.emphasis,
@@ -3871,6 +4033,7 @@ h2 strong,
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 h2.emphasis a,
 .h2-clone.emphasis a,
@@ -3904,6 +4067,7 @@ h2.muted,
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 h2.muted a,
 .h2-clone.muted a {
@@ -3923,6 +4087,7 @@ h2.muted a:active,
 h2.inverse,
 .h2-clone.inverse {
   color: #ffffff;
+  text-shadow: none;
 }
 h2.inverse a,
 .h2-clone.inverse a {
@@ -3999,6 +4164,7 @@ h3,
   font-style: normal;
   color: #5e5e5e;
   margin: 45px 0px 30px 0px;
+  text-shadow: none;
   /* ---------------------------------------------------------------------------------------------------- */
   /* Inverse                                                                                              */
   /* ---------------------------------------------------------------------------------------------------- */
@@ -4029,12 +4195,12 @@ h3 a:active,
 h3 .icon,
 .h3-clone .icon {
   margin-right: 10px;
-  margin-top: 8px;
+  margin-top: 0px;
 }
 h3 .icon.icon-small,
 .h3-clone .icon.icon-small {
   margin-right: 10px;
-  margin-top: 4px;
+  margin-top: 0px;
 }
 h3 .icon.icon-medium,
 .h3-clone .icon.icon-medium {
@@ -4044,12 +4210,32 @@ h3 .icon.icon-medium,
 h3 .icon.icon-large,
 .h3-clone .icon.icon-large {
   margin-right: 10px;
-  margin-top: -8px;
+  margin-top: 0px;
 }
 h3 .icon.icon-jumbo,
 .h3-clone .icon.icon-jumbo {
   margin-right: 10px;
-  margin-top: -16px;
+  margin-top: 0px;
+}
+h3.has-icon,
+.h3-clone.has-icon {
+  padding-top: 0px;
+}
+h3.has-icon.has-icon-small,
+.h3-clone.has-icon.has-icon-small {
+  padding-top: 0px;
+}
+h3.has-icon.has-icon-medium,
+.h3-clone.has-icon.has-icon-medium {
+  padding-top: 0px;
+}
+h3.has-icon.has-icon-large,
+.h3-clone.has-icon.has-icon-large {
+  padding-top: 0px;
+}
+h3.has-icon.has-icon-jumbo,
+.h3-clone.has-icon.has-icon-jumbo {
+  padding-top: 0px;
 }
 h3.emphasis,
 .h3-clone.emphasis,
@@ -4060,6 +4246,7 @@ h3 strong,
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 h3.emphasis a,
 .h3-clone.emphasis a,
@@ -4093,6 +4280,7 @@ h3.muted,
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 h3.muted a,
 .h3-clone.muted a {
@@ -4112,6 +4300,7 @@ h3.muted a:active,
 h3.inverse,
 .h3-clone.inverse {
   color: #ffffff;
+  text-shadow: none;
 }
 h3.inverse a,
 .h3-clone.inverse a {
@@ -4188,6 +4377,7 @@ h4,
   font-style: normal;
   color: #2f2f2f;
   margin: 40px 0px 20px 0px;
+  text-shadow: none;
   /* ---------------------------------------------------------------------------------------------------- */
   /* Inverse                                                                                              */
   /* ---------------------------------------------------------------------------------------------------- */
@@ -4218,27 +4408,47 @@ h4 a:active,
 h4 .icon,
 .h4-clone .icon {
   margin-right: 10px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 h4 .icon.icon-small,
 .h4-clone .icon.icon-small {
   margin-right: 10px;
-  margin-top: 1px;
+  margin-top: 0px;
 }
 h4 .icon.icon-medium,
 .h4-clone .icon.icon-medium {
   margin-right: 10px;
-  margin-top: -3px;
+  margin-top: 0px;
 }
 h4 .icon.icon-large,
 .h4-clone .icon.icon-large {
   margin-right: 10px;
-  margin-top: -11px;
+  margin-top: 0px;
 }
 h4 .icon.icon-jumbo,
 .h4-clone .icon.icon-jumbo {
   margin-right: 10px;
-  margin-top: -19px;
+  margin-top: 0px;
+}
+h4.has-icon,
+.h4-clone.has-icon {
+  padding-top: 0px;
+}
+h4.has-icon.has-icon-small,
+.h4-clone.has-icon.has-icon-small {
+  padding-top: 0px;
+}
+h4.has-icon.has-icon-medium,
+.h4-clone.has-icon.has-icon-medium {
+  padding-top: 0px;
+}
+h4.has-icon.has-icon-large,
+.h4-clone.has-icon.has-icon-large {
+  padding-top: 0px;
+}
+h4.has-icon.has-icon-jumbo,
+.h4-clone.has-icon.has-icon-jumbo {
+  padding-top: 0px;
 }
 h4.emphasis,
 .h4-clone.emphasis,
@@ -4249,6 +4459,7 @@ h4 strong,
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 h4.emphasis a,
 .h4-clone.emphasis a,
@@ -4282,6 +4493,7 @@ h4.muted,
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 h4.muted a,
 .h4-clone.muted a {
@@ -4301,6 +4513,7 @@ h4.muted a:active,
 h4.inverse,
 .h4-clone.inverse {
   color: #ffffff;
+  text-shadow: none;
 }
 h4.inverse a,
 .h4-clone.inverse a {
@@ -4377,6 +4590,7 @@ h5,
   font-style: normal;
   color: #5e5e5e;
   margin: 30px 0px 15px 0px;
+  text-shadow: none;
   /* ---------------------------------------------------------------------------------------------------- */
   /* Inverse                                                                                              */
   /* ---------------------------------------------------------------------------------------------------- */
@@ -4407,27 +4621,47 @@ h5 a:active,
 h5 .icon,
 .h5-clone .icon {
   margin-right: 10px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 h5 .icon.icon-small,
 .h5-clone .icon.icon-small {
   margin-right: 10px;
-  margin-top: 1px;
+  margin-top: 0px;
 }
 h5 .icon.icon-medium,
 .h5-clone .icon.icon-medium {
   margin-right: 10px;
-  margin-top: -3px;
+  margin-top: 0px;
 }
 h5 .icon.icon-large,
 .h5-clone .icon.icon-large {
   margin-right: 10px;
-  margin-top: -11px;
+  margin-top: 0px;
 }
 h5 .icon.icon-jumbo,
 .h5-clone .icon.icon-jumbo {
   margin-right: 10px;
-  margin-top: -19px;
+  margin-top: 0px;
+}
+h5.has-icon,
+.h5-clone.has-icon {
+  padding-top: 0px;
+}
+h5.has-icon.has-icon-small,
+.h5-clone.has-icon.has-icon-small {
+  padding-top: 0px;
+}
+h5.has-icon.has-icon-medium,
+.h5-clone.has-icon.has-icon-medium {
+  padding-top: 0px;
+}
+h5.has-icon.has-icon-large,
+.h5-clone.has-icon.has-icon-large {
+  padding-top: 0px;
+}
+h5.has-icon.has-icon-jumbo,
+.h5-clone.has-icon.has-icon-jumbo {
+  padding-top: 0px;
 }
 h5.emphasis,
 .h5-clone.emphasis,
@@ -4438,6 +4672,7 @@ h5 strong,
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 h5.emphasis a,
 .h5-clone.emphasis a,
@@ -4471,6 +4706,7 @@ h5.muted,
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 h5.muted a,
 .h5-clone.muted a {
@@ -4490,6 +4726,7 @@ h5.muted a:active,
 h5.inverse,
 .h5-clone.inverse {
   color: #ffffff;
+  text-shadow: none;
 }
 h5.inverse a,
 .h5-clone.inverse a {
@@ -4566,6 +4803,7 @@ h6,
   font-style: normal;
   color: #8c8c8c;
   margin: 25px 0px 15px 0px;
+  text-shadow: none;
   /* ---------------------------------------------------------------------------------------------------- */
   /* Inverse                                                                                              */
   /* ---------------------------------------------------------------------------------------------------- */
@@ -4596,27 +4834,47 @@ h6 a:active,
 h6 .icon,
 .h6-clone .icon {
   margin-right: 10px;
-  margin-top: 2px;
+  margin-top: 0px;
 }
 h6 .icon.icon-small,
 .h6-clone .icon.icon-small {
   margin-right: 10px;
-  margin-top: -2px;
+  margin-top: 0px;
 }
 h6 .icon.icon-medium,
 .h6-clone .icon.icon-medium {
   margin-right: 10px;
-  margin-top: -6px;
+  margin-top: 0px;
 }
 h6 .icon.icon-large,
 .h6-clone .icon.icon-large {
   margin-right: 10px;
-  margin-top: -14px;
+  margin-top: 0px;
 }
 h6 .icon.icon-jumbo,
 .h6-clone .icon.icon-jumbo {
   margin-right: 10px;
-  margin-top: -22px;
+  margin-top: 0px;
+}
+h6.has-icon,
+.h6-clone.has-icon {
+  padding-top: 0px;
+}
+h6.has-icon.has-icon-small,
+.h6-clone.has-icon.has-icon-small {
+  padding-top: 0px;
+}
+h6.has-icon.has-icon-medium,
+.h6-clone.has-icon.has-icon-medium {
+  padding-top: 0px;
+}
+h6.has-icon.has-icon-large,
+.h6-clone.has-icon.has-icon-large {
+  padding-top: 0px;
+}
+h6.has-icon.has-icon-jumbo,
+.h6-clone.has-icon.has-icon-jumbo {
+  padding-top: 0px;
 }
 h6.emphasis,
 .h6-clone.emphasis,
@@ -4627,6 +4885,7 @@ h6 strong,
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 h6.emphasis a,
 .h6-clone.emphasis a,
@@ -4660,6 +4919,7 @@ h6.muted,
   font-weight: 600;
   color: #bbbbbb;
   font-style: normal;
+  text-shadow: none;
 }
 h6.muted a,
 .h6-clone.muted a {
@@ -4679,6 +4939,7 @@ h6.muted a:active,
 h6.inverse,
 .h6-clone.inverse {
   color: #ffffff;
+  text-shadow: none;
 }
 h6.inverse a,
 .h6-clone.inverse a {
@@ -5237,27 +5498,47 @@ blockquote:after {
   h1 .icon,
   .h1-clone .icon {
     margin-right: 14px;
-    margin-top: 29.799999999999997px;
+    margin-top: 0px;
   }
   h1 .icon.icon-small,
   .h1-clone .icon.icon-small {
     margin-right: 14px;
-    margin-top: 25.799999999999997px;
+    margin-top: 0px;
   }
   h1 .icon.icon-medium,
   .h1-clone .icon.icon-medium {
     margin-right: 14px;
-    margin-top: 21.799999999999997px;
+    margin-top: 0px;
   }
   h1 .icon.icon-large,
   .h1-clone .icon.icon-large {
     margin-right: 14px;
-    margin-top: 13.799999999999997px;
+    margin-top: 0px;
   }
   h1 .icon.icon-jumbo,
   .h1-clone .icon.icon-jumbo {
     margin-right: 14px;
-    margin-top: 5.799999999999997px;
+    margin-top: 0px;
+  }
+  h1.has-icon,
+  .h1-clone.has-icon {
+    padding-top: 0px;
+  }
+  h1.has-icon.has-icon-small,
+  .h1-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h1.has-icon.has-icon-medium,
+  .h1-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h1.has-icon.has-icon-large,
+  .h1-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h1.has-icon.has-icon-jumbo,
+  .h1-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5281,27 +5562,47 @@ blockquote:after {
   h2 .icon,
   .h2-clone .icon {
     margin-right: 13px;
-    margin-top: 16.7px;
+    margin-top: 0px;
   }
   h2 .icon.icon-small,
   .h2-clone .icon.icon-small {
     margin-right: 13px;
-    margin-top: 12.7px;
+    margin-top: 0px;
   }
   h2 .icon.icon-medium,
   .h2-clone .icon.icon-medium {
     margin-right: 13px;
-    margin-top: 8.7px;
+    margin-top: 0px;
   }
   h2 .icon.icon-large,
   .h2-clone .icon.icon-large {
     margin-right: 13px;
-    margin-top: 0.6999999999999993px;
+    margin-top: 0px;
   }
   h2 .icon.icon-jumbo,
   .h2-clone .icon.icon-jumbo {
     margin-right: 13px;
-    margin-top: -7.300000000000001px;
+    margin-top: 0px;
+  }
+  h2.has-icon,
+  .h2-clone.has-icon {
+    padding-top: 0px;
+  }
+  h2.has-icon.has-icon-small,
+  .h2-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h2.has-icon.has-icon-medium,
+  .h2-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h2.has-icon.has-icon-large,
+  .h2-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h2.has-icon.has-icon-jumbo,
+  .h2-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5325,27 +5626,47 @@ blockquote:after {
   h3 .icon,
   .h3-clone .icon {
     margin-right: 12px;
-    margin-top: 11.2px;
+    margin-top: 0px;
   }
   h3 .icon.icon-small,
   .h3-clone .icon.icon-small {
     margin-right: 12px;
-    margin-top: 7.199999999999999px;
+    margin-top: 0px;
   }
   h3 .icon.icon-medium,
   .h3-clone .icon.icon-medium {
     margin-right: 12px;
-    margin-top: 3.1999999999999993px;
+    margin-top: 0px;
   }
   h3 .icon.icon-large,
   .h3-clone .icon.icon-large {
     margin-right: 12px;
-    margin-top: -4.800000000000001px;
+    margin-top: 0px;
   }
   h3 .icon.icon-jumbo,
   .h3-clone .icon.icon-jumbo {
     margin-right: 12px;
-    margin-top: -12.8px;
+    margin-top: 0px;
+  }
+  h3.has-icon,
+  .h3-clone.has-icon {
+    padding-top: 0px;
+  }
+  h3.has-icon.has-icon-small,
+  .h3-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h3.has-icon.has-icon-medium,
+  .h3-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h3.has-icon.has-icon-large,
+  .h3-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h3.has-icon.has-icon-jumbo,
+  .h3-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5369,27 +5690,47 @@ blockquote:after {
   h4 .icon,
   .h4-clone .icon {
     margin-right: 11px;
-    margin-top: 6.300000000000001px;
+    margin-top: 0px;
   }
   h4 .icon.icon-small,
   .h4-clone .icon.icon-small {
     margin-right: 11px;
-    margin-top: 2.3000000000000007px;
+    margin-top: 0px;
   }
   h4 .icon.icon-medium,
   .h4-clone .icon.icon-medium {
     margin-right: 11px;
-    margin-top: -1.6999999999999993px;
+    margin-top: 0px;
   }
   h4 .icon.icon-large,
   .h4-clone .icon.icon-large {
     margin-right: 11px;
-    margin-top: -9.7px;
+    margin-top: 0px;
   }
   h4 .icon.icon-jumbo,
   .h4-clone .icon.icon-jumbo {
     margin-right: 11px;
-    margin-top: -17.7px;
+    margin-top: 0px;
+  }
+  h4.has-icon,
+  .h4-clone.has-icon {
+    padding-top: 0px;
+  }
+  h4.has-icon.has-icon-small,
+  .h4-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h4.has-icon.has-icon-medium,
+  .h4-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h4.has-icon.has-icon-large,
+  .h4-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h4.has-icon.has-icon-jumbo,
+  .h4-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5413,27 +5754,47 @@ blockquote:after {
   h5 .icon,
   .h5-clone .icon {
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 0px;
   }
   h5 .icon.icon-small,
   .h5-clone .icon.icon-small {
     margin-right: 10px;
-    margin-top: 1px;
+    margin-top: 0px;
   }
   h5 .icon.icon-medium,
   .h5-clone .icon.icon-medium {
     margin-right: 10px;
-    margin-top: -3px;
+    margin-top: 0px;
   }
   h5 .icon.icon-large,
   .h5-clone .icon.icon-large {
     margin-right: 10px;
-    margin-top: -11px;
+    margin-top: 0px;
   }
   h5 .icon.icon-jumbo,
   .h5-clone .icon.icon-jumbo {
     margin-right: 10px;
-    margin-top: -19px;
+    margin-top: 0px;
+  }
+  h5.has-icon,
+  .h5-clone.has-icon {
+    padding-top: 0px;
+  }
+  h5.has-icon.has-icon-small,
+  .h5-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h5.has-icon.has-icon-medium,
+  .h5-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h5.has-icon.has-icon-large,
+  .h5-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h5.has-icon.has-icon-jumbo,
+  .h5-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5457,27 +5818,47 @@ blockquote:after {
   h6 .icon,
   .h6-clone .icon {
     margin-right: 10px;
-    margin-top: 2px;
+    margin-top: 0px;
   }
   h6 .icon.icon-small,
   .h6-clone .icon.icon-small {
     margin-right: 10px;
-    margin-top: -2px;
+    margin-top: 0px;
   }
   h6 .icon.icon-medium,
   .h6-clone .icon.icon-medium {
     margin-right: 10px;
-    margin-top: -6px;
+    margin-top: 0px;
   }
   h6 .icon.icon-large,
   .h6-clone .icon.icon-large {
     margin-right: 10px;
-    margin-top: -14px;
+    margin-top: 0px;
   }
   h6 .icon.icon-jumbo,
   .h6-clone .icon.icon-jumbo {
     margin-right: 10px;
-    margin-top: -22px;
+    margin-top: 0px;
+  }
+  h6.has-icon,
+  .h6-clone.has-icon {
+    padding-top: 0px;
+  }
+  h6.has-icon.has-icon-small,
+  .h6-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h6.has-icon.has-icon-medium,
+  .h6-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h6.has-icon.has-icon-large,
+  .h6-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h6.has-icon.has-icon-jumbo,
+  .h6-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5710,27 +6091,47 @@ blockquote:after {
   h1 .icon,
   .h1-clone .icon {
     margin-right: 17px;
-    margin-top: 37.9px;
+    margin-top: 0px;
   }
   h1 .icon.icon-small,
   .h1-clone .icon.icon-small {
     margin-right: 17px;
-    margin-top: 33.9px;
+    margin-top: 0px;
   }
   h1 .icon.icon-medium,
   .h1-clone .icon.icon-medium {
     margin-right: 17px;
-    margin-top: 29.9px;
+    margin-top: 0px;
   }
   h1 .icon.icon-large,
   .h1-clone .icon.icon-large {
     margin-right: 17px;
-    margin-top: 21.9px;
+    margin-top: 0px;
   }
   h1 .icon.icon-jumbo,
   .h1-clone .icon.icon-jumbo {
     margin-right: 17px;
-    margin-top: 13.899999999999999px;
+    margin-top: 0px;
+  }
+  h1.has-icon,
+  .h1-clone.has-icon {
+    padding-top: 0px;
+  }
+  h1.has-icon.has-icon-small,
+  .h1-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h1.has-icon.has-icon-medium,
+  .h1-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h1.has-icon.has-icon-large,
+  .h1-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h1.has-icon.has-icon-jumbo,
+  .h1-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5754,27 +6155,47 @@ blockquote:after {
   h2 .icon,
   .h2-clone .icon {
     margin-right: 17px;
-    margin-top: 24.299999999999997px;
+    margin-top: 0px;
   }
   h2 .icon.icon-small,
   .h2-clone .icon.icon-small {
     margin-right: 17px;
-    margin-top: 20.299999999999997px;
+    margin-top: 0px;
   }
   h2 .icon.icon-medium,
   .h2-clone .icon.icon-medium {
     margin-right: 17px;
-    margin-top: 16.299999999999997px;
+    margin-top: 0px;
   }
   h2 .icon.icon-large,
   .h2-clone .icon.icon-large {
     margin-right: 17px;
-    margin-top: 8.299999999999997px;
+    margin-top: 0px;
   }
   h2 .icon.icon-jumbo,
   .h2-clone .icon.icon-jumbo {
     margin-right: 17px;
-    margin-top: 0.29999999999999716px;
+    margin-top: 0px;
+  }
+  h2.has-icon,
+  .h2-clone.has-icon {
+    padding-top: 0px;
+  }
+  h2.has-icon.has-icon-small,
+  .h2-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h2.has-icon.has-icon-medium,
+  .h2-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h2.has-icon.has-icon-large,
+  .h2-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h2.has-icon.has-icon-jumbo,
+  .h2-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5798,27 +6219,47 @@ blockquote:after {
   h3 .icon,
   .h3-clone .icon {
     margin-right: 14px;
-    margin-top: 14.399999999999999px;
+    margin-top: 0px;
   }
   h3 .icon.icon-small,
   .h3-clone .icon.icon-small {
     margin-right: 14px;
-    margin-top: 10.399999999999999px;
+    margin-top: 0px;
   }
   h3 .icon.icon-medium,
   .h3-clone .icon.icon-medium {
     margin-right: 14px;
-    margin-top: 6.399999999999999px;
+    margin-top: 0px;
   }
   h3 .icon.icon-large,
   .h3-clone .icon.icon-large {
     margin-right: 14px;
-    margin-top: -1.6000000000000014px;
+    margin-top: 0px;
   }
   h3 .icon.icon-jumbo,
   .h3-clone .icon.icon-jumbo {
     margin-right: 14px;
-    margin-top: -9.600000000000001px;
+    margin-top: 0px;
+  }
+  h3.has-icon,
+  .h3-clone.has-icon {
+    padding-top: 0px;
+  }
+  h3.has-icon.has-icon-small,
+  .h3-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h3.has-icon.has-icon-medium,
+  .h3-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h3.has-icon.has-icon-large,
+  .h3-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h3.has-icon.has-icon-jumbo,
+  .h3-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5842,27 +6283,47 @@ blockquote:after {
   h4 .icon,
   .h4-clone .icon {
     margin-right: 12px;
-    margin-top: 7.6px;
+    margin-top: 0px;
   }
   h4 .icon.icon-small,
   .h4-clone .icon.icon-small {
     margin-right: 12px;
-    margin-top: 3.5999999999999996px;
+    margin-top: 0px;
   }
   h4 .icon.icon-medium,
   .h4-clone .icon.icon-medium {
     margin-right: 12px;
-    margin-top: -0.40000000000000036px;
+    margin-top: 0px;
   }
   h4 .icon.icon-large,
   .h4-clone .icon.icon-large {
     margin-right: 12px;
-    margin-top: -8.4px;
+    margin-top: 0px;
   }
   h4 .icon.icon-jumbo,
   .h4-clone .icon.icon-jumbo {
     margin-right: 12px;
-    margin-top: -16.4px;
+    margin-top: 0px;
+  }
+  h4.has-icon,
+  .h4-clone.has-icon {
+    padding-top: 0px;
+  }
+  h4.has-icon.has-icon-small,
+  .h4-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h4.has-icon.has-icon-medium,
+  .h4-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h4.has-icon.has-icon-large,
+  .h4-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h4.has-icon.has-icon-jumbo,
+  .h4-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5886,27 +6347,47 @@ blockquote:after {
   h5 .icon,
   .h5-clone .icon {
     margin-right: 11px;
-    margin-top: 6.300000000000001px;
+    margin-top: 0px;
   }
   h5 .icon.icon-small,
   .h5-clone .icon.icon-small {
     margin-right: 11px;
-    margin-top: 2.3000000000000007px;
+    margin-top: 0px;
   }
   h5 .icon.icon-medium,
   .h5-clone .icon.icon-medium {
     margin-right: 11px;
-    margin-top: -1.6999999999999993px;
+    margin-top: 0px;
   }
   h5 .icon.icon-large,
   .h5-clone .icon.icon-large {
     margin-right: 11px;
-    margin-top: -9.7px;
+    margin-top: 0px;
   }
   h5 .icon.icon-jumbo,
   .h5-clone .icon.icon-jumbo {
     margin-right: 11px;
-    margin-top: -17.7px;
+    margin-top: 0px;
+  }
+  h5.has-icon,
+  .h5-clone.has-icon {
+    padding-top: 0px;
+  }
+  h5.has-icon.has-icon-small,
+  .h5-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h5.has-icon.has-icon-medium,
+  .h5-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h5.has-icon.has-icon-large,
+  .h5-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h5.has-icon.has-icon-jumbo,
+  .h5-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -5930,27 +6411,47 @@ blockquote:after {
   h6 .icon,
   .h6-clone .icon {
     margin-right: 11px;
-    margin-top: 3px;
+    margin-top: 0px;
   }
   h6 .icon.icon-small,
   .h6-clone .icon.icon-small {
     margin-right: 11px;
-    margin-top: -1px;
+    margin-top: 0px;
   }
   h6 .icon.icon-medium,
   .h6-clone .icon.icon-medium {
     margin-right: 11px;
-    margin-top: -5px;
+    margin-top: 0px;
   }
   h6 .icon.icon-large,
   .h6-clone .icon.icon-large {
     margin-right: 11px;
-    margin-top: -13px;
+    margin-top: 0px;
   }
   h6 .icon.icon-jumbo,
   .h6-clone .icon.icon-jumbo {
     margin-right: 11px;
-    margin-top: -21px;
+    margin-top: 0px;
+  }
+  h6.has-icon,
+  .h6-clone.has-icon {
+    padding-top: 0px;
+  }
+  h6.has-icon.has-icon-small,
+  .h6-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h6.has-icon.has-icon-medium,
+  .h6-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h6.has-icon.has-icon-large,
+  .h6-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h6.has-icon.has-icon-jumbo,
+  .h6-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6183,27 +6684,47 @@ blockquote:after {
   h1 .icon,
   .h1-clone .icon {
     margin-right: 18px;
-    margin-top: 40.6px;
+    margin-top: 0px;
   }
   h1 .icon.icon-small,
   .h1-clone .icon.icon-small {
     margin-right: 18px;
-    margin-top: 36.6px;
+    margin-top: 0px;
   }
   h1 .icon.icon-medium,
   .h1-clone .icon.icon-medium {
     margin-right: 18px;
-    margin-top: 32.6px;
+    margin-top: 0px;
   }
   h1 .icon.icon-large,
   .h1-clone .icon.icon-large {
     margin-right: 18px;
-    margin-top: 24.6px;
+    margin-top: 0px;
   }
   h1 .icon.icon-jumbo,
   .h1-clone .icon.icon-jumbo {
     margin-right: 18px;
-    margin-top: 16.6px;
+    margin-top: 0px;
+  }
+  h1.has-icon,
+  .h1-clone.has-icon {
+    padding-top: 0px;
+  }
+  h1.has-icon.has-icon-small,
+  .h1-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h1.has-icon.has-icon-medium,
+  .h1-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h1.has-icon.has-icon-large,
+  .h1-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h1.has-icon.has-icon-jumbo,
+  .h1-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6227,27 +6748,47 @@ blockquote:after {
   h2 .icon,
   .h2-clone .icon {
     margin-right: 18px;
-    margin-top: 26.200000000000003px;
+    margin-top: 0px;
   }
   h2 .icon.icon-small,
   .h2-clone .icon.icon-small {
     margin-right: 18px;
-    margin-top: 22.200000000000003px;
+    margin-top: 0px;
   }
   h2 .icon.icon-medium,
   .h2-clone .icon.icon-medium {
     margin-right: 18px;
-    margin-top: 18.200000000000003px;
+    margin-top: 0px;
   }
   h2 .icon.icon-large,
   .h2-clone .icon.icon-large {
     margin-right: 18px;
-    margin-top: 10.200000000000003px;
+    margin-top: 0px;
   }
   h2 .icon.icon-jumbo,
   .h2-clone .icon.icon-jumbo {
     margin-right: 18px;
-    margin-top: 2.200000000000003px;
+    margin-top: 0px;
+  }
+  h2.has-icon,
+  .h2-clone.has-icon {
+    padding-top: 0px;
+  }
+  h2.has-icon.has-icon-small,
+  .h2-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h2.has-icon.has-icon-medium,
+  .h2-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h2.has-icon.has-icon-large,
+  .h2-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h2.has-icon.has-icon-jumbo,
+  .h2-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6271,17 +6812,17 @@ blockquote:after {
   h3 .icon,
   .h3-clone .icon {
     margin-right: 15px;
-    margin-top: 16px;
+    margin-top: 0px;
   }
   h3 .icon.icon-small,
   .h3-clone .icon.icon-small {
     margin-right: 15px;
-    margin-top: 12px;
+    margin-top: 0px;
   }
   h3 .icon.icon-medium,
   .h3-clone .icon.icon-medium {
     margin-right: 15px;
-    margin-top: 8px;
+    margin-top: 0px;
   }
   h3 .icon.icon-large,
   .h3-clone .icon.icon-large {
@@ -6291,7 +6832,27 @@ blockquote:after {
   h3 .icon.icon-jumbo,
   .h3-clone .icon.icon-jumbo {
     margin-right: 15px;
-    margin-top: -8px;
+    margin-top: 0px;
+  }
+  h3.has-icon,
+  .h3-clone.has-icon {
+    padding-top: 0px;
+  }
+  h3.has-icon.has-icon-small,
+  .h3-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h3.has-icon.has-icon-medium,
+  .h3-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h3.has-icon.has-icon-large,
+  .h3-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h3.has-icon.has-icon-jumbo,
+  .h3-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6315,27 +6876,47 @@ blockquote:after {
   h4 .icon,
   .h4-clone .icon {
     margin-right: 13px;
-    margin-top: 8.900000000000002px;
+    margin-top: 0px;
   }
   h4 .icon.icon-small,
   .h4-clone .icon.icon-small {
     margin-right: 13px;
-    margin-top: 4.900000000000002px;
+    margin-top: 0px;
   }
   h4 .icon.icon-medium,
   .h4-clone .icon.icon-medium {
     margin-right: 13px;
-    margin-top: 0.9000000000000021px;
+    margin-top: 0px;
   }
   h4 .icon.icon-large,
   .h4-clone .icon.icon-large {
     margin-right: 13px;
-    margin-top: -7.099999999999998px;
+    margin-top: 0px;
   }
   h4 .icon.icon-jumbo,
   .h4-clone .icon.icon-jumbo {
     margin-right: 13px;
-    margin-top: -15.099999999999998px;
+    margin-top: 0px;
+  }
+  h4.has-icon,
+  .h4-clone.has-icon {
+    padding-top: 0px;
+  }
+  h4.has-icon.has-icon-small,
+  .h4-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h4.has-icon.has-icon-medium,
+  .h4-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h4.has-icon.has-icon-large,
+  .h4-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h4.has-icon.has-icon-jumbo,
+  .h4-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6359,27 +6940,47 @@ blockquote:after {
   h5 .icon,
   .h5-clone .icon {
     margin-right: 12px;
-    margin-top: 7.6px;
+    margin-top: 0px;
   }
   h5 .icon.icon-small,
   .h5-clone .icon.icon-small {
     margin-right: 12px;
-    margin-top: 3.5999999999999996px;
+    margin-top: 0px;
   }
   h5 .icon.icon-medium,
   .h5-clone .icon.icon-medium {
     margin-right: 12px;
-    margin-top: -0.40000000000000036px;
+    margin-top: 0px;
   }
   h5 .icon.icon-large,
   .h5-clone .icon.icon-large {
     margin-right: 12px;
-    margin-top: -8.4px;
+    margin-top: 0px;
   }
   h5 .icon.icon-jumbo,
   .h5-clone .icon.icon-jumbo {
     margin-right: 12px;
-    margin-top: -16.4px;
+    margin-top: 0px;
+  }
+  h5.has-icon,
+  .h5-clone.has-icon {
+    padding-top: 0px;
+  }
+  h5.has-icon.has-icon-small,
+  .h5-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h5.has-icon.has-icon-medium,
+  .h5-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h5.has-icon.has-icon-large,
+  .h5-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h5.has-icon.has-icon-jumbo,
+  .h5-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6403,7 +7004,7 @@ blockquote:after {
   h6 .icon,
   .h6-clone .icon {
     margin-right: 12px;
-    margin-top: 4px;
+    margin-top: 0px;
   }
   h6 .icon.icon-small,
   .h6-clone .icon.icon-small {
@@ -6413,17 +7014,37 @@ blockquote:after {
   h6 .icon.icon-medium,
   .h6-clone .icon.icon-medium {
     margin-right: 12px;
-    margin-top: -4px;
+    margin-top: 0px;
   }
   h6 .icon.icon-large,
   .h6-clone .icon.icon-large {
     margin-right: 12px;
-    margin-top: -12px;
+    margin-top: 0px;
   }
   h6 .icon.icon-jumbo,
   .h6-clone .icon.icon-jumbo {
     margin-right: 12px;
-    margin-top: -20px;
+    margin-top: 0px;
+  }
+  h6.has-icon,
+  .h6-clone.has-icon {
+    padding-top: 0px;
+  }
+  h6.has-icon.has-icon-small,
+  .h6-clone.has-icon.has-icon-small {
+    padding-top: 0px;
+  }
+  h6.has-icon.has-icon-medium,
+  .h6-clone.has-icon.has-icon-medium {
+    padding-top: 0px;
+  }
+  h6.has-icon.has-icon-large,
+  .h6-clone.has-icon.has-icon-large {
+    padding-top: 0px;
+  }
+  h6.has-icon.has-icon-jumbo,
+  .h6-clone.has-icon.has-icon-jumbo {
+    padding-top: 0px;
   }
   /* ==================================================================================================== */
   /*                                                                                                      */
@@ -6684,6 +7305,11 @@ blockquote:after {
 }
 .modal-backdrop.fade {
   opacity: 0;
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  -webkit-transition: opacity .3s linear;
+  -moz-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+  transition: opacity .3s linear;
 }
 .modal-backdrop,
 .modal-backdrop.fade.in {
@@ -6780,7 +7406,7 @@ blockquote:after {
   border-radius: 50px;
   padding: 6px !important;
 }
-.modal .modal-header + .modal-body {
+.modal .modal-header ~ .modal-body {
   -webkit-border-top-left-radius: 0px;
   -moz-border-radius-topleft: 0px;
   border-top-left-radius: 0px;
@@ -6828,6 +7454,15 @@ blockquote:after {
 }
 .modal .modal-body .modal-body-scrollable:after {
   clear: both;
+}
+.modal .modal-body:last-child {
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-left-radius: 10px;
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
 }
 .modal .modal-footer {
   background: #fcfcfc;
@@ -7494,8 +8129,7 @@ table th[class*="span"],
   line-height: 20px;
   *line-height: 20px;
   text-transform: normal;
-  border: 0px;
-  *border: 0px;
+  border-style: solid;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -7503,6 +8137,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #838383;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -7568,6 +8204,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #838383;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -7598,6 +8236,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #a8a8a8;
   text-shadow: none;
@@ -7632,6 +8272,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #838383;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -7660,6 +8302,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #8c8c8c;
   text-shadow: none;
@@ -7680,6 +8324,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #5e5e5e;
   text-shadow: none;
@@ -7701,6 +8347,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #2f2f2f;
   text-shadow: none;
@@ -7725,6 +8373,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #8c8c8c;
   text-shadow: none;
@@ -7746,6 +8396,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -7773,6 +8425,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -7801,6 +8455,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -7832,6 +8488,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -7872,7 +8530,6 @@ table th[class*="span"],
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  border: 0px;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
@@ -7911,7 +8568,6 @@ table th[class*="span"],
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  border: 0px;
   font-size: 11px;
   font-weight: 600;
   font-style: normal;
@@ -7950,7 +8606,6 @@ table th[class*="span"],
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  border: 0px;
   font-size: 9px;
   font-weight: 600;
   font-style: normal;
@@ -8013,6 +8668,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -8040,6 +8697,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -8068,6 +8727,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #e0f0ff;
   text-shadow: none;
@@ -8099,6 +8760,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -8127,6 +8790,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #35c5af;
   text-shadow: none;
@@ -8147,6 +8812,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #207669;
   text-shadow: none;
@@ -8168,6 +8835,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #0b2723;
   text-shadow: none;
@@ -8192,6 +8861,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #35c5af;
   text-shadow: none;
@@ -8213,6 +8884,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -8240,6 +8913,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -8268,6 +8943,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -8299,6 +8976,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -8330,6 +9009,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -8357,6 +9038,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -8385,6 +9068,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #f0f8e7;
   text-shadow: none;
@@ -8416,6 +9101,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -8444,6 +9131,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #70af2f;
   text-shadow: none;
@@ -8464,6 +9153,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #548323;
   text-shadow: none;
@@ -8485,6 +9176,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #375717;
   text-shadow: none;
@@ -8509,6 +9202,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #70af2f;
   text-shadow: none;
@@ -8530,6 +9225,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -8557,6 +9254,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -8585,6 +9284,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -8616,6 +9317,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -8647,19 +9350,21 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  background-color: #f38339;
-  background-image: -moz-linear-gradient(top, #f48f4d, #e2620e);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f48f4d), to(#e2620e));
-  background-image: -webkit-linear-gradient(top, #f48f4d, #e2620e);
-  background-image: -o-linear-gradient(top, #f48f4d, #e2620e);
-  background-image: linear-gradient(to bottom, #f48f4d, #e2620e);
+  background-color: #70af2f;
+  background-image: -moz-linear-gradient(top, #7ec635, #659d2a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7ec635), to(#659d2a));
+  background-image: -webkit-linear-gradient(top, #7ec635, #659d2a);
+  background-image: -o-linear-gradient(top, #7ec635, #659d2a);
+  background-image: linear-gradient(to bottom, #7ec635, #659d2a);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff48f4d', endColorstr='#ffe2620e', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 0px 0px #f69c60, 0px 0px 0px 1px rgba(140, 61, 8, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0px 1px 0px 0px #f69c60, 0px 0px 0px 1px rgba(140, 61, 8, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7ec635', endColorstr='#ff659d2a', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px #8ccf4a, 0px 0px 0px 1px rgba(66, 105, 28, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 1px 0px 0px #8ccf4a, 0px 0px 0px 1px rgba(66, 105, 28, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   margin-top: 0px;
   margin-bottom: 0px;
@@ -8674,19 +9379,21 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  background-color: #e2620e;
-  background-image: -moz-linear-gradient(top, #f48f4d, #c6560c);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f48f4d), to(#c6560c));
-  background-image: -webkit-linear-gradient(top, #f48f4d, #c6560c);
-  background-image: -o-linear-gradient(top, #f48f4d, #c6560c);
-  background-image: linear-gradient(to bottom, #f48f4d, #c6560c);
+  background-color: #598c25;
+  background-image: -moz-linear-gradient(top, #7ec635, #598c25);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7ec635), to(#598c25));
+  background-image: -webkit-linear-gradient(top, #7ec635, #598c25);
+  background-image: -o-linear-gradient(top, #7ec635, #598c25);
+  background-image: linear-gradient(to bottom, #7ec635, #598c25);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff48f4d', endColorstr='#ffc6560c', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 0px 0px #f69c60, 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px 1px 0px 0px #f69c60, 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7ec635', endColorstr='#ff598c25', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px #8ccf4a, 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px 0px #8ccf4a, 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   margin-top: 0px;
   margin-bottom: 0px;
@@ -8702,19 +9409,21 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
-  color: #fef2ea;
+  color: #f0f8e7;
   text-shadow: none;
-  background-color: #e2620e;
-  background-image: -moz-linear-gradient(top, #e2620e, #f1711d);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e2620e), to(#f1711d));
-  background-image: -webkit-linear-gradient(top, #e2620e, #f1711d);
-  background-image: -o-linear-gradient(top, #e2620e, #f1711d);
-  background-image: linear-gradient(to bottom, #e2620e, #f1711d);
+  background-color: #598c25;
+  background-image: -moz-linear-gradient(top, #598c25, #70af2f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#598c25), to(#70af2f));
+  background-image: -webkit-linear-gradient(top, #598c25, #70af2f);
+  background-image: -o-linear-gradient(top, #598c25, #70af2f);
+  background-image: linear-gradient(to bottom, #598c25, #70af2f);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe2620e', endColorstr='#fff1711d', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff598c25', endColorstr='#ff70af2f', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   margin-top: 0px;
   margin-bottom: 0px;
@@ -8733,19 +9442,21 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  background-color: #f38339;
-  background-image: -moz-linear-gradient(top, #f48f4d, #e2620e);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f48f4d), to(#e2620e));
-  background-image: -webkit-linear-gradient(top, #f48f4d, #e2620e);
-  background-image: -o-linear-gradient(top, #f48f4d, #e2620e);
-  background-image: linear-gradient(to bottom, #f48f4d, #e2620e);
+  background-color: #70af2f;
+  background-image: -moz-linear-gradient(top, #7ec635, #659d2a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7ec635), to(#659d2a));
+  background-image: -webkit-linear-gradient(top, #7ec635, #659d2a);
+  background-image: -o-linear-gradient(top, #7ec635, #659d2a);
+  background-image: linear-gradient(to bottom, #7ec635, #659d2a);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff48f4d', endColorstr='#ffe2620e', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 0px 0px #f69c60, 0px 0px 0px 1px rgba(140, 61, 8, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0px 1px 0px 0px #f69c60, 0px 0px 0px 1px rgba(140, 61, 8, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7ec635', endColorstr='#ff659d2a', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px #8ccf4a, 0px 0px 0px 1px rgba(66, 105, 28, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 1px 0px 0px #8ccf4a, 0px 0px 0px 1px rgba(66, 105, 28, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   margin-top: 0px;
   margin-bottom: 0px;
@@ -8761,6 +9472,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #f38339;
   text-shadow: none;
@@ -8781,6 +9494,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #d45c0d;
   text-shadow: none;
@@ -8802,6 +9517,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #8d3d09;
   text-shadow: none;
@@ -8826,6 +9543,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #f38339;
   text-shadow: none;
@@ -8847,6 +9566,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -8874,6 +9595,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -8902,6 +9625,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -8933,6 +9658,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -8964,19 +9691,21 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   background-color: #ff0000;
-  background-image: -moz-linear-gradient(top, #e60000, #990000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e60000), to(#990000));
-  background-image: -webkit-linear-gradient(top, #e60000, #990000);
-  background-image: -o-linear-gradient(top, #e60000, #990000);
-  background-image: linear-gradient(to bottom, #e60000, #990000);
+  background-image: -moz-linear-gradient(top, #ff1a1a, #e60000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff1a1a), to(#e60000));
+  background-image: -webkit-linear-gradient(top, #ff1a1a, #e60000);
+  background-image: -o-linear-gradient(top, #ff1a1a, #e60000);
+  background-image: linear-gradient(to bottom, #ff1a1a, #e60000);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe60000', endColorstr='#ff990000', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 0px 0px #ff4d4d, 0px 0px 0px 1px rgba(128, 0, 0, 0.85), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0px 1px 0px 0px #ff4d4d, 0px 0px 0px 1px rgba(128, 0, 0, 0.85), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff1a1a', endColorstr='#ffe60000', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ff3333, 0px 0px 0px 1px rgba(153, 0, 0, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 1px 0px 0px #ff3333, 0px 0px 0px 1px rgba(153, 0, 0, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   margin-top: 0px;
   margin-bottom: 0px;
@@ -8991,17 +9720,19 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   background-color: #cc0000;
-  background-image: -moz-linear-gradient(top, #ff1a1a, #b30000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff1a1a), to(#b30000));
-  background-image: -webkit-linear-gradient(top, #ff1a1a, #b30000);
-  background-image: -o-linear-gradient(top, #ff1a1a, #b30000);
-  background-image: linear-gradient(to bottom, #ff1a1a, #b30000);
+  background-image: -moz-linear-gradient(top, #ff1a1a, #cc0000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff1a1a), to(#cc0000));
+  background-image: -webkit-linear-gradient(top, #ff1a1a, #cc0000);
+  background-image: -o-linear-gradient(top, #ff1a1a, #cc0000);
+  background-image: linear-gradient(to bottom, #ff1a1a, #cc0000);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff1a1a', endColorstr='#ffb30000', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff1a1a', endColorstr='#ffcc0000', GradientType=0);
   -webkit-box-shadow: inset 0px 1px 0px 0px #ff3333, 0px 0px 0px 1px rgba(102, 0, 0, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 1px 0px 0px #ff3333, 0px 0px 0px 1px rgba(102, 0, 0, 0.75), 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
@@ -9019,17 +9750,19 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffe5e5;
   text-shadow: none;
   background-color: #cc0000;
-  background-image: -moz-linear-gradient(top, #cc0000, #e60000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cc0000), to(#e60000));
-  background-image: -webkit-linear-gradient(top, #cc0000, #e60000);
-  background-image: -o-linear-gradient(top, #cc0000, #e60000);
-  background-image: linear-gradient(to bottom, #cc0000, #e60000);
+  background-image: -moz-linear-gradient(top, #cc0000, #ff0000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cc0000), to(#ff0000));
+  background-image: -webkit-linear-gradient(top, #cc0000, #ff0000);
+  background-image: -o-linear-gradient(top, #cc0000, #ff0000);
+  background-image: linear-gradient(to bottom, #cc0000, #ff0000);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffe60000', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffff0000', GradientType=0);
   -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(102, 0, 0, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(102, 0, 0, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
@@ -9050,19 +9783,21 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   background-color: #ff0000;
-  background-image: -moz-linear-gradient(top, #e60000, #990000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e60000), to(#990000));
-  background-image: -webkit-linear-gradient(top, #e60000, #990000);
-  background-image: -o-linear-gradient(top, #e60000, #990000);
-  background-image: linear-gradient(to bottom, #e60000, #990000);
+  background-image: -moz-linear-gradient(top, #ff1a1a, #e60000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff1a1a), to(#e60000));
+  background-image: -webkit-linear-gradient(top, #ff1a1a, #e60000);
+  background-image: -o-linear-gradient(top, #ff1a1a, #e60000);
+  background-image: linear-gradient(to bottom, #ff1a1a, #e60000);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe60000', endColorstr='#ff990000', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 0px 0px #ff4d4d, 0px 0px 0px 1px rgba(128, 0, 0, 0.85), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0px 1px 0px 0px #ff4d4d, 0px 0px 0px 1px rgba(128, 0, 0, 0.85), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff1a1a', endColorstr='#ffe60000', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ff3333, 0px 0px 0px 1px rgba(153, 0, 0, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 1px 0px 0px #ff3333, 0px 0px 0px 1px rgba(153, 0, 0, 0.75), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   margin-top: 0px;
   margin-bottom: 0px;
@@ -9078,6 +9813,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #ff0000;
   text-shadow: none;
@@ -9098,6 +9835,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #bf0000;
   text-shadow: none;
@@ -9119,6 +9858,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #800000;
   text-shadow: none;
@@ -9143,6 +9884,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #ff0000;
   text-shadow: none;
@@ -9164,6 +9907,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -9191,6 +9936,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -9219,6 +9966,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -9250,6 +9999,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -9535,7 +10286,6 @@ input[type="submit"].button.button-mini {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  border: 0px;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
@@ -9601,7 +10351,6 @@ input[type="submit"].button.button-mini {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  border: 0px;
   font-size: 11px;
   font-weight: 600;
   font-style: normal;
@@ -9667,7 +10416,6 @@ input[type="submit"].button.button-mini {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  border: 0px;
   font-size: 9px;
   font-weight: 600;
   font-style: normal;
@@ -9795,6 +10543,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #a8a8a8;
   text-shadow: none;
@@ -9829,6 +10579,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #2f2f2f;
   text-shadow: none;
@@ -9844,6 +10596,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -9866,6 +10620,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #e0f0ff;
   text-shadow: none;
@@ -9888,6 +10644,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #0b2723;
   text-shadow: none;
@@ -9903,6 +10661,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -9925,6 +10685,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #f0f8e7;
   text-shadow: none;
@@ -9947,6 +10709,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #375717;
   text-shadow: none;
@@ -9962,6 +10726,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -9984,19 +10750,21 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
-  color: #fef2ea;
+  color: #f0f8e7;
   text-shadow: none;
-  background-color: #e2620e;
-  background-image: -moz-linear-gradient(top, #e2620e, #f1711d);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e2620e), to(#f1711d));
-  background-image: -webkit-linear-gradient(top, #e2620e, #f1711d);
-  background-image: -o-linear-gradient(top, #e2620e, #f1711d);
-  background-image: linear-gradient(to bottom, #e2620e, #f1711d);
+  background-color: #598c25;
+  background-image: -moz-linear-gradient(top, #598c25, #70af2f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#598c25), to(#70af2f));
+  background-image: -webkit-linear-gradient(top, #598c25, #70af2f);
+  background-image: -o-linear-gradient(top, #598c25, #70af2f);
+  background-image: linear-gradient(to bottom, #598c25, #70af2f);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe2620e', endColorstr='#fff1711d', GradientType=0);
-  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(111, 48, 6, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff598c25', endColorstr='#ff70af2f', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(43, 68, 18, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
   margin-top: 0px;
   margin-bottom: 0px;
@@ -10006,6 +10774,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #8d3d09;
   text-shadow: none;
@@ -10021,6 +10791,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -10043,17 +10815,19 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffe5e5;
   text-shadow: none;
   background-color: #cc0000;
-  background-image: -moz-linear-gradient(top, #cc0000, #e60000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cc0000), to(#e60000));
-  background-image: -webkit-linear-gradient(top, #cc0000, #e60000);
-  background-image: -o-linear-gradient(top, #cc0000, #e60000);
-  background-image: linear-gradient(to bottom, #cc0000, #e60000);
+  background-image: -moz-linear-gradient(top, #cc0000, #ff0000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cc0000), to(#ff0000));
+  background-image: -webkit-linear-gradient(top, #cc0000, #ff0000);
+  background-image: -o-linear-gradient(top, #cc0000, #ff0000);
+  background-image: linear-gradient(to bottom, #cc0000, #ff0000);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffe60000', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffff0000', GradientType=0);
   -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(102, 0, 0, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(102, 0, 0, 0.75), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
   behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
@@ -10065,6 +10839,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #800000;
   text-shadow: none;
@@ -10080,6 +10856,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e4e4e4;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
@@ -11698,7 +12476,7 @@ input[type="submit"].button.button-mini {
   border-top-color: #ffffff;
 }
 .dropdown-toggle.button.button-warning:active .caret {
-  border-top-color: #fef2ea;
+  border-top-color: #f0f8e7;
 }
 .dropdown-toggle.button.button-warning.button-link .caret {
   border-top-color: #f38339;
@@ -11850,7 +12628,7 @@ input[type="submit"].button.button-mini {
   border-top-color: #e4e4e4;
 }
 .button-group.open .dropdown-toggle.button.button-warning .caret {
-  border-top-color: #fef2ea;
+  border-top-color: #f0f8e7;
 }
 .button-group.open .dropdown-toggle.button.button-warning.button-link .caret {
   border-top-color: #8d3d09;
@@ -12336,7 +13114,7 @@ input[type="submit"].button.button-mini {
   border-bottom-color: #ffffff;
 }
 .dropup .dropdown-toggle.button.button-warning:active .caret {
-  border-bottom-color: #fef2ea;
+  border-bottom-color: #f0f8e7;
 }
 .dropup .dropdown-toggle.button.button-warning.button-link .caret {
   border-bottom-color: #f38339;
@@ -12430,7 +13208,7 @@ input[type="submit"].button.button-mini {
   border-bottom-color: #e4e4e4;
 }
 .dropup.open .dropdown-toggle.button.button-warning .caret {
-  border-bottom-color: #fef2ea;
+  border-bottom-color: #f0f8e7;
 }
 .dropup.open .dropdown-toggle.button.button-warning.button-link .caret {
   border-bottom-color: #8d3d09;
@@ -18299,6 +19077,8 @@ select[size] {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #838383;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -18355,23 +19135,34 @@ select[size] {
 .select-wrapper select:focus {
   outline: 0;
 }
+.select-wrapper select option {
+  color: #bbbbbb;
+}
+.select-wrapper + .help-block {
+  margin-top: -12px;
+  margin-bottom: 15px;
+}
 .select-wrapper.tall {
   margin-bottom: 22.5px;
 }
 .select-wrapper.tall + .help-block {
-  margin-top: -22.5px;
+  margin-top: -19.5px;
+  margin-bottom: 22.5px;
 }
 .select-wrapper.short {
   margin-bottom: 7.5px;
 }
 .select-wrapper.short + .help-block {
-  margin-top: -7.5px;
+  margin-top: -4.5px;
+  margin-bottom: 7.5px;
 }
 .select-wrapper:hover .select-wrapper-inner {
   background-color: transparent;
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #838383;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -18403,6 +19194,8 @@ select[size] {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #a8a8a8;
   text-shadow: none;
@@ -18438,6 +19231,8 @@ select[size] {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #838383;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -21756,7 +22551,7 @@ textarea[class*="span"],
     padding-left: 13.559999999999999px;
     padding-right: 13.559999999999999px;
     font-size: 13.559999999999999px;
-    line-height: 22.599999999999998px;
+    line-height: 23px;
     margin-bottom: 20px;
     /* ---------------------------------------------------------------------------------------------------- */
     /* Large Input                                                                                          */
@@ -21915,7 +22710,7 @@ textarea[class*="span"],
     padding-left: 13.559999999999999px;
     padding-right: 13.559999999999999px;
     font-size: 20.339999999999996px;
-    line-height: 27.119999999999997px;
+    line-height: 28px;
   }
   input[type="text"].input-small,
   input[type="password"].input-small,
@@ -21939,7 +22734,7 @@ textarea[class*="span"],
     padding-left: 13.559999999999999px;
     padding-right: 13.559999999999999px;
     font-size: 12.43px;
-    line-height: 18.08px;
+    line-height: 19px;
   }
   textarea {
     height: auto;
@@ -22120,6 +22915,10 @@ textarea[class*="span"],
     /* Small Select Wrapper                                                                                 */
     /* ---------------------------------------------------------------------------------------------------- */
   }
+  .select-wrapper + .help-block {
+    margin-top: -17px;
+    margin-bottom: 20px;
+  }
   .select-wrapper .select-wrapper-inner {
     height: 36.16px;
   }
@@ -22130,13 +22929,15 @@ textarea[class*="span"],
     margin-bottom: 30px;
   }
   .select-wrapper.tall + .help-block {
-    margin-top: -30px;
+    margin-top: -27px;
+    margin-bottom: 30px;
   }
   .select-wrapper.short {
     margin-bottom: 10px;
   }
   .select-wrapper.short + .help-block {
-    margin-top: -10px;
+    margin-top: -7px;
+    margin-bottom: 10px;
   }
   .select-wrapper.select-wrapper-large .select-wrapper-inner {
     height: 47.459999999999994px;
@@ -22739,6 +23540,10 @@ textarea[class*="span"],
     /* Small Select Wrapper                                                                                 */
     /* ---------------------------------------------------------------------------------------------------- */
   }
+  .select-wrapper + .help-block {
+    margin-top: -26.7px;
+    margin-bottom: 30px;
+  }
   .select-wrapper .select-wrapper-inner {
     height: 40px;
   }
@@ -22749,13 +23554,15 @@ textarea[class*="span"],
     margin-bottom: 45px;
   }
   .select-wrapper.tall + .help-block {
-    margin-top: -45px;
+    margin-top: -41.7px;
+    margin-bottom: 45px;
   }
   .select-wrapper.short {
     margin-bottom: 15px;
   }
   .select-wrapper.short + .help-block {
-    margin-top: -15px;
+    margin-top: -11.7px;
+    margin-bottom: 15px;
   }
   .select-wrapper.select-wrapper-large .select-wrapper-inner {
     height: 52.5px;
@@ -23172,7 +23979,7 @@ textarea[class*="span"],
     padding-left: 15.600000000000001px;
     padding-right: 15.600000000000001px;
     font-size: 23.400000000000002px;
-    line-height: 31.200000000000003px;
+    line-height: 32px;
   }
   input[type="text"].input-small,
   input[type="password"].input-small,
@@ -23196,7 +24003,7 @@ textarea[class*="span"],
     padding-left: 15.600000000000001px;
     padding-right: 15.600000000000001px;
     font-size: 14.3px;
-    line-height: 20.8px;
+    line-height: 21px;
   }
   textarea {
     height: auto;
@@ -23383,6 +24190,10 @@ textarea[class*="span"],
     /* Small Select Wrapper                                                                                 */
     /* ---------------------------------------------------------------------------------------------------- */
   }
+  .select-wrapper + .help-block {
+    margin-top: -36.4px;
+    margin-bottom: 40px;
+  }
   .select-wrapper .select-wrapper-inner {
     height: 41.6px;
   }
@@ -23393,13 +24204,15 @@ textarea[class*="span"],
     margin-bottom: 60px;
   }
   .select-wrapper.tall + .help-block {
-    margin-top: -60px;
+    margin-top: -56.4px;
+    margin-bottom: 60px;
   }
   .select-wrapper.short {
     margin-bottom: 20px;
   }
   .select-wrapper.short + .help-block {
-    margin-top: -20px;
+    margin-top: -16.4px;
+    margin-bottom: 20px;
   }
   .select-wrapper.select-wrapper-large .select-wrapper-inner {
     height: 54.6px;
@@ -24375,6 +25188,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24416,6 +25231,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24432,6 +25249,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24450,6 +25269,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24466,6 +25287,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24482,6 +25305,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24497,6 +25322,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24516,6 +25343,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24532,6 +25361,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24547,6 +25378,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24563,6 +25396,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24579,6 +25414,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24594,6 +25431,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24613,6 +25452,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24629,6 +25470,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24644,6 +25487,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24660,6 +25505,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24676,6 +25523,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24691,6 +25540,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24710,6 +25561,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24726,6 +25579,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24741,6 +25596,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24757,6 +25614,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24773,6 +25632,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24788,6 +25649,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24807,6 +25670,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24823,6 +25688,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24838,6 +25705,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24854,6 +25723,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24870,6 +25741,8 @@ a:active img.image-framed {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+  *border-width: none;
+  border-width: none;
   border-color: none;
   color: #ffffff;
   text-shadow: none;
@@ -24985,621 +25858,198 @@ a:active img.image-framed {
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-@font-face {
-  font-family: "Glyphicons Halflings";
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflings-regular') format('svg');
-}
 .icon-glyph {
   position: relative;
-  top: 1px;
+  top: 0px;
   display: inline-block;
-  font-family: "Glyphicons Halflings";
   font-style: normal;
   font-weight: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-.icon-glyph.icon-glyph-asterisk:before {
-  content: "\2a";
-}
-.icon-glyph.icon-glyph-plus:before {
-  content: "\2b";
-}
-.icon-glyph.icon-glyph-euro:before {
-  content: "\20ac";
-}
-.icon-glyph.icon-glyph-minus:before {
-  content: "\2212";
-}
-.icon-glyph.icon-glyph-cloud:before {
-  content: "\2601";
-}
-.icon-glyph.icon-glyph-envelope:before {
-  content: "\2709";
-}
-.icon-glyph.icon-glyph-pencil:before {
-  content: "\270f";
-}
-.icon-glyph.icon-glyph-glass:before {
-  content: "\e001";
-}
-.icon-glyph.icon-glyph-music:before {
-  content: "\e002";
-}
-.icon-glyph.icon-glyph-search:before {
-  content: "\e003";
-}
-.icon-glyph.icon-glyph-heart:before {
-  content: "\e005";
-}
-.icon-glyph.icon-glyph-star:before {
-  content: "\e006";
-}
-.icon-glyph.icon-glyph-star-empty:before {
-  content: "\e007";
-}
-.icon-glyph.icon-glyph-user:before {
-  content: "\e008";
-}
-.icon-glyph.icon-glyph-film:before {
-  content: "\e009";
-}
-.icon-glyph.icon-glyph-th-large:before {
-  content: "\e010";
-}
-.icon-glyph.icon-glyph-th:before {
-  content: "\e011";
-}
-.icon-glyph.icon-glyph-th-list:before {
-  content: "\e012";
-}
-.icon-glyph.icon-glyph-ok:before {
-  content: "\e013";
-}
-.icon-glyph.icon-glyph-remove:before {
-  content: "\e014";
-}
-.icon-glyph.icon-glyph-zoom-in:before {
-  content: "\e015";
-}
-.icon-glyph.icon-glyph-zoom-out:before {
-  content: "\e016";
-}
-.icon-glyph.icon-glyph-off:before {
-  content: "\e017";
-}
-.icon-glyph.icon-glyph-signal:before {
-  content: "\e018";
-}
-.icon-glyph.icon-glyph-cog:before {
-  content: "\e019";
-}
-.icon-glyph.icon-glyph-trash:before {
-  content: "\e020";
-}
-.icon-glyph.icon-glyph-home:before {
-  content: "\e021";
-}
-.icon-glyph.icon-glyph-file:before {
-  content: "\e022";
-}
-.icon-glyph.icon-glyph-time:before {
-  content: "\e023";
-}
-.icon-glyph.icon-glyph-road:before {
-  content: "\e024";
-}
-.icon-glyph.icon-glyph-download-alt:before {
-  content: "\e025";
-}
-.icon-glyph.icon-glyph-download:before {
-  content: "\e026";
-}
-.icon-glyph.icon-glyph-upload:before {
-  content: "\e027";
-}
-.icon-glyph.icon-glyph-inbox:before {
-  content: "\e028";
-}
-.icon-glyph.icon-glyph-play-circle:before {
-  content: "\e029";
-}
-.icon-glyph.icon-glyph-repeat:before {
-  content: "\e030";
-}
-.icon-glyph.icon-glyph-refresh:before {
-  content: "\e031";
-}
-.icon-glyph.icon-glyph-list-alt:before {
-  content: "\e032";
-}
-.icon-glyph.icon-glyph-flag:before {
-  content: "\e034";
-}
-.icon-glyph.icon-glyph-headphones:before {
-  content: "\e035";
-}
-.icon-glyph.icon-glyph-volume-off:before {
-  content: "\e036";
-}
-.icon-glyph.icon-glyph-volume-down:before {
-  content: "\e037";
-}
-.icon-glyph.icon-glyph-volume-up:before {
-  content: "\e038";
-}
-.icon-glyph.icon-glyph-qrcode:before {
-  content: "\e039";
-}
-.icon-glyph.icon-glyph-barcode:before {
-  content: "\e040";
-}
-.icon-glyph.icon-glyph-tag:before {
-  content: "\e041";
-}
-.icon-glyph.icon-glyph-tags:before {
-  content: "\e042";
-}
-.icon-glyph.icon-glyph-book:before {
-  content: "\e043";
-}
-.icon-glyph.icon-glyph-print:before {
-  content: "\e045";
-}
-.icon-glyph.icon-glyph-font:before {
-  content: "\e047";
-}
-.icon-glyph.icon-glyph-bold:before {
-  content: "\e048";
-}
-.icon-glyph.icon-glyph-italic:before {
-  content: "\e049";
-}
-.icon-glyph.icon-glyph-text-height:before {
-  content: "\e050";
-}
-.icon-glyph.icon-glyph-text-width:before {
-  content: "\e051";
-}
-.icon-glyph.icon-glyph-align-left:before {
-  content: "\e052";
-}
-.icon-glyph.icon-glyph-align-center:before {
-  content: "\e053";
-}
-.icon-glyph.icon-glyph-align-right:before {
-  content: "\e054";
-}
-.icon-glyph.icon-glyph-align-justify:before {
-  content: "\e055";
-}
-.icon-glyph.icon-glyph-list:before {
-  content: "\e056";
-}
-.icon-glyph.icon-glyph-indent-left:before {
-  content: "\e057";
-}
-.icon-glyph.icon-glyph-indent-right:before {
-  content: "\e058";
-}
-.icon-glyph.icon-glyph-facetime-video:before {
-  content: "\e059";
-}
-.icon-glyph.icon-glyph-picture:before {
-  content: "\e060";
-}
-.icon-glyph.icon-glyph-map-marker:before {
-  content: "\e062";
-}
-.icon-glyph.icon-glyph-adjust:before {
-  content: "\e063";
-}
-.icon-glyph.icon-glyph-tint:before {
-  content: "\e064";
-}
-.icon-glyph.icon-glyph-edit:before {
-  content: "\e065";
-}
-.icon-glyph.icon-glyph-share:before {
-  content: "\e066";
-}
-.icon-glyph.icon-glyph-check:before {
-  content: "\e067";
-}
-.icon-glyph.icon-glyph-move:before {
-  content: "\e068";
-}
-.icon-glyph.icon-glyph-step-backward:before {
-  content: "\e069";
-}
-.icon-glyph.icon-glyph-fast-backward:before {
-  content: "\e070";
-}
-.icon-glyph.icon-glyph-backward:before {
-  content: "\e071";
-}
-.icon-glyph.icon-glyph-play:before {
-  content: "\e072";
-}
-.icon-glyph.icon-glyph-pause:before {
-  content: "\e073";
-}
-.icon-glyph.icon-glyph-stop:before {
-  content: "\e074";
-}
-.icon-glyph.icon-glyph-forward:before {
-  content: "\e075";
-}
-.icon-glyph.icon-glyph-fast-forward:before {
-  content: "\e076";
-}
-.icon-glyph.icon-glyph-step-forward:before {
-  content: "\e077";
-}
-.icon-glyph.icon-glyph-eject:before {
-  content: "\e078";
-}
-.icon-glyph.icon-glyph-chevron-left:before {
-  content: "\e079";
-}
-.icon-glyph.icon-glyph-chevron-right:before {
-  content: "\e080";
-}
-.icon-glyph.icon-glyph-plus-sign:before {
-  content: "\e081";
-}
-.icon-glyph.icon-glyph-minus-sign:before {
-  content: "\e082";
-}
-.icon-glyph.icon-glyph-remove-sign:before {
-  content: "\e083";
-}
-.icon-glyph.icon-glyph-ok-sign:before {
-  content: "\e084";
-}
-.icon-glyph.icon-glyph-question-sign:before {
-  content: "\e085";
-}
-.icon-glyph.icon-glyph-info-sign:before {
-  content: "\e086";
-}
-.icon-glyph.icon-glyph-screenshot:before {
-  content: "\e087";
-}
-.icon-glyph.icon-glyph-remove-circle:before {
-  content: "\e088";
-}
-.icon-glyph.icon-glyph-ok-circle:before {
-  content: "\e089";
-}
-.icon-glyph.icon-glyph-ban-circle:before {
-  content: "\e090";
-}
-.icon-glyph.icon-glyph-arrow-left:before {
-  content: "\e091";
-}
-.icon-glyph.icon-glyph-arrow-right:before {
-  content: "\e092";
-}
-.icon-glyph.icon-glyph-arrow-up:before {
-  content: "\e093";
-}
-.icon-glyph.icon-glyph-arrow-down:before {
-  content: "\e094";
-}
-.icon-glyph.icon-glyph-share-alt:before {
-  content: "\e095";
-}
-.icon-glyph.icon-glyph-resize-full:before {
-  content: "\e096";
-}
-.icon-glyph.icon-glyph-resize-small:before {
-  content: "\e097";
-}
-.icon-glyph.icon-glyph-exclamation-sign:before {
-  content: "\e101";
-}
-.icon-glyph.icon-glyph-gift:before {
-  content: "\e102";
-}
-.icon-glyph.icon-glyph-leaf:before {
-  content: "\e103";
-}
-.icon-glyph.icon-glyph-eye-open:before {
-  content: "\e105";
-}
-.icon-glyph.icon-glyph-eye-close:before {
-  content: "\e106";
-}
-.icon-glyph.icon-glyph-warning-sign:before {
-  content: "\e107";
-}
-.icon-glyph.icon-glyph-plane:before {
-  content: "\e108";
-}
-.icon-glyph.icon-glyph-random:before {
-  content: "\e110";
-}
-.icon-glyph.icon-glyph-comment:before {
-  content: "\e111";
-}
-.icon-glyph.icon-glyph-magnet:before {
-  content: "\e112";
-}
-.icon-glyph.icon-glyph-chevron-up:before {
-  content: "\e113";
-}
-.icon-glyph.icon-glyph-chevron-down:before {
-  content: "\e114";
-}
-.icon-glyph.icon-glyph-retweet:before {
-  content: "\e115";
-}
-.icon-glyph.icon-glyph-shopping-cart:before {
-  content: "\e116";
-}
-.icon-glyph.icon-glyph-folder-close:before {
-  content: "\e117";
-}
-.icon-glyph.icon-glyph-folder-open:before {
-  content: "\e118";
-}
-.icon-glyph.icon-glyph-resize-vertical:before {
-  content: "\e119";
-}
-.icon-glyph.icon-glyph-resize-horizontal:before {
-  content: "\e120";
-}
-.icon-glyph.icon-glyph-hdd:before {
-  content: "\e121";
-}
-.icon-glyph.icon-glyph-bullhorn:before {
-  content: "\e122";
-}
-.icon-glyph.icon-glyph-certificate:before {
-  content: "\e124";
-}
-.icon-glyph.icon-glyph-thumbs-up:before {
-  content: "\e125";
-}
-.icon-glyph.icon-glyph-thumbs-down:before {
-  content: "\e126";
-}
-.icon-glyph.icon-glyph-hand-right:before {
-  content: "\e127";
-}
-.icon-glyph.icon-glyph-hand-left:before {
-  content: "\e128";
-}
-.icon-glyph.icon-glyph-hand-up:before {
-  content: "\e129";
-}
-.icon-glyph.icon-glyph-hand-down:before {
-  content: "\e130";
-}
-.icon-glyph.icon-glyph-circle-arrow-right:before {
-  content: "\e131";
-}
-.icon-glyph.icon-glyph-circle-arrow-left:before {
-  content: "\e132";
-}
-.icon-glyph.icon-glyph-circle-arrow-up:before {
-  content: "\e133";
-}
-.icon-glyph.icon-glyph-circle-arrow-down:before {
-  content: "\e134";
-}
-.icon-glyph.icon-glyph-globe:before {
-  content: "\e135";
-}
-.icon-glyph.icon-glyph-tasks:before {
-  content: "\e137";
-}
-.icon-glyph.icon-glyph-filter:before {
-  content: "\e138";
-}
-.icon-glyph.icon-glyph-fullscreen:before {
-  content: "\e140";
-}
-.icon-glyph.icon-glyph-dashboard:before {
-  content: "\e141";
-}
-.icon-glyph.icon-glyph-heart-empty:before {
-  content: "\e143";
-}
-.icon-glyph.icon-glyph-link:before {
-  content: "\e144";
-}
-.icon-glyph.icon-glyph-phone:before {
-  content: "\e145";
-}
-.icon-glyph.icon-glyph-usd:before {
-  content: "\e148";
-}
-.icon-glyph.icon-glyph-gbp:before {
-  content: "\e149";
-}
-.icon-glyph.icon-glyph-sort:before {
-  content: "\e150";
-}
-.icon-glyph.icon-glyph-sort-by-alphabet:before {
-  content: "\e151";
-}
-.icon-glyph.icon-glyph-sort-by-alphabet-alt:before {
-  content: "\e152";
-}
-.icon-glyph.icon-glyph-sort-by-order:before {
-  content: "\e153";
-}
-.icon-glyph.icon-glyph-sort-by-order-alt:before {
-  content: "\e154";
-}
-.icon-glyph.icon-glyph-sort-by-attributes:before {
-  content: "\e155";
-}
-.icon-glyph.icon-glyph-sort-by-attributes-alt:before {
-  content: "\e156";
-}
-.icon-glyph.icon-glyph-unchecked:before {
-  content: "\e157";
-}
-.icon-glyph.icon-glyph-expand:before {
-  content: "\e158";
-}
-.icon-glyph.icon-glyph-collapse-down:before {
-  content: "\e159";
-}
-.icon-glyph.icon-glyph-collapse-up:before {
-  content: "\e160";
-}
-.icon-glyph.icon-glyph-log-in:before {
-  content: "\e161";
-}
-.icon-glyph.icon-glyph-flash:before {
-  content: "\e162";
-}
-.icon-glyph.icon-glyph-log-out:before {
-  content: "\e163";
-}
-.icon-glyph.icon-glyph-new-window:before {
-  content: "\e164";
-}
-.icon-glyph.icon-glyph-record:before {
-  content: "\e165";
-}
-.icon-glyph.icon-glyph-save:before {
-  content: "\e166";
-}
-.icon-glyph.icon-glyph-open:before {
-  content: "\e167";
-}
-.icon-glyph.icon-glyph-saved:before {
-  content: "\e168";
-}
-.icon-glyph.icon-glyph-import:before {
-  content: "\e169";
-}
-.icon-glyph.icon-glyph-export:before {
-  content: "\e170";
-}
-.icon-glyph.icon-glyph-send:before {
-  content: "\e171";
-}
-.icon-glyph.icon-glyph-floppy-disk:before {
-  content: "\e172";
-}
-.icon-glyph.icon-glyph-floppy-saved:before {
-  content: "\e173";
-}
-.icon-glyph.icon-glyph-floppy-remove:before {
-  content: "\e174";
-}
-.icon-glyph.icon-glyph-floppy-save:before {
-  content: "\e175";
-}
-.icon-glyph.icon-glyph-floppy-open:before {
-  content: "\e176";
-}
-.icon-glyph.icon-glyph-credit-card:before {
-  content: "\e177";
-}
-.icon-glyph.icon-glyph-transfer:before {
-  content: "\e178";
-}
-.icon-glyph.icon-glyph-cutlery:before {
-  content: "\e179";
-}
-.icon-glyph.icon-glyph-header:before {
-  content: "\e180";
-}
-.icon-glyph.icon-glyph-compressed:before {
-  content: "\e181";
-}
-.icon-glyph.icon-glyph-earphone:before {
-  content: "\e182";
-}
-.icon-glyph.icon-glyph-phone-alt:before {
-  content: "\e183";
-}
-.icon-glyph.icon-glyph-tower:before {
-  content: "\e184";
-}
-.icon-glyph.icon-glyph-stats:before {
-  content: "\e185";
-}
-.icon-glyph.icon-glyph-sd-video:before {
-  content: "\e186";
-}
-.icon-glyph.icon-glyph-hd-video:before {
-  content: "\e187";
-}
-.icon-glyph.icon-glyph-subtitles:before {
-  content: "\e188";
-}
-.icon-glyph.icon-glyph-sound-stereo:before {
-  content: "\e189";
-}
-.icon-glyph.icon-glyph-sound-dolby:before {
-  content: "\e190";
-}
-.icon-glyph.icon-glyph-sound-5-1:before {
-  content: "\e191";
-}
-.icon-glyph.icon-glyph-sound-6-1:before {
-  content: "\e192";
-}
-.icon-glyph.icon-glyph-sound-7-1:before {
-  content: "\e193";
-}
-.icon-glyph.icon-glyph-copyright-mark:before {
-  content: "\e194";
-}
-.icon-glyph.icon-glyph-registration-mark:before {
-  content: "\e195";
-}
-.icon-glyph.icon-glyph-cloud-download:before {
-  content: "\e197";
-}
-.icon-glyph.icon-glyph-cloud-upload:before {
-  content: "\e198";
-}
-.icon-glyph.icon-glyph-tree-conifer:before {
-  content: "\e199";
-}
-.icon-glyph.icon-glyph-tree-deciduous:before {
-  content: "\e200";
-}
-.icon-glyph.icon-glyph-briefcase:before {
-  content: "\1f4bc";
-}
-.icon-glyph.icon-glyph-calendar:before {
-  content: "\1f4c5";
-}
-.icon-glyph.icon-glyph-pushpin:before {
-  content: "\1f4cc";
-}
-.icon-glyph.icon-glyph-paperclip:before {
-  content: "\1f4ce";
-}
-.icon-glyph.icon-glyph-camera:before {
-  content: "\1f4f7";
-}
-.icon-glyph.icon-glyph-lock:before {
-  content: "\1f512";
-}
-.icon-glyph.icon-glyph-bell:before {
-  content: "\1f514";
-}
-.icon-glyph.icon-glyph-bookmark:before {
-  content: "\1f516";
-}
-.icon-glyph.icon-glyph-fire:before {
-  content: "\1f525";
-}
-.icon-glyph.icon-glyph-wrench:before {
-  content: "\1f527";
-}
+.icon-glyph.icon-glyph-mini {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  line-height: 16px;
+}
+.icon-glyph.icon-glyph-small {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+}
+.icon-glyph.icon-glyph-medium {
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  line-height: 32px;
+}
+.icon-glyph.icon-glyph-large {
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
+  line-height: 48px;
+}
+.icon-glyph.icon-glyph-jumbo {
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+  line-height: 64px;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-mini) and above                                                          */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 480px) {
+  .icon-glyph.icon-glyph-mini {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .icon-glyph.icon-glyph-small {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .icon-glyph.icon-glyph-medium {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .icon-glyph.icon-glyph-large {
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .icon-glyph.icon-glyph-jumbo {
+    width: 64px;
+    height: 64px;
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 768px) {
+  .icon-glyph.icon-glyph-mini {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .icon-glyph.icon-glyph-small {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .icon-glyph.icon-glyph-medium {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .icon-glyph.icon-glyph-large {
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .icon-glyph.icon-glyph-jumbo {
+    width: 64px;
+    height: 64px;
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 992px) {
+  .icon-glyph.icon-glyph-mini {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .icon-glyph.icon-glyph-small {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .icon-glyph.icon-glyph-medium {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .icon-glyph.icon-glyph-large {
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .icon-glyph.icon-glyph-jumbo {
+    width: 64px;
+    height: 64px;
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 1280px) {
+  .icon-glyph.icon-glyph-mini {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .icon-glyph.icon-glyph-small {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .icon-glyph.icon-glyph-medium {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .icon-glyph.icon-glyph-large {
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .icon-glyph.icon-glyph-jumbo {
+    width: 64px;
+    height: 64px;
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
@@ -25744,6 +26194,228 @@ a:active img.image-framed {
 /* Screen Size: Large (@screen-large) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/tooltips.less                                                                              */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.has-tooltip {
+  position: relative;
+}
+.tooltip {
+  position: absolute !important;
+  z-index: 1006;
+  display: block;
+  visibility: visible;
+  padding: 0px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  -webkit-transition: margin 0.5s ease, opacity 0.5s ease;
+  -moz-transition: margin 0.5s ease, opacity 0.5s ease;
+  -o-transition: margin 0.5s ease, opacity 0.5s ease;
+  transition: margin 0.5s ease, opacity 0.5s ease;
+}
+.tooltip.in {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  -webkit-transition: margin 0.5s ease, opacity 0.5s ease;
+  -moz-transition: margin 0.5s ease, opacity 0.5s ease;
+  -o-transition: margin 0.5s ease, opacity 0.5s ease;
+  transition: margin 0.5s ease, opacity 0.5s ease;
+}
+.tooltip.in.top {
+  margin-top: -11px;
+}
+.tooltip.in.right {
+  margin-left: 11px;
+}
+.tooltip.in.bottom {
+  margin-top: 11px;
+}
+.tooltip.in.left {
+  margin-left: -11px;
+}
+.tooltip.top {
+  margin-top: -1px;
+}
+.tooltip.right {
+  margin-left: 1px;
+}
+.tooltip.bottom {
+  margin-top: 1px;
+}
+.tooltip.left {
+  margin-left: -1px;
+}
+.tooltip-inner {
+  max-width: 300px;
+  text-align: center;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.8);
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  text-shadow: none;
+  padding: 7.5px;
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.tooltip.top .tooltip-arrow {
+  bottom: -6px;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px 6px 0;
+  border-top-color: rgba(0, 0, 0, 0.8);
+}
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: -6px;
+  margin-top: -6px;
+  border-width: 6px 6px 6px 0;
+  border-right-color: rgba(0, 0, 0, 0.8);
+}
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: -6px;
+  margin-top: -6px;
+  border-width: 6px 0 6px 6px;
+  border-left-color: rgba(0, 0, 0, 0.8);
+}
+.tooltip.bottom .tooltip-arrow {
+  top: -6px;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 0 6px 6px;
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 768px) {
+  .tooltip .tooltip-inner {
+    padding: 10px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 992px) {
+  .tooltip .tooltip-inner {
+    padding: 15px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 1280px) {
+  .tooltip .tooltip-inner {
+    padding: 20px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/wells.less                                                                                */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.well {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  border-width: 0px;
+  border-color: none;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+}
+.well.short {
+  margin-bottom: 7.5px;
+}
+.well.tall {
+  margin-bottom: 22.5px;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 768px) {
+  .well {
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  .well.short {
+    margin-bottom: 10px;
+  }
+  .well.tall {
+    margin-bottom: 30px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 992px) {
+  .well {
+    padding: 40px;
+    margin-bottom: 30px;
+  }
+  .well.short {
+    margin-bottom: 15px;
+  }
+  .well.tall {
+    margin-bottom: 45px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 1280px) {
+  .well {
+    padding: 60px;
+    margin-bottom: 40px;
+  }
+  .well.short {
+    margin-bottom: 20px;
+  }
+  .well.tall {
+    margin-bottom: 60px;
+  }
+}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Retina Displays                                                                                      */
