@@ -44,7 +44,6 @@
 			padding-left: @button-large-padding-horizontal;
 			padding-right: @button-large-padding-horizontal;
 			.border-radius(@button-large-border-radius);
-			border: @button-large-border-width;
 			font-size: @button-large-text-font-size;
 			font-weight: @button-large-text-font-weight;
 			font-style: @button-large-text-font-style;
@@ -154,7 +153,6 @@
 			padding-left: @button-small-padding-horizontal;
 			padding-right: @button-small-padding-horizontal;
 			.border-radius(@button-small-border-radius);
-			border: @button-small-border-width;
 			font-size: @button-small-text-font-size;
 			font-weight: @button-small-text-font-weight;
 			font-style: @button-small-text-font-style;
@@ -264,7 +262,6 @@
 			padding-left: @button-mini-padding-horizontal;
 			padding-right: @button-mini-padding-horizontal;
 			.border-radius(@button-mini-border-radius);
-			border: @button-mini-border-width;
 			font-size: @button-mini-text-font-size;
 			font-weight: @button-mini-text-font-weight;
 			font-style: @button-mini-text-font-style;
@@ -513,6 +510,7 @@
 			text-decoration: none;
 			.button-states (
 				
+				@button-default-active-border-width,
 				@button-default-active-border-color,
 				@button-default-active-text-color,
 				@button-default-active-text-shadow,
@@ -531,6 +529,7 @@
 				
 				.button-states (
 					
+					@button-default-link-active-border-width,
 					@button-default-link-active-border-color,
 					@button-default-link-active-text-color,
 					@button-default-link-active-text-shadow,
@@ -551,6 +550,7 @@
 				
 				.button-states (
 					
+					@button-default-inverse-active-border-width,
 					@button-default-inverse-active-border-color,
 					@button-default-inverse-active-text-color,
 					@button-default-inverse-active-text-shadow,
@@ -573,6 +573,7 @@
 				
 				.button-states (
 					
+					@button-primary-active-border-width,
 					@button-primary-active-border-color,
 					@button-primary-active-text-color,
 					@button-primary-active-text-shadow,
@@ -591,6 +592,7 @@
 					
 					.button-states (
 						
+						@button-primary-link-active-border-width,
 						@button-primary-link-active-border-color,
 						@button-primary-link-active-text-color,
 						@button-primary-link-active-text-shadow,
@@ -611,6 +613,7 @@
 					
 					.button-states (
 						
+						@button-primary-inverse-active-border-width,
 						@button-primary-inverse-active-border-color,
 						@button-primary-inverse-active-text-color,
 						@button-primary-inverse-active-text-shadow,
@@ -635,6 +638,7 @@
 				
 				.button-states (
 					
+					@button-success-active-border-width,
 					@button-success-active-border-color,
 					@button-success-active-text-color,
 					@button-success-active-text-shadow,
@@ -653,6 +657,7 @@
 					
 					.button-states (
 						
+						@button-success-link-active-border-width,
 						@button-success-link-active-border-color,
 						@button-success-link-active-text-color,
 						@button-success-link-active-text-shadow,
@@ -673,6 +678,7 @@
 					
 					.button-states (
 						
+						@button-success-inverse-active-border-width,
 						@button-success-inverse-active-border-color,
 						@button-success-inverse-active-text-color,
 						@button-success-inverse-active-text-shadow,
@@ -697,6 +703,7 @@
 				
 				.button-states (
 					
+					@button-warning-active-border-width,
 					@button-warning-active-border-color,
 					@button-warning-active-text-color,
 					@button-warning-active-text-shadow,
@@ -715,6 +722,7 @@
 					
 					.button-states (
 						
+						@button-warning-link-active-border-width,
 						@button-warning-link-active-border-color,
 						@button-warning-link-active-text-color,
 						@button-warning-link-active-text-shadow,
@@ -735,6 +743,7 @@
 					
 					.button-states (
 						
+						@button-warning-inverse-active-border-width,
 						@button-warning-inverse-active-border-color,
 						@button-warning-inverse-active-text-color,
 						@button-warning-inverse-active-text-shadow,
@@ -759,6 +768,7 @@
 				
 				.button-states (
 					
+					@button-danger-active-border-width,
 					@button-danger-active-border-color,
 					@button-danger-active-text-color,
 					@button-danger-active-text-shadow,
@@ -777,6 +787,7 @@
 					
 					.button-states (
 						
+						@button-danger-link-active-border-width,
 						@button-danger-link-active-border-color,
 						@button-danger-link-active-text-color,
 						@button-danger-link-active-text-shadow,
@@ -797,6 +808,7 @@
 					
 					.button-states (
 						
+						@button-danger-inverse-active-border-width,
 						@button-danger-inverse-active-border-color,
 						@button-danger-inverse-active-text-color,
 						@button-danger-inverse-active-text-shadow,

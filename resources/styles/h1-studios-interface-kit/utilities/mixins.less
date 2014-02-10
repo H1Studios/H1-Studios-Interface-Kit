@@ -1334,6 +1334,7 @@
 
 .button-states (
 	
+	@button-border-width,
 	@button-border-color,
 	@button-text-color,
 	@button-text-shadow,
@@ -1347,6 +1348,8 @@
 ) {
 	
 	.override_gradient_vertical();
+	*border-width: @button-border-width;
+	border-width: @button-border-width;
 	border-color: @button-border-color;
 	color: @button-text-color;
 	text-shadow: @button-text-shadow;

@@ -34,11 +34,11 @@
 	line-height: @button-text-line-height;
 	*line-height:  @button-text-line-height;
 	text-transform: @button-text-transform;
-	border: @button-border-width;
-	*border: @button-border-width;
+	border-style: solid;
 	.border-radius(@button-border-radius);
 	.button-states (
 		
+		@button-default-border-width,
 		@button-default-border-color,
 		@button-default-text-color,
 		@button-default-text-shadow,
@@ -108,6 +108,7 @@
 		text-decoration: none;
 		.button-states (
 			
+			@button-default-hover-border-width,
 			@button-default-hover-border-color,
 			@button-default-hover-text-color,
 			@button-default-hover-text-shadow,
@@ -135,6 +136,7 @@
 		text-decoration: none;
 		.button-states (
 			
+			@button-default-active-border-width,
 			@button-default-active-border-color,
 			@button-default-active-text-color,
 			@button-default-active-text-shadow,
@@ -164,6 +166,7 @@
 		.opacity(@button-default-disabled-opacity);
 		.button-states (
 			
+			@button-default-disabled-border-width,
 			@button-default-disabled-border-color,
 			@button-default-disabled-text-color,
 			@button-default-disabled-text-shadow,
@@ -192,6 +195,7 @@
 		
 		.button-states (
 			
+			@button-default-link-border-width,
 			@button-default-link-border-color,
 			@button-default-link-text-color,
 			@button-default-link-text-shadow,
@@ -214,6 +218,7 @@
 			
 			.button-states (
 				
+				@button-default-link-hover-border-width,
 				@button-default-link-hover-border-color,
 				@button-default-link-hover-text-color,
 				@button-default-link-hover-text-shadow,
@@ -239,6 +244,7 @@
 			
 			.button-states (
 				
+				@button-default-link-active-border-width,
 				@button-default-link-active-border-color,
 				@button-default-link-active-text-color,
 				@button-default-link-active-text-shadow,
@@ -265,6 +271,7 @@
 			.opacity(@button-default-link-disabled-opacity);
 			.button-states (
 				
+				@button-default-link-disabled-border-width,
 				@button-default-link-disabled-border-color,
 				@button-default-link-disabled-text-color,
 				@button-default-link-disabled-text-shadow,
@@ -295,6 +302,7 @@
 		
 		.button-states (
 			
+			@button-default-inverse-border-width,
 			@button-default-inverse-border-color,
 			@button-default-inverse-text-color,
 			@button-default-inverse-text-shadow,
@@ -317,6 +325,7 @@
 			
 			.button-states (
 				
+				@button-default-inverse-hover-border-width,
 				@button-default-inverse-hover-border-color,
 				@button-default-inverse-hover-text-color,
 				@button-default-inverse-hover-text-shadow,
@@ -342,6 +351,7 @@
 			
 			.button-states (
 				
+				@button-default-inverse-active-border-width,
 				@button-default-inverse-active-border-color,
 				@button-default-inverse-active-text-color,
 				@button-default-inverse-active-text-shadow,
@@ -368,6 +378,7 @@
 			.opacity(@button-default-inverse-disabled-opacity);
 			.button-states (
 				
+				@button-default-inverse-disabled-border-width,
 				@button-default-inverse-disabled-border-color,
 				@button-default-inverse-disabled-text-color,
 				@button-default-inverse-disabled-text-shadow,
@@ -410,7 +421,6 @@
 	padding-left: @button-large-padding-horizontal;
 	padding-right: @button-large-padding-horizontal;
 	.border-radius(@button-large-border-radius);
-	border: @button-large-border-width;
 	font-size: @button-large-text-font-size;
 	font-weight: @button-large-text-font-weight;
 	font-style: @button-large-text-font-style;
@@ -468,7 +478,6 @@
 	padding-left: @button-small-padding-horizontal;
 	padding-right: @button-small-padding-horizontal;
 	.border-radius(@button-small-border-radius);
-	border: @button-small-border-width;
 	font-size: @button-small-text-font-size;
 	font-weight: @button-small-text-font-weight;
 	font-style: @button-small-text-font-style;
@@ -526,7 +535,6 @@
 	padding-left: @button-mini-padding-horizontal;
 	padding-right: @button-mini-padding-horizontal;
 	.border-radius(@button-mini-border-radius);
-	border: @button-mini-border-width;
 	font-size: @button-mini-text-font-size;
 	font-weight: @button-mini-text-font-weight;
 	font-style: @button-mini-text-font-style;
@@ -630,6 +638,7 @@ input[type="button"] {
 	
 	.button-states (
 		
+		@button-primary-border-width,
 		@button-primary-border-color,
 		@button-primary-text-color,
 		@button-primary-text-shadow,
@@ -652,6 +661,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-primary-hover-border-width,
 			@button-primary-hover-border-color,
 			@button-primary-hover-text-color,
 			@button-primary-hover-text-shadow,
@@ -677,6 +687,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-primary-active-border-width,
 			@button-primary-active-border-color,
 			@button-primary-active-text-color,
 			@button-primary-active-text-shadow,
@@ -703,6 +714,7 @@ input[type="button"] {
 		.opacity(@button-primary-disabled-opacity);
 		.button-states (
 			
+			@button-primary-disabled-border-width,
 			@button-primary-disabled-border-color,
 			@button-primary-disabled-text-color,
 			@button-primary-disabled-text-shadow,
@@ -729,6 +741,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-primary-link-border-width,
 			@button-primary-link-border-color,
 			@button-primary-link-text-color,
 			@button-primary-link-text-shadow,
@@ -751,6 +764,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-primary-link-hover-border-width,
 				@button-primary-link-hover-border-color,
 				@button-primary-link-hover-text-color,
 				@button-primary-link-hover-text-shadow,
@@ -776,6 +790,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-primary-link-active-border-width,
 				@button-primary-link-active-border-color,
 				@button-primary-link-active-text-color,
 				@button-primary-link-active-text-shadow,
@@ -802,6 +817,7 @@ input[type="button"] {
 			.opacity(@button-primary-link-disabled-opacity);
 			.button-states (
 				
+				@button-primary-link-disabled-border-width,
 				@button-primary-link-disabled-border-color,
 				@button-primary-link-disabled-text-color,
 				@button-primary-link-disabled-text-shadow,
@@ -828,6 +844,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-primary-inverse-border-width,
 			@button-primary-inverse-border-color,
 			@button-primary-inverse-text-color,
 			@button-primary-inverse-text-shadow,
@@ -850,6 +867,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-primary-inverse-hover-border-width,
 				@button-primary-inverse-hover-border-color,
 				@button-primary-inverse-hover-text-color,
 				@button-primary-inverse-hover-text-shadow,
@@ -875,6 +893,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-primary-inverse-active-border-width,
 				@button-primary-inverse-active-border-color,
 				@button-primary-inverse-active-text-color,
 				@button-primary-inverse-active-text-shadow,
@@ -902,6 +921,7 @@ input[type="button"] {
 			.opacity(@button-primary-inverse-disabled-opacity);
 			.button-states (
 				
+				@button-primary-inverse-disabled-border-width,
 				@button-primary-inverse-disabled-border-color,
 				@button-primary-inverse-disabled-text-color,
 				@button-primary-inverse-disabled-text-shadow,
@@ -935,6 +955,7 @@ input[type="button"] {
 	
 	.button-states (
 		
+		@button-success-border-width,
 		@button-success-border-color,
 		@button-success-text-color,
 		@button-success-text-shadow,
@@ -957,6 +978,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-success-hover-border-width,
 			@button-success-hover-border-color,
 			@button-success-hover-text-color,
 			@button-success-hover-text-shadow,
@@ -982,6 +1004,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-success-active-border-width,
 			@button-success-active-border-color,
 			@button-success-active-text-color,
 			@button-success-active-text-shadow,
@@ -1008,6 +1031,7 @@ input[type="button"] {
 		.opacity(@button-success-disabled-opacity);
 		.button-states (
 			
+			@button-success-disabled-border-width,
 			@button-success-disabled-border-color,
 			@button-success-disabled-text-color,
 			@button-success-disabled-text-shadow,
@@ -1034,6 +1058,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-success-link-border-width,
 			@button-success-link-border-color,
 			@button-success-link-text-color,
 			@button-success-link-text-shadow,
@@ -1056,6 +1081,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-success-link-hover-border-width,
 				@button-success-link-hover-border-color,
 				@button-success-link-hover-text-color,
 				@button-success-link-hover-text-shadow,
@@ -1081,6 +1107,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-success-link-active-border-width,
 				@button-success-link-active-border-color,
 				@button-success-link-active-text-color,
 				@button-success-link-active-text-shadow,
@@ -1107,6 +1134,7 @@ input[type="button"] {
 			.opacity(@button-success-link-disabled-opacity);
 			.button-states (
 				
+				@button-success-link-disabled-border-width,
 				@button-success-link-disabled-border-color,
 				@button-success-link-disabled-text-color,
 				@button-success-link-disabled-text-shadow,
@@ -1133,6 +1161,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-success-inverse-border-width,
 			@button-success-inverse-border-color,
 			@button-success-inverse-text-color,
 			@button-success-inverse-text-shadow,
@@ -1155,6 +1184,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-success-inverse-hover-border-width,
 				@button-success-inverse-hover-border-color,
 				@button-success-inverse-hover-text-color,
 				@button-success-inverse-hover-text-shadow,
@@ -1180,6 +1210,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-success-inverse-active-border-width,
 				@button-success-inverse-active-border-color,
 				@button-success-inverse-active-text-color,
 				@button-success-inverse-active-text-shadow,
@@ -1207,6 +1238,7 @@ input[type="button"] {
 			.opacity(@button-success-inverse-disabled-opacity);
 			.button-states (
 				
+				@button-success-inverse-disabled-border-width,
 				@button-success-inverse-disabled-border-color,
 				@button-success-inverse-disabled-text-color,
 				@button-success-inverse-disabled-text-shadow,
@@ -1240,6 +1272,7 @@ input[type="button"] {
 	
 	.button-states (
 		
+		@button-warning-border-width,
 		@button-warning-border-color,
 		@button-warning-text-color,
 		@button-warning-text-shadow,
@@ -1262,6 +1295,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-warning-hover-border-width,
 			@button-warning-hover-border-color,
 			@button-warning-hover-text-color,
 			@button-warning-hover-text-shadow,
@@ -1287,6 +1321,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-warning-active-border-width,
 			@button-warning-active-border-color,
 			@button-warning-active-text-color,
 			@button-warning-active-text-shadow,
@@ -1313,6 +1348,7 @@ input[type="button"] {
 		.opacity(@button-warning-disabled-opacity);
 		.button-states (
 			
+			@button-warning-disabled-border-width,
 			@button-warning-disabled-border-color,
 			@button-warning-disabled-text-color,
 			@button-warning-disabled-text-shadow,
@@ -1339,6 +1375,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-warning-link-border-width,
 			@button-warning-link-border-color,
 			@button-warning-link-text-color,
 			@button-warning-link-text-shadow,
@@ -1361,6 +1398,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-warning-link-hover-border-width,
 				@button-warning-link-hover-border-color,
 				@button-warning-link-hover-text-color,
 				@button-warning-link-hover-text-shadow,
@@ -1386,6 +1424,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-warning-link-active-border-width,
 				@button-warning-link-active-border-color,
 				@button-warning-link-active-text-color,
 				@button-warning-link-active-text-shadow,
@@ -1412,6 +1451,7 @@ input[type="button"] {
 			.opacity(@button-warning-link-disabled-opacity);
 			.button-states (
 				
+				@button-warning-link-disabled-border-width,
 				@button-warning-link-disabled-border-color,
 				@button-warning-link-disabled-text-color,
 				@button-warning-link-disabled-text-shadow,
@@ -1438,6 +1478,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-warning-inverse-border-width,
 			@button-warning-inverse-border-color,
 			@button-warning-inverse-text-color,
 			@button-warning-inverse-text-shadow,
@@ -1460,6 +1501,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-warning-inverse-hover-border-width,
 				@button-warning-inverse-hover-border-color,
 				@button-warning-inverse-hover-text-color,
 				@button-warning-inverse-hover-text-shadow,
@@ -1485,6 +1527,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-warning-inverse-active-border-width,
 				@button-warning-inverse-active-border-color,
 				@button-warning-inverse-active-text-color,
 				@button-warning-inverse-active-text-shadow,
@@ -1512,6 +1555,7 @@ input[type="button"] {
 			.opacity(@button-warning-inverse-disabled-opacity);
 			.button-states (
 				
+				@button-warning-inverse-disabled-border-width,
 				@button-warning-inverse-disabled-border-color,
 				@button-warning-inverse-disabled-text-color,
 				@button-warning-inverse-disabled-text-shadow,
@@ -1545,6 +1589,7 @@ input[type="button"] {
 	
 	.button-states (
 		
+		@button-danger-border-width,
 		@button-danger-border-color,
 		@button-danger-text-color,
 		@button-danger-text-shadow,
@@ -1567,6 +1612,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-danger-hover-border-width,
 			@button-danger-hover-border-color,
 			@button-danger-hover-text-color,
 			@button-danger-hover-text-shadow,
@@ -1592,6 +1638,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-danger-active-border-width,
 			@button-danger-active-border-color,
 			@button-danger-active-text-color,
 			@button-danger-active-text-shadow,
@@ -1618,6 +1665,7 @@ input[type="button"] {
 		.opacity(@button-danger-disabled-opacity);
 		.button-states (
 			
+			@button-danger-disabled-border-width,
 			@button-danger-disabled-border-color,
 			@button-danger-disabled-text-color,
 			@button-danger-disabled-text-shadow,
@@ -1644,6 +1692,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-danger-link-border-width,
 			@button-danger-link-border-color,
 			@button-danger-link-text-color,
 			@button-danger-link-text-shadow,
@@ -1666,6 +1715,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-danger-link-hover-border-width,
 				@button-danger-link-hover-border-color,
 				@button-danger-link-hover-text-color,
 				@button-danger-link-hover-text-shadow,
@@ -1691,6 +1741,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-danger-link-active-border-width,
 				@button-danger-link-active-border-color,
 				@button-danger-link-active-text-color,
 				@button-danger-link-active-text-shadow,
@@ -1717,6 +1768,7 @@ input[type="button"] {
 			.opacity(@button-danger-link-disabled-opacity);
 			.button-states (
 				
+				@button-danger-link-disabled-border-width,
 				@button-danger-link-disabled-border-color,
 				@button-danger-link-disabled-text-color,
 				@button-danger-link-disabled-text-shadow,
@@ -1743,6 +1795,7 @@ input[type="button"] {
 		
 		.button-states (
 			
+			@button-danger-inverse-border-width,
 			@button-danger-inverse-border-color,
 			@button-danger-inverse-text-color,
 			@button-danger-inverse-text-shadow,
@@ -1765,6 +1818,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-danger-inverse-hover-border-width,
 				@button-danger-inverse-hover-border-color,
 				@button-danger-inverse-hover-text-color,
 				@button-danger-inverse-hover-text-shadow,
@@ -1790,6 +1844,7 @@ input[type="button"] {
 			
 			.button-states (
 				
+				@button-danger-inverse-active-border-width,
 				@button-danger-inverse-active-border-color,
 				@button-danger-inverse-active-text-color,
 				@button-danger-inverse-active-text-shadow,
@@ -1817,6 +1872,7 @@ input[type="button"] {
 			.opacity(@button-danger-inverse-disabled-opacity);
 			.button-states (
 				
+				@button-danger-inverse-disabled-border-width,
 				@button-danger-inverse-disabled-border-color,
 				@button-danger-inverse-disabled-text-color,
 				@button-danger-inverse-disabled-text-shadow,
