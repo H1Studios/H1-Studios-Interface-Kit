@@ -10,69 +10,156 @@
 
 .pagination {
 	
-	margin: 0px 0px 0px 0px;
+	display: block;
+	margin: 0px 0px @pagination-margin 0px;
+	text-align: center;
 	
 	ul {
 		
 		display: inline-block;
 		.ie7-inline-block();
-		margin-left: 0;
-		margin-bottom: 0;
-		.border-radius(@paginationBorderRadius);
+		margin: 0px auto;
+		.border-radius(@pagination-border-radius);
 		
 		> li {
 			
-			display: inline; // Remove list-style and block-level defaults
+			display: inline;
+			margin-bottom: 0px;
 			
 			> a,
 			> span {
 				
-				margin-right: @paginationLinkShadowMarginOffset;
-				float: left; // Collapse white-space
-				padding: ((@paginationLinkHeight - @paginationLinkFontLineHeight) / 2) @paginationLinkHorizontalPadding;
-				line-height: @paginationLinkFontLineHeight;
-				height: @paginationLinkFontLineHeight;
+				float: left;
 				text-decoration: none;
-				font-family: @paginationLinkFontFamily;
-				font-size: @paginationLinkFontSize;
-				color: @paginationLinkTextColor;
-				background-color: @paginationLinkBackground;
 				border: none;
 				border: 0px;
-				.box-shadow(@paginationLinkShadow);
+				padding: ((@pagination-height - @pagination-text-line-height) / 2) @pagination-padding-horizontal;
+				height: @pagination-height;
+				font-family: @pagination-text-font-family;
+				font-size: @pagination-text-font-size;
+				font-weight: @pagination-text-font-weight;
+				line-height: @pagination-text-line-height;
+				text-transform: @pagination-text-transform;
+				font-style: @pagination-text-font-style;
 				position: relative;
+				.button-states (
+					
+					@pagination-default-border-width,
+					@pagination-default-border-color,
+					@pagination-default-text-color,
+					@pagination-default-text-shadow,
+					@pagination-default-background-color,
+					@pagination-default-background-gradient-top-color,
+					@pagination-default-background-gradient-bottom-color,
+					@pagination-default-shadow,
+					@pagination-default-offset-top,
+					@pagination-default-offset-bottom
+				
+				);
 				
 			}
-			
 			
 			> a:hover,
 			> a:focus {
 				
-				color: @paginationLinkHoverTextColor;
-				background-color: @paginationLinkHoverBackground;
-				.box-shadow(@paginationLinkHoverShadow);
+				.button-states (
+					
+					@pagination-default-hover-border-width,
+					@pagination-default-hover-border-color,
+					@pagination-default-hover-text-color,
+					@pagination-default-hover-text-shadow,
+					@pagination-default-hover-background-color,
+					@pagination-default-hover-background-gradient-top-color,
+					@pagination-default-hover-background-gradient-bottom-color,
+					@pagination-default-hover-shadow,
+					@pagination-default-hover-offset-top,
+					@pagination-default-hover-offset-bottom
+				
+				);
 				
 			}
 			
-			&.active > a,
-			&.active > span {
+			> a:active,
+			> a:active {
 				
-				color: @paginationLinkActiveTextColor;
-				background-color: @paginationLinkActiveBackground;
-				cursor: default;
-				.box-shadow(@paginationLinkActiveShadow);
-				z-index: 10000;
+				.button-states (
+					
+					@pagination-default-active-border-width,
+					@pagination-default-active-border-color,
+					@pagination-default-active-text-color,
+					@pagination-default-active-text-shadow,
+					@pagination-default-active-background-color,
+					@pagination-default-active-background-gradient-top-color,
+					@pagination-default-active-background-gradient-bottom-color,
+					@pagination-default-active-shadow,
+					@pagination-default-active-offset-top,
+					@pagination-default-active-offset-bottom
 				
-			}			
+				);
+				
+			}
 			
-			&.disabled > span,
-			&.disabled > a,
-			&.disabled > a:hover,
-			&.disabled > a:focus {
+			&.active {
 				
-				color: @gray;
-				background-color: transparent;
-				cursor: default;
+				> a,
+				> span {
+					
+					.button-states (
+						
+						@pagination-active-border-width,
+						@pagination-active-border-color,
+						@pagination-active-text-color,
+						@pagination-active-text-shadow,
+						@pagination-active-background-color,
+						@pagination-active-background-gradient-top-color,
+						@pagination-active-background-gradient-bottom-color,
+						@pagination-active-shadow,
+						@pagination-active-offset-top,
+						@pagination-active-offset-bottom
+					
+					);
+					
+				}
+				
+				> a:hover,
+				> a:focus {
+					
+					.button-states (
+						
+						@pagination-active-hover-border-width,
+						@pagination-active-hover-border-color,
+						@pagination-active-hover-text-color,
+						@pagination-active-hover-text-shadow,
+						@pagination-active-hover-background-color,
+						@pagination-active-hover-background-gradient-top-color,
+						@pagination-active-hover-background-gradient-bottom-color,
+						@pagination-active-hover-shadow,
+						@pagination-active-hover-offset-top,
+						@pagination-active-hover-offset-bottom
+					
+					);
+					
+				}
+				
+				> a:active,
+				> a:active {
+					
+					.button-states (
+						
+						@pagination-active-active-border-width,
+						@pagination-active-active-border-color,
+						@pagination-active-active-text-color,
+						@pagination-active-active-text-shadow,
+						@pagination-active-active-background-color,
+						@pagination-active-active-background-gradient-top-color,
+						@pagination-active-active-background-gradient-bottom-color,
+						@pagination-active-active-shadow,
+						@pagination-active-active-offset-top,
+						@pagination-active-active-offset-bottom
+					
+					);
+					
+				}
 				
 			}
 			
@@ -81,8 +168,7 @@
 				> a,
 				> span {
 					
-					border-left-width: 1px;
-					.border-left-radius(@paginationBorderRadius);
+					.border-left-radius(@pagination-border-radius);
 					
 				}
 				
@@ -93,8 +179,7 @@
 				> a,
 				> span {
 					
-					margin-right: 0px;
-					.border-right-radius(@paginationBorderRadius);
+					.border-right-radius(@pagination-border-radius);
 					
 				}
 				
@@ -104,89 +189,21 @@
 		
 	}
 	
-	&.pagination-large {
+	&.short {
 		
-		ul > li {
-			
-			> a,
-			> span {
-				
-				padding: ((@paginationLinkHeightLarge - @paginationLinkFontLineHeightLarge) / 2) @paginationLinkHorizontalPaddingLarge;
-				line-height: @paginationLinkFontLineHeightLarge;
-				height: @paginationLinkFontLineHeightLarge;
-				font-size: @paginationLinkFontSizeLarge;
-				
-			}
-			
-			&:first-child {
-				
-				> a,
-				> span {
-					
-					.border-left-radius(@paginationBorderRadius);
-					
-				}
-				
-			}
-		
-			&:last-child {
-				
-				> a,
-				> span {
-					
-					.border-right-radius(@paginationBorderRadius);
-					
-				}
-			
-			}
-			
-		}
+		margin-bottom: @pagination-margin-short;
 		
 	}
 	
-	&.pagination-small {
+	&.tall {
 		
-		ul > li {
-			
-			> a,
-			> span {
-				
-				padding: ((@paginationLinkHeightSmall - @paginationLinkFontLineHeightSmall) / 2) @paginationLinkHorizontalPaddingSmall;
-				line-height: @paginationLinkFontLineHeightSmall;
-				height: @paginationLinkFontLineHeightSmall;
-				font-size: @paginationLinkFontSizeSmall;
-				
-			}
-			
-			&:first-child {
-				
-				> a,
-				> span {
-					
-					.border-left-radius(@paginationBorderRadius);
-					
-				}
-				
-			}
-		
-			&:last-child {
-				
-				> a,
-				> span {
-					
-					.border-right-radius(@paginationBorderRadius);
-					
-				}
-			
-			}
-			
-		}
+		margin-bottom: @pagination-margin-tall;
 		
 	}
 	
-	&.pagination-centered {
+	&.pagination-left {
 		
-		text-align: center;
+		text-align: left;
 		
 	}
 	
@@ -195,66 +212,168 @@
 		text-align: right;
 		
 	}
-
+	
 }
 
 
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling for widescreen (@viewport-screen-large) and above.     */
+/* Screen Size: Small (@screen-mini) and above                                                          */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-mini) {
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-small) {
+	
+	.pagination {
+		
+		margin: 0px 0px @pagination-margin-screen-small 0px;
+		
+		ul {
+			
+			> li {
+				
+				> a,
+				> span {
+					
+					padding: (((@pagination-height * @pagination-ratio-screen-small) - (@pagination-text-line-height * @pagination-ratio-screen-small)) / 2) @pagination-padding-horizontal * @pagination-ratio-screen-small;
+					height: @pagination-height * @pagination-ratio-screen-small;
+					font-size: @pagination-text-font-size * @pagination-ratio-screen-small;
+					line-height: @pagination-text-line-height * @pagination-ratio-screen-small;
+					
+				}
+								
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @pagination-margin-short-screen-small;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @pagination-margin-tall-screen-small;
+			
+		}
+		
+	}
+	
+}
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-medium) {
+	
+	.pagination {
+		
+		margin: 0px 0px @pagination-margin-screen-medium 0px;
+		
+		ul {
+			
+			> li {
+				
+				> a,
+				> span {
+					
+					padding: (((@pagination-height * @pagination-ratio-screen-medium) - (@pagination-text-line-height * @pagination-ratio-screen-medium)) / 2) @pagination-padding-horizontal * @pagination-ratio-screen-medium;
+					height: @pagination-height * @pagination-ratio-screen-medium;
+					font-size: @pagination-text-font-size * @pagination-ratio-screen-medium;
+					line-height: @pagination-text-line-height * @pagination-ratio-screen-medium;
+					
+				}
+								
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @pagination-margin-short-screen-medium;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @pagination-margin-tall-screen-medium;
+			
+		}
+		
+	}
+	
+}
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
 @media (min-width: @screen-large) {
 	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive changes to styling for portrait tablet (@viewport-screen-small) to default    */
-/* desktop (@viewport-standard).                                                       */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (min-width: @viewport-screen-small) and (max-width: @viewport-screen-small-max) {
+	.pagination {
+		
+		margin: 0px 0px @pagination-margin-screen-large 0px;
+		
+		ul {
+			
+			> li {
+				
+				> a,
+				> span {
+					
+					padding: (((@pagination-height * @pagination-ratio-screen-large) - (@pagination-text-line-height * @pagination-ratio-screen-large)) / 2) @pagination-padding-horizontal * @pagination-ratio-screen-large;
+					height: @pagination-height * @pagination-ratio-screen-large;
+					font-size: @pagination-text-font-size * @pagination-ratio-screen-large;
+					line-height: @pagination-text-line-height * @pagination-ratio-screen-large;
+					
+				}
+								
+			}
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @pagination-margin-short-screen-large;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @pagination-margin-tall-screen-large;
+			
+		}
+		
+	}
 	
 }
 
 
-
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Responsive changes to styling up to portrait tablets (@viewport-screen-small)            */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (max-width: @viewport-screen-medium-landscape-max) {
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive changes to styling up to landscape phones (@viewport-screen-medium-landscape)   */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-@media (max-width: @viewport-screen-medium-max) {
-	
-}
-
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Responsive changes to styling for Retina Displays                         */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-	
 }

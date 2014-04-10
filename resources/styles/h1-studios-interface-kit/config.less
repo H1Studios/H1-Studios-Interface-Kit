@@ -1755,7 +1755,7 @@
 @button-default-background-color:											@gray-lighten-80;
 @button-default-background-gradient-top-color:								@gray-lighten-90;
 @button-default-background-gradient-bottom-color:							@gray-lighten-70;
-@button-default-border-width:												none;
+@button-default-border-width:												0px;
 @button-default-border-color:												none;
 @button-default-icon-opacity:												1.0;
 @button-default-shadow:														inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
@@ -1769,7 +1769,7 @@
 @button-default-hover-background-color:										@gray-lighten-70;
 @button-default-hover-background-gradient-top-color:						@gray-lighten-90;
 @button-default-hover-background-gradient-bottom-color:						@gray-lighten-50;
-@button-default-hover-border-width:											none;
+@button-default-hover-border-width:											0px;
 @button-default-hover-border-color:											none;
 @button-default-hover-icon-opacity:											1.0;
 @button-default-hover-shadow:												inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75),
@@ -1783,7 +1783,7 @@
 @button-default-active-background-color:									@gray-lighten-70;
 @button-default-active-background-gradient-top-color:						@gray-lighten-60;
 @button-default-active-background-gradient-bottom-color:					@gray-lighten-90;
-@button-default-active-border-width:										none;
+@button-default-active-border-width:										0px;
 @button-default-active-border-color:										none;
 @button-default-active-icon-opacity:										1.0;
 @button-default-active-shadow:												inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
@@ -1922,7 +1922,7 @@
 @button-primary-background-color:											@blue;
 @button-primary-background-gradient-top-color:								@blue-lighten-10;
 @button-primary-background-gradient-bottom-color:							@blue-darken-10;
-@button-primary-border-width:												none;
+@button-primary-border-width:												0px;
 @button-primary-border-color:												none;
 @button-primary-icon-opacity:												1.0;
 @button-primary-shadow:														inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
@@ -1936,7 +1936,7 @@
 @button-primary-hover-background-color:										@blue-darken-20;
 @button-primary-hover-background-gradient-top-color:						@blue-lighten-10;
 @button-primary-hover-background-gradient-bottom-color:						@blue-darken-20;
-@button-primary-hover-border-width:											none;
+@button-primary-hover-border-width:											0px;
 @button-primary-hover-border-color:											none;
 @button-primary-hover-icon-opacity:											1.0;
 @button-primary-hover-shadow:												inset 0px 1px 0px 0px hsla(hue(@blue-lighten-20), saturation(@blue-lighten-20), lightness(@blue-lighten-20), 1.0),
@@ -1950,7 +1950,7 @@
 @button-primary-active-background-color:									@blue-darken-20;
 @button-primary-active-background-gradient-top-color:						@blue-darken-20;
 @button-primary-active-background-gradient-bottom-color:					@blue;
-@button-primary-active-border-width:										none;
+@button-primary-active-border-width:										0px;
 @button-primary-active-border-color:										none;
 @button-primary-active-icon-opacity:										1.0;
 @button-primary-active-shadow:												inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15),
@@ -4175,9 +4175,155 @@
 @tooltip-notch-size:														6px;
 
 
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Pagination                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
 
+@pagination-height:															@button-height;
+@pagination-border-radius:													@button-border-radius;
+@pagination-border-width:													0px;
+@pagination-padding-horizontal:												@button-padding-horizontal;
+@pagination-text-font-family:												@body-text-font-family;
+@pagination-text-font-size:													@body-text-font-size;
+@pagination-text-font-weight:												@body-text-font-weight;
+@pagination-text-line-height:												@button-text-line-height;
+@pagination-text-transform:													@body-text-transform;
+@pagination-text-font-style:												@body-text-font-style;
+@pagination-transition:														border linear .1s,
+																			box-shadow linear .1s,
+																			background linear .1s,
+																			width linear .1s;
 
+// Pagination Margins
 
+@pagination-margin:															@primary-margin * 0.5;
+@pagination-margin-screen-small:											@primary-margin-screen-small * 0.5;
+@pagination-margin-screen-medium:											@primary-margin-screen-medium * 0.5;
+@pagination-margin-screen-large:											@primary-margin-screen-large * 0.5;
+
+@pagination-margin-short:													@primary-margin-short * 0.5;
+@pagination-margin-short-screen-small:										@primary-margin-short-screen-small * 0.5;
+@pagination-margin-short-screen-medium:										@primary-margin-short-screen-medium * 0.5;
+@pagination-margin-short-screen-large:										@primary-margin-short-screen-large * 0.5;
+
+@pagination-margin-tall:													@primary-margin-tall * 0.5;
+@pagination-margin-tall-screen-small:										@primary-margin-tall-screen-small * 0.5;
+@pagination-margin-tall-screen-medium:										@primary-margin-tall-screen-medium * 0.5;
+@pagination-margin-tall-screen-large:										@primary-margin-tall-screen-large * 0.5;
+
+// Pagination Responsive Sizing
+
+@pagination-ratio-screen-small:												@button-ratio-screen-small;
+@pagination-ratio-screen-medium:											@button-ratio-screen-medium;
+@pagination-ratio-screen-large:												@button-ratio-screen-large;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Default                                                                                              */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@pagination-default-text-color:												@button-default-text-color;
+@pagination-default-text-shadow:											@button-default-text-shadow;
+@pagination-default-offset-top:												@button-default-offset-top;
+@pagination-default-offset-bottom:											@button-default-offset-bottom;
+@pagination-default-background-color:										@button-default-background-color;
+@pagination-default-background-gradient-top-color:							@button-default-background-gradient-top-color;
+@pagination-default-background-gradient-bottom-color:						@button-default-background-gradient-bottom-color;
+@pagination-default-border-width:											@button-default-border-width;
+@pagination-default-border-color:											@button-default-border-color;
+@pagination-default-icon-opacity:											@button-default-icon-opacity;
+@pagination-default-shadow:													@button-default-shadow;
+
+@pagination-default-hover-text-color:										@button-default-hover-text-color;
+@pagination-default-hover-text-shadow:										@button-default-hover-text-shadow;
+@pagination-default-hover-offset-top:										@button-default-hover-offset-top;
+@pagination-default-hover-offset-bottom:									@button-default-hover-offset-bottom;
+@pagination-default-hover-background-color:									@button-default-hover-background-color;
+@pagination-default-hover-background-gradient-top-color:					@button-default-hover-background-gradient-top-color;
+@pagination-default-hover-background-gradient-bottom-color:					@button-default-hover-background-gradient-bottom-color;
+@pagination-default-hover-border-width:										@button-default-hover-border-width;
+@pagination-default-hover-border-color:										@button-default-hover-border-color;
+@pagination-default-hover-icon-opacity:										@button-default-hover-icon-opacity;
+@pagination-default-hover-shadow:											@button-default-hover-shadow;
+
+@pagination-default-active-text-color:										@button-default-active-text-color;
+@pagination-default-active-text-shadow:										@button-default-active-text-shadow;
+@pagination-default-active-offset-top:										@button-default-active-offset-top;
+@pagination-default-active-offset-bottom:									@button-default-active-offset-bottom;
+@pagination-default-active-background-color:								@button-default-active-background-color;
+@pagination-default-active-background-gradient-top-color:					@button-default-active-background-gradient-top-color;
+@pagination-default-active-background-gradient-bottom-color:				@button-default-active-background-gradient-bottom-color;
+@pagination-default-active-border-width:									@button-default-active-border-width;
+@pagination-default-active-border-color:									@button-default-active-border-color;
+@pagination-default-active-icon-opacity:									@button-default-active-icon-opacity;
+@pagination-default-active-shadow:											@button-default-active-shadow;
+
+@pagination-default-disabled-opacity:										0.50;
+@pagination-default-disabled-text-color:									@pagination-default-text-color;
+@pagination-default-disabled-text-shadow:									@pagination-default-text-shadow;
+@pagination-default-disabled-offset-top:									@pagination-default-offset-top;
+@pagination-default-disabled-offset-bottom:									@pagination-default-offset-bottom;
+@pagination-default-disabled-background-color:								@pagination-default-background-color;
+@pagination-default-disabled-background-gradient-top-color:					@pagination-default-background-gradient-top-color;
+@pagination-default-disabled-background-gradient-bottom-color:				@pagination-default-background-gradient-bottom-color;
+@pagination-default-disabled-border-width:									@pagination-default-border-width;
+@pagination-default-disabled-border-color:									@pagination-default-border-color;
+@pagination-default-disabled-icon-opacity:									@pagination-default-icon-opacity;
+@pagination-default-disabled-shadow:										@pagination-default-shadow;
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Active                                                                                               */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@pagination-active-text-color:												@button-default-active-text-color;
+@pagination-active-text-shadow:												@button-default-active-text-shadow;
+@pagination-active-offset-top:												@button-default-active-offset-top;
+@pagination-active-offset-bottom:											@button-default-active-offset-bottom;
+@pagination-active-background-color:										@button-default-active-background-color;
+@pagination-active-background-gradient-top-color:							@button-default-active-background-gradient-top-color;
+@pagination-active-background-gradient-bottom-color:						@button-default-active-background-gradient-bottom-color;
+@pagination-active-border-width:											@button-default-active-border-width;
+@pagination-active-border-color:											@button-default-active-border-color;
+@pagination-active-icon-opacity:											@button-default-active-icon-opacity;
+@pagination-active-shadow:													@button-default-active-shadow;
+
+@pagination-active-hover-text-color:										@button-default-active-text-color;
+@pagination-active-hover-text-shadow:										@button-default-active-text-shadow;
+@pagination-active-hover-offset-top:										@button-default-active-offset-top;
+@pagination-active-hover-offset-bottom:										@button-default-active-offset-bottom;
+@pagination-active-hover-background-color:									@button-default-active-background-color;
+@pagination-active-hover-background-gradient-top-color:						@button-default-active-background-gradient-top-color;
+@pagination-active-hover-background-gradient-bottom-color:					@button-default-active-background-gradient-bottom-color;
+@pagination-active-hover-border-width:										@button-default-active-border-width;
+@pagination-active-hover-border-color:										@button-default-active-border-color;
+@pagination-active-hover-icon-opacity:										@button-default-active-icon-opacity;
+@pagination-active-hover-shadow:											@button-default-active-shadow;
+
+@pagination-active-active-text-color:										@button-default-active-text-color;
+@pagination-active-active-text-shadow:										@button-default-active-text-shadow;
+@pagination-active-active-offset-top:										@button-default-active-offset-top;
+@pagination-active-active-offset-bottom:									@button-default-active-offset-bottom;
+@pagination-active-active-background-color:									@button-default-active-background-color;
+@pagination-active-active-background-gradient-top-color:					@button-default-active-background-gradient-top-color;
+@pagination-active-active-background-gradient-bottom-color:					@button-default-active-background-gradient-bottom-color;
+@pagination-active-active-border-width:										@button-default-active-border-width;
+@pagination-active-active-border-color:										@button-default-active-border-color;
+@pagination-active-active-icon-opacity:										@button-default-active-icon-opacity;
+@pagination-active-active-shadow:											@button-default-active-shadow;
+
+@pagination-active-disabled-opacity:										0.50;
+@pagination-active-disabled-text-color:										@pagination-active-text-color;
+@pagination-active-disabled-text-shadow:									@pagination-active-text-shadow;
+@pagination-active-disabled-offset-top:										@pagination-active-offset-top;
+@pagination-active-disabled-offset-bottom:									@pagination-active-offset-bottom;
+@pagination-active-disabled-background-color:								@pagination-active-background-color;
+@pagination-active-disabled-background-gradient-top-color:					@pagination-active-background-gradient-top-color;
+@pagination-active-disabled-background-gradient-bottom-color:				@pagination-active-background-gradient-bottom-color;
+@pagination-active-disabled-border-width:									@pagination-active-border-width;
+@pagination-active-disabled-border-color:									@pagination-active-border-color;
+@pagination-active-disabled-icon-opacity:									@pagination-active-icon-opacity;
+@pagination-active-disabled-shadow:											@pagination-active-shadow;
 
 
 

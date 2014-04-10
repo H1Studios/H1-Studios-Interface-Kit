@@ -928,10 +928,11 @@
 // -------------------------
 // More easily include all the states for responsive-utilities.less.
 .responsive-visibility() {
-  display: auto !important;
-  tr& { display: table-row !important; }
+  display: block !important;
+  table&  { display: table; }
+  tr&     { display: table-row !important; }
   th&,
-  td& { display: table-cell !important; }
+  td&     { display: table-cell !important; }
 }
 
 .responsive-invisibility() {

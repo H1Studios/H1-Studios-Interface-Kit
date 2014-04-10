@@ -381,6 +381,17 @@
 /* ---------------------------------------------------------------------------------------------------- */
 /* Notch                                                                                                */
 /* ---------------------------------------------------------------------------------------------------- */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Pagination                                                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Default                                                                                              */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Active                                                                                               */
+/* ---------------------------------------------------------------------------------------------------- */
 /* ========================================================================= */
 /*                                                                           */
 /* Progress Bars                                                             */
@@ -636,515 +647,69 @@ Uncomment when LESS Support functions that return as value
   box-sizing: border-box;
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
 /* utlities/responsive.less                                                                             */
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* ==================================================================================================== */
-/*                                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
 /* IE10 Metro responsive - Required for Windows 8 Metro split-screen snapping with IE10                 */
-/*                                                                                                      */
-/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
 @-ms-viewport {
   width: device-width;
 }
-/* ==================================================================================================== */
-/*                                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
 /* Hide                                                                                                 */
-/*                                                                                                      */
-/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
 .hide,
 .hidden {
   display: none;
   visibility: hidden;
 }
-/* ==================================================================================================== */
-/*                                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
 /* Flush Margins                                                                                        */
-/*                                                                                                      */
-/* ==================================================================================================== */
-.flush-bottom {
-  margin-bottom: 0px !important;
-}
+/* ---------------------------------------------------------------------------------------------------- */
 .flush-top {
   margin-top: 0px !important;
 }
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Visible: Mini Screen Size (@screen-medium)                                                           */
-/*                                                                                                      */
-/* ==================================================================================================== */
-.visible-mini {
-  display: none !important;
+.flush-bottom {
+  margin-bottom: 0px !important;
 }
-tr.visible-mini {
-  display: none !important;
-}
-th.visible-mini,
-td.visible-mini {
-  display: none !important;
-}
-@media (max-width: 767px) {
-  .visible-mini {
-    display: auto !important;
-  }
-  tr.visible-mini {
-    display: table-row !important;
-  }
-  th.visible-mini,
-  td.visible-mini {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-mini.visible-small {
-    display: auto !important;
-  }
-  tr.visible-mini.visible-small {
-    display: table-row !important;
-  }
-  th.visible-mini.visible-small,
-  td.visible-mini.visible-small {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1279px) {
-  .visible-mini.visible-medium {
-    display: auto !important;
-  }
-  tr.visible-mini.visible-medium {
-    display: table-row !important;
-  }
-  th.visible-mini.visible-medium,
-  td.visible-mini.visible-medium {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 1280px) {
-  .visible-mini.visible-large {
-    display: auto !important;
-  }
-  tr.visible-mini.visible-large {
-    display: table-row !important;
-  }
-  th.visible-mini.visible-large,
-  td.visible-mini.visible-large {
-    display: table-cell !important;
-  }
-}
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Visible: Mini Screen Size (@screen-medium)                                                           */
-/*                                                                                                      */
-/* ==================================================================================================== */
-.visible-small {
-  display: none !important;
-}
-tr.visible-small {
-  display: none !important;
-}
-th.visible-small,
-td.visible-small {
-  display: none !important;
-}
-@media (max-width: 767px) {
-  .visible-small.visible-mini {
-    display: auto !important;
-  }
-  tr.visible-small.visible-mini {
-    display: table-row !important;
-  }
-  th.visible-small.visible-mini,
-  td.visible-small.visible-mini {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-small {
-    display: auto !important;
-  }
-  tr.visible-small {
-    display: table-row !important;
-  }
-  th.visible-small,
-  td.visible-small {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1279px) {
-  .visible-small.visible-medium {
-    display: auto !important;
-  }
-  tr.visible-small.visible-medium {
-    display: table-row !important;
-  }
-  th.visible-small.visible-medium,
-  td.visible-small.visible-medium {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 1280px) {
-  .visible-small.visible-large {
-    display: auto !important;
-  }
-  tr.visible-small.visible-large {
-    display: table-row !important;
-  }
-  th.visible-small.visible-large,
-  td.visible-small.visible-large {
-    display: table-cell !important;
-  }
-}
-.visible-medium {
-  display: none !important;
-}
-tr.visible-medium {
-  display: none !important;
-}
-th.visible-medium,
-td.visible-medium {
-  display: none !important;
-}
-@media (max-width: 767px) {
-  .visible-medium.visible-mini {
-    display: auto !important;
-  }
-  tr.visible-medium.visible-mini {
-    display: table-row !important;
-  }
-  th.visible-medium.visible-mini,
-  td.visible-medium.visible-mini {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-medium.visible-small {
-    display: auto !important;
-  }
-  tr.visible-medium.visible-small {
-    display: table-row !important;
-  }
-  th.visible-medium.visible-small,
-  td.visible-medium.visible-small {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1279px) {
-  .visible-medium {
-    display: auto !important;
-  }
-  tr.visible-medium {
-    display: table-row !important;
-  }
-  th.visible-medium,
-  td.visible-medium {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 1280px) {
-  .visible-medium.visible-large {
-    display: auto !important;
-  }
-  tr.visible-medium.visible-large {
-    display: table-row !important;
-  }
-  th.visible-medium.visible-large,
-  td.visible-medium.visible-large {
-    display: table-cell !important;
-  }
-}
+/* ---------------------------------------------------------------------------------------------------- */
+/* Visible                                                                                              */
+/* ---------------------------------------------------------------------------------------------------- */
+.visible-mini,
+.visible-mini-portrait,
+.visible-mini-landscape,
+.visible-small,
+.visible-medium,
 .visible-large {
   display: none !important;
 }
+tr.visible-mini,
+tr.visible-mini-portrait,
+tr.visible-mini-landscape,
+tr.visible-small,
+tr.visible-medium,
 tr.visible-large {
   display: none !important;
 }
+th.visible-mini,
+th.visible-mini-portrait,
+th.visible-mini-landscape,
+th.visible-small,
+th.visible-medium,
 th.visible-large,
+td.visible-mini,
+td.visible-mini-portrait,
+td.visible-mini-landscape,
+td.visible-small,
+td.visible-medium,
 td.visible-large {
   display: none !important;
 }
-@media (max-width: 767px) {
-  .visible-large.visible-mini {
-    display: auto !important;
-  }
-  tr.visible-large.visible-mini {
-    display: table-row !important;
-  }
-  th.visible-large.visible-mini,
-  td.visible-large.visible-mini {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-large.visible-small {
-    display: auto !important;
-  }
-  tr.visible-large.visible-small {
-    display: table-row !important;
-  }
-  th.visible-large.visible-small,
-  td.visible-large.visible-small {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1279px) {
-  .visible-large.visible-medium {
-    display: auto !important;
-  }
-  tr.visible-large.visible-medium {
-    display: table-row !important;
-  }
-  th.visible-large.visible-medium,
-  td.visible-large.visible-medium {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 1280px) {
-  .visible-large {
-    display: auto !important;
-  }
-  tr.visible-large {
-    display: table-row !important;
-  }
-  th.visible-large,
-  td.visible-large {
-    display: table-cell !important;
-  }
-}
-.hidden-mini {
-  display: auto !important;
-}
-tr.hidden-mini {
-  display: table-row !important;
-}
-th.hidden-mini,
-td.hidden-mini {
-  display: table-cell !important;
-}
-@media (max-width: 767px) {
-  .hidden-mini {
-    display: none !important;
-  }
-  tr.hidden-mini {
-    display: none !important;
-  }
-  th.hidden-mini,
-  td.hidden-mini {
-    display: none !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .hidden-mini.hidden-small {
-    display: none !important;
-  }
-  tr.hidden-mini.hidden-small {
-    display: none !important;
-  }
-  th.hidden-mini.hidden-small,
-  td.hidden-mini.hidden-small {
-    display: none !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1279px) {
-  .hidden-mini.hidden-medium {
-    display: none !important;
-  }
-  tr.hidden-mini.hidden-medium {
-    display: none !important;
-  }
-  th.hidden-mini.hidden-medium,
-  td.hidden-mini.hidden-medium {
-    display: none !important;
-  }
-}
-@media (min-width: 1280px) {
-  .hidden-mini.hidden-large {
-    display: none !important;
-  }
-  tr.hidden-mini.hidden-large {
-    display: none !important;
-  }
-  th.hidden-mini.hidden-large,
-  td.hidden-mini.hidden-large {
-    display: none !important;
-  }
-}
-.hidden-small {
-  display: auto !important;
-}
-tr.hidden-small {
-  display: table-row !important;
-}
-th.hidden-small,
-td.hidden-small {
-  display: table-cell !important;
-}
-@media (max-width: 767px) {
-  .hidden-small.hidden-mini {
-    display: none !important;
-  }
-  tr.hidden-small.hidden-mini {
-    display: none !important;
-  }
-  th.hidden-small.hidden-mini,
-  td.hidden-small.hidden-mini {
-    display: none !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .hidden-small {
-    display: none !important;
-  }
-  tr.hidden-small {
-    display: none !important;
-  }
-  th.hidden-small,
-  td.hidden-small {
-    display: none !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1279px) {
-  .hidden-small.hidden-medium {
-    display: none !important;
-  }
-  tr.hidden-small.hidden-medium {
-    display: none !important;
-  }
-  th.hidden-small.hidden-medium,
-  td.hidden-small.hidden-medium {
-    display: none !important;
-  }
-}
-@media (min-width: 1280px) {
-  .hidden-small.hidden-large {
-    display: none !important;
-  }
-  tr.hidden-small.hidden-large {
-    display: none !important;
-  }
-  th.hidden-small.hidden-large,
-  td.hidden-small.hidden-large {
-    display: none !important;
-  }
-}
-.hidden-medium {
-  display: auto !important;
-}
-tr.hidden-medium {
-  display: table-row !important;
-}
-th.hidden-medium,
-td.hidden-medium {
-  display: table-cell !important;
-}
-@media (max-width: 767px) {
-  .hidden-medium.hidden-mini {
-    display: none !important;
-  }
-  tr.hidden-medium.hidden-mini {
-    display: none !important;
-  }
-  th.hidden-medium.hidden-mini,
-  td.hidden-medium.hidden-mini {
-    display: none !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .hidden-medium.hidden-small {
-    display: none !important;
-  }
-  tr.hidden-medium.hidden-small {
-    display: none !important;
-  }
-  th.hidden-medium.hidden-small,
-  td.hidden-medium.hidden-small {
-    display: none !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1279px) {
-  .hidden-medium {
-    display: none !important;
-  }
-  tr.hidden-medium {
-    display: none !important;
-  }
-  th.hidden-medium,
-  td.hidden-medium {
-    display: none !important;
-  }
-}
-@media (min-width: 1280px) {
-  .hidden-medium.hidden-large {
-    display: none !important;
-  }
-  tr.hidden-medium.hidden-large {
-    display: none !important;
-  }
-  th.hidden-medium.hidden-large,
-  td.hidden-medium.hidden-large {
-    display: none !important;
-  }
-}
-.hidden-large {
-  display: auto !important;
-}
-tr.hidden-large {
-  display: table-row !important;
-}
-th.hidden-large,
-td.hidden-large {
-  display: table-cell !important;
-}
-@media (max-width: 767px) {
-  .hidden-large.hidden-mini {
-    display: none !important;
-  }
-  tr.hidden-large.hidden-mini {
-    display: none !important;
-  }
-  th.hidden-large.hidden-mini,
-  td.hidden-large.hidden-mini {
-    display: none !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .hidden-large.hidden-small {
-    display: none !important;
-  }
-  tr.hidden-large.hidden-small {
-    display: none !important;
-  }
-  th.hidden-large.hidden-small,
-  td.hidden-large.hidden-small {
-    display: none !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1279px) {
-  .hidden-large.hidden-medium {
-    display: none !important;
-  }
-  tr.hidden-large.hidden-medium {
-    display: none !important;
-  }
-  th.hidden-large.hidden-medium,
-  td.hidden-large.hidden-medium {
-    display: none !important;
-  }
-}
-@media (min-width: 1280px) {
-  .hidden-large {
-    display: none !important;
-  }
-  tr.hidden-large {
-    display: none !important;
-  }
-  th.hidden-large,
-  td.hidden-large {
-    display: none !important;
-  }
-}
+/* ---------------------------------------------------------------------------------------------------- */
+/* Visible: Print                                                                                       */
+/* ---------------------------------------------------------------------------------------------------- */
 .visible-print {
   display: none !important;
 }
@@ -1155,9 +720,298 @@ th.visible-print,
 td.visible-print {
   display: none !important;
 }
+/* ---------------------------------------------------------------------------------------------------- */
+/* Screen Size: Below Mini (@screen-mini)                                                               */
+/* ---------------------------------------------------------------------------------------------------- */
+@media (max-width: 480px - 1) {
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Visible: Below Mini Screen Size (@screen-mini)                                                       */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .visible-mini-portrait {
+    display: block !important;
+  }
+  table.visible-mini-portrait {
+    display: table;
+  }
+  tr.visible-mini-portrait {
+    display: table-row !important;
+  }
+  th.visible-mini-portrait,
+  td.visible-mini-portrait {
+    display: table-cell !important;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Hidden: Below Mini Screen Size (@screen-mini)                                                        */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .hidden-mini-portrait {
+    display: none !important;
+  }
+  tr.hidden-mini-portrait {
+    display: none !important;
+  }
+  th.hidden-mini-portrait,
+  td.hidden-mini-portrait {
+    display: none !important;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Flush Margins: Below Mini Screen Size (@screen-mini)                                                 */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .flush-top-screen-mini-portrait {
+    margin-top: 0px !important;
+  }
+  .flush-bottom-screen-mini-portrait {
+    margin-bottom: 0px !important;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Mini (@screen-mini) to Small (@screen-small)                                            */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 480px) and (max-width: 767px) {
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Visible: Mini Screen Size (@screen-mini) to Small (@screen-small)                                    */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .visible-mini-landscape {
+    display: block !important;
+  }
+  table.visible-mini-landscape {
+    display: table;
+  }
+  tr.visible-mini-landscape {
+    display: table-row !important;
+  }
+  th.visible-mini-landscape,
+  td.visible-mini-landscape {
+    display: table-cell !important;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Hidden: Mini Screen Size (@screen-mini) to Small (@screen-small)                                     */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .hidden-mini-landscape {
+    display: none !important;
+  }
+  tr.hidden-mini-landscape {
+    display: none !important;
+  }
+  th.hidden-mini-landscape,
+  td.hidden-mini-landscape {
+    display: none !important;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Flush Margins: Mini Screen Size (@screen-mini) to Small (@screen-small)                              */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .flush-top-screen-mini-landscape {
+    margin-top: 0px !important;
+  }
+  .flush-bottom-screen-mini-landscape {
+    margin-bottom: 0px !important;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Mini (@screen-mini) and below                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (max-width: 767px) {
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Visible: Mini Screen Size (@screen-mini)                                                             */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .visible-mini {
+    display: block !important;
+  }
+  table.visible-mini {
+    display: table;
+  }
+  tr.visible-mini {
+    display: table-row !important;
+  }
+  th.visible-mini,
+  td.visible-mini {
+    display: table-cell !important;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Hidden: Mini Screen Size (@screen-mini)                                                              */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .hidden-mini {
+    display: none !important;
+  }
+  tr.hidden-mini {
+    display: none !important;
+  }
+  th.hidden-mini,
+  td.hidden-mini {
+    display: none !important;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Flush Margins: Mini Screen Size (@screen-mini)                                                       */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .flush-top-screen-mini {
+    margin-top: 0px !important;
+  }
+  .flush-bottom-screen-mini {
+    margin-bottom: 0px !important;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small to Medium (@screen-medium)                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Visible: Small Screen Size (@screen-small)                                                           */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .visible-small {
+    display: block !important;
+  }
+  table.visible-small {
+    display: table;
+  }
+  tr.visible-small {
+    display: table-row !important;
+  }
+  th.visible-small,
+  td.visible-small {
+    display: table-cell !important;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Hidden: Small Screen Size (@screen-small)                                                            */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .hidden-small {
+    display: none !important;
+  }
+  tr.hidden-small {
+    display: none !important;
+  }
+  th.hidden-small,
+  td.hidden-small {
+    display: none !important;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Flush Margins: Small Screen Size (@screen-small)                                                     */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .flush-top-screen-mini {
+    margin-top: 0px !important;
+  }
+  .flush-bottom-screen-mini {
+    margin-bottom: 0px !important;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 992px) {
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Visible: Medium Screen Size (@screen-medium)                                                         */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .visible-medium {
+    display: block !important;
+  }
+  table.visible-medium {
+    display: table;
+  }
+  tr.visible-medium {
+    display: table-row !important;
+  }
+  th.visible-medium,
+  td.visible-medium {
+    display: table-cell !important;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Hidden: Medium Screen Size (@screen-medium)                                                          */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .hidden-medium {
+    display: none !important;
+  }
+  tr.hidden-medium {
+    display: none !important;
+  }
+  th.hidden-medium,
+  td.hidden-medium {
+    display: none !important;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Flush Margins: Medium Screen Size (@screen-medium)                                                   */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .flush-top-screen-mini {
+    margin-top: 0px !important;
+  }
+  .flush-bottom-screen-mini {
+    margin-bottom: 0px !important;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) to Large (@screen-large)                                        */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 1280px) {
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Visible: Large Screen Size (@screen-large)                                                           */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .visible-large {
+    display: block !important;
+  }
+  table.visible-large {
+    display: table;
+  }
+  tr.visible-large {
+    display: table-row !important;
+  }
+  th.visible-large,
+  td.visible-large {
+    display: table-cell !important;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Hidden: Large Screen Size (@screen-large)                                                            */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .hidden-large {
+    display: none !important;
+  }
+  tr.hidden-large {
+    display: none !important;
+  }
+  th.hidden-large,
+  td.hidden-large {
+    display: none !important;
+  }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Flush Margins: Large Screen Size (@screen-large)                                                     */
+  /* ---------------------------------------------------------------------------------------------------- */
+  .flush-top-screen-mini {
+    margin-top: 0px !important;
+  }
+  .flush-bottom-screen-mini {
+    margin-bottom: 0px !important;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Print                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
 @media print {
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Visible: Print                                                                                       */
+  /* ---------------------------------------------------------------------------------------------------- */
   .visible-print {
-    display: auto !important;
+    display: block !important;
+  }
+  table.visible-print {
+    display: table;
   }
   tr.visible-print {
     display: table-row !important;
@@ -1166,6 +1020,9 @@ td.visible-print {
   td.visible-print {
     display: table-cell !important;
   }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /* Hidden: Print                                                                                        */
+  /* ---------------------------------------------------------------------------------------------------- */
   .hidden-print {
     display: none !important;
   }
@@ -1179,56 +1036,9 @@ td.visible-print {
 }
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Screen Size: Mini (@screen-mini) and above                                                           */
+/* Retina Displays                                                                                      */
 /*                                                                                                      */
 /* ==================================================================================================== */
-@media (min-width: 480px) {
-  .flush-bottom-screen-mini {
-    margin-bottom: 0px !important;
-  }
-  .flush-top-screen-mini {
-    margin-top: 0px !important;
-  }
-}
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Screen Size: Small (@screen-small) and above                                                         */
-/*                                                                                                      */
-/* ==================================================================================================== */
-@media (min-width: 768px) {
-  .flush-bottom-screen-small {
-    margin-bottom: 0px !important;
-  }
-  .flush-top-screen-small {
-    margin-top: 0px !important;
-  }
-}
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Screen Size: Medium (@screen-medium) and above                                                       */
-/*                                                                                                      */
-/* ==================================================================================================== */
-@media (min-width: 992px) {
-  .flush-bottom-screen-medium {
-    margin-bottom: 0px !important;
-  }
-  .flush-top-screen-medium {
-    margin-top: 0px !important;
-  }
-}
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Screen Size: Large (@screen-large) and above                                                         */
-/*                                                                                                      */
-/* ==================================================================================================== */
-@media (min-width: 1280px) {
-  .flush-bottom-screen-large {
-    margin-bottom: 0px !important;
-  }
-  .flush-top-screen-large {
-    margin-top: 0px !important;
-  }
-}
 /* ==================================================================================================== */
 /*                                                                                                      */
 /* Foundation                                                                                           */
@@ -8127,8 +7937,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #838383;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -8194,8 +8004,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #838383;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -8226,8 +8036,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #a8a8a8;
   text-shadow: none;
@@ -8262,8 +8072,8 @@ table th[class*="span"],
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #838383;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -8658,8 +8468,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -8687,8 +8497,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -8717,8 +8527,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e0f0ff;
   text-shadow: none;
@@ -8750,8 +8560,8 @@ input[type="button"].button-block {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -10533,8 +10343,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #a8a8a8;
   text-shadow: none;
@@ -10610,8 +10420,8 @@ input[type="submit"].button.button-mini {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #e0f0ff;
   text-shadow: none;
@@ -19067,8 +18877,8 @@ select[size] {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #838383;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -19151,8 +18961,8 @@ select[size] {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #838383;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -19184,8 +18994,8 @@ select[size] {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #a8a8a8;
   text-shadow: none;
@@ -19221,8 +19031,8 @@ select[size] {
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
-  *border-width: none;
-  border-width: none;
+  *border-width: 0px;
+  border-width: 0px;
   border-color: none;
   color: #838383;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -26033,6 +25843,307 @@ a:active img.image-framed {
     height: 64px;
     font-size: 64px;
     line-height: 64px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/pagination.less                                                                           */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.pagination {
+  display: block;
+  margin: 0px 0px 15px 0px;
+  text-align: center;
+}
+.pagination ul {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1;
+  margin: 0px auto;
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.pagination ul > li {
+  display: inline;
+  margin-bottom: 0px;
+}
+.pagination ul > li > a,
+.pagination ul > li > span {
+  float: left;
+  text-decoration: none;
+  border: none;
+  border: 0px;
+  padding: 6px 12px;
+  height: 32px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: normal;
+  font-style: normal;
+  position: relative;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  *border-width: 0px;
+  border-width: 0px;
+  border-color: none;
+  color: #838383;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f2f2f2;
+  background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#ebebeb));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb);
+  background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb);
+  background-image: linear-gradient(to bottom, #f9f9f9, #ebebeb);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffebebeb', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.pagination ul > li > a:hover,
+.pagination ul > li > a:focus {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  *border-width: 0px;
+  border-width: 0px;
+  border-color: none;
+  color: #838383;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #ebebeb;
+  background-image: -moz-linear-gradient(top, #f9f9f9, #dddddd);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#dddddd));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #dddddd);
+  background-image: -o-linear-gradient(top, #f9f9f9, #dddddd);
+  background-image: linear-gradient(to bottom, #f9f9f9, #dddddd);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffdddddd', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.25), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75), 0px 0px 0px 1px rgba(0, 0, 0, 0.25), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.pagination ul > li > a:active,
+.pagination ul > li > a:active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  *border-width: 0px;
+  border-width: 0px;
+  border-color: none;
+  color: #a8a8a8;
+  text-shadow: none;
+  background-color: #ebebeb;
+  background-image: -moz-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: -o-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: linear-gradient(to bottom, #e4e4e4, #f9f9f9);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe4e4e4', endColorstr='#fff9f9f9', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.pagination ul > li.active > a,
+.pagination ul > li.active > span {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  *border-width: 0px;
+  border-width: 0px;
+  border-color: none;
+  color: #a8a8a8;
+  text-shadow: none;
+  background-color: #ebebeb;
+  background-image: -moz-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: -o-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: linear-gradient(to bottom, #e4e4e4, #f9f9f9);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe4e4e4', endColorstr='#fff9f9f9', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.pagination ul > li.active > a:hover,
+.pagination ul > li.active > a:focus {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  *border-width: 0px;
+  border-width: 0px;
+  border-color: none;
+  color: #a8a8a8;
+  text-shadow: none;
+  background-color: #ebebeb;
+  background-image: -moz-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: -o-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: linear-gradient(to bottom, #e4e4e4, #f9f9f9);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe4e4e4', endColorstr='#fff9f9f9', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.pagination ul > li.active > a:active,
+.pagination ul > li.active > a:active {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  *border-width: 0px;
+  border-width: 0px;
+  border-color: none;
+  color: #a8a8a8;
+  text-shadow: none;
+  background-color: #ebebeb;
+  background-image: -moz-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: -o-linear-gradient(top, #e4e4e4, #f9f9f9);
+  background-image: linear-gradient(to bottom, #e4e4e4, #f9f9f9);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe4e4e4', endColorstr='#fff9f9f9', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span {
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  behavior: url("/resources/javascript/libs/CSS3Pie/PIE.php");
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination.short {
+  margin-bottom: 7.5px;
+}
+.pagination.tall {
+  margin-bottom: 22.5px;
+}
+.pagination.pagination-left {
+  text-align: left;
+}
+.pagination.pagination-right {
+  text-align: right;
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-mini) and above                                                          */
+/*                                                                                                      */
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 768px) {
+  .pagination {
+    margin: 0px 0px 20px 0px;
+  }
+  .pagination ul > li > a,
+  .pagination ul > li > span {
+    padding: 6.779999999999999px 13.559999999999999px;
+    height: 36.16px;
+    font-size: 13.559999999999999px;
+    line-height: 22.599999999999998px;
+  }
+  .pagination.short {
+    margin-bottom: 10px;
+  }
+  .pagination.tall {
+    margin-bottom: 30px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 992px) {
+  .pagination {
+    margin: 0px 0px 30px 0px;
+  }
+  .pagination ul > li > a,
+  .pagination ul > li > span {
+    padding: 7.5px 15px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .pagination.short {
+    margin-bottom: 15px;
+  }
+  .pagination.tall {
+    margin-bottom: 45px;
+  }
+}
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+@media (min-width: 1280px) {
+  .pagination {
+    margin: 0px 0px 40px 0px;
+  }
+  .pagination ul > li > a,
+  .pagination ul > li > span {
+    padding: 7.800000000000001px 15.600000000000001px;
+    height: 41.6px;
+    font-size: 15.600000000000001px;
+    line-height: 26px;
+  }
+  .pagination.short {
+    margin-bottom: 20px;
+  }
+  .pagination.tall {
+    margin-bottom: 60px;
   }
 }
 /* ==================================================================================================== */

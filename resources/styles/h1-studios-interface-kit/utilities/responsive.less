@@ -1,18 +1,14 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
 /* utlities/responsive.less                                                                             */
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
 
-/* ==================================================================================================== */
-/*                                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
 /* IE10 Metro responsive - Required for Windows 8 Metro split-screen snapping with IE10                 */
-/*                                                                                                      */
-/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
 
 @-ms-viewport{
 	
@@ -22,11 +18,9 @@
 
 
 
-/* ==================================================================================================== */
-/*                                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
 /* Hide                                                                                                 */
-/*                                                                                                      */
-/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
 
 .hide,
 .hidden {
@@ -38,17 +32,9 @@
 
 
 
-/* ==================================================================================================== */
-/*                                                                                                      */
+/* ---------------------------------------------------------------------------------------------------- */
 /* Flush Margins                                                                                        */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-.flush-bottom {
-	
-	margin-bottom: 0px !important;
-		
-}
+/* ---------------------------------------------------------------------------------------------------- */
 
 .flush-top {
 	
@@ -56,379 +42,82 @@
 		
 }
 
-
-
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Visible: Mini Screen Size (@screen-medium)                                                           */
-/*                                                                                                      */
-/* ==================================================================================================== */
-
-.visible-mini {
+.flush-bottom {
 	
-	.responsive-invisibility();
-	
-	@media (max-width: @screen-mini-max) {
+	margin-bottom: 0px !important;
 		
-		.responsive-visibility();
-		
-	}
-	
-	&.visible-small {
-		
-		@media (min-width: @screen-small) and (max-width: @screen-small-max) {
-			
-			.responsive-visibility();
-			
-		}
-		
-	}
-	
-	&.visible-medium {
-		
-		@media (min-width: @screen-medium) and (max-width: @screen-medium-max) {
-			
-			.responsive-visibility();
-			
-		}
-		
-	}
-	
-	&.visible-large {
-		
-		@media (min-width: @screen-large) {
-			
-			.responsive-visibility();
-			
-		}
-		
-	}
-	
 }
 
 
 
-/* ==================================================================================================== */
-/*                                                                                                      */
-/* Visible: Mini Screen Size (@screen-medium)                                                           */
-/*                                                                                                      */
-/* ==================================================================================================== */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Visible                                                                                              */
+/* ---------------------------------------------------------------------------------------------------- */
 
-.visible-small {
-	
-	.responsive-invisibility();
-	
-	&.visible-mini {
-		
-		@media (max-width: @screen-mini-max) {
-			
-			.responsive-visibility();
-			
-		}
-		
-	}
-	
-	@media (min-width: @screen-small) and (max-width: @screen-small-max) {
-		
-		.responsive-visibility();
-		
-	}
-	
-	&.visible-medium {
-		
-		@media (min-width: @screen-medium) and (max-width: @screen-medium-max) {
-			
-			.responsive-visibility();
-			
-		}
-		
-	}
-	
-	&.visible-large {
-		
-		@media (min-width: @screen-large) {
-			
-			.responsive-visibility();
-			
-		}
-		
-	}
-	
-}
-
-
-
-
-.visible-medium {
-	
-	.responsive-invisibility();
-	
-	&.visible-mini {
-		
-		@media (max-width: @screen-mini-max) {
-			
-			.responsive-visibility();
-			
-		}
-		
-	}
-	
-	&.visible-small {
-		
-		@media (min-width: @screen-small) and (max-width: @screen-small-max) {
-			
-			.responsive-visibility();
-			
-		}
-		
-	}
-	
-	@media (min-width: @screen-medium) and (max-width: @screen-medium-max) {
-		
-		.responsive-visibility();
-		
-	}
-	
-	&.visible-large {
-		
-		@media (min-width: @screen-large) {
-			
-			.responsive-visibility();
-			
-		}
-		
-	}
-	
-}
-
+.visible-mini,
+.visible-mini-portrait,
+.visible-mini-landscape,
+.visible-small,
+.visible-medium,
 .visible-large {
 	
 	.responsive-invisibility();
 	
-	&.visible-mini {
-		
-		@media (max-width: @screen-mini-max) {
-			
-			.responsive-visibility();
-			
-		}
-		
-	}
-	
-	&.visible-small {
-		
-		@media (min-width: @screen-small) and (max-width: @screen-small-max) {
-			
-			.responsive-visibility();
-			
-		}
-		
-	}
-	
-	&.visible-medium {
-		
-		@media (min-width: @screen-medium) and (max-width: @screen-medium-max) {
-			
-			.responsive-visibility();
-			
-		}
-		
-	}
-	
-	@media (min-width: @screen-large) {
-		
-		.responsive-visibility();
-		
-	}
-	
-}
-		
-.hidden-mini {
-	
-	.responsive-visibility();
-	
-	@media (max-width: @screen-mini-max) {
-		
-		.responsive-invisibility();
-		
-	}
-	
-	&.hidden-small {
-		
-		@media (min-width: @screen-small) and (max-width: @screen-small-max) {
-			
-			.responsive-invisibility();
-			
-		}
-		
-	}
-	
-	&.hidden-medium {
-		
-		@media (min-width: @screen-medium) and (max-width: @screen-medium-max) {
-			
-			.responsive-invisibility();
-			
-		}
-		
-	}
-	
-	&.hidden-large {
-		
-		@media (min-width: @screen-large) {
-			
-			.responsive-invisibility();
-			
-		}
-		
-	}
-	
 }
 
-.hidden-small {
-	
-	.responsive-visibility();
-	
-	&.hidden-mini {
-		
-		@media (max-width: @screen-mini-max) {
-			
-			.responsive-invisibility();
-			
-		}
-		
-	}
-	
-	@media (min-width: @screen-small) and (max-width: @screen-small-max) {
-		
-		.responsive-invisibility();
-		
-	}
-	
-	&.hidden-medium {
-		
-		@media (min-width: @screen-medium) and (max-width: @screen-medium-max) {
-			
-			.responsive-invisibility();
-			
-		}
-		
-	}
-	
-	&.hidden-large {
-		
-		@media (min-width: @screen-large) {
-			
-			.responsive-invisibility();
-			
-		}
-		
-	}
-	
-}
 
-.hidden-medium {
-	
-	.responsive-visibility();
-	
-	&.hidden-mini {
-		
-		@media (max-width: @screen-mini-max) {
-			
-			.responsive-invisibility();
-			
-		}
-		
-	}
-	
-	&.hidden-small {
-		
-		@media (min-width: @screen-small) and (max-width: @screen-small-max) {
-			
-			.responsive-invisibility();
-			
-		}
-		
-	}
-	
-	@media (min-width: @screen-medium) and (max-width: @screen-medium-max) {
-		
-		.responsive-invisibility();
-		
-	}
-	
-	&.hidden-large {
-		
-		@media (min-width: @screen-large) {
-			
-			.responsive-invisibility();
-			
-		}
-		
-	}
-	
-}
 
-.hidden-large {
-	
-	.responsive-visibility();
-	
-	&.hidden-mini {
-		
-		@media (max-width: @screen-mini-max) {
-			
-			.responsive-invisibility();
-			
-		}
-		
-	}
-	
-	&.hidden-small {
-		
-		@media (min-width: @screen-small) and (max-width: @screen-small-max) {
-			
-			.responsive-invisibility();
-			
-		}
-		
-	}
-	
-	&.hidden-medium {
-		
-		@media (min-width: @screen-medium) and (max-width: @screen-medium-max) {
-			
-			.responsive-invisibility();
-			
-		}
-		
-	}
-	
-	@media (min-width: @screen-large) {
-		
-		.responsive-invisibility();
-		
-	}
-	
-}
-		
-// Print utilities
+/* ---------------------------------------------------------------------------------------------------- */
+/* Visible: Print                                                                                       */
+/* ---------------------------------------------------------------------------------------------------- */
+
 .visible-print {
 	
 	.responsive-invisibility();
 	
 }
 
-@media print {
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Screen Size: Below Mini (@screen-mini)                                                               */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@media (max-width: @screen-mini - 1) {
 	
-	.visible-print {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Visible: Below Mini Screen Size (@screen-mini)                                                       */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.visible-mini-portrait {
 		
 		.responsive-visibility();
 		
 	}
 	
-	.hidden-print {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Hidden: Below Mini Screen Size (@screen-mini)                                                        */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.hidden-mini-portrait {
 		
 		.responsive-invisibility();
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Flush Margins: Below Mini Screen Size (@screen-mini)                                                 */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.flush-top-screen-mini-portrait {
+		
+		margin-top: 0px !important;
+		
+	}
+	
+	.flush-bottom-screen-mini-portrait {
+		
+		margin-bottom: 0px !important;
 		
 	}
 	
@@ -438,22 +127,94 @@
 
 /* ==================================================================================================== */
 /*                                                                                                      */
-/* Screen Size: Mini (@screen-mini) and above                                                           */
+/* Screen Size: Mini (@screen-mini) to Small (@screen-small)                                            */
 /*                                                                                                      */
 /* ==================================================================================================== */
 
-@media (min-width: @screen-mini) {
+@media (min-width: @screen-mini) and (max-width: @screen-mini-max) {
 	
-	.flush-bottom-screen-mini {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Visible: Mini Screen Size (@screen-mini) to Small (@screen-small)                                    */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.visible-mini-landscape {
+		
+		.responsive-visibility();
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Hidden: Mini Screen Size (@screen-mini) to Small (@screen-small)                                     */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.hidden-mini-landscape {
+		
+		.responsive-invisibility();
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Flush Margins: Mini Screen Size (@screen-mini) to Small (@screen-small)                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.flush-top-screen-mini-landscape {
+		
+		margin-top: 0px !important;
+		
+	}
+	
+	.flush-bottom-screen-mini-landscape {
 		
 		margin-bottom: 0px !important;
-			
+		
 	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Mini (@screen-mini) and below                                                           */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (max-width: @screen-mini-max) {
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Visible: Mini Screen Size (@screen-mini)                                                             */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.visible-mini {
+		
+		.responsive-visibility();
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Hidden: Mini Screen Size (@screen-mini)                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.hidden-mini {
+		
+		.responsive-invisibility();
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Flush Margins: Mini Screen Size (@screen-mini)                                                       */
+	/* ---------------------------------------------------------------------------------------------------- */
 	
 	.flush-top-screen-mini {
 		
 		margin-top: 0px !important;
-			
+		
+	}
+	
+	.flush-bottom-screen-mini {
+		
+		margin-bottom: 0px !important;
+		
 	}
 	
 }
@@ -468,16 +229,52 @@
 
 @media (min-width: @screen-small) {
 	
-	.flush-bottom-screen-small {
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small to Medium (@screen-medium)                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-small) and (max-width: @screen-small-max) {
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Visible: Small Screen Size (@screen-small)                                                           */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.visible-small {
 		
-		margin-bottom: 0px !important;
-			
+		.responsive-visibility();
+		
 	}
 	
-	.flush-top-screen-small {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Hidden: Small Screen Size (@screen-small)                                                            */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.hidden-small {
+		
+		.responsive-invisibility();
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Flush Margins: Small Screen Size (@screen-small)                                                     */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.flush-top-screen-mini {
 		
 		margin-top: 0px !important;
-			
+		
+	}
+	
+	.flush-bottom-screen-mini {
+		
+		margin-bottom: 0px !important;
+		
 	}
 	
 }
@@ -492,17 +289,53 @@
 
 @media (min-width: @screen-medium) {
 	
-	.flush-bottom-screen-medium {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Visible: Medium Screen Size (@screen-medium)                                                         */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.visible-medium {
 		
-		margin-bottom: 0px !important;
-			
+		.responsive-visibility();
+		
 	}
 	
-	.flush-top-screen-medium {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Hidden: Medium Screen Size (@screen-medium)                                                          */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.hidden-medium {
+		
+		.responsive-invisibility();
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Flush Margins: Medium Screen Size (@screen-medium)                                                   */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.flush-top-screen-mini {
 		
 		margin-top: 0px !important;
-			
+		
 	}
+	
+	.flush-bottom-screen-mini {
+		
+		margin-bottom: 0px !important;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) to Large (@screen-large)                                        */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-medium) and (max-width: @screen-medium-max) {
 	
 }
 
@@ -516,16 +349,84 @@
 
 @media (min-width: @screen-large) {
 	
-	.flush-bottom-screen-large {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Visible: Large Screen Size (@screen-large)                                                           */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.visible-large {
 		
-		margin-bottom: 0px !important;
-			
+		.responsive-visibility();
+		
 	}
 	
-	.flush-top-screen-large {
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Hidden: Large Screen Size (@screen-large)                                                            */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.hidden-large {
+		
+		.responsive-invisibility();
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Flush Margins: Large Screen Size (@screen-large)                                                     */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.flush-top-screen-mini {
 		
 		margin-top: 0px !important;
-			
+		
 	}
+	
+	.flush-bottom-screen-mini {
+		
+		margin-bottom: 0px !important;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Print                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media print {
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Visible: Print                                                                                       */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.visible-print {
+		
+		.responsive-visibility();
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Hidden: Print                                                                                        */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	.hidden-print {
+		
+		.responsive-invisibility();
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
 	
 }
