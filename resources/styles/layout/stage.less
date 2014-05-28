@@ -10,16 +10,33 @@
 
 #stage {
 	
-	.stage-pod {
+	position: relative;
+	background: @stage-background-color;
 	
-		&.stage-pod-dark {
+	.stage-pod {
+		
+		position: relative;
+		
+		&.stage-pod-light {
 			
-			//background: @H1_blue_darken_85;
+			background: @stage-pod-light-background-color;
 			
 		}
 		
+		&.stage-pod-dark {
+			
+			background: @stage-pod-dark-background-color;
+			
+		}
+
+		&.stage-pod-divider {
+
+			border-top: 1px solid @border-color;
+
+		}
+		
 	}
-	
+		
 }
 
 
