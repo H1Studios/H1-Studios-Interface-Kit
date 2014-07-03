@@ -1,0 +1,751 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/labels.less                                                                               */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+.label {
+	
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	padding: @label-padding-vertical @label-padding-horizontal;
+	font-size: @label-text-font-size;
+	font-weight: @label-text-font-weight;
+	font-style: @label-text-font-style;
+	text-transform: @label-text-transform;
+	border: @label-border-width;
+	*border: @label-border-width;
+	.border-radius(@label-border-radius);
+	.button-states (
+		
+		@label-default-border-width,
+		@label-default-border-color,
+		@label-default-text-color,
+		@label-default-text-shadow,
+		@label-default-background-color,
+		@label-default-background-gradient-top-color,
+		@label-default-background-gradient-bottom-color,
+		@label-default-shadow,
+		@label-default-offset-top,
+		@label-default-offset-bottom
+	
+	);
+	
+	&[href] {
+		
+		&:hover,
+		&:focus {
+			
+			text-decoration: none;
+			cursor: pointer;
+			.button-states (
+				
+				@label-default-hover-border-width,
+				@label-default-hover-border-color,
+				@label-default-hover-text-color,
+				@label-default-hover-text-shadow,
+				@label-default-hover-background-color,
+				@label-default-hover-background-gradient-top-color,
+				@label-default-hover-background-gradient-bottom-color,
+				@label-default-hover-shadow,
+				@label-default-hover-offset-top,
+				@label-default-hover-offset-bottom
+			
+			);
+			
+		}
+		
+		&:active,
+		&.active {
+			
+			.button-states (
+				
+				@label-default-active-border-width,
+				@label-default-active-border-color,
+				@label-default-active-text-color,
+				@label-default-active-text-shadow,
+				@label-default-active-background-color,
+				@label-default-active-background-gradient-top-color,
+				@label-default-active-background-gradient-bottom-color,
+				@label-default-active-shadow,
+				@label-default-active-offset-top,
+				@label-default-active-offset-bottom
+			
+			);
+			
+		}
+		
+	}
+	
+	&:empty {
+		
+		display: none;
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Inverse                                                                                              */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.inverse {
+		
+		.button-states (
+			
+			@label-default-inverse-border-width,
+			@label-default-inverse-border-color,
+			@label-default-inverse-text-color,
+			@label-default-inverse-text-shadow,
+			@label-default-inverse-background-color,
+			@label-default-inverse-background-gradient-top-color,
+			@label-default-inverse-background-gradient-bottom-color,
+			@label-default-inverse-shadow,
+			@label-default-inverse-offset-top,
+			@label-default-inverse-offset-bottom
+		
+		);
+		
+		&[href] {
+			
+			&:hover,
+			&:focus {
+				
+				.button-states (
+					
+					@label-default-inverse-hover-border-width,
+					@label-default-inverse-hover-border-color,
+					@label-default-inverse-hover-text-color,
+					@label-default-inverse-hover-text-shadow,
+					@label-default-inverse-hover-background-color,
+					@label-default-inverse-hover-background-gradient-top-color,
+					@label-default-inverse-hover-background-gradient-bottom-color,
+					@label-default-inverse-hover-shadow,
+					@label-default-inverse-hover-offset-top,
+					@label-default-inverse-hover-offset-bottom
+				
+				);
+				
+			}
+			
+			&:active,
+			&.active {
+				
+				.button-states (
+					
+					@label-default-inverse-active-border-width,
+					@label-default-inverse-active-border-color,
+					@label-default-inverse-active-text-color,
+					@label-default-inverse-active-text-shadow,
+					@label-default-inverse-active-background-color,
+					@label-default-inverse-active-background-gradient-top-color,
+					@label-default-inverse-active-background-gradient-bottom-color,
+					@label-default-inverse-active-shadow,
+					@label-default-inverse-active-offset-top,
+					@label-default-inverse-active-offset-bottom
+				
+				);
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Primary                                                                                              */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	&.label-primary {
+		
+		.button-states (
+			
+			@label-primary-border-width,
+			@label-primary-border-color,
+			@label-primary-text-color,
+			@label-primary-text-shadow,
+			@label-primary-background-color,
+			@label-primary-background-gradient-top-color,
+			@label-primary-background-gradient-bottom-color,
+			@label-primary-shadow,
+			@label-primary-offset-top,
+			@label-primary-offset-bottom
+		
+		);
+		
+		&[href] {
+			
+			&:hover,
+			&:focus {
+				
+				.button-states (
+					
+					@label-primary-hover-border-width,
+					@label-primary-hover-border-color,
+					@label-primary-hover-text-color,
+					@label-primary-hover-text-shadow,
+					@label-primary-hover-background-color,
+					@label-primary-hover-background-gradient-top-color,
+					@label-primary-hover-background-gradient-bottom-color,
+					@label-primary-hover-shadow,
+					@label-primary-hover-offset-top,
+					@label-primary-hover-offset-bottom
+				
+				);
+				
+			}
+			
+			&:active,
+			&.active {
+				
+				.button-states (
+					
+					@label-primary-active-border-width,
+					@label-primary-active-border-color,
+					@label-primary-active-text-color,
+					@label-primary-active-text-shadow,
+					@label-primary-active-background-color,
+					@label-primary-active-background-gradient-top-color,
+					@label-primary-active-background-gradient-bottom-color,
+					@label-primary-active-shadow,
+					@label-primary-active-offset-top,
+					@label-primary-active-offset-bottom
+				
+				);
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Inverse                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.inverse {
+			
+			.button-states (
+				
+				@label-primary-inverse-border-width,
+				@label-primary-inverse-border-color,
+				@label-primary-inverse-text-color,
+				@label-primary-inverse-text-shadow,
+				@label-primary-inverse-background-color,
+				@label-primary-inverse-background-gradient-top-color,
+				@label-primary-inverse-background-gradient-bottom-color,
+				@label-primary-inverse-shadow,
+				@label-primary-inverse-offset-top,
+				@label-primary-inverse-offset-bottom
+			
+			);
+			
+			&[href] {
+				
+				&:hover,
+				&:focus {
+					
+					.button-states (
+						
+						@label-primary-inverse-hover-border-width,
+						@label-primary-inverse-hover-border-color,
+						@label-primary-inverse-hover-text-color,
+						@label-primary-inverse-hover-text-shadow,
+						@label-primary-inverse-hover-background-color,
+						@label-primary-inverse-hover-background-gradient-top-color,
+						@label-primary-inverse-hover-background-gradient-bottom-color,
+						@label-primary-inverse-hover-shadow,
+						@label-primary-inverse-hover-offset-top,
+						@label-primary-inverse-hover-offset-bottom
+					
+					);
+					
+				}
+				
+				&:active,
+				&.active {
+					
+					.button-states (
+						
+						@label-primary-inverse-active-border-width,
+						@label-primary-inverse-active-border-color,
+						@label-primary-inverse-active-text-color,
+						@label-primary-inverse-active-text-shadow,
+						@label-primary-inverse-active-background-color,
+						@label-primary-inverse-active-background-gradient-top-color,
+						@label-primary-inverse-active-background-gradient-bottom-color,
+						@label-primary-inverse-active-shadow,
+						@label-primary-inverse-active-offset-top,
+						@label-primary-inverse-active-offset-bottom
+					
+					);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Success                                                                                              */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	&.label-success {
+		
+		.button-states (
+			
+			@label-success-border-width,
+			@label-success-border-color,
+			@label-success-text-color,
+			@label-success-text-shadow,
+			@label-success-background-color,
+			@label-success-background-gradient-top-color,
+			@label-success-background-gradient-bottom-color,
+			@label-success-shadow,
+			@label-success-offset-top,
+			@label-success-offset-bottom
+		
+		);
+		
+		&[href] {
+			
+			&:hover,
+			&:focus {
+				
+				.button-states (
+					
+					@label-success-hover-border-width,
+					@label-success-hover-border-color,
+					@label-success-hover-text-color,
+					@label-success-hover-text-shadow,
+					@label-success-hover-background-color,
+					@label-success-hover-background-gradient-top-color,
+					@label-success-hover-background-gradient-bottom-color,
+					@label-success-hover-shadow,
+					@label-success-hover-offset-top,
+					@label-success-hover-offset-bottom
+				
+				);
+				
+			}
+			
+			&:active,
+			&.active {
+				
+				.button-states (
+					
+					@label-success-active-border-width,
+					@label-success-active-border-color,
+					@label-success-active-text-color,
+					@label-success-active-text-shadow,
+					@label-success-active-background-color,
+					@label-success-active-background-gradient-top-color,
+					@label-success-active-background-gradient-bottom-color,
+					@label-success-active-shadow,
+					@label-success-active-offset-top,
+					@label-success-active-offset-bottom
+				
+				);
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Inverse                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.inverse {
+			
+			.button-states (
+				
+				@label-success-inverse-border-width,
+				@label-success-inverse-border-color,
+				@label-success-inverse-text-color,
+				@label-success-inverse-text-shadow,
+				@label-success-inverse-background-color,
+				@label-success-inverse-background-gradient-top-color,
+				@label-success-inverse-background-gradient-bottom-color,
+				@label-success-inverse-shadow,
+				@label-success-inverse-offset-top,
+				@label-success-inverse-offset-bottom
+			
+			);
+			
+			&[href] {
+				
+				&:hover,
+				&:focus {
+					
+					.button-states (
+						
+						@label-success-inverse-hover-border-width,
+						@label-success-inverse-hover-border-color,
+						@label-success-inverse-hover-text-color,
+						@label-success-inverse-hover-text-shadow,
+						@label-success-inverse-hover-background-color,
+						@label-success-inverse-hover-background-gradient-top-color,
+						@label-success-inverse-hover-background-gradient-bottom-color,
+						@label-success-inverse-hover-shadow,
+						@label-success-inverse-hover-offset-top,
+						@label-success-inverse-hover-offset-bottom
+					
+					);
+					
+				}
+				
+				&:active,
+				&.active {
+					
+					.button-states (
+						
+						@label-success-inverse-active-border-width,
+						@label-success-inverse-active-border-color,
+						@label-success-inverse-active-text-color,
+						@label-success-inverse-active-text-shadow,
+						@label-success-inverse-active-background-color,
+						@label-success-inverse-active-background-gradient-top-color,
+						@label-success-inverse-active-background-gradient-bottom-color,
+						@label-success-inverse-active-shadow,
+						@label-success-inverse-active-offset-top,
+						@label-success-inverse-active-offset-bottom
+					
+					);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* warning                                                                                              */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	&.label-warning {
+		
+		.button-states (
+			
+			@label-warning-border-width,
+			@label-warning-border-color,
+			@label-warning-text-color,
+			@label-warning-text-shadow,
+			@label-warning-background-color,
+			@label-warning-background-gradient-top-color,
+			@label-warning-background-gradient-bottom-color,
+			@label-warning-shadow,
+			@label-warning-offset-top,
+			@label-warning-offset-bottom
+		
+		);
+		
+		&[href] {
+			
+			&:hover,
+			&:focus {
+				
+				.button-states (
+					
+					@label-warning-hover-border-width,
+					@label-warning-hover-border-color,
+					@label-warning-hover-text-color,
+					@label-warning-hover-text-shadow,
+					@label-warning-hover-background-color,
+					@label-warning-hover-background-gradient-top-color,
+					@label-warning-hover-background-gradient-bottom-color,
+					@label-warning-hover-shadow,
+					@label-warning-hover-offset-top,
+					@label-warning-hover-offset-bottom
+				
+				);
+				
+			}
+			
+			&:active,
+			&.active {
+				
+				.button-states (
+					
+					@label-warning-active-border-width,
+					@label-warning-active-border-color,
+					@label-warning-active-text-color,
+					@label-warning-active-text-shadow,
+					@label-warning-active-background-color,
+					@label-warning-active-background-gradient-top-color,
+					@label-warning-active-background-gradient-bottom-color,
+					@label-warning-active-shadow,
+					@label-warning-active-offset-top,
+					@label-warning-active-offset-bottom
+				
+				);
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Inverse                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.inverse {
+			
+			.button-states (
+				
+				@label-warning-inverse-border-width,
+				@label-warning-inverse-border-color,
+				@label-warning-inverse-text-color,
+				@label-warning-inverse-text-shadow,
+				@label-warning-inverse-background-color,
+				@label-warning-inverse-background-gradient-top-color,
+				@label-warning-inverse-background-gradient-bottom-color,
+				@label-warning-inverse-shadow,
+				@label-warning-inverse-offset-top,
+				@label-warning-inverse-offset-bottom
+			
+			);
+			
+			&[href] {
+				
+				&:hover,
+				&:focus {
+					
+					.button-states (
+						
+						@label-warning-inverse-hover-border-width,
+						@label-warning-inverse-hover-border-color,
+						@label-warning-inverse-hover-text-color,
+						@label-warning-inverse-hover-text-shadow,
+						@label-warning-inverse-hover-background-color,
+						@label-warning-inverse-hover-background-gradient-top-color,
+						@label-warning-inverse-hover-background-gradient-bottom-color,
+						@label-warning-inverse-hover-shadow,
+						@label-warning-inverse-hover-offset-top,
+						@label-warning-inverse-hover-offset-bottom
+					
+					);
+					
+				}
+				
+				&:active,
+				&.active {
+					
+					.button-states (
+						
+						@label-warning-inverse-active-border-width,
+						@label-warning-inverse-active-border-color,
+						@label-warning-inverse-active-text-color,
+						@label-warning-inverse-active-text-shadow,
+						@label-warning-inverse-active-background-color,
+						@label-warning-inverse-active-background-gradient-top-color,
+						@label-warning-inverse-active-background-gradient-bottom-color,
+						@label-warning-inverse-active-shadow,
+						@label-warning-inverse-active-offset-top,
+						@label-warning-inverse-active-offset-bottom
+					
+					);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Danger                                                                                              */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	&.label-danger {
+		
+		.button-states (
+			
+			@label-danger-border-width,
+			@label-danger-border-color,
+			@label-danger-text-color,
+			@label-danger-text-shadow,
+			@label-danger-background-color,
+			@label-danger-background-gradient-top-color,
+			@label-danger-background-gradient-bottom-color,
+			@label-danger-shadow,
+			@label-danger-offset-top,
+			@label-danger-offset-bottom
+		
+		);
+		
+		&[href] {
+			
+			&:hover,
+			&:focus {
+				
+				.button-states (
+					
+					@label-danger-hover-border-width,
+					@label-danger-hover-border-color,
+					@label-danger-hover-text-color,
+					@label-danger-hover-text-shadow,
+					@label-danger-hover-background-color,
+					@label-danger-hover-background-gradient-top-color,
+					@label-danger-hover-background-gradient-bottom-color,
+					@label-danger-hover-shadow,
+					@label-danger-hover-offset-top,
+					@label-danger-hover-offset-bottom
+				
+				);
+				
+			}
+			
+			&:active,
+			&.active {
+				
+				.button-states (
+					
+					@label-danger-active-border-width,
+					@label-danger-active-border-color,
+					@label-danger-active-text-color,
+					@label-danger-active-text-shadow,
+					@label-danger-active-background-color,
+					@label-danger-active-background-gradient-top-color,
+					@label-danger-active-background-gradient-bottom-color,
+					@label-danger-active-shadow,
+					@label-danger-active-offset-top,
+					@label-danger-active-offset-bottom
+				
+				);
+				
+			}
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Inverse                                                                                              */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.inverse {
+			
+			.button-states (
+				
+				@label-danger-inverse-border-width,
+				@label-danger-inverse-border-color,
+				@label-danger-inverse-text-color,
+				@label-danger-inverse-text-shadow,
+				@label-danger-inverse-background-color,
+				@label-danger-inverse-background-gradient-top-color,
+				@label-danger-inverse-background-gradient-bottom-color,
+				@label-danger-inverse-shadow,
+				@label-danger-inverse-offset-top,
+				@label-danger-inverse-offset-bottom
+			
+			);
+			
+			&[href] {
+				
+				&:hover,
+				&:focus {
+					
+					.button-states (
+						
+						@label-danger-inverse-hover-border-width,
+						@label-danger-inverse-hover-border-color,
+						@label-danger-inverse-hover-text-color,
+						@label-danger-inverse-hover-text-shadow,
+						@label-danger-inverse-hover-background-color,
+						@label-danger-inverse-hover-background-gradient-top-color,
+						@label-danger-inverse-hover-background-gradient-bottom-color,
+						@label-danger-inverse-hover-shadow,
+						@label-danger-inverse-hover-offset-top,
+						@label-danger-inverse-hover-offset-bottom
+					
+					);
+					
+				}
+				
+				&:active,
+				&.active {
+					
+					.button-states (
+						
+						@label-danger-inverse-active-border-width,
+						@label-danger-inverse-active-border-color,
+						@label-danger-inverse-active-text-color,
+						@label-danger-inverse-active-text-shadow,
+						@label-danger-inverse-active-background-color,
+						@label-danger-inverse-active-background-gradient-top-color,
+						@label-danger-inverse-active-background-gradient-bottom-color,
+						@label-danger-inverse-active-shadow,
+						@label-danger-inverse-active-offset-top,
+						@label-danger-inverse-active-offset-bottom
+					
+					);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-small) {
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-medium) {
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-large) {
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

@@ -1,0 +1,635 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* foundation/layout.less                                                                               */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Reset Box Sizing                                                                                     */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+*,
+*:before,
+*:after {
+	
+	.box-sizing(border-box);
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Body                                                                                                 */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+body {
+	
+	margin: 0;
+	background-color: @body-background-color;
+	height: 100%;
+	overflow-x: hidden;
+	font-family: @body-text-font-family;
+	font-size: @body-text-font-size;
+	font-weight: @body-text-font-weight;
+	line-height: @body-text-line-height;
+	text-transform: @body-text-transform;
+	font-style: @body-text-font-style;
+	color: @body-text-color;
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Links                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+a {
+	
+	color: @link-text-color;
+	text-decoration: @link-text-decoration;
+	
+	&:hover {
+		
+		color: @link-hover-text-color;
+		text-decoration: @link-hover-text-decoration;
+		
+	}
+	
+	&:active {
+		
+		color: @link-active-text-color;
+		text-decoration: @link-active-text-decoration;
+		
+	}
+	
+}
+
+::selection {
+	
+    background: @link-text-color;
+    color: @white;
+    
+}
+
+::-moz-selection {
+	
+    background: @link-text-color;
+    color: @white;
+    
+}
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Container Pod                                                                                        */
+/*                                                                                                      */
+/* ==================================================================================================== */
+	
+.container-pod {
+	
+	padding-top: @primary-margin;
+	padding-bottom: @primary-margin;
+	
+	&.container-pod-short {
+		
+		padding-top: @primary-margin-short;
+		padding-bottom: @primary-margin-short;
+		
+	}
+	
+	&.container-pod-tall {
+		
+		padding-top: @primary-margin-tall;
+		padding-bottom: @primary-margin-tall;
+		
+	}
+	
+	&.container-pod-divider {
+	
+		border-top: 1px solid @border-color;
+		
+	}
+	
+	&.container-pod-fill {
+		
+		padding-top: 0px;
+		padding-bottom: 0px;
+		height: 100%;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Row Pod                                                                                              */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.row-pod {
+	
+	padding-bottom: @primary-margin;
+	
+	&.row-pod-short {
+		
+		padding-bottom: @primary-margin-short;
+		
+	}
+	
+	&.row-pod-tall {
+		
+		padding-bottom: @primary-margin-tall;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Horizontal Rules                                                                                     */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+hr {
+	
+	margin: @primary-margin 0px @primary-margin 0px;
+	border: 0px;
+	border-top: 1px solid @border-color;
+	border-bottom: none;
+	
+	&.inverse {
+		
+		border-top: 1px solid @border-inverse-color;
+		
+	}
+		
+	&.short {
+		
+		margin: @primary-margin-short 0 @primary-margin-short 0;
+		
+	}
+	
+	&.tall {
+		
+		margin: @primary-margin-tall 0 @primary-margin-tall 0;
+		
+	}
+	
+	&.flush-bottom {
+		
+		margin: 0px;
+		
+	}
+	
+	&.narrow {
+		
+		margin: 0 auto;
+		width: 120px;
+		margin-top: @primary-margin;
+		margin-bottom: @primary-margin;
+		
+		&.short {
+			
+			margin-top: @primary-margin-short;
+			margin-bottom: @primary-margin-short;
+			
+		}
+		
+		&.tall {
+			
+			margin-top: @primary-margin-tall;
+			margin-bottom: @primary-margin-tall;
+			
+		}
+		
+	}
+	
+	+ h1,
+	+ .h1-clone,
+	+ h2,
+	+ .h2-clone,
+	+ h3,
+	+ .h3-clone,
+	+ h4,
+	+ .h4-clone,
+	+ h5,
+	+ .h5-clone,
+	+ h6,
+	+ .h6-clone {
+		
+		margin-top: 0px;
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-small) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Body                                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	body {
+	
+		font-size: @body-text-font-size * @body-text-ratio-screen-small;
+		line-height: @body-text-line-height * @body-text-ratio-screen-small;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Container Pod                                                                                        */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+		
+	.container-pod {
+		
+		padding-top: @primary-margin-screen-small;
+		padding-bottom: @primary-margin-screen-small;
+		
+		&.container-pod-short {
+			
+			padding-top: @primary-margin-short-screen-small;
+			padding-bottom: @primary-margin-short-screen-small;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primary-margin-tall-screen-small;
+			padding-bottom: @primary-margin-tall-screen-small;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Row Pod                                                                                              */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.row-pod {
+		
+		padding-bottom: @primary-margin-screen-small;
+		
+		&.row-pod-short {
+			
+			padding-bottom: @primary-margin-short-screen-small;
+			
+		}
+		
+		&.row-pod-tall {
+			
+			padding-bottom: @primary-margin-tall-screen-small;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Horizontal Rule                                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	hr {
+		
+		margin: @primary-margin-screen-small 0px @primary-margin-screen-small 0px;
+			
+		&.short {
+			
+			margin: @primary-margin-short-screen-small 0px @primary-margin-short-screen-small 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin: @primary-margin-tall-screen-small 0px @primary-margin-tall-screen-small 0px;
+			
+		}
+	
+		&.narrow {
+			
+			margin: 0 auto;
+			margin-top: @primary-margin-screen-small;
+			margin-bottom: @primary-margin-screen-small;
+			
+			&.short {
+				
+				margin-top: @primary-margin-short-screen-small;
+				margin-bottom: @primary-margin-short-screen-small;
+				
+			}
+			
+			&.tall {
+				
+				margin-top: @primary-margin-tall-screen-small;
+				margin-bottom: @primary-margin-tall-screen-small;
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-medium) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Body                                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	body {
+	
+		font-size: @body-text-font-size * @body-text-ratio-screen-medium;
+		line-height: @body-text-line-height * @body-text-ratio-screen-medium;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Container Pod                                                                                        */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+		
+	.container-pod {
+		
+		padding-top: @primary-margin-screen-medium;
+		padding-bottom: @primary-margin-screen-medium;
+		
+		&.container-pod-short {
+			
+			padding-top: @primary-margin-short-screen-medium;
+			padding-bottom: @primary-margin-short-screen-medium;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primary-margin-tall-screen-medium;
+			padding-bottom: @primary-margin-tall-screen-medium;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Row Pod                                                                                              */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.row-pod {
+		
+		padding-bottom: @primary-margin-screen-medium;
+		
+		&.row-pod-short {
+			
+			padding-bottom: @primary-margin-short-screen-medium;
+			
+		}
+		
+		&.row-pod-tall {
+			
+			padding-bottom: @primary-margin-tall-screen-medium;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Horizontal Rule                                                                                      */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	hr {
+		
+		margin: @primary-margin-screen-medium 0px @primary-margin-screen-medium 0px;
+			
+		&.short {
+			
+			margin: @primary-margin-short-screen-medium 0px @primary-margin-short-screen-medium 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin: @primary-margin-tall-screen-medium 0px @primary-margin-tall-screen-medium 0px;
+			
+		}
+	
+		&.narrow {
+			
+			margin: 0 auto;
+			margin-top: @primary-margin-screen-medium;
+			margin-bottom: @primary-margin-screen-medium;
+			
+			&.short {
+				
+				margin-top: @primary-margin-short-screen-medium;
+				margin-bottom: @primary-margin-short-screen-medium;
+				
+			}
+			
+			&.tall {
+				
+				margin-top: @primary-margin-tall-screen-medium;
+				margin-bottom: @primary-margin-tall-screen-medium;
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-large) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Body                                                                                                 */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	body {
+	
+		font-size: @body-text-font-size * @body-text-ratio-screen-large;
+		line-height: @body-text-line-height * @body-text-ratio-screen-large;
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Container Pod                                                                                        */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+		
+	.container-pod {
+		
+		padding-top: @primary-margin-screen-large;
+		padding-bottom: @primary-margin-screen-large;
+		
+		&.container-pod-short {
+			
+			padding-top: @primary-margin-short-screen-large;
+			padding-bottom: @primary-margin-short-screen-large;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primary-margin-tall-screen-large;
+			padding-bottom: @primary-margin-tall-screen-large;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Row Pod                                                                                              */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+		
+	.row-pod {
+		
+		padding-bottom: @primary-margin-screen-large;
+		
+		&.row-pod-short {
+			
+			padding-bottom: @primary-margin-short-screen-large;
+			
+		}
+		
+		&.row-pod-tall {
+			
+			padding-bottom: @primary-margin-tall-screen-large;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Horizontal Rules                                                                                     */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	hr {
+		
+		margin: @primary-margin-screen-large 0px @primary-margin-screen-large 0px;
+			
+		&.short {
+			
+			margin: @primary-margin-short-screen-large 0px @primary-margin-short-screen-large 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin: @primary-margin-tall-screen-large 0px @primary-margin-tall-screen-large 0px;
+			
+		}
+	
+		&.narrow {
+			
+			margin: 0 auto;
+			margin-top: @primary-margin-screen-large;
+			margin-bottom: @primary-margin-screen-large;
+			
+			&.short {
+				
+				margin-top: @primary-margin-short-screen-large;
+				margin-bottom: @primary-margin-short-screen-large;
+				
+			}
+			
+			&.tall {
+				
+				margin-top: @primary-margin-tall-screen-large;
+				margin-bottom: @primary-margin-tall-screen-large;
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

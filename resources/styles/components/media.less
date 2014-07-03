@@ -1,0 +1,758 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                                                      */
+/* components/media.less                                                                                */
+/*                                                                                                      */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Image                                                                                                */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+img {
+	
+	margin-bottom: @image-margin;
+		
+	&.image-responsive {
+		
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 100% !important;
+		height: auto !important;
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Rounded Images                                                                                       */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.image-rounded {
+		
+		.border-radius(@image-rounded-border-radius);
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Circle Images                                                                                        */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.image-circle {
+		
+		.border-radius(1000px);
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Framed Images                                                                                        */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	&.image-framed {
+		
+		.input-block-level();
+		padding: @image-framed-padding;
+		.override_gradient_vertical();
+		.border-radius(@image-framed-border-radius);
+		border-width: @image-framed-border-width;
+		border-color: @image-framed-border-color;
+		background-color: @image-framed-background-color;
+		#gradient > .vertical(@image-framed-background-gradient-top-color, @image-framed-background-gradient-bottom-color);
+		.box-shadow(@image-framed-shadow);
+		margin-top: @image-framed-offset-top;
+		margin-bottom: @image-margin + @image-framed-offset-bottom;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @image-margin-short;
+			
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Framed Images                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.image-framed {
+			
+			margin-bottom: @image-margin-short + @image-framed-offset-bottom;
+			
+		}
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @image-margin-tall;
+			
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Framed Images                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.image-framed {
+			
+			margin-bottom: @image-margin-tall + @image-framed-offset-bottom;
+			
+		}
+		
+	}
+	
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Image Link                                                                                           */
+/* ---------------------------------------------------------------------------------------------------- */
+
+a {
+	
+	&:hover {
+		
+		img {
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				padding: @image-framed-hover-padding;
+				.override_gradient_vertical();
+				.border-radius(@image-framed-hover-border-radius);
+				border-width: @image-framed-hover-border-width;
+				border-color: @image-framed-hover-border-color;
+				background-color: @image-framed-hover-background-color;
+				#gradient > .vertical(@image-framed-hover-background-gradient-top-color, @image-framed-hover-background-gradient-bottom-color);
+				.box-shadow(@image-framed-hover-shadow);
+				margin-top: @image-framed-hover-offset-top;
+				margin-bottom: @image-framed-hover-offset-bottom;
+				
+			}
+			
+		}
+		
+	}
+	
+	&:active {
+		
+		img {
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				padding: @image-framed-active-padding;
+				.override_gradient_vertical();
+				.border-radius(@image-framed-active-border-radius);
+				border-width: @image-framed-active-border-width;
+				border-color: @image-framed-active-border-color;
+				background-color: @image-framed-active-background-color;
+				#gradient > .vertical(@image-framed-active-background-gradient-top-color, @image-framed-active-background-gradient-bottom-color);
+				.box-shadow(@image-framed-active-shadow);
+				margin-top: @image-framed-active-offset-top;
+				margin-bottom: @image-framed-active-offset-bottom;
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Image Group                                                                                          */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+.image-group {
+	
+	display: block;
+	margin-top: -@image-group-padding-horizontal;
+	margin-left: -@image-group-padding-horizontal;
+	margin-bottom: @image-group-margin;
+	
+	&.short {
+		
+		margin-bottom: @image-group-margin-short;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @image-group-margin-tall;
+		
+	}
+	
+	img {
+		
+		vertical-align: top;
+		margin-top: @image-group-padding-horizontal;
+		margin-left: @image-group-padding-horizontal;
+		
+	}
+	
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Image Link                                                                                           */
+	/* ---------------------------------------------------------------------------------------------------- */
+	
+	a {
+		
+		img {
+			
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-top: @image-group-padding-horizontal + @image-framed-offset-top;
+				margin-bottom: @image-framed-offset-bottom;
+				
+			}
+			
+		}
+		
+		&:hover {
+			
+			img {
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Framed Images                                                                                        */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.image-framed {
+					
+					margin-top: @image-group-padding-horizontal + @image-framed-hover-offset-top;
+					margin-bottom: @image-framed-hover-offset-bottom;
+					
+				}
+				
+			}
+			
+		}
+		
+		&:active {
+			
+			img {
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Framed Images                                                                                        */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.image-framed {
+					
+					margin-top: @image-group-padding-horizontal + @image-framed-active-offset-top;
+					margin-bottom: @image-framed-active-offset-bottom;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Small (@screen-small) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-small) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Image                                                                                                */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	img {
+		
+		margin-bottom: @image-margin-screen-small;
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Framed Images                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.image-framed {
+			
+			margin-top: @image-framed-offset-top;
+			margin-bottom: @image-margin-screen-small + @image-framed-offset-bottom;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @image-margin-short-screen-small;
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-bottom: @image-margin-short-screen-small + @image-framed-offset-bottom;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @image-margin-tall-screen-small;
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-bottom: @image-margin-tall-screen-small + @image-framed-offset-bottom;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Image Group                                                                                          */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.image-group {
+		
+		margin-top: -@image-group-padding-horizontal-screen-small;
+		margin-left: -@image-group-padding-horizontal-screen-small;
+		margin-bottom: @image-group-margin-screen-small;
+		
+		&.short {
+			
+			margin-bottom: @image-group-margin-short-screen-small;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @image-group-margin-tall-screen-small;
+			
+		}
+		
+		img {
+			
+			margin-top: @image-group-padding-horizontal-screen-small;
+			margin-left: @image-group-padding-horizontal-screen-small;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Image Link                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		a {
+			
+			img {
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Framed Images                                                                                        */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.image-framed {
+					
+					margin-top: @image-group-padding-horizontal-screen-small + @image-framed-offset-top;
+					margin-bottom: @image-framed-offset-bottom;
+					
+				}
+				
+			}
+			
+			&:hover {
+				
+				img {
+					
+					/* ---------------------------------------------------------------------------------------------------- */
+					/* Framed Images                                                                                        */
+					/* ---------------------------------------------------------------------------------------------------- */
+					
+					&.image-framed {
+						
+						margin-top: @image-group-padding-horizontal-screen-small + @image-framed-hover-offset-top;
+						margin-bottom: @image-framed-hover-offset-bottom;
+						
+					}
+					
+				}
+				
+			}
+			
+			&:active {
+				
+				img {
+					
+					/* ---------------------------------------------------------------------------------------------------- */
+					/* Framed Images                                                                                        */
+					/* ---------------------------------------------------------------------------------------------------- */
+					
+					&.image-framed {
+						
+						margin-top: @image-group-padding-horizontal-screen-small + @image-framed-active-offset-top;
+						margin-bottom: @image-framed-active-offset-bottom;
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Medium (@screen-medium) and above                                                       */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-medium) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Image                                                                                                */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	img {
+		
+		margin-bottom: @image-margin-screen-medium;
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Framed Images                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.image-framed {
+			
+			margin-top: @image-framed-offset-top;
+			margin-bottom: @image-margin-screen-medium + @image-framed-offset-bottom;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @image-margin-short-screen-medium;
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-bottom: @image-margin-short-screen-medium + @image-framed-offset-bottom;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @image-margin-tall-screen-medium;
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-bottom: @image-margin-tall-screen-medium + @image-framed-offset-bottom;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Image Group                                                                                          */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.image-group {
+		
+		margin-top: -@image-group-padding-horizontal-screen-medium;
+		margin-left: -@image-group-padding-horizontal-screen-medium;
+		margin-bottom: @image-group-margin-screen-medium;
+		
+		&.short {
+			
+			margin-bottom: @image-group-margin-short-screen-medium;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @image-group-margin-tall-screen-medium;
+			
+		}
+		
+		img {
+			
+			margin-top: @image-group-padding-horizontal-screen-medium;
+			margin-left: @image-group-padding-horizontal-screen-medium;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Image Link                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		a {
+			
+			img {
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Framed Images                                                                                        */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.image-framed {
+					
+					margin-top: @image-group-padding-horizontal-screen-medium + @image-framed-offset-top;
+					margin-bottom: @image-framed-offset-bottom;
+					
+				}
+				
+			}
+			
+			&:hover {
+				
+				img {
+					
+					/* ---------------------------------------------------------------------------------------------------- */
+					/* Framed Images                                                                                        */
+					/* ---------------------------------------------------------------------------------------------------- */
+					
+					&.image-framed {
+						
+						margin-top: @image-group-padding-horizontal-screen-medium + @image-framed-hover-offset-top;
+						margin-bottom: @image-framed-hover-offset-bottom;
+						
+					}
+					
+				}
+				
+			}
+			
+			&:active {
+				
+				img {
+					
+					/* ---------------------------------------------------------------------------------------------------- */
+					/* Framed Images                                                                                        */
+					/* ---------------------------------------------------------------------------------------------------- */
+					
+					&.image-framed {
+						
+						margin-top: @image-group-padding-horizontal-screen-medium + @image-framed-active-offset-top;
+						margin-bottom: @image-framed-active-offset-bottom;
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Screen Size: Large (@screen-large) and above                                                         */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media (min-width: @screen-large) {
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Image                                                                                                */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	img {
+		
+		margin-bottom: @image-margin-screen-large;
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Framed Images                                                                                        */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		&.image-framed {
+			
+			margin-top: @image-framed-offset-top;
+			margin-bottom: @image-margin-screen-large + @image-framed-offset-bottom;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @image-margin-short-screen-large;
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-bottom: @image-margin-short-screen-large + @image-framed-offset-bottom;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @image-margin-tall-screen-large;
+				
+			/* ---------------------------------------------------------------------------------------------------- */
+			/* Framed Images                                                                                        */
+			/* ---------------------------------------------------------------------------------------------------- */
+			
+			&.image-framed {
+				
+				margin-bottom: @image-margin-tall-screen-large + @image-framed-offset-bottom;
+				
+			}
+			
+		}
+		
+	}
+	
+	/* ==================================================================================================== */
+	/*                                                                                                      */
+	/* Image Group                                                                                          */
+	/*                                                                                                      */
+	/* ==================================================================================================== */
+	
+	.image-group {
+		
+		margin-top: -@image-group-padding-horizontal-screen-large;
+		margin-left: -@image-group-padding-horizontal-screen-large;
+		margin-bottom: @image-group-margin-screen-large;
+		
+		&.short {
+			
+			margin-bottom: @image-group-margin-short-screen-large;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @image-group-margin-tall-screen-large;
+			
+		}
+		
+		img {
+			
+			margin-top: @image-group-padding-horizontal-screen-large;
+			margin-left: @image-group-padding-horizontal-screen-large;
+			
+		}
+		
+		/* ---------------------------------------------------------------------------------------------------- */
+		/* Image Link                                                                                           */
+		/* ---------------------------------------------------------------------------------------------------- */
+		
+		a {
+			
+			img {
+				
+				/* ---------------------------------------------------------------------------------------------------- */
+				/* Framed Images                                                                                        */
+				/* ---------------------------------------------------------------------------------------------------- */
+				
+				&.image-framed {
+					
+					margin-top: @image-group-padding-horizontal-screen-large + @image-framed-offset-top;
+					margin-bottom: @image-framed-offset-bottom;
+					
+				}
+				
+			}
+			
+			&:hover {
+				
+				img {
+					
+					/* ---------------------------------------------------------------------------------------------------- */
+					/* Framed Images                                                                                        */
+					/* ---------------------------------------------------------------------------------------------------- */
+					
+					&.image-framed {
+						
+						margin-top: @image-group-padding-horizontal-screen-large + @image-framed-hover-offset-top;
+						margin-bottom: @image-framed-hover-offset-bottom;
+						
+					}
+					
+				}
+				
+			}
+			
+			&:active {
+				
+				img {
+					
+					/* ---------------------------------------------------------------------------------------------------- */
+					/* Framed Images                                                                                        */
+					/* ---------------------------------------------------------------------------------------------------- */
+					
+					&.image-framed {
+						
+						margin-top: @image-group-padding-horizontal-screen-large + @image-framed-active-offset-top;
+						margin-bottom: @image-framed-active-offset-bottom;
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ==================================================================================================== */
+/*                                                                                                      */
+/* Retina Displays                                                                                      */
+/*                                                                                                      */
+/* ==================================================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

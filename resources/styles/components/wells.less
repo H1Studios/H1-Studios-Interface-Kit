@@ -1,17 +1,34 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                                                                                      */
-/* h1-studios-interface-kit/layout/page.less                                                            */
+/* components/wells.less                                                                                */
 /*                                                                                                      */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
 
-#page {
+.well {
 	
-	position: relative;
-	background: @page-background-color;
+	.border-radius(@well-border-radius);
+	padding: @well-padding;
+	margin-bottom: @well-margin;
+	background: @well-default-background-color;
+	border-width: @well-default-border-width;
+	border-color: @well-default-border-color;
+	.box-shadow(@well-default-shadow);
+	
+	&.short {
+		
+		margin-bottom: @well-margin-short;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @well-margin-tall;
+		
+	}
 	
 }
 
@@ -25,6 +42,25 @@
 
 @media (min-width: @screen-small) {
 	
+	.well {
+		
+		padding: @well-padding-screen-small;
+		margin-bottom: @well-margin-screen-small;
+		
+		&.short {
+			
+			margin-bottom: @well-margin-short-screen-small;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @well-margin-tall-screen-small;
+			
+		}
+		
+	}
+	
 }
 
 
@@ -37,6 +73,25 @@
 
 @media (min-width: @screen-medium) {
 	
+	.well {
+		
+		padding: @well-padding-screen-medium;
+		margin-bottom: @well-margin-screen-medium;
+		
+		&.short {
+			
+			margin-bottom: @well-margin-short-screen-medium;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @well-margin-tall-screen-medium;
+			
+		}
+		
+	}
+	
 }
 
 
@@ -48,6 +103,25 @@
 /* ==================================================================================================== */
 
 @media (min-width: @screen-large) {
+	
+	.well {
+		
+		padding: @well-padding-screen-large;
+		margin-bottom: @well-margin-screen-large;
+		
+		&.short {
+			
+			margin-bottom: @well-margin-short-screen-large;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @well-margin-tall-screen-large;
+			
+		}
+		
+	}
 	
 }
 
