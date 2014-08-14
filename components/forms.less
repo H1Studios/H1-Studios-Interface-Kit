@@ -999,23 +999,22 @@ select {
 	cursor: pointer;
 	position: relative;
 	width: 100%;
-	height: @form-input-height;
-	.block-padding-vertical(@form-input-height, @button-text-line-height);
-	padding-left: @button-padding-horizontal;
-	padding-right: @button-padding-horizontal;
+	height: @select-height;
+	.block-padding-vertical(@select-height, @select-text-line-height);
+	padding-left: @select-padding-horizontal;
+	padding-right: @select-padding-horizontal;
 	margin-bottom: @form-input-margin;
-	font-family: @button-text-font-family;
-	font-size: @button-text-font-size;
-	font-weight: @button-text-font-weight;
-	font-style: @button-text-font-style;
-	line-height: @button-text-line-height;
-	*line-height:  @button-text-line-height;
-	text-transform: @button-text-transform;
-	text-shadow: @button-default-text-shadow;
-	color: @button-default-text-color;
+	font-family: @select-text-font-family;
+	font-size: @select-text-font-size;
+	font-weight: @select-text-font-weight;
+	font-style: @select-text-font-style;
+	line-height: @select-text-line-height;
+	*line-height:  @select-text-line-height;
+	text-transform: @select-text-transform;
+	color: @select-default-text-color;
 	.box-shadow(none);
 	.clearfix();
-	border: 1px solid @gray;
+	border: 1px solid @select-default-border-color;
 	background: @white;
 	
 	+ .help-block {
@@ -1125,14 +1124,15 @@ select {
 	width: 100%;
 	position: relative;
 	.clearfix();
-	margin-bottom: @form-input-margin;
+	margin-bottom: @select-margin;
+	height: @select-height;
 	
 	.select-wrapper-inner {
 		
 		display: block;
 		width: 100%;
 		padding: 0px;
-		height: @form-input-height;
+		height: @select-height;
 		.ie7-inline-block();
 		.ie7-restore-left-whitespace();
 		text-rendering: optimizelegibility;
@@ -1142,10 +1142,8 @@ select {
 		position: absolute;
 		top: 0px;
 		left: 0px;
-		border: @button-border-width;
-		*border: @button-border-width;
-		.border-radius(@button-border-radius);
-		.transition(@form-input-transition .1s linear);
+		.border-radius(@select-border-radius);
+		.transition(@select-transition .1s linear);
 		.button-states (
 			
 			@select-default-border-width,
@@ -1166,8 +1164,8 @@ select {
 			content: '';
 			display: block;
 			position: absolute;
-			top: (@button-height / 2) - (6 / 2);
-			right: @button-padding-horizontal;
+			top: (@select-height / 2) - (6 / 2);
+			right: @select-padding-horizontal + 6px;
 			width: 0;
 			height: 0;
 			border-color: transparent;
@@ -1188,6 +1186,12 @@ select {
 		margin: 0px;
 		.box-shadow(none);
 		.clearfix();
+		font-family: @select-text-font-family;
+		font-size: @select-text-font-size;
+		font-weight: @select-text-font-weight;
+		line-height: @select-text-line-height;
+		text-transform: @select-text-transform;
+		font-style: @select-text-font-style;
 		
 		&:focus {
 			
@@ -1195,28 +1199,29 @@ select {
 			
 		}
 		
-		option{
+		option {
 			
 			color: @gray;
 			
 		}
 		
 	}
+	
 	+ .help-block {
 		
-		margin-top: -@form-input-margin + @form-help-block-margin;
-		margin-bottom: @form-input-margin;
+		margin-top: -@select-margin + @form-help-block-margin;
+		margin-bottom: @select-margin;
 		
 	}
 	
 	&.tall {
 		
-		margin-bottom: @form-input-margin-tall;
+		margin-bottom: @select-margin-tall;
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-tall + @form-help-block-margin;
-			margin-bottom: @form-input-margin-tall;
+			margin-top: -@select-margin-tall + @form-help-block-margin;
+			margin-bottom: @select-margin-tall;
 			
 		}
 		
@@ -1225,12 +1230,12 @@ select {
 	
 	&.short {
 		
-		margin-bottom: @form-input-margin-short;
+		margin-bottom: @select-margin-short;
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-short + @form-help-block-margin;
-			margin-bottom: @form-input-margin-short;
+			margin-top: -@select-margin-short + @form-help-block-margin;
+			margin-bottom: @select-margin-short;
 			
 		}
 		
@@ -1253,7 +1258,7 @@ select {
 				@select-default-hover-shadow,
 				@select-default-hover-offset-top,
 				@select-default-hover-offset-bottom
-			
+				
 			);
 			
 			&:after {
@@ -1278,7 +1283,6 @@ select {
 		
 		.select-wrapper-inner {
 			
-			outline: 0;
 			.button-states (
 				
 				@select-default-active-border-width,
@@ -1291,7 +1295,7 @@ select {
 				@select-default-active-shadow,
 				@select-default-active-offset-top,
 				@select-default-active-offset-bottom
-			
+				
 			);
 			
 			&:after {
@@ -1347,12 +1351,12 @@ select {
 		
 		.select-wrapper-inner {
 			
-			height: @form-input-large-height;
+			height: @select-large-height;
 			
 			&:after {
 				
-				top: (@form-input-large-height / 2) - (6 / 2);
-				right: @button-large-padding-horizontal;
+				top: (@select-large-height / 2) - (6 / 2);
+				right: @button-large-padding-horizontal + 6px;
 				
 			}
 			
@@ -1368,12 +1372,12 @@ select {
 		
 		.select-wrapper-inner {
 			
-			height: @form-input-small-height;
+			height: @select-small-height;
 			
 			&:after {
 				
-				top: (@form-input-small-height / 2) - (6 / 2);
-				right: @button-small-padding-horizontal;
+				top: (@select-small-height / 2) - (6 / 2);
+				right: @button-small-padding-horizontal + 6px;
 				
 			}
 			
@@ -2789,35 +2793,47 @@ textarea[class*="span"],
 	
 	.select-wrapper {
 		
-		margin-bottom: @form-input-margin-screen-small;
+		margin-bottom: @select-margin-screen-small;
+		height: @select-height * @select-ratio-screen-small;
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
-			margin-bottom: @form-input-margin-screen-small;
+			margin-top: -@select-margin-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+			margin-bottom: @select-margin-screen-small;
 			
 		}
 			
 		.select-wrapper-inner {
 			
-			height: @form-input-height * @form-input-ratio-screen-small;
+			height: @select-height * @select-ratio-screen-small;
 			
 			&:after {
 				
-				top: ((@button-height * @button-ratio-screen-small) / 2) - (6 / 2);
+				top: ((@select-height * @button-ratio-screen-small) / 2) - (6 / 2);
+				right: (@select-padding-horizontal * @select-ratio-screen-small) + 6px;
 				
 			}
 			
 		}
 		
+		select {
+			
+			.block-padding-vertical(@select-height * @select-ratio-screen-small, @select-text-line-height * @select-ratio-screen-small);
+			padding-left: @select-padding-horizontal * @select-ratio-screen-small;
+			padding-right: @select-padding-horizontal * @select-ratio-screen-small;
+			font-size: @select-text-font-size * @select-ratio-screen-small;
+			line-height: @select-text-line-height * @select-ratio-screen-small;
+			
+		}
+		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-screen-small;
+			margin-bottom: @select-margin-tall-screen-small;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
-				margin-bottom: @form-input-margin-tall-screen-small;
+				margin-top: -@select-margin-tall-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+				margin-bottom: @select-margin-tall-screen-small;
 				
 			}
 			
@@ -2825,16 +2841,17 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-screen-small;
+			margin-bottom: @select-margin-short-screen-small;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
-				margin-bottom: @form-input-margin-short-screen-small;
+				margin-top: -@select-margin-short-screen-small + (@form-help-block-margin * @form-help-block-ratio-screen-small);
+				margin-bottom: @select-margin-short-screen-small;
 				
 			}
 			
 		}
+		
 		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Large Select Wrapper                                                                                 */
@@ -2844,14 +2861,24 @@ textarea[class*="span"],
 			
 			.select-wrapper-inner {
 				
-				height: @form-input-large-height * @form-input-large-ratio-screen-small;
+				height: @select-large-height * @select-large-ratio-screen-small;
 				
 				&:after {
 					
-					top: ((@form-input-large-height * @form-input-large-ratio-screen-small) / 2) - (6 / 2);
-					right: @button-large-padding-horizontal;
+					top: ((@select-large-height * @select-ratio-screen-small) / 2) - (6 / 2);
+					right: (@select-padding-horizontal * @select-ratio-screen-small) + 6px;
 					
 				}
+				
+			}
+			
+			select {
+				
+				.block-padding-vertical(@select-large-height * @select-large-ratio-screen-small, @select-large-text-line-height * @select-large-ratio-screen-small);
+				padding-left: @select-large-padding-horizontal * @select-large-ratio-screen-small;
+				padding-right: @select-large-padding-horizontal * @select-large-ratio-screen-small;
+				font-size: @select-large-text-font-size * @select-large-ratio-screen-small;
+				line-height: @select-large-text-line-height * @select-large-ratio-screen-small;
 				
 			}
 			
@@ -2865,14 +2892,24 @@ textarea[class*="span"],
 			
 			.select-wrapper-inner {
 				
-				height: @form-input-small-height * @form-input-small-ratio-screen-small;
+				height: @select-small-height * @select-small-ratio-screen-small;
 				
 				&:after {
 					
-					top: ((@form-input-small-height * @form-input-small-ratio-screen-small) / 2) - (6 / 2);
-					right: @button-small-padding-horizontal;
+					top: ((@select-small-height * @select-ratio-screen-small) / 2) - (6 / 2);
+					right: (@select-padding-horizontal * @select-ratio-screen-small) + 6px;
 					
 				}
+				
+			}
+			
+			select {
+				
+				.block-padding-vertical(@select-small-height * @select-small-ratio-screen-small, @select-small-text-line-height * @select-small-ratio-screen-small);
+				padding-left: @select-small-padding-horizontal * @select-small-ratio-screen-small;
+				padding-right: @select-small-padding-horizontal * @select-small-ratio-screen-small;
+				font-size: @select-small-text-font-size * @select-small-ratio-screen-small;
+				line-height: @select-small-text-line-height * @select-small-ratio-screen-small;
 				
 			}
 			
@@ -3566,35 +3603,47 @@ textarea[class*="span"],
 	
 	.select-wrapper {
 		
-		margin-bottom: @form-input-margin-screen-medium;
+		margin-bottom: @select-margin-screen-medium;
+		height: @select-height * @select-ratio-screen-medium;
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
-			margin-bottom: @form-input-margin-screen-medium;
+			margin-top: -@select-margin-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+			margin-bottom: @select-margin-screen-medium;
 			
 		}
-			
+		
 		.select-wrapper-inner {
 			
-			height: @form-input-height * @form-input-ratio-screen-medium;
+			height: @select-height * @select-ratio-screen-medium;
 			
 			&:after {
 				
-				top: ((@button-height * @button-ratio-screen-medium) / 2) - (6 / 2);
+				top: ((@select-height * @button-ratio-screen-medium) / 2) - (6 / 2);
+				right: (@select-padding-horizontal * @select-ratio-screen-medium) + 6px;
 				
 			}
 			
 		}
 		
+		select {
+			
+			.block-padding-vertical(@select-height * @select-ratio-screen-medium, @select-text-line-height * @select-ratio-screen-medium);
+			padding-left: @select-padding-horizontal * @select-ratio-screen-medium;
+			padding-right: @select-padding-horizontal * @select-ratio-screen-medium;
+			font-size: @select-text-font-size * @select-ratio-screen-medium;
+			line-height: @select-text-line-height * @select-ratio-screen-medium;
+			
+		}
+		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-screen-medium;
+			margin-bottom: @select-margin-tall-screen-medium;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
-				margin-bottom: @form-input-margin-tall-screen-medium;
+				margin-top: -@select-margin-tall-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+				margin-bottom: @select-margin-tall-screen-medium;
 				
 			}
 			
@@ -3602,16 +3651,17 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-screen-medium;
+			margin-bottom: @select-margin-short-screen-medium;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
-				margin-bottom: @form-input-margin-short-screen-medium;
+				margin-top: -@select-margin-short-screen-medium + (@form-help-block-margin * @form-help-block-ratio-screen-medium);
+				margin-bottom: @select-margin-short-screen-medium;
 				
 			}
 			
 		}
+		
 		
 		/* ---------------------------------------------------------------------------------------------------- */
 		/* Large Select Wrapper                                                                                 */
@@ -3621,14 +3671,24 @@ textarea[class*="span"],
 			
 			.select-wrapper-inner {
 				
-				height: @form-input-large-height * @form-input-large-ratio-screen-medium;
+				height: @select-large-height * @select-large-ratio-screen-medium;
 				
 				&:after {
 					
-					top: ((@form-input-large-height * @form-input-large-ratio-screen-medium) / 2) - (6 / 2);
-					right: @button-large-padding-horizontal;
+					top: ((@select-large-height * @select-ratio-screen-medium) / 2) - (6 / 2);
+					right: (@select-padding-horizontal * @select-ratio-screen-medium) + 6px;
 					
 				}
+				
+			}
+			
+			select {
+				
+				.block-padding-vertical(@select-large-height * @select-large-ratio-screen-medium, @select-large-text-line-height * @select-large-ratio-screen-medium);
+				padding-left: @select-large-padding-horizontal * @select-large-ratio-screen-medium;
+				padding-right: @select-large-padding-horizontal * @select-large-ratio-screen-medium;
+				font-size: @select-large-text-font-size * @select-large-ratio-screen-medium;
+				line-height: @select-large-text-line-height * @select-large-ratio-screen-medium;
 				
 			}
 			
@@ -3642,14 +3702,24 @@ textarea[class*="span"],
 			
 			.select-wrapper-inner {
 				
-				height: @form-input-small-height * @form-input-small-ratio-screen-medium;
+				height: @select-small-height * @select-small-ratio-screen-medium;
 				
 				&:after {
 					
-					top: ((@form-input-small-height * @form-input-small-ratio-screen-medium) / 2) - (6 / 2);
-					right: @button-small-padding-horizontal;
+					top: ((@select-small-height * @select-ratio-screen-medium) / 2) - (6 / 2);
+					right: (@select-padding-horizontal * @select-ratio-screen-medium) + 6px;
 					
 				}
+				
+			}
+			
+			select {
+				
+				.block-padding-vertical(@select-small-height * @select-small-ratio-screen-medium, @select-small-text-line-height * @select-small-ratio-screen-medium);
+				padding-left: @select-small-padding-horizontal * @select-small-ratio-screen-medium;
+				padding-right: @select-small-padding-horizontal * @select-small-ratio-screen-medium;
+				font-size: @select-small-text-font-size * @select-small-ratio-screen-medium;
+				line-height: @select-small-text-line-height * @select-small-ratio-screen-medium;
 				
 			}
 			
@@ -4353,35 +4423,47 @@ textarea[class*="span"],
 	
 	.select-wrapper {
 		
-		margin-bottom: @form-input-margin-screen-large;
+		margin-bottom: @select-margin-screen-large;
+		height: @select-height * @select-ratio-screen-large;
 		
 		+ .help-block {
 			
-			margin-top: -@form-input-margin-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
-			margin-bottom: @form-input-margin-screen-large;
+			margin-top: -@select-margin-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+			margin-bottom: @select-margin-screen-large;
 			
 		}
-			
+		
 		.select-wrapper-inner {
 			
-			height: @form-input-height * @form-input-ratio-screen-large;
+			height: @select-height * @select-ratio-screen-large;
 			
 			&:after {
 				
-				top: ((@button-height * @button-ratio-screen-large) / 2) - (6 / 2);
+				top: ((@select-height * @button-ratio-screen-large) / 2) - (6 / 2);
+				right: (@select-padding-horizontal * @select-ratio-screen-large) + 6px;
 				
 			}
 			
 		}
 		
+		select {
+			
+			.block-padding-vertical(@select-height * @select-ratio-screen-large, @select-text-line-height * @select-ratio-screen-large);
+			padding-left: @select-padding-horizontal * @select-ratio-screen-large;
+			padding-right: @select-padding-horizontal * @select-ratio-screen-large;
+			font-size: @select-text-font-size * @select-ratio-screen-large;
+			line-height: @select-text-line-height * @select-ratio-screen-large;
+			
+		}
+		
 		&.tall {
 			
-			margin-bottom: @form-input-margin-tall-screen-large;
+			margin-bottom: @select-margin-tall-screen-large;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-tall-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
-				margin-bottom: @form-input-margin-tall-screen-large;
+				margin-top: -@select-margin-tall-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+				margin-bottom: @select-margin-tall-screen-large;
 				
 			}
 			
@@ -4389,12 +4471,12 @@ textarea[class*="span"],
 		
 		&.short {
 			
-			margin-bottom: @form-input-margin-short-screen-large;
+			margin-bottom: @select-margin-short-screen-large;
 			
 			+ .help-block {
 				
-				margin-top: -@form-input-margin-short-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
-				margin-bottom: @form-input-margin-short-screen-large;
+				margin-top: -@select-margin-short-screen-large + (@form-help-block-margin * @form-help-block-ratio-screen-large);
+				margin-bottom: @select-margin-short-screen-large;
 				
 			}
 			
@@ -4409,14 +4491,24 @@ textarea[class*="span"],
 			
 			.select-wrapper-inner {
 				
-				height: @form-input-large-height * @form-input-large-ratio-screen-large;
+				height: @select-large-height * @select-large-ratio-screen-large;
 				
 				&:after {
 					
-					top: ((@form-input-large-height * @form-input-large-ratio-screen-large) / 2) - (6 / 2);
-					right: @button-large-padding-horizontal;
+					top: ((@select-large-height * @select-ratio-screen-large) / 2) - (6 / 2);
+					right: (@select-padding-horizontal * @select-ratio-screen-large) + 6px;
 					
 				}
+				
+			}
+			
+			select {
+				
+				.block-padding-vertical(@select-large-height * @select-large-ratio-screen-large, @select-large-text-line-height * @select-large-ratio-screen-large);
+				padding-left: @select-large-padding-horizontal * @select-large-ratio-screen-large;
+				padding-right: @select-large-padding-horizontal * @select-large-ratio-screen-large;
+				font-size: @select-large-text-font-size * @select-large-ratio-screen-large;
+				line-height: @select-large-text-line-height * @select-large-ratio-screen-large;
 				
 			}
 			
@@ -4430,14 +4522,24 @@ textarea[class*="span"],
 			
 			.select-wrapper-inner {
 				
-				height: @form-input-small-height * @form-input-small-ratio-screen-large;
+				height: @select-small-height * @select-small-ratio-screen-large;
 				
 				&:after {
 					
-					top: ((@form-input-small-height * @form-input-small-ratio-screen-large) / 2) - (6 / 2);
-					right: @button-small-padding-horizontal;
+					top: ((@select-small-height * @select-ratio-screen-large) / 2) - (6 / 2);
+					right: (@select-padding-horizontal * @select-ratio-screen-large) + 6px;
 					
 				}
+				
+			}
+			
+			select {
+				
+				.block-padding-vertical(@select-small-height * @select-small-ratio-screen-large, @select-small-text-line-height * @select-small-ratio-screen-large);
+				padding-left: @select-small-padding-horizontal * @select-small-ratio-screen-large;
+				padding-right: @select-small-padding-horizontal * @select-small-ratio-screen-large;
+				font-size: @select-small-text-font-size * @select-small-ratio-screen-large;
+				line-height: @select-small-text-line-height * @select-small-ratio-screen-large;
 				
 			}
 			
